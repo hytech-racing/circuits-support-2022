@@ -2,7 +2,7 @@
 
 # 2022 Circuits Support
 
-Repository for all of the EAGLE support files for the 2019-2020 car.
+Repository for all of the EAGLE support files for the 2021-2022 car.
 
 ## Getting Started with this Git Repository
 1. Follow HyTech's [Software Guide](https://github.com/hytech-racing/training/tree/master/Resources).

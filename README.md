@@ -1,6 +1,6 @@
 ![HyTech Logo](https://hytechracing.gatech.edu/images/hytech_logo_small.png)
 
-# 2020 Circuits Support
+# 2022 Circuits Support
 
 Repository for all of the EAGLE support files for the 2019-2020 car.
 

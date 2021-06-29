@@ -6440,11 +6440,9 @@ I2C Mode
 <symbol name="LTC4421">
 <description>LTC4421 Dual Supply Prioritizer
 &lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/609/LTC4421-1716308.pdf"&gt;Datasshet&lt;/a&gt;
-&lt;br&gt;
-Designed for using a single sense resistor (pg 15)</description>
+&lt;a href="https://www.mouser.com/datasheet/2/609/LTC4421-1716308.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <wire x1="0" y1="0" x2="0" y2="-48.26" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="96.52" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="109.22" y2="0" width="0.254" layer="94"/>
 <pin name="UVF1" x="-2.54" y="-2.54" length="short" direction="in"/>
 <pin name="UVR1" x="-2.54" y="-10.16" length="short" direction="in"/>
 <pin name="OV1" x="-2.54" y="-17.78" length="short" direction="in"/>
@@ -6454,31 +6452,31 @@ Designed for using a single sense resistor (pg 15)</description>
 <pin name="V1" x="10.16" y="2.54" length="short" direction="in" rot="R270"/>
 <pin name="GATE1" x="17.78" y="2.54" length="short" direction="in" rot="R270"/>
 <pin name="SOURCE1" x="25.4" y="2.54" length="short" direction="in" rot="R270"/>
-<pin name="V2" x="35.56" y="2.54" length="short" direction="in" rot="R270"/>
-<pin name="GATE2" x="43.18" y="2.54" length="short" direction="in" rot="R270"/>
-<pin name="SOURCE2" x="50.8" y="2.54" length="short" direction="in" rot="R270"/>
-<pin name="SENSE1" x="60.96" y="2.54" length="short" direction="in" rot="R270"/>
-<pin name="SENSE2" x="63.5" y="2.54" length="short" direction="in" rot="R270"/>
-<pin name="OUT1" x="68.58" y="2.54" length="short" direction="in" rot="R270"/>
-<pin name="OUT2" x="71.12" y="2.54" length="short" direction="in" rot="R270"/>
-<pin name="CPOREF" x="76.2" y="2.54" length="short" direction="in" rot="R270"/>
-<pin name="CPO" x="83.82" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="V2" x="63.5" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="GATE2" x="71.12" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="SOURCE2" x="78.74" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="SENSE1" x="38.1" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="SENSE2" x="91.44" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="OUT1" x="40.64" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="OUT2" x="93.98" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="CPOREF" x="55.88" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="CPO" x="48.26" y="2.54" length="short" direction="in" rot="R270"/>
 <pin name="GND" x="10.16" y="-50.8" length="short" direction="pwr" rot="R90"/>
-<pin name="EXTVDD" x="99.06" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<wire x1="0" y1="-48.26" x2="96.52" y2="-48.26" width="0.254" layer="94"/>
-<wire x1="96.52" y1="-48.26" x2="96.52" y2="0" width="0.254" layer="94"/>
-<pin name="!VALID1" x="99.06" y="-10.16" length="short" direction="oc" function="dot" rot="R180"/>
-<pin name="!CH1" x="99.06" y="-15.24" length="short" direction="oc" function="dot" rot="R180"/>
-<pin name="!FAULT1" x="99.06" y="-20.32" length="short" direction="oc" function="dot" rot="R180"/>
-<pin name="!VALID2" x="99.06" y="-12.7" length="short" direction="oc" function="dot" rot="R180"/>
-<pin name="!CH2" x="99.06" y="-17.78" length="short" direction="oc" function="dot" rot="R180"/>
-<pin name="!FAULT2" x="99.06" y="-22.86" length="short" direction="oc" function="dot" rot="R180"/>
-<pin name="CASOUT" x="99.06" y="-25.4" length="short" direction="out" rot="R180"/>
-<pin name="RETRY" x="99.06" y="-30.48" length="short" direction="in" rot="R180"/>
-<pin name="!DISABLE1" x="99.06" y="-33.02" length="short" direction="in" rot="R180"/>
-<pin name="!DISABLE2" x="99.06" y="-35.56" length="short" direction="in" rot="R180"/>
-<pin name="!SHDN" x="99.06" y="-38.1" length="short" direction="in" rot="R180"/>
-<pin name="CASIN" x="99.06" y="-40.64" length="short" direction="in" rot="R180"/>
+<pin name="EXTVDD" x="111.76" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<wire x1="0" y1="-48.26" x2="109.22" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="109.22" y1="-48.26" x2="109.22" y2="0" width="0.254" layer="94"/>
+<pin name="!VALID1" x="111.76" y="-10.16" length="short" direction="oc" function="dot" rot="R180"/>
+<pin name="!CH1" x="111.76" y="-15.24" length="short" direction="oc" function="dot" rot="R180"/>
+<pin name="!FAULT1" x="111.76" y="-20.32" length="short" direction="oc" function="dot" rot="R180"/>
+<pin name="!VALID2" x="111.76" y="-12.7" length="short" direction="oc" function="dot" rot="R180"/>
+<pin name="!CH2" x="111.76" y="-17.78" length="short" direction="oc" function="dot" rot="R180"/>
+<pin name="!FAULT2" x="111.76" y="-22.86" length="short" direction="oc" function="dot" rot="R180"/>
+<pin name="CASOUT" x="111.76" y="-25.4" length="short" direction="out" rot="R180"/>
+<pin name="RETRY" x="111.76" y="-30.48" length="short" direction="in" rot="R180"/>
+<pin name="!DISABLE1" x="111.76" y="-33.02" length="short" direction="in" rot="R180"/>
+<pin name="!DISABLE2" x="111.76" y="-35.56" length="short" direction="in" rot="R180"/>
+<pin name="!SHDN" x="111.76" y="-38.1" length="short" direction="in" rot="R180"/>
+<pin name="CASIN" x="111.76" y="-40.64" length="short" direction="in" rot="R180"/>
 <pin name="QUAL" x="25.4" y="-50.8" length="short" rot="R90"/>
 <pin name="TMR1" x="40.64" y="-50.8" length="short" rot="R90"/>
 <pin name="TMR2" x="55.88" y="-50.8" length="short" rot="R90"/>
@@ -8369,7 +8367,8 @@ Ceramic SMD Surface Mount Fuse
 <description>N-MOSFET
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/916/PMV15ENEA-1604828.pdf"&gt;PMV15ENEA Datasheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/408/TK6P65W_datasheet_en_20151225-1916290.pdf"&gt;TK6P65W Datasheet&lt;/a&gt;&lt;/li&gt;</description>
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/408/TK6P65W_datasheet_en_20151225-1916290.pdf"&gt;TK6P65W Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/427/sir638adp-1766131.pdf"&gt;SIR638ADP Datasheet&lt;/a&gt;&lt;/li&gt;</description>
 <gates>
 <gate name="G$1" symbol="MOSFET_N-CHANNEL" x="0" y="0"/>
 </gates>
@@ -8401,6 +8400,21 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage"/>
 <attribute name="MOPN" value="757-TK6P65WRQ"/>
 <attribute name="MPN" value="TK6P65W,RQ"/>
+</technology>
+</technologies>
+</device>
+<device name="POWERPAK" package="POWERPAK_SO-8">
+<connects>
+<connect gate="G$1" pin="D" pad="D@5 D@6 D@7 D@8 D@PAD"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="S" pad="1 2 3"/>
+</connects>
+<technologies>
+<technology name="SIR638ADP">
+<attribute name="DKPN" value="SIR638ADP-T1-RE3CT-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Siliconix"/>
+<attribute name="MOPN" value="Vishay Siliconix"/>
+<attribute name="MPN" value="SIR638ADP-T1-RE3"/>
 </technology>
 </technologies>
 </device>
@@ -9429,6 +9443,64 @@ Variant 2: Addressable/Multi-Drop Configuration
 <attribute name="RESISTANCE" value="1.3mΩ"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="0.0624V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC4421" prefix="U">
+<description>LTC4421 Dual Supply Prioritizer
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/609/LTC4421-1716308.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LTC4421" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSOP-36">
+<connects>
+<connect gate="G$1" pin="!CH1" pad="13"/>
+<connect gate="G$1" pin="!CH2" pad="24"/>
+<connect gate="G$1" pin="!DISABLE1" pad="12"/>
+<connect gate="G$1" pin="!DISABLE2" pad="25"/>
+<connect gate="G$1" pin="!FAULT1" pad="15"/>
+<connect gate="G$1" pin="!FAULT2" pad="22"/>
+<connect gate="G$1" pin="!SHDN" pad="21"/>
+<connect gate="G$1" pin="!VALID1" pad="14"/>
+<connect gate="G$1" pin="!VALID2" pad="23"/>
+<connect gate="G$1" pin="CASIN" pad="16"/>
+<connect gate="G$1" pin="CASOUT" pad="18"/>
+<connect gate="G$1" pin="CPO" pad="1"/>
+<connect gate="G$1" pin="CPOREF" pad="2"/>
+<connect gate="G$1" pin="EXTVDD" pad="36"/>
+<connect gate="G$1" pin="GATE1" pad="6"/>
+<connect gate="G$1" pin="GATE2" pad="31"/>
+<connect gate="G$1" pin="GND" pad="35"/>
+<connect gate="G$1" pin="INTVDD" pad="17"/>
+<connect gate="G$1" pin="OUT1" pad="3"/>
+<connect gate="G$1" pin="OUT2" pad="34"/>
+<connect gate="G$1" pin="OV1" pad="10"/>
+<connect gate="G$1" pin="OV2" pad="27"/>
+<connect gate="G$1" pin="QUAL" pad="19"/>
+<connect gate="G$1" pin="RETRY" pad="20"/>
+<connect gate="G$1" pin="SENSE1" pad="4"/>
+<connect gate="G$1" pin="SENSE2" pad="33"/>
+<connect gate="G$1" pin="SOURCE1" pad="5"/>
+<connect gate="G$1" pin="SOURCE2" pad="32"/>
+<connect gate="G$1" pin="TMR1" pad="11"/>
+<connect gate="G$1" pin="TMR2" pad="26"/>
+<connect gate="G$1" pin="UVF1" pad="8"/>
+<connect gate="G$1" pin="UVF2" pad="29"/>
+<connect gate="G$1" pin="UVR1" pad="9"/>
+<connect gate="G$1" pin="UVR2" pad="28"/>
+<connect gate="G$1" pin="V1" pad="7"/>
+<connect gate="G$1" pin="V2" pad="30"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="161-LTC4421CG#PBF-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
+<attribute name="MOPN" value="584-LTC4421CG#PBF"/>
+<attribute name="MPN" value="LTC4421CG#PBF"/>
 </technology>
 </technologies>
 </device>

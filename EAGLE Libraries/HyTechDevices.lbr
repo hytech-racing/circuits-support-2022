@@ -7043,6 +7043,35 @@ with up to 100mA of output current</description>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-18.542" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
+<symbol name="ISO224">
+<description>ISO224
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ds/symlink/iso224.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="0" y1="-30.48" x2="11.176" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="11.176" y1="-30.48" x2="22.86" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-30.48" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="11.176" y2="0" width="0.254" layer="94"/>
+<wire x1="11.176" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-30.48" width="0.254" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<pin name="VDD1" x="-2.54" y="-12.7" length="short" direction="pwr"/>
+<pin name="GND1" x="-2.54" y="-20.32" length="short" direction="pwr"/>
+<pin name="GND2" x="25.4" y="-22.86" length="short" direction="pwr" rot="R180"/>
+<pin name="VDD2" x="25.4" y="-15.24" length="short" direction="pwr" rot="R180"/>
+<pin name="OUTN" x="25.4" y="-7.62" length="short" direction="out" function="dot" rot="R180"/>
+<pin name="OUTP" x="25.4" y="-2.54" length="short" direction="out" rot="R180"/>
+<pin name="IN" x="-2.54" y="-5.08" length="short" direction="in"/>
+<text x="0" y="-31.242" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<wire x1="7.62" y1="-1.27" x2="7.62" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-8.89" x2="10.16" y2="-7.366" width="0.254" layer="94"/>
+<wire x1="12.192" y1="-6.1468" x2="13.97" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="13.97" y1="-5.08" x2="12.192" y2="-4.0132" width="0.254" layer="94"/>
+<pin name="VCAP" x="-2.54" y="-27.94" length="short" direction="pas"/>
+<wire x1="10.16" y1="-2.794" x2="7.62" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-2.794" x2="10.16" y2="-7.366" width="0.254" layer="94"/>
+<wire x1="12.192" y1="-4.0132" x2="12.192" y2="-6.1468" width="0.254" layer="94"/>
+<wire x1="11.176" y1="0" x2="11.176" y2="-30.48" width="0.254" layer="94" style="shortdash"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-2_?_*" prefix="J">

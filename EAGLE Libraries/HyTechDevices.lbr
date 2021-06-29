@@ -9246,6 +9246,75 @@ with up to 100mA of output current
 </device>
 </devices>
 </deviceset>
+<deviceset name="LTC6811-2" prefix="U">
+<description>&lt;b&gt; Linear Technology Multicell Battery Stack Monitor &lt;/b&gt;
+&lt;br&gt;
+Variant 2: Addressable/Multi-Drop Configuration
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/609/LTC6811_1_6811_2-1271909.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LTC6811-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSOP-48">
+<connects>
+<connect gate="G$1" pin="A0" pad="45"/>
+<connect gate="G$1" pin="A1" pad="46"/>
+<connect gate="G$1" pin="A2" pad="47"/>
+<connect gate="G$1" pin="A3" pad="48"/>
+<connect gate="G$1" pin="C0" pad="26"/>
+<connect gate="G$1" pin="C1" pad="24"/>
+<connect gate="G$1" pin="C10" pad="6"/>
+<connect gate="G$1" pin="C11" pad="4"/>
+<connect gate="G$1" pin="C12" pad="2"/>
+<connect gate="G$1" pin="C2" pad="22"/>
+<connect gate="G$1" pin="C3" pad="20"/>
+<connect gate="G$1" pin="C4" pad="18"/>
+<connect gate="G$1" pin="C5" pad="16"/>
+<connect gate="G$1" pin="C6" pad="14"/>
+<connect gate="G$1" pin="C7" pad="12"/>
+<connect gate="G$1" pin="C8" pad="10"/>
+<connect gate="G$1" pin="C9" pad="8"/>
+<connect gate="G$1" pin="DRIVE" pad="38"/>
+<connect gate="G$1" pin="GPI01" pad="27"/>
+<connect gate="G$1" pin="GPI02" pad="28"/>
+<connect gate="G$1" pin="GPI03" pad="29"/>
+<connect gate="G$1" pin="GPI04" pad="32"/>
+<connect gate="G$1" pin="GPI05" pad="33"/>
+<connect gate="G$1" pin="IBIAS" pad="44"/>
+<connect gate="G$1" pin="ICMP" pad="43"/>
+<connect gate="G$1" pin="IM" pad="41"/>
+<connect gate="G$1" pin="IP" pad="42"/>
+<connect gate="G$1" pin="S1" pad="25"/>
+<connect gate="G$1" pin="S10" pad="7"/>
+<connect gate="G$1" pin="S11" pad="5"/>
+<connect gate="G$1" pin="S12" pad="3"/>
+<connect gate="G$1" pin="S2" pad="23"/>
+<connect gate="G$1" pin="S3" pad="21"/>
+<connect gate="G$1" pin="S4" pad="19"/>
+<connect gate="G$1" pin="S5" pad="17"/>
+<connect gate="G$1" pin="S6" pad="15"/>
+<connect gate="G$1" pin="S7" pad="13"/>
+<connect gate="G$1" pin="S8" pad="11"/>
+<connect gate="G$1" pin="S9" pad="9"/>
+<connect gate="G$1" pin="V+" pad="1"/>
+<connect gate="G$1" pin="V-" pad="30 31"/>
+<connect gate="G$1" pin="VREF1" pad="35"/>
+<connect gate="G$1" pin="VREF2" pad="34"/>
+<connect gate="G$1" pin="VREG" pad="36 37 40"/>
+<connect gate="G$1" pin="WDT" pad="39"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="LTC6811IG-2#3ZZPBF-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
+<attribute name="MOPN" value="584-6811IG-2#3ZZPB"/>
+<attribute name="MPN" value="LTC6811IG-2#3ZZPBF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

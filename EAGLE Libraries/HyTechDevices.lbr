@@ -4065,6 +4065,26 @@ Toshiba
 <wire x1="3.4544" y1="-3.302" x2="-3.4544" y2="-3.302" width="0.127" layer="21"/>
 <wire x1="-3.4544" y1="-3.302" x2="-3.4544" y2="3.302" width="0.127" layer="21"/>
 </package>
+<package name="H3FA">
+<wire x1="8.9154" y1="18.4658" x2="8.9154" y2="-18.4658" width="0.254" layer="1"/>
+<wire x1="-8.9154" y1="-18.4658" x2="-8.9154" y2="18.4658" width="0.254" layer="1"/>
+<wire x1="-8.9154" y1="-18.4658" x2="8.9154" y2="-18.4658" width="0.254" layer="1"/>
+<wire x1="8.9154" y1="18.4658" x2="-8.9154" y2="18.4658" width="0.254" layer="1"/>
+<pad name="13" x="-7.62" y="13.97" drill="1"/>
+<pad name="12" x="7.62" y="13.97" drill="1"/>
+<pad name="24" x="-7.62" y="-13.97" drill="1"/>
+<pad name="1" x="7.62" y="-13.97" drill="1"/>
+<pad name="2" x="7.62" y="-11.43" drill="1"/>
+<pad name="3" x="7.62" y="-8.89" drill="1"/>
+<pad name="23" x="-7.62" y="-11.43" drill="1"/>
+<pad name="16" x="-7.62" y="6.35" drill="1"/>
+<pad name="9" x="7.62" y="6.35" drill="1"/>
+<pad name="21" x="-7.62" y="-6.35" drill="1"/>
+<pad name="4" x="7.62" y="-6.35" drill="1"/>
+<pad name="22" x="-7.62" y="-8.89" drill="1"/>
+<text x="-8.9154" y="18.4658" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="-8.9154" y="-18.4658" size="0.8128" layer="27" font="vector" align="top-left">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -7129,6 +7149,62 @@ with up to 100mA of output current</description>
 <pin name="3" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="4" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
+<symbol name="H3FA">
+<description>H3FA-A Time Delay Relay
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/307/-794852.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pin name="RESET" x="22.86" y="-5.08" length="short" direction="in" rot="R180"/>
+<pin name="GND" x="22.86" y="-17.78" length="short" direction="pwr" rot="R180"/>
+<pin name="TIME2" x="22.86" y="-10.16" length="short" direction="in" rot="R180"/>
+<pin name="TIME3" x="22.86" y="-7.62" length="short" direction="in" rot="R180"/>
+<pin name="NC-1" x="-2.54" y="-27.94" visible="pad" length="short" swaplevel="1"/>
+<pin name="NC-2" x="22.86" y="-25.4" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="VDD" x="-2.54" y="-17.78" length="short" direction="pwr"/>
+<pin name="RESEXT" x="-2.54" y="-10.16" length="short" direction="pas"/>
+<pin name="RESINT" x="-2.54" y="-5.08" length="short" direction="pas"/>
+<pin name="RESCON" x="-2.54" y="-2.54" length="short" direction="pas"/>
+<pin name="NO-1" x="-2.54" y="-38.1" visible="pad" length="short" swaplevel="2"/>
+<pin name="NO-2" x="22.86" y="-40.64" visible="pad" length="short" swaplevel="2" rot="R180"/>
+<circle x="7.62" y="-27.94" radius="0.635" width="0.1524" layer="94"/>
+<circle x="12.7" y="-30.48" radius="0.635" width="0.1524" layer="94"/>
+<circle x="12.7" y="-25.4" radius="0.635" width="0.1524" layer="94"/>
+<circle x="7.62" y="-38.1" radius="0.635" width="0.1524" layer="94"/>
+<circle x="12.7" y="-40.64" radius="0.635" width="0.1524" layer="94"/>
+<circle x="12.7" y="-35.56" radius="0.635" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="12.7" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-22.86" x2="7.62" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-22.86" x2="7.62" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="12.7" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="12.7" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="8.255" y1="-27.6225" x2="12.065" y2="-25.7175" width="0.1524" layer="94"/>
+<wire x1="8.255" y1="-37.7825" x2="12.065" y2="-35.8775" width="0.1524" layer="94"/>
+<polygon width="0.0254" layer="94">
+<vertex x="11.176" y="-25.654"/>
+<vertex x="11.684" y="-26.416"/>
+<vertex x="12.192" y="-25.654"/>
+</polygon>
+<polygon width="0.0254" layer="94">
+<vertex x="11.176" y="-35.814"/>
+<vertex x="11.684" y="-36.576"/>
+<vertex x="12.192" y="-35.814"/>
+</polygon>
+<wire x1="20.32" y1="0" x2="20.32" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-25.4" x2="20.32" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-40.64" x2="20.32" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-43.18" x2="0" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="0" y1="-43.18" x2="0" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="0" y1="-38.1" x2="0" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="0" y1="-27.94" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<text x="0" y="-43.942" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<wire x1="0" y1="-27.94" x2="6.858" y2="-27.94" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="-25.4" x2="13.462" y2="-25.4" width="0.1524" layer="94"/>
+<wire x1="0" y1="-38.1" x2="6.858" y2="-38.1" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="-40.64" x2="13.462" y2="-40.64" width="0.1524" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-2_?_*" prefix="J">
@@ -9502,6 +9578,34 @@ Variant 2: Addressable/Multi-Drop Configuration
 <attribute name="MOPN" value="584-LTC4421CG#PBF"/>
 <attribute name="MPN" value="LTC4421CG#PBF"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="H3FA-*">
+<description>H3FA-A timer
+https://www.mouser.com/datasheet/2/307/-794852.pdf</description>
+<gates>
+<gate name="G$1" symbol="H3FA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="H3FA">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="NC-1" pad="9"/>
+<connect gate="G$1" pin="NC-2" pad="12"/>
+<connect gate="G$1" pin="NO-1" pad="16"/>
+<connect gate="G$1" pin="NO-2" pad="13"/>
+<connect gate="G$1" pin="RESCON" pad="21"/>
+<connect gate="G$1" pin="RESET" pad="4"/>
+<connect gate="G$1" pin="RESEXT" pad="23"/>
+<connect gate="G$1" pin="RESINT" pad="22"/>
+<connect gate="G$1" pin="TIME2" pad="2"/>
+<connect gate="G$1" pin="TIME3" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="24"/>
+</connects>
+<technologies>
+<technology name="A"/>
 </technologies>
 </device>
 </devices>

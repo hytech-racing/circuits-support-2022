@@ -3401,7 +3401,7 @@ visible on the PCB.</text>
 <text x="-7.112" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-6.858" y1="-4.445" x2="6.858" y2="4.445" layer="39"/>
 </package>
-<package name="1206-RES">
+<package name="1206-RES-ARRAY">
 <description>YC/TC164
 &lt;br&gt;
 &lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf"&gt;Landing Pattern&lt;/a&gt;
@@ -4064,6 +4064,7 @@ Toshiba
 <wire x1="3.4544" y1="3.302" x2="3.4544" y2="-3.302" width="0.127" layer="21"/>
 <wire x1="3.4544" y1="-3.302" x2="-3.4544" y2="-3.302" width="0.127" layer="21"/>
 <wire x1="-3.4544" y1="-3.302" x2="-3.4544" y2="3.302" width="0.127" layer="21"/>
+<rectangle x1="-4.064" y1="-4.064" x2="4.064" y2="4.064" layer="39"/>
 </package>
 <package name="H3FA">
 <wire x1="8.9154" y1="18.4658" x2="8.9154" y2="-18.4658" width="0.254" layer="1"/>
@@ -4084,6 +4085,21 @@ Toshiba
 <pad name="22" x="-7.62" y="-8.89" drill="1"/>
 <text x="-8.9154" y="18.4658" size="0.8128" layer="25" font="vector">&gt;NAME</text>
 <text x="-8.9154" y="-18.4658" size="0.8128" layer="27" font="vector" align="top-left">&gt;VALUE</text>
+</package>
+<package name="1206-CAP">
+<description>1206 Cap
+&lt;br&gt;
+&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X5R_4V-to-50V_26.pdf"&gt;Size&lt;/a&gt;</description>
+<smd name="1" x="-1.5" y="0" dx="1" dy="1.8" layer="1"/>
+<smd name="2" x="1.5" y="0" dx="1" dy="1.8" layer="1"/>
+<text x="0" y="1.25" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-0.8" x2="-1.6" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.127" layer="21"/>
+<rectangle x1="-2.2" y1="-1.25" x2="2.2" y2="1.25" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -5415,13 +5431,13 @@ Note: No sure about SDO/SDI accuracy</description>
 <pin name="UVLO" x="-2.54" y="-10.16" length="short" direction="in"/>
 <pin name="OVP" x="-2.54" y="-17.78" length="short" direction="in"/>
 <pin name="DVDT" x="-2.54" y="-20.32" length="short" direction="in"/>
-<pin name="MODE" x="22.86" y="-22.86" length="short" direction="in" rot="R180"/>
-<pin name="RTN" x="22.86" y="-15.24" length="short" direction="pas" rot="R180"/>
+<pin name="MODE" x="-2.54" y="-22.86" length="short" direction="in"/>
+<pin name="RTN" x="-2.54" y="-30.48" length="short" direction="pas"/>
 <pin name="OUT" x="22.86" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="!SHDN!" x="22.86" y="-12.7" length="short" direction="in" rot="R180"/>
-<pin name="IMON" x="22.86" y="-25.4" length="short" rot="R180"/>
-<pin name="ILIM" x="22.86" y="-27.94" length="short" direction="in" rot="R180"/>
-<pin name="GND" x="-2.54" y="-30.48" length="short" direction="pwr"/>
+<pin name="IMON" x="22.86" y="-22.86" length="short" rot="R180"/>
+<pin name="ILIM" x="22.86" y="-25.4" length="short" direction="in" rot="R180"/>
+<pin name="GND" x="10.16" y="-35.56" length="short" direction="pwr" rot="R90"/>
 <pin name="!FLT!" x="22.86" y="-10.16" length="short" direction="out" rot="R180"/>
 <wire x1="0" y1="0" x2="0" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="0" y1="-33.02" x2="20.32" y2="-33.02" width="0.254" layer="94"/>
@@ -5904,9 +5920,8 @@ I2C Mode
 <pin name="MINUS" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <pin name="PLUS" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <text x="-3.175" y="1.27" size="1.778" layer="94" rot="R90" align="center">+</text>
-<text x="-1.778" y="-2.54" size="1.27" layer="96" align="top-right">&gt;CAPACITANCE</text>
-<text x="-0.762" y="-2.54" size="1.27" layer="96" align="top-left">&gt;VOLTAGE</text>
-<text x="-1.27" y="-4.318" size="1.27" layer="96" align="top-center">&gt;MPN</text>
+<text x="-0.762" y="-2.54" size="1.27" layer="96" align="top-left">&gt;CAPACITANCE</text>
+<text x="-1.778" y="-2.54" size="1.27" layer="96" align="top-right">&gt;VOLTAGE</text>
 </symbol>
 <symbol name="DIODE_SCHOTTKY">
 <wire x1="0" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
@@ -7115,8 +7130,8 @@ with up to 100mA of output current</description>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <pin name="VDD1" x="-2.54" y="-12.7" length="short" direction="pwr"/>
 <pin name="GND1" x="-2.54" y="-20.32" length="short" direction="pwr"/>
-<pin name="GND2" x="25.4" y="-22.86" length="short" direction="pwr" rot="R180"/>
-<pin name="VDD2" x="25.4" y="-15.24" length="short" direction="pwr" rot="R180"/>
+<pin name="GND2" x="25.4" y="-27.94" length="short" direction="pwr" rot="R180"/>
+<pin name="VDD2" x="25.4" y="-20.32" length="short" direction="pwr" rot="R180"/>
 <pin name="OUTN" x="25.4" y="-7.62" length="short" direction="out" function="dot" rot="R180"/>
 <pin name="OUTP" x="25.4" y="-2.54" length="short" direction="out" rot="R180"/>
 <pin name="IN" x="-2.54" y="-5.08" length="short" direction="in"/>
@@ -7245,6 +7260,7 @@ with up to 100mA of output current</description>
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/445/885012006013-1726946.pdf"&gt;885012006013&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/218/SMD_High_and_Std_StackiCap_P62-1825512.pdf"&gt;2220Y6300105KXTWS2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/447/UPY_GPHC_X5R_4V_to_50V_26-1827097.pdf"&gt;Yageo Class 2, X5R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/ProductDetail/TDK/C3216X5R1V226M160AC?qs=%2Fha2pyFadujbcx9jh7lYl%2F4NeMoXFhdc8AqVWNq4wW6M2y7zl6GzBuhgtI0ngznN"&gt;TDK C Series&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
@@ -7415,6 +7431,23 @@ with up to 100mA of output current</description>
 <attribute name="MPN" value="CC0805MKX5R8BB226"/>
 <attribute name="TOLERANCE" value="20%"/>
 <attribute name="VOLTAGE" value="25V"/>
+</technology>
+</technologies>
+</device>
+<device name="1206" package="1206-CAP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="35V_22UF">
+<attribute name="CAPACITANCE" value="22µF"/>
+<attribute name="DKPN" value="445-8045-1-ND"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="MOPN" value="810-C3216X5R1V226M"/>
+<attribute name="MPN" value="C3216X5R1V226M160AC"/>
+<attribute name="TOLERANCE" value="20%"/>
+<attribute name="VOLTAGE" value="35V"/>
 </technology>
 </technologies>
 </device>
@@ -8549,7 +8582,7 @@ Ceramic SMD Surface Mount Fuse
 <gate name="D" symbol="RESISTOR" x="0" y="-30.48" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="1206-RES">
+<device name="" package="1206-RES-ARRAY">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="8"/>

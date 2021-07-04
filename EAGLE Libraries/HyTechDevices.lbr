@@ -7117,8 +7117,8 @@ with up to 100mA of output current</description>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-18.542" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
-<symbol name="ISO224">
-<description>ISO224
+<symbol name="ISO224*">
+<description>ISO224*: Isolated precision amplifier
 &lt;br&gt;
 &lt;a href="https://www.ti.com/lit/ds/symlink/iso224.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <wire x1="0" y1="-30.48" x2="11.176" y2="-30.48" width="0.254" layer="94"/>
@@ -9639,6 +9639,46 @@ https://www.mouser.com/datasheet/2/307/-794852.pdf</description>
 </connects>
 <technologies>
 <technology name="A"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ISO224*">
+<description>ISO224*
+&lt;br&gt;
+ISO224A: Low-Grade
+&lt;br&gt;
+ISO224B: High-Grade
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ds/symlink/iso224.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&amp;ts=1625423566252&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fiso224"&gt;ISO224* Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ISO224*" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-08">
+<connects>
+<connect gate="G$1" pin="GND1" pad="4"/>
+<connect gate="G$1" pin="GND2" pad="8"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUTN" pad="7"/>
+<connect gate="G$1" pin="OUTP" pad="6"/>
+<connect gate="G$1" pin="VCAP" pad="1"/>
+<connect gate="G$1" pin="VDD1" pad="3"/>
+<connect gate="G$1" pin="VDD2" pad="5"/>
+</connects>
+<technologies>
+<technology name="A">
+<attribute name="DKPN" value="296-52315-2-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-ISO224ADWVR" constant="no"/>
+<attribute name="MPN" value="ISO224ADWVR" constant="no"/>
+</technology>
+<technology name="B">
+<attribute name="DKPN" value="296-52316-2-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
+<attribute name="MOPN" value="595-ISO224BDWVR" constant="no"/>
+<attribute name="MPN" value="ISO224BDWVR" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

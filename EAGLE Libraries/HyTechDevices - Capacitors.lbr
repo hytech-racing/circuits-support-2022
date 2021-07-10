@@ -7246,18 +7246,17 @@ with up to 100mA of output current</description>
 <attribute name="DKPN" value="445-173625-1-ND"/>
 <attribute name="MANUFACTURER" value="TDK Corporation"/>
 <attribute name="MOPN" value="810-C1608X7R1V105KAE"/>
-<attribute name="MPN" value="	
-C1608X7R1V105K080AE"/>
+<attribute name="MPN" value="  C1608X7R1V105K080AE"/>
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="35V"/>
 </technology>
 <technology name="50V_0.1UF">
 <attribute name="CAPACITANCE" value="0.1µF"/>
 <attribute name="DKPN" value="311-1344-1-ND"/>
-<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="MANUFACTURER" value="	
+Yageo"/>
 <attribute name="MOPN" value="603-CC603KRX7R9BB104"/>
-<attribute name="MPN" value="	
-CC0603KRX7R9BB104"/>
+<attribute name="MPN" value="  CC0603KRX7R9BB104"/>
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
@@ -7266,8 +7265,7 @@ CC0603KRX7R9BB104"/>
 <attribute name="DKPN" value="445-7404-1-ND"/>
 <attribute name="MANUFACTURER" value="TDK Corporation"/>
 <attribute name="MOPN" value="810-C1608C0G1H103J"/>
-<attribute name="MPN" value="	
-C1608C0G1H103J080AA"/>
+<attribute name="MPN" value="  C1608C0G1H103J080AA"/>
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </technology>

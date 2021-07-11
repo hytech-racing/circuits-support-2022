@@ -786,7 +786,7 @@
 <rectangle x1="-2.286" y1="-2.794" x2="2.286" y2="2.794" layer="39"/>
 <text x="-2.54" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="SOIC-08N">
+<package name="SOIC-08(NARROW,0.15&quot;)">
 <description>SOIC-8
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-soic/05081610_G_SO8.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -4101,7 +4101,7 @@ Toshiba
 <wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.127" layer="21"/>
 <rectangle x1="-2.2" y1="-1.25" x2="2.2" y2="1.25" layer="39"/>
 </package>
-<package name="SOIC-DWV0008A">
+<package name="SOIC-08(WIDE,0.295&quot;)">
 <description>SOIC-DWV0008A
 &lt;br&gt;
 &lt;a href="https://www.ti.com/lit/ml/mpds382b/mpds382b.pdf?ts=1625697704470&amp;ref_url=https%253A%252F%252Fwww.bing.com%252F"&gt;Datasheet&lt;/a&gt;</description>
@@ -8334,7 +8334,7 @@ Ceramic SMD Surface Mount Fuse
 <gate name="G$1" symbol="CAN_TRANSCIEVER_TCAN1051*V" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOIC-08N">
+<device name="" package="SOIC-08(NARROW,0.15&quot;)">
 <connects>
 <connect gate="G$1" pin="CANH" pad="7"/>
 <connect gate="G$1" pin="CANL" pad="6"/>
@@ -9192,7 +9192,7 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <gate name="G$1" symbol="MAX74XX" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOIC-08N">
+<device name="" package="SOIC-08(NARROW,0.15&quot;)">
 <connects>
 <connect gate="G$1" pin="!SHDN" pad="7"/>
 <connect gate="G$1" pin="CLK" pad="8"/>
@@ -9663,7 +9663,7 @@ https://www.mouser.com/datasheet/2/307/-794852.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ISO224*">
+<deviceset name="ISO224*" prefix="U">
 <description>ISO224*: Isolated precision amplifier
 &lt;br&gt;
 ISO224A: Low-Grade
@@ -9675,7 +9675,7 @@ ISO224B: High-Grade
 <gate name="G$1" symbol="ISO224*" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOIC-DWV0008A">
+<device name="" package="SOIC-08(WIDE,0.295&quot;)">
 <connects>
 <connect gate="G$1" pin="GND1" pad="4"/>
 <connect gate="G$1" pin="GND2" pad="5"/>
@@ -9688,13 +9688,13 @@ ISO224B: High-Grade
 </connects>
 <technologies>
 <technology name="A">
-<attribute name="DKPN" value="296-52315-2-ND" constant="no"/>
+<attribute name="DKPN" value="296-52315-1-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
 <attribute name="MOPN" value="595-ISO224ADWVR" constant="no"/>
 <attribute name="MPN" value="ISO224ADWVR" constant="no"/>
 </technology>
 <technology name="B">
-<attribute name="DKPN" value="296-52316-2-ND" constant="no"/>
+<attribute name="DKPN" value="296-52316-1-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
 <attribute name="MOPN" value="595-ISO224BDWVR" constant="no"/>
 <attribute name="MPN" value="ISO224BDWVR" constant="no"/>

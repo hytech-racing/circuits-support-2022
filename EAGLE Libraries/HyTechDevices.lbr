@@ -4101,6 +4101,30 @@ Toshiba
 <wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.127" layer="21"/>
 <rectangle x1="-2.2" y1="-1.25" x2="2.2" y2="1.25" layer="39"/>
 </package>
+<package name="HM2112ZNLT">
+<description>HM2112ZNL Transformer
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/336/HM2112ZNL-1224892.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="12" x="-4.77951875" y="7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="11" x="-2.889759375" y="7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="10" x="-0.999996875" y="7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="9" x="0.999996875" y="7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="8" x="2.889759375" y="7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="7" x="4.77951875" y="7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="1" x="-4.77951875" y="-7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="2" x="-2.889759375" y="-7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="3" x="-0.999996875" y="-7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="4" x="0.999996875" y="-7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="5" x="2.87451875" y="-7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="6" x="4.77951875" y="-7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<wire x1="-7.349996875" y1="6.07491875" x2="7.349996875" y2="6.07491875" width="0.1524" layer="21"/>
+<wire x1="7.349996875" y1="6.07491875" x2="7.35043125" y2="-6.07491875" width="0.1524" layer="21"/>
+<wire x1="7.35043125" y1="-6.07491875" x2="-7.35043125" y2="-6.07491875" width="0.1524" layer="21"/>
+<wire x1="-7.35043125" y1="-6.07491875" x2="-7.349996875" y2="6.07491875" width="0.1524" layer="21"/>
+<circle x="-6.477" y="-7.14501875" radius="0.635" width="0.1524" layer="21"/>
+<text x="-7.62" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-8.382" y1="-8.382" x2="8.382" y2="8.382" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -7533,17 +7557,19 @@ MAX voltage: 100V</description>
 </deviceset>
 <deviceset name="TRANSFORMER" prefix="T">
 <description>&lt;b&gt;2 Channel SMT Transformer&lt;/b&gt;&lt;br/&gt;
+&lt;i&gt;Specs for both HM2102NL and HM2112ZNL Transformers&lt;/i&gt;&lt;br/&gt;
 Turns ratio: 1CT: 1CT&lt;br/&gt;
 Isolation Voltage: 4300 VDC&lt;br/&gt;
 Inductance: 150 uH&lt;br/&gt;
 Leakage Inductance: 0.50 uH max
-&lt;p&gt;&lt;a href="https://www.mouser.com/datasheet/2/336/HM2102NL-1218600.pdf"&gt;DataSheet&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;HM2102NLT: &lt;a href="https://www.mouser.com/datasheet/2/336/HM2102NL-1218600.pdf"&gt;DataSheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;HM2112ZNLT: &lt;a href="https://www.mouser.com/datasheet/2/336/HM2112ZNL-1224892.pdf"&gt;DataSheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="A" symbol="TRANSFORMER" x="5.08" y="17.78" swaplevel="1"/>
 <gate name="B" symbol="TRANSFORMER" x="5.08" y="-17.78" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="HM2102NLT">
+<device name="-HM2102NLT" package="HM2102NLT">
 <connects>
 <connect gate="A" pin="MCT" pad="2"/>
 <connect gate="A" pin="MX+" pad="1"/>
@@ -7564,6 +7590,30 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MANUFACTURER" value="Pulse Electronics Network"/>
 <attribute name="MOPN" value="673-HM2102NLT"/>
 <attribute name="MPN" value="HM2102NLT"/>
+</technology>
+</technologies>
+</device>
+<device name="-HM2112ZNLT" package="HM2112ZNLT">
+<connects>
+<connect gate="A" pin="MCT" pad="2"/>
+<connect gate="A" pin="MX+" pad="1"/>
+<connect gate="A" pin="MX-" pad="3"/>
+<connect gate="A" pin="TCT" pad="11"/>
+<connect gate="A" pin="TD+" pad="12"/>
+<connect gate="A" pin="TD-" pad="10"/>
+<connect gate="B" pin="MCT" pad="5"/>
+<connect gate="B" pin="MX+" pad="4"/>
+<connect gate="B" pin="MX-" pad="6"/>
+<connect gate="B" pin="TCT" pad="8"/>
+<connect gate="B" pin="TD+" pad="9"/>
+<connect gate="B" pin="TD-" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="1840-1036-2-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Pulse Electronics" constant="no"/>
+<attribute name="MOPN" value="673-HM2112ZNLT" constant="no"/>
+<attribute name="MPN" value="HM2112ZNLT" constant="no"/>
 </technology>
 </technologies>
 </device>

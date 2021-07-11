@@ -69,4 +69,4 @@ checkNames = 0
 checkWireStubs = 1
 checkPolygonWidth = 0
 useDiameter = 13
-maxErrors = 50
+maxErrors = 500

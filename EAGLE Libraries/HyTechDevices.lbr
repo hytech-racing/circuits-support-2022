@@ -7610,10 +7610,10 @@ Leakage Inductance: 0.50 uH max
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="1840-1036-2-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Pulse Electronics" constant="no"/>
-<attribute name="MOPN" value="673-HM2112ZNLT" constant="no"/>
-<attribute name="MPN" value="HM2112ZNLT" constant="no"/>
+<attribute name="DKPN" value="1840-1036-1-ND"/>
+<attribute name="MANUFACTURER" value="Pulse Electronics"/>
+<attribute name="MOPN" value="673-HM2112ZNLT"/>
+<attribute name="MPN" value="HM2112ZNLT"/>
 </technology>
 </technologies>
 </device>
@@ -7813,7 +7813,7 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="VOLTAGE" value="75V"/>
 </technology>
 <technology name="1.65K">
-<attribute name="DKPN" value="311-1.65KHRCT-ND - Cut Tape (CT)"/>
+<attribute name="DKPN" value="311-1.65KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
 <attribute name="MOPN" value="603-RC0603FR-071K65L"/>
 <attribute name="MPN" value="RC0603FR-071K65L"/>
@@ -7946,8 +7946,7 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="DKPN" value="311-22.0HRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
 <attribute name="MOPN" value="603-RC0603FR-0722RL"/>
-<attribute name="MPN" value="
-RC0603FR-0722RL"/>
+<attribute name="MPN" value=" RC0603FR-0722RL"/>
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="22"/>
 <attribute name="TOLERANCE" value="1%"/>
@@ -7987,8 +7986,7 @@ RC0603FR-0722RL"/>
 <attribute name="DKPN" value="311-4.64KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
 <attribute name="MOPN" value="603-RC0603FR-074K64L"/>
-<attribute name="MPN" value="
-RC0603FR-074K64L"/>
+<attribute name="MPN" value=" RC0603FR-074K64L"/>
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="4.64k"/>
 <attribute name="TOLERANCE" value="1%"/>

@@ -786,7 +786,7 @@
 <rectangle x1="-2.286" y1="-2.794" x2="2.286" y2="2.794" layer="39"/>
 <text x="-2.54" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="SOIC-08">
+<package name="SOIC-08(NARROW,0.15&quot;)">
 <description>SOIC-8
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-soic/05081610_G_SO8.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -4101,6 +4101,26 @@ Toshiba
 <wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.127" layer="21"/>
 <rectangle x1="-2.2" y1="-1.25" x2="2.2" y2="1.25" layer="39"/>
 </package>
+<package name="SOIC-08(WIDE,0.295&quot;)">
+<description>SOIC-DWV0008A
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ml/mpds382b/mpds382b.pdf?ts=1625697704470&amp;ref_url=https%253A%252F%252Fwww.bing.com%252F"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="8" x="-1.905" y="5.44995" dx="1.800096875" dy="0.599946875" layer="1" rot="R90"/>
+<smd name="7" x="-0.635" y="5.44995" dx="1.800096875" dy="0.599946875" layer="1" rot="R90"/>
+<smd name="6" x="0.635" y="5.44995" dx="1.800096875" dy="0.599946875" layer="1" rot="R90"/>
+<smd name="5" x="1.905" y="5.44995" dx="1.800096875" dy="0.599946875" layer="1" rot="R90"/>
+<smd name="1" x="-1.905" y="-5.44995" dx="1.800096875" dy="0.599946875" layer="1" rot="R90"/>
+<smd name="2" x="-0.635" y="-5.44995" dx="1.800096875" dy="0.599946875" layer="1" rot="R90"/>
+<smd name="3" x="0.635" y="-5.44995" dx="1.800096875" dy="0.599946875" layer="1" rot="R90"/>
+<smd name="4" x="1.905" y="-5.44995" dx="1.800096875" dy="0.599946875" layer="1" rot="R90"/>
+<wire x1="-2.974975" y1="-3.81" x2="2.974975" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="2.974975" y1="-3.81" x2="2.974975" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="-2.974975" y1="3.81" x2="-2.974975" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="-2.974975" y1="3.81" x2="2.974975" y2="3.81" width="0.1524" layer="21"/>
+<rectangle x1="-3.556" y1="-6.858" x2="3.556" y2="6.858" layer="39"/>
+<text x="-3.556" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<circle x="-3.556" y="-4.572" radius="0.254" width="0" layer="21"/>
+</package>
 <package name="HM2112ZNLT">
 <description>HM2112ZNL Transformer
 &lt;br&gt;
@@ -7141,8 +7161,8 @@ with up to 100mA of output current</description>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-18.542" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
-<symbol name="ISO224">
-<description>ISO224
+<symbol name="ISO224*">
+<description>ISO224*: Isolated precision amplifier
 &lt;br&gt;
 &lt;a href="https://www.ti.com/lit/ds/symlink/iso224.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <wire x1="0" y1="-30.48" x2="11.176" y2="-30.48" width="0.254" layer="94"/>
@@ -8474,7 +8494,7 @@ Ceramic SMD Surface Mount Fuse
 <gate name="G$1" symbol="CAN_TRANSCIEVER_TCAN1051*V" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOIC-08">
+<device name="" package="SOIC-08(NARROW,0.15&quot;)">
 <connects>
 <connect gate="G$1" pin="CANH" pad="7"/>
 <connect gate="G$1" pin="CANL" pad="6"/>
@@ -9332,7 +9352,7 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <gate name="G$1" symbol="MAX74XX" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOIC-08">
+<device name="" package="SOIC-08(NARROW,0.15&quot;)">
 <connects>
 <connect gate="G$1" pin="!SHDN" pad="7"/>
 <connect gate="G$1" pin="CLK" pad="8"/>
@@ -9799,6 +9819,46 @@ https://www.mouser.com/datasheet/2/307/-794852.pdf</description>
 </connects>
 <technologies>
 <technology name="A"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ISO224*" prefix="U">
+<description>ISO224*: Isolated precision amplifier
+&lt;br&gt;
+ISO224A: Low-Grade
+&lt;br&gt;
+ISO224B: High-Grade
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ds/symlink/iso224.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&amp;ts=1625423566252&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fiso224"&gt;ISO224* Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ISO224*" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-08(WIDE,0.295&quot;)">
+<connects>
+<connect gate="G$1" pin="GND1" pad="4"/>
+<connect gate="G$1" pin="GND2" pad="5"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUTN" pad="6"/>
+<connect gate="G$1" pin="OUTP" pad="7"/>
+<connect gate="G$1" pin="VCAP" pad="1"/>
+<connect gate="G$1" pin="VDD1" pad="3"/>
+<connect gate="G$1" pin="VDD2" pad="8"/>
+</connects>
+<technologies>
+<technology name="A">
+<attribute name="DKPN" value="296-52315-1-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-ISO224ADWVR"/>
+<attribute name="MPN" value="ISO224ADWVR"/>
+</technology>
+<technology name="B">
+<attribute name="DKPN" value="296-52316-1-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-ISO224BDWVR"/>
+<attribute name="MPN" value="ISO224BDWVR"/>
+</technology>
 </technologies>
 </device>
 </devices>

@@ -273,12 +273,6 @@
 <connect gate="G$1" pin="OUT" pad="2 4"/>
 </connects>
 <technologies>
-<technology name="15V">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-</technology>
 <technology name="5V">
 <attribute name="DKPN" value="497-17240-1-ND"/>
 <attribute name="MANUFACTURER" value="STMicroelectronics"/>
@@ -316,10 +310,10 @@
 <attribute name="MPN" value="NCP785AH120T1G"/>
 </technology>
 <technology name="15V">
-<attribute name="DKPN" value="NCP785AH150T1GOSTR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="ON Semiconductor" constant="no"/>
-<attribute name="MOPN" value="863-NCP785AH150T1G" constant="no"/>
-<attribute name="MPN" value="NCP785AH150T1G" constant="no"/>
+<attribute name="DKPN" value="NCP785AH150T1GOSTR-ND"/>
+<attribute name="MANUFACTURER" value="ON Semiconductor"/>
+<attribute name="MOPN" value="863-NCP785AH150T1G"/>
+<attribute name="MPN" value="NCP785AH150T1G"/>
 </technology>
 </technologies>
 </device>

@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -786,7 +786,7 @@
 <rectangle x1="-2.286" y1="-2.794" x2="2.286" y2="2.794" layer="39"/>
 <text x="-2.54" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="SOIC-08">
+<package name="SOIC-08(NARROW,0.15&quot;)">
 <description>SOIC-8
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-soic/05081610_G_SO8.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -4101,6 +4101,50 @@ Toshiba
 <wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.127" layer="21"/>
 <rectangle x1="-2.2" y1="-1.25" x2="2.2" y2="1.25" layer="39"/>
 </package>
+<package name="SOIC-08(WIDE,0.295&quot;)">
+<description>SOIC-DWV0008A
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ml/mpds382b/mpds382b.pdf?ts=1625697704470&amp;ref_url=https%253A%252F%252Fwww.bing.com%252F"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="8" x="-1.905" y="5.44995" dx="1.800096875" dy="0.599946875" layer="1" rot="R90"/>
+<smd name="7" x="-0.635" y="5.44995" dx="1.800096875" dy="0.599946875" layer="1" rot="R90"/>
+<smd name="6" x="0.635" y="5.44995" dx="1.800096875" dy="0.599946875" layer="1" rot="R90"/>
+<smd name="5" x="1.905" y="5.44995" dx="1.800096875" dy="0.599946875" layer="1" rot="R90"/>
+<smd name="1" x="-1.905" y="-5.44995" dx="1.800096875" dy="0.599946875" layer="1" rot="R90"/>
+<smd name="2" x="-0.635" y="-5.44995" dx="1.800096875" dy="0.599946875" layer="1" rot="R90"/>
+<smd name="3" x="0.635" y="-5.44995" dx="1.800096875" dy="0.599946875" layer="1" rot="R90"/>
+<smd name="4" x="1.905" y="-5.44995" dx="1.800096875" dy="0.599946875" layer="1" rot="R90"/>
+<wire x1="-2.974975" y1="-3.81" x2="2.974975" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="2.974975" y1="-3.81" x2="2.974975" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="-2.974975" y1="3.81" x2="-2.974975" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="-2.974975" y1="3.81" x2="2.974975" y2="3.81" width="0.1524" layer="21"/>
+<rectangle x1="-3.556" y1="-6.858" x2="3.556" y2="6.858" layer="39"/>
+<text x="-3.556" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<circle x="-3.556" y="-4.572" radius="0.254" width="0" layer="21"/>
+</package>
+<package name="HM2112ZNLT">
+<description>HM2112ZNL Transformer
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/336/HM2112ZNL-1224892.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="12" x="-4.77951875" y="7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="11" x="-2.889759375" y="7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="10" x="-0.999996875" y="7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="9" x="0.999996875" y="7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="8" x="2.889759375" y="7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="7" x="4.77951875" y="7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="1" x="-4.77951875" y="-7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="2" x="-2.889759375" y="-7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="3" x="-0.999996875" y="-7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="4" x="0.999996875" y="-7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="5" x="2.87451875" y="-7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<smd name="6" x="4.77951875" y="-7.14501875" dx="1.889759375" dy="1.0200625" layer="1" rot="R90"/>
+<wire x1="-7.349996875" y1="6.07491875" x2="7.349996875" y2="6.07491875" width="0.1524" layer="21"/>
+<wire x1="7.349996875" y1="6.07491875" x2="7.35043125" y2="-6.07491875" width="0.1524" layer="21"/>
+<wire x1="7.35043125" y1="-6.07491875" x2="-7.35043125" y2="-6.07491875" width="0.1524" layer="21"/>
+<wire x1="-7.35043125" y1="-6.07491875" x2="-7.349996875" y2="6.07491875" width="0.1524" layer="21"/>
+<circle x="-6.477" y="-7.14501875" radius="0.635" width="0.1524" layer="21"/>
+<text x="-7.62" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-8.382" y1="-8.382" x2="8.382" y2="8.382" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -7117,8 +7161,8 @@ with up to 100mA of output current</description>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-18.542" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
-<symbol name="ISO224">
-<description>ISO224
+<symbol name="ISO224*">
+<description>ISO224*: Isolated precision amplifier
 &lt;br&gt;
 &lt;a href="https://www.ti.com/lit/ds/symlink/iso224.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <wire x1="0" y1="-30.48" x2="11.176" y2="-30.48" width="0.254" layer="94"/>
@@ -7533,17 +7577,19 @@ MAX voltage: 100V</description>
 </deviceset>
 <deviceset name="TRANSFORMER" prefix="T">
 <description>&lt;b&gt;2 Channel SMT Transformer&lt;/b&gt;&lt;br/&gt;
+&lt;i&gt;Specs for both HM2102NL and HM2112ZNL Transformers&lt;/i&gt;&lt;br/&gt;
 Turns ratio: 1CT: 1CT&lt;br/&gt;
 Isolation Voltage: 4300 VDC&lt;br/&gt;
 Inductance: 150 uH&lt;br/&gt;
 Leakage Inductance: 0.50 uH max
-&lt;p&gt;&lt;a href="https://www.mouser.com/datasheet/2/336/HM2102NL-1218600.pdf"&gt;DataSheet&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;HM2102NLT: &lt;a href="https://www.mouser.com/datasheet/2/336/HM2102NL-1218600.pdf"&gt;DataSheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;HM2112ZNLT: &lt;a href="https://www.mouser.com/datasheet/2/336/HM2112ZNL-1224892.pdf"&gt;DataSheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="A" symbol="TRANSFORMER" x="5.08" y="17.78" swaplevel="1"/>
 <gate name="B" symbol="TRANSFORMER" x="5.08" y="-17.78" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="HM2102NLT">
+<device name="-HM2102NLT" package="HM2102NLT">
 <connects>
 <connect gate="A" pin="MCT" pad="2"/>
 <connect gate="A" pin="MX+" pad="1"/>
@@ -7564,6 +7610,30 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MANUFACTURER" value="Pulse Electronics Network"/>
 <attribute name="MOPN" value="673-HM2102NLT"/>
 <attribute name="MPN" value="HM2102NLT"/>
+</technology>
+</technologies>
+</device>
+<device name="-HM2112ZNLT" package="HM2112ZNLT">
+<connects>
+<connect gate="A" pin="MCT" pad="2"/>
+<connect gate="A" pin="MX+" pad="1"/>
+<connect gate="A" pin="MX-" pad="3"/>
+<connect gate="A" pin="TCT" pad="11"/>
+<connect gate="A" pin="TD+" pad="12"/>
+<connect gate="A" pin="TD-" pad="10"/>
+<connect gate="B" pin="MCT" pad="5"/>
+<connect gate="B" pin="MX+" pad="4"/>
+<connect gate="B" pin="MX-" pad="6"/>
+<connect gate="B" pin="TCT" pad="8"/>
+<connect gate="B" pin="TD+" pad="9"/>
+<connect gate="B" pin="TD-" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="1840-1036-1-ND"/>
+<attribute name="MANUFACTURER" value="Pulse Electronics"/>
+<attribute name="MOPN" value="673-HM2112ZNLT"/>
+<attribute name="MPN" value="HM2112ZNLT"/>
 </technology>
 </technologies>
 </device>
@@ -7742,6 +7812,36 @@ Ceramic SMD Surface Mount Fuse
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="0">
+<attribute name="DKPN" value="311-0.0HRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-070RL"/>
+<attribute name="MPN" value="RC0603FR-070RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="0"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="1.24K">
+<attribute name="DKPN" value="311-1.24KHRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-071K24L"/>
+<attribute name="MPN" value="RC0603FR-071K24L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="1.24k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="1.65K">
+<attribute name="DKPN" value="311-1.65KHRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-071K65L"/>
+<attribute name="MPN" value="RC0603FR-071K65L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="1.65k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
 <technology name="10">
 <attribute name="DKPN" value="311-10.0HRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -7749,6 +7849,16 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="MPN" value="RC0603FR-0710RL"/>
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="10"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="10.5K">
+<attribute name="DKPN" value="311-10.5KHRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-0710K5L"/>
+<attribute name="MPN" value="RC0603FR-0710K5L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="10.5k"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="75V"/>
 </technology>
@@ -7802,6 +7912,16 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="75V"/>
 </technology>
+<technology name="18.7K">
+<attribute name="DKPN" value="311-18.7KHRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-0718K7L"/>
+<attribute name="MPN" value="RC0603FR-0718K7L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="18.7k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
 <technology name="180">
 <attribute name="DKPN" value="311-180HRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -7832,6 +7952,26 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="75V"/>
 </technology>
+<technology name="2.55K">
+<attribute name="DKPN" value="311-2.55KHRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-072K55L"/>
+<attribute name="MPN" value="RC0603FR-072K55L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="2.55k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="22">
+<attribute name="DKPN" value="311-22.0HRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-0722RL"/>
+<attribute name="MPN" value=" RC0603FR-0722RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="22"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
 <technology name="22.1K">
 <attribute name="DKPN" value="P22.1KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -7849,6 +7989,36 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="MPN" value="RC0603FR-073K3L"/>
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="3.3k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="36.5K">
+<attribute name="DKPN" value="311-36.5KHRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-0736K5L"/>
+<attribute name="MPN" value="RC0603FR-0736K5L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="36.5k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="4.64K">
+<attribute name="DKPN" value="311-4.64KHRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-074K64L"/>
+<attribute name="MPN" value=" RC0603FR-074K64L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="4.64k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="402">
+<attribute name="DKPN" value="311-402HRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-07402RL"/>
+<attribute name="MPN" value="RC0603FR-07402RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="402"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="75V"/>
 </technology>
@@ -7871,6 +8041,16 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="RESISTANCE" value="60.4"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="DNP">
+<attribute name="DKPN" value=""/>
+<attribute name="MANUFACTURER" value=""/>
+<attribute name="MOPN" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="POWER" value=""/>
+<attribute name="RESISTANCE" value="DNP"/>
+<attribute name="TOLERANCE" value=""/>
+<attribute name="VOLTAGE" value=""/>
 </technology>
 </technologies>
 </device>
@@ -8314,7 +8494,7 @@ Ceramic SMD Surface Mount Fuse
 <gate name="G$1" symbol="CAN_TRANSCIEVER_TCAN1051*V" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOIC-08">
+<device name="" package="SOIC-08(NARROW,0.15&quot;)">
 <connects>
 <connect gate="G$1" pin="CANH" pad="7"/>
 <connect gate="G$1" pin="CANL" pad="6"/>
@@ -9172,7 +9352,7 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <gate name="G$1" symbol="MAX74XX" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOIC-08">
+<device name="" package="SOIC-08(NARROW,0.15&quot;)">
 <connects>
 <connect gate="G$1" pin="!SHDN" pad="7"/>
 <connect gate="G$1" pin="CLK" pad="8"/>
@@ -9639,6 +9819,46 @@ https://www.mouser.com/datasheet/2/307/-794852.pdf</description>
 </connects>
 <technologies>
 <technology name="A"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ISO224*" prefix="U">
+<description>ISO224*: Isolated precision amplifier
+&lt;br&gt;
+ISO224A: Low-Grade
+&lt;br&gt;
+ISO224B: High-Grade
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ds/symlink/iso224.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&amp;ts=1625423566252&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fiso224"&gt;ISO224* Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ISO224*" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-08(WIDE,0.295&quot;)">
+<connects>
+<connect gate="G$1" pin="GND1" pad="4"/>
+<connect gate="G$1" pin="GND2" pad="5"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUTN" pad="6"/>
+<connect gate="G$1" pin="OUTP" pad="7"/>
+<connect gate="G$1" pin="VCAP" pad="1"/>
+<connect gate="G$1" pin="VDD1" pad="3"/>
+<connect gate="G$1" pin="VDD2" pad="8"/>
+</connects>
+<technologies>
+<technology name="A">
+<attribute name="DKPN" value="296-52315-1-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-ISO224ADWVR"/>
+<attribute name="MPN" value="ISO224ADWVR"/>
+</technology>
+<technology name="B">
+<attribute name="DKPN" value="296-52316-1-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-ISO224BDWVR"/>
+<attribute name="MPN" value="ISO224BDWVR"/>
+</technology>
 </technologies>
 </device>
 </devices>

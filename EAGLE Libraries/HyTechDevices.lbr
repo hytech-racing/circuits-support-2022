@@ -9688,16 +9688,16 @@ ISO224B: High-Grade
 </connects>
 <technologies>
 <technology name="A">
-<attribute name="DKPN" value="296-52315-1-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
-<attribute name="MOPN" value="595-ISO224ADWVR" constant="no"/>
-<attribute name="MPN" value="ISO224ADWVR" constant="no"/>
+<attribute name="DKPN" value="296-52315-1-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-ISO224ADWVR"/>
+<attribute name="MPN" value="ISO224ADWVR"/>
 </technology>
 <technology name="B">
-<attribute name="DKPN" value="296-52316-1-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
-<attribute name="MOPN" value="595-ISO224BDWVR" constant="no"/>
-<attribute name="MPN" value="ISO224BDWVR" constant="no"/>
+<attribute name="DKPN" value="296-52316-1-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-ISO224BDWVR"/>
+<attribute name="MPN" value="ISO224BDWVR"/>
 </technology>
 </technologies>
 </device>

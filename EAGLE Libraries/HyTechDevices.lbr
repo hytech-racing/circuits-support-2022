@@ -3837,8 +3837,8 @@ Note: Based on Page 88.</description>
 <description>0885 Fuse
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="1" x="-5" y="0" dx="5.6" dy="7.23" layer="1"/>
-<smd name="2" x="5" y="0" dx="5.6" dy="7.23" layer="1"/>
+<smd name="1" x="-5.2324" y="0" dx="5.6" dy="7.23" layer="1"/>
+<smd name="2" x="5.2324" y="0" dx="5.6" dy="7.23" layer="1"/>
 <wire x1="-5.43" y1="2.39" x2="-5.43" y2="-2.39" width="0.127" layer="21"/>
 <wire x1="-5.43" y1="-2.39" x2="5.43" y2="-2.39" width="0.127" layer="21"/>
 <wire x1="5.43" y1="-2.39" x2="5.43" y2="2.39" width="0.127" layer="21"/>

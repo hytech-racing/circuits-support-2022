@@ -4146,6 +4146,26 @@ Toshiba
 <text x="-7.62" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-8.382" y1="-8.382" x2="8.382" y2="8.382" layer="39"/>
 </package>
+<package name="PWR263">
+<description>PWR263 Resistor
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/54/pwr263s_35-778069.pdf"&gt;Datasshet&lt;/a&gt;</description>
+<smd name="1" x="-2.54" y="0" dx="2.4" dy="4.23" layer="1"/>
+<smd name="2" x="2.54" y="0" dx="2.4" dy="4.23" layer="1"/>
+<wire x1="-2.54" y1="13.716" x2="7.747" y2="13.716" width="0.127" layer="21"/>
+<wire x1="7.747" y1="13.716" x2="7.747" y2="3.6576" width="0.127" layer="21"/>
+<wire x1="7.747" y1="3.6576" x2="-2.54" y2="3.6576" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="3.6576" x2="-2.54" y2="13.716" width="0.127" layer="21"/>
+<text x="2.54" y="15.24" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-2.54" y1="2" x2="7.62" y2="17.24" layer="39"/>
+<rectangle x1="-2.9591" y1="10.8966" x2="8.0391" y2="14.9098" layer="1"/>
+<polygon width="0.1524" layer="1">
+<vertex x="-1.524" y="10.922"/>
+<vertex x="-4" y="4.365"/>
+<vertex x="4" y="4.365"/>
+<vertex x="6.604" y="10.922"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -7829,6 +7849,7 @@ Ceramic SMD Surface Mount Fuse
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/447/Yageo_PYu_AC_51_RoHS_L_7_1714230-1874691.pdf"&gt;AC Series&lt;/a&gt;&lt;li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/447/PYu-PU_51_RoHS_L_6-1504619.pdf"&gt;PU Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/315/AOA0000C307-1149632.pdf"&gt;ERA Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/54/pwr263s_35-778069.pdf"&gt;PWR263 Series&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -7845,10 +7866,10 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="MANUFACTURER" value="Bourns Inc."/>
 <attribute name="MOPN" value="652-PWR163S255R00FE"/>
 <attribute name="MPN" value="PWR163S-25-5R00FE"/>
-<attribute name="POWER" value="25W"/>
+<attribute name="POWER" value="2.8W"/>
 <attribute name="RESISTANCE" value="5"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="2000V"/>
+<attribute name="VOLTAGE" value="3.741V"/>
 </technology>
 </technologies>
 </device>
@@ -8133,6 +8154,24 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="RESISTANCE" value="200"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="150V"/>
+</technology>
+</technologies>
+</device>
+<device name="PWR263" package="PWR263">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="5">
+<attribute name="DKPN" value="PWR263S-35-5R00F-ND"/>
+<attribute name="MANUFACTURER" value="Bourns Inc."/>
+<attribute name="MOPN" value="652-PWR263S355R00F"/>
+<attribute name="MPN" value="PWR263S-35-5R00F"/>
+<attribute name="POWER" value="3.5W"/>
+<attribute name="RESISTANCE" value="5"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="4.183V"/>
 </technology>
 </technologies>
 </device>

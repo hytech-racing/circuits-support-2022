@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7845,6 +7845,8 @@ Ceramic SMD Surface Mount Fuse
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/447/PYu-PU_51_RoHS_L_6-1504619.pdf"&gt;PU Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/315/AOA0000C307-1149632.pdf"&gt;ERA Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/54/pwr263s_35-778069.pdf"&gt;PWR263 Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf"&gt;RC Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/315/AOA0000C328-1530132.pdf"&gt;ERJ Series&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -7864,7 +7866,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="2.8W"/>
 <attribute name="RESISTANCE" value="5"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="3.741V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="3.741V"/>
+<attribute name="VOLTAGE_MAX" value="3.741V"/>
 </technology>
 </technologies>
 </device>
@@ -7882,7 +7885,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="0"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="1.24K">
 <attribute name="DKPN" value="311-1.24KHRCT-ND"/>
@@ -7892,7 +7896,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="1.24k"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="11.14V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="1.65K">
 <attribute name="DKPN" value="311-1.65KHRCT-ND"/>
@@ -7902,7 +7907,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="1.65k"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="12.85V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="10">
 <attribute name="DKPN" value="311-10.0HRCT-ND"/>
@@ -7912,7 +7918,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="10"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="1V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="10.5K">
 <attribute name="DKPN" value="311-10.5KHRCT-ND"/>
@@ -7922,7 +7929,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="10.5k"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="32.40V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="100">
 <attribute name="DKPN" value="311-100HRCT-ND"/>
@@ -7932,7 +7940,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="100"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="3.16V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="10K">
 <attribute name="DKPN" value="311-10.0KHRCT-ND"/>
@@ -7942,7 +7951,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="10k"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="31.62V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="11.5K">
 <attribute name="DKPN" value="P11.5KDBCT-ND"/>
@@ -7952,7 +7962,19 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="11.5k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="33.91V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="12.4K">
+<attribute name="DKPN" value="P20096CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B1242V"/>
+<attribute name="MPN" value="ERJ-PB3B1242V"/>
+<attribute name="POWER" value="0.2W"/>
+<attribute name="RESISTANCE" value="12.4k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="49.8V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="12K">
 <attribute name="DKPN" value="311-12.0KHRCT-ND"/>
@@ -7962,7 +7984,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="12k"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="34.64V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="17.8K">
 <attribute name="DKPN" value="311-17.8KHRCT-ND"/>
@@ -7972,7 +7995,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="17.8k"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="42.19V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="18.7K">
 <attribute name="DKPN" value="311-18.7KHRCT-ND"/>
@@ -7982,7 +8006,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="18.7k"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="43.24V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="180">
 <attribute name="DKPN" value="311-180HRCT-ND"/>
@@ -7992,7 +8017,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="180"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="4.24V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="1K">
 <attribute name="DKPN" value="311-1.00KHRCT-ND"/>
@@ -8002,7 +8028,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="1k"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="10.00V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="1M">
 <attribute name="DKPN" value="311-1.00MHRCT-ND"/>
@@ -8012,7 +8039,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="1M"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="2.55K">
 <attribute name="DKPN" value="311-2.55KHRCT-ND"/>
@@ -8022,17 +8050,19 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="2.55k"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="15.97V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="22">
 <attribute name="DKPN" value="311-22.0HRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
 <attribute name="MOPN" value="603-RC0603FR-0722RL"/>
-<attribute name="MPN" value=" RC0603FR-0722RL"/>
+<attribute name="MPN" value="RC0603FR-0722RL"/>
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="22"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="1.48V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="22.1K">
 <attribute name="DKPN" value="P22.1KDBCT-ND"/>
@@ -8042,7 +8072,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="22.1k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="47.01V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="3.3K">
 <attribute name="DKPN" value="311-3.30KHRCT-ND"/>
@@ -8052,7 +8083,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="3.3k"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="18.17V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="36.5K">
 <attribute name="DKPN" value="311-36.5KHRCT-ND"/>
@@ -8062,17 +8094,19 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="36.5k"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="60.42V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="4.64K">
 <attribute name="DKPN" value="311-4.64KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
 <attribute name="MOPN" value="603-RC0603FR-074K64L"/>
-<attribute name="MPN" value=" RC0603FR-074K64L"/>
+<attribute name="MPN" value="RC0603FR-074K64L"/>
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="4.64k"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="21.54V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="402">
 <attribute name="DKPN" value="311-402HRCT-ND"/>
@@ -8082,7 +8116,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="402"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="6.34V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="43K">
 <attribute name="DKPN" value="311-43.0KHRCT-ND"/>
@@ -8092,7 +8127,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="43k"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="65.57V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="60.4">
 <attribute name="DKPN" value="311-60.4HRCT-ND"/>
@@ -8102,7 +8138,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="60.4"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="2.48V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="DNP">
 <attribute name="DKPN" value=""/>
@@ -8112,7 +8149,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value=""/>
 <attribute name="RESISTANCE" value="DNP"/>
 <attribute name="TOLERANCE" value=""/>
-<attribute name="VOLTAGE" value=""/>
+<attribute name="VOLTAGE_CONTINUOUS" value=""/>
+<attribute name="VOLTAGE_MAX" value=""/>
 </technology>
 </technologies>
 </device>
@@ -8130,7 +8168,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="5W"/>
 <attribute name="RESISTANCE" value="1mΩ"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="0.07V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="0.07V"/>
+<attribute name="VOLTAGE_MAX" value="0.07V"/>
 </technology>
 </technologies>
 </device>
@@ -8140,6 +8179,17 @@ Ceramic SMD Surface Mount Fuse
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="12.4K">
+<attribute name="DKPN" value="P20718CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB6B1242V"/>
+<attribute name="MPN" value="ERJ-PB6B1242V"/>
+<attribute name="POWER" value="0.25W"/>
+<attribute name="RESISTANCE" value="12.4k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="55.68V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
 <technology name="200">
 <attribute name="DKPN" value="311-200CRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -8148,7 +8198,19 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.125W"/>
 <attribute name="RESISTANCE" value="200"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="150V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="5V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="365K">
+<attribute name="DKPN" value="P20885CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB6B3653V"/>
+<attribute name="MPN" value="ERJ-PB6B3653V"/>
+<attribute name="POWER" value="0.25W"/>
+<attribute name="RESISTANCE" value="365k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 </technologies>
 </device>
@@ -8166,7 +8228,8 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="3.5W"/>
 <attribute name="RESISTANCE" value="5"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="4.183V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="4.183V"/>
+<attribute name="VOLTAGE_MAX" value="4.183V"/>
 </technology>
 </technologies>
 </device>

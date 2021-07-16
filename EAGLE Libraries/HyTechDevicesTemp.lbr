@@ -219,7 +219,8 @@ Notes: See page 47</description>
 <wire x1="0" y1="3.81" x2="3.81" y2="3.81" width="0.254" layer="94"/>
 <wire x1="3.81" y1="3.81" x2="3.81" y2="-3.81" width="0.254" layer="94" curve="-180"/>
 </symbol>
-<symbol name="INVERTER">
+<symbol name="LOGICGATE_INVERTER">
+<description>Inverter</description>
 <text x="2.413" y="3.048" size="1.27" layer="95">&gt;NAME</text>
 <text x="2.413" y="-3.048" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 <pin name="IN" x="-2.54" y="0" visible="pad" length="short" direction="in"/>
@@ -240,21 +241,22 @@ Notes: See page 47</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LOGICGATE_AND">
-<description>SN74 Series: A single 2-input positive-AND gate designed for 1.65V to 5.5V Vcc operation.
-&lt;a href = "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&amp;gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2FSN74LVC1G08"&gt;Datasheet&lt;/a&gt;</description>
+<deviceset name="LOGICGATE_AND_" prefix="U">
+<description>AND Gate
+&lt;br&gt;
+&lt;a href = "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf"&gt;SN74LVC Datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="LOGICGATE_AND" x="20.32" y="-5.08"/>
-<gate name="G$2" symbol="PWR_GND" x="0" y="0" addlevel="must"/>
+<gate name="A" symbol="LOGICGATE_AND" x="20.32" y="-5.08"/>
+<gate name="P" symbol="PWR_GND" x="0" y="0" addlevel="must"/>
 </gates>
 <devices>
 <device name="" package="SC-70-5">
 <connects>
-<connect gate="G$1" pin="IN1" pad="1"/>
-<connect gate="G$1" pin="IN2" pad="2"/>
-<connect gate="G$1" pin="OUT" pad="4"/>
-<connect gate="G$2" pin="GND" pad="3"/>
-<connect gate="G$2" pin="VDD" pad="5"/>
+<connect gate="A" pin="IN1" pad="1"/>
+<connect gate="A" pin="IN2" pad="2"/>
+<connect gate="A" pin="OUT" pad="4"/>
+<connect gate="P" pin="GND" pad="3"/>
+<connect gate="P" pin="VDD" pad="5"/>
 </connects>
 <technologies>
 <technology name="DCK3">
@@ -273,19 +275,21 @@ Notes: See page 47</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LOGICGATE_INVERTER">
-<description>A single inverter gate designed for 1.65V to 5.5V operation. &lt;a href = "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&amp;gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2FSN74LVC1G04"&gt;Datasheet&lt;/a&gt;</description>
+<deviceset name="LOGICGATE_INVERTER_" prefix="U">
+<description>Inverter
+&lt;br&gt;
+&lt;a href = "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf"&gt;SN74LVC Datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="INVERTER" x="20.32" y="-5.08"/>
-<gate name="G$2" symbol="PWR_GND" x="0" y="0" addlevel="must"/>
+<gate name="A" symbol="LOGICGATE_INVERTER" x="20.32" y="-5.08"/>
+<gate name="P" symbol="PWR_GND" x="0" y="0" addlevel="must"/>
 </gates>
 <devices>
 <device name="" package="SC-70-5">
 <connects>
-<connect gate="G$1" pin="!IN" pad="4"/>
-<connect gate="G$1" pin="IN" pad="2"/>
-<connect gate="G$2" pin="GND" pad="3"/>
-<connect gate="G$2" pin="VDD" pad="5"/>
+<connect gate="A" pin="!IN" pad="4"/>
+<connect gate="A" pin="IN" pad="2"/>
+<connect gate="P" pin="GND" pad="3"/>
+<connect gate="P" pin="VDD" pad="5"/>
 </connects>
 <technologies>
 <technology name="DCK3">

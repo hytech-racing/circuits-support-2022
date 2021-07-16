@@ -7280,6 +7280,16 @@ with up to 100mA of output current</description>
 <wire x1="0" y1="-38.1" x2="6.858" y2="-38.1" width="0.1524" layer="94"/>
 <wire x1="20.32" y1="-40.64" x2="13.462" y2="-40.64" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="LOGICGATE_INVERTER">
+<description>Inverter</description>
+<text x="2.413" y="3.048" size="1.27" layer="95">&gt;NAME</text>
+<text x="2.413" y="-3.048" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<pin name="IN" x="-2.54" y="0" visible="pad" length="short" direction="in"/>
+<wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.81" x2="6.35" y2="0" width="0.254" layer="94"/>
+<wire x1="6.35" y1="0" x2="0" y2="3.81" width="0.254" layer="94"/>
+<pin name="!IN" x="8.89" y="0" visible="pad" length="short" direction="out" function="dot" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-2_?_*" prefix="J">
@@ -10007,6 +10017,73 @@ ISO224B: High-Grade
 <attribute name="MANUFACTURER" value="ON Semiconductor"/>
 <attribute name="MOPN" value="863-NCP785AH150T1G"/>
 <attribute name="MPN" value="NCP785AH150T1G"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LOGICGATE_INVERTER_" prefix="U">
+<description>Inverter
+&lt;br&gt;
+&lt;a href = "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf"&gt;SN74LVC Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="LOGICGATE_INVERTER" x="20.32" y="-5.08"/>
+<gate name="P" symbol="PWR_GND" x="0" y="0" addlevel="must"/>
+</gates>
+<devices>
+<device name="" package="SC-70-5">
+<connects>
+<connect gate="A" pin="!IN" pad="4"/>
+<connect gate="A" pin="IN" pad="2"/>
+<connect gate="P" pin="GND" pad="3"/>
+<connect gate="P" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name="DCK3">
+<attribute name="DKPN" value="296-SN74LVC1G04DCK3TR-ND " constant="no"/>
+<attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
+<attribute name="MOPN" value="595-SN74LVC1G04DCK3" constant="no"/>
+<attribute name="MPN" value="SN74LVC1G04DCK3" constant="no"/>
+</technology>
+<technology name="DCKR">
+<attribute name="DKPN" value="  2156-SN74LVC1G04DCKR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
+<attribute name="MOPN" value="595-SN74LVC1G04DCKR" constant="no"/>
+<attribute name="MPN" value="SN74LVC1G04DCKR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LOGICGATE_AND_" prefix="U">
+<description>AND Gate
+&lt;br&gt;
+&lt;a href = "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf"&gt;SN74LVC Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="LOGICGATE_AND" x="20.32" y="-5.08"/>
+<gate name="P" symbol="PWR_GND" x="0" y="0" addlevel="must"/>
+</gates>
+<devices>
+<device name="" package="SC-70-5">
+<connects>
+<connect gate="A" pin="IN1" pad="1"/>
+<connect gate="A" pin="IN2" pad="2"/>
+<connect gate="A" pin="OUT" pad="4"/>
+<connect gate="P" pin="GND" pad="3"/>
+<connect gate="P" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name="DCK3">
+<attribute name="DKPN" value="296-SN74LVC1G08DCK3TR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="  Texas Instruments" constant="no"/>
+<attribute name="MOPN" value="595-SN74LVC1G08DCK3" constant="no"/>
+<attribute name="MPN" value="SN74LVC1G08DCK3" constant="no"/>
+</technology>
+<technology name="DCKR">
+<attribute name="DKPN" value="296-11602-2-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="  Texas Instruments" constant="no"/>
+<attribute name="MOPN" value="595-SN74LVC1G08DCKR" constant="no"/>
+<attribute name="MPN" value="SN74LVC1G08DCKR" constant="no"/>
 </technology>
 </technologies>
 </device>

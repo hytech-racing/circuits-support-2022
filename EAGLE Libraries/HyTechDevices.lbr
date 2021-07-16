@@ -7703,7 +7703,16 @@ with up to 100mA of output current</description>
 </devices>
 </deviceset>
 <deviceset name="LED_?_*" prefix="D">
-<description>LED</description>
+<description>LED
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608VBC_D-246010.pdf"&gt;Blue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608ZGCK-1173388.pdf"&gt;Green&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SECK-6197.pdf"&gt;Orange&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SECK-J3-PRV-1173336.pdf"&gt;Red&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/50/SM0603UWC-880813.pdf"&gt;White&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SYCK-J3-PRV-1173311.pdf"&gt;Yellow&lt;/a&gt;&lt;/li&gt;
+&lt;\ul&gt;</description>
 <gates>
 <gate name="LED" symbol="DIODE_LED" x="0" y="0"/>
 </gates>

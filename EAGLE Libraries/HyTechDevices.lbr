@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -8107,14 +8107,25 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="VOLTAGE_CONTINUOUS" value="1V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="10.2K">
+<attribute name="DKPN" value="P10.2KDBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB1022V"/>
+<attribute name="MPN" value="ERA-3AEB1022V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="10.2k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="31.94V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="10.5K">
-<attribute name="DKPN" value="311-10.5KHRCT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-RC0603FR-0710K5L"/>
-<attribute name="MPN" value="RC0603FR-0710K5L"/>
+<attribute name="DKPN" value="P10.5KDBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="677-ERA-3AEB1052V"/>
+<attribute name="MPN" value="ERA-3AEB1052V"/>
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="10.5k"/>
-<attribute name="TOLERANCE" value="1%"/>
+<attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="32.40V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
@@ -8138,6 +8149,17 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="RESISTANCE" value="10k"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="31.62V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="11.3K">
+<attribute name="DKPN" value="P11.3KDBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB1132V"/>
+<attribute name="MPN" value="ERA-3AEB1132V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="11.3k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="33.62V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="11.5K">
@@ -8250,6 +8272,17 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="VOLTAGE_CONTINUOUS" value="15.97V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="21.5K">
+<attribute name="DKPN" value="P21.5KDBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB2152V"/>
+<attribute name="MPN" value="ERA-3AEB2152V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="21.5k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="46.47V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="22">
 <attribute name="DKPN" value="311-22.0HRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -8325,6 +8358,17 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="RESISTANCE" value="36.5k"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="60.42V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="4.12K">
+<attribute name="DKPN" value="P4.12KDBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB4121V"/>
+<attribute name="MPN" value="ERA-3AEB4121V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="4.12k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="20.30V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="4.64K">

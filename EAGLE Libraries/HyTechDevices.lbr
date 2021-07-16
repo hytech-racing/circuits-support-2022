@@ -8272,15 +8272,15 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="VOLTAGE_CONTINUOUS" value="15.97V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
-<technology name="21.5K">
-<attribute name="DKPN" value="P21.5KDBCT-ND"/>
+<technology name="215K">
+<attribute name="DKPN" value="P215KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
-<attribute name="MOPN" value="667-ERA-3AEB2152V"/>
-<attribute name="MPN" value="ERA-3AEB2152V"/>
+<attribute name="MOPN" value="667-ERA-3AEB2153V"/>
+<attribute name="MPN" value="ERA-3AEB2153V"/>
 <attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="21.5k"/>
+<attribute name="RESISTANCE" value="215k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="46.47V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="22">
@@ -8422,6 +8422,17 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="MPN" value="ERA-3AEB7322V"/>
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="73.2k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="84.5K">
+<attribute name="DKPN" value="P84.5KDBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB8452V"/>
+<attribute name="MPN" value="ERA-3AEB8452V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="84.5k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>

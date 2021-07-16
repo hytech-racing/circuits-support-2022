@@ -2639,7 +2639,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FRAME_A">
+<deviceset name="FRAME_A" prefix="FRAME">
 <description>HyTech Racing Frame (ANSI Size A)
 &lt;br&gt;
 Prints on US Letter Landscape 8.5" by 11"
@@ -2656,8 +2656,8 @@ Font: Proportional
 &lt;br&gt;
 Layer: 94 Symbol</description>
 <gates>
-<gate name="G$1" symbol="FRAME_11X8.5" x="0" y="0"/>
-<gate name="G$2" symbol="DOCFIELD" x="110.49" y="0" addlevel="always"/>
+<gate name="O" symbol="FRAME_11X8.5" x="0" y="0"/>
+<gate name="DF" symbol="DOCFIELD" x="110.49" y="0" addlevel="always"/>
 </gates>
 <devices>
 <device name="">
@@ -2671,7 +2671,7 @@ Layer: 94 Symbol</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FRAME_B">
+<deviceset name="FRAME_B" prefix="FRAME">
 <description>HyTech Racing Frame (ANSI Size B)
 &lt;br&gt;
 Prints on US Tabloid Landscape 11" by 17"
@@ -2688,8 +2688,8 @@ Font: Proportional
 &lt;br&gt;
 Layer: 94 Symbol</description>
 <gates>
-<gate name="G$1" symbol="FRAME_17X11" x="0" y="0"/>
-<gate name="G$2" symbol="DOCFIELD" x="262.89" y="0" addlevel="always"/>
+<gate name="O" symbol="FRAME_17X11" x="0" y="0"/>
+<gate name="DF" symbol="DOCFIELD" x="262.89" y="0" addlevel="always"/>
 </gates>
 <devices>
 <device name="">

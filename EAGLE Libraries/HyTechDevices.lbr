@@ -10402,6 +10402,56 @@ ISO224B: High-Grade
 </device>
 </devices>
 </deviceset>
+<deviceset name="MCP32S17" prefix="U">
+<description>IO Expander
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/268/20001952C-1129816.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCP23S17" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSOP-28">
+<connects>
+<connect gate="G$1" pin="!CS" pad="11"/>
+<connect gate="G$1" pin="!RESET" pad="18"/>
+<connect gate="G$1" pin="A0" pad="15"/>
+<connect gate="G$1" pin="A1" pad="16"/>
+<connect gate="G$1" pin="A2" pad="17"/>
+<connect gate="G$1" pin="CLK" pad="12"/>
+<connect gate="G$1" pin="GND" pad="10"/>
+<connect gate="G$1" pin="GPA0" pad="21"/>
+<connect gate="G$1" pin="GPA1" pad="22"/>
+<connect gate="G$1" pin="GPA2" pad="23"/>
+<connect gate="G$1" pin="GPA3" pad="24"/>
+<connect gate="G$1" pin="GPA4" pad="25"/>
+<connect gate="G$1" pin="GPA5" pad="26"/>
+<connect gate="G$1" pin="GPA6" pad="27"/>
+<connect gate="G$1" pin="GPA7" pad="28"/>
+<connect gate="G$1" pin="GPB0" pad="1"/>
+<connect gate="G$1" pin="GPB1" pad="2"/>
+<connect gate="G$1" pin="GPB2" pad="3"/>
+<connect gate="G$1" pin="GPB3" pad="4"/>
+<connect gate="G$1" pin="GPB4" pad="5"/>
+<connect gate="G$1" pin="GPB5" pad="6"/>
+<connect gate="G$1" pin="GPB6" pad="7"/>
+<connect gate="G$1" pin="GPB7" pad="8"/>
+<connect gate="G$1" pin="INTA" pad="20"/>
+<connect gate="G$1" pin="INTB" pad="19"/>
+<connect gate="G$1" pin="SDI" pad="13"/>
+<connect gate="G$1" pin="SDO" pad="14"/>
+<connect gate="G$1" pin="VDD" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="MCP23S17T-E/SSCT-ND"/>
+<attribute name="MANUFACTURER" value="Microchip Technology"/>
+<attribute name="MOPN" value="579-MCP23S17T-E/SS"/>
+<attribute name="MPN" value="MCP23S17T-E/SS"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

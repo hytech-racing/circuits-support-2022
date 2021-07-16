@@ -4054,12 +4054,9 @@ Toshiba
 <description>ACSA56-51 LED 7 Segment Display
 &lt;br&gt;
 &lt;a href="https://mouser.com/datasheet/2/216/ACSA56-51SYKWA-245353.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<wire x1="-6.2484" y1="9.9949" x2="-6.2484" y2="-9.9949" width="0.127" layer="21"/>
-<wire x1="6.2484" y1="9.9949" x2="6.2484" y2="-9.9949" width="0.127" layer="21"/>
-<wire x1="-6.2484" y1="9.9949" x2="-5.8801" y2="9.9949" width="0.127" layer="21"/>
-<wire x1="-5.8801" y1="9.9949" x2="5.8801" y2="9.9949" width="0.127" layer="21"/>
-<wire x1="5.8801" y1="9.9949" x2="6.2484" y2="9.9949" width="0.127" layer="21"/>
-<wire x1="-6.2484" y1="-9.9949" x2="6.2484" y2="-9.9949" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="10" x2="-6.25" y2="-10" width="0.127" layer="21"/>
+<wire x1="6.25" y1="10" x2="6.25" y2="-10" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-10" x2="6.25" y2="-10" width="0.127" layer="21"/>
 <smd name="1" x="-5.08" y="-10" dx="1.9" dy="3" layer="1"/>
 <smd name="2" x="-2.54" y="-10" dx="1.9" dy="3" layer="1"/>
 <smd name="3" x="0" y="-10" dx="1.9" dy="3" layer="1"/>
@@ -4070,9 +4067,10 @@ Toshiba
 <smd name="8" x="0" y="10" dx="1.9" dy="3" layer="1"/>
 <smd name="9" x="-2.54" y="10" dx="1.9" dy="3" layer="1"/>
 <smd name="10" x="-5.08" y="10" dx="1.9" dy="3" layer="1"/>
-<text x="-7.35" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="-6.858" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <circle x="-7.62" y="-10.16" radius="0.635" width="0" layer="21"/>
 <rectangle x1="-6.858" y1="-12.192" x2="6.858" y2="12.192" layer="39"/>
+<wire x1="-6.25" y1="10" x2="6.25" y2="10" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -9376,16 +9374,14 @@ with up to 100mA of output current
 <attribute name="COLOR" value="Green" constant="no"/>
 <attribute name="DKPN" value="754-1621-2-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Kingbright" constant="no"/>
-<attribute name="MOPN" value="604-ACSA56-51CGKWA
-" constant="no"/>
+<attribute name="MOPN" value="604-ACSA56-51CGKWA " constant="no"/>
 <attribute name="MPN" value="ACSA56-51CGKWA" constant="no"/>
 </technology>
 <technology name="YELLOW">
 <attribute name="COLOR" value="Yellow" constant="no"/>
 <attribute name="DKPN" value="754-1624-2-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Kingbright" constant="no"/>
-<attribute name="MOPN" value="604-ACSA56-51SYKWA
-" constant="no"/>
+<attribute name="MOPN" value="604-ACSA56-51SYKWA " constant="no"/>
 <attribute name="MPN" value="ACSA56-51SYKWA" constant="no"/>
 </technology>
 </technologies>

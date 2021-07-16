@@ -7072,7 +7072,7 @@ with up to 100mA of output current</description>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-18.542" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
-<symbol name="LED_7_SEGMENT">
+<symbol name="DIODE_LED_7_SEGMENT">
 <description>&lt;a href="https://mouser.com/datasheet/2/216/ACSA56-51SYKWA-245353.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <pin name="A" x="-2.54" y="-2.54" length="short" direction="in" function="dot"/>
 <pin name="B" x="27.94" y="-7.62" length="short" direction="in" function="dot" rot="R180"/>
@@ -9360,7 +9360,7 @@ with up to 100mA of output current
 
 &lt;\ul&gt;</description>
 <gates>
-<gate name="G$1" symbol="LED_7_SEGMENT" x="0" y="0"/>
+<gate name="G$1" symbol="DIODE_LED_7_SEGMENT" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="ACSA56-51">

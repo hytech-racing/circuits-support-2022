@@ -4051,20 +4051,15 @@ Toshiba
 <rectangle x1="-3.81" y1="-5.588" x2="3.81" y2="6.858" layer="39"/>
 </package>
 <package name="ACSA56-51">
-<wire x1="-6.2484" y1="8.4963" x2="-6.2484" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="6.2484" y1="8.4963" x2="6.2484" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="-6.2484" y1="8.4963" x2="-5.8801" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-5.8801" y1="8.4963" x2="-4.2799" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-4.2799" y1="8.4963" x2="-3.3401" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-3.3401" y1="8.4963" x2="-1.7399" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-1.7399" y1="8.4963" x2="-0.8001" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-0.8001" y1="8.4963" x2="0.8001" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="0.8001" y1="8.4963" x2="1.7399" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="1.7399" y1="8.4963" x2="3.3401" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="3.3401" y1="8.4963" x2="4.2799" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="4.2799" y1="8.4963" x2="5.8801" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="5.8801" y1="8.4963" x2="6.2484" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-6.2484" y1="-8.4963" x2="6.2484" y2="-8.4963" width="0.127" layer="21"/>
+<description>ACSA56-51 LED 7 Segment Display
+&lt;br&gt;
+&lt;a href="https://mouser.com/datasheet/2/216/ACSA56-51SYKWA-245353.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="-6.2484" y1="9.9949" x2="-6.2484" y2="-9.9949" width="0.127" layer="21"/>
+<wire x1="6.2484" y1="9.9949" x2="6.2484" y2="-9.9949" width="0.127" layer="21"/>
+<wire x1="-6.2484" y1="9.9949" x2="-5.8801" y2="9.9949" width="0.127" layer="21"/>
+<wire x1="-5.8801" y1="9.9949" x2="5.8801" y2="9.9949" width="0.127" layer="21"/>
+<wire x1="5.8801" y1="9.9949" x2="6.2484" y2="9.9949" width="0.127" layer="21"/>
+<wire x1="-6.2484" y1="-9.9949" x2="6.2484" y2="-9.9949" width="0.127" layer="21"/>
 <smd name="1" x="-5.08" y="-10" dx="1.9" dy="3" layer="1"/>
 <smd name="2" x="-2.54" y="-10" dx="1.9" dy="3" layer="1"/>
 <smd name="3" x="0" y="-10" dx="1.9" dy="3" layer="1"/>
@@ -7073,7 +7068,9 @@ with up to 100mA of output current</description>
 <text x="0" y="-18.542" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="DIODE_LED_7_SEGMENT">
-<description>&lt;a href="https://mouser.com/datasheet/2/216/ACSA56-51SYKWA-245353.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<description>LED 7 Segment Display
+&lt;br&gt;
+&lt;a href="https://mouser.com/datasheet/2/216/ACSA56-51SYKWA-245353.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <pin name="A" x="-2.54" y="-2.54" length="short" direction="in" function="dot"/>
 <pin name="B" x="27.94" y="-7.62" length="short" direction="in" function="dot" rot="R180"/>
 <pin name="C" x="27.94" y="-22.86" length="short" direction="in" function="dot" rot="R180"/>
@@ -7143,7 +7140,7 @@ with up to 100mA of output current</description>
 <wire x1="25.4" y1="-30.48" x2="25.4" y2="0" width="0.254" layer="94"/>
 <pin name="VDD" x="27.94" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-31.242" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<text x="0" y="-31.242" size="1.27" layer="96" align="top-left">&gt;COLOR</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -9348,7 +9345,7 @@ with up to 100mA of output current
 </device>
 </devices>
 </deviceset>
-<deviceset name="DIODE_LED_7_SEGMENT_" prefix="D">
+<deviceset name="LED_7_SEGMENT_" prefix="D">
 <description>Low-Profile 7-Segment Display
 &lt;br&gt;
 

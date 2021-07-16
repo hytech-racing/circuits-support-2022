@@ -4053,6 +4053,28 @@ Toshiba
 <text x="0" y="6.35" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-3.81" y1="-5.588" x2="3.81" y2="6.858" layer="39"/>
 </package>
+<package name="ACSA56-51">
+<description>ACSA56-51 LED 7 Segment Display
+&lt;br&gt;
+&lt;a href="https://mouser.com/datasheet/2/216/ACSA56-51SYKWA-245353.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="-6.25" y1="10" x2="-6.25" y2="-10" width="0.127" layer="21"/>
+<wire x1="6.25" y1="10" x2="6.25" y2="-10" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-10" x2="6.25" y2="-10" width="0.127" layer="21"/>
+<smd name="1" x="-5.08" y="-10" dx="1.9" dy="3" layer="1"/>
+<smd name="2" x="-2.54" y="-10" dx="1.9" dy="3" layer="1"/>
+<smd name="3" x="0" y="-10" dx="1.9" dy="3" layer="1"/>
+<smd name="4" x="2.54" y="-10" dx="1.9" dy="3" layer="1"/>
+<smd name="5" x="5.08" y="-10" dx="1.9" dy="3" layer="1"/>
+<smd name="6" x="5.08" y="10" dx="1.9" dy="3" layer="1"/>
+<smd name="7" x="2.54" y="10" dx="1.9" dy="3" layer="1"/>
+<smd name="8" x="0" y="10" dx="1.9" dy="3" layer="1"/>
+<smd name="9" x="-2.54" y="10" dx="1.9" dy="3" layer="1"/>
+<smd name="10" x="-5.08" y="10" dx="1.9" dy="3" layer="1"/>
+<text x="-6.858" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<circle x="-7.62" y="-10.16" radius="0.635" width="0" layer="21"/>
+<rectangle x1="-6.858" y1="-12.192" x2="6.858" y2="12.192" layer="39"/>
+<wire x1="-6.25" y1="10" x2="6.25" y2="10" width="0.127" layer="21"/>
+</package>
 <package name="WSL2726">
 <description>Vishay Sense Resistor
 &lt;br&gt;
@@ -7254,6 +7276,81 @@ with up to 100mA of output current</description>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-18.542" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
+<symbol name="DIODE_LED_7_SEGMENT">
+<description>LED 7 Segment Display
+&lt;br&gt;
+&lt;a href="https://mouser.com/datasheet/2/216/ACSA56-51SYKWA-245353.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pin name="A" x="-2.54" y="-2.54" length="short" direction="in" function="dot"/>
+<pin name="B" x="27.94" y="-7.62" length="short" direction="in" function="dot" rot="R180"/>
+<pin name="C" x="27.94" y="-22.86" length="short" direction="in" function="dot" rot="R180"/>
+<pin name="D" x="-2.54" y="-27.94" length="short" direction="in" function="dot"/>
+<pin name="E" x="-2.54" y="-22.86" length="short" direction="in" function="dot"/>
+<pin name="F" x="-2.54" y="-7.62" length="short" direction="in" function="dot"/>
+<pin name="G" x="-2.54" y="-15.24" length="short" direction="in" function="dot"/>
+<polygon width="0.1524" layer="94">
+<vertex x="7.874" y="-2.54"/>
+<vertex x="9.144" y="-1.27"/>
+<vertex x="16.764" y="-1.27"/>
+<vertex x="18.034" y="-2.54"/>
+<vertex x="16.764" y="-3.81"/>
+<vertex x="9.144" y="-3.81"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="6.604" y="-13.97"/>
+<vertex x="5.334" y="-12.7"/>
+<vertex x="5.334" y="-5.08"/>
+<vertex x="6.604" y="-3.81"/>
+<vertex x="7.874" y="-5.08"/>
+<vertex x="7.874" y="-12.7"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="19.304" y="-13.97"/>
+<vertex x="18.034" y="-12.7"/>
+<vertex x="18.034" y="-5.08"/>
+<vertex x="19.304" y="-3.81"/>
+<vertex x="20.574" y="-5.08"/>
+<vertex x="20.574" y="-12.7"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="7.874" y="-15.24"/>
+<vertex x="9.144" y="-13.97"/>
+<vertex x="16.764" y="-13.97"/>
+<vertex x="18.034" y="-15.24"/>
+<vertex x="16.764" y="-16.51"/>
+<vertex x="9.144" y="-16.51"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="6.604" y="-26.67"/>
+<vertex x="5.334" y="-25.4"/>
+<vertex x="5.334" y="-17.78"/>
+<vertex x="6.604" y="-16.51"/>
+<vertex x="7.874" y="-17.78"/>
+<vertex x="7.874" y="-25.4"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="7.874" y="-27.94"/>
+<vertex x="9.144" y="-26.67"/>
+<vertex x="16.764" y="-26.67"/>
+<vertex x="18.034" y="-27.94"/>
+<vertex x="16.764" y="-29.21"/>
+<vertex x="9.144" y="-29.21"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="19.304" y="-26.67"/>
+<vertex x="18.034" y="-25.4"/>
+<vertex x="18.034" y="-17.78"/>
+<vertex x="19.304" y="-16.51"/>
+<vertex x="20.574" y="-17.78"/>
+<vertex x="20.574" y="-25.4"/>
+</polygon>
+<wire x1="0" y1="-30.48" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="25.4" y2="0" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-30.48" x2="0" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-30.48" x2="25.4" y2="0" width="0.254" layer="94"/>
+<pin name="VDD" x="27.94" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-31.242" size="1.27" layer="96" align="top-left">&gt;COLOR</text>
+</symbol>
 <symbol name="ISO224*">
 <description>ISO224*: Isolated precision amplifier
 &lt;br&gt;
@@ -10060,6 +10157,51 @@ with up to 100mA of output current
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MODEL" value="NF_T_V_B"/>
 <attribute name="MPN" value="105429-1304 "/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED_7_SEGMENT_" prefix="D">
+<description>Low-Profile 7-Segment Display
+&lt;br&gt;
+
+&lt;ul&gt;
+
+&lt;li&gt;&lt;a href="https://eu.mouser.com/datasheet/2/216/ACSA56-51CGKWA-245492.pdf"&gt;Green&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href="https://eu.mouser.com/datasheet/2/216/ACSA56-51SYKWA-245353.pdf"&gt;Yellow&lt;/a&gt;&lt;/li&gt;
+
+&lt;\ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="DIODE_LED_7_SEGMENT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ACSA56-51">
+<connects>
+<connect gate="G$1" pin="A" pad="7"/>
+<connect gate="G$1" pin="B" pad="6"/>
+<connect gate="G$1" pin="C" pad="4"/>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
+<connect gate="G$1" pin="F" pad="9"/>
+<connect gate="G$1" pin="G" pad="5 10"/>
+<connect gate="G$1" pin="VDD" pad="3 8"/>
+</connects>
+<technologies>
+<technology name="GREEN">
+<attribute name="COLOR" value="Green" constant="no"/>
+<attribute name="DKPN" value="754-1621-2-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Kingbright" constant="no"/>
+<attribute name="MOPN" value="604-ACSA56-51CGKWA " constant="no"/>
+<attribute name="MPN" value="ACSA56-51CGKWA" constant="no"/>
+</technology>
+<technology name="YELLOW">
+<attribute name="COLOR" value="Yellow" constant="no"/>
+<attribute name="DKPN" value="754-1624-2-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Kingbright" constant="no"/>
+<attribute name="MOPN" value="604-ACSA56-51SYKWA " constant="no"/>
+<attribute name="MPN" value="ACSA56-51SYKWA" constant="no"/>
 </technology>
 </technologies>
 </device>

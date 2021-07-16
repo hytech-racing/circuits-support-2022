@@ -7724,42 +7724,42 @@ with up to 100mA of output current</description>
 </connects>
 <technologies>
 <technology name="BLUE">
-<attribute name="COLOR" value="BLUE"/>
+<attribute name="COLOR" value="Blue"/>
 <attribute name="DKPN" value="754-1789-1-ND"/>
 <attribute name="MANUFACTURER" value="Kingbright"/>
 <attribute name="MOPN" value="604-APT1608VBC/D"/>
 <attribute name="MPN" value="APT1608VBC/D"/>
 </technology>
 <technology name="GREEN">
-<attribute name="COLOR" value="GREEN"/>
+<attribute name="COLOR" value="Green"/>
 <attribute name="DKPN" value="754-1790-1-ND"/>
 <attribute name="MANUFACTURER" value="Kingbright"/>
 <attribute name="MOPN" value="604-APT1608ZGCK"/>
 <attribute name="MPN" value="APT1608ZGCK"/>
 </technology>
 <technology name="ORANGE">
-<attribute name="COLOR" value="ORANGE"/>
+<attribute name="COLOR" value="Orange"/>
 <attribute name="DKPN" value="754-1120-1-ND"/>
 <attribute name="MANUFACTURER" value="Kingbright"/>
 <attribute name="MOPN" value="604-APT1608SECK"/>
 <attribute name="MPN" value="APT1608SECK"/>
 </technology>
 <technology name="RED">
-<attribute name="COLOR" value="RED"/>
+<attribute name="COLOR" value="Red"/>
 <attribute name="DKPN" value="754-1786-1-ND"/>
 <attribute name="MANUFACTURER" value="Kingbright"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV"/>
 <attribute name="MPN" value="APT1608SECK/J3-PRV"/>
 </technology>
 <technology name="WHITE">
-<attribute name="COLOR" value="WHITE"/>
+<attribute name="COLOR" value="White"/>
 <attribute name="DKPN" value="SM0603UWC-ND"/>
 <attribute name="MANUFACTURER" value="Bivar Inc."/>
 <attribute name="MOPN" value="749-SM0603UWC"/>
 <attribute name="MPN" value="SM0603UWC"/>
 </technology>
 <technology name="YELLOW">
-<attribute name="COLOR" value="YELLOW"/>
+<attribute name="COLOR" value="Yellow"/>
 <attribute name="DKPN" value="754-1788-1-ND"/>
 <attribute name="MANUFACTURER" value="Kingbright"/>
 <attribute name="MOPN" value="604-APT1608SYCK/J3-PRV"/>

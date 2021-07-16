@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4068,24 +4068,27 @@ Toshiba
 <rectangle x1="-4.064" y1="-4.064" x2="4.064" y2="4.064" layer="39"/>
 </package>
 <package name="H3FA">
-<wire x1="8.9154" y1="18.4658" x2="8.9154" y2="-18.4658" width="0.254" layer="1"/>
-<wire x1="-8.9154" y1="-18.4658" x2="-8.9154" y2="18.4658" width="0.254" layer="1"/>
-<wire x1="-8.9154" y1="-18.4658" x2="8.9154" y2="-18.4658" width="0.254" layer="1"/>
-<wire x1="8.9154" y1="18.4658" x2="-8.9154" y2="18.4658" width="0.254" layer="1"/>
-<pad name="13" x="-7.62" y="13.97" drill="1"/>
-<pad name="12" x="7.62" y="13.97" drill="1"/>
-<pad name="24" x="-7.62" y="-13.97" drill="1"/>
-<pad name="1" x="7.62" y="-13.97" drill="1"/>
-<pad name="2" x="7.62" y="-11.43" drill="1"/>
-<pad name="3" x="7.62" y="-8.89" drill="1"/>
-<pad name="23" x="-7.62" y="-11.43" drill="1"/>
-<pad name="16" x="-7.62" y="6.35" drill="1"/>
-<pad name="9" x="7.62" y="6.35" drill="1"/>
-<pad name="21" x="-7.62" y="-6.35" drill="1"/>
-<pad name="4" x="7.62" y="-6.35" drill="1"/>
-<pad name="22" x="-7.62" y="-8.89" drill="1"/>
-<text x="-8.9154" y="18.4658" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-<text x="-8.9154" y="-18.4658" size="0.8128" layer="27" font="vector" align="top-left">&gt;VALUE</text>
+<description>H3FA-A Timer Relay
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/307/-794852.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="32.44" y1="-8.875" x2="-4.46" y2="-8.875" width="0.254" layer="21"/>
+<wire x1="-4.46" y1="8.875" x2="32.44" y2="8.875" width="0.254" layer="21"/>
+<wire x1="-4.46" y1="8.875" x2="-4.46" y2="-8.875" width="0.254" layer="21"/>
+<wire x1="32.44" y1="-8.875" x2="32.44" y2="8.875" width="0.254" layer="21"/>
+<pad name="13" x="27.94" y="7.62" drill="1" rot="R270"/>
+<pad name="12" x="27.94" y="-7.62" drill="1" rot="R270"/>
+<pad name="24" x="0" y="7.62" drill="1" rot="R270"/>
+<pad name="1" x="0" y="-7.62" drill="1" rot="R270"/>
+<pad name="2" x="2.54" y="-7.62" drill="1" rot="R270"/>
+<pad name="3" x="5.08" y="-7.62" drill="1" rot="R270"/>
+<pad name="23" x="2.54" y="7.62" drill="1" rot="R270"/>
+<pad name="16" x="20.32" y="7.62" drill="1" rot="R270"/>
+<pad name="9" x="20.32" y="-7.62" drill="1" rot="R270"/>
+<pad name="21" x="7.62" y="7.62" drill="1" rot="R270"/>
+<pad name="4" x="7.62" y="-7.62" drill="1" rot="R270"/>
+<pad name="22" x="5.08" y="7.62" drill="1" rot="R270"/>
+<text x="-5.1054" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-5.08" y1="-9.398" x2="33.02" y2="9.398" layer="39"/>
 </package>
 <package name="1206-CAP">
 <description>1206 Cap
@@ -10039,8 +10042,9 @@ Variant 2: Addressable/Multi-Drop Configuration
 </devices>
 </deviceset>
 <deviceset name="H3FA-*">
-<description>H3FA-A timer
-https://www.mouser.com/datasheet/2/307/-794852.pdf</description>
+<description>H3FA-A Timer Relay
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/307/-794852.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="H3FA" x="0" y="0"/>
 </gates>

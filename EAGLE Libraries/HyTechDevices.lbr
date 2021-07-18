@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -911,22 +911,6 @@ Note: Based on Page 6.</description>
 <wire x1="-2.55" y1="-8.255" x2="-2.55" y2="8.255" width="0.1524" layer="21"/>
 <wire x1="-2.55" y1="-8.255" x2="19.75" y2="-8.255" width="0.1524" layer="21"/>
 <wire x1="19.75" y1="8.255" x2="19.75" y2="-8.255" width="0.1524" layer="21"/>
-<wire x1="3.7592" y1="5.715" x2="5.6642" y2="5.715" width="0.1524" layer="21"/>
-<wire x1="5.6642" y1="-5.715" x2="3.7592" y2="-5.715" width="0.1524" layer="21"/>
-<wire x1="3.1242" y1="1.27" x2="3.1242" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="8.2042" y1="-1.27" x2="8.2042" y2="1.27" width="0.254" layer="21"/>
-<wire x1="5.6642" y1="-5.715" x2="5.6642" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="5.6642" y1="-1.27" x2="8.2042" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="5.6642" y1="1.27" x2="3.1242" y2="1.27" width="0.254" layer="21"/>
-<wire x1="5.6642" y1="1.27" x2="5.6642" y2="5.715" width="0.1524" layer="21"/>
-<wire x1="8.2042" y1="1.27" x2="6.2992" y2="1.27" width="0.254" layer="21"/>
-<wire x1="6.2992" y1="1.27" x2="5.6642" y2="1.27" width="0.254" layer="21"/>
-<wire x1="3.1242" y1="-1.27" x2="5.0292" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="5.0292" y1="-1.27" x2="5.6642" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="5.0292" y1="-1.27" x2="6.2992" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="10.1092" y1="0" x2="12.6492" y2="0" width="0.1524" layer="21"/>
-<wire x1="14.2" y1="-1.905" x2="14.2" y2="-4.445" width="0.1524" layer="21"/>
-<wire x1="15.1892" y1="2.54" x2="12.6492" y2="0" width="0.1524" layer="21"/>
 <pad name="S" x="14.2" y="-6" drill="1.3208"/>
 <pad name="1" x="2" y="6" drill="1.3208"/>
 <pad name="2" x="2" y="-6" drill="1.3"/>
@@ -934,11 +918,11 @@ Note: Based on Page 6.</description>
 <text x="-2.54" y="8.3058" size="0.8128" layer="25" font="vector">&gt;NAME</text>
 <pad name="S1" x="14.2" y="6" drill="1.3208"/>
 <rectangle x1="-3.175" y1="-8.89" x2="20.32" y2="8.89" layer="39"/>
-<circle x="2" y="6" radius="1.27" width="0.127" layer="40"/>
-<circle x="2" y="-6" radius="1.27" width="0.127" layer="40"/>
-<circle x="0" y="0" radius="1.27" width="0.127" layer="40"/>
-<circle x="14.2" y="-6" radius="1.27" width="0.127" layer="40"/>
-<circle x="14.2" y="6" radius="1.27" width="0.127" layer="40"/>
+<circle x="2" y="6" radius="1.27" width="0" layer="40"/>
+<circle x="2" y="-6" radius="1.27" width="0" layer="40"/>
+<circle x="0" y="0" radius="1.27" width="0" layer="40"/>
+<circle x="14.2" y="-6" radius="1.27" width="0" layer="40"/>
+<circle x="14.2" y="6" radius="1.27" width="0" layer="40"/>
 </package>
 <package name="RT*2*">
 <description>RT Form C Relay
@@ -1615,7 +1599,7 @@ visible on the PCB.</text>
 <text x="0" y="11.43" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center">&gt;NAME</text>
 <text x="0" y="15.24" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="SENSATA_D_SERIES_RELAY">
+<package name="D">
 <description>Sensata D Series Relay
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/657/cynergy3_d_pcb_v2-1892244.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -1623,10 +1607,10 @@ visible on the PCB.</text>
 <wire x1="-29.972" y1="-7.874" x2="-29.972" y2="7.874" width="0.1524" layer="21"/>
 <wire x1="-29.972" y1="7.874" x2="29.972" y2="7.874" width="0.1524" layer="21"/>
 <wire x1="29.972" y1="7.874" x2="29.972" y2="-7.874" width="0.1524" layer="21"/>
-<pad name="CONTACT1" x="25.4" y="0" drill="1" diameter="1.778" shape="square" rot="R180"/>
-<pad name="CONTACT2" x="-25.4" y="0" drill="1" diameter="1.778" shape="square" rot="R180"/>
-<pad name="COIL-" x="0" y="5.08" drill="1" diameter="1.778" shape="square" rot="R180"/>
-<pad name="COIL+" x="0" y="-5.08" drill="1" diameter="1.778" shape="square" rot="R180"/>
+<pad name="2" x="25.4" y="0" drill="1" diameter="1.778" shape="square" rot="R180"/>
+<pad name="1" x="-25.4" y="0" drill="1" diameter="1.778" shape="square" rot="R180"/>
+<pad name="3" x="0" y="5.08" drill="1" diameter="1.778" shape="square" rot="R180"/>
+<pad name="4" x="0" y="-5.08" drill="1" diameter="1.778" shape="square" rot="R180"/>
 <text x="0.028" y="8.864" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-30.48" y1="-8.89" x2="30.48" y2="8.89" layer="39"/>
 <rectangle x1="-26.67" y1="-1.27" x2="-24.13" y2="1.27" layer="40"/>
@@ -2327,32 +2311,16 @@ Adapted from &lt;a href="https://www.analog.com/media/en/package-pcb-resources/p
 <wire x1="-2.55" y1="-8.255" x2="-2.55" y2="8.255" width="0.1524" layer="21"/>
 <wire x1="-2.55" y1="-8.255" x2="19.75" y2="-8.255" width="0.1524" layer="21"/>
 <wire x1="19.75" y1="8.255" x2="19.75" y2="-8.255" width="0.1524" layer="21"/>
-<wire x1="3.7592" y1="5.715" x2="5.6642" y2="5.715" width="0.1524" layer="21"/>
-<wire x1="5.6642" y1="-5.715" x2="3.7592" y2="-5.715" width="0.1524" layer="21"/>
-<wire x1="3.1242" y1="1.27" x2="3.1242" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="8.2042" y1="-1.27" x2="8.2042" y2="1.27" width="0.254" layer="21"/>
-<wire x1="5.6642" y1="-5.715" x2="5.6642" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="5.6642" y1="-1.27" x2="8.2042" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="5.6642" y1="1.27" x2="3.1242" y2="1.27" width="0.254" layer="21"/>
-<wire x1="5.6642" y1="1.27" x2="5.6642" y2="5.715" width="0.1524" layer="21"/>
-<wire x1="8.2042" y1="1.27" x2="6.2992" y2="1.27" width="0.254" layer="21"/>
-<wire x1="6.2992" y1="1.27" x2="5.6642" y2="1.27" width="0.254" layer="21"/>
-<wire x1="3.1242" y1="-1.27" x2="5.0292" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="5.0292" y1="-1.27" x2="5.6642" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="5.0292" y1="-1.27" x2="6.2992" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="10.1092" y1="0" x2="12.6492" y2="0" width="0.1524" layer="21"/>
-<wire x1="14.2" y1="-1.905" x2="14.2" y2="-4.445" width="0.1524" layer="21"/>
-<wire x1="15.1892" y1="2.54" x2="12.6492" y2="0" width="0.1524" layer="21"/>
 <pad name="S" x="14.2" y="-6" drill="1.3208"/>
 <pad name="1" x="2" y="6" drill="1.3208"/>
 <pad name="2" x="2" y="-6" drill="1.3"/>
 <pad name="P" x="0" y="0" drill="1.3"/>
 <text x="-2.54" y="8.3058" size="0.8128" layer="25" font="vector">&gt;NAME</text>
 <rectangle x1="-3.175" y1="-8.89" x2="20.32" y2="8.89" layer="39"/>
-<circle x="2" y="6" radius="1.27" width="0.127" layer="40"/>
-<circle x="2" y="-6" radius="1.27" width="0.127" layer="40"/>
-<circle x="0" y="0" radius="1.27" width="0.127" layer="40"/>
-<circle x="14.2" y="-6" radius="1.27" width="0.127" layer="40"/>
+<circle x="2" y="6" radius="1.27" width="0" layer="40"/>
+<circle x="2" y="-6" radius="1.27" width="0" layer="40"/>
+<circle x="0" y="0" radius="1.27" width="0" layer="40"/>
+<circle x="14.2" y="-6" radius="1.27" width="0" layer="40"/>
 </package>
 <package name="QFN_BNO055">
 <description>BNO055 Package
@@ -3514,12 +3482,12 @@ Note: Based off of page 57 and 58.</description>
 <wire x1="-22.1" y1="-6.75" x2="-22.1" y2="6.75" width="0.127" layer="21"/>
 <rectangle x1="-22.352" y1="-6.858" x2="7.366" y2="6.858" layer="39"/>
 <text x="0" y="7.62" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<circle x="-20" y="3.75" radius="1.3" width="0.127" layer="40"/>
-<circle x="0" y="3.75" radius="1.3" width="0.127" layer="40"/>
-<circle x="5" y="3.75" radius="1.3" width="0.127" layer="40"/>
-<circle x="5" y="-3.75" radius="1.3" width="0.127" layer="40"/>
-<circle x="0" y="-3.75" radius="1.3" width="0.127" layer="40"/>
-<circle x="-20" y="-3.75" radius="1.3" width="0.127" layer="40"/>
+<circle x="-20" y="3.75" radius="1.3" width="0" layer="40"/>
+<circle x="0" y="3.75" radius="1.3" width="0" layer="40"/>
+<circle x="5" y="3.75" radius="1.3" width="0" layer="40"/>
+<circle x="5" y="-3.75" radius="1.3" width="0" layer="40"/>
+<circle x="0" y="-3.75" radius="1.3" width="0" layer="40"/>
+<circle x="-20" y="-3.75" radius="1.3" width="0" layer="40"/>
 </package>
 <package name="G6B-1">
 <description>G6B-1 Relay
@@ -3533,10 +3501,10 @@ Note: Based off of page 57 and 58.</description>
 <wire x1="-8.72" y1="5" x2="-8.72" y2="-5" width="0.127" layer="21"/>
 <wire x1="-8.72" y1="-5" x2="11.28" y2="-5" width="0.127" layer="21"/>
 <wire x1="11.28" y1="5" x2="11.28" y2="-5" width="0.127" layer="21"/>
-<circle x="10.16" y="3.81" radius="1.27" width="0.127" layer="40"/>
-<circle x="0" y="3.81" radius="1.27" width="0.127" layer="40"/>
-<circle x="-7.62" y="3.81" radius="1.27" width="0.127" layer="40"/>
-<circle x="10.16" y="-3.81" radius="1.27" width="0.127" layer="40"/>
+<circle x="10.16" y="3.81" radius="1.27" width="0" layer="40"/>
+<circle x="0" y="3.81" radius="1.27" width="0" layer="40"/>
+<circle x="-7.62" y="3.81" radius="1.27" width="0" layer="40"/>
+<circle x="10.16" y="-3.81" radius="1.27" width="0" layer="40"/>
 <rectangle x1="-9.144" y1="-5.334" x2="11.684" y2="5.334" layer="39"/>
 <text x="0" y="5.334" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
@@ -4113,6 +4081,18 @@ Toshiba
 <pad name="22" x="5.08" y="7.62" drill="1" rot="R270"/>
 <text x="-5.1054" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-5.08" y1="-9.398" x2="33.02" y2="9.398" layer="39"/>
+<circle x="0" y="-7.62" radius="1.27" width="0" layer="40"/>
+<circle x="2.54" y="-7.62" radius="1.27" width="0" layer="40"/>
+<circle x="5.08" y="-7.62" radius="1.27" width="0" layer="40"/>
+<circle x="7.62" y="-7.62" radius="1.27" width="0" layer="40"/>
+<circle x="20.32" y="-7.62" radius="1.27" width="0" layer="40"/>
+<circle x="27.94" y="-7.62" radius="1.27" width="0" layer="40"/>
+<circle x="27.94" y="7.62" radius="1.27" width="0" layer="40"/>
+<circle x="20.32" y="7.62" radius="1.27" width="0" layer="40"/>
+<circle x="7.62" y="7.62" radius="1.27" width="0" layer="40"/>
+<circle x="5.08" y="7.62" radius="1.27" width="0" layer="40"/>
+<circle x="2.54" y="7.62" radius="1.27" width="0" layer="40"/>
+<circle x="0" y="7.62" radius="1.27" width="0" layer="40"/>
 </package>
 <package name="1206-CAP">
 <description>1206 Cap
@@ -4263,6 +4243,100 @@ Toshiba
 <text x="-5.1054" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-5.08" y1="-9.398" x2="33.02" y2="9.398" layer="39"/>
 <pad name="6" x="12.7" y="-7.62" drill="1" rot="R270"/>
+<circle x="0" y="-7.62" radius="1.27" width="0" layer="40"/>
+<circle x="2.54" y="-7.62" radius="1.27" width="0" layer="40"/>
+<circle x="5.08" y="-7.62" radius="1.27" width="0" layer="40"/>
+<circle x="7.62" y="-7.62" radius="1.27" width="0" layer="40"/>
+<circle x="12.7" y="-7.62" radius="1.27" width="0" layer="40"/>
+<circle x="20.32" y="-7.62" radius="1.27" width="0" layer="40"/>
+<circle x="27.94" y="-7.62" radius="1.27" width="0" layer="40"/>
+<circle x="27.94" y="7.62" radius="1.27" width="0" layer="40"/>
+<circle x="20.32" y="7.62" radius="1.27" width="0" layer="40"/>
+<circle x="7.62" y="7.62" radius="1.27" width="0" layer="40"/>
+<circle x="5.08" y="7.62" radius="1.27" width="0" layer="40"/>
+<circle x="2.54" y="7.62" radius="1.27" width="0" layer="40"/>
+<circle x="0" y="7.62" radius="1.27" width="0" layer="40"/>
+</package>
+<package name="335X">
+<description>335x Reed Relay
+&lt;br&gt;
+&lt;a href="https://www.comus-intl.com/wp-content/uploads/2017/01/High-Voltage-Reed-Relays.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="0" y1="0" x2="0" y2="-19.05" width="0.127" layer="21"/>
+<wire x1="0" y1="-19.05" x2="76.2" y2="-19.05" width="0.127" layer="21"/>
+<wire x1="76.2" y1="-19.05" x2="76.2" y2="0" width="0.127" layer="21"/>
+<wire x1="76.2" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="1" x="68.58" y="-10.16" drill="1.016" shape="square"/>
+<pad name="2" x="50.8" y="-15.24" drill="1.016" shape="square"/>
+<pad name="3" x="25.4" y="-15.24" drill="1.016" shape="square"/>
+<pad name="4" x="7.62" y="-10.16" drill="1.016" shape="square"/>
+<text x="38.1" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-1.27" y1="-20.32" x2="77.47" y2="1.27" layer="39"/>
+<rectangle x1="6.35" y1="-11.43" x2="8.89" y2="-8.89" layer="40"/>
+<rectangle x1="24.13" y1="-16.51" x2="26.67" y2="-13.97" layer="40"/>
+<rectangle x1="49.53" y1="-16.51" x2="52.07" y2="-13.97" layer="40"/>
+<rectangle x1="67.31" y1="-11.43" x2="69.85" y2="-8.89" layer="40"/>
+</package>
+<package name="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_DUAL">
+<description>2 Pin Micro-Fit Right Angle Header, SMD, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430450211"&gt;Part&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/0430450211_sd.pdf"&gt;Footprint&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430250200_sd.pdf"&gt;Plug Size&lt;/a&gt;
+&lt;br&gt;
+Solid line must not be visible on PCB.
+&lt;br&gt;
+Dashed line is edge of mated connector.</description>
+<smd name="PAD" x="3.8862" y="0" dx="3.429" dy="1.651" layer="1"/>
+<smd name="PAD2" x="-3.8862" y="0" dx="3.429" dy="1.651" layer="1"/>
+<smd name="1" x="0" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
+<smd name="2" x="0" y="10.0965" dx="1.27" dy="2.921" layer="1"/>
+<rectangle x1="2.1717" y1="1.8034" x2="4.6101" y2="3.4036" layer="41"/>
+<rectangle x1="-4.6101" y1="1.8034" x2="-2.1717" y2="3.4036" layer="41"/>
+<wire x1="-3.3274" y1="5.4737" x2="3.3274" y2="5.4737" width="0.127" layer="21"/>
+<wire x1="1.4986" y1="-4.4323" x2="-1.4986" y2="-4.4323" width="0.127" layer="21"/>
+<wire x1="-3.3274" y1="-2.6035" x2="-3.3274" y2="5.4737" width="0.127" layer="21"/>
+<wire x1="-1.4986" y1="-4.4323" x2="-3.3274" y2="-2.6035" width="0.127" layer="21"/>
+<wire x1="1.4986" y1="-4.4323" x2="3.3274" y2="-2.6035" width="0.127" layer="21"/>
+<wire x1="3.3274" y1="-2.6035" x2="3.3274" y2="5.4737" width="0.127" layer="21"/>
+<rectangle x1="-6.35" y1="-5.08" x2="6.35" y2="12.7" layer="39"/>
+<wire x1="-6.35" y1="-10.16" x2="6.35" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-10.16" x2="-2.54" y2="-25.4" width="0" layer="20"/>
+<wire x1="-2.54" y1="-25.4" x2="2.54" y2="-25.4" width="0" layer="20"/>
+<wire x1="2.54" y1="-25.4" x2="2.54" y2="-10.16" width="0" layer="20"/>
+<wire x1="2.54" y1="-10.16" x2="-2.54" y2="-10.16" width="0" layer="20"/>
+<wire x1="-6.35" y1="-12.2428" x2="6.35" y2="-12.2428" width="0.127" layer="21" style="shortdash"/>
+<text x="0" y="-5.207" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_02_DUAL">
+<description>2 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430450214"&gt;Part&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430450214_sd.pdf"&gt;Footprint&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430250200_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
+<pad name="2" x="0" y="0" drill="1.0668"/>
+<pad name="1" x="0" y="-2.9972" drill="1.0668"/>
+<hole x="2.9972" y="0.9398" drill="1.0668"/>
+<hole x="-2.9972" y="0.9398" drill="1.0668"/>
+<wire x1="-3.3274" y1="-5.461" x2="3.3274" y2="-5.461" width="0.127" layer="21"/>
+<wire x1="3.3274" y1="-5.461" x2="3.3274" y2="1.905" width="0.127" layer="21"/>
+<wire x1="3.3274" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="1.905" x2="-1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-3.3274" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-3.3274" y1="1.905" x2="-3.3274" y2="-5.461" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="1.9304" y2="3.302" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="3.302" x2="1.9304" y2="1.905" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="5.969" x2="1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<rectangle x1="-4.064" y1="-5.842" x2="4.064" y2="2.286" layer="39"/>
+<rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
+<rectangle x1="-4.064" y1="-5.842" x2="4.064" y2="2.286" layer="40"/>
+<text x="0" y="-6.477" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -5838,10 +5912,10 @@ Base for the AD5263 Digipot in SPI mode
 <wire x1="2.54" y1="-7.62" x2="-2.54" y2="-7.62" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="-17.78" x2="1.778" y2="-17.78" width="0.1524" layer="94"/>
 <wire x1="12.7" y1="-15.24" x2="8.382" y2="-15.24" width="0.1524" layer="94"/>
-<pin name="P" x="-2.54" y="-17.78" visible="off" length="point" swaplevel="2" rot="R270"/>
-<pin name="S" x="12.7" y="-15.24" visible="off" length="point" swaplevel="2" rot="R270"/>
-<pin name="COIL+" x="12.7" y="-7.62" visible="off" length="point" swaplevel="1" rot="R90"/>
-<pin name="COIL-" x="-2.54" y="-7.62" visible="off" length="point" swaplevel="1" rot="R90"/>
+<pin name="CONTACT1" x="-2.54" y="-17.78" visible="pad" length="point" swaplevel="2" rot="R180"/>
+<pin name="CONTACT2" x="12.7" y="-15.24" visible="pad" length="point" swaplevel="2"/>
+<pin name="COIL+" x="-2.54" y="-7.62" visible="pad" length="point" swaplevel="1" rot="R180"/>
+<pin name="COIL-" x="12.7" y="-7.62" visible="pad" length="point" swaplevel="1"/>
 <wire x1="10.16" y1="0" x2="10.16" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-22.86" x2="0" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="0" y1="-22.86" x2="0" y2="0" width="0.254" layer="94"/>
@@ -5873,10 +5947,10 @@ Base for the AD5263 Digipot in SPI mode
 <wire x1="2.54" y1="-7.62" x2="-2.54" y2="-7.62" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="-17.78" x2="1.778" y2="-17.78" width="0.1524" layer="94"/>
 <wire x1="12.7" y1="-20.32" x2="8.382" y2="-20.32" width="0.1524" layer="94"/>
-<pin name="O" x="12.7" y="-20.32" visible="off" length="point" swaplevel="2" rot="R270"/>
-<pin name="P" x="-2.54" y="-17.78" visible="off" length="point" swaplevel="2" rot="R270"/>
-<pin name="COIL+" x="12.7" y="-7.62" visible="off" length="point" swaplevel="1" rot="R90"/>
-<pin name="COIL-" x="-2.54" y="-7.62" visible="off" length="point" swaplevel="1" rot="R90"/>
+<pin name="CONTACT2" x="12.7" y="-20.32" visible="pad" length="point" swaplevel="2" rot="R270"/>
+<pin name="CONTACT1" x="-2.54" y="-17.78" visible="pad" length="point" swaplevel="2" rot="R270"/>
+<pin name="COIL+" x="-2.54" y="-7.62" visible="pad" length="point" swaplevel="1" rot="R90"/>
+<pin name="COIL-" x="12.7" y="-7.62" visible="pad" length="point" swaplevel="1" rot="R90"/>
 <wire x1="10.16" y1="0" x2="10.16" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-22.86" x2="0" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="0" y1="-22.86" x2="0" y2="0" width="0.254" layer="94"/>
@@ -7032,7 +7106,7 @@ Note: See page 32 for application schematic.</description>
 <text x="0" y="-13.335" size="1.778" layer="96" align="top-left">&gt;MODEL</text>
 </symbol>
 <symbol name="RELAY_SPST_NO_POLARIZED">
-<description>Single pole, single throw normally open relay</description>
+<description>Single pole, single throw polarized normally open relay</description>
 <circle x="2.54" y="-17.78" radius="0.635" width="0.1524" layer="94"/>
 <circle x="7.62" y="-20.32" radius="0.635" width="0.1524" layer="94"/>
 <circle x="7.62" y="-15.24" radius="0.635" width="0.1524" layer="94"/>
@@ -7520,6 +7594,42 @@ with up to 100mA of output current</description>
 <vertex x="11.684" y="-39.624"/>
 <vertex x="12.192" y="-40.386"/>
 </polygon>
+</symbol>
+<symbol name="RELAY_SPST_NC_POLARIZED">
+<description>Single pole, single throw polarized normally closed relay</description>
+<circle x="2.54" y="-17.78" radius="0.635" width="0.1524" layer="94"/>
+<circle x="7.62" y="-20.32" radius="0.635" width="0.1524" layer="94"/>
+<circle x="7.62" y="-15.24" radius="0.635" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="2.54" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-12.7" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="7.62" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="12.7" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="-2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-17.78" x2="1.778" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="8.382" y2="-20.32" width="0.1524" layer="94"/>
+<pin name="CONTACT2" x="12.7" y="-20.32" visible="pad" length="point" swaplevel="2"/>
+<pin name="CONTACT1" x="-2.54" y="-17.78" visible="pad" length="point" swaplevel="2" rot="R180"/>
+<pin name="COIL-" x="12.7" y="-7.62" visible="pad" length="point"/>
+<pin name="COIL+" x="-2.54" y="-7.62" visible="pad" length="point" rot="R180"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-22.86" x2="0" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="-22.86" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
+<text x="0" y="-23.622" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<wire x1="3.175" y1="-18.0975" x2="6.985" y2="-20.0025" width="0.1524" layer="94"/>
+<polygon width="0.0254" layer="94">
+<vertex x="6.096" y="-20.066"/>
+<vertex x="6.604" y="-19.304"/>
+<vertex x="7.112" y="-20.066"/>
+</polygon>
+<text x="-1.27" y="-8.89" size="1.778" layer="94" rot="R90" align="center">+</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -10637,6 +10747,77 @@ ISO224B: High-Grade
 <attribute name="MANUFACTURER" value="Microchip Technology"/>
 <attribute name="MOPN" value="579-MCP23S17T-E/SS"/>
 <attribute name="MPN" value="MCP23S17T-E/SS"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RELAY_SPST_NO_?*" prefix="K">
+<description>Single Pole, Single Throw Relay Normally Open
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.comus-intl.com/wp-content/uploads/2017/01/High-Voltage-Reed-Relays.pdf"&gt;355x Series&lt;/a&gt;&lt;/li&gt;
+&lt;\ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="RELAY_SPST_NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="355" package="335X">
+<connects>
+<connect gate="G$1" pin="COIL+" pad="2"/>
+<connect gate="G$1" pin="COIL-" pad="3"/>
+<connect gate="G$1" pin="CONTACT1" pad="1"/>
+<connect gate="G$1" pin="CONTACT2" pad="4"/>
+</connects>
+<technologies>
+<technology name="0">
+<attribute name="DKPN" value="1835-1037-ND"/>
+<attribute name="MANUFACTURER" value="Comus International"/>
+<attribute name="MOPN" value=""/>
+<attribute name="MPN" value="3350-1275-126"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RELAY_SPST_NC_POLARIZED_?*" prefix="K">
+<description>Single Pole, Single Throw Normally Closed Polarized Relay
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.comus-intl.com/wp-content/uploads/2017/01/High-Voltage-Reed-Relays.pdf"&gt;355x Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/657/cynergy3_d_pcb_v2-1892244.pdf"&gt;D Series&lt;/a&gt;&lt;/li&gt;
+&lt;\ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="RELAY_SPST_NC_POLARIZED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="355" package="335X">
+<connects>
+<connect gate="G$1" pin="COIL+" pad="2"/>
+<connect gate="G$1" pin="COIL-" pad="3"/>
+<connect gate="G$1" pin="CONTACT1" pad="1"/>
+<connect gate="G$1" pin="CONTACT2" pad="4"/>
+</connects>
+<technologies>
+<technology name="0">
+<attribute name="DKPN" value="1835-1040-ND"/>
+<attribute name="MANUFACTURER" value="Comus International"/>
+<attribute name="MOPN" value=""/>
+<attribute name="MPN" value="3350-4275-126"/>
+</technology>
+</technologies>
+</device>
+<device name="D" package="D">
+<connects>
+<connect gate="G$1" pin="COIL+" pad="4"/>
+<connect gate="G$1" pin="COIL-" pad="3"/>
+<connect gate="G$1" pin="CONTACT1" pad="2"/>
+<connect gate="G$1" pin="CONTACT2" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="725-1049-ND"/>
+<attribute name="MANUFACTURER" value="Sensata-Cynergy3"/>
+<attribute name="MOPN" value="285-DBR71210"/>
+<attribute name="MPN" value="DBR71210"/>
 </technology>
 </technologies>
 </device>

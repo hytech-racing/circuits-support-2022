@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="59" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1617,6 +1617,7 @@ visible on the PCB.</text>
 <rectangle x1="-1.27" y1="3.81" x2="1.27" y2="6.35" layer="40"/>
 <rectangle x1="-1.27" y1="-6.35" x2="1.27" y2="-3.81" layer="40"/>
 <rectangle x1="24.13" y1="-1.27" x2="26.67" y2="1.27" layer="40"/>
+<circle x="-29.21" y="9.525" radius="0.635" width="0" layer="21"/>
 </package>
 <package name="HM2102NLT">
 <description>HM2102NL Transformer
@@ -8278,7 +8279,7 @@ with up to 100mA of output current</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TRANSISTOR_NPN" prefix="Q" uservalue="yes">
+<deviceset name="TRANSISTOR_NPN" prefix="Q">
 <description>&lt;b&gt;NPN Transistor&lt;/b&gt;
 
 &lt;a href="http://www.onsemi.com/pub/Collateral/NSS1C201MZ4-D.PDF"&gt;Datasheet &lt;/a&gt;
@@ -8396,7 +8397,7 @@ Leakage Inductance: 0.50 uH max
 </device>
 </devices>
 </deviceset>
-<deviceset name="FUSE" prefix="F" uservalue="yes">
+<deviceset name="FUSE" prefix="F">
 <description>Ceramic Surface Mount Fuse
 &lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/358/typ_SMD_SPT-1276028.pdf"&gt;Datasheet&lt;/a&gt;
 
@@ -8511,7 +8512,7 @@ Ceramic SMD Surface Mount Fuse
 </device>
 </devices>
 </deviceset>
-<deviceset name="M3_MOUNTING">
+<deviceset name="M3_MOUNTING" prefix="H">
 <gates>
 </gates>
 <devices>
@@ -8522,7 +8523,7 @@ Ceramic SMD Surface Mount Fuse
 </device>
 </devices>
 </deviceset>
-<deviceset name="M4_MOUNTING">
+<deviceset name="M4_MOUNTING" prefix="H">
 <gates>
 </gates>
 <devices>
@@ -10405,7 +10406,7 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LTC3200-5">
+<deviceset name="LTC3200-5" prefix="U">
 <description>LTC3200-5
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/32005f.pdf"&gt;Datasheet&lt;/a&gt;
@@ -10752,7 +10753,7 @@ Variant 2: Addressable/Multi-Drop Configuration
 </device>
 </devices>
 </deviceset>
-<deviceset name="H3FA-*">
+<deviceset name="H3FA-*" prefix="K">
 <description>H3FA-A Timer Relay
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/307/-794852.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -11113,6 +11114,41 @@ ISO224B: High-Grade
 <attribute name="MANUFACTURER" value="Sensata-Cynergy3"/>
 <attribute name="MOPN" value="285-DBR72410"/>
 <attribute name="MPN" value="DBR72410"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="H3FA-AU-DC" prefix="K">
+<description>H3FA-*U* Time Delay Relay with Start
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/307/h3fa_ds_e_8_2_csm89-2308348.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="H3FA-U" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="H3FA-U">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="NC-1" pad="9"/>
+<connect gate="G$1" pin="NC-2" pad="12"/>
+<connect gate="G$1" pin="NO-1" pad="13"/>
+<connect gate="G$1" pin="NO-2" pad="16"/>
+<connect gate="G$1" pin="RESCON" pad="21"/>
+<connect gate="G$1" pin="RESET" pad="4"/>
+<connect gate="G$1" pin="RESEXT" pad="23"/>
+<connect gate="G$1" pin="RESINT" pad="22"/>
+<connect gate="G$1" pin="START" pad="6"/>
+<connect gate="G$1" pin="TIME2" pad="2"/>
+<connect gate="G$1" pin="TIME3" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="24"/>
+</connects>
+<technologies>
+<technology name="5">
+<attribute name="DKPN" value="Z3011-ND"/>
+<attribute name="MANUFACTURER" value="Omron Automation and Safety"/>
+<attribute name="MOPN" value="653-H3FA-AUDC5"/>
+<attribute name="MPN" value="H3FA-AU-DC5"/>
 </technology>
 </technologies>
 </device>

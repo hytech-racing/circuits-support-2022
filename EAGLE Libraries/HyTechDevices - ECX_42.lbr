@@ -8178,7 +8178,7 @@ Ceramic SMD Surface Mount Fuse
 <technology name="16MHZ">
 <attribute name="DKPN" value="XC2566CT-ND"/>
 <attribute name="FREQUENCY" value="16 MHz"/>
-<attribute name="LOAD_CAPACITANCE" value="10pF"/>
+<attribute name="LOAD_CAPACITANCE" value="12pF"/>
 <attribute name="MANUFACTURER" value="TXC CORPORATION"/>
 <attribute name="MOPN" value="520-160-10-42-CKMT"/>
 <attribute name="MPN" value="ECS-160-10-42-CKM-TR"/>

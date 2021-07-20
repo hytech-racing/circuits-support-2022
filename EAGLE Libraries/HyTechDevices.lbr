@@ -7935,6 +7935,19 @@ with up to 100mA of output current</description>
 </technology>
 </technologies>
 </device>
+<device name="MICROFIT_SMD_RIGHTANGLE_02" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_DUAL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="DUAL">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MODEL" value="µF_S_RA_2_D"/>
+<attribute name="MPN" value="0430450211"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CAPACITOR_?_*" prefix="C">

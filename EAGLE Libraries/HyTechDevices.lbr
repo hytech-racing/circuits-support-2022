@@ -4637,6 +4637,41 @@ Dashed line is edge of mated connector.</description>
 <circle x="-1.905" y="1.27" radius="0.127" width="0" layer="21"/>
 <rectangle x1="-1.778" y1="-1.524" x2="1.778" y2="1.524" layer="39"/>
 </package>
+<package name="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_SINGLE">
+<description>2 Pin Micro-Fit Right Angle Header, SMD, Single Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0436500214"&gt;Part&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/436500214_sd.pdf"&gt;Footprint&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/436450200_sd.pdf"&gt;Plug Size&lt;/a&gt;
+&lt;br&gt;
+Solid line must not be visible on PCB.
+&lt;br&gt;
+Dashed line is edge of mated connector.</description>
+<smd name="PAD" x="5.3721" y="0" dx="3.429" dy="1.651" layer="1"/>
+<smd name="PAD2" x="-5.3721" y="0" dx="3.429" dy="1.651" layer="1"/>
+<smd name="1" x="1.4986" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
+<smd name="2" x="-1.4986" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
+<rectangle x1="3.1496" y1="1.8034" x2="5.588" y2="3.4036" layer="43"/>
+<rectangle x1="-5.588" y1="1.8034" x2="-3.1496" y2="3.4036" layer="43"/>
+<wire x1="-4.826" y1="5.4737" x2="4.826" y2="5.4737" width="0.127" layer="21"/>
+<wire x1="2.9972" y1="-4.4323" x2="-2.9972" y2="-4.4323" width="0.127" layer="21"/>
+<wire x1="-4.826" y1="-2.6035" x2="-4.826" y2="5.4737" width="0.127" layer="21"/>
+<wire x1="-2.9972" y1="-4.4323" x2="-4.826" y2="-2.6035" width="0.127" layer="21"/>
+<wire x1="2.9972" y1="-4.4323" x2="4.826" y2="-2.6035" width="0.127" layer="21"/>
+<wire x1="4.826" y1="-2.6035" x2="4.826" y2="5.4737" width="0.127" layer="21"/>
+<rectangle x1="-7.8486" y1="-5.08" x2="7.8486" y2="7.62" layer="39"/>
+<wire x1="-6.35" y1="-10.16" x2="6.35" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-4.4704" y1="-10.16" x2="-4.4704" y2="-25.4" width="0" layer="20"/>
+<wire x1="-4.4704" y1="-25.4" x2="4.4704" y2="-25.4" width="0" layer="20"/>
+<wire x1="4.4704" y1="-25.4" x2="4.4704" y2="-10.16" width="0" layer="20"/>
+<wire x1="4.4704" y1="-10.16" x2="-4.4704" y2="-10.16" width="0" layer="20"/>
+<wire x1="-6.35" y1="-12.2428" x2="6.35" y2="-12.2428" width="0.127" layer="21" style="shortdash"/>
+<text x="0.2286" y="-5.207" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-5.588" y1="1.8034" x2="-3.1496" y2="3.4036" layer="41"/>
+<rectangle x1="3.1496" y1="1.8034" x2="5.588" y2="3.4036" layer="41"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -7937,13 +7972,13 @@ with up to 100mA of output current</description>
 <wire x1="10.16" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
-<text x="0" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="0.635" size="1.27" layer="95">&gt;NAME</text>
 <pin name="GND" x="-2.54" y="-12.7" visible="pin" length="short" direction="pwr"/>
 <pin name="RH" x="-2.54" y="-10.16" visible="pin" length="short" direction="out"/>
 <pin name="T" x="-2.54" y="-5.08" visible="pin" length="short" direction="out"/>
 <pin name="VDD" x="12.7" y="-2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
 <wire x1="10.16" y1="0" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
-<text x="0" y="-15.875" size="1.778" layer="96" align="top-left">&gt;MPN</text>
+<text x="0" y="-15.875" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -7971,16 +8006,29 @@ with up to 100mA of output current</description>
 </technology>
 </technologies>
 </device>
-<device name="MICROFIT_SMD_RIGHTANGLE_02" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_DUAL">
+<device name="MICROFIT_SMD_RIGHTANGLE_02_DUAL" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_DUAL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="DUAL">
+<technology name="BLACK">
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MODEL" value="µF_S_RA_2_D"/>
 <attribute name="MPN" value="0430450211"/>
+</technology>
+</technologies>
+</device>
+<device name="MICROFIT_SMD_RIGHTANGLE_02_SINGLE" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_SINGLE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="BLACK">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MODEL" value="µF_S_RA_2_S"/>
+<attribute name="MPN" value="436500214"/>
 </technology>
 </technologies>
 </device>

@@ -8520,7 +8520,7 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
+<technology name="1.25">
 <attribute name="CURRENT" value="1.25A"/>
 <attribute name="DKPN" value="F10986CT-ND"/>
 <attribute name="MANUFACTURER" value="Littelfuse Inc."/>

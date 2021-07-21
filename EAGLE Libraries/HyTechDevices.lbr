@@ -8026,8 +8026,10 @@ with up to 100mA of output current</description>
 </connects>
 <technologies>
 <technology name="BLACK">
+<attribute name="DKPN" value="436500214"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MODEL" value="µF_S_RA_2_S"/>
+<attribute name="MOPN" value="538-43650-0214"/>
 <attribute name="MPN" value="436500214"/>
 </technology>
 </technologies>
@@ -11262,6 +11264,10 @@ ISO224B: High-Grade
 </deviceset>
 <deviceset name="SHT3*-ARP-B" prefix="U">
 <description>Humidity and Temperature Sensor
+&lt;br&gt;
+SHT30: Low Grade
+&lt;br&gt;
+SHT31: High Grade
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/682/Sensirion_Humidity_Sensors_SHT3x_Datasheet_analog-2001011.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>

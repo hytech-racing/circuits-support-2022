@@ -8893,6 +8893,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="15.97V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="2.74K">
+<attribute name="DKPN" value="P20020CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B2741V"/>
+<attribute name="MPN" value="ERJ-PB3B2741V"/>
+<attribute name="POWER" value="0.2W"/>
+<attribute name="RESISTANCE" value="2.74k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="23.41V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
 <technology name="215K">
 <attribute name="DKPN" value="P215KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>

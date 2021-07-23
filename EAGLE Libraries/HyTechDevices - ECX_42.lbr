@@ -4050,7 +4050,7 @@ Toshiba
 <text x="0" y="6.35" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-3.81" y1="-5.588" x2="3.81" y2="6.858" layer="39"/>
 </package>
-<package name="ECX_42">
+<package name="ECX-42">
 <description>ECX_42&lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/122/ECX_42-12562.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-1.5" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
@@ -4061,9 +4061,12 @@ Toshiba
 <wire x1="2" y1="1.25" x2="2" y2="-1.25" width="0.127" layer="21"/>
 <wire x1="2" y1="-1.25" x2="-2" y2="-1.25" width="0.127" layer="21"/>
 <wire x1="-2" y1="-1.25" x2="-2" y2="1.25" width="0.127" layer="21"/>
-<text x="0" y="1.27" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.54" y1="-1.524" x2="2.54" y2="1.524" layer="39"/>
 <rectangle x1="-2.54" y1="-1.524" x2="2.54" y2="1.524" layer="40"/>
+<rectangle x1="-2.54" y1="-1.524" x2="2.54" y2="1.524" layer="41"/>
+<rectangle x1="-2.54" y1="-1.524" x2="2.54" y2="1.524" layer="42"/>
+<rectangle x1="-2.54" y1="-1.524" x2="2.54" y2="1.524" layer="43"/>
+<text x="0" y="1.524" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -8156,6 +8159,35 @@ Ceramic SMD Surface Mount Fuse
 </device>
 </devices>
 </deviceset>
+<deviceset name="CRYSTAL" prefix="X">
+<description>Crystal
+&lt;br&gt;
+&lt;a href="https://ecsxtal.com/store/pdf/ECX_42.pdf"&gt;ECS-160-10-42-CKM-TR Datasheet&lt;/a&gt;
+&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ECX-42">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name="16MHZ">
+<attribute name="DKPN" value="XC2566CT-ND"/>
+<attribute name="FREQUENCY" value="16 MHz"/>
+<attribute name="LOAD_CAPACITANCE" value="12pF"/>
+<attribute name="MANUFACTURER" value="TXC CORPORATION"/>
+<attribute name="MOPN" value="520-160-10-42-CKMT"/>
+<attribute name="MPN" value="ECS-160-10-42-CKM-TR"/>
+<attribute name="SHUNT_CAPACITANCE" value="2 - 5 pF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="LED_THERMAL_?_*" prefix="D">
 <description>LED with Thermal Pad
 &lt;br&gt;
@@ -9226,30 +9258,6 @@ with up to 100mA of output current
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MODEL" value="NF_T_V_B"/>
 <attribute name="MPN" value="105429-1304 "/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CRYSTAL">
-<description>ECS-160-10-42-CKM-TR&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/122/ECX_42-12562.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ECX_42">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2 4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="XC2566CT-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="ECS Inc."/>
-<attribute name="MOPN" value="520-160-10-42-CKMT"/>
-<attribute name="MPN" value="ECS-160-10-42-CKM-TR"/>
 </technology>
 </technologies>
 </device>

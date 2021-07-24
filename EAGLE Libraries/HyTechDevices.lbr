@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11286,13 +11286,13 @@ SHT31: High Grade
 <technologies>
 <technology name="0">
 <attribute name="DKPN" value="1649-1010-1-ND"/>
-<attribute name="MANUFACTUER" value="Sensirion AG"/>
+<attribute name="MANUFACTURER" value="Sensirion AG"/>
 <attribute name="MOPN" value="403-SHT30-ARP-B"/>
 <attribute name="MPN" value="SHT30-ARP-B"/>
 </technology>
 <technology name="1">
 <attribute name="DKPN" value="1649-1012-1-ND"/>
-<attribute name="MANUFACTUER" value="Sensirion AG"/>
+<attribute name="MANUFACTURER" value="Sensirion AG"/>
 <attribute name="MOPN" value="403-SHT31-ARP-B"/>
 <attribute name="MPN" value="SHT31-ARP-B"/>
 </technology>

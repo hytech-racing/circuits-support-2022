@@ -4672,6 +4672,15 @@ Dashed line is edge of mated connector.</description>
 <rectangle x1="-5.588" y1="1.8034" x2="-3.1496" y2="3.4036" layer="41"/>
 <rectangle x1="3.1496" y1="1.8034" x2="5.588" y2="3.4036" layer="41"/>
 </package>
+<package name="5222">
+<description>5222 Spring
+
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/215/5222-743174.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="0" y="0" dx="11.303" dy="13.208" layer="1"/>
+<rectangle x1="-6.35" y1="-7.366" x2="6.35" y2="7.366" layer="39"/>
+<text x="0" y="7.62" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -9411,30 +9420,6 @@ Leakage Inductance: 0.50 uH max
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONNECTOR-1" prefix="J">
-<description>1 Pin Connector
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/273/Mill-Max_03212019_807-22-001-10-020101-1545127.pdf"&gt;Pogo pin datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="CONNECTOR_01" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="807-22-001-10-02X101">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="807-22-001-10-022101-ND"/>
-<attribute name="MANUFACTURER" value="Mill-Max Manufacturing Corp."/>
-<attribute name="MODEL" value="POGO-PIN"/>
-<attribute name="MOPN" value="575-8072200110022101"/>
-<attribute name="MPN" value="807-22-001-10-022101"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="JUMPER_?_*" prefix="J">
 <description>2 Pin Connector</description>
 <gates>
@@ -11295,6 +11280,46 @@ SHT31: High Grade
 <attribute name="MANUFACTURER" value="Sensirion AG"/>
 <attribute name="MOPN" value="403-SHT31-ARP-B"/>
 <attribute name="MPN" value="SHT31-ARP-B"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONNECTOR-1_?_*" prefix="J">
+<description>1 Pin Connector
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/273/Mill-Max_03212019_807-22-001-10-020101-1545127.pdf"&gt;Pogo pin datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/215/5222-743174.pdf"&gt;5222 Spring datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CONNECTOR_01" x="0" y="0"/>
+</gates>
+<devices>
+<device name="POGO" package="807-22-001-10-02X101">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="807-22-001-10-022101-ND"/>
+<attribute name="MANUFACTURER" value="Mill-Max Manufacturing Corp."/>
+<attribute name="MODEL" value="POGO-PIN"/>
+<attribute name="MOPN" value="575-8072200110022101"/>
+<attribute name="MPN" value="807-22-001-10-022101"/>
+</technology>
+</technologies>
+</device>
+<device name="5222" package="5222">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="36-5222-ND"/>
+<attribute name="MANUFACTURER" value="Keystone Electronics"/>
+<attribute name="MODEL" value="SPRING"/>
+<attribute name="MOPN" value="534-5222"/>
+<attribute name="MPN" value="5222"/>
 </technology>
 </technologies>
 </device>

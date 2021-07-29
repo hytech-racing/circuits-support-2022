@@ -8159,11 +8159,12 @@ Ceramic SMD Surface Mount Fuse
 </device>
 </devices>
 </deviceset>
-<deviceset name="CRYSTAL" prefix="X">
+<deviceset name="CRYSTAL_*" prefix="X">
 <description>Crystal
 &lt;br&gt;
-&lt;a href="https://ecsxtal.com/store/pdf/ECX_42.pdf"&gt;ECS-160-10-42-CKM-TR Datasheet&lt;/a&gt;
-&lt;br&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/122/ECX_42-12562.pdf"&gt;ECS-160-10-42-CKM-TR Datasheet&lt;/a&gt;
+&lt;br&gt;
+Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</description>
 <gates>
 <gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
 </gates>
@@ -8178,7 +8179,7 @@ Ceramic SMD Surface Mount Fuse
 <technology name="16MHZ">
 <attribute name="DKPN" value="XC2566CT-ND"/>
 <attribute name="FREQUENCY" value="16 MHz"/>
-<attribute name="LOAD_CAPACITANCE" value="12pF"/>
+<attribute name="LOAD_CAPACITANCE" value="10pF"/>
 <attribute name="MANUFACTURER" value="TXC CORPORATION"/>
 <attribute name="MOPN" value="520-160-10-42-CKMT"/>
 <attribute name="MPN" value="ECS-160-10-42-CKM-TR"/>

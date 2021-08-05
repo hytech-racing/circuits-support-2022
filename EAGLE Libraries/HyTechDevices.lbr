@@ -57,7 +57,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -4286,7 +4286,7 @@ Toshiba
 &lt;br&gt;
 &lt;a href="https://www.molex.com/pdm_docs/sd/430250200_sd.pdf"&gt;Plug Size&lt;/a&gt;
 &lt;br&gt;
-Solid line must not be visible on PCB.
+Solid line must not be visible on PCB if no cutout is desired.
 &lt;br&gt;
 Dashed line is edge of mated connector.</description>
 <smd name="PAD" x="3.8862" y="0" dx="3.429" dy="1.651" layer="1"/>
@@ -4302,17 +4302,17 @@ Dashed line is edge of mated connector.</description>
 <wire x1="1.4986" y1="-4.4323" x2="3.3274" y2="-2.6035" width="0.127" layer="21"/>
 <wire x1="3.3274" y1="-2.6035" x2="3.3274" y2="5.4737" width="0.127" layer="21"/>
 <rectangle x1="-6.35" y1="-5.08" x2="6.35" y2="12.7" layer="39"/>
-<wire x1="-6.35" y1="-10.16" x2="6.35" y2="-10.16" width="0.127" layer="37"/>
-<wire x1="-6.35" y1="-12.2428" x2="6.35" y2="-12.2428" width="0.127" layer="37" style="shortdash"/>
 <text x="0" y="-5.207" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-4.6101" y1="1.8034" x2="-2.1717" y2="3.4036" layer="41"/>
 <rectangle x1="2.1717" y1="1.8034" x2="4.6101" y2="3.4036" layer="41"/>
-<polygon width="0" layer="46">
-<vertex x="2.54" y="-25.4"/>
-<vertex x="-2.54" y="-25.4"/>
-<vertex x="-2.54" y="-10.16"/>
-<vertex x="2.54" y="-10.16"/>
-</polygon>
+<wire x1="-6.35" y1="-10.033" x2="6.35" y2="-10.033" width="0.127" layer="49"/>
+<wire x1="-6.35" y1="-12.3698" x2="6.35" y2="-12.3698" width="0.127" layer="49" style="shortdash"/>
+<rectangle x1="-2.54" y1="-25.527" x2="2.54" y2="-10.033" layer="41"/>
+<wire x1="-2.54" y1="-10.033" x2="2.54" y2="-10.033" width="0" layer="46"/>
+<wire x1="2.54" y1="-10.033" x2="2.54" y2="-25.527" width="0" layer="46"/>
+<wire x1="2.54" y1="-25.527" x2="-2.54" y2="-25.527" width="0" layer="46"/>
+<wire x1="-2.54" y1="-25.527" x2="-2.54" y2="-10.033" width="0" layer="46"/>
+<rectangle x1="-2.54" y1="-25.527" x2="2.54" y2="-10.033" layer="42"/>
 </package>
 <package name="MOLEX_MICROFIT_PTH_VERTICAL_02_DUAL">
 <description>2 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
@@ -4648,7 +4648,7 @@ Dashed line is edge of mated connector.</description>
 &lt;br&gt;
 &lt;a href="https://www.molex.com/pdm_docs/sd/436450200_sd.pdf"&gt;Plug Size&lt;/a&gt;
 &lt;br&gt;
-Solid line must not be visible on PCB.
+Solid line must not be visible on PCB if no cutout is desired.
 &lt;br&gt;
 Dashed line is edge of mated connector.</description>
 <smd name="PAD" x="5.3721" y="0" dx="3.429" dy="1.651" layer="1"/>
@@ -4664,12 +4664,17 @@ Dashed line is edge of mated connector.</description>
 <wire x1="2.9972" y1="-4.4323" x2="4.826" y2="-2.6035" width="0.127" layer="21"/>
 <wire x1="4.826" y1="-2.6035" x2="4.826" y2="5.4737" width="0.127" layer="21"/>
 <rectangle x1="-7.8486" y1="-5.08" x2="7.8486" y2="7.62" layer="39"/>
-<wire x1="-6.35" y1="-10.16" x2="6.35" y2="-10.16" width="0.127" layer="37"/>
-<wire x1="-6.35" y1="-12.2428" x2="6.35" y2="-12.2428" width="0.127" layer="37" style="shortdash"/>
+<wire x1="-6.35" y1="-10.033" x2="6.35" y2="-10.033" width="0.127" layer="49"/>
+<wire x1="-6.35" y1="-12.3698" x2="6.35" y2="-12.3698" width="0.127" layer="49" style="shortdash"/>
 <text x="0.2286" y="-5.207" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-5.588" y1="1.8034" x2="-3.1496" y2="3.4036" layer="41"/>
 <rectangle x1="3.1496" y1="1.8034" x2="5.588" y2="3.4036" layer="41"/>
-<rectangle x1="-4.4704" y1="-25.4" x2="4.4704" y2="-10.16" layer="46"/>
+<rectangle x1="-4.4704" y1="-25.527" x2="4.4704" y2="-10.033" layer="41"/>
+<wire x1="-4.4704" y1="-10.033" x2="4.4704" y2="-10.033" width="0" layer="46"/>
+<wire x1="4.4704" y1="-10.033" x2="4.4704" y2="-25.527" width="0" layer="46"/>
+<wire x1="4.4704" y1="-25.527" x2="-4.4704" y2="-25.527" width="0" layer="46"/>
+<wire x1="-4.4704" y1="-25.527" x2="-4.4704" y2="-10.033" width="0" layer="46"/>
+<rectangle x1="-4.4704" y1="-25.527" x2="4.4704" y2="-10.033" layer="42"/>
 </package>
 <package name="5222">
 <description>5222 Spring

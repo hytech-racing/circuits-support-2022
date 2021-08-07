@@ -4679,6 +4679,7 @@ Dashed line is edge of mated connector.</description>
 <wire x1="-4.4704" y1="-25.527" x2="-4.4704" y2="-10.033" width="0" layer="46"/>
 <rectangle x1="-4.4704" y1="-25.527" x2="4.4704" y2="-10.033" layer="42"/>
 <rectangle x1="-5.08" y1="-26.035" x2="5.08" y2="-5.08" layer="39"/>
+<rectangle x1="-5.08" y1="-26.035" x2="5.08" y2="-9.398" layer="40"/>
 </package>
 <package name="5222">
 <description>5222 Spring

@@ -3807,16 +3807,19 @@ Note: Based on Page 88.</description>
 <package name="0885">
 <description>0885 Fuse
 &lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Keepout is 1 mm around fuse to get 2 mm between fuses.</description>
 <smd name="1" x="-5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
 <smd name="2" x="5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
 <wire x1="-5.43" y1="2.39" x2="-5.43" y2="-2.39" width="0.127" layer="21"/>
 <wire x1="-5.43" y1="-2.39" x2="5.43" y2="-2.39" width="0.127" layer="21"/>
 <wire x1="5.43" y1="-2.39" x2="5.43" y2="2.39" width="0.127" layer="21"/>
 <wire x1="5.43" y1="2.39" x2="-5.43" y2="2.39" width="0.127" layer="21"/>
-<text x="0" y="4.318" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-8.382" y1="-4.318" x2="8.382" y2="4.318" layer="39"/>
-<rectangle x1="-2.45" y1="-4.318" x2="2.45" y2="4.318" layer="43"/>
+<text x="0" y="4.615" size="0.8128" layer="25" font="vector" align="top-center">&gt;NAME</text>
+<rectangle x1="-9.05" y1="-4.615" x2="9.05" y2="4.615" layer="39"/>
+<rectangle x1="-2.45" y1="-4.615" x2="2.45" y2="4.615" layer="43"/>
+<rectangle x1="-2.45" y1="-4.615" x2="2.45" y2="4.615" layer="41"/>
 </package>
 <package name="3921">
 <description>3921 Yageo Resistor
@@ -4675,6 +4678,7 @@ Dashed line is edge of mated connector.</description>
 <wire x1="4.4704" y1="-25.527" x2="-4.4704" y2="-25.527" width="0" layer="46"/>
 <wire x1="-4.4704" y1="-25.527" x2="-4.4704" y2="-10.033" width="0" layer="46"/>
 <rectangle x1="-4.4704" y1="-25.527" x2="4.4704" y2="-10.033" layer="42"/>
+<rectangle x1="-5.08" y1="-26.035" x2="5.08" y2="-5.08" layer="39"/>
 </package>
 <package name="5222">
 <description>5222 Spring

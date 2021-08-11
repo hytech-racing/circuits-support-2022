@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3812,7 +3812,7 @@ Note: Based on Page 88.</description>
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
-Keepout is 25 mil around fuse to get 50 mil between fuses.</description>
+Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <smd name="1" x="-5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
 <smd name="2" x="5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
 <wire x1="-5.43" y1="2.39" x2="-5.43" y2="-2.39" width="0.127" layer="21"/>
@@ -3820,9 +3820,9 @@ Keepout is 25 mil around fuse to get 50 mil between fuses.</description>
 <wire x1="5.43" y1="-2.39" x2="5.43" y2="2.39" width="0.127" layer="21"/>
 <wire x1="5.43" y1="2.39" x2="-5.43" y2="2.39" width="0.127" layer="21"/>
 <text x="0" y="3.65" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-8.685" y1="-4.25" x2="8.685" y2="4.25" layer="39"/>
-<rectangle x1="-2.45" y1="-4.25" x2="2.45" y2="4.25" layer="43"/>
-<rectangle x1="-2.45" y1="-4.25" x2="2.45" y2="4.25" layer="41"/>
+<rectangle x1="-8.85" y1="-4.415" x2="8.85" y2="4.415" layer="39"/>
+<rectangle x1="-2.45" y1="-4.415" x2="2.45" y2="4.415" layer="43"/>
+<rectangle x1="-2.45" y1="-4.415" x2="2.45" y2="4.415" layer="41"/>
 </package>
 <package name="3921">
 <description>3921 Yageo Resistor

@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4371,8 +4371,8 @@ Dashed line is edge of mated connector.</description>
 &lt;a href="https://www.molex.com/pdm_docs/sd/436450200_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
 <pad name="2" x="-1.4986" y="0" drill="1.0668"/>
 <pad name="1" x="1.4986" y="0" drill="1.0668"/>
-<hole x="4.4958" y="-1.9558" drill="1.0668"/>
-<hole x="-4.4958" y="-1.9558" drill="1.0668"/>
+<hole x="4.4958" y="-1.9558" drill="1.3208"/>
+<hole x="-4.4958" y="-1.9558" drill="1.3208"/>
 <wire x1="-4.826" y1="-2.4638" x2="4.826" y2="-2.4638" width="0.127" layer="21"/>
 <wire x1="4.826" y1="-2.4638" x2="4.826" y2="1.905" width="0.127" layer="21"/>
 <wire x1="4.826" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
@@ -4616,8 +4616,8 @@ Dashed line is edge of mated connector.</description>
 &lt;a href="https://www.molex.com/pdm_docs/sd/436450300_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
 <pad name="2" x="0" y="0" drill="1.0668"/>
 <pad name="1" x="2.9972" y="0" drill="1.0668"/>
-<hole x="5.9944" y="-1.9558" drill="1.0668"/>
-<hole x="-5.9944" y="-1.9558" drill="1.0668"/>
+<hole x="5.9944" y="-1.9558" drill="1.3208"/>
+<hole x="-5.9944" y="-1.9558" drill="1.3208"/>
 <wire x1="-6.3246" y1="-2.4638" x2="6.3246" y2="-2.4638" width="0.127" layer="21"/>
 <wire x1="6.3246" y1="-2.4638" x2="6.3246" y2="1.905" width="0.127" layer="21"/>
 <wire x1="6.3246" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>

@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5628,14 +5628,14 @@ Pins tied to GND: SLOW
 <pin name="!RESET" x="22.86" y="-30.48" length="short" direction="in" rot="R180"/>
 <pin name="INTB" x="-2.54" y="-25.4" length="short" direction="out"/>
 <pin name="INTA" x="22.86" y="-25.4" length="short" direction="out" rot="R180"/>
-<pin name="GPA0" x="22.86" y="-22.86" length="short" rot="R180"/>
-<pin name="GPA1" x="22.86" y="-20.32" length="short" rot="R180"/>
-<pin name="GPA2" x="22.86" y="-17.78" length="short" rot="R180"/>
-<pin name="GPA3" x="22.86" y="-15.24" length="short" rot="R180"/>
-<pin name="GPA4" x="22.86" y="-12.7" length="short" rot="R180"/>
-<pin name="GPA5" x="22.86" y="-10.16" length="short" rot="R180"/>
-<pin name="GPA6" x="22.86" y="-7.62" length="short" rot="R180"/>
-<pin name="GPA7" x="22.86" y="-5.08" length="short" rot="R180"/>
+<pin name="GPA0" x="22.86" y="-5.08" length="short" rot="R180"/>
+<pin name="GPA1" x="22.86" y="-7.62" length="short" rot="R180"/>
+<pin name="GPA2" x="22.86" y="-10.16" length="short" rot="R180"/>
+<pin name="GPA3" x="22.86" y="-12.7" length="short" rot="R180"/>
+<pin name="GPA4" x="22.86" y="-15.24" length="short" rot="R180"/>
+<pin name="GPA5" x="22.86" y="-17.78" length="short" rot="R180"/>
+<pin name="GPA6" x="22.86" y="-20.32" length="short" rot="R180"/>
+<pin name="GPA7" x="22.86" y="-22.86" length="short" rot="R180"/>
 <pin name="SDI" x="-2.54" y="-35.56" length="short" direction="in"/>
 <pin name="A1" x="22.86" y="-35.56" length="short" direction="in" rot="R180"/>
 <pin name="A0" x="22.86" y="-38.1" length="short" direction="in" rot="R180"/>

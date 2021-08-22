@@ -9056,15 +9056,15 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="240">
-<attribute name="DKPN" value="311-240HRTR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Yageo" constant="no"/>
-<attribute name="MOPN" value="603-RC0603FR-07240RL" constant="no"/>
-<attribute name="MPN" value="RC0603FR-07240RL" constant="no"/>
-<attribute name="POWER" value="0.1W" constant="no"/>
-<attribute name="RESISTANCE" value="240" constant="no"/>
-<attribute name="TOLERANCE" value="1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="75V" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
+<attribute name="DKPN" value="311-240HRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-07240RL"/>
+<attribute name="MPN" value="RC0603FR-07240RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="240"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="4.90V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="2K">
 <attribute name="DKPN" value="P2.0KBDCT-ND"/>

@@ -9066,6 +9066,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="4.90V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="255K">
+<attribute name="DKPN" value="P255KDBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Company"/>
+<attribute name="MOPN" value="667-ERA-3AEB2553V"/>
+<attribute name="MPN" value="ERA-3AEB2553V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="255k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="2K">
 <attribute name="DKPN" value="P2.0KBDCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>

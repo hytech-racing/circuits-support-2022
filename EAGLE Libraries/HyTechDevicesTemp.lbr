@@ -253,21 +253,6 @@ Based on page 10.</description>
 <vertex x="1.1" y="3.765"/>
 </polygon>
 </package>
-<package name="TO-92">
-<description>TO-92&lt;br&gt;
-&lt;a href = "https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-to-92/TO-92_3_05-08-1410.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<pad name="1" x="1.27" y="0" drill="0.6" first="yes"/>
-<pad name="2" x="0" y="0" drill="0.6"/>
-<pad name="3" x="-1.27" y="0" drill="0.6"/>
-<wire x1="2.286" y1="0.381" x2="-2.286" y2="0.381" width="0.127" layer="21"/>
-<wire x1="0" y1="2.413" x2="2.286" y2="0.381" width="0.127" layer="21" curve="-83.659808"/>
-<wire x1="0" y1="2.413" x2="-2.286" y2="0.381" width="0.127" layer="21" curve="83.659808"/>
-<wire x1="-2.286" y1="-1.143" x2="-2.286" y2="0.381" width="0.127" layer="21"/>
-<wire x1="-2.286" y1="-1.143" x2="2.286" y2="-1.143" width="0.127" layer="21"/>
-<wire x1="2.286" y1="-1.143" x2="2.286" y2="0.381" width="0.127" layer="21"/>
-<rectangle x1="-2.032" y1="-0.762" x2="2.032" y2="0.762" layer="40"/>
-<rectangle x1="-2.54" y1="-1.524" x2="2.54" y2="2.794" layer="39"/>
-</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR_ADJ">
@@ -338,21 +323,6 @@ LR8  is  a  high-voltage,  low-output  current,  adjustablelinear  regulator.  T
 <attribute name="MANUFACTURER" value="Microchip" constant="no"/>
 <attribute name="MOPN" value="689-LR8N8-G"/>
 <attribute name="MPN" value="LR8N8-G" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TO-92" package="TO-92">
-<connects>
-<connect gate="G$1" pin="ADJ" pad="3"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="2"/>
-</connects>
-<technologies>
-<technology name="LR8">
-<attribute name="DPKN" value="LR8N3-G-ND"/>
-<attribute name="MANUFACTURER" value="Microchip"/>
-<attribute name="MOPN" value="689-LR8N3-G"/>
-<attribute name="MPN" value="LR8N3-G"/>
 </technology>
 </technologies>
 </device>

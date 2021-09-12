@@ -238,6 +238,8 @@ A variation of MSOP16 with 4 pins removed.
 </symbols>
 <devicesets>
 <deviceset name="LTC3639">
+<description>The LTC3639  is  a  high  efficiency  step-down  DC/DC regulator with a wide input range of 4V to 150V and programmable overvoltage  lockout.&lt;br&gt;
+&lt;a href = "https://www.mouser.com/datasheet/2/609/3639fd-1271210.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="LTC3639" x="0" y="0"/>
 </gates>
@@ -257,7 +259,12 @@ A variation of MSOP16 with 4 pins removed.
 <connect gate="G$1" pin="VPRG2" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DKPN" value="LTC3639EMSE#TRPBFTR-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices"/>
+<attribute name="MOPN" value="584-LTC3639EMSETRPBF"/>
+<attribute name="MPN" value="LTC3639EMSE#TRPBF "/>
+</technology>
 </technologies>
 </device>
 </devices>

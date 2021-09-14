@@ -192,14 +192,42 @@
 A variation of MSOP16 with 4 pins removed. 
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081871_D_MSE16(12).pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-1.75" y="-2.10185" dx="0.3429" dy="0.9017" layer="1"/>
+<smd name="3" x="-0.75" y="-2.10185" dx="0.3429" dy="0.9017" layer="1"/>
+<smd name="5" x="0.25" y="-2.10185" dx="0.3429" dy="0.9017" layer="1"/>
+<smd name="6" x="0.75" y="-2.10185" dx="0.3429" dy="0.9017" layer="1"/>
+<smd name="7" x="1.25" y="-2.10185" dx="0.3429" dy="0.9017" layer="1"/>
+<smd name="8" x="1.75" y="-2.10185" dx="0.3429" dy="0.9017" layer="1"/>
+<smd name="16" x="-1.75" y="2.10185" dx="0.3429" dy="0.9017" layer="1"/>
+<smd name="14" x="-0.75" y="2.10185" dx="0.3429" dy="0.9017" layer="1"/>
+<smd name="12" x="0.25" y="2.10185" dx="0.3429" dy="0.9017" layer="1"/>
+<smd name="11" x="0.75" y="2.10185" dx="0.3429" dy="0.9017" layer="1"/>
+<smd name="10" x="1.25" y="2.10185" dx="0.3429" dy="0.9017" layer="1"/>
+<smd name="9" x="1.75" y="2.10185" dx="0.3429" dy="0.9017" layer="1"/>
+<wire x1="2.0195" y1="1.5" x2="-2.0195" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-2.0195" y1="1.5" x2="-2.0195" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-2.0195" y1="-1.5" x2="2.0195" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="2.0195" y1="-1.5" x2="2.0195" y2="1.5" width="0.127" layer="21"/>
+<circle x="-2.286" y="-2.1082" radius="0.127" width="0" layer="21"/>
+<rectangle x1="-2.286" y1="-2.794" x2="2.286" y2="2.794" layer="39"/>
+<text x="-2.286" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="MSOP-16">
+<description>MSOP 16
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081669_A_MS16.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-1.75" y="-2.1055" dx="0.305" dy="0.889" layer="1"/>
+<smd name="2" x="-1.25" y="-2.1055" dx="0.305" dy="0.889" layer="1"/>
 <smd name="3" x="-0.75" y="-2.1055" dx="0.305" dy="0.889" layer="1"/>
+<smd name="4" x="-0.25" y="-2.1055" dx="0.305" dy="0.889" layer="1"/>
 <smd name="5" x="0.25" y="-2.1055" dx="0.305" dy="0.889" layer="1"/>
 <smd name="6" x="0.75" y="-2.1055" dx="0.305" dy="0.889" layer="1"/>
 <smd name="7" x="1.25" y="-2.1055" dx="0.305" dy="0.889" layer="1"/>
 <smd name="8" x="1.75" y="-2.1055" dx="0.305" dy="0.889" layer="1"/>
 <smd name="16" x="-1.75" y="2.1055" dx="0.305" dy="0.889" layer="1"/>
+<smd name="15" x="-1.25" y="2.1055" dx="0.305" dy="0.889" layer="1"/>
 <smd name="14" x="-0.75" y="2.1055" dx="0.305" dy="0.889" layer="1"/>
+<smd name="13" x="-0.25" y="2.1055" dx="0.305" dy="0.889" layer="1"/>
 <smd name="12" x="0.25" y="2.1055" dx="0.305" dy="0.889" layer="1"/>
 <smd name="11" x="0.75" y="2.1055" dx="0.305" dy="0.889" layer="1"/>
 <smd name="10" x="1.25" y="2.1055" dx="0.305" dy="0.889" layer="1"/>
@@ -208,9 +236,9 @@ A variation of MSOP16 with 4 pins removed.
 <wire x1="-2.0195" y1="1.5" x2="-2.0195" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-2.0195" y1="-1.5" x2="2.0195" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="2.0195" y1="-1.5" x2="2.0195" y2="1.5" width="0.127" layer="21"/>
-<circle x="-2.286" y="-2.1082" radius="0.127" width="0.127" layer="21"/>
+<circle x="-2.286" y="-2.1082" radius="0.127" width="0" layer="21"/>
 <rectangle x1="-2.286" y1="-2.794" x2="2.286" y2="2.794" layer="39"/>
-<text x="-2.54" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="-2.286" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -227,17 +255,17 @@ A variation of MSOP16 with 4 pins removed.
 <pin name="SW" x="22.86" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="VFB" x="22.86" y="-10.16" length="short" direction="in" rot="R180"/>
 <pin name="FBO" x="22.86" y="-12.7" length="short" direction="out" rot="R180"/>
-<pin name="ISET" x="22.86" y="-15.24" length="short" rot="R180"/>
+<pin name="ISET" x="22.86" y="-15.24" length="short" direction="in" rot="R180"/>
 <pin name="SS" x="22.86" y="-17.78" length="short" direction="in" rot="R180"/>
 <pin name="VPRG1" x="22.86" y="-20.32" length="short" direction="in" rot="R180"/>
 <pin name="VPRG2" x="22.86" y="-22.86" length="short" direction="in" rot="R180"/>
 <pin name="GND" x="-2.54" y="-25.4" length="short" direction="pwr"/>
-<text x="0" y="0.762" size="1.27" layer="95">LTC3639</text>
-<text x="0" y="-28.702" size="1.27" layer="95" align="top-left">LTC3639EMSE</text>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-28.702" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LTC3639">
+<deviceset name="LTC3639" prefix="U">
 <description>The LTC3639  is  a  high  efficiency  step-down  DC/DC regulator with a wide input range of 4V to 150V and programmable overvoltage  lockout.&lt;br&gt;
 &lt;a href = "https://www.mouser.com/datasheet/2/609/3639fd-1271210.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>

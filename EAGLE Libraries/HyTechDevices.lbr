@@ -4772,7 +4772,6 @@ A variation of MSOP16 with 4 pins removed.
 <wire x1="-2.0195" y1="1.5" x2="-2.0195" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-2.0195" y1="-1.5" x2="2.0195" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="2.0195" y1="-1.5" x2="2.0195" y2="1.5" width="0.127" layer="21"/>
-<circle x="-2.286" y="-2.1082" radius="0.127" width="0.127" layer="21"/>
 <rectangle x1="-2.286" y1="-2.794" x2="2.286" y2="2.794" layer="39"/>
 <text x="-2.286" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
@@ -11473,8 +11472,8 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="LTC3639">
-<description>The LTC3639  is  a  high  efficiency  step-down  DC/DC regulator with a wide input range of 4V to 150V and programmable overvoltage  lockout.&lt;br&gt;
+<deviceset name="LTC3639" prefix="DCDC">
+<description>LTC3639&lt;br&gt;
 &lt;a href = "https://www.mouser.com/datasheet/2/609/3639fd-1271210.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="LTC3639" x="0" y="0"/>
@@ -11497,7 +11496,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="LTC3639EMSE#TRPBFTR-ND"/>
-<attribute name="MANUFACTURER" value="Analog Devices"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
 <attribute name="MOPN" value="584-LTC3639EMSETRPBF"/>
 <attribute name="MPN" value="LTC3639EMSE#TRPBF "/>
 </technology>

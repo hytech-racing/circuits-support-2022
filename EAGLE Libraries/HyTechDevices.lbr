@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4751,6 +4751,31 @@ Dashed line is edge of mated connector.</description>
 <rectangle x1="-2.54" y1="-1.524" x2="2.54" y2="1.524" layer="43"/>
 <text x="0" y="1.524" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="MSE16(12)">
+<description>MSE16 (12)&lt;br&gt;
+A variation of MSOP16 with 4 pins removed. 
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081871_D_MSE16(12).pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-1.75" y="-2.10185" dx="0.308609375" dy="0.9017" layer="1"/>
+<smd name="3" x="-0.75" y="-2.10185" dx="0.308609375" dy="0.9017" layer="1"/>
+<smd name="5" x="0.25" y="-2.10185" dx="0.308609375" dy="0.9017" layer="1"/>
+<smd name="6" x="0.75" y="-2.10185" dx="0.308609375" dy="0.9017" layer="1"/>
+<smd name="7" x="1.25" y="-2.10185" dx="0.308609375" dy="0.9017" layer="1"/>
+<smd name="8" x="1.75" y="-2.10185" dx="0.308609375" dy="0.9017" layer="1"/>
+<smd name="16" x="-1.75" y="2.10185" dx="0.308609375" dy="0.9017" layer="1"/>
+<smd name="14" x="-0.75" y="2.10185" dx="0.308609375" dy="0.9017" layer="1"/>
+<smd name="12" x="0.25" y="2.10185" dx="0.308609375" dy="0.9017" layer="1"/>
+<smd name="11" x="0.75" y="2.10185" dx="0.308609375" dy="0.9017" layer="1"/>
+<smd name="10" x="1.25" y="2.10185" dx="0.308609375" dy="0.9017" layer="1"/>
+<smd name="9" x="1.75" y="2.10185" dx="0.308609375" dy="0.9017" layer="1"/>
+<wire x1="2.0195" y1="1.5" x2="-2.0195" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-2.0195" y1="1.5" x2="-2.0195" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-2.0195" y1="-1.5" x2="2.0195" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="2.0195" y1="-1.5" x2="2.0195" y2="1.5" width="0.127" layer="21"/>
+<circle x="-2.286" y="-2.1082" radius="0.127" width="0.127" layer="21"/>
+<rectangle x1="-2.286" y1="-2.794" x2="2.286" y2="2.794" layer="39"/>
+<text x="-2.286" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -8098,6 +8123,27 @@ with up to 100mA of output current</description>
 <wire x1="15.24" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="LTC3639">
+<description>LTC3639&lt;br&gt;
+&lt;a href = "https://www.mouser.com/datasheet/2/609/3639fd-1271210.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="0" y1="0" x2="0" y2="-27.94" width="0.254" layer="94"/>
+<pin name="VDD" x="-2.54" y="-2.54" length="short" direction="pwr"/>
+<pin name="RUN" x="-2.54" y="-10.16" length="short" direction="in"/>
+<pin name="OVLO" x="-2.54" y="-17.78" length="short" direction="in"/>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-27.94" x2="0" y2="-27.94" width="0.254" layer="94"/>
+<pin name="SW" x="22.86" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="VFB" x="22.86" y="-10.16" length="short" direction="in" rot="R180"/>
+<pin name="FBO" x="22.86" y="-12.7" length="short" direction="out" rot="R180"/>
+<pin name="ISET" x="22.86" y="-15.24" length="short" rot="R180"/>
+<pin name="SS" x="22.86" y="-17.78" length="short" direction="in" rot="R180"/>
+<pin name="VPRG1" x="22.86" y="-20.32" length="short" direction="in" rot="R180"/>
+<pin name="VPRG2" x="22.86" y="-22.86" length="short" direction="in" rot="R180"/>
+<pin name="GND" x="-2.54" y="-25.4" length="short" direction="pwr"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-28.702" size="1.27" layer="95" align="top-left">&gt;MPN</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-2_?_*" prefix="J">
@@ -11422,6 +11468,38 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="MOPN" value="520-160-10-42-CKMT"/>
 <attribute name="MPN" value="ECS-160-10-42-CKM-TR"/>
 <attribute name="SHUNT_CAPACITANCE" value="2 - 5 pF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC3639">
+<description>The LTC3639  is  a  high  efficiency  step-down  DC/DC regulator with a wide input range of 4V to 150V and programmable overvoltage  lockout.&lt;br&gt;
+&lt;a href = "https://www.mouser.com/datasheet/2/609/3639fd-1271210.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LTC3639" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MSE16(12)">
+<connects>
+<connect gate="G$1" pin="FBO" pad="5"/>
+<connect gate="G$1" pin="GND" pad="8 16"/>
+<connect gate="G$1" pin="ISET" pad="11"/>
+<connect gate="G$1" pin="OVLO" pad="12"/>
+<connect gate="G$1" pin="RUN" pad="14"/>
+<connect gate="G$1" pin="SS" pad="10"/>
+<connect gate="G$1" pin="SW" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VFB" pad="9"/>
+<connect gate="G$1" pin="VPRG1" pad="7"/>
+<connect gate="G$1" pin="VPRG2" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="LTC3639EMSE#TRPBFTR-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices"/>
+<attribute name="MOPN" value="584-LTC3639EMSETRPBF"/>
+<attribute name="MPN" value="LTC3639EMSE#TRPBF "/>
 </technology>
 </technologies>
 </device>

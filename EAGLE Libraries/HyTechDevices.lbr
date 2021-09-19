@@ -4756,14 +4756,14 @@ Dashed line is edge of mated connector.</description>
 &lt;a href = "https://www.mouser.com/datasheet/2/54/SRU1048-1391431.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-4.5" y="0" dx="1.8" dy="3.6" layer="1" thermals="no"/>
 <smd name="2" x="4.5" y="0" dx="1.8" dy="3.6" layer="1" thermals="no"/>
-<wire x1="-1.7" y1="5" x2="1.7" y2="5" width="0.127" layer="21"/>
-<wire x1="-1.7" y1="-5" x2="1.7" y2="-5" width="0.127" layer="21"/>
-<wire x1="5" y1="1.7" x2="5" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-5" y1="1.7" x2="-5" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-5" y1="1.7" x2="-1.7" y2="5" width="0.127" layer="21"/>
-<wire x1="1.7" y1="-5" x2="5" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-1.7" y1="-5" x2="-5" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="5" y1="1.7" x2="1.7" y2="5" width="0.127" layer="21"/>
+<wire x1="-2.075" y1="5" x2="2.075" y2="5" width="0.127" layer="21"/>
+<wire x1="-2.075" y1="-5" x2="2.075" y2="-5" width="0.127" layer="21"/>
+<wire x1="5" y1="2.075" x2="5" y2="-2.075" width="0.127" layer="21"/>
+<wire x1="-5" y1="2.075" x2="-5" y2="-2.075" width="0.127" layer="21"/>
+<wire x1="-5" y1="2.075" x2="-2.075" y2="5" width="0.127" layer="21"/>
+<wire x1="2.075" y1="-5" x2="5" y2="-2.075" width="0.127" layer="21"/>
+<wire x1="-2.075" y1="-5" x2="-5" y2="-2.075" width="0.127" layer="21"/>
+<wire x1="5" y1="2.075" x2="2.075" y2="5" width="0.127" layer="21"/>
 <text x="0" y="5.5908" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-5.842" y1="-5.588" x2="5.842" y2="5.588" layer="39"/>
 </package>
@@ -11442,9 +11442,11 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="INDUCTOR_*_?" prefix="L">
-<description>SRU1048&lt;br&gt;
-&lt;a href = "https://www.mouser.com/datasheet/2/54/SRU1048-1391431.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<deviceset name="INDUCTOR_?_*" prefix="L">
+<description>&lt;b&gt;Inductor&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/54/SRU1048-1391431.pdf"&gt;SRU1408 Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>

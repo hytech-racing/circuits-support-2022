@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="10" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11426,9 +11426,8 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </deviceset>
 <deviceset name="VOLTAGE_REGULATOR_ADJ_*_?" prefix="U">
 <description>Adjustable voltage regulators.&lt;br&gt;
-&lt;br&gt;
-LR8&lt;br&gt;
-&lt;a href = "https://ww1.microchip.com/downloads/en/DeviceDoc/20005399B.pdf"&gt;Datasheet&lt;/a&gt;</description>
+
+&lt;a href = "https://ww1.microchip.com/downloads/en/DeviceDoc/20005399B.pdf"&gt;LR8 Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="VOLTAGE_REGULATOR_ADJ" x="0" y="0"/>
 </gates>
@@ -11457,7 +11456,7 @@ LR8&lt;br&gt;
 <technologies>
 <technology name="LR8">
 <attribute name="DKPN" value="LR8N8-GTR-ND"/>
-<attribute name="MANUFACTURER" value="Microchip" constant="no"/>
+<attribute name="MANUFACTURER" value="Microchip Technology"/>
 <attribute name="MOPN" value="689-LR8N8-G"/>
 <attribute name="MPN" value="LR8N8-G" constant="no"/>
 </technology>

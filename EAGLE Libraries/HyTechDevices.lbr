@@ -8169,7 +8169,7 @@ with up to 100mA of output current</description>
 <wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="LT3990-5">
-<description>LT3990-5 High Voltage DC-DC Converter
+<description>LT3990-5 DC-DC Converter
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/609/3990fa-1270774.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <pin name="VIN" x="-2.54" y="-2.54" length="short" direction="pwr"/>
@@ -10951,9 +10951,7 @@ with up to 100mA of output current
 </devices>
 </deviceset>
 <deviceset name="LTC6811-2" prefix="U">
-<description>&lt;b&gt; Linear Technology Multicell Battery Stack Monitor &lt;/b&gt;
-&lt;br&gt;
-Variant 2: Addressable/Multi-Drop Configuration
+<description>LTC6811-2 12 Cell Stackable Battery Monitor
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/609/LTC6811_1_6811_2-1271909.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
@@ -11570,7 +11568,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </devices>
 </deviceset>
 <deviceset name="LT3990-5" prefix="U">
-<description>LT3990-5 High Voltage DC-DC Converter
+<description>LT3990-5 DC-DC Converter
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/609/3990fa-1270774.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>

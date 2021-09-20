@@ -4751,6 +4751,22 @@ Dashed line is edge of mated connector.</description>
 <rectangle x1="-2.54" y1="-1.524" x2="2.54" y2="1.524" layer="43"/>
 <text x="0" y="1.524" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="SRU1048">
+<description>SRU1048&lt;br&gt;
+&lt;a href = "https://www.mouser.com/datasheet/2/54/SRU1048-1391431.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-4.5" y="0" dx="1.8" dy="3.6" layer="1" thermals="no"/>
+<smd name="2" x="4.5" y="0" dx="1.8" dy="3.6" layer="1" thermals="no"/>
+<wire x1="-2.075" y1="5" x2="2.075" y2="5" width="0.127" layer="21"/>
+<wire x1="-2.075" y1="-5" x2="2.075" y2="-5" width="0.127" layer="21"/>
+<wire x1="5" y1="2.075" x2="5" y2="-2.075" width="0.127" layer="21"/>
+<wire x1="-5" y1="2.075" x2="-5" y2="-2.075" width="0.127" layer="21"/>
+<wire x1="-5" y1="2.075" x2="-2.075" y2="5" width="0.127" layer="21"/>
+<wire x1="2.075" y1="-5" x2="5" y2="-2.075" width="0.127" layer="21"/>
+<wire x1="-2.075" y1="-5" x2="-5" y2="-2.075" width="0.127" layer="21"/>
+<wire x1="5" y1="2.075" x2="2.075" y2="5" width="0.127" layer="21"/>
+<text x="0" y="5.5908" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-5.842" y1="-5.588" x2="5.842" y2="5.588" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -5586,22 +5602,6 @@ Pins tied to GND: SLOW
 <pin name="OUTB" x="17.78" y="-7.62" visible="pin" length="short" direction="out" rot="R180"/>
 <text x="0" y="0.508" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-13.462" size="1.27" layer="95" align="top-left">&gt;MPN</text>
-</symbol>
-<symbol name="INDUCTOR">
-<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
-<pin name="P$1" x="-5.08" y="0" visible="off" length="point" direction="pas"/>
-<pin name="P$2" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-<text x="-1.27" y="1.27" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="-1.27" y="-0.635" size="1.27" layer="96" align="top-center">&gt;INDUCTANCE</text>
-<wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
-<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
-<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
-<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
-<wire x1="0" y1="0" x2="1.27" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
-<text x="-1.27" y="-2.54" size="1.27" layer="96" align="top-center">&gt;MPN</text>
 </symbol>
 <symbol name="CONNECTOR_03">
 <wire x1="7.62" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
@@ -8094,6 +8094,21 @@ with up to 100mA of output current</description>
 <pin name="OUT" x="15.24" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<symbol name="INDUCTOR">
+<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
+<pin name="P$1" x="-5.08" y="0" visible="off" length="point" direction="pas"/>
+<pin name="P$2" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<text x="-1.27" y="1.27" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="-1.27" y="-0.635" size="1.27" layer="96" align="top-center">&gt;INDUCTANCE</text>
+<wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
+<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
+<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
+<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
+
 </symbol>
 </symbols>
 <devicesets>
@@ -11459,6 +11474,31 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="MANUFACTURER" value="Microchip Technology"/>
 <attribute name="MOPN" value="689-LR8N8-G"/>
 <attribute name="MPN" value="LR8N8-G" constant="no"/>
+<deviceset name="INDUCTOR_?_*" prefix="L">
+<description>&lt;b&gt;Inductor&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/54/SRU1048-1391431.pdf"&gt;SRU1408 Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SRU1048" package="SRU1048">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name="330UH">
+<attribute name="CURRENT_RATED" value=".65A"/>
+<attribute name="CURRENT_SATURATION" value=".52A"/>
+<attribute name="DCR" value="640"/>
+<attribute name="DKPN" value="SRU1048-331YTR-ND"/>
+<attribute name="INDUCTANCE" value="330µH"/>
+<attribute name="MANUFACTURER" value="Bourns Inc."/>
+<attribute name="MOPN" value="SRU1048-331Y"/>
+<attribute name="MPN" value="652-SRU1048-331Y"/>
+<attribute name="TOLERANCE" value="30%"/>
 </technology>
 </technologies>
 </device>

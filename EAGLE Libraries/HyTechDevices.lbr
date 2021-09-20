@@ -11655,9 +11655,9 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </connects>
 <technologies>
 <technology name="33UH">
-<attribute name="CURRENT_RATED" value="0.6 A"/>
-<attribute name="CURRENT_SATURATION" value="0.15 A"/>
-<attribute name="DCR" value="0.19 Ω"/>
+<attribute name="CURRENT_RATED" value="0.6A"/>
+<attribute name="CURRENT_SATURATION" value="0.15A"/>
+<attribute name="DCR" value="0.19Ω"/>
 <attribute name="DKPN" value="732-1410-1-ND"/>
 <attribute name="INDUCTANCE" value="33µH"/>
 <attribute name="MANUFACTURER" value="Würth Elektronik"/>
@@ -11674,9 +11674,9 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </connects>
 <technologies>
 <technology name="330UH">
-<attribute name="CURRENT_RATED" value="0.65 A"/>
-<attribute name="CURRENT_SATURATION" value="0.52 A"/>
-<attribute name="DCR" value="0.640 Ω"/>
+<attribute name="CURRENT_RATED" value="0.65A"/>
+<attribute name="CURRENT_SATURATION" value="0.52A"/>
+<attribute name="DCR" value="0.640Ω"/>
 <attribute name="DKPN" value="SRU1048-331YTR-ND"/>
 <attribute name="INDUCTANCE" value="330µH"/>
 <attribute name="MANUFACTURER" value="Bourns Inc."/>

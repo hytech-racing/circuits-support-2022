@@ -8084,17 +8084,6 @@ with up to 100mA of output current</description>
 <wire x1="15.24" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="VOLTAGE_REGULATOR_ADJ">
-<wire x1="0" y1="-12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-12.7" x2="12.7" y2="0" width="0.254" layer="94"/>
-<wire x1="12.7" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
-<pin name="ADJ" x="15.24" y="-10.16" length="short" direction="in" rot="R180"/>
-<pin name="IN" x="-2.54" y="-2.54" length="short" direction="pwr"/>
-<pin name="OUT" x="15.24" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-2_?_*" prefix="J">
@@ -11419,46 +11408,6 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="MOPN" value="520-160-10-42-CKMT"/>
 <attribute name="MPN" value="ECS-160-10-42-CKM-TR"/>
 <attribute name="SHUNT_CAPACITANCE" value="2 - 5 pF"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VOLTAGE_REGULATOR_ADJ_*_?" prefix="U">
-<description>Adjustable voltage regulators.&lt;br&gt;
-
-&lt;a href = "https://ww1.microchip.com/downloads/en/DeviceDoc/20005399B.pdf"&gt;LR8 Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="VOLTAGE_REGULATOR_ADJ" x="0" y="0"/>
-</gates>
-<devices>
-<device name="DPAK" package="DPAK(2-7K1S)">
-<connects>
-<connect gate="G$1" pin="ADJ" pad="3"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="2"/>
-</connects>
-<technologies>
-<technology name="LR8">
-<attribute name="DKPN" value="LR8K4-GTR-ND"/>
-<attribute name="MANUFACTURER" value="Microchip Technology"/>
-<attribute name="MOPN" value="689-LR8K4-G"/>
-<attribute name="MPN" value="LR8K4-G"/>
-</technology>
-</technologies>
-</device>
-<device name="SOT89" package="SOT89">
-<connects>
-<connect gate="G$1" pin="ADJ" pad="3"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="2"/>
-</connects>
-<technologies>
-<technology name="LR8">
-<attribute name="DKPN" value="LR8N8-GTR-ND"/>
-<attribute name="MANUFACTURER" value="Microchip Technology"/>
-<attribute name="MOPN" value="689-LR8N8-G"/>
-<attribute name="MPN" value="LR8N8-G" constant="no"/>
 </technology>
 </technologies>
 </device>

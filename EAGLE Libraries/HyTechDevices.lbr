@@ -8094,6 +8094,7 @@ with up to 100mA of output current</description>
 <pin name="OUT" x="15.24" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+ </symbol>
 <symbol name="INDUCTOR">
 <wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
 <pin name="P$1" x="-5.08" y="0" visible="off" length="point" direction="pas"/>
@@ -8108,7 +8109,6 @@ with up to 100mA of output current</description>
 <wire x1="-1.27" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
 <wire x1="0" y1="0" x2="1.27" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
-
 </symbol>
 </symbols>
 <devicesets>
@@ -10606,7 +10606,7 @@ Produces a regulated output voltage from a 2.7V to 4.5V input
 with up to 100mA of output current
 
 &lt;br&gt;&lt;br&gt;
-*Notes: 
+*Notes:
 &lt;br&gt;
 - Flying capacitors connected to pins 4 (C-) and 6 (C+) must have at least 0.68 uF of capacitance in order to achieve the rated output current
 &lt;br&gt;
@@ -11457,6 +11457,11 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="MANUFACTURER" value="Microchip Technology"/>
 <attribute name="MOPN" value="689-LR8N8-G"/>
 <attribute name="MPN" value="LR8N8-G" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="INDUCTOR_?_*" prefix="L">
 <description>&lt;b&gt;Inductor&lt;/b&gt;
 &lt;ul&gt;

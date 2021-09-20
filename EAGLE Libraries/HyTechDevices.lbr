@@ -10606,7 +10606,7 @@ Produces a regulated output voltage from a 2.7V to 4.5V input
 with up to 100mA of output current
 
 &lt;br&gt;&lt;br&gt;
-*Notes: 
+*Notes:
 &lt;br&gt;
 - Flying capacitors connected to pins 4 (C-) and 6 (C+) must have at least 0.68 uF of capacitance in order to achieve the rated output current
 &lt;br&gt;
@@ -11457,6 +11457,10 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="MANUFACTURER" value="Microchip Technology"/>
 <attribute name="MOPN" value="689-LR8N8-G"/>
 <attribute name="MPN" value="LR8N8-G" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
 </deviceset>
 <deviceset name="INDUCTOR_?_*" prefix="L">
 <description>&lt;b&gt;Inductor&lt;/b&gt;

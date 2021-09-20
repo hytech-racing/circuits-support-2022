@@ -8155,9 +8155,9 @@ with up to 100mA of output current</description>
 <pin name="RT" x="-2.54" y="-12.7" length="short" direction="pas"/>
 <pin name="GND" x="-2.54" y="-20.32" length="short" direction="pwr"/>
 <pin name="BOOST" x="22.86" y="-2.54" length="short" direction="pas" rot="R180"/>
-<pin name="SW" x="22.86" y="-10.16" length="short" direction="pas" rot="R180"/>
+<pin name="SW" x="22.86" y="-10.16" length="short" direction="out" rot="R180"/>
 <pin name="BD" x="22.86" y="-15.24" length="short" direction="pas" rot="R180"/>
-<pin name="VOUT" x="22.86" y="-17.78" length="short" direction="pwr" rot="R180"/>
+<pin name="VOUT" x="22.86" y="-17.78" length="short" direction="in" rot="R180"/>
 <wire x1="0" y1="0" x2="0" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="0" y1="-22.86" x2="20.32" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-22.86" x2="20.32" y2="0" width="0.254" layer="94"/>
@@ -11141,8 +11141,6 @@ ISO224B: High-Grade
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/389/dm00366442-1799212.pdf"&gt;LDL1117S50R Datasheet&lt;/a&gt;
 &lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/281/oki-78sr-56393.pdf"&gt;OKI-78SR Datasheet&lt;/a&gt;
-&lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/308/NCP785A_D-1812704.pdf"&gt;NCP785AH120T1G&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
@@ -11160,21 +11158,6 @@ ISO224B: High-Grade
 <attribute name="MANUFACTURER" value="STMicroelectronics"/>
 <attribute name="MOPN" value="511-LDL1117S50R"/>
 <attribute name="MPN" value="LDL1117S50R"/>
-</technology>
-</technologies>
-</device>
-<device name="OKI-78SR" package="OKI-78SR">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name="5V">
-<attribute name="DKPN" value="811-2196-5-ND"/>
-<attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
-<attribute name="MOPN" value="580-OKI78SR5/1.5W36C"/>
-<attribute name="MPN" value="OKI-78SR-5/1.5-W36-C"/>
 </technology>
 </technologies>
 </device>
@@ -11603,6 +11586,31 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="MANUFACTURER" value="Würth Elektronik"/>
 <attribute name="MPN" value="74451133"/>
 <attribute name="TOLERANCE" value="20%"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VOLTAGE_REGULATOR_MODULE_?_*" prefix="A">
+<description>Voltage Regulator Modules
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/281/oki-78sr-56393.pdf"&gt;OKI-78SR Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="OKI-78SR" package="OKI-78SR">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="5V">
+<attribute name="DKPN" value="811-2196-5-ND"/>
+<attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
+<attribute name="MOPN" value="580-OKI78SR5/1.5W36C"/>
+<attribute name="MPN" value="OKI-78SR-5/1.5-W36-C"/>
 </technology>
 </technologies>
 </device>

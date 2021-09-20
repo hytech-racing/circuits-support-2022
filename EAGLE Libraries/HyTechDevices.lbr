@@ -11457,6 +11457,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="MANUFACTURER" value="Microchip Technology"/>
 <attribute name="MOPN" value="689-LR8N8-G"/>
 <attribute name="MPN" value="LR8N8-G" constant="no"/>
+</deviceset>
 <deviceset name="INDUCTOR_?_*" prefix="L">
 <description>&lt;b&gt;Inductor&lt;/b&gt;
 &lt;ul&gt;
@@ -11466,7 +11467,6 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>
 <devices>
-</deviceset>
 <device name="SRU1048" package="SRU1048">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
@@ -11488,7 +11488,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
- </devicesets>
+</devicesets>
 </library>
 </drawing>
 <compatibility>

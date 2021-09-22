@@ -1,0 +1,64 @@
+*****************************************
+*					*
+*  Model for Vishay Schottky Diode 	*
+*  VSKY20401608				*
+*  model is valid for 25°C to 125°C 	*
+*  and If less than 2A			*
+*					*
+*  VISHAY Semiconductor GmbH		*
+*  Julian Münch, Nov. 2015		*
+*					*
+*  Copyright:                   	*
+*  Vishay Intertechnology, Inc. 	*
+*					*
+*****************************************
+
+.SUBCKT VSKY20401608 1 2
+
+.MODEL SD D (
++IS=	2.05E-06
++N=	1.002
++ISR=	1.1E-06
++NR=	1.15
++RS=	0.077
++IKF=	14.1
++CJO=	349p
++M=	0.6
++VJ=	0.53
++BV=	48
++TT=	1.00E-08
++trs1=	0.0044
++trs2=	0
++FC=	0.5
++XTI=	2.4
++EG=	0.64
++TBV1=	0.0001
++IBV=	0.00001
++KF=	0
++AF=	1)
+
+.MODEL AD D (
++IS=	1.5E-09
++N=	1.15
++ISR=	10E-10
++NR=	1
++RS=	0.8
++EG=	1.1
++CJO=	0
++M=	0.50
++FC=	0.5
++VJ=	0.6
++BV=	42
++IKF= 	0.027
++TT=	10.00E-08
++trs2=	0.01
++trs1=	0.07
++TBV1=	0.0005
++IBV=	0.00001
++NBV= 	250
++KF=	0
++AF=	1)
+
+D1 1 2 SD
+D3 1 2 AD
+.ENDS

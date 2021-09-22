@@ -11699,8 +11699,8 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="DKPN" value="SRU1048-331YTR-ND"/>
 <attribute name="INDUCTANCE" value="330µH"/>
 <attribute name="MANUFACTURER" value="Bourns Inc."/>
-<attribute name="MOPN" value="SRU1048-331Y"/>
-<attribute name="MPN" value="652-SRU1048-331Y"/>
+<attribute name="MOPN" value="652-SRU1048-331Y"/>
+<attribute name="MPN" value="SRU1048-331Y"/>
 <attribute name="TOLERANCE" value="30%"/>
 </technology>
 </technologies>

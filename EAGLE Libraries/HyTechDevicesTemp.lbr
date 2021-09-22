@@ -210,26 +210,31 @@
 </packages>
 <symbols>
 <symbol name="555_TIMER">
-<wire x1="0" y1="0" x2="0" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="0" y1="-30.48" x2="17.78" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-30.48" x2="17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="GND" x="-2.54" y="-27.94" length="short" direction="pwr"/>
-<pin name="TRIG" x="20.32" y="-27.94" length="short" direction="in" rot="R180"/>
-<pin name="OUT" x="20.32" y="-10.16" length="short" direction="out" rot="R180"/>
-<pin name="RESET" x="20.32" y="-5.08" length="short" direction="in" function="dot" rot="R180"/>
-<pin name="VCC" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="DISCH" x="20.32" y="-17.78" length="short" direction="out" rot="R180"/>
-<pin name="THRES" x="20.32" y="-25.4" length="short" direction="in" rot="R180"/>
-<pin name="CONT" x="-2.54" y="-20.32" length="short"/>
-<text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="-31.242" size="1.778" layer="95" align="top-left">&gt;MPN</text>
+<description>**555 Timer
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ds/symlink/na555.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1632283273729"&gt;Datasheet&lt;/a&gt;</description>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-26.162" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-25.4" x2="0" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="0" y1="-25.4" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="VCC" x="17.78" y="2.54" length="short" direction="pwr" rot="R270"/>
+<pin name="GND" x="7.62" y="-27.94" length="short" direction="pwr" rot="R90"/>
+<pin name="CONT" x="-2.54" y="-5.08" length="short"/>
+<pin name="THRES" x="22.86" y="-22.86" length="short" direction="in" rot="R180"/>
+<pin name="DISCH" x="22.86" y="-17.78" length="short" direction="out" rot="R180"/>
+<pin name="RESET" x="12.7" y="2.54" length="short" direction="in" function="dot" rot="R270"/>
+<pin name="OUT" x="22.86" y="-12.7" length="short" direction="out" rot="R180"/>
+<pin name="TRIG" x="-2.54" y="-15.24" length="short" direction="in"/>
 </symbol>
 </symbols>
 <devicesets>
 <deviceset name="555_TIMER_?_*">
-<description>NA555D&lt;br&gt;
-&lt;a href = "https://www.ti.com/lit/ds/symlink/na555.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1632084845945&amp;ref_url=https%253A%252F%252Fwww.mouser.com%252F"&gt;Datasheet&lt;/a&gt;</description>
+<description>NA555D Precision Timer&lt;br&gt;
+&lt;a href = "https://www.ti.com/lit/ds/symlink/na555.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1632084845945&amp;ref_url=https%253A%252F%252Fwww.mouser.com%252F"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+- Precision timing circuits capable of producing accurate time delays or oscillation</description>
 <gates>
 <gate name="G$1" symbol="555_TIMER" x="0" y="0"/>
 </gates>
@@ -246,7 +251,12 @@
 <connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
-<technology name="NA555D"/>
+<technology name="NA555D">
+<attribute name="DKPN" value="NA555D-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
+<attribute name="MOPN" value="595-NA555D" constant="no"/>
+<attribute name="MPN" value="NA555D" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

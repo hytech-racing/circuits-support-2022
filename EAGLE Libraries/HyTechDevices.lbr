@@ -4784,25 +4784,6 @@ Dashed line is edge of mated connector.</description>
 <wire x1="0.635" y1="0" x2="0.3175" y2="-1.016" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="LM555">
-<description>LM555 Timer
-&lt;br&gt;
-&lt;a href="https://www.ti.com/lit/ds/symlink/lm555.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<wire x1="0" y1="-17.78" x2="22.86" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-17.78" x2="22.86" y2="0" width="0.254" layer="94"/>
-<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<pin name="THRESHOLD" x="-2.54" y="-12.7" length="short" direction="in"/>
-<pin name="TRIGGER" x="-2.54" y="-15.24" length="short" direction="in"/>
-<pin name="GND" x="25.4" y="-15.24" length="short" direction="pwr" rot="R180"/>
-<pin name="CONTROL" x="25.4" y="-10.16" length="short" direction="in" rot="R180"/>
-<pin name="OUTPUT" x="25.4" y="-7.62" length="short" direction="out" rot="R180"/>
-<pin name="VCC" x="25.4" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="RESET" x="-2.54" y="-2.54" length="short" direction="in"/>
-<pin name="DISCHARGE" x="-2.54" y="-5.08" length="short" direction="in"/>
-<text x="0" y="-18.542" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
 <symbol name="BJT_NPN">
 <wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
 <wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
@@ -7832,7 +7813,7 @@ with up to 100mA of output current</description>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-31.242" size="1.27" layer="96" align="top-left">&gt;COLOR</text>
 </symbol>
-<symbol name="ISO224*">
+<symbol name="ISO224">
 <description>ISO224*: Isolated precision amplifier
 &lt;br&gt;
 &lt;a href="https://www.ti.com/lit/ds/symlink/iso224.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -8097,6 +8078,25 @@ with up to 100mA of output current</description>
 <wire x1="2.54" y1="-7.62" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
 <wire x1="15.24" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="**555">
+<description>**555 Timer
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ds/symlink/lm555.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="0" y1="-22.86" x2="27.94" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-22.86" x2="27.94" y2="0" width="0.254" layer="94"/>
+<wire x1="27.94" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-22.86" width="0.254" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<pin name="THRESHOLD" x="-2.54" y="-12.7" length="short" direction="in"/>
+<pin name="TRIGGER" x="-2.54" y="-15.24" length="short" direction="in"/>
+<pin name="GND" x="-2.54" y="-20.32" length="short" direction="pwr"/>
+<pin name="CONTROL" x="30.48" y="-15.24" length="short" direction="in" rot="R180"/>
+<pin name="OUTPUT" x="30.48" y="-12.7" length="short" direction="out" rot="R180"/>
+<pin name="VCC" x="30.48" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="!RESET" x="30.48" y="-5.08" length="short" direction="in" function="dot" rot="R180"/>
+<pin name="DISCHARGE" x="-2.54" y="-5.08" length="short" direction="in"/>
+<text x="0" y="-23.622" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -10958,7 +10958,7 @@ ISO224B: High-Grade
 &lt;br&gt;
 &lt;a href="https://www.ti.com/lit/ds/symlink/iso224.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&amp;ts=1625423566252&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fiso224"&gt;ISO224* Datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="ISO224*" x="0" y="0"/>
+<gate name="G$1" symbol="ISO224" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOIC-08(WIDE,0.295&quot;)">
@@ -11422,6 +11422,44 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="MOPN" value="520-160-10-42-CKMT"/>
 <attribute name="MPN" value="ECS-160-10-42-CKM-TR"/>
 <attribute name="SHUNT_CAPACITANCE" value="2 - 5 pF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="*555" prefix="U">
+<description>**555 Precision Timer
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.ti.com/lit/ds/symlink/na555.pdf"&gt;NA555, NE555, SA555, SE555&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ti.com/lit/ds/symlink/lm555.pdf"&gt;LM555&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="**555" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-08(NARROW,0.15&quot;)">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="4"/>
+<connect gate="G$1" pin="CONTROL" pad="5"/>
+<connect gate="G$1" pin="DISCHARGE" pad="7"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="OUTPUT" pad="3"/>
+<connect gate="G$1" pin="THRESHOLD" pad="6"/>
+<connect gate="G$1" pin="TRIGGER" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name="LM">
+<attribute name="DKPN" value="LM555CMX/NOPBCT-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="926-LM555CMX/NOPB"/>
+<attribute name="MPN" value="LM555CMX/NOPB"/>
+</technology>
+<technology name="NA">
+<attribute name="DKPN" value="NA555D-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-NA555D"/>
+<attribute name="MPN" value="NA555D"/>
 </technology>
 </technologies>
 </device>

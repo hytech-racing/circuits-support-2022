@@ -8325,6 +8325,15 @@ with up to 100mA of output current</description>
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </technology>
+<technology name="10V_0.22UF">
+<attribute name="CAPACITANCE" value="0.22µF"/>
+<attribute name="DKPN" value="720-VJ0603Y224JXQCW1BCTR-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Vitramon"/>
+<attribute name="MOPN" value="77-VJ0603Y224JXQCBC"/>
+<attribute name="MPN" value="VJ0603Y224JXQCW1BC"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
 <technology name="10V_10NF">
 <attribute name="CAPACITANCE" value="10nF"/>
 <attribute name="DKPN" value="311-4054-1-ND"/>
@@ -9360,6 +9369,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MPN" value="ERA-3AEB7322V"/>
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="73.2k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="75K">
+<attribute name="DKPN" value="RT0603BRE0775KL-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RT0603BRE0775KL"/>
+<attribute name="MPN" value="RT0603BRE0775KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="75k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>

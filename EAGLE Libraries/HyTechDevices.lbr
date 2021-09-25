@@ -4839,6 +4839,25 @@ A variation of MSOP16 with 4 pins removed.
 <rectangle x1="-2.286" y1="-2.794" x2="2.286" y2="2.794" layer="39"/>
 <text x="-2.286" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="CAA572">
+<description>CAA572&lt;br&gt;
+Note: Footprint uses Mouser ECAD footprint as basis due to lack of better documentation.&lt;br&gt;
+&lt;a href = "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_megacap_ca_en.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-2.48" y="0" dx="5.51" dy="1.95" layer="1" rot="R90" thermals="no"/>
+<smd name="2" x="2.48" y="0" dx="5.51" dy="1.95" layer="1" rot="R90" thermals="no"/>
+<wire x1="-3.25000625" y1="2.74999375" x2="-1.85000625" y2="2.74999375" width="0.127" layer="21"/>
+<wire x1="-1.85000625" y1="2.74999375" x2="1.85000625" y2="2.74999375" width="0.127" layer="21"/>
+<wire x1="1.85000625" y1="2.74999375" x2="3.25000625" y2="2.74999375" width="0.127" layer="21"/>
+<wire x1="-3.25000625" y1="-2.74999375" x2="-3.25000625" y2="2.74999375" width="0.127" layer="21"/>
+<wire x1="-3.25000625" y1="-2.74999375" x2="-1.85000625" y2="-2.74999375" width="0.127" layer="21"/>
+<wire x1="-1.85000625" y1="-2.74999375" x2="1.85000625" y2="-2.74999375" width="0.127" layer="21"/>
+<wire x1="1.85000625" y1="-2.74999375" x2="3.25000625" y2="-2.74999375" width="0.127" layer="21"/>
+<wire x1="3.25000625" y1="2.74999375" x2="3.25000625" y2="-2.74999375" width="0.127" layer="21"/>
+<text x="0" y="3.175" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="1.85000625" y1="2.74999375" x2="1.85000625" y2="-2.74999375" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.85000625" y1="2.74999375" x2="-1.85000625" y2="-2.74999375" width="0.127" layer="21" style="shortdash"/>
+<rectangle x1="-3.81" y1="-3.175" x2="3.81" y2="3.175" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -8546,6 +8565,24 @@ with up to 100mA of output current</description>
 <attribute name="MPN" value="C3216X5R1V226M160AC"/>
 <attribute name="TOLERANCE" value="20%"/>
 <attribute name="VOLTAGE" value="35V"/>
+</technology>
+</technologies>
+</device>
+<device name="CAA572" package="CAA572">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="350V_2.2UF">
+<attribute name="CAPACITANCE" value="2.2µF"/>
+<attribute name="DKPN" value="445-CAA572X7T2V225M640LHTR-ND"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="MOPN" value="810-CAA572X7T2V22564"/>
+<attribute name="MPN" value="
+CAA572X7T2V225M640LH"/>
+<attribute name="TOLERANCE" value="20%"/>
+<attribute name="VOLTAGE" value="350V"/>
 </technology>
 </technologies>
 </device>

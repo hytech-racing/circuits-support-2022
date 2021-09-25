@@ -9210,6 +9210,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="14.14V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="3.32K">
+<attribute name="DKPN" value="YAG1651TR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RT0603BRD073K32L"/>
+<attribute name="MPN" value="RT0603BRD073K32L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="3.32k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="18.22V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="3.3K">
 <attribute name="DKPN" value="311-3.30KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -9351,6 +9362,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="RESISTANCE" value="73.2k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="8.66K">
+<attribute name="DKPN" value="YAG4603TR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RT0603BRD078K66L"/>
+<attribute name="MPN" value="RT0603BRD078K66L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="8.66k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="29.43V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="84.5K">

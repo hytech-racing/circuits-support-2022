@@ -8306,6 +8306,7 @@ with up to 100mA of output current</description>
 &lt;li&gt;&lt;a href="https://www.mouser.com/ProductDetail/TDK/C3216X5R1V226M160AC?qs=%2Fha2pyFadujbcx9jh7lYl%2F4NeMoXFhdc8AqVWNq4wW6M2y7zl6GzBuhgtI0ngznN"&gt;TDK C Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/40/AutoMLCC-777028.pdf"&gt;AVX Automotive MLCC&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf"&gt; KEMET X7R Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_megacap_ca_en.pdf"&gt;CA Series&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
@@ -8579,8 +8580,7 @@ with up to 100mA of output current</description>
 <attribute name="DKPN" value="445-CAA572X7T2V225M640LHTR-ND"/>
 <attribute name="MANUFACTURER" value="TDK Corporation"/>
 <attribute name="MOPN" value="810-CAA572X7T2V22564"/>
-<attribute name="MPN" value="
-CAA572X7T2V225M640LH"/>
+<attribute name="MPN" value=" CAA572X7T2V225M640LH"/>
 <attribute name="TOLERANCE" value="20%"/>
 <attribute name="VOLTAGE" value="350V"/>
 </technology>

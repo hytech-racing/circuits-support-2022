@@ -1,0 +1,240 @@
+#usage "<h2>Generate a board outline by tracing an imported bitmap</h2>"
+       "<p>This ULP generates an EAGLE script file that draws a board outline based on the output of <code>import-bmp.ulp</code>.</p>"
+       "<p>It is useful for designing complex board shapes, requiring only a bitmap image of that shape.</p>"
+       "<p><h3>Instructions:</h3> Run <code>import-bmp.ulp</code> to import your bitmap. Then, run <code>trace-bmp.ulp</code> to trace the bitmap shape.<p>"
+       "<p><h3>Note 1:</h3> It is recommended to import the bitmap onto its own layer. If other rectangles exist on the same layer as the bitmap, it will confuse this program.</p>"
+       "<p><h3>Note 2:</h3> This program expects the artwork rectangles to remain in the order imported by <code>import-bmp.ulp</code>.</p>"
+       "<p><h3>Note 3:</h3> Unless you use a small bitmap, EAGLE will take a long time to detect the board shape. This will occur when the outline is initially drawn"
+       " as well as when the board file is opened in the future. To bypass this, turn off 'Detect Board Shape' in the User Interface Settings.</p>"
+       "<p><h3>Author:</h3> <author>Nathan Cheek - ncheek@gatech.edu</author></p>"
+
+// THIS PROGRAM IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED
+
+string Version = "1.0.0";
+int Result = 0;
+int layer = 200;
+int outputLayer = 20;
+int thickness = 0;
+string script_name = "";
+string header = "";
+string command_header = "";
+string script = "";
+string footer = "";
+int countLines = 0;
+int numLines = 0;
+
+// Row arrays
+int upperRow[];
+int lowerRow[];
+int height = 0;
+int nextHeight = 0;
+int numUpperRow = 0;
+int numLowerRow = 0;
+int foundLowest = 0;
+
+string zeroLinesError = "No imported bitmap detected on this layer. Did you run <code>import-bmp.ulp</code> and choose the correct layer?";
+
+/*
+ * Generate a line command based on starting and ending coordinates
+ */
+void generate_line_command(int x1, int y1, int x2, int y2) {
+    string c = "";
+    sprintf(c, "LINE %d (%.4f %.4f) (%.4f %.4f);\n",
+    thickness, u2mm(x1), u2mm(y1), u2mm(x2), u2mm(y2));
+    if (countLines) { // In line-counting mode, so increment numLines then return
+        numLines++;
+        return;
+    } else { // Not in line-counting mode, so generate script
+        script += c;
+    }
+}
+
+/*
+ * Run the generated script (adapted from import-bmp.ulp)
+ */
+void run_script(void) {
+    string script;
+    int s = fileread(script, script_name);
+    Result = dlgDialog("Accept Script?") {
+        dlgHBoxLayout dlgSpacing(300);
+        dlgHBoxLayout {
+            dlgVBoxLayout dlgSpacing(300);
+            dlgTextEdit(script);
+        }
+        dlgLabel(" ULP-Version " + Version);
+        dlgHBoxLayout {
+            dlgStretch(0);
+            dlgPushButton("+Run script") dlgAccept();
+            dlgStretch(1);
+            dlgPushButton("-Cancel") dlgReject();
+            dlgStretch(0);
+        }
+    };
+
+    if (Result == 1) exit ("script '" + script_name + "'");
+    else exit (0);
+}
+
+/*
+ * Show dialog allowing user to specify program settings
+ */
+void settings_window(void) {
+    Result = dlgDialog("Specify settings") {
+        dlgStretch(1);
+        dlgLabel("<h3>Basic Settings</h3>");
+        dlgHBoxLayout {
+            dlgGridLayout {
+                dlgCell(1, 1) dlgLabel("BMP Layer");
+                dlgCell(1, 2) dlgIntEdit(layer);
+            }
+        }
+        dlgStretch(1);
+        dlgSpacing(20);
+        dlgLabel("<h3>Advanced Settings</h3>");
+        dlgHBoxLayout {
+            dlgGridLayout {
+                dlgCell(1, 1) dlgLabel("Output Layer");
+                dlgCell(1, 2) dlgIntEdit(outputLayer);
+                dlgCell(2, 1) dlgLabel("Line Thickness");
+                dlgCell(2, 2) dlgIntEdit(thickness);
+            }
+        }
+        dlgStretch(1);
+        dlgSpacing(20);
+        dlgHBoxLayout {
+            dlgPushButton("+OK") dlgAccept();
+            dlgPushButton("-Cancel") dlgReject();
+            dlgStretch(1);
+        }
+    };
+    if (Result == 0) exit (0);
+    return;
+}
+
+/*
+ * Calculate non-overlapping horizontal lines from data in upperRow and lowerRow
+ */
+void process_row(void) {
+    int points[];
+    for (int upperIndex = 0; upperIndex < numUpperRow; upperIndex++) { // Add upper points to array
+        points[upperIndex] = upperRow[upperIndex];
+    }
+    for (int lowerIndex = 0; lowerIndex < numLowerRow; lowerIndex++) { // Add lower points to array
+        points[numUpperRow + lowerIndex] = lowerRow[lowerIndex];
+    }
+    sort(numUpperRow + numLowerRow, points); // Sort array
+
+    for (int sortedIndex = 0; sortedIndex < numUpperRow + numLowerRow; sortedIndex += 2) { // Split into pairs of points and generate lines between each pair
+        if (points[sortedIndex] != points[sortedIndex + 1]) { // Ignore 0-length lines
+            generate_line_command(points[sortedIndex], height, points[sortedIndex + 1], height);
+        }
+    }
+}
+
+/*
+ * Push data in upperRow to lowerRow and update height
+ */
+void push_rows(int newHeight) {
+    for (int i = 0; i < numUpperRow; i++) {
+        lowerRow[i] = upperRow[i]; // Copy data from upperRow to lowerRow
+    }
+    numLowerRow = numUpperRow;
+    numUpperRow = 0;
+    height = newHeight;
+}
+
+/*
+ * Find all lines needed to trace outline of bitmap shape
+ */
+void find_lines(UL_BOARD B) {
+    B.rectangles(R) { // Loop through all rectangles
+        if (R.layer == layer) { // Only process rectangles on specified layer
+            if (!foundLowest) { // This allows program to work with BMP designs moved to lower (-y) quadrants
+                height = R.y1;
+                foundLowest = 1;
+            }
+            nextHeight = R.y2;
+
+            // Generate vertical line commands
+            generate_line_command(R.x1, R.y1, R.x1, R.y2); // Generate first vertical line    
+            generate_line_command(R.x2, R.y1, R.x2, R.y2); // Generate second vertical line
+
+            // If we've reached a new row, old upper row becomes new lower row
+            if (R.y1 > height) { // This comparison would break if y1 was ever larger than y2, but EAGLE ensures that x1 <= x2 and y1 <= y2
+                process_row(); // Find non-overlapping horizontal lines between last 2 rows
+                push_rows(R.y1); // Move data from upperRow to lowerRow and prepare upperRow for incoming new row
+            }
+
+            // Add line coordinates to upperRow, increment index
+            upperRow[numUpperRow++] = R.x1;
+            upperRow[numUpperRow++] = R.x2;
+        }
+    }
+
+    // Process horizontal lines on the second to top row
+    process_row();
+    
+    // Process horizontal lines on top row
+    push_rows(nextHeight); // upperRow data gets pushed to lowerRow for processing
+    process_row(); // Process final row
+
+    // Reset values
+    height = 0;
+    nextHeight = 0;
+    numUpperRow = 0;
+    numLowerRow = 0;
+    foundLowest = 0;
+}
+
+void main(void) {
+    // Make sure this only runs in board editor
+    if (library || schematic) {
+        dlgMessageBox("! Open this ULP from PCB Editor","+OK");
+        exit(-1);
+    }
+
+    // Print usage message
+    dlgMessageBox(usage, "OK");
+
+    // Open settings window
+    settings_window();
+
+    // Generate script name, header, command header, and footer
+    if (board) {
+        board(B) {
+            script_name = filesetext(B.name, "_trace.scr");
+            header = "# generated with trace-bmp.ulp 1.0.0\n"
+                + "# from " + B.name + "\n";
+            sprintf(command_header, "GRID MM ON;\nSET UNDO_LOG OFF;\nLAYER %d;\n\n", outputLayer);
+            footer = "SET UNDO_LOG ON;\n";
+        }
+    }
+
+    // Generate and run script
+    if (board) board(B) {
+        // Calculate number of lines
+        countLines = 1; // Enable line-counting mode
+        find_lines(B);
+        countLines = 0; // Disable line-counting mode
+
+        // Quit if no lines detected
+        if (!numLines) {
+            dlgMessageBox(zeroLinesError, "OK");
+            exit (-1);
+        }
+
+        // Identify lines and generate script
+        find_lines(B);
+
+        // Write script to file
+        output(script_name) {
+            printf(header);
+            printf(command_header);
+            printf(script);
+            printf(footer);
+        }
+
+        // Ask user to run script
+        run_script();
+    }
+}

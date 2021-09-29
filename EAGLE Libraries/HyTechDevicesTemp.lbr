@@ -228,7 +228,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RE46C100_" prefix="U">
+<deviceset name="RE46C100" prefix="U">
 <description>RE46C100 Piezoelectric Horn Driver Circuit
 &lt;br&gt;
 &lt;a href="https://ww1.microchip.com/downloads/en/DeviceDoc/20002166B.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -246,11 +246,12 @@
 <connect gate="G$1" pin="VDD" pad="2"/>
 </connects>
 <technologies>
-<technology name="SOIC-8">
+<technology name="">
 <attribute name="DKPN" value="RE46C100S8TFTR-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Microchip Technology" constant="no"/>
-<attribute name="MOPN" value="579-RE46C100S8TF " constant="no"/>
-<attribute name="MPN" value="RE46C100S8TF" constant="no"/>
+<attribute name="MOPN" value="RE46C100S8TF" constant="no"/>
+<attribute name="MPN" value="579-RE46C100S8TF
+" constant="no"/>
 </technology>
 </technologies>
 </device>

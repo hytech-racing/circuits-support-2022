@@ -247,11 +247,11 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="RE46C100S8TFTR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Microchip Technology" constant="no"/>
-<attribute name="MOPN" value="RE46C100S8TF" constant="no"/>
+<attribute name="DKPN" value="RE46C100S8TFTR-ND"/>
+<attribute name="MANUFACTURER" value="Microchip Technology"/>
+<attribute name="MOPN" value="RE46C100S8TF"/>
 <attribute name="MPN" value="579-RE46C100S8TF
-" constant="no"/>
+"/>
 </technology>
 </technologies>
 </device>

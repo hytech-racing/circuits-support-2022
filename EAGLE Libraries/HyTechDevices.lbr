@@ -8220,6 +8220,39 @@ with up to 100mA of output current</description>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-28.702" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
+<symbol name="DCM4623">
+<pin name="TR" x="-5.08" y="-7.62" length="middle" direction="out"/>
+<pin name="FLT" x="-5.08" y="-12.7" length="middle" direction="out"/>
+<pin name="EN" x="-5.08" y="-17.78" length="middle" direction="in"/>
+<pin name="+IN" x="-5.08" y="-2.54" length="middle" direction="pwr"/>
+<pin name="-IN" x="-5.08" y="-22.86" length="middle" direction="pwr"/>
+<pin name="+OUT" x="25.4" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="-OUT" x="25.4" y="-22.86" length="middle" direction="pwr" rot="R180"/>
+<wire x1="0" y1="0" x2="8.89" y2="0" width="0.1524" layer="94"/>
+<wire x1="8.89" y1="0" x2="11.684" y2="0" width="0.1524" layer="94"/>
+<wire x1="11.684" y1="0" x2="20.32" y2="0" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-25.4" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="-25.4" x2="11.684" y2="-25.4" width="0.1524" layer="94"/>
+<wire x1="11.684" y1="-25.4" x2="9.144" y2="-25.4" width="0.1524" layer="94"/>
+<wire x1="9.144" y1="-25.4" x2="0" y2="-25.4" width="0.1524" layer="94"/>
+<wire x1="0" y1="-25.4" x2="0" y2="0" width="0.1524" layer="94"/>
+<text x="0" y="0.254" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-25.654" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<wire x1="8.89" y1="0" x2="8.89" y2="-25.4" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="8.89" y1="-25.4" x2="9.144" y2="-25.4" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="11.684" y1="-25.4" x2="11.684" y2="0" width="0.1524" layer="94" style="shortdash"/>
+</symbol>
+<symbol name="MIC806">
+<wire x1="0" y1="-12.7" x2="20.32" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-12.7" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<pin name="GND" x="10.16" y="-15.24" length="short" direction="pwr" rot="R90"/>
+<pin name="VCC" x="-2.54" y="-2.54" length="short" direction="pwr"/>
+<pin name="!RESET" x="22.86" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-13.208" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-2_?_*" prefix="J">
@@ -8776,6 +8809,14 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="1">
+<attribute name="CURRENT" value="1A" constant="no"/>
+<attribute name="DKPN" value="F10985TR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc." constant="no"/>
+<attribute name="MOPN" value="576-0885001DR" constant="no"/>
+<attribute name="MPN" value="0885001DR" constant="no"/>
+<attribute name="VOLTAGE" value="500V" constant="no"/>
+</technology>
 <technology name="1.25">
 <attribute name="CURRENT" value="1.25A"/>
 <attribute name="DKPN" value="F10986CT-ND"/>
@@ -8791,6 +8832,22 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MOPN" value="576-088501.6DR"/>
 <attribute name="MPN" value="088501.6DR"/>
 <attribute name="VOLTAGE" value="500V"/>
+</technology>
+</technologies>
+</device>
+<device name="" package="MINI-BLADE_FUSE_HOLDER">
+<connects>
+<connect gate="G$1" pin="1" pad="L1 L2"/>
+<connect gate="G$1" pin="2" pad="R1 R2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="10A" constant="no"/>
+<attribute name="DKPN" value="F991-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc." constant="no"/>
+<attribute name="MOPN" value="576-0297010.WXNV" constant="no"/>
+<attribute name="MPN" value="0297010.WXNV" constant="no"/>
+<attribute name="VOLTAGE" value="32V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -8934,6 +8991,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="11.53V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="1.62">
+<attribute name="DKPN" value="1712-CPF0603B1R62E1TR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="TE Conductivity Passive Product" constant="no"/>
+<attribute name="MOPN" value="279-CPF0603B1R62E1" constant="no"/>
+<attribute name="MPN" value="CPF0603B1R62E1" constant="no"/>
+<attribute name="POWER" value="0.1W" constant="no"/>
+<attribute name="RESISTANCE" value="1.62" constant="no"/>
+<attribute name="TOLERANCE" value="0.1%" constant="no"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="0.51V" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="50V" constant="no"/>
 </technology>
 <technology name="1.65K">
 <attribute name="DKPN" value="311-1.65KHRCT-ND"/>
@@ -11673,6 +11741,17 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="3.6UH">
+<attribute name="CURRENT_RATED" value="1.6A" constant="no"/>
+<attribute name="CURRENT_SATURATION" value="1A" constant="no"/>
+<attribute name="DCR" value="0.13Ω" constant="no"/>
+<attribute name="DKPN" value="553-3508-2-ND" constant="no"/>
+<attribute name="INDUCTANCE" value="3.6uH" constant="no"/>
+<attribute name="MANUFACTURER" value="Pulse Electronics Power" constant="no"/>
+<attribute name="MOPN" value="673-PA4334362NLT" constant="no"/>
+<attribute name="MPN" value="PA4334.362NLT" constant="no"/>
+<attribute name="TOLERANCE" value="20%" constant="no"/>
+</technology>
 <technology name="33UH">
 <attribute name="CURRENT_RATED" value="0.6A"/>
 <attribute name="CURRENT_SATURATION" value="0.15A"/>
@@ -11683,6 +11762,17 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="MOPN" value="710-74451133"/>
 <attribute name="MPN" value="74451133"/>
 <attribute name="TOLERANCE" value="20%"/>
+</technology>
+<technology name="56UH">
+<attribute name="CURRENT_RATED" value="1.4A" constant="no"/>
+<attribute name="CURRENT_SATURATION" value="1.4A" constant="no"/>
+<attribute name="DCR" value="0.342Ω" constant="no"/>
+<attribute name="DKPN" value="732-11454-2-ND" constant="no"/>
+<attribute name="INDUCTANCE" value="56uH" constant="no"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik" constant="no"/>
+<attribute name="MOPN" value="710-74437349560" constant="no"/>
+<attribute name="MPN" value="74437349560" constant="no"/>
+<attribute name="TOLERANCE" value="10%" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -11759,6 +11849,107 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="MANUFACTURER" value="Analog Devices Inc."/>
 <attribute name="MOPN" value="584-LTC3639EMSETRPBF"/>
 <attribute name="MPN" value="LTC3639EMSE#TRPBF "/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DCM4623TD2J13D0T70" prefix="U">
+<description>400W 300V to 12V step-down DC-DC converter
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/685/DCM4623xD2J13D0y7z_ds-1144763.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="DCM4623" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3714DCM_VIA">
+<connects>
+<connect gate="G$1" pin="+IN" pad="1"/>
+<connect gate="G$1" pin="+OUT" pad="2"/>
+<connect gate="G$1" pin="-IN" pad="3"/>
+<connect gate="G$1" pin="-OUT" pad="4"/>
+<connect gate="G$1" pin="EN" pad="5"/>
+<connect gate="G$1" pin="FLT" pad="6"/>
+<connect gate="G$1" pin="TR" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="	
+1102-DCM4623TD2J13D0T70-ND"/>
+<attribute name="MANUFACTURER" value="Vicor"/>
+<attribute name="MOPN" value="492-DCM4623D2J13D0T7"/>
+<attribute name="MPN" value="DCM4623TD2J13D0T70"/>
+<attribute name="POWER" value="400W"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAPACITOR_POLAR_?_*" prefix="C">
+<gates>
+<gate name="G$1" symbol="CAPACITOR_POLARIZED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EKYC*MM">
+<connects>
+<connect gate="G$1" pin="MINUS" pad="-"/>
+<connect gate="G$1" pin="PLUS" pad="+"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CAPACITANCE" value="3600uF" constant="no"/>
+<attribute name="DKPN" value="	
+565-EKYC250ELL362ML20S-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="United Chemi-con" constant="no"/>
+<attribute name="MOPN" value="661-YC250ELL362ML20S" constant="no"/>
+<attribute name="MPN" value="EKYC250ELL362ML20S" constant="no"/>
+<attribute name="VOLTAGE" value="25V" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC806" prefix="U">
+<gates>
+<gate name="G$1" symbol="MIC806" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="576-3823-2-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Microchip Technology" constant="no"/>
+<attribute name="MOPN" value="998-MIC803-40D4VM3TR" constant="no"/>
+<attribute name="MPN" value="
+MIC803-40D4VM3-TR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RELAY_SOLIDSTATE_NC" prefix="U">
+<gates>
+<gate name="G$1" symbol="RELAY_SOLIDSTATE_NC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ABM3B">
+<connects>
+<connect gate="G$1" pin="CONTACT1" pad="2"/>
+<connect gate="G$1" pin="CONTACT2" pad="3"/>
+<connect gate="G$1" pin="CONTROL+" pad="4"/>
+<connect gate="G$1" pin="CONTROL-" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="255-2897-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Panasonic Electric Works" constant="no"/>
+<attribute name="MOPN" value="769-AQY414EHA" constant="no"/>
+<attribute name="MPN" value="AQY414EHA" constant="no"/>
 </technology>
 </technologies>
 </device>

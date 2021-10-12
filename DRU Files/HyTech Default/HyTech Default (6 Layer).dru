@@ -1,4 +1,4 @@
-description[en] = \n<b>HyTech Default Design Rules (6 Layer)</b>\n<p>\nThese design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPCB, Advanced Circuits) the team uses.\n
+description[en] = \n<b>HyTech Default Design Rules (6 Layer)</b>\n<p>\nThese design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, OshPark, Sunstone Circuits) the team uses.\n
 layerSetup = (1+2*3+14*15+16)
 mtCopper = 0.035mm 0.0175mm 0.0175mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.0175mm 0.0175mm 0.035mm
 mtIsolate = 0.1mm 0.565mm 5mil 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.565mm 0.1mm

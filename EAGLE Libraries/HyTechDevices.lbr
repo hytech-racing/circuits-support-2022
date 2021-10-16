@@ -4839,6 +4839,58 @@ A variation of MSOP16 with 4 pins removed.
 <rectangle x1="-2.286" y1="-2.794" x2="2.286" y2="2.794" layer="39"/>
 <text x="-2.286" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="DCM4623">
+<pad name="6" x="23.19" y="8.25" drill="2.03" diameter="2.79"/>
+<pad name="7" x="23.19" y="2.75" drill="2.03" diameter="2.79"/>
+<pad name="8" x="23.19" y="-2.75" drill="2.03" diameter="2.79"/>
+<pad name="9" x="23.19" y="-8.25" drill="2.03" diameter="2.79"/>
+<pad name="1" x="-23.19" y="8" drill="2.03" diameter="2.79"/>
+<pad name="2" x="-23.19" y="1.38" drill="1.52" diameter="2.02"/>
+<pad name="3" x="-23.19" y="-1.38" drill="1.52" diameter="2.02"/>
+<pad name="4" x="-23.19" y="-4.13" drill="1.52" diameter="2.02"/>
+<pad name="5" x="-23.19" y="-8" drill="2.03" diameter="2.79"/>
+<wire x1="-23.955" y1="11.4" x2="-23.955" y2="-11.4" width="0.127" layer="21"/>
+<wire x1="-23.955" y1="-11.4" x2="23.955" y2="-11.4" width="0.127" layer="21"/>
+<wire x1="23.955" y1="-11.4" x2="23.955" y2="11.4" width="0.127" layer="21"/>
+<wire x1="23.955" y1="11.4" x2="-23.955" y2="11.4" width="0.127" layer="21"/>
+<text x="-24.13" y="11.684" size="1.27" layer="21">&gt;NAME</text>
+<rectangle x1="-25.4" y1="-12.7" x2="25.4" y2="12.7" layer="39"/>
+</package>
+<package name="WE-LMHI">
+<smd name="1" x="-2.725" y="0" dx="3.5" dy="2.95" layer="1" rot="R90"/>
+<smd name="2" x="2.725" y="0" dx="3.5" dy="2.95" layer="1" rot="R90"/>
+<wire x1="-3.3" y1="0" x2="-3.3" y2="3.3" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="3.3" x2="3.3" y2="3.3" width="0.127" layer="21"/>
+<wire x1="3.3" y1="3.3" x2="3.3" y2="-3.3" width="0.127" layer="21"/>
+<wire x1="3.3" y1="-3.3" x2="-3.3" y2="-3.3" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="-3.3" x2="-3.3" y2="0" width="0.127" layer="21"/>
+<text x="-3.429" y="3.429" size="1.27" layer="21" font="vector">&gt;NAME</text>
+<rectangle x1="-5.08" y1="-3.81" x2="5.08" y2="3.81" layer="39"/>
+<rectangle x1="-1.27" y1="-3.81" x2="1.27" y2="3.81" layer="41"/>
+<rectangle x1="-1.27" y1="-3.81" x2="1.27" y2="3.81" layer="43"/>
+</package>
+<package name="PA4334">
+<smd name="1" x="-1.15" y="0" dx="2.7" dy="0.8" layer="1" rot="R90"/>
+<smd name="2" x="1.15" y="0" dx="2.7" dy="0.8" layer="1" rot="R90"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<text x="-3.175" y="1.651" size="1.27" layer="21">&gt;NAME</text>
+<rectangle x1="-2.54" y1="-2.54" x2="2.54" y2="2.54" layer="39"/>
+<rectangle x1="-1.27" y1="-2.54" x2="1.27" y2="2.54" layer="41"/>
+<rectangle x1="-1.27" y1="-2.54" x2="1.27" y2="2.54" layer="43"/>
+</package>
+<package name="B20">
+<pad name="P$1" x="35.4" y="0" drill="1.35"/>
+<pad name="P$2" x="-35.4" y="0" drill="1.35"/>
+<wire x1="-25.4" y1="5.555" x2="-25.4" y2="-5.555" width="0.127" layer="21"/>
+<wire x1="-25.4" y1="-5.555" x2="25.4" y2="-5.555" width="0.127" layer="21"/>
+<wire x1="25.4" y1="-5.555" x2="25.4" y2="5.555" width="0.127" layer="21"/>
+<wire x1="25.4" y1="5.555" x2="-25.4" y2="5.555" width="0.127" layer="21"/>
+<rectangle x1="-38.1" y1="-6.35" x2="36.83" y2="6.35" layer="39"/>
+<text x="-25.527" y="5.715" size="1.27" layer="21">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -9461,6 +9513,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="8.35K">
+<attribute name="DKPN" value="764-1461-2-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Dale Thin Film"/>
+<attribute name="MOPN" value="71-PTN0603E8351BST1"/>
+<attribute name="MPN" value=" PTN0603E8351BST1"/>
+<attribute name="POWER" value="0.15W"/>
+<attribute name="RESISTANCE" value="8.35k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="28.90W"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="8.66K">
 <attribute name="DKPN" value="YAG4603TR-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -9470,18 +9533,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="RESISTANCE" value="8.66k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="29.43V"/>
-<attribute name="VOLTAGE_MAX" value="75V"/>
-</technology>
-<technology name="8.35K">
-<attribute name="DKPN" value="764-1461-2-ND"/>
-<attribute name="MANUFACTURER" value="Vishay Dale Thin Film"/>
-<attribute name="MOPN" value="71-PTN0603E8351BST1"/>
-<attribute name="MPN" value="
-PTN0603E8351BST1"/>
-<attribute name="POWER" value="0.15W"/>
-<attribute name="RESISTANCE" value="8.35k"/>
-<attribute name="TOLERANCE" value="0.1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="28.90W"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="84.5K">
@@ -9595,6 +9646,20 @@ PTN0603E8351BST1"/>
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="5.123V"/>
 <attribute name="VOLTAGE_MAX" value="5.123V"/>
+</technology>
+</technologies>
+</device>
+<device name="B20" package="B20">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="1.25K">
+<attribute name="RESISTANCE" value="1.25k" constant="no"/>
+</technology>
+<technology name="10K">
+<attribute name="RESISTANCE" value="10k" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -11858,6 +11923,44 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </technology>
 </technologies>
 </device>
+<device name="WELMHI" package="WE-LMHI">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT_RATED" value="" constant="no"/>
+<attribute name="CURRENT_SATURATION" value="" constant="no"/>
+<attribute name="DCR" value="" constant="no"/>
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="INDUCTANCE" value="56uH" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="PA4334" package="PA4334">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT_RATED" value="1.6A" constant="no"/>
+<attribute name="CURRENT_SATURATION" value="1A" constant="no"/>
+<attribute name="DCR" value="0.13" constant="no"/>
+<attribute name="DKPN" value="553-3508-2-ND" constant="no"/>
+<attribute name="INDUCTANCE" value="3.6uH" constant="no"/>
+<attribute name="MANUFACTURER" value="Pulse Electonics Company" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="VOLTAGE_REGULATOR_MODULE_?_*" prefix="A">
@@ -11925,25 +12028,18 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <gate name="G$1" symbol="DCM4623" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="3714DCM_VIA">
+<device name="" package="DCM4623">
 <connects>
 <connect gate="G$1" pin="+IN" pad="1"/>
-<connect gate="G$1" pin="+OUT" pad="2"/>
-<connect gate="G$1" pin="-IN" pad="3"/>
-<connect gate="G$1" pin="-OUT" pad="4"/>
-<connect gate="G$1" pin="EN" pad="5"/>
-<connect gate="G$1" pin="FLT" pad="6"/>
-<connect gate="G$1" pin="TR" pad="7"/>
+<connect gate="G$1" pin="+OUT" pad="6 8"/>
+<connect gate="G$1" pin="-IN" pad="5"/>
+<connect gate="G$1" pin="-OUT" pad="7 9"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="FLT" pad="4"/>
+<connect gate="G$1" pin="TR" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="DKPN" value="	
-1102-DCM4623TD2J13D0T70-ND"/>
-<attribute name="MANUFACTURER" value="Vicor"/>
-<attribute name="MOPN" value="492-DCM4623D2J13D0T7"/>
-<attribute name="MPN" value="DCM4623TD2J13D0T70"/>
-<attribute name="POWER" value="400W"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -11961,8 +12057,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <technologies>
 <technology name="">
 <attribute name="CAPACITANCE" value="3600uF" constant="no"/>
-<attribute name="DKPN" value="	
-565-EKYC250ELL362ML20S-ND" constant="no"/>
+<attribute name="DKPN" value="  565-EKYC250ELL362ML20S-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="United Chemi-con" constant="no"/>
 <attribute name="MOPN" value="661-YC250ELL362ML20S" constant="no"/>
 <attribute name="MPN" value="EKYC250ELL362ML20S" constant="no"/>
@@ -11988,8 +12083,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="DKPN" value="576-3823-2-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Microchip Technology" constant="no"/>
 <attribute name="MOPN" value="998-MIC803-40D4VM3TR" constant="no"/>
-<attribute name="MPN" value="
-MIC803-40D4VM3-TR" constant="no"/>
+<attribute name="MPN" value=" MIC803-40D4VM3-TR" constant="no"/>
 </technology>
 </technologies>
 </device>

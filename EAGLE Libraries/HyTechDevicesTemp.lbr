@@ -71,7 +71,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -212,14 +212,12 @@
 <symbol name="TMCS1100A*">
 <description>TMCS1100 Hall-Effect Current Sensor &lt;br&gt;
 &lt;a href="https://www.ti.com/lit/ds/symlink/tmcs1100.pdf?ts=1634308468687&amp;ref_url=https%253A%252F%252Fwww.google.com%252F"&gt;datasheet&lt;/a&gt;</description>
-<pin name="IN+1" x="-2.54" y="7.62" length="short" direction="in"/>
-<pin name="IN+2" x="-2.54" y="2.54" length="short" direction="in"/>
-<pin name="IN-1" x="-2.54" y="-2.54" length="short" direction="in"/>
-<pin name="IN-2" x="-2.54" y="-7.62" length="short" direction="in"/>
+<pin name="IN+" x="-2.54" y="5.08" length="short" direction="in"/>
+<pin name="IN-" x="-2.54" y="-5.08" length="short" direction="in"/>
 <pin name="GND" x="25.4" y="-10.16" length="short" direction="pwr" rot="R180"/>
 <pin name="VREF" x="25.4" y="-5.08" length="short" direction="in" rot="R180"/>
-<pin name="VOUT" x="25.4" y="7.62" length="short" direction="out" rot="R180"/>
-<pin name="VS" x="25.4" y="0" length="short" direction="pwr" rot="R180"/>
+<pin name="VOUT" x="25.4" y="2.54" length="short" direction="out" rot="R180"/>
+<pin name="VS" x="25.4" y="7.62" length="short" direction="pwr" rot="R180"/>
 <wire x1="0" y1="10.16" x2="0" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="0" y1="-12.7" x2="22.86" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="22.86" y1="-12.7" x2="22.86" y2="10.16" width="0.254" layer="94"/>
@@ -229,8 +227,8 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TMCS1100A*" prefix="U">
-<description>TMCS1100 Hall-Effect Current Sensor &lt;br&gt;
+<deviceset name="TMCS1100A4">
+<description>TMCS1100A4 Hall-Effect Current Sensor
 &lt;a href=https://www.ti.com/lit/ds/symlink/tmcs1100.pdf?ts=1634308468687&amp;ref_url=https%253A%252F%252Fwww.google.com%252F&gt;datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="TMCS1100A*" x="0" y="0"/>
@@ -239,20 +237,18 @@
 <device name="" package="SOIC-08(NARROW,0.15&quot;)">
 <connects>
 <connect gate="G$1" pin="GND" pad="5"/>
-<connect gate="G$1" pin="IN+1" pad="1"/>
-<connect gate="G$1" pin="IN+2" pad="2"/>
-<connect gate="G$1" pin="IN-1" pad="3"/>
-<connect gate="G$1" pin="IN-2" pad="4"/>
+<connect gate="G$1" pin="IN+" pad="1 2"/>
+<connect gate="G$1" pin="IN-" pad="3 4"/>
 <connect gate="G$1" pin="VOUT" pad="7"/>
 <connect gate="G$1" pin="VREF" pad="6"/>
 <connect gate="G$1" pin="VS" pad="8"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="296-TMCS1100A4QDR"/>
+<attribute name="DKPN" value="296-TMCS1100A4QDRCT-ND"/>
 <attribute name="MANUFACTURER" value="TI"/>
 <attribute name="MOPN" value="595-TMCS1100A4QDT"/>
-<attribute name="MPN" value="TMCS1100" constant="no"/>
+<attribute name="MPN" value="TMCS1100A4"/>
 </technology>
 </technologies>
 </device>

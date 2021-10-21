@@ -19811,16 +19811,16 @@
 <rectangle x1="5.08" y1="0" x2="17.907" y2="8.89" layer="51"/>
 </package>
 <package name="TS">
-<text x="0" y="0" size="2.032" layer="51" font="vector" align="center">TS</text>
-<text x="0" y="0" size="2.032" layer="52" font="vector" rot="MR0" align="center">TS</text>
+<text x="0" y="0" size="2.032" layer="21" font="vector" align="center">TS</text>
+<text x="0" y="0" size="2.032" layer="22" font="vector" rot="MR0" align="center">TS</text>
 </package>
 <package name="GLV">
-<text x="0" y="0" size="2.032" layer="51" font="vector" align="center">GLV</text>
-<text x="0" y="0" size="2.032" layer="52" font="vector" rot="MR0" align="center">GLV</text>
+<text x="0" y="0" size="2.032" layer="21" font="vector" align="center">GLV</text>
+<text x="0" y="0" size="2.032" layer="22" font="vector" rot="MR0" align="center">GLV</text>
 </package>
 <package name="ISOSPI">
-<text x="0" y="0" size="2.032" layer="51" font="vector" align="center">isoSPI</text>
-<text x="0" y="0" size="2.032" layer="52" font="vector" rot="MR0" align="center">isoSPI</text>
+<text x="0" y="0" size="2.032" layer="21" font="vector" align="center">isoSPI</text>
+<text x="0" y="0" size="2.032" layer="22" font="vector" rot="MR0" align="center">isoSPI</text>
 </package>
 <package name="DANGER_HIGH_VOLTAGE">
 <text x="0" y="0" size="2.032" layer="21" font="vector" align="center">DANGER HIGH VOLTAGE</text>

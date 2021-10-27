@@ -8947,6 +8947,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="11.53V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="1.4K">
+<attribute name="DKPN" value="311-2465-1-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RT0603DRE071K4L"/>
+<attribute name="MPN" value="RT0603DRE071K4L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="1.4K"/>
+<attribute name="TOLERANCE" value="0.5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="1.65K">
 <attribute name="DKPN" value="311-1.65KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -9266,6 +9277,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="60.42V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="360">
+<attribute name="DKPN" value="P360HCT-ND"/>
+<attribute name="MANUFACTURER" value="  Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-3EKF3600V"/>
+<attribute name="MPN" value="ERJ-3EKF3600V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="360"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75"/>
+<attribute name="VOLTAGE_MAX" value="150"/>
+</technology>
 <technology name="374K">
 <attribute name="DKPN" value="311-374KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -9297,6 +9319,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="RESISTANCE" value="4.64k"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="21.54V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="4.7K">
+<attribute name="DKPN" value="311-2606-1-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RT0603DRE074K7L"/>
+<attribute name="MPN" value="RT0603DRE074K7L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="4.7K"/>
+<attribute name="TOLERANCE" value="0.5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="402">

@@ -8490,6 +8490,15 @@ with up to 100mA of output current</description>
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
+<technology name="50V_750PF">
+<attribute name="CAPACITANCE" value="750pF"/>
+<attribute name="DKPN" value="311-4101-1-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-CC0603KR9BB751"/>
+<attribute name="MPN" value="CC0603KRX7R9BB751"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
 </technologies>
 </device>
 <device name="2220" package="2220-CAP">
@@ -10168,6 +10177,14 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MOPN" value="78-GSOT04-E3-08"/>
 <attribute name="MPN" value="GSOT04-E3-08"/>
 <attribute name="VOLTAGE" value="4V"/>
+</technology>
+<technology name="8V">
+<attribute name="DKPN" value="GSOT08C-E3-08CT-ND"/>
+<attribute name="MANUFACTURER" value="	
+Vishay General Semiconductor - Diodes Division"/>
+<attribute name="MOPN" value="78-GSOT08C-E3-08"/>
+<attribute name="MPN" value="GSOT08C-E3-08"/>
+<attribute name="VOLTAGE" value="8V"/>
 </technology>
 </technologies>
 </device>

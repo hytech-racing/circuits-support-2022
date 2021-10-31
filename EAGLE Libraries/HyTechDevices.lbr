@@ -8506,6 +8506,19 @@ with up to 100mA of output current</description>
 <wire x1="3.81" y1="-17.78" x2="5.08" y2="-17.78" width="0.6096" layer="94"/>
 <text x="0" y="-20.955" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
+<symbol name="ADM825">
+<pin name="VDD" x="-2.54" y="-2.54" length="short" direction="pwr"/>
+<pin name="RESET" x="22.86" y="-5.08" length="short" rot="R180"/>
+<pin name="!RESET" x="22.86" y="-2.54" length="short" function="dot" rot="R180"/>
+<pin name="!MR" x="-2.54" y="-5.08" length="short" function="dot"/>
+<pin name="GND" x="22.86" y="-10.16" length="short" direction="pwr" rot="R180"/>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="-12.7" x2="0" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="0" y1="-12.7" x2="0" y2="0" width="0.1524" layer="94"/>
+<text x="0" y="0" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-12.7" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-2_?_*" prefix="J">
@@ -11106,6 +11119,17 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED" package="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CONNECTOR-3_?" prefix="J">
@@ -11118,6 +11142,26 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <connect gate="G$1" pin="1" pad="A"/>
 <connect gate="G$1" pin="2" pad="B"/>
 <connect gate="G$1" pin="3" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MOLEX_MICROFIT_PTH_VERTICAL_06_DUAL_SPACED" package="MOLEX_MICROFIT_PTH_VERTICAL_06_DUAL_SPACED">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED" package="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12410,58 +12454,6 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONNECTOR-5-SPACED_?_*" prefix="J">
-<gates>
-<gate name="G$1" symbol="CONNECTOR_05_SPACED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CONNECTOR-6-SPACED_?_*" prefix="J">
-<gates>
-<gate name="G$1" symbol="CONNECTOR_06_SPACED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MOLEX_MICROFIT_PTH_VERTICAL_06_DUAL_SPACED">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CONNECTOR-7-SPACED_?_*" prefix="J">
-<gates>
-<gate name="G$1" symbol="CONNECTOR_07_SPACED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="RELAY_SOLIDSTATE_NO">
 <description>AQY210EH Normally Open Solid State Relay&lt;br&gt;
 &lt;a href=https://www.datasheetq.com/datasheet-download/287654/1/Panasonic/AQY210EH&gt; Datasheet &lt;/a&gt;</description>
@@ -12483,6 +12475,25 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="MOPN" value="769-AQY210EHA"/>
 <attribute name="MPN" value="AQY210EHA"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADM825">
+<gates>
+<gate name="G$1" symbol="ADM825" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-5">
+<connects>
+<connect gate="G$1" pin="!MR" pad="4"/>
+<connect gate="G$1" pin="!RESET" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="RESET" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

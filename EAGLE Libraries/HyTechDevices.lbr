@@ -11834,9 +11834,30 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <technology name="">
 <attribute name="DKPN" value="CLA221-ND"/>
 <attribute name="MANUFACTURER" value="IXYS"/>
-<attribute name="MOPN" value="849-CPC1002N
-"/>
+<attribute name="MOPN" value="849-CPC1002N "/>
 <attribute name="MPN" value="CPC1002N"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOMENTARY_BTN">
+<gates>
+<gate name="G$1" symbol="BUTTON" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="B3S-100X">
+<connects>
+<connect gate="G$1" pin="P" pad="1 2"/>
+<connect gate="G$1" pin="S" pad="3 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="SW415-ND
+"/>
+<attribute name="MANUFACTURER" value="Omron"/>
+<attribute name="MOPN" value="653-B3S-1000"/>
+<attribute name="MPN" value="B3S-1000"/>
 </technology>
 </technologies>
 </device>

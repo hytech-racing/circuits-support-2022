@@ -193,13 +193,13 @@
 <symbol name="LMS8117A*">
 <description>LMS8117A Low-Dropout Linear Voltage Regulator &lt;br&gt;
 &lt;a href=https://www.ti.com/lit/ds/symlink/lms8117a.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1635365377815&amp;ref_url=https%253A%252F%252Fbr.mouser.com%252F&gt;Datasheet&lt;/a&gt;</description>
-<pin name="GND" x="-2.54" y="-10.16" length="short" direction="pwr"/>
-<pin name="OUTPUT" x="15.24" y="-7.62" length="short" direction="out" rot="R180"/>
+<pin name="GND" x="10.16" y="-15.24" length="short" direction="pwr" rot="R90"/>
+<pin name="OUTPUT" x="22.86" y="-2.54" length="short" direction="out" rot="R180"/>
 <pin name="INPUT" x="-2.54" y="-2.54" length="short" direction="pwr"/>
 <wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="-12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-12.7" x2="12.7" y2="0" width="0.254" layer="94"/>
-<wire x1="12.7" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="20.32" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-12.7" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>

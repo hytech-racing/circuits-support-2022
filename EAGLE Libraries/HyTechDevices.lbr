@@ -9415,6 +9415,18 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="34.64V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="13K">
+<attribute name="DKPN" value="P20098TR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
+<attribute name="MOPN" value="667-ERJ-PB3B1302V" constant="no"/>
+<attribute name="MPN" value="
+ERJ-PB3B1302V" constant="no"/>
+<attribute name="POWER" value="0.1W" constant="no"/>
+<attribute name="RESISTANCE" value="13k" constant="no"/>
+<attribute name="TOLERANCE" value="0.1%" constant="no"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="75V" constant="no"/>
+</technology>
 <technology name="154K">
 <attribute name="DKPN" value="P154KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -9612,6 +9624,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="54.77V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="33.2K">
+<attribute name="DKPN" value="P20144TR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
+<attribute name="MOPN" value="667-ERJ-PB3B3322V" constant="no"/>
+<attribute name="MPN" value="ERJ-PB3B3322V" constant="no"/>
+<attribute name="POWER" value="0.1W" constant="no"/>
+<attribute name="RESISTANCE" value="33.2k" constant="no"/>
+<attribute name="TOLERANCE" value="0.1%" constant="no"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="75V" constant="no"/>
 </technology>
 <technology name="330K">
 <attribute name="DKPN" value="P330KDBCT-ND"/>
@@ -9816,6 +9839,17 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="1">
+<attribute name="DKPN" value="P1.0DTR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
+<attribute name="MOPN" value="667-ERJ-6RQF1R0V" constant="no"/>
+<attribute name="MPN" value="ERJ-6RQF1R0V" constant="no"/>
+<attribute name="POWER" value="0.125W" constant="no"/>
+<attribute name="RESISTANCE" value="1" constant="no"/>
+<attribute name="TOLERANCE" value="1%" constant="no"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
+</technology>
 <technology name="12.4K">
 <attribute name="DKPN" value="P20718CT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -9848,6 +9882,18 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="976K">
+<attribute name="DKPN" value="P20935TR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
+<attribute name="MOPN" value="667-ERJ-PB6B9763V" constant="no"/>
+<attribute name="MPN" value="	
+ERJ-PB6B9763V" constant="no"/>
+<attribute name="POWER" value="0.25W" constant="no"/>
+<attribute name="RESISTANCE" value="976k" constant="no"/>
+<attribute name="TOLERANCE" value="0.1%" constant="no"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -10551,6 +10597,20 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MOPN" value="78-GSOT04-E3-08"/>
 <attribute name="MPN" value="GSOT04-E3-08"/>
 <attribute name="VOLTAGE" value="4V"/>
+</technology>
+<technology name="5V">
+<attribute name="DKPN" value="GSOT05-E3-08TR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division" constant="no"/>
+<attribute name="MOPN" value="78-GSOT05-E3-08" constant="no"/>
+<attribute name="MPN" value="GSOT05-E3-08" constant="no"/>
+<attribute name="VOLTAGE" value="5V" constant="no"/>
+</technology>
+<technology name="8V">
+<attribute name="DKPN" value="GSOT08-E3-08TR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division" constant="no"/>
+<attribute name="MOPN" value="78-GSOT08-E3-08" constant="no"/>
+<attribute name="MPN" value="GSOT08-E3-08" constant="no"/>
+<attribute name="VOLTAGE" value="8V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -12455,8 +12515,8 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </devices>
 </deviceset>
 <deviceset name="RELAY_SOLIDSTATE_NO">
-<description>AQY214EH Normally Open Solid State Relay&lt;br&gt;
-&lt;a href=https://datasheetspdf.com/pdf-file/829078/Panasonic/AQY214EHA/1&gt; Datasheet &lt;/a&gt;</description>
+<description>AQY210EH Normally Open Solid State Relay&lt;br&gt;
+&lt;a href=https://www.datasheetq.com/datasheet-download/287654/1/Panasonic/AQY210EH&gt; Datasheet &lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="RELAY_SOLIDSTATE_NO" x="0" y="0"/>
 </gates>
@@ -12470,16 +12530,16 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="255-1436-5-ND"/>
+<attribute name="DKPN" value="255-1431-5-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electric Works"/>
-<attribute name="MOPN" value="769-AQY214EHA"/>
-<attribute name="MPN" value="AQY214EHA"/>
+<attribute name="MOPN" value="769-AQY210EHA"/>
+<attribute name="MPN" value="AQY210EHA"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADM825">
+<deviceset name="ADM825" prefix="U">
 <gates>
 <gate name="G$1" symbol="ADM825" x="0" y="0"/>
 </gates>

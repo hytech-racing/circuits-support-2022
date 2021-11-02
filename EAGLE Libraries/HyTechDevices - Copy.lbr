@@ -9048,6 +9048,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="3.16V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="100K">
+<attribute name="DKPN" value="YAG2294CT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603JR-10100KL"/>
+<attribute name="MPN" value="RC0603JR-10100KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="100k"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="10K">
 <attribute name="DKPN" value="311-10.0KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -10206,8 +10217,7 @@ Leakage Inductance: 0.50 uH max
 </technology>
 <technology name="8V">
 <attribute name="DKPN" value="GSOT08C-E3-08CT-ND"/>
-<attribute name="MANUFACTURER" value="	
-Vishay General Semiconductor - Diodes Division"/>
+<attribute name="MANUFACTURER" value="  Vishay General Semiconductor - Diodes Division"/>
 <attribute name="MOPN" value="78-GSOT08C-E3-08"/>
 <attribute name="MPN" value="GSOT08C-E3-08"/>
 <attribute name="VOLTAGE" value="8V"/>
@@ -11900,7 +11910,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONNECTOR-10_?_*">
+<deviceset name="CONNECTOR-10_?_*" prefix="J">
 <description>10 pin connector</description>
 <gates>
 <gate name="G$1" symbol="CONNECTOR_10" x="0" y="0"/>
@@ -11928,7 +11938,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONNECTOR-12_?_*">
+<deviceset name="CONNECTOR-12_?_*" prefix="J">
 <description>12 pin connector</description>
 <gates>
 <gate name="G$1" symbol="CONNECTOR_12" x="0" y="0"/>
@@ -11986,6 +11996,33 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="MANUFACTURER" value="MOLEX"/>
 <attribute name="MPN" value="430451414"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC6820">
+<description>LTC6820 isoSPI Isolated Communications Interface &lt;br&gt;
+&lt;a href="mouser.com/datasheet/2/609/LTC6820-1601976.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LTC6820" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MSOP-16">
+<connects>
+<connect gate="G$1" pin="!CS" pad="5"/>
+<connect gate="G$1" pin="CLK" pad="4"/>
+<connect gate="G$1" pin="GND" pad="7 8 13 14"/>
+<connect gate="G$1" pin="IBIAS" pad="16"/>
+<connect gate="G$1" pin="ICMP" pad="15"/>
+<connect gate="G$1" pin="IM" pad="10"/>
+<connect gate="G$1" pin="IP" pad="11"/>
+<connect gate="G$1" pin="SDI" pad="2"/>
+<connect gate="G$1" pin="SDO" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="1 9 12"/>
+<connect gate="G$1" pin="VLOGIC" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

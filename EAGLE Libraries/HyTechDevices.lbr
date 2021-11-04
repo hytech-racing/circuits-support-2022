@@ -5048,6 +5048,49 @@ A variation of MSOP16 with 4 pins removed.
 <pad name="1" x="-2.9972" y="-2.9972" drill="1.0668"/>
 <pad name="2" x="0" y="0" drill="1.0668"/>
 </package>
+<package name="DIP-4">
+<smd name="3" x="-1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
+<smd name="4" x="1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
+<smd name="1" x="-1.27" y="-4.15" dx="1.5" dy="1.9" layer="1"/>
+<smd name="2" x="1.27" y="-4.15" dx="1.5" dy="1.9" layer="1"/>
+<wire x1="-2.39" y1="3.2" x2="-2.39" y2="-3.2" width="0.1524" layer="21"/>
+<wire x1="-2.39" y1="-3.2" x2="2.39" y2="-3.2" width="0.1524" layer="21"/>
+<wire x1="2.39" y1="-3.2" x2="2.39" y2="3.2" width="0.1524" layer="21"/>
+<wire x1="2.39" y1="3.2" x2="-2.39" y2="3.2" width="0.1524" layer="21"/>
+<text x="-2.54" y="-3.175" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<circle x="-3.175" y="-3.81" radius="0.381" width="0" layer="21"/>
+<rectangle x1="-3.556" y1="-6.096" x2="3.556" y2="6.096" layer="39"/>
+</package>
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED2">
+<description>14 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451414"&gt;Part&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430451414_sd.pdf"&gt;Footprint&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430251400_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
+<hole x="11.9888" y="0.9398" drill="1.0668"/>
+<hole x="-11.9888" y="0.9398" drill="1.0668"/>
+<wire x1="-12.319" y1="-1.905" x2="12.319" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="12.319" y1="-1.905" x2="12.319" y2="1.905" width="0.127" layer="21"/>
+<wire x1="12.319" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="1.905" x2="-1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-12.319" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-12.319" y1="1.905" x2="-12.319" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="1.9304" y2="3.302" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="3.302" x2="1.9304" y2="1.905" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="5.969" x2="1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<rectangle x1="-13.0556" y1="-2.286" x2="13.0556" y2="2.286" layer="39"/>
+<rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
+<rectangle x1="-13.0556" y1="-2.286" x2="13.0556" y2="2.286" layer="40"/>
+<text x="0" y="-2.54" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
+<pad name="3" x="2.9972" y="0" drill="1.0668"/>
+<pad name="2" x="-2.9972" y="0" drill="1.0668"/>
+<pad name="1" x="-8.9916" y="0" drill="1.0668"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -9433,8 +9476,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="DKPN" value="P20098TR-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
 <attribute name="MOPN" value="667-ERJ-PB3B1302V" constant="no"/>
-<attribute name="MPN" value="
-ERJ-PB3B1302V" constant="no"/>
+<attribute name="MPN" value=" ERJ-PB3B1302V" constant="no"/>
 <attribute name="POWER" value="0.1W" constant="no"/>
 <attribute name="RESISTANCE" value="13k" constant="no"/>
 <attribute name="TOLERANCE" value="0.1%" constant="no"/>
@@ -9934,8 +9976,7 @@ ERJ-PB3B1302V" constant="no"/>
 <attribute name="DKPN" value="P20935TR-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
 <attribute name="MOPN" value="667-ERJ-PB6B9763V" constant="no"/>
-<attribute name="MPN" value="	
-ERJ-PB6B9763V" constant="no"/>
+<attribute name="MPN" value="  ERJ-PB6B9763V" constant="no"/>
 <attribute name="POWER" value="0.25W" constant="no"/>
 <attribute name="RESISTANCE" value="976k" constant="no"/>
 <attribute name="TOLERANCE" value="0.1%" constant="no"/>
@@ -11254,7 +11295,7 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="MOLEX_MICROFIT_PTH_VERTICAL_06_DUAL_SPACED" package="MOLEX_MICROFIT_PTH_VERTICAL_06_DUAL_SPACED">
+<device name="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED" package="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -11264,7 +11305,7 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED" package="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED">
+<device name="MOLEX_MICROFIT_PTH_VERTICAL_7_DUAL_SPACED2" package="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED2">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -12503,18 +12544,15 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <gate name="G$1" symbol="RELAY_SOLIDSTATE_NC" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="ABM3B">
+<device name="" package="DIP-4">
 <connects>
-<connect gate="G$1" pin="CONTACT1" pad="2"/>
-<connect gate="G$1" pin="CONTACT2" pad="3"/>
-<connect gate="G$1" pin="CONTROL+" pad="4"/>
-<connect gate="G$1" pin="CONTROL-" pad="1"/>
+<connect gate="G$1" pin="CONTACT1" pad="3"/>
+<connect gate="G$1" pin="CONTACT2" pad="4"/>
+<connect gate="G$1" pin="CONTROL+" pad="1"/>
+<connect gate="G$1" pin="CONTROL-" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="255-2897-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electric Works" constant="no"/>
-<attribute name="MOPN" value="769-AQY414EHA" constant="no"/>
 <attribute name="MPN" value="AQY414EHA" constant="no"/>
 </technology>
 </technologies>
@@ -12568,7 +12606,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <gate name="G$1" symbol="RELAY_SOLIDSTATE_NO" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="ABM3B">
+<device name="" package="DIP-4">
 <connects>
 <connect gate="G$1" pin="CONTACT1" pad="3"/>
 <connect gate="G$1" pin="CONTACT2" pad="4"/>
@@ -12577,10 +12615,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="255-1431-5-ND"/>
-<attribute name="MANUFACTURER" value="Panasonic Electric Works"/>
-<attribute name="MOPN" value="769-AQY210EHA"/>
-<attribute name="MPN" value="AQY210EHA"/>
+<attribute name="MPN" value="AQY210EHA" constant="no"/>
 </technology>
 </technologies>
 </device>

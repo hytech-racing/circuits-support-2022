@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2266,7 +2266,7 @@ Note: Based on page 48 and 49.</description>
 <circle x="0" y="0" radius="3.75" width="0" layer="39"/>
 <circle x="0" y="0" radius="3.75" width="0" layer="40"/>
 <circle x="0" y="0" radius="3.75" width="0" layer="41"/>
-<circle x="0" y="0" radius="3.75" width="0" layer="42"/>
+<circle x="0" y="0" radius="3.75" width="0" layer="41"/>
 </package>
 <package name="TSSOP-24">
 <description>TSSOP 24
@@ -4882,14 +4882,26 @@ A variation of MSOP16 with 4 pins removed.
 <rectangle x1="-1.27" y1="-2.54" x2="1.27" y2="2.54" layer="43"/>
 </package>
 <package name="B20">
-<pad name="P$1" x="35.4" y="0" drill="1.35"/>
-<pad name="P$2" x="-35.4" y="0" drill="1.35"/>
+<pad name="P$1" x="32.51" y="0" drill="3.74" diameter="6" stop="no"/>
+<pad name="P$2" x="-32.51" y="0" drill="3.74" diameter="6" stop="no"/>
 <wire x1="-25.4" y1="5.555" x2="-25.4" y2="-5.555" width="0.127" layer="21"/>
 <wire x1="-25.4" y1="-5.555" x2="25.4" y2="-5.555" width="0.127" layer="21"/>
 <wire x1="25.4" y1="-5.555" x2="25.4" y2="5.555" width="0.127" layer="21"/>
 <wire x1="25.4" y1="5.555" x2="-25.4" y2="5.555" width="0.127" layer="21"/>
-<rectangle x1="-38.1" y1="-6.35" x2="36.83" y2="6.35" layer="39"/>
+<rectangle x1="-38.1" y1="-6.35" x2="38.1" y2="6.35" layer="39"/>
 <text x="-25.527" y="5.715" size="1.27" layer="21">&gt;NAME</text>
+<pad name="2" x="-27.94" y="-8.89" drill="1.35"/>
+<pad name="1" x="27.94" y="-8.89" drill="1.35"/>
+<rectangle x1="-30.48" y1="-11.43" x2="-25.4" y2="-6.35" layer="39"/>
+<rectangle x1="25.4" y1="-11.43" x2="30.48" y2="-6.35" layer="39"/>
+<circle x="-32.51" y="0" radius="1.87" width="0" layer="29"/>
+<circle x="-32.51" y="0" radius="1.87" width="0" layer="30"/>
+<circle x="32.51" y="0" radius="1.87" width="0" layer="30"/>
+<circle x="32.51" y="0" radius="1.87" width="0" layer="29"/>
+<circle x="-32.4866" y="0" radius="1.87" width="0" layer="41"/>
+<circle x="-32.4866" y="0" radius="1.87" width="0.0508" layer="42"/>
+<circle x="32.51" y="0" radius="1.87" width="0" layer="42"/>
+<circle x="32.51" y="0" radius="1.87" width="0.0508" layer="41"/>
 </package>
 <package name="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL">
 <description>10 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
@@ -5090,6 +5102,23 @@ A variation of MSOP16 with 4 pins removed.
 <pad name="3" x="2.9972" y="0" drill="1.0668"/>
 <pad name="2" x="-2.9972" y="0" drill="1.0668"/>
 <pad name="1" x="-8.9916" y="0" drill="1.0668"/>
+</package>
+<package name="DIP-4_AIRGAP">
+<smd name="3" x="-1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
+<smd name="4" x="1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
+<smd name="1" x="-1.27" y="-4.15" dx="1.5" dy="1.9" layer="1"/>
+<smd name="2" x="1.27" y="-4.15" dx="1.5" dy="1.9" layer="1"/>
+<wire x1="-2.39" y1="3.2" x2="-2.39" y2="-3.2" width="0.1524" layer="21"/>
+<wire x1="-2.39" y1="-3.2" x2="2.39" y2="-3.2" width="0.1524" layer="21"/>
+<wire x1="2.39" y1="-3.2" x2="2.39" y2="3.2" width="0.1524" layer="21"/>
+<wire x1="2.39" y1="3.2" x2="-2.39" y2="3.2" width="0.1524" layer="21"/>
+<text x="-2.54" y="-3.175" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<circle x="-3.175" y="-3.81" radius="0.381" width="0" layer="21"/>
+<rectangle x1="-3.556" y1="-6.096" x2="3.556" y2="6.096" layer="39"/>
+<wire x1="-2.413" y1="3.048" x2="-2.413" y2="-3.048" width="0.0508" layer="46"/>
+<wire x1="-2.413" y1="-3.048" x2="2.413" y2="-3.048" width="0.0508" layer="46"/>
+<wire x1="2.413" y1="-3.048" x2="2.413" y2="3.048" width="0.0508" layer="46"/>
+<wire x1="2.413" y1="3.048" x2="-2.413" y2="3.048" width="0.0508" layer="46"/>
 </package>
 </packages>
 <symbols>
@@ -10017,8 +10046,8 @@ Leakage Inductance: 0.50 uH max
 </device>
 <device name="B20" package="B20">
 <connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="1.25K">
@@ -12539,7 +12568,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="RELAY_SOLIDSTATE_NC" prefix="U">
+<deviceset name="RELAY_SOLIDSTATE_NC_?" prefix="U">
 <gates>
 <gate name="G$1" symbol="RELAY_SOLIDSTATE_NC" x="0" y="0"/>
 </gates>
@@ -12555,6 +12584,17 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <technology name="">
 <attribute name="MPN" value="AQY414EHA" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="AG" package="DIP-4_AIRGAP">
+<connects>
+<connect gate="G$1" pin="CONTACT1" pad="3"/>
+<connect gate="G$1" pin="CONTACT2" pad="4"/>
+<connect gate="G$1" pin="CONTROL+" pad="1"/>
+<connect gate="G$1" pin="CONTROL-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -12599,7 +12639,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="RELAY_SOLIDSTATE_NO">
+<deviceset name="RELAY_SOLIDSTATE_NO_?" prefix="U">
 <description>AQY214EH Normally Open Solid State Relay&lt;br&gt;
 &lt;a href=https://www.datasheetq.com/datasheet-download/287654/1/Panasonic/AQY214EH&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -12617,6 +12657,17 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <technology name="">
 <attribute name="MPN" value="AQY214EHA"/>
 </technology>
+</technologies>
+</device>
+<device name="AG" package="DIP-4_AIRGAP">
+<connects>
+<connect gate="G$1" pin="CONTACT1" pad="3"/>
+<connect gate="G$1" pin="CONTACT2" pad="4"/>
+<connect gate="G$1" pin="CONTROL+" pad="1"/>
+<connect gate="G$1" pin="CONTROL-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

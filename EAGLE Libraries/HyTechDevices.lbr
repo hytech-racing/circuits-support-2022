@@ -8332,6 +8332,15 @@ with up to 100mA of output current</description>
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="100V"/>
 </technology>
+<technology name="10V_0.082UF">
+<attribute name="CAPACITANCE" value="0.082uF"/>
+<attribute name="DKPN" value=""/>
+<attribute name="MANUFACTURER" value="Walsin"/>
+<attribute name="MOPN" value="791-0201X823K100CT"/>
+<attribute name="MPN" value="0201X823K100CT"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
 <technology name="10V_0.1UF">
 <attribute name="CAPACITANCE" value="0.1µF"/>
 <attribute name="DKPN" value="720-1688-1-ND"/>

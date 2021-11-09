@@ -9050,6 +9050,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="49.8V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="120">
+<attribute name="DKPN" value="P120DBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB121V"/>
+<attribute name="MPN" value="ERA-3AEB121V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="120"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="3.46V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="12K">
 <attribute name="DKPN" value="311-12.0KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -9158,6 +9169,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="RESISTANCE" value="2.74k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="23.41V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="210">
+<attribute name="DKPN" value="P19892CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B2100V"/>
+<attribute name="MPN" value="ERJ-PB3B2100V"/>
+<attribute name="POWER" value="0.2W"/>
+<attribute name="RESISTANCE" value="210"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="6.48V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="215K">

@@ -8413,6 +8413,15 @@ with up to 100mA of output current</description>
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </technology>
+<technology name="10V_82PF">
+<attribute name="CAPACITANCE" value="82pF"/>
+<attribute name="DKPN" value="478-1025-1-ND"/>
+<attribute name="MANUFACTURER" value="Kyocera AVX"/>
+<attribute name="MOPN" value="581-0201ZA820JAT2A"/>
+<attribute name="MPN" value="0201ZA820JAT2A"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
 <technology name="25V_0.1UF">
 <attribute name="CAPACITANCE" value="0.1µF"/>
 <attribute name="DKPN" value="1276-1006-1-ND"/>

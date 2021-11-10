@@ -11901,6 +11901,12 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
+<technology name="3.3V">
+<attribute name="DKPN" value="811-2195-5-ND"/>
+<attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
+<attribute name="MOPN" value="580-OKI78SR3.31.536C"/>
+<attribute name="MPN" value="OKI-78SR-3.3/1.5-W36-C"/>
+</technology>
 <technology name="5V">
 <attribute name="DKPN" value="811-2196-5-ND"/>
 <attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>

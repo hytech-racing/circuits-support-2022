@@ -4882,8 +4882,6 @@ A variation of MSOP16 with 4 pins removed.
 <rectangle x1="-1.27" y1="-2.54" x2="1.27" y2="2.54" layer="43"/>
 </package>
 <package name="B20">
-<pad name="P$1" x="32.51" y="0" drill="3.74" diameter="6" stop="no"/>
-<pad name="P$2" x="-32.51" y="0" drill="3.74" diameter="6" stop="no"/>
 <wire x1="-25.4" y1="5.555" x2="-25.4" y2="-5.555" width="0.127" layer="21"/>
 <wire x1="-25.4" y1="-5.555" x2="25.4" y2="-5.555" width="0.127" layer="21"/>
 <wire x1="25.4" y1="-5.555" x2="25.4" y2="5.555" width="0.127" layer="21"/>
@@ -4894,14 +4892,12 @@ A variation of MSOP16 with 4 pins removed.
 <pad name="1" x="27.94" y="-8.89" drill="1.35"/>
 <rectangle x1="-30.48" y1="-11.43" x2="-25.4" y2="-6.35" layer="39"/>
 <rectangle x1="25.4" y1="-11.43" x2="30.48" y2="-6.35" layer="39"/>
-<circle x="-32.51" y="0" radius="1.87" width="0" layer="29"/>
-<circle x="-32.51" y="0" radius="1.87" width="0" layer="30"/>
-<circle x="32.51" y="0" radius="1.87" width="0" layer="30"/>
-<circle x="32.51" y="0" radius="1.87" width="0" layer="29"/>
-<circle x="-32.4866" y="0" radius="1.87" width="0" layer="41"/>
-<circle x="-32.4866" y="0" radius="1.87" width="0.0508" layer="42"/>
-<circle x="32.51" y="0" radius="1.87" width="0" layer="42"/>
-<circle x="32.51" y="0" radius="1.87" width="0.0508" layer="41"/>
+<hole x="-32.51" y="0" drill="3.74"/>
+<smd name="4" x="-32.51" y="0" dx="6.35" dy="6.35" layer="16" roundness="100"/>
+<smd name="3" x="-32.51" y="0" dx="6.35" dy="6.35" layer="1" roundness="100"/>
+<hole x="32.51" y="0" drill="3.74"/>
+<smd name="5" x="32.51" y="0" dx="6.35" dy="6.35" layer="1" roundness="100"/>
+<smd name="6" x="32.51" y="0" dx="6.35" dy="6.35" layer="16" roundness="100"/>
 </package>
 <package name="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL">
 <description>10 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
@@ -5113,13 +5109,13 @@ A variation of MSOP16 with 4 pins removed.
 <wire x1="-2.39" y1="-3.2" x2="2.39" y2="-3.2" width="0.1524" layer="21"/>
 <wire x1="2.39" y1="-3.2" x2="2.39" y2="3.2" width="0.1524" layer="21"/>
 <wire x1="2.39" y1="3.2" x2="-2.39" y2="3.2" width="0.1524" layer="21"/>
-<text x="-2.54" y="-3.175" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-3.175" y="-3.175" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <circle x="-3.175" y="-3.81" radius="0.381" width="0" layer="21"/>
-<rectangle x1="-3.556" y1="-6.096" x2="3.556" y2="6.096" layer="39"/>
-<wire x1="-2.413" y1="3.048" x2="-2.413" y2="-3.048" width="0.0508" layer="46"/>
-<wire x1="-2.413" y1="-3.048" x2="2.413" y2="-3.048" width="0.0508" layer="46"/>
-<wire x1="2.413" y1="-3.048" x2="2.413" y2="3.048" width="0.0508" layer="46"/>
-<wire x1="2.413" y1="3.048" x2="-2.413" y2="3.048" width="0.0508" layer="46"/>
+<rectangle x1="-3.048" y1="-6.223" x2="3.048" y2="5.969" layer="39"/>
+<wire x1="-3.048" y1="3.048" x2="-3.048" y2="-3.048" width="0.0508" layer="46"/>
+<wire x1="-3.048" y1="-3.048" x2="3.048" y2="-3.048" width="0.0508" layer="46"/>
+<wire x1="3.048" y1="-3.048" x2="3.048" y2="3.048" width="0.0508" layer="46"/>
+<wire x1="3.048" y1="3.048" x2="-3.048" y2="3.048" width="0.0508" layer="46"/>
 </package>
 <package name="MOLEX_MICROFIT_PTH_VERTICAL_06_SINGLE">
 <description>12 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
@@ -8671,6 +8667,23 @@ with up to 100mA of output current</description>
 <text x="0" y="0" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-15.24" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
+<symbol name="RESISTOR_GND">
+<description>Resistor with sense connections</description>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="2" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<text x="1.27" y="2.794" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="1.27" y="1.27" size="1.27" layer="96" align="bottom-center">&gt;RESISTANCE</text>
+<wire x1="3.175" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.9525" y1="1.016" x2="1.5875" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.3175" y1="1.016" x2="0.3175" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.2225" y1="1.016" x2="2.8575" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="0.9525" y1="1.016" x2="0.3175" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.2225" y1="1.016" x2="1.5875" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.3175" y1="1.016" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="0" x2="2.8575" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<pin name="3" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-2_?_*" prefix="J">
@@ -10809,8 +10822,8 @@ Leakage Inductance: 0.50 uH max
 <devices>
 <device name="" package="CLP1608-2L">
 <connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -12779,6 +12792,31 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <technologies>
 <technology name="1"/>
 <technology name="2"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RESISTOR_GND_*">
+<gates>
+<gate name="G$1" symbol="RESISTOR_GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="B20">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3 4 5 6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="RESISTANCE" value="" constant="no"/>
+</technology>
+<technology name="1.24K">
+<attribute name="RESISTANCE" value="1.24k" constant="no"/>
+</technology>
+<technology name="10K">
+<attribute name="RESISTANCE" value="10k" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11765,7 +11765,8 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </devices>
 </deviceset>
 <deviceset name="STWD100">
-<description>STWD100 Watchdog Timer&lt;br&gt; 
+<description>&lt;b&gt;STWD100 Watchdog Timer&lt;/b&gt;
+&lt;br&gt; 
 
 &lt;a href="https://www.st.com/resource/en/datasheet/stwd100.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
@@ -11791,12 +11792,18 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="RELAY_DPDT_?*">
+<deviceset name="RELAY_DPDT">
+<description>&lt;b&gt;DPDT Relay&lt;/b&gt;
+
+&lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=RT2&amp;DocType=DS&amp;DocLang=English"&gt;Datasheet &lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+MAX current: 8.0A</description>
 <gates>
 <gate name="G$1" symbol="RELAY_DPDT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="RT424009" package="RT*2*">
+<device name="" package="RT*2*">
 <connects>
 <connect gate="G$1" pin="2" pad="12"/>
 <connect gate="G$1" pin="3" pad="11"/>
@@ -11811,7 +11818,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <technology name="">
 <attribute name="DKPN" value="PB2021-ND"/>
 <attribute name="MANUFACTURER" value="TE Connectivity"/>
-<attribute name="MOPN" value="655-6-1393243-2" constant="no"/>
+<attribute name="MOPN" value="655-6-1393243-2"/>
 <attribute name="MPN" value="RT424009"/>
 </technology>
 </technologies>
@@ -11819,6 +11826,9 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </devices>
 </deviceset>
 <deviceset name="CPC1002N">
+<description>&lt;b&gt;CPC1002N Solid State Relay&lt;/b&gt;&lt;br&gt;
+
+&lt;a href="https://www.ixysic.com/home/pdfs.nsf/www/CPC1002N.pdf/$file/CPC1002N.pdf"&gt;Datasheet &lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="RELAY_SOLIDSTATE_NO" x="0" y="0"/>
 </gates>
@@ -11842,6 +11852,9 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </devices>
 </deviceset>
 <deviceset name="MOMENTARY_BTN">
+<description>&lt;b&gt;Momentary Button&lt;/b&gt;
+&lt;br&gt;
+&lt;a href="https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3s.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="BUTTON" x="0" y="0"/>
 </gates>
@@ -11853,8 +11866,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="SW415-ND
-"/>
+<attribute name="DKPN" value="SW415-ND "/>
 <attribute name="MANUFACTURER" value="Omron"/>
 <attribute name="MOPN" value="653-B3S-1000"/>
 <attribute name="MPN" value="B3S-1000"/>

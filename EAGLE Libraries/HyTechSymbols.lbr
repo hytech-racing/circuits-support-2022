@@ -413,15 +413,15 @@ Precharger</text>
 <wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 </symbol>
 <symbol name="DC-DC_CONVERTER">
-<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="-12.7" x2="-20.32" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="-12.7" x2="-20.32" y2="0" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="+IN" x="-22.86" y="-2.54" length="short"/>
-<pin name="-IN" x="-22.86" y="-10.16" length="short"/>
-<pin name="+OUT" x="2.54" y="-2.54" length="short" rot="R180"/>
-<pin name="-OUT" x="2.54" y="-10.16" length="short" rot="R180"/>
-<text x="-14.986" y="-8.382" size="1.778" layer="95">DC-DC 
+<wire x1="20.32" y1="0" x2="20.32" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-12.7" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<pin name="+IN" x="-2.54" y="-2.54" length="short"/>
+<pin name="-IN" x="-2.54" y="-10.16" length="short"/>
+<pin name="+OUT" x="22.86" y="-2.54" length="short" rot="R180"/>
+<pin name="-OUT" x="22.86" y="-10.16" length="short" rot="R180"/>
+<text x="5.334" y="-8.382" size="1.778" layer="95">DC-DC 
 Converter</text>
 </symbol>
 <symbol name="POWER_SWITCHING_BOARD">

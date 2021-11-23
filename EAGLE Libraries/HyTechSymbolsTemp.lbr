@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -71,7 +71,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -247,6 +247,102 @@
 <text x="40.64" y="-3.81" size="5.08" layer="95" rot="R180">Cascadia
 CM200DZ</text>
 </symbol>
+<symbol name="RELAY_SPST_NO">
+<description>Single pole, single throw normally open relay</description>
+<circle x="2.54" y="-17.78" radius="0.635" width="0.1524" layer="94"/>
+<circle x="7.62" y="-20.32" radius="0.635" width="0.1524" layer="94"/>
+<circle x="7.62" y="-15.24" radius="0.635" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="2.54" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-12.7" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="7.62" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="12.7" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="-2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-17.78" x2="1.778" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="8.382" y2="-15.24" width="0.1524" layer="94"/>
+<pin name="CONTACT1" x="-2.54" y="-17.78" visible="pad" length="point" swaplevel="2" rot="R180"/>
+<pin name="CONTACT2" x="12.7" y="-15.24" visible="pad" length="point" swaplevel="2"/>
+<pin name="COIL+" x="-2.54" y="-7.62" visible="pad" length="point" swaplevel="1" rot="R180"/>
+<pin name="COIL-" x="12.7" y="-7.62" visible="pad" length="point" swaplevel="1"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-22.86" x2="0" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="-22.86" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
+<text x="0" y="-23.622" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<wire x1="3.175" y1="-18.0975" x2="6.985" y2="-20.0025" width="0.1524" layer="94"/>
+<polygon width="0.0254" layer="94">
+<vertex x="6.096" y="-20.066"/>
+<vertex x="6.604" y="-19.304"/>
+<vertex x="7.112" y="-20.066"/>
+</polygon>
+</symbol>
+<symbol name="FUSE">
+<wire x1="-1.27" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94" curve="-180"/>
+<wire x1="-1.27" y1="0" x2="0.635" y2="0" width="0.1524" layer="94" curve="-180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-1.27" y="1.27" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="-1.27" y="-1.27" size="1.27" layer="96" align="top-center">&gt;VALUE</text>
+<wire x1="-5.08" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="PRECHARGER">
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="38.1" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="38.1" y1="-15.24" x2="38.1" y2="0" width="0.254" layer="94"/>
+<wire x1="38.1" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="TS+" x="-2.54" y="-2.54" length="short" direction="in"/>
+<pin name="PACK+" x="-2.54" y="-7.62" length="short" direction="in"/>
+<pin name="PRECHARGE_OK" x="40.64" y="-12.7" length="short" direction="out" rot="R180"/>
+<pin name="TS-" x="-2.54" y="-12.7" length="short" direction="in"/>
+<text x="35.56" y="-2.54" size="3.556" layer="95" align="top-right">Precharger</text>
+</symbol>
+<symbol name="LOGICGATE_INVERTER">
+<description>Inverter</description>
+<text x="2.413" y="3.048" size="1.27" layer="95">NOT</text>
+<pin name="IN" x="-2.54" y="0" visible="pad" length="short" direction="in"/>
+<wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.81" x2="6.35" y2="0" width="0.254" layer="94"/>
+<wire x1="6.35" y1="0" x2="0" y2="3.81" width="0.254" layer="94"/>
+<pin name="!IN" x="8.89" y="0" visible="pad" length="short" direction="out" function="dot" rot="R180"/>
+</symbol>
+<symbol name="MOSFET_N-CHANNEL">
+<wire x1="-2.54" y1="-2.54" x2="-1.2192" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.762" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="3.683" x2="0" y2="1.397" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0.635" x2="0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-0.635" x2="0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.397" x2="0" y2="-3.683" width="0.254" layer="94"/>
+<wire x1="-1.143" y1="2.54" x2="-1.143" y2="-2.54" width="0.254" layer="94"/>
+<text x="0" y="5.08" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<pin name="D" x="5.08" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="5.08" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
+<text x="0" y="-5.08" size="1.27" layer="95" align="top-center">&gt;MPN</text>
+<wire x1="6.35" y1="1.27" x2="7.62" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="1.27" x2="8.89" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-3.81" x2="7.62" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="3.81" x2="7.62" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="3.81" x2="7.62" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-1.27" x2="7.62" y2="-3.81" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="7.62" y="1.27"/>
+<vertex x="6.35" y="-1.27"/>
+<vertex x="8.89" y="-1.27"/>
+</polygon>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-2_*">
@@ -256,6 +352,11 @@ CM200DZ</text>
 <devices>
 <device name="">
 <technologies>
+<technology name="104742-2">
+<attribute name="MANUFACTURER" value="TE"/>
+<attribute name="MPN" value="104742-2" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="HPK">
 <attribute name="MANUFACTURER" value="Rosenberger"/>
 <attribute name="MPN" value="HPK"/>
@@ -297,6 +398,96 @@ CM200DZ</text>
 &lt;a href="https://www.cascadiamotion.com/images/catalog/DataSheets/CM200.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="CASCADIA_CM200DZ-SIMPLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RELAY_SPST_NO_?*" prefix="K">
+<description>Single Pole, Single Throw Relay Normally Open
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.comus-intl.com/wp-content/uploads/2017/01/High-Voltage-Reed-Relays.pdf"&gt;355x Series&lt;/a&gt;&lt;/li&gt;
+&lt;\ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="RELAY_SPST_NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="3350-1275-126">
+<attribute name="MANUFACTURER" value="Comus"/>
+<attribute name="MPN" value="3350-1275-126"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="GX23BA">
+<attribute name="MANUFACTURER" value="Gigavac"/>
+<attribute name="MPN" value="GX23BA"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FUSE" prefix="F">
+<description>Fuse
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;0885 Series&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PRECHARGER">
+<gates>
+<gate name="G$1" symbol="PRECHARGER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LOGICGATE_INVERTER">
+<gates>
+<gate name="G$1" symbol="LOGICGATE_INVERTER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOSFET_N-CHANNEL">
+<gates>
+<gate name="G$1" symbol="MOSFET_N-CHANNEL" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">

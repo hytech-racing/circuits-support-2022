@@ -4899,7 +4899,7 @@ A variation of MSOP16 with 4 pins removed.
 <smd name="5" x="32.51" y="0" dx="6.35" dy="6.35" layer="1" roundness="100"/>
 <smd name="6" x="32.51" y="0" dx="6.35" dy="6.35" layer="16" roundness="100"/>
 </package>
-<package name="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL">
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_05_DUAL">
 <description>10 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
 &lt;br&gt;
 &lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451014"&gt;Part&lt;/a&gt;
@@ -4965,7 +4965,7 @@ A variation of MSOP16 with 4 pins removed.
 <pad name="2" x="-5.9944" y="0" drill="1.0668"/>
 <pad name="1" x="-8.9916" y="0" drill="1.0668"/>
 </package>
-<package name="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED">
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_05_SINGLE_SPACED">
 <description>10 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
 &lt;br&gt;
 &lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451014"&gt;Part&lt;/a&gt;
@@ -4995,7 +4995,7 @@ A variation of MSOP16 with 4 pins removed.
 <pad name="2" x="0" y="0" drill="1.0668"/>
 <pad name="1" x="-5.9944" y="0" drill="1.0668"/>
 </package>
-<package name="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED">
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_07_SINGLE_SPACED">
 <description>14 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
 &lt;br&gt;
 &lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451414"&gt;Part&lt;/a&gt;
@@ -5027,36 +5027,6 @@ A variation of MSOP16 with 4 pins removed.
 <pad name="1" x="-8.9916" y="0" drill="1.0668"/>
 <pad name="2" x="-5.9944" y="0" drill="1.0668"/>
 </package>
-<package name="MOLEX_MICROFIT_PTH_VERTICAL_06_DUAL_SPACED">
-<description>6 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
-&lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430450614"&gt;Part&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/430450614_sd.pdf"&gt;Footprint&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/430250600_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
-<pad name="3" x="2.9972" y="-2.9972" drill="1.0668"/>
-<hole x="5.9944" y="0.9398" drill="1.0668"/>
-<hole x="-5.9944" y="0.9398" drill="1.0668"/>
-<wire x1="-6.3246" y1="-5.461" x2="6.3246" y2="-5.461" width="0.127" layer="21"/>
-<wire x1="6.3246" y1="-5.461" x2="6.3246" y2="1.905" width="0.127" layer="21"/>
-<wire x1="6.3246" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
-<wire x1="1.9304" y1="1.905" x2="-1.9304" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-1.9304" y1="1.905" x2="-6.3246" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-6.3246" y1="1.905" x2="-6.3246" y2="-5.461" width="0.127" layer="21"/>
-<wire x1="-1.9304" y1="1.905" x2="-1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="3.302" x2="1.9304" y2="3.302" width="0.127" layer="21"/>
-<wire x1="1.9304" y1="3.302" x2="1.9304" y2="1.905" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="3.302" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="5.969" x2="1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
-<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
-<rectangle x1="-7.0612" y1="-5.842" x2="7.0612" y2="2.286" layer="39"/>
-<rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
-<rectangle x1="-7.0612" y1="-5.842" x2="7.0612" y2="2.286" layer="40"/>
-<text x="0" y="-6.477" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
-<pad name="1" x="-2.9972" y="-2.9972" drill="1.0668"/>
-<pad name="2" x="0" y="0" drill="1.0668"/>
-</package>
 <package name="DIP-4">
 <smd name="3" x="-1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
 <smd name="4" x="1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
@@ -5069,36 +5039,6 @@ A variation of MSOP16 with 4 pins removed.
 <text x="-2.54" y="-3.175" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <circle x="-3.175" y="-3.81" radius="0.381" width="0" layer="21"/>
 <rectangle x1="-3.556" y1="-6.096" x2="3.556" y2="6.096" layer="39"/>
-</package>
-<package name="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED2">
-<description>14 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
-&lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451414"&gt;Part&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/430451414_sd.pdf"&gt;Footprint&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/430251400_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
-<hole x="11.9888" y="0.9398" drill="1.0668"/>
-<hole x="-11.9888" y="0.9398" drill="1.0668"/>
-<wire x1="-12.319" y1="-1.905" x2="12.319" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="12.319" y1="-1.905" x2="12.319" y2="1.905" width="0.127" layer="21"/>
-<wire x1="12.319" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
-<wire x1="1.9304" y1="1.905" x2="-1.9304" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-1.9304" y1="1.905" x2="-12.319" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-12.319" y1="1.905" x2="-12.319" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="-1.9304" y1="1.905" x2="-1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="3.302" x2="1.9304" y2="3.302" width="0.127" layer="21"/>
-<wire x1="1.9304" y1="3.302" x2="1.9304" y2="1.905" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="3.302" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="5.969" x2="1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
-<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
-<rectangle x1="-13.0556" y1="-2.286" x2="13.0556" y2="2.286" layer="39"/>
-<rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
-<rectangle x1="-13.0556" y1="-2.286" x2="13.0556" y2="2.286" layer="40"/>
-<text x="0" y="-2.54" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
-<pad name="3" x="2.9972" y="0" drill="1.0668"/>
-<pad name="2" x="-2.9972" y="0" drill="1.0668"/>
-<pad name="1" x="-8.9916" y="0" drill="1.0668"/>
 </package>
 <package name="DIP-4_AIRGAP">
 <smd name="3" x="-1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
@@ -7247,22 +7187,6 @@ I2C Mode
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-28.702" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
-<symbol name="ADM823">
-<description>ADM823 Watchdog
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/609/ADM823_824_825-1503117.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<pin name="!RESET!" x="20.32" y="-10.16" length="short" direction="out" function="dot" rot="R180"/>
-<pin name="!MR!" x="-2.54" y="-5.08" length="short" direction="in" function="dot"/>
-<pin name="GND" x="-2.54" y="-12.7" length="short" direction="pwr"/>
-<pin name="VDD" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="WDI" x="-2.54" y="-2.54" length="short" direction="in"/>
-<wire x1="0" y1="-15.24" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="17.78" y1="0" x2="17.78" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-16.002" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
 <symbol name="CONNECTOR_37">
 <wire x1="7.62" y1="-96.52" x2="0" y2="-96.52" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-50.8" x2="5.08" y2="-50.8" width="0.6096" layer="94"/>
@@ -8639,19 +8563,6 @@ with up to 100mA of output current</description>
 <pin name="4" x="10.16" y="-17.78" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <wire x1="3.81" y1="-17.78" x2="5.08" y2="-17.78" width="0.6096" layer="94"/>
 <text x="0" y="-20.955" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
-<symbol name="ADM825">
-<pin name="VDD" x="-2.54" y="-2.54" length="short" direction="pwr"/>
-<pin name="RESET" x="22.86" y="-5.08" length="short" rot="R180"/>
-<pin name="!RESET" x="22.86" y="-2.54" length="short" function="dot" rot="R180"/>
-<pin name="!MR" x="-2.54" y="-5.08" length="short" function="dot"/>
-<pin name="GND" x="22.86" y="-10.16" length="short" direction="pwr" rot="R180"/>
-<wire x1="0" y1="0" x2="20.32" y2="0" width="0.1524" layer="94"/>
-<wire x1="20.32" y1="0" x2="20.32" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="20.32" y1="-12.7" x2="0" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="0" y1="-12.7" x2="0" y2="0" width="0.1524" layer="94"/>
-<text x="0" y="0" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-12.7" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="LTC6994">
 <pin name="IN" x="-2.54" y="-2.54" length="short"/>
@@ -11277,34 +11188,6 @@ Note: See page 32 for application schematic.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADM823" prefix="U">
-<description>ADM823 Watchdog
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/609/ADM823_824_825-1503117.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="ADM823" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SC-70-5">
-<connects>
-<connect gate="G$1" pin="!MR!" pad="3"/>
-<connect gate="G$1" pin="!RESET!" pad="1"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VDD" pad="5"/>
-<connect gate="G$1" pin="WDI" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="505-ADM823TYKSZ-R7CT-ND"/>
-<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
-<attribute name="MOPN" value="584-ADM823TYKSZ-R7"/>
-<attribute name="MPN" value="ADM823TYKSZ-R7"/>
-<attribute name="RESET_VOLTAGE" value="3.08"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MAX74*" prefix="U">
 <description>8th-Order Maxim Filter
 &lt;br&gt;
@@ -11377,7 +11260,7 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONNECTOR-3_?" prefix="J">
+<deviceset name="CONNECTOR-3_?_*" prefix="J">
 <gates>
 <gate name="G$1" symbol="CONNECTOR_03" x="0" y="0"/>
 </gates>
@@ -11392,7 +11275,7 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED" package="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED">
+<device name="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED" package="MOLEX_MICROFIT_PTH_VERTICAL_05_SINGLE_SPACED">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -12557,30 +12440,6 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="DCM4623TD2J13D0T70" prefix="U">
-<description>400W 300V to 12V step-down DC-DC converter
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/685/DCM4623xD2J13D0y7z_ds-1144763.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="DCM4623" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DCM4623">
-<connects>
-<connect gate="G$1" pin="+IN" pad="1"/>
-<connect gate="G$1" pin="+OUT" pad="6 8"/>
-<connect gate="G$1" pin="-IN" pad="5"/>
-<connect gate="G$1" pin="-OUT" pad="7 9"/>
-<connect gate="G$1" pin="EN" pad="3"/>
-<connect gate="G$1" pin="FLT" pad="4"/>
-<connect gate="G$1" pin="TR" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CAPACITOR_POLAR_?_*" prefix="C">
 <gates>
 <gate name="G$1" symbol="CAPACITOR_POLARIZED" x="0" y="0"/>
@@ -12662,7 +12521,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <gate name="G$1" symbol="CONNECTOR_05" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL">
+<device name="" package="MOLEX_MICROFIT_PTH_VERTICAL_05_DUAL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -12686,7 +12545,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <technology name=""/>
 </technologies>
 </device>
-<device name="7_SPACED" package="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED">
+<device name="7_SPACED" package="MOLEX_MICROFIT_PTH_VERTICAL_07_SINGLE_SPACED">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -12750,27 +12609,6 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ADM825" prefix="U">
-<gates>
-<gate name="G$1" symbol="ADM825" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-23-5">
-<connects>
-<connect gate="G$1" pin="!MR" pad="4"/>
-<connect gate="G$1" pin="!RESET" pad="1"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="RESET" pad="3"/>
-<connect gate="G$1" pin="VDD" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="ADM825" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>

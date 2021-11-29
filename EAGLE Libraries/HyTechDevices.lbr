@@ -12219,6 +12219,8 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.we-online.com/catalog/datasheet/74451133.pdf"&gt; 74451133 Inductor&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/54/SRU1048-1391431.pdf"&gt;SRU1408 Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/336/plei_s_a0002827602_1-2281222.pdf"&gt;PA4334 Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/445/74437349560-1721693.pdf"&gt;WE-LMHI Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
@@ -12290,16 +12292,16 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="CURRENT_RATED" value="" constant="no"/>
-<attribute name="CURRENT_SATURATION" value="" constant="no"/>
-<attribute name="DCR" value="" constant="no"/>
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="INDUCTANCE" value="56uH" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
+<technology name="56UH">
+<attribute name="CURRENT_RATED" value="1.4A"/>
+<attribute name="CURRENT_SATURATION" value="1.4A"/>
+<attribute name="DCR" value="342m"/>
+<attribute name="DKPN" value="732-11454-2-ND"/>
+<attribute name="INDUCTANCE" value="56uH"/>
+<attribute name="MANUFACTURER" value="Wurth Elektronik"/>
+<attribute name="MOPN" value="710-74437349560"/>
+<attribute name="MPN" value="74437349560"/>
+<attribute name="TOLERANCE" value="20%"/>
 </technology>
 </technologies>
 </device>
@@ -12309,16 +12311,16 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="CURRENT_RATED" value="1.6A" constant="no"/>
-<attribute name="CURRENT_SATURATION" value="1A" constant="no"/>
-<attribute name="DCR" value="0.13" constant="no"/>
-<attribute name="DKPN" value="553-3508-2-ND" constant="no"/>
-<attribute name="INDUCTANCE" value="3.6uH" constant="no"/>
-<attribute name="MANUFACTURER" value="Pulse Electonics Company" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
+<technology name="3.6UH">
+<attribute name="CURRENT_RATED" value="1.6A"/>
+<attribute name="CURRENT_SATURATION" value="1A"/>
+<attribute name="DCR" value="0.13"/>
+<attribute name="DKPN" value="553-3508-2-ND"/>
+<attribute name="INDUCTANCE" value="3.6uH"/>
+<attribute name="MANUFACTURER" value="Pulse Electonics Company"/>
+<attribute name="MOPN" value="673-PA4334362NLT"/>
+<attribute name="MPN" value="PA4334.362NLT"/>
+<attribute name="TOLERANCE" value="20%"/>
 </technology>
 </technologies>
 </device>

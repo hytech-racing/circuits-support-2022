@@ -208,19 +208,6 @@
 <text x="-24.13" y="11.684" size="1.27" layer="21">&gt;NAME</text>
 <rectangle x1="-25.4" y1="-12.7" x2="25.4" y2="12.7" layer="39"/>
 </package>
-<package name="WE-LMHI">
-<smd name="1" x="-2.725" y="0" dx="3.5" dy="2.95" layer="1" rot="R90"/>
-<smd name="2" x="2.725" y="0" dx="3.5" dy="2.95" layer="1" rot="R90"/>
-<wire x1="-3.3" y1="0" x2="-3.3" y2="3.3" width="0.127" layer="21"/>
-<wire x1="-3.3" y1="3.3" x2="3.3" y2="3.3" width="0.127" layer="21"/>
-<wire x1="3.3" y1="3.3" x2="3.3" y2="-3.3" width="0.127" layer="21"/>
-<wire x1="3.3" y1="-3.3" x2="-3.3" y2="-3.3" width="0.127" layer="21"/>
-<wire x1="-3.3" y1="-3.3" x2="-3.3" y2="0" width="0.127" layer="21"/>
-<text x="-3.429" y="3.429" size="1.27" layer="21" font="vector">&gt;NAME</text>
-<rectangle x1="-5.08" y1="-3.81" x2="5.08" y2="3.81" layer="39"/>
-<rectangle x1="-1.27" y1="-3.81" x2="1.27" y2="3.81" layer="41"/>
-<rectangle x1="-1.27" y1="-3.81" x2="1.27" y2="3.81" layer="43"/>
-</package>
 <package name="DIP-4">
 <smd name="3" x="-1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
 <smd name="4" x="1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
@@ -267,6 +254,7 @@
 </packages>
 <symbols>
 <symbol name="RESISTOR_GND">
+<description>Grounded Resistor</description>
 <pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
 <pin name="2" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 <text x="1.27" y="2.794" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
@@ -283,13 +271,14 @@
 <pin name="3" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
 <symbol name="DCM4623">
-<pin name="TR" x="-5.08" y="-7.62" length="middle" direction="out"/>
-<pin name="FLT" x="-5.08" y="-12.7" length="middle" direction="out"/>
-<pin name="EN" x="-5.08" y="-17.78" length="middle" direction="in"/>
-<pin name="+IN" x="-5.08" y="-2.54" length="middle" direction="pwr"/>
-<pin name="-IN" x="-5.08" y="-22.86" length="middle" direction="pwr"/>
-<pin name="+OUT" x="25.4" y="-2.54" length="middle" direction="pwr" rot="R180"/>
-<pin name="-OUT" x="25.4" y="-22.86" length="middle" direction="pwr" rot="R180"/>
+<description>Vicor DCM4623 Style DCDC Converter</description>
+<pin name="TR" x="-2.54" y="-7.62" length="short" direction="out"/>
+<pin name="FLT" x="-2.54" y="-12.7" length="short" direction="out"/>
+<pin name="EN" x="-2.54" y="-17.78" length="short" direction="in"/>
+<pin name="+IN" x="-2.54" y="-2.54" length="short" direction="pwr"/>
+<pin name="-IN" x="-2.54" y="-22.86" length="short" direction="pwr"/>
+<pin name="+OUT" x="22.86" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="-OUT" x="22.86" y="-22.86" length="short" direction="pwr" rot="R180"/>
 <wire x1="0" y1="0" x2="8.89" y2="0" width="0.1524" layer="94"/>
 <wire x1="8.89" y1="0" x2="11.684" y2="0" width="0.1524" layer="94"/>
 <wire x1="11.684" y1="0" x2="20.32" y2="0" width="0.1524" layer="94"/>
@@ -305,6 +294,9 @@
 <wire x1="11.684" y1="-25.4" x2="11.684" y2="0" width="0.1524" layer="94" style="shortdash"/>
 </symbol>
 <symbol name="ADM825">
+<description>Watchdog Supervisor with Manual Reset
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/609/ADM823_824_825-1503117.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <pin name="VDD" x="-2.54" y="-2.54" length="short" direction="pwr"/>
 <pin name="RESET" x="22.86" y="-5.08" length="short" rot="R180"/>
 <pin name="!RESET" x="22.86" y="-2.54" length="short" function="dot" rot="R180"/>
@@ -318,6 +310,7 @@
 <text x="0" y="-12.7" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="RELAY_SOLIDSTATE_NC">
+<description>Normally Closed Solid-State Relay</description>
 <wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="-2.54" x2="0" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="0" y1="-10.16" x2="0" y2="-12.7" width="0.254" layer="94"/>
@@ -363,6 +356,7 @@
 <wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="RELAY_SOLIDSTATE_NO">
+<description>Normally Open Solid-State Relay</description>
 <wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="-2.54" x2="0" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="0" y1="-10.16" x2="0" y2="-12.7" width="0.254" layer="94"/>
@@ -439,6 +433,9 @@
 </devices>
 </deviceset>
 <deviceset name="ADM825" prefix="U">
+<description>Watchdog Supervisor with Manual Reset
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/609/ADM823_824_825-1503117.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="ADM825" x="0" y="0"/>
 </gates>
@@ -453,16 +450,19 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="DKPN" value="505-ADM825SYRJZ-R7TR-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices"/>
+<attribute name="MOPN" value="584-ADM825SYRJZ-R7"/>
+<attribute name="MPN" value="ADM825SYRJZ-R7"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="RELAY_SOLIDSTATE_NC_?" prefix="U">
+<description>Normally Closed Solid-State Relay
+&lt;br&gt;
+&lt;a href="file:///C:/Users/kamin/Downloads/semi_eng_ge1b_aqy41_e%20(1).pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="RELAY_SOLIDSTATE_NC" x="0" y="0"/>
 </gates>
@@ -476,10 +476,10 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="DKPN" value="255-2897-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Panasonic Industrial Devices" constant="no"/>
+<attribute name="MOPN" value="769-AQY414EHA" constant="no"/>
+<attribute name="MPN" value="AQY414EHA" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -492,16 +492,19 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="DKPN" value="255-2897-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Panasonic Industrial Devices" constant="no"/>
+<attribute name="MOPN" value="769-AQY414EHA" constant="no"/>
+<attribute name="MPN" value="AQY414EHA" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="RELAY_SOLIDSTATE_NO_?" prefix="U">
+<description>Normally Open Solid-State Relay
+&lt;br&gt;
+&lt;a href="file:///C:/Users/kamin/Downloads/semi_eng_ge1a_aqy21_e.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="RELAY_SOLIDSTATE_NO" x="0" y="0"/>
 </gates>
@@ -531,16 +534,19 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="DKPN" value="255-1436-5-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Panasonic Inustrial Devices" constant="no"/>
+<attribute name="MOPN" value="769-AQY214EHA" constant="no"/>
+<attribute name="MPN" value="AQY214EHA" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="RESISTOR_GND_*" prefix="R">
+<description>20W Axial Through Hole Resistor
+&lt;br&gt;
+&lt;a href="https://www.ohmite.com/assets/docs/res_200.pdf?r=false"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR_GND" x="0" y="0"/>
 </gates>
@@ -552,14 +558,27 @@
 <connect gate="G$1" pin="3" pad="3 4 5 6"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="RESISTANCE" value="" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="" constant="no"/>
+<technology name="1.25K">
+<attribute name="DKPN" value="B20J1K25E-ND"/>
+<attribute name="MANUFACTURER" value="Ohmite"/>
+<attribute name="MOPN" value="588-B20J1K25E"/>
+<attribute name="MPN" value="B20J1K25E"/>
+<attribute name="POWER" value="20W"/>
+<attribute name="RESISTANCE" value="1.25k"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="157V"/>
+<attribute name="VOLTAGE_MAX" value="750V"/>
+</technology>
+<technology name="10K">
+<attribute name="DKPN" value="B20J10KE-ND"/>
+<attribute name="MANUFACTURER" value="Ohmite"/>
+<attribute name="MOPN" value="588-B20J10KE"/>
+<attribute name="MPN" value="B20J10KE"/>
+<attribute name="POWER" value="20W"/>
+<attribute name="RESISTANCE" value="10k"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="447V"/>
+<attribute name="VOLTAGE_MAX" value="750V"/>
 </technology>
 </technologies>
 </device>

@@ -534,18 +534,20 @@ LOGIC</text>
 <wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="BATTERY_CHARGER">
-<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="0" y1="-15.24" x2="25.4" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-15.24" x2="25.4" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="-20.32" x2="25.4" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-20.32" x2="25.4" y2="0" width="0.254" layer="94"/>
 <wire x1="25.4" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="TS+" x="27.94" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="TS-" x="27.94" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="TS+" x="27.94" y="-12.7" length="short" direction="pwr" rot="R180"/>
+<pin name="TS-" x="27.94" y="-17.78" length="short" direction="pwr" rot="R180"/>
 <pin name="HOT" x="-2.54" y="-2.54" length="short" direction="pwr"/>
 <pin name="NEUTRAL" x="-2.54" y="-7.62" length="short" direction="pwr"/>
 <pin name="GND" x="-2.54" y="-12.7" length="short" direction="pwr"/>
-<text x="22.86" y="-12.7" size="2.54" layer="95" align="bottom-right">Charger</text>
-<text x="0" y="-16.002" size="1.778" layer="95" align="top-left">&gt;MPN</text>
+<text x="2.54" y="-17.78" size="2.54" layer="95">Charger</text>
+<text x="0" y="-21.082" size="1.778" layer="95" align="top-left">&gt;MPN</text>
 <text x="0" y="0.762" size="1.778" layer="95">&gt;MANUFACTURER</text>
+<pin name="CANH" x="27.94" y="-2.54" length="short" rot="R180"/>
+<pin name="CANL" x="27.94" y="-5.08" length="short" rot="R180"/>
 </symbol>
 <symbol name="CONNECTOR_03">
 <wire x1="7.62" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
@@ -640,6 +642,27 @@ LOGIC</text>
 <pin name="P$2" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
 <text x="0" y="3.302" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-3.048" size="1.27" layer="95" align="top-center">BUTTON</text>
+</symbol>
+<symbol name="60V_THRESHOLD">
+<wire x1="0" y1="0" x2="0" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="0" y1="-22.86" x2="10.16" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-22.86" x2="35.56" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="35.56" y1="-22.86" x2="35.56" y2="0" width="0.1524" layer="94"/>
+<wire x1="35.56" y1="0" x2="12.7" y2="0" width="0.1524" layer="94"/>
+<pin name="TS+" x="-2.54" y="-10.16" length="short" direction="in"/>
+<pin name="PACK+" x="-2.54" y="-15.24" length="short" direction="in"/>
+<pin name="TS-" x="-2.54" y="-20.32" length="short" direction="in"/>
+<pin name="GND" x="38.1" y="-20.32" length="short" direction="pwr" rot="R180"/>
+<pin name="VCC" x="38.1" y="-12.7" length="short" direction="pwr" rot="R180"/>
+<wire x1="12.7" y1="0" x2="10.16" y2="0" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-22.86" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="10.16" y1="-22.86" x2="12.7" y2="-22.86" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="12.7" y1="-22.86" x2="12.7" y2="0" width="0.1524" layer="94" style="shortdash"/>
+<pin name="60V_THRESHOLD" x="38.1" y="-17.78" length="short" direction="out" rot="R180"/>
+<text x="33.02" y="-2.54" size="1.778" layer="95" align="top-right">60V
+THRESHOLD
+LOGIC</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -849,6 +872,11 @@ LOGIC</text>
 <attribute name="MPN" value="104742-2"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="LCAX2-14F-E">
+<attribute name="MANUFACTURER" value="Panduit Corp"/>
+<attribute name="MPN" value="LCAX2-14F-E"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -932,13 +960,18 @@ LOGIC</text>
 <device name="">
 <technologies>
 <technology name="">
-<attribute name="MANUFACTURER" value=""/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="HV02-M3S(40A)">
 <attribute name="MANUFACTURER" value="Jonhon"/>
 <attribute name="MPN" value="HV02-M3S(40A)-M00A-1"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="NEMA-5-15">
+<attribute name="MANUFACTURER" value="Standard"/>
+<attribute name="MPN" value="NEMA 5-15"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>
@@ -998,6 +1031,20 @@ LOGIC</text>
 <deviceset name="BUTTON_NO" prefix="S">
 <gates>
 <gate name="G$1" symbol="BUTTON_NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="60V_THRESHOLD">
+<gates>
+<gate name="G$1" symbol="60V_THRESHOLD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">

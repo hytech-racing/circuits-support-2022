@@ -318,7 +318,9 @@
 <connect gate="G$1" pin="VIN" pad="VIN"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="TEENSY" value="3.2"/>
+</technology>
 </technologies>
 </device>
 </devices>

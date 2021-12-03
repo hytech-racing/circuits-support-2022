@@ -4837,7 +4837,7 @@ Dashed line is edge of mated connector.</description>
 </package>
 <package name="MSE16(12)">
 <description>MSE16 (12)&lt;br&gt;
-A variation of MSOP16 with 4 pins removed. 
+A variation of MSOP16 with 4 pins removed.
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081871_D_MSE16(12).pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-1.75" y="-2.10185" dx="0.308609375" dy="0.9017" layer="1"/>
@@ -8361,6 +8361,15 @@ with up to 100mA of output current</description>
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </technology>
+<technology name="10V_0.22UF">
+<attribute name="CAPACITANCE" value="0.22µF"/>
+<attribute name="DKPN" value="720-VJ0603Y224JXQCW1BCTR-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Vitramon"/>
+<attribute name="MOPN" value="77-VJ0603Y224JXQCBC"/>
+<attribute name="MPN" value="VJ0603Y224JXQCW1BC"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
 <technology name="10V_10NF">
 <attribute name="CAPACITANCE" value="10nF"/>
 <attribute name="DKPN" value="311-4054-1-ND"/>
@@ -8522,6 +8531,15 @@ with up to 100mA of output current</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="250V_1UF">
+<attribute name="CAPACITANCE" value="1µF"/>
+<attribute name="DKPN" value="445-2304-2-ND"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="MOPN" value="810-C5750X7R2E105K"/>
+<attribute name="MPN" value="C5750X7R2E105K230KA"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="250V"/>
+</technology>
 <technology name="630V_1UF">
 <attribute name="CAPACITANCE" value="1µF"/>
 <attribute name="DKPN" value="1608-2220Y6300105KXTWS2CT-ND"/>
@@ -9246,6 +9264,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="14.14V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="3.32K">
+<attribute name="DKPN" value="YAG1651TR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RT0603BRD073K32L"/>
+<attribute name="MPN" value="RT0603BRD073K32L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="3.32k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="18.22V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="3.3K">
 <attribute name="DKPN" value="311-3.30KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -9387,6 +9416,40 @@ Leakage Inductance: 0.50 uH max
 <attribute name="RESISTANCE" value="73.2k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="75K">
+<attribute name="DKPN" value="RT0603BRE0775KL-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RT0603BRE0775KL"/>
+<attribute name="MPN" value="RT0603BRE0775KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="75k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="8.66K">
+<attribute name="DKPN" value="YAG4603TR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RT0603BRD078K66L"/>
+<attribute name="MPN" value="RT0603BRD078K66L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="8.66k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="29.43V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="8.35K">
+<attribute name="DKPN" value="764-1461-2-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Dale Thin Film"/>
+<attribute name="MOPN" value="71-PTN0603E8351BST1"/>
+<attribute name="MPN" value="
+PTN0603E8351BST1"/>
+<attribute name="POWER" value="0.15W"/>
+<attribute name="RESISTANCE" value="8.35k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="28.90W"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="84.5K">

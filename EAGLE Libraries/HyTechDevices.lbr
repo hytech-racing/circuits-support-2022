@@ -7718,52 +7718,6 @@ Pins tied to VREG: ISOMD, DTEN
 <text x="0" y="0.762" size="1.27" layer="95" font="vector">&gt;NAME</text>
 <text x="0" y="-21.082" size="1.27" layer="96" font="vector" align="top-left">&gt;MPN</text>
 </symbol>
-<symbol name="HEADER_FEMALE">
-<description>Symbol creared for usage in BOM to track usage of female headers</description>
-<wire x1="0" y1="0" x2="0" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="0" y1="-5.08" x2="1.27" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="1.524" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.524" y1="0" x2="1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.016" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="3.556" y2="0" width="0.1524" layer="94"/>
-<wire x1="3.556" y1="0" x2="4.064" y2="0" width="0.1524" layer="94"/>
-<wire x1="4.064" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="3.81" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-5.08" x2="1.27" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="-5.08" x2="3.81" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="1.016" y1="0" x2="1.016" y2="-4.318" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="1.016" y1="-4.318" x2="1.524" y2="-4.318" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="1.524" y1="-4.318" x2="1.524" y2="0" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="3.556" y1="0" x2="3.556" y2="-4.318" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="3.556" y1="-4.318" x2="4.064" y2="-4.318" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="4.064" y1="-4.318" x2="4.064" y2="0" width="0.1524" layer="94" style="shortdash"/>
-<text x="0" y="0.762" size="1.27" layer="96">&gt;LENGTH</text>
-<text x="0" y="-8.382" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
-<symbol name="HEADER_MALE">
-<description>Symbol creared for usage in BOM to track usage of male headers</description>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="3.81" y2="0" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="-6.35" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="-2.54" x2="3.81" y2="-6.35" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="0" x2="3.81" y2="1.27" width="0.1524" layer="94"/>
-<text x="0" y="2.032" size="1.27" layer="96">&gt;LENGTH</text>
-<text x="0" y="-7.112" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
 <symbol name="ANTENNA">
 <description>Antenna symbol for BOM tracking</description>
 <wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>

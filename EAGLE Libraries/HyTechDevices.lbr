@@ -8873,13 +8873,19 @@ Leakage Inductance: 0.50 uH max
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="S2011EC-03-ND"/>
+<attribute name="DPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
 <device name="2X05_SMD" package="2X05_SMD">
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="S2011EC-03-ND" constant="no"/>
+<attribute name="DKPN" value="S2351E-05-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="GBC05DABN-M30" constant="no"/>
 </technology>
 </technologies>
 </device>

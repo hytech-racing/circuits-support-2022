@@ -304,9 +304,9 @@
 <wire x1="-12.82" y1="10" x2="13.1" y2="9.7" width="0.127" layer="21" curve="-106"/>
 <wire x1="15.03" y1="6.22" x2="2.11" y2="-16.14" width="0.127" layer="21" curve="-105"/>
 <wire x1="-2.07" y1="-16.13" x2="-15.06" y2="6.16" width="0.127" layer="21" curve="-105"/>
-<pad name="GND" x="-14.162" y="8.051" drill="2.5"/>
-<pad name="F" x="14.162" y="8.051" drill="2.5"/>
-<pad name="VDD" x="0" y="-16.29" drill="2.5"/>
+<pad name="F" x="-14.162" y="8.051" drill="2.5"/>
+<pad name="G" x="14.162" y="8.051" drill="2.5"/>
+<pad name="M" x="0" y="-16.29" drill="2.5"/>
 <text x="0" y="18.796" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <circle x="-14.162" y="8.051" radius="2.2" width="0" layer="40"/>
 <circle x="14.162" y="8.051" radius="2.2" width="0" layer="40"/>
@@ -441,8 +441,8 @@
 <wire x1="7.62" y1="0.508" x2="8.636" y2="0.508" width="0.254" layer="94"/>
 <wire x1="8.636" y1="0.508" x2="8.636" y2="-10.668" width="0.254" layer="94"/>
 <pin name="F" x="-2.54" y="-5.08" length="short"/>
-<pin name="VDD" x="-2.54" y="-2.54" length="short" direction="pwr"/>
-<pin name="GND" x="-2.54" y="-7.62" length="short" direction="pwr"/>
+<pin name="M" x="-2.54" y="-2.54" length="short" direction="pwr"/>
+<pin name="G" x="-2.54" y="-7.62" length="short" direction="pwr"/>
 <wire x1="7.62" y1="-10.16" x2="7.62" y2="-10.668" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-10.668" x2="8.636" y2="-10.668" width="0.254" layer="94"/>
 </symbol>
@@ -630,8 +630,8 @@
 <device name="" package="CPT-3011C-120">
 <connects>
 <connect gate="G$1" pin="F" pad="F"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VDD" pad="VDD"/>
+<connect gate="G$1" pin="G" pad="G"/>
+<connect gate="G$1" pin="M" pad="M"/>
 </connects>
 <technologies>
 <technology name="CPT-3011C-120">
@@ -668,8 +668,8 @@
 <technology name="">
 <attribute name="DKPN" value="RE46C100S8TFTR-ND"/>
 <attribute name="MANUFACTURER" value="Microchip Technology"/>
-<attribute name="MOPN" value="RE46C100S8TF"/>
-<attribute name="MPN" value="579-RE46C100S8TF "/>
+<attribute name="MOPN" value="579-RE46C100S8TF "/>
+<attribute name="MPN" value=" RE46C100S8TF"/>
 </technology>
 </technologies>
 </device>

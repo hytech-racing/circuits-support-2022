@@ -8971,8 +8971,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="11.53V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
-
-
 <technology name="1.5M">
 <attribute name="DKPN" value="311-1.50MHRCT-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Yageo" constant="no"/>
@@ -8984,7 +8982,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="75V" constant="no"/>
 <attribute name="VOLTAGE_MAX" value="75V" constant="no"/>
 </technology>
-
 <technology name="1.65K">
 <attribute name="DKPN" value="311-1.65KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -9095,8 +9092,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="34.64V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
-
-
 <technology name="150K">
 <attribute name="DKPN" value="P150KDBCT-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
@@ -9108,7 +9103,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="75V" constant="no"/>
 <attribute name="VOLTAGE_MAX" value="75V" constant="no"/>
 </technology>
-
 <technology name="154K">
 <attribute name="DKPN" value="P154KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -9296,8 +9290,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="18.17V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
-
-
 <technology name="3.9K">
 <attribute name="DKPN" value="311-3.90KHRCT-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Yageo" constant="no"/>
@@ -9309,7 +9301,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="19.75V" constant="no"/>
 <attribute name="VOLTAGE_MAX" value="75V" constant="no"/>
 </technology>
-
 <technology name="30K">
 <attribute name="DKPN" value="P30KBDCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -9431,8 +9422,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="2.48V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
-
-
 <technology name="620">
 <attribute name="DKPN" value="311-620HRCT-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Yageo" constant="no"/>
@@ -9444,7 +9433,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="7.87V" constant="no"/>
 <attribute name="VOLTAGE_MAX" value="75V" constant="no"/>
 </technology>
-
 <technology name="73.2K">
 <attribute name="DKPN" value="P73.2KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -11777,7 +11765,6 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-
 </connects>
 <technologies>
 <technology name="33UH">
@@ -11798,9 +11785,6 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-
-
-
 <technologies>
 <technology name="33UH">
 <attribute name="CURRENT_RATED" value="0.6A"/>

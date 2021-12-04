@@ -9951,7 +9951,8 @@ Leakage Inductance: 0.50 uH max
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/916/PMV15ENEA-1604828.pdf"&gt;PMV15ENEA Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/408/TK6P65W_datasheet_en_20151225-1916290.pdf"&gt;TK6P65W Datasheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/427/sir638adp-1766131.pdf"&gt;SIR638ADP Datasheet&lt;/a&gt;&lt;/li&gt;</description>
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/427/sir638adp-1766131.pdf"&gt;SIR638ADP Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/408/TK100S04N1L_datasheet_en_20200624-1840137.pdf"&gt;TK100S04N1L Datasheet&lt;/a&gt;&lt;/li&gt;</description>
 <gates>
 <gate name="G$1" symbol="MOSFET_N-CHANNEL" x="0" y="0"/>
 </gates>
@@ -9978,6 +9979,12 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
+<technology name="TK100S04N1L,LQ">
+<attribute name="DKPN" value="TK100S04N1LLQ"/>
+<attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage"/>
+<attribute name="MOPN" value="757-TK100S04N1LLQ"/>
+<attribute name="MPN" value="TK100S04N1L,LQ"/>
+</technology>
 <technology name="TK6P65W">
 <attribute name="DKPN" value="TK6P65WRQCT-ND"/>
 <attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage"/>

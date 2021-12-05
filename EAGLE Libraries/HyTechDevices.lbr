@@ -4839,6 +4839,20 @@ A variation of MSOP16 with 4 pins removed.
 <rectangle x1="-2.286" y1="-2.794" x2="2.286" y2="2.794" layer="39"/>
 <text x="-2.286" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="SOD-323F">
+<description>SOD-323F
+&lt;br&gt;
+&lt;a href="https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-1.05" y="0" dx="0.6" dy="0.6" layer="1"/>
+<smd name="2" x="1.05" y="0" dx="0.6" dy="0.6" layer="1"/>
+<wire x1="1.05" y1="0.825" x2="-1.05" y2="0.825" width="0.127" layer="21"/>
+<wire x1="1.05" y1="-0.825" x2="-1.05" y2="-0.825" width="0.127" layer="21"/>
+<rectangle x1="-1.651" y1="-1.016" x2="1.651" y2="1.016" layer="39"/>
+<wire x1="1.05" y1="0.825" x2="1.05" y2="-0.825" width="0.127" layer="21"/>
+<wire x1="-1.05" y1="0.825" x2="-1.05" y2="-0.825" width="0.127" layer="21"/>
+<text x="0" y="1.27" size="0.8128" layer="21" align="bottom-center">&gt;NAME</text>
+<text x="1.524" y="-0.254" size="0.508" layer="21">K</text>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -8270,6 +8284,20 @@ with up to 100mA of output current</description>
 </technology>
 </technologies>
 </device>
+<device name="MOLEX_NANOFIT_PTH_VERTICAL_02" package="MOLEX_NANOFIT_PTH_02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="BLACK">
+<attribute name="DKPN" value="WM15036-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105309-1302 "/>
+<attribute name="MPN" value="105309-1302"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CAPACITOR_?_*" prefix="C">
@@ -8990,6 +9018,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="3.16V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="100K">
+<attribute name="DKPN" value="311-100KHRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-07100KL "/>
+<attribute name="MPN" value="RC0603FR-07100KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="100K"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="10K">
 <attribute name="DKPN" value="311-10.0KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -9144,6 +9183,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="23.41V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="20K">
+<attribute name="DKPN" value="311-20.0KHRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-0720KL "/>
+<attribute name="MPN" value="RC0603FR-0720KL"/>
+<attribute name="POWER" value="0.1 W"/>
+<attribute name="RESISTANCE" value="20 K"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="44.72V"/>
+<attribute name="VOLTAGE_MAX" value="75V" constant="no"/>
+</technology>
 <technology name="215K">
 <attribute name="DKPN" value="P215KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -9254,6 +9304,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="60.42V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="360">
+<attribute name="DKPN" value="311-360HRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-07360RL"/>
+<attribute name="MPN" value="RC0603FR-07360RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="360"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="6V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="374K">
 <attribute name="DKPN" value="311-374KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -9319,6 +9380,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="10.84V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="5.1K">
+<attribute name="DKPN" value="311-5.10KHRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-075K1L "/>
+<attribute name="MPN" value="RC0603FR-075K1L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="5.1k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="22.58V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="5.9K">
 <attribute name="DKPN" value="P5.9KDBCT-ND"/>
@@ -11764,7 +11836,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="STWD100">
+<deviceset name="STWD100" prefix="U">
 <description>&lt;b&gt;STWD100 Watchdog Timer&lt;/b&gt;
 &lt;br&gt; 
 
@@ -11792,7 +11864,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="RELAY_DPDT">
+<deviceset name="RELAY_DPDT" prefix="K">
 <description>&lt;b&gt;DPDT Relay&lt;/b&gt;
 
 &lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=RT2&amp;DocType=DS&amp;DocLang=English"&gt;Datasheet &lt;/a&gt;
@@ -11825,7 +11897,7 @@ MAX current: 8.0A</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CPC1002N">
+<deviceset name="CPC1002N" prefix="U">
 <description>&lt;b&gt;CPC1002N Solid State Relay&lt;/b&gt;&lt;br&gt;
 
 &lt;a href="https://www.ixysic.com/home/pdfs.nsf/www/CPC1002N.pdf/$file/CPC1002N.pdf"&gt;Datasheet &lt;/a&gt;</description>
@@ -11851,7 +11923,7 @@ MAX current: 8.0A</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOMENTARY_BTN">
+<deviceset name="MOMENTARY_BTN" prefix="S">
 <description>&lt;b&gt;Momentary Button&lt;/b&gt;
 &lt;br&gt;
 &lt;a href="https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3s.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -11870,6 +11942,55 @@ MAX current: 8.0A</description>
 <attribute name="MANUFACTURER" value="Omron"/>
 <attribute name="MOPN" value="653-B3S-1000"/>
 <attribute name="MPN" value="B3S-1000"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FUSE_MINIBLADE" prefix="F">
+<description>Miniblade Fuse Holder&lt;br&gt;
+&lt; a href="https://www.mouser.com/datasheet/2/215/3568-742601.pdf"&gt;Datasheet&lt;/A&gt;</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="MINI-BLADE_FUSE_HOLDER">
+<connects>
+<connect gate="G$1" pin="1" pad="L1 L2"/>
+<connect gate="G$1" pin="2" pad="R1 R2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="1A" constant="no"/>
+<attribute name="DKPN" value="36-3568-ND"/>
+<attribute name="MANUFACTURER" value="Keystone"/>
+<attribute name="MOPN" value="534-3568"/>
+<attribute name="MPN" value="3568"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCHOTTKY_PMEG2020EJ" prefix="D">
+<description>PMEG2020EJ Schottky Rectifier Diode
+&lt;br&gt;
+&lt;a href="https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="DIODE_SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD-323F">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="1727-3863-2-ND"/>
+<attribute name="MANUFACTURER" value="Nexperia"/>
+<attribute name="MOPN" value="771-PMEG2020EJ-T/R"/>
+<attribute name="MPN" value="PMEG2020EJ"/>
+<attribute name="VOLTAGE" value="20"/>
 </technology>
 </technologies>
 </device>

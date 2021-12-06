@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -678,6 +678,7 @@ LOGIC</text>
 <pin name="NEUTRAL_IN" x="-2.54" y="-20.32" length="short" direction="pwr"/>
 <pin name="GND_IN" x="-2.54" y="-25.4" length="short" direction="pwr"/>
 <text x="0" y="0.762" size="1.778" layer="95">Remote Power Control</text>
+<text x="0" y="-28.702" size="1.778" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="MAINTENANCE_PLUG">
 <pin name="1" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
@@ -917,7 +918,8 @@ Sensor</text>
 <pin name="HOTIN" x="-2.54" y="-2.54" length="short" direction="pwr"/>
 <pin name="NEUTRAL_IN" x="-2.54" y="-7.62" length="short" direction="pwr"/>
 <pin name="GND_IN" x="-2.54" y="-12.7" length="short" direction="pwr"/>
-<text x="0" y="0.762" size="1.778" layer="95">Inline GFCI 20 Amp</text>
+<text x="0" y="0.762" size="1.778" layer="95">Inline 20A GFCI</text>
+<text x="0" y="-16.002" size="1.778" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1333,7 +1335,7 @@ Sensor</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="REMOTE_POWER_CONTROL">
+<deviceset name="REMOTE_POWER_CONTROL_*">
 <gates>
 <gate name="G$1" symbol="REMOTE_POWER_CONTROL" x="0" y="0"/>
 </gates>
@@ -1341,6 +1343,13 @@ Sensor</text>
 <device name="">
 <technologies>
 <technology name="">
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="RPC-20-SCD">
+<attribute name="MANUFACTURER" value="Lowell Manufacturing"/>
+<attribute name="MPN" value="RPC-20-SCD"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>
@@ -1564,7 +1573,7 @@ Sensor</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="INLINE_GFCI">
+<deviceset name="INLINE_GFCI_*">
 <gates>
 <gate name="G$1" symbol="INLINE_GFCI" x="0" y="0"/>
 </gates>
@@ -1572,6 +1581,13 @@ Sensor</text>
 <device name="">
 <technologies>
 <technology name="">
+<attribute name="MANFUACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="GFM20-3WC">
+<attribute name="MANFUACTURER" value="Leviton"/>
+<attribute name="MPN" value="GFM20-3WC"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>

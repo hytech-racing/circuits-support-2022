@@ -305,9 +305,9 @@ CM200DZ</text>
 <text x="35.56" y="-7.62" size="2.54" layer="95" align="top-right">Precharger</text>
 <wire x1="12.7" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
 <wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="10.16" y1="0" x2="10.16" y2="-15.24" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-15.24" width="0.254" layer="94" style="shortdash"/>
 <wire x1="10.16" y1="-15.24" x2="12.7" y2="-15.24" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="12.7" y1="-15.24" x2="12.7" y2="0" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="12.7" y1="-15.24" x2="12.7" y2="0" width="0.254" layer="94" style="shortdash"/>
 <pin name="VCC" x="40.64" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="GND" x="40.64" y="-5.08" length="short" direction="pwr" rot="R180"/>
 </symbol>
@@ -665,7 +665,7 @@ LOGIC</text>
 THRESHOLD
 LOGIC</text>
 </symbol>
-<symbol name="POWER_RELAY">
+<symbol name="REMOTE_POWER_CONTROL">
 <wire x1="0" y1="0" x2="0" y2="-27.94" width="0.254" layer="94"/>
 <pin name="HOT_OUT" x="25.4" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="NEUTRAL_OUT" x="25.4" y="-7.62" length="short" direction="pwr" rot="R180"/>
@@ -677,7 +677,7 @@ LOGIC</text>
 <pin name="HOTIN" x="-2.54" y="-15.24" length="short" direction="pwr"/>
 <pin name="NEUTRAL_IN" x="-2.54" y="-20.32" length="short" direction="pwr"/>
 <pin name="GND_IN" x="-2.54" y="-25.4" length="short" direction="pwr"/>
-<text x="0" y="0.762" size="1.778" layer="95">Power Relay</text>
+<text x="0" y="0.762" size="1.778" layer="95">Remote Power Control</text>
 </symbol>
 <symbol name="MAINTENANCE_PLUG">
 <pin name="1" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
@@ -905,6 +905,19 @@ Sensor</text>
 <text x="2.54" y="-2.54" size="2.286" layer="95" align="top-left">BSE</text>
 <pin name="VCC" x="22.86" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="GND" x="-2.54" y="-7.62" length="short" direction="pwr"/>
+</symbol>
+<symbol name="INLINE_GFCI">
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<pin name="HOT_OUT" x="38.1" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="NEUTRAL_OUT" x="38.1" y="-7.62" length="short" direction="pwr" rot="R180"/>
+<pin name="GND_OUT" x="38.1" y="-12.7" length="short" direction="pwr" rot="R180"/>
+<wire x1="0" y1="0" x2="35.56" y2="0" width="0.254" layer="94"/>
+<wire x1="35.56" y1="0" x2="35.56" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<pin name="HOTIN" x="-2.54" y="-2.54" length="short" direction="pwr"/>
+<pin name="NEUTRAL_IN" x="-2.54" y="-7.62" length="short" direction="pwr"/>
+<pin name="GND_IN" x="-2.54" y="-12.7" length="short" direction="pwr"/>
+<text x="0" y="0.762" size="1.778" layer="95">Inline GFCI 20 Amp</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1233,6 +1246,11 @@ Sensor</text>
 <attribute name="MPN" value="NEMA 5-15"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="NEMA-5-20">
+<attribute name="MANUFACTURER" value="Standard"/>
+<attribute name="MPN" value="NEMA 5-20"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1315,9 +1333,9 @@ Sensor</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="POWER_RELAY">
+<deviceset name="REMOTE_POWER_CONTROL">
 <gates>
-<gate name="G$1" symbol="POWER_RELAY" x="0" y="0"/>
+<gate name="G$1" symbol="REMOTE_POWER_CONTROL" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1535,6 +1553,20 @@ Sensor</text>
 <deviceset name="CURRENT_SENSOR">
 <gates>
 <gate name="G$1" symbol="CURRENT_SENSOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="INLINE_GFCI">
+<gates>
+<gate name="G$1" symbol="INLINE_GFCI" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">

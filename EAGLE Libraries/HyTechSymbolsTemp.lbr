@@ -564,12 +564,6 @@ LOGIC</text>
 <pin name="2" x="10.16" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="3" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="TSMP">
-<circle x="-1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<pin name="P$1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<text x="-2.54" y="2.032" size="1.27" layer="95">TSMP</text>
-<text x="-2.54" y="-1.778" size="1.27" layer="96" align="top-left">&gt;POLARITY</text>
-</symbol>
 <symbol name="RELAY_DPDT">
 <description>Double pole, double throw relay</description>
 <circle x="2.54" y="-17.78" radius="0.635" width="0.1524" layer="94"/>
@@ -935,6 +929,11 @@ Sensor</text>
 <attribute name="MPN" value="104742-2"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="EVH2-N2TK-TDA">
+<attribute name="MANUFACTURER" value="Jonhon"/>
+<attribute name="MPN" value="EVH2-N2TK-TDA" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="HPK">
 <attribute name="MANUFACTURER" value="Rosenberger"/>
 <attribute name="MPN" value="HPK"/>
@@ -1251,21 +1250,6 @@ Sensor</text>
 <technology name="NEMA-5-20">
 <attribute name="MANUFACTURER" value="Standard"/>
 <attribute name="MPN" value="NEMA 5-20"/>
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TSMP" prefix="TP">
-<gates>
-<gate name="G$1" symbol="TSMP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="POLARITY" value="" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>

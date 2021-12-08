@@ -8823,6 +8823,14 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="1">
+<attribute name="CURRENT" value="1A"/>
+<attribute name="DKPN" value="F10985CT-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-0885001.DR"/>
+<attribute name="MPN" value="0885001.DR"/>
+<attribute name="VOLTAGE" value="500V"/>
+</technology>
 <technology name="1.25">
 <attribute name="CURRENT" value="1.25A"/>
 <attribute name="DKPN" value="F10986CT-ND"/>

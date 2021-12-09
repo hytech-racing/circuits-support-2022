@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4743,6 +4743,8 @@ Dashed line is edge of mated connector.</description>
 <vertex x="-4.4704" y="-10.033"/>
 <vertex x="4.4704" y="-10.033"/>
 </polygon>
+<rectangle x1="-5.08" y1="-26.162" x2="5.08" y2="-5.08" layer="39"/>
+<rectangle x1="-5.08" y1="-26.162" x2="5.08" y2="-9.525" layer="40"/>
 </package>
 <package name="5222">
 <description>5222 Spring
@@ -8290,10 +8292,10 @@ with up to 100mA of output current</description>
 </connects>
 <technologies>
 <technology name="BLACK">
-<attribute name="DKPN" value="436500214"/>
+<attribute name="DKPN" value="WM14310CT-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-43650-0214"/>
-<attribute name="MPN" value="436500214"/>
+<attribute name="MPN" value="0436500214"/>
 </technology>
 </technologies>
 </device>
@@ -8821,6 +8823,14 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="1">
+<attribute name="CURRENT" value="1A"/>
+<attribute name="DKPN" value="F10985CT-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-0885001.DR"/>
+<attribute name="MPN" value="0885001.DR"/>
+<attribute name="VOLTAGE" value="500V"/>
+</technology>
 <technology name="1.25">
 <attribute name="CURRENT" value="1.25A"/>
 <attribute name="DKPN" value="F10986CT-ND"/>

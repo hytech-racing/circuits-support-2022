@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="yes"/>
@@ -24816,13 +24816,15 @@
 <description>1mm fiducial for &lt;a href="https://www.screamingcircuits.com/resource-center/tutorials/panelizing-pcb"&gt;Screaming Circuits&lt;/a&gt;</description>
 <circle x="0" y="0" radius="0.5" width="0" layer="1"/>
 <circle x="0" y="0" radius="0.5" width="0" layer="16"/>
-<circle x="0" y="0" radius="3.5" width="0" layer="29"/>
-<circle x="0" y="0" radius="3.5" width="0" layer="30"/>
-<circle x="0" y="0" radius="4.5" width="0" layer="39"/>
-<circle x="0" y="0" radius="4.5" width="0" layer="40"/>
-<circle x="0" y="0" radius="4.5" width="0" layer="41"/>
-<circle x="0" y="0" radius="4.5" width="0" layer="40"/>
-<circle x="0" y="0" radius="4.5" width="0" layer="43"/>
+<circle x="0" y="0" radius="1" width="0" layer="29"/>
+<circle x="0" y="0" radius="1" width="0" layer="30"/>
+<circle x="0" y="0" radius="1.5" width="0" layer="39"/>
+<circle x="0" y="0" radius="1.5" width="0" layer="40"/>
+<circle x="0" y="0" radius="1.5" width="0" layer="41"/>
+<circle x="0" y="0" radius="1.5" width="0" layer="40"/>
+<circle x="0" y="0" radius="1.5" width="0" layer="43"/>
+<circle x="0" y="0" radius="5.5" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="1.5" width="0" layer="42"/>
 </package>
 <package name="FIDUCIAL_2MM">
 <description>2mm fiducial for on campus milling</description>

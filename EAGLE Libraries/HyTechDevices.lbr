@@ -709,7 +709,7 @@
 <wire x1="11.43" y1="-1.27" x2="11.43" y2="3.81" width="0.127" layer="21"/>
 <wire x1="11.43" y1="3.81" x2="3.81" y2="3.81" width="0.127" layer="21"/>
 <wire x1="3.81" y1="3.81" x2="3.81" y2="-1.27" width="0.127" layer="21"/>
-<text x="7.62" y="0.889" size="1.397" layer="21" font="vector" ratio="12" rot="R180" align="center">&gt;TEENSY 3.2</text>
+<text x="7.62" y="0.889" size="2.032" layer="21" font="vector" rot="R180" align="center">&gt;TEENSY</text>
 <rectangle x1="-1.27" y1="-1.524" x2="1.27" y2="34.544" layer="39"/>
 <rectangle x1="13.97" y1="-1.524" x2="16.51" y2="34.544" layer="39"/>
 <rectangle x1="-1.27" y1="-1.524" x2="1.27" y2="34.544" layer="40"/>
@@ -1010,7 +1010,7 @@ MOPN: 534-3568</description>
 <wire x1="-6.87" y1="-10.68" x2="-6.87" y2="-1.99" width="0.127" layer="21"/>
 <wire x1="-6.87" y1="-1.99" x2="-3.77" y2="-1.99" width="0.127" layer="21"/>
 <wire x1="-3.77" y1="-1.99" x2="-3.77" y2="2.6" width="0.127" layer="21"/>
-<wire x1="-6.87" y1="-19.48" x2="6.87" y2="-19.48" width="0.1524" layer="21"/>
+<wire x1="-6.87" y1="-19.48" x2="6.87" y2="-19.48" width="0.1524" layer="51"/>
 <text x="0" y="-20.065" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
 visible on the PCB.</text>
 <rectangle x1="-7.62" y1="-19.43" x2="7.62" y2="3.81" layer="39"/>
@@ -1036,7 +1036,7 @@ visible on the PCB.</text>
 <wire x1="-4.37" y1="-10.68" x2="-4.37" y2="-1.99" width="0.127" layer="21"/>
 <wire x1="-4.37" y1="-1.99" x2="-1.27" y2="-1.99" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-1.99" x2="-1.27" y2="2.6" width="0.127" layer="21"/>
-<wire x1="-4.37" y1="-19.48" x2="4.37" y2="-19.48" width="0.1524" layer="21"/>
+<wire x1="-4.37" y1="-19.48" x2="4.37" y2="-19.48" width="0.1524" layer="51"/>
 <text x="0" y="-20.065" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
 visible on the PCB.</text>
 <rectangle x1="-5.08" y1="-19.43" x2="5.08" y2="3.81" layer="39"/>
@@ -1070,7 +1070,7 @@ visible on the PCB.</text>
 <wire x1="-9.37" y1="-10.68" x2="-9.37" y2="-1.99" width="0.127" layer="21"/>
 <wire x1="-9.37" y1="-1.99" x2="-6.27" y2="-1.99" width="0.127" layer="21"/>
 <wire x1="-6.27" y1="-1.99" x2="-6.27" y2="2.6" width="0.127" layer="21"/>
-<wire x1="-9.37" y1="-19.48" x2="9.37" y2="-19.48" width="0.1524" layer="21"/>
+<wire x1="-9.37" y1="-19.48" x2="9.37" y2="-19.48" width="0.1524" layer="51"/>
 <text x="0" y="-20.065" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
 visible on the PCB.</text>
 <rectangle x1="-10.16" y1="-19.43" x2="10.16" y2="3.81" layer="39"/>
@@ -1098,7 +1098,7 @@ visible on the PCB.</text>
 <wire x1="-5.62" y1="-10.68" x2="-5.62" y2="-1.99" width="0.127" layer="21"/>
 <wire x1="-5.62" y1="-1.99" x2="-2.52" y2="-1.99" width="0.127" layer="21"/>
 <wire x1="-2.52" y1="-1.99" x2="-2.52" y2="2.6" width="0.127" layer="21"/>
-<wire x1="-5.62" y1="-19.48" x2="5.62" y2="-19.48" width="0.1524" layer="21"/>
+<wire x1="-5.62" y1="-19.48" x2="5.62" y2="-19.48" width="0.1524" layer="51"/>
 <text x="0" y="-20.065" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
 visible on the PCB.</text>
 <rectangle x1="-6.35" y1="-19.43" x2="6.35" y2="3.81" layer="39"/>
@@ -1130,7 +1130,7 @@ visible on the PCB.</text>
 <wire x1="-8.12" y1="-10.68" x2="-8.12" y2="-1.99" width="0.127" layer="21"/>
 <wire x1="-8.12" y1="-1.99" x2="-5.02" y2="-1.99" width="0.127" layer="21"/>
 <wire x1="-5.02" y1="-1.99" x2="-5.02" y2="2.6" width="0.127" layer="21"/>
-<wire x1="-8.12" y1="-19.48" x2="8.12" y2="-19.48" width="0.1524" layer="21"/>
+<wire x1="-8.12" y1="-19.48" x2="8.12" y2="-19.48" width="0.1524" layer="51"/>
 <text x="0" y="-20.065" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
 visible on the PCB.</text>
 <rectangle x1="-8.89" y1="-19.43" x2="8.89" y2="3.81" layer="39"/>
@@ -2234,7 +2234,7 @@ Note: Based on page 48 and 49.</description>
 <pad name="D35" x="0" y="53.34" drill="1.016" rot="R180"/>
 <pad name="D34" x="0" y="55.88" drill="1.016" rot="R180"/>
 <pad name="D33" x="0" y="58.42" drill="1.016" rot="R180"/>
-<text x="7.62" y="0.9525" size="2.1844" layer="21" font="vector" rot="R180" align="center">&gt;TEENSY</text>
+<text x="7.62" y="0.9525" size="2.032" layer="21" font="vector" rot="R180" align="center">&gt;TEENSY</text>
 <rectangle x1="-1.27" y1="-1.524" x2="1.27" y2="59.944" layer="39"/>
 <rectangle x1="13.97" y1="-1.524" x2="16.51" y2="59.944" layer="39"/>
 <rectangle x1="-1.27" y1="-1.524" x2="1.27" y2="59.944" layer="40"/>
@@ -2586,7 +2586,7 @@ Based on page 10.</description>
 <wire x1="-4.37" y1="-9.03" x2="-4.37" y2="-0.34" width="0.127" layer="21"/>
 <wire x1="-4.37" y1="-0.34" x2="-1.27" y2="-0.34" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-0.34" x2="-1.27" y2="0.95" width="0.127" layer="21"/>
-<wire x1="-4.37" y1="-17.83" x2="4.37" y2="-17.83" width="0.1524" layer="21"/>
+<wire x1="-4.37" y1="-17.83" x2="4.37" y2="-17.83" width="0.1524" layer="51"/>
 <rectangle x1="-5.08" y1="-17.78" x2="5.08" y2="1.905" layer="39"/>
 <text x="0" y="-18.415" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
 visible on the PCB.</text>
@@ -2618,7 +2618,7 @@ visible on the PCB.</text>
 <wire x1="-10.62" y1="-10.68" x2="-10.62" y2="-1.99" width="0.127" layer="21"/>
 <wire x1="-10.62" y1="-1.99" x2="-7.52" y2="-1.99" width="0.127" layer="21"/>
 <wire x1="-7.52" y1="-1.99" x2="-7.52" y2="2.6" width="0.127" layer="21"/>
-<wire x1="-10.62" y1="-19.48" x2="10.62" y2="-19.48" width="0.1524" layer="21"/>
+<wire x1="-10.62" y1="-19.48" x2="10.62" y2="-19.48" width="0.1524" layer="51"/>
 <text x="0" y="-20.065" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
 visible on the PCB.</text>
 <rectangle x1="-11.43" y1="-19.43" x2="11.43" y2="3.81" layer="39"/>
@@ -3013,7 +3013,7 @@ visible on the PCB.</text>
 <pad name="D35" x="0" y="53.34" drill="1.016" rot="R180"/>
 <pad name="D34" x="0" y="55.88" drill="1.016" rot="R180"/>
 <pad name="D33" x="0" y="58.42" drill="1.016" rot="R180"/>
-<text x="7.62" y="0.9525" size="2.1844" layer="21" font="vector" rot="R180" align="center">&gt;TEENSY</text>
+<text x="7.62" y="0.9525" size="2.032" layer="21" font="vector" rot="R180" align="center">&gt;TEENSY</text>
 <pad name="VBAT" x="12.7" y="45.72" drill="1.016" rot="R180"/>
 <pad name="3V3@3" x="10.16" y="45.72" drill="1.016" rot="R180"/>
 <rectangle x1="-1.27" y1="-1.524" x2="1.27" y2="59.944" layer="40"/>
@@ -3956,7 +3956,7 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <wire x1="11.43" y1="-1.27" x2="11.43" y2="3.81" width="0.127" layer="21"/>
 <wire x1="11.43" y1="3.81" x2="3.81" y2="3.81" width="0.127" layer="21"/>
 <wire x1="3.81" y1="3.81" x2="3.81" y2="-1.27" width="0.127" layer="21"/>
-<text x="7.62" y="0.889" size="2.032" layer="21" font="vector" ratio="12" rot="R180" align="center">&gt;TEENSY</text>
+<text x="7.62" y="0.889" size="2.032" layer="21" font="vector" rot="R180" align="center">&gt;TEENSY</text>
 <rectangle x1="-1.27" y1="-1.524" x2="1.27" y2="34.544" layer="39"/>
 <rectangle x1="13.97" y1="-1.524" x2="16.51" y2="34.544" layer="39"/>
 <rectangle x1="-1.27" y1="-1.524" x2="1.27" y2="34.544" layer="40"/>
@@ -4363,8 +4363,8 @@ Dashed line is edge of mated connector.</description>
 <text x="0" y="-5.207" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-4.6101" y1="1.8034" x2="-2.1717" y2="3.4036" layer="41"/>
 <rectangle x1="2.1717" y1="1.8034" x2="4.6101" y2="3.4036" layer="41"/>
-<wire x1="-6.35" y1="-10.033" x2="6.35" y2="-10.033" width="0.127" layer="49"/>
-<wire x1="-6.35" y1="-12.3698" x2="6.35" y2="-12.3698" width="0.127" layer="49" style="shortdash"/>
+<wire x1="-6.35" y1="-10.033" x2="6.35" y2="-10.033" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-12.3698" x2="6.35" y2="-12.3698" width="0.127" layer="51" style="shortdash"/>
 <rectangle x1="-2.54" y1="-25.527" x2="2.54" y2="-10.033" layer="41"/>
 <wire x1="-2.54" y1="-10.033" x2="2.54" y2="-10.033" width="0" layer="46"/>
 <wire x1="2.54" y1="-10.033" x2="2.54" y2="-25.527" width="0" layer="46"/>
@@ -4728,8 +4728,8 @@ Dashed line is edge of mated connector.</description>
 <wire x1="2.9972" y1="-4.4323" x2="4.826" y2="-2.6035" width="0.127" layer="21"/>
 <wire x1="4.826" y1="-2.6035" x2="4.826" y2="5.4737" width="0.127" layer="21"/>
 <rectangle x1="-7.8486" y1="-5.08" x2="7.8486" y2="7.62" layer="39"/>
-<wire x1="-6.35" y1="-10.033" x2="6.35" y2="-10.033" width="0.127" layer="49"/>
-<wire x1="-6.35" y1="-12.3698" x2="6.35" y2="-12.3698" width="0.127" layer="49" style="shortdash"/>
+<wire x1="-6.35" y1="-10.033" x2="6.35" y2="-10.033" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-12.3698" x2="6.35" y2="-12.3698" width="0.127" layer="51" style="shortdash"/>
 <text x="0.2286" y="-5.207" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-5.588" y1="1.8034" x2="-3.1496" y2="3.4036" layer="41"/>
 <rectangle x1="3.1496" y1="1.8034" x2="5.588" y2="3.4036" layer="41"/>

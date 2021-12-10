@@ -191,6 +191,7 @@
 </packages>
 <symbols>
 <symbol name="CONNECTOR_02">
+<description>Two pin connector.</description>
 <wire x1="7.62" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
 <wire x1="3.81" y1="-5.08" x2="5.08" y2="-5.08" width="0.6096" layer="94"/>
@@ -203,6 +204,7 @@
 <pin name="2" x="10.16" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="CASCADIA_CM200DZ">
+<description>Cascadia CM200DZ motor controller used on HT06.</description>
 <wire x1="68.58" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="30.48" x2="68.58" y2="30.48" width="0.254" layer="94"/>
 <wire x1="68.58" y1="-2.54" x2="68.58" y2="30.48" width="0.254" layer="94"/>
@@ -235,6 +237,7 @@
 <pin name="G1-GND" x="63.5" y="33.02" length="short" rot="R270"/>
 </symbol>
 <symbol name="CASCADIA_CM200DZ-SIMPLE">
+<description>Block representation of the CM200DZ motor controller used on HT06.</description>
 <wire x1="48.26" y1="-20.32" x2="0" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="48.26" y2="0" width="0.254" layer="94"/>
 <wire x1="48.26" y1="-20.32" x2="48.26" y2="0" width="0.254" layer="94"/>
@@ -293,6 +296,7 @@ CM200DZ</text>
 <wire x1="2.54" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="PRECHARGER">
+<description>Block representation of the HT06 precharger.</description>
 <wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="0" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-15.24" x2="38.1" y2="-15.24" width="0.254" layer="94"/>
@@ -386,6 +390,7 @@ CM200DZ</text>
 </polygon>
 </symbol>
 <symbol name="ENERGY_METER">
+<description>Block representation of the FSAE energy meter.</description>
 <wire x1="0" y1="0" x2="25.4" y2="0" width="0.254" layer="94"/>
 <wire x1="25.4" y1="0" x2="25.4" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="25.4" y1="-12.7" x2="0" y2="-12.7" width="0.254" layer="94"/>
@@ -397,6 +402,7 @@ CM200DZ</text>
 METER</text>
 </symbol>
 <symbol name="CONNECTOR_01">
+<description>Single pin connector.</description>
 <wire x1="7.62" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-5.08" width="0.254" layer="94"/>
@@ -431,6 +437,7 @@ METER</text>
 <wire x1="11.176" y1="0" x2="11.176" y2="-10.16" width="0.254" layer="94" style="shortdash"/>
 </symbol>
 <symbol name="PRECHARGE_LOGIC">
+<description>Block representation of the precharge logic.</description>
 <wire x1="0" y1="0" x2="0" y2="-20.32" width="0.1524" layer="94"/>
 <wire x1="0" y1="-20.32" x2="30.48" y2="-20.32" width="0.1524" layer="94"/>
 <wire x1="30.48" y1="-20.32" x2="30.48" y2="0" width="0.1524" layer="94"/>
@@ -445,6 +452,7 @@ LOGIC</text>
 <pin name="60V_INDICATOR" x="33.02" y="-17.78" length="short" direction="out" rot="R180"/>
 </symbol>
 <symbol name="RELAY_SOLIDSTATE_NC">
+<description>Normally closed solid state relay.</description>
 <wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="-2.54" x2="0" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="0" y1="-10.16" x2="0" y2="-12.7" width="0.254" layer="94"/>
@@ -490,6 +498,7 @@ LOGIC</text>
 <wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="RELAY_SOLIDSTATE_NO">
+<description>Normally open solid state relay.</description>
 <wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="-2.54" x2="0" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="0" y1="-10.16" x2="0" y2="-12.7" width="0.254" layer="94"/>
@@ -535,6 +544,7 @@ LOGIC</text>
 <text x="0" y="-13.462" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="BATTERY_CHARGER">
+<description>Block representation of a high voltage charger for the accumulator.</description>
 <wire x1="0" y1="0" x2="0" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="0" y1="-20.32" x2="25.4" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="25.4" y1="-20.32" x2="25.4" y2="0" width="0.254" layer="94"/>
@@ -551,6 +561,7 @@ LOGIC</text>
 <pin name="CANL" x="27.94" y="-5.08" length="short" rot="R180"/>
 </symbol>
 <symbol name="CONNECTOR_03">
+<description>Three pin connector.</description>
 <wire x1="7.62" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
 <wire x1="3.81" y1="-5.08" x2="5.08" y2="-5.08" width="0.6096" layer="94"/>
@@ -630,6 +641,7 @@ LOGIC</text>
 <wire x1="0" y1="0" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="BUTTON_NO">
+<description>Normally open button.</description>
 <wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
@@ -639,6 +651,7 @@ LOGIC</text>
 <text x="0" y="-3.048" size="1.27" layer="95" align="top-center">BUTTON</text>
 </symbol>
 <symbol name="60V_THRESHOLD">
+<description>Block reprentation of the logic that indicates when the accumulator has reached 60V.</description>
 <wire x1="0" y1="0" x2="0" y2="-22.86" width="0.1524" layer="94"/>
 <wire x1="0" y1="-22.86" x2="10.16" y2="-22.86" width="0.1524" layer="94"/>
 <wire x1="10.16" y1="-22.86" x2="35.56" y2="-22.86" width="0.1524" layer="94"/>
@@ -660,6 +673,7 @@ THRESHOLD
 LOGIC</text>
 </symbol>
 <symbol name="REMOTE_POWER_CONTROL">
+<description>Block diagram representation of an AC remote power control device.</description>
 <wire x1="0" y1="0" x2="0" y2="-27.94" width="0.254" layer="94"/>
 <pin name="HOT_OUT" x="25.4" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="NEUTRAL_OUT" x="25.4" y="-7.62" length="short" direction="pwr" rot="R180"/>
@@ -675,6 +689,7 @@ LOGIC</text>
 <text x="0" y="-28.702" size="1.778" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="MAINTENANCE_PLUG">
+<description>Busbar maintenance plug.</description>
 <pin name="1" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
 <text x="0" y="2.032" size="1.27" layer="96">&gt;MANUFACTURER</text>
 <text x="0" y="-2.032" size="1.27" layer="95" align="top-left">&gt;MPN</text>
@@ -691,6 +706,7 @@ LOGIC</text>
 <text x="-2.54" y="-1.778" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="CONNECTOR_04">
+<description>Four pin connector.</description>
 <wire x1="7.62" y1="-12.7" x2="0" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-5.08" x2="5.08" y2="-5.08" width="0.6096" layer="94"/>
 <wire x1="3.81" y1="-7.62" x2="5.08" y2="-7.62" width="0.6096" layer="94"/>
@@ -707,6 +723,7 @@ LOGIC</text>
 <pin name="4" x="10.16" y="-10.16" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="CONNECTOR_08">
+<description>Eight pin connector.</description>
 <wire x1="7.62" y1="-22.86" x2="0" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-10.16" x2="5.08" y2="-10.16" width="0.6096" layer="94"/>
 <wire x1="3.81" y1="-12.7" x2="5.08" y2="-12.7" width="0.6096" layer="94"/>
@@ -731,6 +748,7 @@ LOGIC</text>
 <text x="0" y="-23.495" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="CONNECTOR_05">
+<description>5 pin connector.</description>
 <wire x1="7.62" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-7.62" x2="5.08" y2="-7.62" width="0.6096" layer="94"/>
 <wire x1="3.81" y1="-10.16" x2="5.08" y2="-10.16" width="0.6096" layer="94"/>
@@ -749,6 +767,7 @@ LOGIC</text>
 <text x="0" y="-15.875" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="CHARGER_CONTROLLER">
+<description>Block representation of the charger controller.</description>
 <wire x1="0" y1="0" x2="0" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="0" y1="-7.62" x2="22.86" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="22.86" y1="-7.62" x2="22.86" y2="0" width="0.254" layer="94"/>
@@ -799,6 +818,7 @@ Controller</text>
 <rectangle x1="0.3302" y1="-2.3749" x2="1.55448125" y2="-2.1971" layer="94"/>
 </symbol>
 <symbol name="RESISTOR_TRIMPOT">
+<description>Potentiometer</description>
 <pin name="1" x="0" y="-5.08" visible="off" length="point" direction="pas" rot="R90"/>
 <pin name="2" x="0" y="2.54" visible="off" length="point" direction="pas" rot="R270"/>
 <text x="-2.54" y="-1.016" size="1.27" layer="95" rot="R90" align="bottom-center">&gt;NAME</text>
@@ -881,6 +901,7 @@ Controller</text>
 </polygon>
 </symbol>
 <symbol name="CURRENT_SENSOR">
+<description>Block representation of the current sensor.</description>
 <wire x1="0" y1="0" x2="0" y2="-10.16" width="0.1524" layer="94"/>
 <wire x1="0" y1="-10.16" x2="20.32" y2="-10.16" width="0.1524" layer="94"/>
 <wire x1="20.32" y1="-10.16" x2="20.32" y2="0" width="0.1524" layer="94"/>
@@ -892,6 +913,7 @@ Sensor</text>
 <pin name="GND" x="-2.54" y="-7.62" length="short" direction="pwr"/>
 </symbol>
 <symbol name="BRAKE_SYSTEM_ENCODER">
+<description>Block representation of the brake system encoder.</description>
 <wire x1="0" y1="0" x2="0" y2="-10.16" width="0.1524" layer="94"/>
 <wire x1="0" y1="-10.16" x2="20.32" y2="-10.16" width="0.1524" layer="94"/>
 <wire x1="20.32" y1="-10.16" x2="20.32" y2="0" width="0.1524" layer="94"/>
@@ -902,6 +924,7 @@ Sensor</text>
 <pin name="GND" x="-2.54" y="-7.62" length="short" direction="pwr"/>
 </symbol>
 <symbol name="INLINE_GFCI">
+<description>Block representation of an AC ground fault current interrupter.</description>
 <wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
 <pin name="HOT_OUT" x="38.1" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="NEUTRAL_OUT" x="38.1" y="-7.62" length="short" direction="pwr" rot="R180"/>

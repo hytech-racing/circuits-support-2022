@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11215,6 +11215,7 @@ ISO224B: High-Grade
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/389/dm00366442-1799212.pdf"&gt;LDL1117S50R Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/308/NCP785A_D-1812704.pdf"&gt;NCP785AH120T1G&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ti.com/lit/ds/symlink/lms8117a.pdf?HQS"&gt;LMS8117A Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
@@ -11227,6 +11228,12 @@ ISO224B: High-Grade
 <connect gate="G$1" pin="OUT" pad="2 4"/>
 </connects>
 <technologies>
+<technology name="3.3V">
+<attribute name="DKPN" value="LMS8117AMP-3.3/NOPB"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="926-LMS8117AMP33NOPB"/>
+<attribute name="MPN" value="LMS8117AMP-3.3/NOPB"/>
+</technology>
 <technology name="5V">
 <attribute name="DKPN" value="497-17240-1-ND"/>
 <attribute name="MANUFACTURER" value="STMicroelectronics"/>

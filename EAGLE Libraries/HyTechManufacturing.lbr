@@ -24812,7 +24812,7 @@
 <rectangle x1="59.7789" y1="20.0787" x2="61.8363" y2="20.1549" layer="21"/>
 <rectangle x1="60.1599" y1="20.1549" x2="61.4553" y2="20.2311" layer="21"/>
 </package>
-<package name="FIDUCIAL_1MM">
+<package name="FIDUCIAL_1MM_SINGLE_LAYER">
 <description>1mm fiducial for &lt;a href="https://www.screamingcircuits.com/resource-center/tutorials/panelizing-pcb"&gt;Screaming Circuits&lt;/a&gt;</description>
 <circle x="0" y="0" radius="0.5" width="0" layer="1"/>
 <circle x="0" y="0" radius="1" width="0" layer="29"/>
@@ -24820,6 +24820,20 @@
 <circle x="0" y="0" radius="1.5" width="0" layer="41"/>
 <circle x="0" y="0" radius="1.5" width="0" layer="43"/>
 <circle x="0" y="0" radius="5.5" width="0.127" layer="51"/>
+</package>
+<package name="FIDUCIAL_1MM_BOTH_LAYER">
+<description>1mm fiducial for &lt;a href="https://www.screamingcircuits.com/resource-center/tutorials/panelizing-pcb"&gt;Screaming Circuits&lt;/a&gt;</description>
+<circle x="0" y="0" radius="0.5" width="0" layer="1"/>
+<circle x="0" y="0" radius="0.5" width="0" layer="16"/>
+<circle x="0" y="0" radius="1" width="0" layer="29"/>
+<circle x="0" y="0" radius="1" width="0" layer="30"/>
+<circle x="0" y="0" radius="1.5" width="0" layer="39"/>
+<circle x="0" y="0" radius="1.5" width="0" layer="40"/>
+<circle x="0" y="0" radius="1.5" width="0" layer="41"/>
+<circle x="0" y="0" radius="1.5" width="0" layer="40"/>
+<circle x="0" y="0" radius="1.5" width="0" layer="43"/>
+<circle x="0" y="0" radius="5.5" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="1.5" width="0" layer="42"/>
 </package>
 </packages>
 <symbols>

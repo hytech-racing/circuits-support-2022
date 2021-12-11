@@ -8303,6 +8303,7 @@ with up to 100mA of output current</description>
 &lt;li&gt;&lt;a href="https://www.mouser.com/ProductDetail/TDK/C3216X5R1V226M160AC?qs=%2Fha2pyFadujbcx9jh7lYl%2F4NeMoXFhdc8AqVWNq4wW6M2y7zl6GzBuhgtI0ngznN"&gt;TDK C Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/40/AutoMLCC-777028.pdf"&gt;AVX Automotive MLCC&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf"&gt; KEMET X7R Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-951274.pdf"&gt;Kyocera AVX&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
@@ -8333,11 +8334,11 @@ with up to 100mA of output current</description>
 <attribute name="VOLTAGE" value="100V"/>
 </technology>
 <technology name="10V_0.082UF">
-<attribute name="CAPACITANCE" value="0.082uF"/>
-<attribute name="DKPN" value=""/>
-<attribute name="MANUFACTURER" value="Walsin"/>
-<attribute name="MOPN" value="791-0201X823K100CT"/>
-<attribute name="MPN" value="0201X823K100CT"/>
+<attribute name="CAPACITANCE" value="0.082µF"/>
+<attribute name="DKPN" value="399-17417-2-ND"/>
+<attribute name="MANUFACTURER" value="KEMET"/>
+<attribute name="MOPN" value="80-C0603C823K8R"/>
+<attribute name="MPN" value="C0603C823K8RACTU"/>
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </technology>

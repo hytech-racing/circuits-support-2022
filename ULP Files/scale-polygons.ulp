@@ -1,0 +1,131 @@
+#usage "<b>Scale all polygons of a symbol.</b>"
+       "<author>Author: Luciano Schirmer (luciano@ageco.com.br)</author>"
+       "<p>Copyright (C) 2020, AGECO Automação Industrial"
+
+/******************************************************************************
+*                                                                             *
+*   Scale all polygons of a symbol.                                           *
+*                                                                             *
+*   Filename: scale-polygons.ulp                                              *
+*   Version: 1.0.0                                                            *
+*   Author: Luciano Schirmer <luciano@ageco.com.br>                           *
+*   Date: 2020-11-19                                                          *
+*   Company: AGECO Automação Industrial                                       *
+*                                                                             *                                                                                       *
+*   This ULP program must run in the context of a symbol drawing.             *
+*                                                                             *
+******************************************************************************/
+
+int scale_coord(int coord, real scale) {
+    return mm2u(u2mm(coord) * scale);
+}
+
+if (!symbol) {
+    dlgMessageBox(";Current editor window must contain a symbol drawing to "
+                  "run this program!");
+    exit(EXIT_FAILURE);
+}
+
+/* Ask user the scale factor. */
+real scale = 1.0;
+int result = dlgDialog("Scale polygons") {
+    dlgVBoxLayout {
+        dlgStretch(1);
+        dlgLabel("This ULP program scales all polygons of a symbol.\n"
+                 "A copy of the polygons is created right above the "
+                 "original.\n"
+                 "The new drawing is created in the current layer.");
+        dlgRealEdit(scale, 0.1, 100.0);
+    }
+    dlgHBoxLayout {
+        dlgStretch(1);
+        dlgPushButton("+OK") dlgAccept();
+        dlgPushButton("-Cancel") dlgReject();
+    }
+};
+
+if (!result) exit(EXIT_FAILURE);
+
+symbol(S) {
+
+    /* Calc the position of resulting drawing, right above original one. */
+    int delta_y = 0;
+    S.polygons(P) {
+        P.wires(W) {
+            if (W.y1 > delta_y) delta_y = W.y1;
+            if (W.y2 > delta_y) delta_y = W.y2;
+        }
+    }
+    delta_y += 1000000; // Internal units
+
+    /* Save original grid unit configuration. */
+    int original_grid_unit = GRID_UNIT_MM;
+    if (library) {
+        library(L) {
+            original_grid_unit = L.grid.unit;
+        }
+    }
+
+    /* Set grid unit to "mm" for best precision. */
+    string cmd = "Grid mm;\nSet Wire_Bend 2;\n";
+
+    string s;
+    S.polygons(P) {
+        cmd += "Polygon";
+        int first = 1;
+        int x1, y1, x2, y2;
+        P.wires(W) {
+            if (first) {
+                sprintf(s, " %f", u2mm(W.width));
+                cmd += s;
+                x1 = scale_coord(W.x1, scale);
+                y1 = scale_coord(W.y1, scale) + delta_y;
+                sprintf(s, " (%f %f)", u2mm(x1), u2mm(y1));
+                first = 0;
+            }
+            x2 = scale_coord(W.x2, scale);
+            y2 = scale_coord(W.y2, scale) + delta_y;
+            sprintf(s, " (%f %f)", u2mm(x2), u2mm(y2));
+            cmd += s;
+        }
+        sprintf(s, " (%f %f);\n", u2mm(x1), u2mm(y2));
+        cmd += s;
+    }
+
+    /* Reset to original grid unit seting. */
+    switch (original_grid_unit) {
+        case GRID_UNIT_MIC:
+            s = "Grid mic;\n";
+            break;
+        case GRID_UNIT_MIL:
+            s = "Grid mil;\n";
+            break;
+        case GRID_UNIT_INCH:
+            s = "Grid inch;\n";
+            break;
+        case GRID_UNIT_MM:
+        default:
+            s = "Grid mm;\n";
+    }
+    cmd += s;
+
+    /* Display resulting script and ask for confirmation before running. */
+    int result = dlgDialog("Result") {
+        dlgVBoxLayout {
+            dlgStretch(1);
+            dlgLabel("Please confirm before running the resulting script.");
+            dlgTextView(cmd);
+        }
+        dlgHBoxLayout {
+            dlgStretch(1);
+            dlgPushButton("+OK") dlgAccept();
+            dlgPushButton("-Cancel") dlgReject();
+        }
+    };
+
+    if (result) {
+        exit(cmd);
+    } else {
+        exit(EXIT_FAILURE);
+    }
+}

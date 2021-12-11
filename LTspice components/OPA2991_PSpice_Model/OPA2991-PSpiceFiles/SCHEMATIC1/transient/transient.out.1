@@ -1,0 +1,236 @@
+
+**** 06/16/21 13:38:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ C:\Users\a0232292\Desktop\Models\OPA2991\PSpice_nano\OPA2991-PSpiceFiles\SCHEMATIC1\transient.
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "transient.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/a0232292/Desktop/Models/Fixed_PSpice/Round1/name_reverted/OPA2991.LIB" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpiceTIPSpice_Install\17.4.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1m 0 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source OPA2991
+V_V1         VCC 0 20
+V_V2         0 VEE 20
+X_U1         VI VO VCC VEE VO OPA2991
+V_V3         VI 0  
++SIN 0 1 1k 0 0 0
+
+**** RESUMING transient.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file OPA2991.ind for library file OPA2991.LIB.
+
+INFO(ORPSIM-15422): Making new index file OPA2991.ind for library file OPA2991.LIB.
+
+Index has 16 entries from 1 file(s).
+
+**** 06/16/21 13:38:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ C:\Users\a0232292\Desktop\Models\OPA2991\PSpice_nano\OPA2991-PSpiceFiles\SCHEMATIC1\transient.
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.XIn11.DVNF X_U1.Xi_n.DVNF  X_U1.Xe_n.DVN   
+          IS  100.000000E-18  100.000000E-18  100.000000E-18 
+          KF  316.227800E-15  316.227800E-15    3.162278E-12 
+
+
+**** 06/16/21 13:38:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ C:\Users\a0232292\Desktop\Models\OPA2991\PSpice_nano\OPA2991-PSpiceFiles\SCHEMATIC1\transient.
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.R_NOISELESS 
+  T_Measured   27            
+   T_Current -273.15         
+           R    1            
+
+
+**** 06/16/21 13:38:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ C:\Users\a0232292\Desktop\Models\OPA2991\PSpice_nano\OPA2991-PSpiceFiles\SCHEMATIC1\transient.
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.BB_SW      X_U1.ESD_SW     X_U1.OL_SW      X_U1.OR_SW      
+         RON   50              50               1.000000E-03     .01         
+        ROFF    1.000000E+12    1.000000E+12    1.000000E+09    1.000000E+09 
+         VON     .7              .25             .9             1.000000E-03 
+        VOFF    0               0                .8             0            
+
+
+               X_U1.S_VSWITCH_1 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .5          
+        VOFF     .1          
+
+
+               X_U1.S_VSWITCH_2 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .5          
+        VOFF     .1          
+
+
+               X_U1.S_VSWITCH_3 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .5          
+        VOFF     .1          
+
+
+               X_U1.S_VSWITCH_4 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .5          
+        VOFF     .1          
+
+
+               X_U1.S_VSWITCH_5 
+         RON     .01         
+        ROFF    1.000000E+12 
+         VON     .01         
+        VOFF    0            
+
+
+               X_U1.S_VSWITCH_6 
+         RON     .01         
+        ROFF    1.000000E+12 
+         VON     .01         
+        VOFF    0            
+
+
+               X_U1.S_VSWITCH_7 
+         RON    1.000000E-03 
+        ROFF    1.000000E+12 
+         VON     .5          
+        VOFF     .1          
+
+
+               X_U1.S_VSWITCH_8 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .5          
+        VOFF     .1          
+
+
+               X_U1.S_VSWITCH_9 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .5          
+        VOFF     .1          
+
+
+ERROR(ORPSIM-16583): Detected an imported model containing transistors or diodes. For such models, PSpice for TI supports a minimum of one and maximum of three traces. Reduce the number of traces and simulate again.
+
+
+ABORTING SIMULATION
+**** 06/16/21 13:38:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ C:\Users\a0232292\Desktop\Models\OPA2991\PSpice_nano\OPA2991-PSpiceFiles\SCHEMATIC1\transient.
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =           4
+  External (NCNODS)                 =         103
+  Total (NUMNOD)                    =         103
+
+Total device count (NUMEL)          =         223
+  Capacitors (C)                    =          30
+  Diodes (D)                        =           6
+  VCVS (E)                          =          10
+  VCCS (G)                          =          38
+  CCVS (H)                          =           3
+  Current Sources (I)               =           9
+  Resistors (R)                     =         103
+  VSwitches (S)                     =           9
+  Voltage Sources (V)               =          15
+
+Number of subcircuits (X)           =          19
+
+Matrix statistics:
+  Matrix size (NSTOP)               =         131
+  Initial no. elements (NTTAR)      =         526
+  No. elements w/ fillin (NTTBR)    =         526
+  No. fillins (IFILL)               =           0
+  No. overflows (NTTOV)             =           0
+  No. LU operations (IOPS)          =           0
+  Percent sparsity (PERSPA)         =      96.935
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =           1
+
+Runtime statistics:                       Seconds      Iterations
+  Matrix load                       =        0.00
+  Matrix solution                   =        0.00               1
+  Readin                            =        2.75
+  General setup                     =         .02
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =         .14
+  Total job time (using Solver 1)   =        2.77
+

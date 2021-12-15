@@ -10766,8 +10766,8 @@ Leakage Inductance: 0.50 uH max
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MPN" value="2068320823"/>
 </technology>
 </technologies>
 </device>
@@ -11193,7 +11193,10 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MPN" value="2068320423"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -12486,8 +12489,8 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MPN" value="2165713006"/>
 </technology>
 </technologies>
 </device>
@@ -12501,8 +12504,8 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MPN" value="2165713007"/>
 </technology>
 </technologies>
 </device>

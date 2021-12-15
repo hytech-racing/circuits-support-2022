@@ -423,10 +423,10 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="DKPN" value="1102-DCM4623TD2J13D0T70-ND"/>
+<attribute name="MANUFACTURER" value="Vicor"/>
+<attribute name="MOPN" value="492-DCM4623D2J13D0T7"/>
+<attribute name="MPN" value="DCM4623TD2J13D0T70"/>
 </technology>
 </technologies>
 </device>

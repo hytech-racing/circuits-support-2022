@@ -248,21 +248,6 @@
 <rectangle x1="-2.794" y1="-3.556" x2="2.794" y2="3.556" layer="39"/>
 <circle x="-3.175" y="-2.54" radius="0.254" width="0" layer="21"/>
 </package>
-<package name="0603-FUSE">
-<description>0603 Fuse (Borrowed Cap datasheets)
-&lt;br&gt;
-&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X5R_4V-to-50V_26.pdf"&gt;Size&lt;/a&gt;</description>
-<smd name="1" x="-0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
-<smd name="2" x="0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
-<text x="0" y="0.75" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
-<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
-<rectangle x1="-1.35" y1="-0.75" x2="1.35" y2="0.75" layer="39"/>
-</package>
 <package name="OKL-T/1-W12">
 <description>&lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
 <wire x1="-6.35" y1="6.35" x2="-6.35" y2="-6.35" width="0.127" layer="21"/>
@@ -283,19 +268,6 @@
 <smd name="12" x="2.286" y="-4.572" dx="1.27" dy="1.27" layer="1"/>
 <rectangle x1="-6.604" y1="-6.604" x2="6.604" y2="6.604" layer="39"/>
 <text x="-6.604" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
-</package>
-<package name="0603-INDUCTOR">
-<description>&lt;br&gt;
-&lt;a href="https://search.murata.co.jp/Ceramy/image/img/P02/JELF243B-9127.pdf"&gt;LQM18DH□□□□70□ Datasheet&lt;/a&gt;
-&lt;br&gt;</description>
-<smd name="1" x="-0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
-<smd name="2" x="0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
-<text x="0" y="0.75" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
-<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
-<rectangle x1="-1.35" y1="-0.75" x2="1.35" y2="0.75" layer="39"/>
 </package>
 <package name="CPT-3011C-120">
 <description>&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt; CPT-3011C-120 Datasheet &lt;/a&gt;</description>
@@ -389,17 +361,6 @@
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-31.242" size="1.27" layer="96" align="top-left">&gt;COLOR</text>
 </symbol>
-<symbol name="FUSE">
-<wire x1="-1.27" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94" curve="-180"/>
-<wire x1="-1.27" y1="0" x2="0.635" y2="0" width="0.1524" layer="94" curve="-180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<text x="-1.27" y="1.27" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="-1.27" y="-1.27" size="1.27" layer="96" align="top-right">&gt;CURRENT</text>
-<wire x1="-5.08" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
-<text x="-1.27" y="-1.27" size="1.27" layer="96" align="top-left">&gt;VOLTAGE</text>
-</symbol>
 <symbol name="CONVERTER_DC/DC">
 <description>&lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
@@ -413,21 +374,6 @@
 <pin name="EN" x="-2.54" y="-5.08" length="short"/>
 <pin name="OUT" x="20.32" y="-2.54" length="short" direction="out" rot="R180"/>
 <pin name="TRIM" x="20.32" y="-5.08" length="short" rot="R180"/>
-</symbol>
-<symbol name="INDUCTOR">
-<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
-<pin name="P$1" x="-5.08" y="0" visible="off" length="point" direction="pas"/>
-<pin name="P$2" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-<text x="-1.27" y="1.27" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="-1.27" y="-0.635" size="1.27" layer="96" align="top-center">&gt;INDUCTANCE</text>
-<wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
-<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
-<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
-<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
-<wire x1="0" y1="0" x2="1.27" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
 </symbol>
 <symbol name="BUZZER_3_PIN">
 <description>&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt; CPT-3011C-120 Datasheet &lt;/a&gt;</description>
@@ -542,32 +488,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="FUSE0603" prefix="F">
-<description>0603 Surface Mount Fuse
-&lt;br&gt;&lt;a href="https://datasheets.avx.com/AccuGuard2.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0603-FUSE">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CURRENT" value="1.5A" constant="no"/>
-<attribute name="DKPN" value="478-2864-2-ND" constant="no"/>
-<attribute name="I2T" value="0.03" constant="no"/>
-<attribute name="MOPN" value="581-F0603E1R50FSTR " constant="no"/>
-<attribute name="MPN" value="F0603E1R50FSTR" constant="no"/>
-<attribute name="VOLTAGE" value="32V" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CONVERTER_DC/DC_" prefix="U">
+<deviceset name="VOLTAGE_REGULATOR_POL_?_*" prefix="U">
 <description>&lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="CONVERTER_DC/DC" x="0" y="0"/>
@@ -589,33 +510,6 @@
 <attribute name="MPN" value="OKL-T/1-W12N-C " constant="no"/>
 <attribute name="VIN" value="12V" constant="no"/>
 <attribute name="VOUT" value="5V" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="INDUCTOR_POWER_" prefix="L">
-<description>&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://search.murata.co.jp/Ceramy/image/img/P02/JELF243B-9127.pdf"&gt;LQM18DH□□□□70□ Datasheet&lt;/a&gt;
-&lt;br&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0603-INDUCTOR">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-</connects>
-<technologies>
-<technology name="10U">
-<attribute name="DKPN" value="490-LQM18DH100M70LTR-ND" constant="no"/>
-<attribute name="INDUCTANCE" value="10µH" constant="no"/>
-<attribute name="MANUFACTURER" value="Murata Electronics" constant="no"/>
-<attribute name="MOPN" value="81-LQM18DH100M70L " constant="no"/>
-<attribute name="MPN" value="LQM18DH100M70L" constant="no"/>
-<attribute name="TOLERANCE" value="20%" constant="no"/>
 </technology>
 </technologies>
 </device>

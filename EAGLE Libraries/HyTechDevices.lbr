@@ -4798,6 +4798,53 @@ A variation of MSOP16 with 4 pins removed.
 <circle x="-7.366" y="-3.175" radius="0.635" width="0" layer="21"/>
 <text x="-6.604" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="0603-FUSE">
+<description>0603 Fuse Footprint
+&lt;br&gt;
+&lt;a href="https://datasheets.avx.com/AccuGuard2.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
+<smd name="1" x="-0.85" y="0" dx="0.9" dy="0.8" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="0.9" dy="0.8" layer="1"/>
+<text x="0" y="0.635" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
+<rectangle x1="-1.45" y1="-0.75" x2="1.45" y2="0.75" layer="39"/>
+</package>
+<package name="0603-INDUCTOR">
+<description>0603 Inductor Footprint
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
+<smd name="1" x="-0.85" y="0" dx="0.9" dy="0.8" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="0.9" dy="0.8" layer="1"/>
+<text x="0" y="0.635" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
+<rectangle x1="-1.45" y1="-0.75" x2="1.45" y2="0.75" layer="39"/>
+</package>
+<package name="DSM7T">
+<wire x1="-6.25" y1="9.5" x2="-6.25" y2="-9.5" width="0.127" layer="21"/>
+<wire x1="6.25" y1="9.5" x2="6.25" y2="-9.5" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="9.5" x2="6.25" y2="9.5" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-9.5" x2="6.25" y2="-9.5" width="0.127" layer="21"/>
+<smd name="1" x="-5.08" y="-9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="2" x="-2.54" y="-9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="3" x="0" y="-9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="4" x="2.54" y="-9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="5" x="5.08" y="-9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="10" x="-5.08" y="9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="9" x="-2.54" y="9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="8" x="0" y="9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="7" x="2.54" y="9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="6" x="5.08" y="9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<text x="-6.858" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<circle x="-7.493" y="-9.017" radius="0.635" width="0" layer="21"/>
+<rectangle x1="-6.858" y1="-11.176" x2="6.858" y2="11.176" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -8748,6 +8795,7 @@ Leakage Inductance: 0.50 uH max
 <deviceset name="FUSE_?_*" prefix="F">
 <description>Fuse
 &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://datasheets.avx.com/AccuGuard2.pdf"&gt;0603 Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;0885 Series&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
@@ -8783,6 +8831,22 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MOPN" value="576-088501.6DR"/>
 <attribute name="MPN" value="088501.6DR"/>
 <attribute name="VOLTAGE" value="500V"/>
+</technology>
+</technologies>
+</device>
+<device name="0603" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="1.5A" constant="no"/>
+<attribute name="DKPN" value="478-2864-2-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="KYOCERA AVX" constant="no"/>
+<attribute name="MOPN" value="581-F0603E1R50FSTR " constant="no"/>
+<attribute name="MPN" value="F0603E1R50FSTR" constant="no"/>
+<attribute name="VOLTAGE" value="32V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -10985,51 +11049,6 @@ with up to 100mA of output current
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED_7_SEGMENT_" prefix="D">
-<description>Low-Profile 7-Segment Display
-&lt;br&gt;
-
-&lt;ul&gt;
-
-&lt;li&gt;&lt;a href="https://eu.mouser.com/datasheet/2/216/ACSA56-51CGKWA-245492.pdf"&gt;Green&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href="https://eu.mouser.com/datasheet/2/216/ACSA56-51SYKWA-245353.pdf"&gt;Yellow&lt;/a&gt;&lt;/li&gt;
-
-&lt;\ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="DIODE_LED_7_SEGMENT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ACSA56-51">
-<connects>
-<connect gate="G$1" pin="A" pad="7"/>
-<connect gate="G$1" pin="B" pad="6"/>
-<connect gate="G$1" pin="C" pad="4"/>
-<connect gate="G$1" pin="D" pad="2"/>
-<connect gate="G$1" pin="E" pad="1"/>
-<connect gate="G$1" pin="F" pad="9"/>
-<connect gate="G$1" pin="G" pad="5 10"/>
-<connect gate="G$1" pin="VDD" pad="3 8"/>
-</connects>
-<technologies>
-<technology name="GREEN">
-<attribute name="COLOR" value="Green" constant="no"/>
-<attribute name="DKPN" value="754-1621-2-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Kingbright" constant="no"/>
-<attribute name="MOPN" value="604-ACSA56-51CGKWA " constant="no"/>
-<attribute name="MPN" value="ACSA56-51CGKWA" constant="no"/>
-</technology>
-<technology name="YELLOW">
-<attribute name="COLOR" value="Yellow" constant="no"/>
-<attribute name="DKPN" value="754-1624-2-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Kingbright" constant="no"/>
-<attribute name="MOPN" value="604-ACSA56-51SYKWA " constant="no"/>
-<attribute name="MPN" value="ACSA56-51SYKWA" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LTC6811-2" prefix="U">
 <description>LTC6811-2 12 Cell Stackable Battery Monitor
 &lt;br&gt;
@@ -11758,6 +11777,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <deviceset name="INDUCTOR_?_*" prefix="L">
 <description>Inductor
 &lt;ul&gt;
+&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/281/LQM18DH100M70_23-1948371.pdf"&gt;0603 Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.we-online.com/catalog/datasheet/74451133.pdf"&gt; 74451133 Inductor&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/54/SRU1048-1391431.pdf"&gt;SRU1408 Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
@@ -11800,6 +11820,25 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="MOPN" value="710-74451133"/>
 <attribute name="MPN" value="74451133"/>
 <attribute name="TOLERANCE" value="20%"/>
+</technology>
+</technologies>
+</device>
+<device name="" package="0603-INDUCTOR">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="10UH">
+<attribute name="CURRENT_RATED" value="300 mA" constant="no"/>
+<attribute name="CURRENT_SATURATION" value="100 mA	" constant="no"/>
+<attribute name="DCR" value="1.37Ω" constant="no"/>
+<attribute name="DKPN" value="490-LQM18DH100M70LTR-ND" constant="no"/>
+<attribute name="INDUCTANCE" value="10µH" constant="no"/>
+<attribute name="MANUFACTURER" value="Murata Electronics" constant="no"/>
+<attribute name="MOPN" value="81-LQM18DH100M70L " constant="no"/>
+<attribute name="MPN" value="LQM18DH100M70L" constant="no"/>
+<attribute name="TOLERANCE" value="20%" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -11936,6 +11975,83 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <technologies>
 <technology name="">
 <attribute name="TEENSY" value="3.2"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED_7_SEGMENT_" prefix="D">
+<description>Low-Profile 7-Segment Display
+&lt;br&gt;
+
+&lt;ul&gt;
+
+&lt;li&gt;&lt;a href="https://eu.mouser.com/datasheet/2/216/ACSA56-51CGKWA-245492.pdf"&gt;ACSA56-51 Green&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href="https://eu.mouser.com/datasheet/2/216/ACSA56-51SYKWA-245353.pdf"&gt;ACSA56-51 Yellow&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href="https://vcclite.com/wp-content/uploads/wpallimport/files/files/DSM7TA56106T.pdf"&gt;DSM7T  Blue&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href="https://vcclite.com/wp-content/uploads/wpallimport/files/files/DSM7TA56105T.pdf"&gt;DSM7T  Green&lt;/a&gt;&lt;/li&gt;
+
+&lt;\ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="DIODE_LED_7_SEGMENT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ACSA56-51">
+<connects>
+<connect gate="G$1" pin="A" pad="7"/>
+<connect gate="G$1" pin="B" pad="6"/>
+<connect gate="G$1" pin="C" pad="4"/>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
+<connect gate="G$1" pin="F" pad="9"/>
+<connect gate="G$1" pin="G" pad="5 10"/>
+<connect gate="G$1" pin="VDD" pad="3 8"/>
+</connects>
+<technologies>
+<technology name="GREEN">
+<attribute name="COLOR" value="Green" constant="no"/>
+<attribute name="DKPN" value="754-1621-2-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Kingbright" constant="no"/>
+<attribute name="MOPN" value="604-ACSA56-51CGKWA " constant="no"/>
+<attribute name="MPN" value="ACSA56-51CGKWA" constant="no"/>
+</technology>
+<technology name="YELLOW">
+<attribute name="COLOR" value="Yellow" constant="no"/>
+<attribute name="DKPN" value="754-1624-2-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Kingbright" constant="no"/>
+<attribute name="MOPN" value="604-ACSA56-51SYKWA " constant="no"/>
+<attribute name="MPN" value="ACSA56-51SYKWA" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DSM7TA" package="DSM7T">
+<connects>
+<connect gate="G$1" pin="A" pad="7"/>
+<connect gate="G$1" pin="B" pad="6"/>
+<connect gate="G$1" pin="C" pad="4"/>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
+<connect gate="G$1" pin="F" pad="9"/>
+<connect gate="G$1" pin="G" pad="10"/>
+<connect gate="G$1" pin="VDD" pad="3 8"/>
+</connects>
+<technologies>
+<technology name="BLUE_">
+<attribute name="COLOR" value="Blue" constant="no"/>
+<attribute name="DKPN" value="DSM7TA56106TTR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Visual Communications Company" constant="no"/>
+<attribute name="MOPN" value="593-DSM7TA56106T " constant="no"/>
+<attribute name="MPN" value="DSM7TA56106T" constant="no"/>
+</technology>
+<technology name="GREEN_">
+<attribute name="COLOR" value="Green" constant="no"/>
+<attribute name="DKPN" value="DSM7TA56105TTR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Visual Communications Company" constant="no"/>
+<attribute name="MOPN" value="593-DSM7TA56105T " constant="no"/>
+<attribute name="MPN" value="DSM7TA56105T" constant="no"/>
 </technology>
 </technologies>
 </device>

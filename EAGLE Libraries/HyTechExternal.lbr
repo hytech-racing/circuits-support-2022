@@ -327,6 +327,32 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="VEHICLE_BUTTON_*" prefix="S">
+<description>Otto Controls normally open pushbutton &lt;a href "https://www.otto-controls.com/-/media/products/electromechanical-switches/pushbuttonswitches/p9---dome-sealed-momentary-action/P9-Sealed-Dome-Pushbuttons-Catalog-Pages.ashx"&gt;Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="COLOR" value="" constant="no"/>
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="P9-211121">
+<attribute name="COLOR" value="" constant="no"/>
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

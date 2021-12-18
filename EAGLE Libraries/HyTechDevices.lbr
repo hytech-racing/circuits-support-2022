@@ -11211,7 +11211,7 @@ ISO224B: High-Grade
 </connects>
 <technologies>
 <technology name="3.3V">
-<attribute name="DKPN" value="LMS8117AMP-3.3/NOPB"/>
+<attribute name="DKPN" value="LMS8117AMP-3.3/NOPBCT-ND"/>
 <attribute name="MANUFACTURER" value="Texas Instruments"/>
 <attribute name="MOPN" value="926-LMS8117AMP33NOPB"/>
 <attribute name="MPN" value="LMS8117AMP-3.3/NOPB"/>

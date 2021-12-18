@@ -8253,6 +8253,7 @@ with up to 100mA of output current</description>
 &lt;li&gt;&lt;a href="https://www.mouser.com/ProductDetail/TDK/C3216X5R1V226M160AC?qs=%2Fha2pyFadujbcx9jh7lYl%2F4NeMoXFhdc8AqVWNq4wW6M2y7zl6GzBuhgtI0ngznN"&gt;TDK C Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/40/AutoMLCC-777028.pdf"&gt;AVX Automotive MLCC&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf"&gt; KEMET X7R Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-951274.pdf"&gt;Kyocera AVX&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
@@ -8281,6 +8282,15 @@ with up to 100mA of output current</description>
 <attribute name="MPN" value="CC0603KRX7R0BB103"/>
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="100V"/>
+</technology>
+<technology name="10V_0.082UF">
+<attribute name="CAPACITANCE" value="0.082µF"/>
+<attribute name="DKPN" value="399-17417-2-ND"/>
+<attribute name="MANUFACTURER" value="KEMET"/>
+<attribute name="MOPN" value="80-C0603C823K8R"/>
+<attribute name="MPN" value="C0603C823K8RACTU"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="10V"/>
 </technology>
 <technology name="10V_0.1UF">
 <attribute name="CAPACITANCE" value="0.1µF"/>
@@ -8369,6 +8379,15 @@ with up to 100mA of output current</description>
 <attribute name="MANUFACTURER" value="Würth Elektronik"/>
 <attribute name="MOPN" value="710-885012006013"/>
 <attribute name="MPN" value="885012006013"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
+<technology name="10V_82PF">
+<attribute name="CAPACITANCE" value="82pF"/>
+<attribute name="DKPN" value="478-1025-1-ND"/>
+<attribute name="MANUFACTURER" value="Kyocera AVX"/>
+<attribute name="MOPN" value="581-0201ZA820JAT2A"/>
+<attribute name="MPN" value="0201ZA820JAT2A"/>
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </technology>
@@ -9020,6 +9039,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="49.8V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="120">
+<attribute name="DKPN" value="P120DBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB121V"/>
+<attribute name="MPN" value="ERA-3AEB121V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="120"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="3.46V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="12K">
 <attribute name="DKPN" value="311-12.0KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -9128,6 +9158,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="RESISTANCE" value="2.74k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="23.41V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="210">
+<attribute name="DKPN" value="P19892CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B2100V"/>
+<attribute name="MPN" value="ERJ-PB3B2100V"/>
+<attribute name="POWER" value="0.2W"/>
+<attribute name="RESISTANCE" value="210"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="6.48V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="215K">
@@ -11194,6 +11235,7 @@ ISO224B: High-Grade
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/389/dm00366442-1799212.pdf"&gt;LDL1117S50R Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/308/NCP785A_D-1812704.pdf"&gt;NCP785AH120T1G&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ti.com/lit/ds/symlink/lms8117a.pdf?HQS"&gt;LMS8117A Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
@@ -11206,6 +11248,12 @@ ISO224B: High-Grade
 <connect gate="G$1" pin="OUT" pad="2 4"/>
 </connects>
 <technologies>
+<technology name="3.3V">
+<attribute name="DKPN" value="LMS8117AMP-3.3/NOPBCT-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="926-LMS8117AMP33NOPB"/>
+<attribute name="MPN" value="LMS8117AMP-3.3/NOPB"/>
+</technology>
 <technology name="5V">
 <attribute name="DKPN" value="497-17240-1-ND"/>
 <attribute name="MANUFACTURER" value="STMicroelectronics"/>

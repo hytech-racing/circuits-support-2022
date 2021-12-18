@@ -4777,9 +4777,11 @@ A variation of MSOP16 with 4 pins removed.
 <text x="-2.286" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="2X05_SMD">
-<description>&lt;p&gt;AVR ISP 10-pin Header&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://s3.amazonaws.com/catalogspreads-pdf/PAGE112-113%20.100%20MALE%20HDR.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://drawings-pdf.s3.amazonaws.com/C10059.pdf"&gt;Footprint&lt;/a&gt;&lt;/p&gt;</description>
+<description>10-pin Header SMD Header
+&lt;br&gt;
+&lt;a href="https://s3.amazonaws.com/catalogspreads-pdf/PAGE112-113%20.100%20MALE%20HDR.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://drawings-pdf.s3.amazonaws.com/C10059.pdf"&gt;Footprint&lt;/a&gt;</description>
 <smd name="6" x="0" y="3.175" dx="5.08" dy="1.27" layer="1" rot="R90"/>
 <smd name="5" x="0" y="-3.175" dx="5.08" dy="1.27" layer="1" rot="R90"/>
 <smd name="8" x="2.54" y="3.175" dx="5.08" dy="1.27" layer="1" rot="R90"/>
@@ -8809,6 +8811,19 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MOPN" value=""/>
 <attribute name="MPN" value="GBC05DABN-M30"/>
 </technology>
+</technologies>
+</device>
+<device name="2X05_SMD" package="2X05_SMD">
+<connects>
+<connect gate="G$1" pin="+5V" pad="2"/>
+<connect gate="G$1" pin="CIPO" pad="9"/>
+<connect gate="G$1" pin="CLK" pad="7"/>
+<connect gate="G$1" pin="COPI" pad="1"/>
+<connect gate="G$1" pin="GND" pad="4 6 8 10"/>
+<connect gate="G$1" pin="RESET" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

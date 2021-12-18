@@ -577,6 +577,17 @@
 <attribute name="VOLTAGE_CONTINUOUS" value="447V"/>
 <attribute name="VOLTAGE_MAX" value="750V"/>
 </technology>
+<technology name="750">
+<attribute name="DKPN" value="B20J750E-ND"/>
+<attribute name="MANUFACTURER" value="Ohmite"/>
+<attribute name="MOPN" value="588-B20J750E"/>
+<attribute name="MPN" value="B20J750E"/>
+<attribute name="POWER" value="20W"/>
+<attribute name="RESISTANCE" value="750"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="122V"/>
+<attribute name="VOLTAGE_MAX" value="750V"/>
+</technology>
 </technologies>
 </device>
 </devices>

@@ -9598,7 +9598,7 @@ Leakage Inductance: 0.50 uH max
 <technologies>
 <technology name="BLACK">
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MPN" value="105429-1304 "/>
+<attribute name="MPN" value="105429-1304"/>
 </technology>
 </technologies>
 </device>
@@ -10289,7 +10289,7 @@ Leakage Inductance: 0.50 uH max
 <technologies>
 <technology name="BLACK">
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MPN" value="105310-1306 "/>
+<attribute name="MPN" value="105310-1306"/>
 </technology>
 </technologies>
 </device>
@@ -10681,7 +10681,7 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <technologies>
 <technology name="">
 <attribute name="MANUFACTURER" value="Souriau"/>
-<attribute name="MPN" value="8STA21204PN "/>
+<attribute name="MPN" value="8STA21204PN"/>
 </technology>
 </technologies>
 </device>
@@ -10916,7 +10916,7 @@ with up to 100mA of output current
 <technologies>
 <technology name="BLACK">
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MPN" value="105429-1304 "/>
+<attribute name="MPN" value="105429-1304"/>
 </technology>
 </technologies>
 </device>
@@ -10950,18 +10950,18 @@ with up to 100mA of output current
 </connects>
 <technologies>
 <technology name="GREEN">
-<attribute name="COLOR" value="Green" constant="no"/>
-<attribute name="DKPN" value="754-1621-2-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Kingbright" constant="no"/>
-<attribute name="MOPN" value="604-ACSA56-51CGKWA " constant="no"/>
-<attribute name="MPN" value="ACSA56-51CGKWA" constant="no"/>
+<attribute name="COLOR" value="Green"/>
+<attribute name="DKPN" value="754-1621-2-ND"/>
+<attribute name="MANUFACTURER" value="Kingbright"/>
+<attribute name="MOPN" value="604-ACSA56-51CGKWA"/>
+<attribute name="MPN" value="ACSA56-51CGKWA"/>
 </technology>
 <technology name="YELLOW">
-<attribute name="COLOR" value="Yellow" constant="no"/>
-<attribute name="DKPN" value="754-1624-2-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Kingbright" constant="no"/>
-<attribute name="MOPN" value="604-ACSA56-51SYKWA " constant="no"/>
-<attribute name="MPN" value="ACSA56-51SYKWA" constant="no"/>
+<attribute name="COLOR" value="Yellow"/>
+<attribute name="DKPN" value="754-1624-2-ND"/>
+<attribute name="MANUFACTURER" value="Kingbright"/>
+<attribute name="MOPN" value="604-ACSA56-51SYKWA"/>
+<attribute name="MPN" value="ACSA56-51SYKWA"/>
 </technology>
 </technologies>
 </device>
@@ -11255,16 +11255,16 @@ ISO224B: High-Grade
 </connects>
 <technologies>
 <technology name="DCK3">
-<attribute name="DKPN" value="296-SN74LVC1G04DCK3TR-ND " constant="no"/>
-<attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
-<attribute name="MOPN" value="595-SN74LVC1G04DCK3" constant="no"/>
-<attribute name="MPN" value="SN74LVC1G04DCK3" constant="no"/>
+<attribute name="DKPN" value="296-SN74LVC1G04DCK3TR-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-SN74LVC1G04DCK3"/>
+<attribute name="MPN" value="SN74LVC1G04DCK3"/>
 </technology>
 <technology name="DCKR">
-<attribute name="DKPN" value="  2156-SN74LVC1G04DCKR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
-<attribute name="MOPN" value="595-SN74LVC1G04DCKR" constant="no"/>
-<attribute name="MPN" value="SN74LVC1G04DCKR" constant="no"/>
+<attribute name="DKPN" value="  2156-SN74LVC1G04DCKR-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-SN74LVC1G04DCKR"/>
+<attribute name="MPN" value="SN74LVC1G04DCKR"/>
 </technology>
 </technologies>
 </device>
@@ -11289,16 +11289,16 @@ ISO224B: High-Grade
 </connects>
 <technologies>
 <technology name="DCK3">
-<attribute name="DKPN" value="296-SN74LVC1G08DCK3TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="  Texas Instruments" constant="no"/>
-<attribute name="MOPN" value="595-SN74LVC1G08DCK3" constant="no"/>
-<attribute name="MPN" value="SN74LVC1G08DCK3" constant="no"/>
+<attribute name="DKPN" value="296-SN74LVC1G08DCK3TR-ND"/>
+<attribute name="MANUFACTURER" value="  Texas Instruments"/>
+<attribute name="MOPN" value="595-SN74LVC1G08DCK3"/>
+<attribute name="MPN" value="SN74LVC1G08DCK3"/>
 </technology>
 <technology name="DCKR">
-<attribute name="DKPN" value="296-11602-2-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="  Texas Instruments" constant="no"/>
-<attribute name="MOPN" value="595-SN74LVC1G08DCKR" constant="no"/>
-<attribute name="MPN" value="SN74LVC1G08DCKR" constant="no"/>
+<attribute name="DKPN" value="296-11602-2-ND"/>
+<attribute name="MANUFACTURER" value="  Texas Instruments"/>
+<attribute name="MOPN" value="595-SN74LVC1G08DCKR"/>
+<attribute name="MPN" value="SN74LVC1G08DCKR"/>
 </technology>
 </technologies>
 </device>
@@ -11686,7 +11686,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="DKPN" value="LR8N8-GTR-ND"/>
 <attribute name="MANUFACTURER" value="Microchip Technology"/>
 <attribute name="MOPN" value="689-LR8N8-G"/>
-<attribute name="MPN" value="LR8N8-G" constant="no"/>
+<attribute name="MPN" value="LR8N8-G"/>
 </technology>
 </technologies>
 </device>
@@ -11793,7 +11793,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="DKPN" value="LTC3639EMSE#TRPBFTR-ND"/>
 <attribute name="MANUFACTURER" value="Analog Devices Inc."/>
 <attribute name="MOPN" value="584-LTC3639EMSETRPBF"/>
-<attribute name="MPN" value="LTC3639EMSE#TRPBF "/>
+<attribute name="MPN" value="LTC3639EMSE#TRPBF"/>
 </technology>
 </technologies>
 </device>
@@ -11820,13 +11820,13 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="DKPN" value="296-TMCS1100A4QDR"/>
 <attribute name="MANUFACTURER" value="Texas Instruments"/>
 <attribute name="MOPN" value="595-TMCS1100A4QDR"/>
-<attribute name="MPN" value="TMCS1100A4" constant="no"/>
+<attribute name="MPN" value="TMCS1100A4"/>
 </technology>
 <technology name="4QDT">
 <attribute name="DKPN" value=""/>
 <attribute name="MANUFACTURER" value="Texas Instruments"/>
 <attribute name="MOPN" value="595-TMCS1100A4QDT"/>
-<attribute name="MPN" value="TMCS1100A4" constant="no"/>
+<attribute name="MPN" value="TMCS1100A4"/>
 </technology>
 </technologies>
 </device>

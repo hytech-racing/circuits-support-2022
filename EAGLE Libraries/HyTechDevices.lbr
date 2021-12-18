@@ -8949,8 +8949,8 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="CLK" pad="3"/>
 <connect gate="G$1" pin="GND" pad="6"/>
 <connect gate="G$1" pin="RESET" pad="5"/>
-<connect gate="G$1" pin="SDI" pad="1"/>
-<connect gate="G$1" pin="SDO" pad="4"/>
+<connect gate="G$1" pin="SDI" pad="4"/>
+<connect gate="G$1" pin="SDO" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -8962,14 +8962,6 @@ Leakage Inductance: 0.50 uH max
 </technologies>
 </device>
 <device name="2X05_SMD" package="2X05_SMD">
-<connects>
-<connect gate="G$1" pin="+5V" pad="2"/>
-<connect gate="G$1" pin="CLK" pad="7"/>
-<connect gate="G$1" pin="GND" pad="4 6 8 10"/>
-<connect gate="G$1" pin="RESET" pad="5"/>
-<connect gate="G$1" pin="SDI" pad="9"/>
-<connect gate="G$1" pin="SDO" pad="1"/>
-</connects>
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="S2351E-05-ND" constant="no"/>

@@ -8993,6 +8993,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="34.64V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="14.3K">
+<attribute name="DKPN" value="P20413CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3D1432V"/>
+<attribute name="MPN" value="ERJ-PB3D1432V"/>
+<attribute name="POWER" value="0.2W"/>
+<attribute name="RESISTANCE" value="14.3k"/>
+<attribute name="TOLERANCE" value="0.5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="200V"/>
+</technology>
 <technology name="154K">
 <attribute name="DKPN" value="P154KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -9047,6 +9058,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="4.24V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="19.1K">
+<attribute name="DKPN" value="P19.1KHCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-3EKF1912V"/>
+<attribute name="MPN" value="ERJ-3EKF1912V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="19.1k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="100V"/>
 </technology>
 <technology name="1K">
 <attribute name="DKPN" value="311-1.00KHRCT-ND"/>
@@ -9180,6 +9202,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="18.17V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="30.9K">
+<attribute name="DKPN" value="P30.9KDBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB3092V"/>
+<attribute name="MPN" value="ERA-3AEB3092V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="30.9k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
 <technology name="30K">
 <attribute name="DKPN" value="P30KBDCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -9190,6 +9223,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="54.77V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="31.6K">
+<attribute name="DKPN" value="P31.6KDBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB3162V"/>
+<attribute name="MPN" value="ERA-3AEB3162V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="31.6k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="330K">
 <attribute name="DKPN" value="P330KDBCT-ND"/>
@@ -9355,6 +9399,28 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="931K">
+<attribute name="DKPN" value="P931KHCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-3EKF9313V"/>
+<attribute name="MPN" value="ERJ-3EKF9313V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="931k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="953K">
+<attribute name="DKPN" value="P953KHCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-3EKF9533V"/>
+<attribute name="MPN" value="ERJ-3EKF9533V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="953k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="DNP">
 <attribute name="DKPN" value=""/>

@@ -12141,7 +12141,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="BUZZER_3_PIN_" prefix="LS">
+<deviceset name="BUZZER_3_PIN_">
 <description>&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt; CPT-3011C-120 Datasheet &lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="BUZZER_3_PIN" x="0" y="0"/>

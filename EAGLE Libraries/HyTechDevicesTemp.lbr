@@ -411,8 +411,10 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="VOLTAGE_REGULATOR_POL_?_*" prefix="U">
-<description>&lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
+<deviceset name="VOLTAGE_REGULATOR_POL_?_*" prefix="A">
+<description>Point of Load Voltage Regulator Modules 
+&lt;br&gt;
+&lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="CONVERTER_DC/DC" x="0" y="0"/>
 </gates>
@@ -438,8 +440,10 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="BUZZER_3_PIN_">
-<description>&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt; CPT-3011C-120 Datasheet &lt;/a&gt;</description>
+<deviceset name="BUZZER_3_PIN_" prefix="LS">
+<description>3 Pin Buzzer
+&lt;BR&gt;
+&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt; CPT-3011C-120 Datasheet &lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="BUZZER_3_PIN" x="0" y="0"/>
 </gates>
@@ -465,7 +469,7 @@
 </devices>
 </deviceset>
 <deviceset name="RE46C100" prefix="U">
-<description>RE46C100 Piezoelectric Horn Driver Circuit
+<description>RE46C100 Piezoelectric Horn Driver IC
 &lt;br&gt;
 &lt;a href="https://ww1.microchip.com/downloads/en/DeviceDoc/20002166B.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
@@ -511,7 +515,7 @@
 <gate name="G$1" symbol="DIODE_LED_7_SEGMENT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="ACSA56-51">
+<device name="ACSA56-51" package="ACSA56-51">
 <connects>
 <connect gate="G$1" pin="A" pad="7"/>
 <connect gate="G$1" pin="B" pad="6"/>
@@ -523,14 +527,14 @@
 <connect gate="G$1" pin="VDD" pad="3 8"/>
 </connects>
 <technologies>
-<technology name="GREEN">
-<attribute name="COLOR" value="Green" constant="no"/>
-<attribute name="DKPN" value="754-1621-2-ND" constant="no"/>
+<technology name="GREEN_">
+<attribute name="COLOR" value="Green"/>
+<attribute name="DKPN" value="754-1621-2-ND"/>
 <attribute name="MANUFACTURER" value="Kingbright" constant="no"/>
 <attribute name="MOPN" value="604-ACSA56-51CGKWA " constant="no"/>
 <attribute name="MPN" value="ACSA56-51CGKWA" constant="no"/>
 </technology>
-<technology name="YELLOW">
+<technology name="YELLOW_">
 <attribute name="COLOR" value="Yellow" constant="no"/>
 <attribute name="DKPN" value="754-1624-2-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Kingbright" constant="no"/>

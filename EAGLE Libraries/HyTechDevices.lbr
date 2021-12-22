@@ -8805,6 +8805,15 @@ Leakage Inductance: 0.50 uH max
 </technology>
 </technologies>
 </device>
+<device name="" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CONNECTOR-AVR-ISP_?" prefix="J">
@@ -10958,51 +10967,6 @@ with up to 100mA of output current
 <technology name="BLACK">
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MPN" value="105429-1304"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LED_7_SEGMENT_" prefix="D">
-<description>Low-Profile 7-Segment Display
-&lt;br&gt;
-
-&lt;ul&gt;
-
-&lt;li&gt;&lt;a href="https://eu.mouser.com/datasheet/2/216/ACSA56-51CGKWA-245492.pdf"&gt;Green&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href="https://eu.mouser.com/datasheet/2/216/ACSA56-51SYKWA-245353.pdf"&gt;Yellow&lt;/a&gt;&lt;/li&gt;
-
-&lt;\ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="DIODE_LED_7_SEGMENT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ACSA56-51">
-<connects>
-<connect gate="G$1" pin="A" pad="7"/>
-<connect gate="G$1" pin="B" pad="6"/>
-<connect gate="G$1" pin="C" pad="4"/>
-<connect gate="G$1" pin="D" pad="2"/>
-<connect gate="G$1" pin="E" pad="1"/>
-<connect gate="G$1" pin="F" pad="9"/>
-<connect gate="G$1" pin="G" pad="5 10"/>
-<connect gate="G$1" pin="VDD" pad="3 8"/>
-</connects>
-<technologies>
-<technology name="GREEN">
-<attribute name="COLOR" value="Green"/>
-<attribute name="DKPN" value="754-1621-2-ND"/>
-<attribute name="MANUFACTURER" value="Kingbright"/>
-<attribute name="MOPN" value="604-ACSA56-51CGKWA"/>
-<attribute name="MPN" value="ACSA56-51CGKWA"/>
-</technology>
-<technology name="YELLOW">
-<attribute name="COLOR" value="Yellow"/>
-<attribute name="DKPN" value="754-1624-2-ND"/>
-<attribute name="MANUFACTURER" value="Kingbright"/>
-<attribute name="MOPN" value="604-ACSA56-51SYKWA"/>
-<attribute name="MPN" value="ACSA56-51SYKWA"/>
 </technology>
 </technologies>
 </device>

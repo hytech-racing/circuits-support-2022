@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2182,7 +2182,7 @@ Note: Based on page 48 and 49.</description>
 <smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
 <text x="-2.032" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
-<text x="0" y="1.27" size="1.27" layer="25" font="vector" align="bottom-center">&gt;NET</text>
+<text x="0" y="1.905" size="1.524" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
 </package>
 <package name="TSSOP-24">
 <description>TSSOP 24
@@ -10875,7 +10875,7 @@ with up to 100mA of output current
 </devices>
 </deviceset>
 <deviceset name="TEST_POINT" prefix="TP">
-<description>Test Point
+<description>Test Point for Probing
 &lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="TEST_POINT" x="0" y="0"/>
@@ -10891,7 +10891,7 @@ with up to 100mA of output current
 <attribute name="MANUFACTURER" value="Keystone Electronics"/>
 <attribute name="MOPN" value="534-5015"/>
 <attribute name="MPN" value="5015"/>
-<attribute name="NET" value="" constant="no"/>
+<attribute name="SIGNAL" value="" constant="no"/>
 </technology>
 </technologies>
 </device>

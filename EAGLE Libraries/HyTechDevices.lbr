@@ -4780,17 +4780,17 @@ A variation of MSOP16 with 4 pins removed.
 <description>Crydom CMX series solid state relays SIP-4
 &lt;br&gt;
 &lt;a href=https://www.mouser.com/datasheet/2/657/cmx_series_dc_pcb_mount-1370813.pdf"&gt;Datasheet&lt;a/&gt;</description>
-<pad name="P$1" x="20.828" y="0" drill="2.1082" first="yes"/>
-<pad name="P$2" x="10.668" y="0" drill="2.1082"/>
-<pad name="P$3" x="0" y="0" drill="2.1082"/>
-<pad name="P$4" x="-5.08" y="0" drill="2.1082"/>
-<wire x1="-12.7" y1="3.81" x2="-12.7" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-12.7" y1="-3.81" x2="27.94" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
-<wire x1="27.94" y1="-3.81" x2="27.94" y2="3.81" width="0.127" layer="21" style="shortdash"/>
-<wire x1="27.94" y1="3.81" x2="-12.7" y2="3.81" width="0.127" layer="21" style="shortdash"/>
-<rectangle x1="-8.89" y1="-2.54" x2="24.13" y2="2.54" layer="40"/>
-<rectangle x1="-8.89" y1="-2.54" x2="24.13" y2="2.54" layer="39"/>
-<text x="6.35" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<pad name="P$1" x="15.748" y="0" drill="2.1082" first="yes"/>
+<pad name="P$2" x="5.588" y="0" drill="2.1082"/>
+<pad name="P$3" x="-5.08" y="0" drill="2.1082"/>
+<pad name="P$4" x="-10.16" y="0" drill="2.1082"/>
+<wire x1="-17.78" y1="3.81" x2="-17.78" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-17.78" y1="-3.81" x2="22.86" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="22.86" y1="-3.81" x2="22.86" y2="3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="22.86" y1="3.81" x2="-17.78" y2="3.81" width="0.127" layer="21" style="shortdash"/>
+<rectangle x1="-13.97" y1="-2.54" x2="19.05" y2="2.54" layer="40"/>
+<rectangle x1="-13.97" y1="-2.54" x2="19.05" y2="2.54" layer="39"/>
+<text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>

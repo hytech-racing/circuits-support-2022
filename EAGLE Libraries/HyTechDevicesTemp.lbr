@@ -327,6 +327,20 @@
 <vertex x="2.286" y="6.858" curve="90"/>
 <vertex x="1.651" y="6.223"/>
 </polygon>
+<polygon width="0.1524" layer="39" spacing="0.0254">
+<vertex x="-5.588" y="3.937"/>
+<vertex x="-5.588" y="5.207"/>
+<vertex x="-6.223" y="5.207" curve="90"/>
+<vertex x="-6.858" y="4.572" curve="90"/>
+<vertex x="-6.223" y="3.937"/>
+</polygon>
+<polygon width="0.1524" layer="43" spacing="0.0254">
+<vertex x="-5.588" y="3.937"/>
+<vertex x="-5.588" y="5.207"/>
+<vertex x="-6.223" y="5.207" curve="90"/>
+<vertex x="-6.858" y="4.572" curve="90"/>
+<vertex x="-6.223" y="3.937"/>
+</polygon>
 </package>
 <package name="CPT-3011C-120">
 <description>CPT-3011C-120 3 Pin Buzzer

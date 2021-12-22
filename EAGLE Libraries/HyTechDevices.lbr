@@ -4845,42 +4845,6 @@ A variation of MSOP16 with 4 pins removed.
 <circle x="-7.493" y="-9.017" radius="0.635" width="0" layer="21"/>
 <rectangle x1="-6.858" y1="-11.176" x2="6.858" y2="11.176" layer="39"/>
 </package>
-<package name="CPT-3011C-120">
-<description>&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt; CPT-3011C-120 Datasheet &lt;/a&gt;</description>
-<circle x="0" y="0" radius="18.3" width="0" layer="39"/>
-<circle x="0" y="0" radius="16.27" width="0.127" layer="51"/>
-<wire x1="-12.82" y1="10" x2="13.1" y2="9.7" width="0.127" layer="21" curve="-106"/>
-<wire x1="15.03" y1="6.22" x2="2.11" y2="-16.14" width="0.127" layer="21" curve="-105"/>
-<wire x1="-2.07" y1="-16.13" x2="-15.06" y2="6.16" width="0.127" layer="21" curve="-105"/>
-<pad name="F" x="-14.162" y="8.051" drill="2.5"/>
-<pad name="G" x="14.162" y="8.051" drill="2.5"/>
-<pad name="M" x="0" y="-16.29" drill="2.5"/>
-<text x="0" y="18.796" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<circle x="-14.162" y="8.051" radius="2.2" width="0" layer="40"/>
-<circle x="14.162" y="8.051" radius="2.2" width="0" layer="40"/>
-<circle x="0" y="-16.29" radius="2.2" width="0" layer="40"/>
-</package>
-<package name="OKL-T/1-W12">
-<description>&lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
-<wire x1="-6.35" y1="6.35" x2="-6.35" y2="-6.35" width="0.127" layer="21"/>
-<wire x1="6.35" y1="6.35" x2="6.35" y2="-6.35" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="6.35" x2="6.35" y2="6.35" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="-6.35" x2="6.35" y2="-6.35" width="0.127" layer="21"/>
-<smd name="2" x="-3.429" y="4.572" dx="2.032" dy="4.318" layer="1" rot="R90"/>
-<smd name="3" x="1.143" y="4.572" dx="2.032" dy="4.318" layer="1" rot="R90"/>
-<smd name="4" x="4.572" y="3.429" dx="2.032" dy="4.318" layer="1" rot="R180"/>
-<smd name="1" x="-4.572" y="0" dx="1.27" dy="1.27" layer="1"/>
-<smd name="10" x="-4.572" y="-2.286" dx="1.27" dy="1.27" layer="1"/>
-<smd name="9" x="-4.572" y="-4.572" dx="1.27" dy="1.27" layer="1"/>
-<smd name="5" x="4.572" y="0" dx="1.27" dy="1.27" layer="1"/>
-<smd name="11" x="4.572" y="-2.286" dx="1.27" dy="1.27" layer="1"/>
-<smd name="6" x="4.572" y="-4.572" dx="1.27" dy="1.27" layer="1"/>
-<smd name="7" x="0" y="-4.572" dx="1.27" dy="1.27" layer="1"/>
-<smd name="8" x="-2.286" y="-4.572" dx="1.27" dy="1.27" layer="1"/>
-<smd name="12" x="2.286" y="-4.572" dx="1.27" dy="1.27" layer="1"/>
-<rectangle x1="-6.604" y1="-6.604" x2="6.604" y2="6.604" layer="39"/>
-<text x="-6.604" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
-</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -8268,54 +8232,6 @@ with up to 100mA of output current</description>
 <pin name="A8" x="-2.54" y="-33.02" visible="pin" length="short"/>
 <pin name="3.3V" x="22.86" y="-7.62" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="VIN" x="22.86" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
-</symbol>
-<symbol name="BUZZER_3_PIN">
-<description>&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt; CPT-3011C-120 Datasheet &lt;/a&gt;</description>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-10.922" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-<wire x1="7.62" y1="0" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="0" y1="-10.16" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="7.62" y1="0" x2="7.62" y2="0.508" width="0.254" layer="94"/>
-<wire x1="7.62" y1="0.508" x2="8.636" y2="0.508" width="0.254" layer="94"/>
-<wire x1="8.636" y1="0.508" x2="8.636" y2="-10.668" width="0.254" layer="94"/>
-<pin name="F" x="-2.54" y="-5.08" length="short"/>
-<pin name="M" x="-2.54" y="-2.54" length="short" direction="pwr"/>
-<pin name="G" x="-2.54" y="-7.62" length="short" direction="pwr"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="-10.668" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-10.668" x2="8.636" y2="-10.668" width="0.254" layer="94"/>
-</symbol>
-<symbol name="RE46C100">
-<description>RE46C100 Piezoelectric Horn Driver Circuit
-&lt;br&gt;
-&lt;a href="https://ww1.microchip.com/downloads/en/DeviceDoc/20002166B.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="0" y1="-15.24" x2="20.32" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-15.24" x2="20.32" y2="0" width="0.254" layer="94"/>
-<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="VDD" x="22.86" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="F" x="-2.54" y="-7.62" length="short" direction="in"/>
-<pin name="EN" x="-2.54" y="-2.54" length="short" direction="in"/>
-<pin name="GND" x="-2.54" y="-12.7" length="short" direction="pwr"/>
-<pin name="HORNB" x="22.86" y="-12.7" length="short" direction="out" rot="R180"/>
-<pin name="HORNS" x="22.86" y="-7.62" length="short" direction="out" rot="R180"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-16.002" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
-<symbol name="CONVERTER_DC/DC">
-<description>&lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="0" y1="-10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-10.16" x2="17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<text x="0" y="-10.922" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-<pin name="GND" x="20.32" y="-7.62" length="short" direction="pwr" rot="R180"/>
-<pin name="IN" x="-2.54" y="-2.54" length="short" direction="in"/>
-<pin name="EN" x="-2.54" y="-5.08" length="short"/>
-<pin name="OUT" x="20.32" y="-2.54" length="short" direction="out" rot="R180"/>
-<pin name="TRIM" x="20.32" y="-5.08" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -11915,7 +11831,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <technologies>
 <technology name="10UH">
 <attribute name="CURRENT_RATED" value="300 mA" constant="no"/>
-<attribute name="CURRENT_SATURATION" value="100 mA " constant="no"/>
+<attribute name="CURRENT_SATURATION" value="100 mA	" constant="no"/>
 <attribute name="DCR" value="1.37Ω" constant="no"/>
 <attribute name="DKPN" value="490-LQM18DH100M70LTR-ND" constant="no"/>
 <attribute name="INDUCTANCE" value="10µH" constant="no"/>
@@ -12136,87 +12052,6 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="MANUFACTURER" value="Visual Communications Company" constant="no"/>
 <attribute name="MOPN" value="593-DSM7TA56105T " constant="no"/>
 <attribute name="MPN" value="DSM7TA56105T" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="BUZZER_3_PIN_">
-<description>&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt; CPT-3011C-120 Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="BUZZER_3_PIN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CPT-3011C-120">
-<connects>
-<connect gate="G$1" pin="F" pad="F"/>
-<connect gate="G$1" pin="G" pad="G"/>
-<connect gate="G$1" pin="M" pad="M"/>
-</connects>
-<technologies>
-<technology name="CPT-3011C-120">
-<attribute name="DPN" value="102-3762-ND" constant="no"/>
-<attribute name="FREQUENCY" value="3kHz" constant="no"/>
-<attribute name="MANUFACTURER" value="CUI Devices" constant="no"/>
-<attribute name="MOPN" value="490-CPT-3011C-120 " constant="no"/>
-<attribute name="MPN" value="CPT-3011C-120" constant="no"/>
-<attribute name="VOLTAGE" value="12V" constant="no"/>
-<attribute name="VOLUME" value="85dB" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RE46C100" prefix="U">
-<description>RE46C100 Piezoelectric Horn Driver Circuit
-&lt;br&gt;
-&lt;a href="https://ww1.microchip.com/downloads/en/DeviceDoc/20002166B.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="RE46C100" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOIC-08(NARROW,0.15&quot;)">
-<connects>
-<connect gate="G$1" pin="EN" pad="8"/>
-<connect gate="G$1" pin="F" pad="4"/>
-<connect gate="G$1" pin="GND" pad="5"/>
-<connect gate="G$1" pin="HORNB" pad="6"/>
-<connect gate="G$1" pin="HORNS" pad="7"/>
-<connect gate="G$1" pin="VDD" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="RE46C100S8TFTR-ND"/>
-<attribute name="MANUFACTURER" value="Microchip Technology"/>
-<attribute name="MOPN" value="579-RE46C100S8TF "/>
-<attribute name="MPN" value=" RE46C100S8TF"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VOLTAGE_REGULATOR_POL_?_*" prefix="U">
-<description>&lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="CONVERTER_DC/DC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="OKL-T/1-W12">
-<connects>
-<connect gate="G$1" pin="EN" pad="1"/>
-<connect gate="G$1" pin="GND" pad="3 7 11"/>
-<connect gate="G$1" pin="IN" pad="2"/>
-<connect gate="G$1" pin="OUT" pad="4"/>
-<connect gate="G$1" pin="TRIM" pad="6"/>
-</connects>
-<technologies>
-<technology name="12V-5V">
-<attribute name="DPN" value="811-2260-2-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Murata Power Solutions Inc." constant="no"/>
-<attribute name="MOPN" value="580-OKL-T/1-W12N-C " constant="no"/>
-<attribute name="MPN" value="OKL-T/1-W12N-C " constant="no"/>
-<attribute name="VIN" value="12V" constant="no"/>
-<attribute name="VOUT" value="5V" constant="no"/>
 </technology>
 </technologies>
 </device>

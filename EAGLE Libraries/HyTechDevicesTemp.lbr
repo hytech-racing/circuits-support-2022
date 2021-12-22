@@ -429,12 +429,12 @@
 </connects>
 <technologies>
 <technology name="12V-5V">
-<attribute name="DPN" value="811-2260-2-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Murata Power Solutions Inc." constant="no"/>
-<attribute name="MOPN" value="580-OKL-T/1-W12N-C " constant="no"/>
-<attribute name="MPN" value="OKL-T/1-W12N-C " constant="no"/>
-<attribute name="VIN" value="12V" constant="no"/>
-<attribute name="VOUT" value="5V" constant="no"/>
+<attribute name="DPN" value="811-2260-2-ND" />
+<attribute name="MANUFACTURER" value="Murata Power Solutions Inc." />
+<attribute name="MOPN" value="580-OKL-T/1-W12N-C " />
+<attribute name="MPN" value="OKL-T/1-W12N-C " />
+<attribute name="VIN" value="12V" />
+<attribute name="VOUT" value="5V" />
 </technology>
 </technologies>
 </device>
@@ -456,13 +456,13 @@
 </connects>
 <technologies>
 <technology name="CPT-3011C-120">
-<attribute name="DPN" value="102-3762-ND" constant="no"/>
-<attribute name="FREQUENCY" value="3kHz" constant="no"/>
-<attribute name="MANUFACTURER" value="CUI Devices" constant="no"/>
-<attribute name="MOPN" value="490-CPT-3011C-120 " constant="no"/>
-<attribute name="MPN" value="CPT-3011C-120" constant="no"/>
-<attribute name="VOLTAGE" value="12V" constant="no"/>
-<attribute name="VOLUME" value="85dB" constant="no"/>
+<attribute name="DPN" value="102-3762-ND" />
+<attribute name="FREQUENCY" value="3kHz" />
+<attribute name="MANUFACTURER" value="CUI Devices" />
+<attribute name="MOPN" value="490-CPT-3011C-120 " />
+<attribute name="MPN" value="CPT-3011C-120" />
+<attribute name="VOLTAGE" value="12V" />
+<attribute name="VOLUME" value="85dB" />
 </technology>
 </technologies>
 </device>
@@ -530,16 +530,16 @@
 <technology name="GREEN_">
 <attribute name="COLOR" value="Green"/>
 <attribute name="DKPN" value="754-1621-2-ND"/>
-<attribute name="MANUFACTURER" value="Kingbright" constant="no"/>
-<attribute name="MOPN" value="604-ACSA56-51CGKWA " constant="no"/>
-<attribute name="MPN" value="ACSA56-51CGKWA" constant="no"/>
+<attribute name="MANUFACTURER" value="Kingbright" />
+<attribute name="MOPN" value="604-ACSA56-51CGKWA " />
+<attribute name="MPN" value="ACSA56-51CGKWA" />
 </technology>
 <technology name="YELLOW_">
-<attribute name="COLOR" value="Yellow" constant="no"/>
-<attribute name="DKPN" value="754-1624-2-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Kingbright" constant="no"/>
-<attribute name="MOPN" value="604-ACSA56-51SYKWA " constant="no"/>
-<attribute name="MPN" value="ACSA56-51SYKWA" constant="no"/>
+<attribute name="COLOR" value="Yellow" />
+<attribute name="DKPN" value="754-1624-2-ND" />
+<attribute name="MANUFACTURER" value="Kingbright" />
+<attribute name="MOPN" value="604-ACSA56-51SYKWA " />
+<attribute name="MPN" value="ACSA56-51SYKWA" />
 </technology>
 </technologies>
 </device>
@@ -556,18 +556,18 @@
 </connects>
 <technologies>
 <technology name="BLUE_">
-<attribute name="COLOR" value="Blue" constant="no"/>
-<attribute name="DKPN" value="DSM7TA56106TTR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Visual Communications Company" constant="no"/>
-<attribute name="MOPN" value="593-DSM7TA56106T " constant="no"/>
-<attribute name="MPN" value="DSM7TA56106T" constant="no"/>
+<attribute name="COLOR" value="Blue" />
+<attribute name="DKPN" value="DSM7TA56106TTR-ND" />
+<attribute name="MANUFACTURER" value="Visual Communications Company" />
+<attribute name="MOPN" value="593-DSM7TA56106T " />
+<attribute name="MPN" value="DSM7TA56106T" />
 </technology>
 <technology name="GREEN_">
-<attribute name="COLOR" value="Green" constant="no"/>
-<attribute name="DKPN" value="DSM7TA56105TTR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Visual Communications Company" constant="no"/>
-<attribute name="MOPN" value="593-DSM7TA56105T " constant="no"/>
-<attribute name="MPN" value="DSM7TA56105T" constant="no"/>
+<attribute name="COLOR" value="Green" />
+<attribute name="DKPN" value="DSM7TA56105TTR-ND" />
+<attribute name="MANUFACTURER" value="Visual Communications Company" />
+<attribute name="MOPN" value="593-DSM7TA56105T " />
+<attribute name="MPN" value="DSM7TA56105T" />
 </technology>
 </technologies>
 </device>

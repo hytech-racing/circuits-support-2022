@@ -4779,11 +4779,9 @@ A variation of MSOP16 with 4 pins removed.
 <text x="-6.604" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="0603-FUSE">
-<description>0603 Cap
+<description>0603 Fuse
 &lt;br&gt;
-&lt;a href="https://www.yageo.com/upload/website/yageo_UPY-C_GEN_26_20092411_950.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X5R_4V-to-50V_26.pdf"&gt;Size&lt;/a&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/40/AccuGuardLC_0402-932635.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
 <smd name="2" x="0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
 <text x="0" y="0.75" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
@@ -4794,11 +4792,10 @@ A variation of MSOP16 with 4 pins removed.
 <rectangle x1="-1.35" y1="-0.75" x2="1.35" y2="0.75" layer="39"/>
 </package>
 <package name="0603-IND">
-<description>0603 Cap
+<description>0603 Inductor
 &lt;br&gt;
-&lt;a href="https://www.yageo.com/upload/website/yageo_UPY-C_GEN_26_20092411_950.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X5R_4V-to-50V_26.pdf"&gt;Size&lt;/a&gt;</description>
+&lt;a href="https://search.murata.co.jp/Ceramy/image/img/P02/JELF243B-9127.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;</description>
 <smd name="1" x="-0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
 <smd name="2" x="0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
 <text x="0" y="0.75" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
@@ -11708,6 +11705,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <deviceset name="INDUCTOR_?_*" prefix="L">
 <description>Inductor
 &lt;ul&gt;
+&lt;li&gt;&lt;a href = "https://search.murata.co.jp/Ceramy/image/img/P02/JELF243B-9127.pdf"&gt;0603 Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.we-online.com/catalog/datasheet/74451133.pdf"&gt; 74451133 Inductor&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/54/SRU1048-1391431.pdf"&gt;SRU1408 Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>

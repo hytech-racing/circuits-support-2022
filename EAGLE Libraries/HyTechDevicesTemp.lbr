@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -239,8 +239,8 @@
 <wire x1="-12.82" y1="10" x2="13.1" y2="9.7" width="0.127" layer="21" curve="-106"/>
 <wire x1="15.03" y1="6.22" x2="2.11" y2="-16.14" width="0.127" layer="21" curve="-105"/>
 <wire x1="-2.07" y1="-16.13" x2="-15.06" y2="6.16" width="0.127" layer="21" curve="-105"/>
-<pad name="F" x="-14.162" y="8.051" drill="2.5"/>
-<pad name="G" x="14.162" y="8.051" drill="2.5"/>
+<pad name="G" x="-14.162" y="8.051" drill="2.5"/>
+<pad name="F" x="14.162" y="8.051" drill="2.5"/>
 <pad name="M" x="0" y="-16.29" drill="2.5"/>
 <text x="0" y="18.796" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <circle x="-14.162" y="8.051" radius="2.2" width="0" layer="40"/>
@@ -310,8 +310,7 @@
 <pin name="TRIM" x="20.32" y="-5.08" length="short" rot="R180"/>
 </symbol>
 <symbol name="BUZZER_3_PIN">
-<description>3 Pin Buzzer&lt;br&gt;
-&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt; CPT-3011C-120 Datasheet &lt;/a&gt;</description>
+<description>3 Pin Buzzer&lt;br&gt;</description>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-10.922" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 <wire x1="7.62" y1="0" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
@@ -512,9 +511,9 @@
 
 &lt;ul&gt;
 
-&lt;li&gt;&lt;a href="https://eu.mouser.com/datasheet/2/216/ACSA56-51CGKWA-245492.pdf"&gt;ACSA56-51 Green&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.kingbrightusa.com/images/catalog/SPEC/ACSA56-51CGKWA.pdf"&gt;ACSA56-51 Green&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;a href="https://eu.mouser.com/datasheet/2/216/ACSA56-51SYKWA-245353.pdf"&gt;ACSA56-51 Yellow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=https://www.kingbrightusa.com/images/catalog/SPEC/ACSA56-51SYKWA.pdf"&gt;ACSA56-51 Yellow&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href="https://vcclite.com/wp-content/uploads/wpallimport/files/files/DSM7TA56106T.pdf"&gt;DSM7T  Blue&lt;/a&gt;&lt;/li&gt;
 

@@ -8879,7 +8879,7 @@ Leakage Inductance: 0.50 uH max
 <deviceset name="FUSE_?_*" prefix="F">
 <description>Fuse
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://datasheets.avx.com/AccuGuard2.pdf"&gt;F0603E Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://datasheets.avx.com/AccuGuard2.pdf"&gt;0603 Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;0885 Series&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
@@ -8918,7 +8918,7 @@ Leakage Inductance: 0.50 uH max
 </technology>
 </technologies>
 </device>
-<device name="0603" package="0603-FUSE">
+<device name="0603" package="0603-RES">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -11861,8 +11861,8 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <deviceset name="INDUCTOR_?_*" prefix="L">
 <description>Inductor
 &lt;ul&gt;
-&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/281/LQM18DH100M70_23-1948371.pdf"&gt;LQM18DH100M70 Datasheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.we-online.com/catalog/datasheet/74451133.pdf"&gt; 74451133 Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/281/LQM18DH100M70_23-1948371.pdf"&gt;0603 Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.we-online.com/catalog/datasheet/74451133.pdf"&gt; 74451133 Inductor&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/54/SRU1048-1391431.pdf"&gt;SRU1408 Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
@@ -11907,7 +11907,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </technology>
 </technologies>
 </device>
-<device name="LQM18DH100M70" package="0603-INDUCTOR">
+<device name="" package="0603-INDUCTOR">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -12083,7 +12083,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <gate name="G$1" symbol="DIODE_LED_7_SEGMENT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="ACSA56-51" package="ACSA56-51">
+<device name="" package="ACSA56-51">
 <connects>
 <connect gate="G$1" pin="A" pad="7"/>
 <connect gate="G$1" pin="B" pad="6"/>
@@ -12142,9 +12142,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </devices>
 </deviceset>
 <deviceset name="BUZZER_3_PIN_" prefix="LS">
-<description>3 Pin Buzzer
-&lt;br&gt;
-&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt; CPT-3011C-120 Datasheet &lt;/a&gt;</description>
+<description>&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt; CPT-3011C-120 Datasheet &lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="BUZZER_3_PIN" x="0" y="0"/>
 </gates>
@@ -12170,7 +12168,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </devices>
 </deviceset>
 <deviceset name="RE46C100" prefix="U">
-<description>RE46C100 Piezoelectric Horn Driver IC
+<description>RE46C100 Piezoelectric Horn Driver Circuit
 &lt;br&gt;
 &lt;a href="https://ww1.microchip.com/downloads/en/DeviceDoc/20002166B.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
@@ -12197,10 +12195,8 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="VOLTAGE_REGULATOR_POL_?_*" prefix="A">
-<description>Point of Load Voltage Regulator Modules
-&lt;br&gt;
-&lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
+<deviceset name="VOLTAGE_REGULATOR_POL_?_*" prefix="U">
+<description>&lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="CONVERTER_DC/DC" x="0" y="0"/>
 </gates>

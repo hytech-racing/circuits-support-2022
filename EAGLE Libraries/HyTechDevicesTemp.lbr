@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -229,6 +229,104 @@
 <smd name="12" x="2.286" y="-4.572" dx="1.27" dy="1.27" layer="1"/>
 <rectangle x1="-6.604" y1="-6.604" x2="6.604" y2="6.604" layer="39"/>
 <text x="-6.604" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<polygon width="0.1524" layer="41" spacing="0.0254">
+<vertex x="-5.207" y="-0.635"/>
+<vertex x="-5.207" y="0.635"/>
+<vertex x="-6.096" y="0.635" curve="90"/>
+<vertex x="-6.731" y="0" curve="90"/>
+<vertex x="-6.096" y="-0.635"/>
+</polygon>
+<polygon width="0.1524" layer="41" spacing="0.0254">
+<vertex x="-5.207" y="-2.921"/>
+<vertex x="-5.207" y="-1.651"/>
+<vertex x="-6.096" y="-1.651" curve="90"/>
+<vertex x="-6.731" y="-2.286" curve="90"/>
+<vertex x="-6.096" y="-2.921"/>
+</polygon>
+<polygon width="0.1524" layer="41" spacing="0.0254">
+<vertex x="-5.207" y="-5.207"/>
+<vertex x="-5.207" y="-3.937"/>
+<vertex x="-6.096" y="-3.937" curve="90"/>
+<vertex x="-6.731" y="-4.572" curve="90"/>
+<vertex x="-6.096" y="-5.207"/>
+</polygon>
+<polygon width="0.1524" layer="41" spacing="0.0254">
+<vertex x="-1.651" y="-5.207"/>
+<vertex x="-2.921" y="-5.207"/>
+<vertex x="-2.921" y="-6.096" curve="90"/>
+<vertex x="-2.286" y="-6.731" curve="90"/>
+<vertex x="-1.651" y="-6.096"/>
+</polygon>
+<polygon width="0.1524" layer="41" spacing="0.0254">
+<vertex x="0.635" y="-5.207"/>
+<vertex x="-0.635" y="-5.207"/>
+<vertex x="-0.635" y="-6.096" curve="90"/>
+<vertex x="0" y="-6.731" curve="90"/>
+<vertex x="0.635" y="-6.096"/>
+</polygon>
+<polygon width="0.1524" layer="41" spacing="0.0254">
+<vertex x="2.921" y="-5.207"/>
+<vertex x="1.651" y="-5.207"/>
+<vertex x="1.651" y="-6.096" curve="90"/>
+<vertex x="2.286" y="-6.731" curve="90"/>
+<vertex x="2.921" y="-6.096"/>
+</polygon>
+<polygon width="0.1524" layer="41" spacing="0.0254">
+<vertex x="5.207" y="-3.937"/>
+<vertex x="5.207" y="-5.207"/>
+<vertex x="6.096" y="-5.207" curve="90"/>
+<vertex x="6.731" y="-4.572" curve="90"/>
+<vertex x="6.096" y="-3.937"/>
+</polygon>
+<polygon width="0.1524" layer="41" spacing="0.0254">
+<vertex x="5.207" y="-1.651"/>
+<vertex x="5.207" y="-2.921"/>
+<vertex x="6.096" y="-2.921" curve="90"/>
+<vertex x="6.731" y="-2.286" curve="90"/>
+<vertex x="6.096" y="-1.651"/>
+</polygon>
+<polygon width="0.1524" layer="41" spacing="0.0254">
+<vertex x="5.207" y="0.635"/>
+<vertex x="5.207" y="-0.635"/>
+<vertex x="6.096" y="-0.635" curve="90"/>
+<vertex x="6.731" y="0" curve="90"/>
+<vertex x="6.096" y="0.635"/>
+</polygon>
+<polygon width="0.1524" layer="41" spacing="0.0254">
+<vertex x="-5.588" y="3.937"/>
+<vertex x="-5.588" y="5.207"/>
+<vertex x="-6.223" y="5.207" curve="90"/>
+<vertex x="-6.858" y="4.572" curve="90"/>
+<vertex x="-6.223" y="3.937"/>
+</polygon>
+<polygon width="0.1524" layer="41" spacing="0.0254">
+<vertex x="5.588" y="5.207"/>
+<vertex x="5.588" y="3.937"/>
+<vertex x="6.223" y="3.937" curve="90"/>
+<vertex x="6.858" y="4.572" curve="90"/>
+<vertex x="6.223" y="5.207"/>
+</polygon>
+<polygon width="0.1524" layer="41" spacing="0.0254">
+<vertex x="-2.921" y="5.588"/>
+<vertex x="-1.651" y="5.588"/>
+<vertex x="-1.651" y="6.223" curve="90"/>
+<vertex x="-2.286" y="6.858" curve="90"/>
+<vertex x="-2.921" y="6.223"/>
+</polygon>
+<polygon width="0.1524" layer="41" spacing="0.0254">
+<vertex x="-0.635" y="5.588"/>
+<vertex x="0.635" y="5.588"/>
+<vertex x="0.635" y="6.223" curve="90"/>
+<vertex x="0" y="6.858" curve="90"/>
+<vertex x="-0.635" y="6.223"/>
+</polygon>
+<polygon width="0.1524" layer="41" spacing="0.0254">
+<vertex x="1.651" y="5.588"/>
+<vertex x="2.921" y="5.588"/>
+<vertex x="2.921" y="6.223" curve="90"/>
+<vertex x="2.286" y="6.858" curve="90"/>
+<vertex x="1.651" y="6.223"/>
+</polygon>
 </package>
 <package name="CPT-3011C-120">
 <description>CPT-3011C-120 3 Pin Buzzer
@@ -271,6 +369,12 @@
 </package>
 <package name="DSM7T">
 <description>DSM7T LED 7 Segment Display
+&lt;br&gt;
+No footprint provided, pads determined from datasheet
+&lt;br&gt;
+Pad width = width of mounting point
+&lt;br&gt;
+Pad height = 2x height of mounting point centered at edge
 &lt;br&gt;
 &lt;a href="https://vcclite.com/wp-content/uploads/wpallimport/files/files/DSM7TA56105T.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <wire x1="-6.25" y1="9.5" x2="-6.25" y2="-9.5" width="0.127" layer="21"/>
@@ -420,7 +524,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="VOLTAGE_REGULATOR_POL_?_*" prefix="A">
+<deviceset name="OKL-*" prefix="A">
 <description>Point of Load Voltage Regulator Modules 
 &lt;br&gt;
 &lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
@@ -428,7 +532,7 @@
 <gate name="G$1" symbol="VOLTAGE_REGULATOR_TRIM" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="OKL-T/1-W12">
+<device name="OKL" package="OKL-T/1-W12">
 <connects>
 <connect gate="G$1" pin="EN" pad="1"/>
 <connect gate="G$1" pin="GND" pad="3 7 11"/>
@@ -437,11 +541,11 @@
 <connect gate="G$1" pin="TRIM" pad="6"/>
 </connects>
 <technologies>
-<technology name="12V-5V">
+<technology name="T/1-W12N-C">
 <attribute name="DPN" value="811-2260-2-ND"/>
 <attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
 <attribute name="MOPN" value="580-OKL-T/1-W12N-C "/>
-<attribute name="MPN" value="OKL-T/1-W12N-C "/>
+<attribute name="MPN" value="OKL-T/1-W12N-C"/>
 <attribute name="VIN" value="12V"/>
 <attribute name="VOUT" value="5V"/>
 </technology>

@@ -11758,8 +11758,8 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </connects>
 <technologies>
 <technology name="10UH">
-<attribute name="CURRENT_RATED" value="300 mA"/>
-<attribute name="CURRENT_SATURATION" value="100 mA "/>
+<attribute name="CURRENT_RATED" value="300mA"/>
+<attribute name="CURRENT_SATURATION" value="100mA "/>
 <attribute name="DCR" value="1.37Ω"/>
 <attribute name="DKPN" value="490-LQM18DH100M70LTR-ND"/>
 <attribute name="INDUCTANCE" value="10µH"/>

@@ -8186,6 +8186,24 @@ with up to 100mA of output current</description>
 <pin name="3.3V" x="22.86" y="-7.62" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="VIN" x="22.86" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
 </symbol>
+<symbol name="FUSE_HOLDER">
+<wire x1="0" y1="-2.54" x2="-1.905" y2="-2.54" width="0.1524" layer="94" curve="-180"/>
+<wire x1="0" y1="-2.54" x2="1.905" y2="-2.54" width="0.1524" layer="94" curve="-180"/>
+<pin name="1" x="-7.62" y="-2.54" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="2" x="7.62" y="-2.54" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<text x="0" y="0.762" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.842" size="1.27" layer="96" align="top-center">&gt;MPN</text>
+<wire x1="3.81" y1="-2.54" x2="1.905" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="-2.54" x2="-1.905" y2="-2.54" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-7.62" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-2_?_*" prefix="J">
@@ -8824,12 +8842,7 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="RESET" pad="5"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="DKPN" value="S2011EC-03-ND"/>
-<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
-<attribute name="MOPN" value=""/>
-<attribute name="MPN" value="GBC05DABN-M30"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="2X05_SMD" package="2X05_SMD">
@@ -8842,7 +8855,12 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="RESET" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DKPN" value="S2011EC-03-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MOPN" value=""/>
+<attribute name="MPN" value="GBC05DABN-M30"/>
+</technology>
 </technologies>
 </device>
 </devices>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -327,7 +327,6 @@
 <vertex x="2.286" y="6.858" curve="90"/>
 <vertex x="1.651" y="6.223"/>
 </polygon>
-
 <polygon width="0.1524" layer="39" spacing="0.0254">
 <vertex x="-5.207" y="-0.635"/>
 <vertex x="-5.207" y="0.635"/>
@@ -426,7 +425,6 @@
 <vertex x="2.286" y="6.858" curve="90"/>
 <vertex x="1.651" y="6.223"/>
 </polygon>
-
 <polygon width="0.1524" layer="43" spacing="0.0254">
 <vertex x="-5.207" y="-0.635"/>
 <vertex x="-5.207" y="0.635"/>
@@ -525,7 +523,6 @@
 <vertex x="2.286" y="6.858" curve="90"/>
 <vertex x="1.651" y="6.223"/>
 </polygon>
-
 </package>
 <package name="CPT-3011C-120">
 <description>CPT-3011C-120 3 Pin Buzzer
@@ -593,6 +590,28 @@ Pad height = 2x height of mounting point centered at edge
 <text x="-6.858" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <circle x="-7.493" y="-9.017" radius="0.635" width="0" layer="21"/>
 <rectangle x1="-6.858" y1="-11.176" x2="6.858" y2="11.176" layer="39"/>
+</package>
+<package name="SSOP-20">
+<description>SSOP 28
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-ssop/SSOP_28_05-08-1640.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<circle x="-7" y="-3.5" radius="0.127" width="0.254" layer="21"/>
+<wire x1="-5.775" y1="3.75" x2="5.775" y2="3.75" width="0.1524" layer="21"/>
+<wire x1="-5.775" y1="-3.75" x2="5.775" y2="-3.75" width="0.1524" layer="21"/>
+<wire x1="-5.775" y1="-3.75" x2="-5.775" y2="3.75" width="0.1524" layer="21"/>
+<wire x1="5.775" y1="-3.75" x2="5.775" y2="3.75" width="0.1524" layer="21"/>
+<text x="-6" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-5.715" y1="-4.445" x2="5.715" y2="4.445" layer="39"/>
+<smd name="1" x="-5.08" y="-4.7" dx="0.6" dy="1.9" layer="1"/>
+<smd name="2" x="-3.81" y="-4.7" dx="0.6" dy="1.9" layer="1"/>
+<smd name="3" x="-2.54" y="-4.7" dx="0.6" dy="1.9" layer="1"/>
+<smd name="4" x="-1.27" y="-4.7" dx="0.6" dy="1.9" layer="1"/>
+<rectangle x1="-5.715" y1="-4.445" x2="5.715" y2="4.445" layer="39"/>
+<smd name="5" x="0" y="-4.7" dx="0.6" dy="1.9" layer="1"/>
+<smd name="6" x="1.27" y="-4.7" dx="0.6" dy="1.9" layer="1"/>
+<smd name="7" x="2.54" y="-4.7" dx="0.6" dy="1.9" layer="1"/>
+<smd name="8" x="3.81" y="-4.7" dx="0.6" dy="1.9" layer="1"/>
+<smd name="9" x="5.08" y="-4.7" dx="0.6" dy="1.9" layer="1"/>
 </package>
 </packages>
 <symbols>

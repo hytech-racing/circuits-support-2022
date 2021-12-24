@@ -779,6 +779,25 @@ Pad height = 2x height of mounting point centered at edge
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-43.942" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
+<symbol name="CAN_TRANSCIEVER_MCP2562FD">
+<description>MCP2562FD Can Tranciever
+&lt;br&gt;
+&lt;a href="https://ww1.microchip.com/downloads/en/DeviceDoc/20005284A.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="-17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-17.78" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
+<pin name="TXD" x="-2.54" y="-10.16" length="short" direction="in"/>
+<pin name="GND" x="-2.54" y="-15.24" length="short" direction="pwr"/>
+<pin name="VDD" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="RXD" x="-2.54" y="-12.7" length="short" direction="out"/>
+<pin name="VIO" x="20.32" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="CANL" x="20.32" y="-12.7" length="short" rot="R180"/>
+<pin name="CANH" x="20.32" y="-10.16" length="short" direction="out" rot="R180"/>
+<pin name="S" x="20.32" y="-7.62" length="short" direction="in" rot="R180"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-18.542" size="1.27" layer="95" align="top-left">&gt;MPN</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="OKL-*" prefix="A">
@@ -978,6 +997,36 @@ Pad height = 2x height of mounting point centered at edge
 <attribute name="MANUFACTURER" value="Microchip Technology"/>
 <attribute name="MOPN" value="579-MCP23S08-E/SS"/>
 <attribute name="MPN" value="MCP23S08-E/SS"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP2562FD-E/SN">
+<description>MCP2562FD Can Tranciever
+&lt;br&gt;
+&lt;a href="https://ww1.microchip.com/downloads/en/DeviceDoc/20005284A.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAN_TRANSCIEVER_MCP2562FD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-08(NARROW,0.15&quot;)">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="S" pad="8"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VIO" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="MCP2562FD-E/SN-ND"/>
+<attribute name="MANUFACTURER" value="Microchip Technology"/>
+<attribute name="MOPN" value="579-MCP2562FD-E/SN"/>
+<attribute name="MPN" value="MCP2562FD-E/SN"/>
 </technology>
 </technologies>
 </device>

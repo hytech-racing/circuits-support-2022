@@ -8339,6 +8339,16 @@ with up to 100mA of output current</description>
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="25V"/>
 </technology>
+<technology name="25V_1.2NF">
+<attribute name="CAPACITANCE" value="1.2NF"/>
+<attribute name="DKPN" value="311-4079-2-ND"/>
+<attribute name="MANUFACTURER" value="YAGEO"/>
+<attribute name="MOPN" value="603-CC603KRX7R8BB122
+"/>
+<attribute name="MPN" value="CC0603KRX7R8BB122"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="25V"/>
+</technology>
 <technology name="25V_10UF">
 <attribute name="CAPACITANCE" value="10µF"/>
 <attribute name="DKPN" value="490-7202-1-ND"/>

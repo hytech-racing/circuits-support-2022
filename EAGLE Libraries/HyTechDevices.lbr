@@ -4839,19 +4839,19 @@ A variation of MSOP16 with 4 pins removed.
 <rectangle x1="-2.286" y1="-2.794" x2="2.286" y2="2.794" layer="39"/>
 <text x="-2.286" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="SOD-323F">
-<description>SOD-323F
+<package name="CUS08F30">
+<description>CUS08F30 Toshiba Diode Package
 &lt;br&gt;
-&lt;a href="https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="1" x="-1.05" y="0" dx="0.6" dy="0.6" layer="1"/>
-<smd name="2" x="1.05" y="0" dx="0.6" dy="0.6" layer="1"/>
-<wire x1="1.05" y1="0.825" x2="-1.05" y2="0.825" width="0.127" layer="21"/>
-<wire x1="1.05" y1="-0.825" x2="-1.05" y2="-0.825" width="0.127" layer="21"/>
-<rectangle x1="-1.651" y1="-1.016" x2="1.651" y2="1.016" layer="39"/>
-<wire x1="1.05" y1="0.825" x2="1.05" y2="-0.825" width="0.127" layer="21"/>
-<wire x1="-1.05" y1="0.825" x2="-1.05" y2="-0.825" width="0.127" layer="21"/>
-<text x="0" y="1.27" size="0.8128" layer="21" align="bottom-center">&gt;NAME</text>
-<text x="1.524" y="-0.254" size="0.508" layer="21">K</text>
+&lt;a href="https://www.mouser.com/datasheet/2/408/CUS08F30_datasheet_en_20140414-1916097.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="A" x="-1.15" y="0" dx="0.8" dy="0.9" layer="1"/>
+<smd name="K" x="1.15" y="0" dx="0.8" dy="0.9" layer="1"/>
+<text x="0" y="1" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-0.85" y1="0.625" x2="-0.85" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-0.625" x2="0.85" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="0.85" y1="-0.625" x2="0.85" y2="0.625" width="0.127" layer="21"/>
+<wire x1="0.85" y1="0.625" x2="-0.85" y2="0.625" width="0.127" layer="21"/>
+<rectangle x1="-1.778" y1="-0.762" x2="1.778" y2="0.762" layer="39"/>
+<text x="2.286" y="0" size="0.6096" layer="25" font="vector" align="center">K</text>
 </package>
 </packages>
 <symbols>
@@ -11971,7 +11971,7 @@ MAX current: 8.0A</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SCHOTTKY_PMEG2020EJ" prefix="D">
+<deviceset name="SCHOTTKY_CUS08F30" prefix="D">
 <description>PMEG2020EJ Schottky Rectifier Diode
 &lt;br&gt;
 &lt;a href="https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -11979,18 +11979,18 @@ MAX current: 8.0A</description>
 <gate name="G$1" symbol="DIODE_SCHOTTKY" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOD-323F">
+<device name="" package="CUS08F30">
 <connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="1727-3863-2-ND"/>
-<attribute name="MANUFACTURER" value="Nexperia"/>
-<attribute name="MOPN" value="771-PMEG2020EJ-T/R"/>
-<attribute name="MPN" value="PMEG2020EJ"/>
-<attribute name="VOLTAGE" value="20"/>
+<attribute name="DKPN" value="CUS08F30H3FTR-ND"/>
+<attribute name="MANUFACTURER" value="Toshiba"/>
+<attribute name="MOPN" value="757-CUS08F30H3F"/>
+<attribute name="MPN" value="CUS08F30"/>
+<attribute name="VOLTAGE" value="30"/>
 </technology>
 </technologies>
 </device>

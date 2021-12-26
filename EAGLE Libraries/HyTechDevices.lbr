@@ -9024,7 +9024,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MOPN" value="603-RC0603FR-07100KL "/>
 <attribute name="MPN" value="RC0603FR-07100KL"/>
 <attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="100K"/>
+<attribute name="RESISTANCE" value="100k"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
@@ -9189,7 +9189,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MOPN" value="603-RC0603FR-0720KL "/>
 <attribute name="MPN" value="RC0603FR-0720KL"/>
 <attribute name="POWER" value="0.1 W"/>
-<attribute name="RESISTANCE" value="20 K"/>
+<attribute name="RESISTANCE" value="20k"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="44.72V"/>
 <attribute name="VOLTAGE_MAX" value="75V" constant="no"/>

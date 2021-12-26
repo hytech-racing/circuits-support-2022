@@ -8681,7 +8681,7 @@ with up to 100mA of output current</description>
 <pin name="GND" x="20.32" y="-7.62" length="short" direction="pwr" rot="R180"/>
 <pin name="IN" x="-2.54" y="-2.54" length="short" direction="in"/>
 <pin name="EN" x="-2.54" y="-5.08" length="short"/>
-<pin name="OUT" x="20.32" y="-2.54" length="short" direction="out" rot="R180"/>
+<pin name="OUT" x="20.32" y="-2.54" length="short" direction="sup" rot="R180"/>
 <pin name="TRIM" x="20.32" y="-5.08" length="short" rot="R180"/>
 </symbol>
 <symbol name="CAN_TRANSCIEVER_MCP2562FD-1">

@@ -4138,7 +4138,7 @@ Pad height = 2x height of mounting point centered at edge
 <circle x="-2.286" y="6.604" radius="0.635" width="0" layer="39"/>
 <rectangle x1="-2.794" y1="5.461" x2="-1.778" y2="6.731" layer="39" rot="R270"/>
 </package>
-<package name="3588_SMD">
+<package name="3588">
 <description>Keystone Electronics 3588 Mini Fuse Holder SMD
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/215/588-744913.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -4152,6 +4152,36 @@ Pad height = 2x height of mounting point centered at edge
 <wire x1="8.001" y1="3.3655" x2="8.001" y2="-3.3655" width="0.127" layer="21"/>
 <rectangle x1="-8.636" y1="-4.826" x2="8.636" y2="4.826" layer="39"/>
 <text x="-8.636" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="ULTIMATE_GPS">
+<description>Adafruit Ultimate GPS Breakout - 66 channel w/10 Hz updates - Version 3
+&lt;br&gt;
+Header: 0.1" Pitch Pin Header
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/737/adafruit_ultimate_gps-779243.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/Female_Headers.100_DS.pdf"&gt;Header&lt;/a&gt;</description>
+<pad name="3.3V" x="-10.16" y="0" drill="1.016" first="yes"/>
+<pad name="EN" x="-7.62" y="0" drill="1.016"/>
+<pad name="VBAT" x="-5.08" y="0" drill="1.016"/>
+<pad name="FIX" x="-2.54" y="0" drill="1.016"/>
+<pad name="TX" x="0" y="0" drill="1.016"/>
+<pad name="RX" x="2.54" y="0" drill="1.016"/>
+<pad name="GND" x="5.08" y="0" drill="1.016"/>
+<pad name="VIN" x="7.62" y="0" drill="1.016"/>
+<pad name="PPS" x="10.16" y="0" drill="1.016"/>
+<circle x="-10.16" y="1.905" radius="0.254" width="0" layer="21"/>
+<rectangle x1="-11.938" y1="-1.524" x2="11.938" y2="1.524" layer="40"/>
+<wire x1="-12.7" y1="-2.032" x2="12.7" y2="-2.032" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-2.032" x2="12.7" y2="32.004" width="0.127" layer="21"/>
+<wire x1="12.7" y1="32.004" x2="-12.7" y2="32.004" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="32.004" x2="-12.7" y2="-2.032" width="0.127" layer="21"/>
+<text x="0" y="1.397" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-11.684" y1="1.27" x2="11.684" y2="1.27" width="0.127" layer="21"/>
+<wire x1="11.684" y1="1.27" x2="11.684" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="11.684" y1="-1.27" x2="-11.684" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-11.684" y1="-1.27" x2="-11.684" y2="1.27" width="0.127" layer="21"/>
+<rectangle x1="-11.938" y1="-1.524" x2="11.938" y2="1.524" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -11568,7 +11598,7 @@ All PNs for the holder; if fuse needed, order separately
 <gate name="G$1" symbol="FUSE_HOLDER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="3588_SMD">
+<device name="" package="3588">
 <connects>
 <connect gate="G$1" pin="1" pad="1 4"/>
 <connect gate="G$1" pin="2" pad="2 3"/>
@@ -11581,6 +11611,36 @@ All PNs for the holder; if fuse needed, order separately
 <attribute name="MOPN" value="534-3588"/>
 <attribute name="MPN" value="3588"/>
 <attribute name="VOLTAGE" value="32V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ULTIMATE_GPS" prefix="A">
+<description>Adafruit Ultimate GPS Breakout - 66 channel w/10 Hz updates - Version 3
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/737/adafruit_ultimate_gps-779243.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ULTIMATE_GPS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ULTIMATE_GPS">
+<connects>
+<connect gate="G$1" pin="3V3" pad="3.3V"/>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="FIX" pad="FIX"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="PPS" pad="PPS"/>
+<connect gate="G$1" pin="RXD" pad="RX"/>
+<connect gate="G$1" pin="TXD" pad="TX"/>
+<connect gate="G$1" pin="VBAT" pad="VBAT"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="1528-1153-ND"/>
+<attribute name="MANUFACTURER" value="Adafruit"/>
+<attribute name="MOPN" value="485-746" constant="no"/>
+<attribute name="MPN" value="746"/>
 </technology>
 </technologies>
 </device>

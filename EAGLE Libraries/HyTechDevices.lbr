@@ -4055,6 +4055,88 @@ Pad height = 2x height of mounting point centered at edge
 <rectangle x1="-6.223" y1="3.937" x2="-5.588" y2="5.207" layer="43"/>
 <circle x="-6.223" y="0" radius="0.635" width="0" layer="43"/>
 <rectangle x1="-6.223" y1="-0.635" x2="-5.207" y2="0.635" layer="43"/>
+<circle x="-6.223" y="-2.286" radius="0.635" width="0" layer="43"/>
+<rectangle x1="-6.223" y1="-2.921" x2="-5.207" y2="-1.651" layer="43"/>
+<circle x="-6.223" y="-4.572" radius="0.635" width="0" layer="43"/>
+<rectangle x1="-6.223" y1="-5.207" x2="-5.207" y2="-3.937" layer="43"/>
+<circle x="6.223" y="0" radius="0.635" width="0" layer="43"/>
+<rectangle x1="5.207" y1="-0.635" x2="6.223" y2="0.635" layer="43" rot="R180"/>
+<circle x="6.223" y="-2.286" radius="0.635" width="0" layer="43"/>
+<rectangle x1="5.207" y1="-2.921" x2="6.223" y2="-1.651" layer="43" rot="R180"/>
+<circle x="6.223" y="-4.572" radius="0.635" width="0" layer="43"/>
+<rectangle x1="5.207" y1="-5.207" x2="6.223" y2="-3.937" layer="43" rot="R180"/>
+<circle x="-2.286" y="-6.223" radius="0.635" width="0" layer="43"/>
+<rectangle x1="-2.794" y1="-6.35" x2="-1.778" y2="-5.08" layer="43" rot="R90"/>
+<circle x="0" y="-6.223" radius="0.635" width="0" layer="43"/>
+<rectangle x1="-0.508" y1="-6.35" x2="0.508" y2="-5.08" layer="43" rot="R90"/>
+<circle x="2.286" y="-6.223" radius="0.635" width="0" layer="43"/>
+<rectangle x1="1.778" y1="-6.35" x2="2.794" y2="-5.08" layer="43" rot="R90"/>
+<circle x="6.604" y="4.572" radius="0.635" width="0" layer="43"/>
+<rectangle x1="5.588" y1="3.937" x2="6.604" y2="5.207" layer="43" rot="R180"/>
+<circle x="2.286" y="6.604" radius="0.635" width="0" layer="43"/>
+<rectangle x1="1.778" y1="5.461" x2="2.794" y2="6.731" layer="43" rot="R270"/>
+<circle x="0" y="6.604" radius="0.635" width="0" layer="43"/>
+<rectangle x1="-0.508" y1="5.461" x2="0.508" y2="6.731" layer="43" rot="R270"/>
+<circle x="-2.286" y="6.604" radius="0.635" width="0" layer="43"/>
+<rectangle x1="-2.794" y1="5.461" x2="-1.778" y2="6.731" layer="43" rot="R270"/>
+
+<circle x="-6.223" y="4.572" radius="0.635" width="0" layer="41"/>
+<rectangle x1="-6.223" y1="3.937" x2="-5.588" y2="5.207" layer="41"/>
+<circle x="-6.223" y="0" radius="0.635" width="0" layer="41"/>
+<rectangle x1="-6.223" y1="-0.635" x2="-5.207" y2="0.635" layer="41"/>
+<circle x="-6.223" y="-2.286" radius="0.635" width="0" layer="41"/>
+<rectangle x1="-6.223" y1="-2.921" x2="-5.207" y2="-1.651" layer="41"/>
+<circle x="-6.223" y="-4.572" radius="0.635" width="0" layer="41"/>
+<rectangle x1="-6.223" y1="-5.207" x2="-5.207" y2="-3.937" layer="41"/>
+<circle x="6.223" y="0" radius="0.635" width="0" layer="41"/>
+<rectangle x1="5.207" y1="-0.635" x2="6.223" y2="0.635" layer="41" rot="R180"/>
+<circle x="6.223" y="-2.286" radius="0.635" width="0" layer="41"/>
+<rectangle x1="5.207" y1="-2.921" x2="6.223" y2="-1.651" layer="41" rot="R180"/>
+<circle x="6.223" y="-4.572" radius="0.635" width="0" layer="41"/>
+<rectangle x1="5.207" y1="-5.207" x2="6.223" y2="-3.937" layer="41" rot="R180"/>
+<circle x="-2.286" y="-6.223" radius="0.635" width="0" layer="41"/>
+<rectangle x1="-2.794" y1="-6.35" x2="-1.778" y2="-5.08" layer="41" rot="R90"/>
+<circle x="0" y="-6.223" radius="0.635" width="0" layer="41"/>
+<rectangle x1="-0.508" y1="-6.35" x2="0.508" y2="-5.08" layer="41" rot="R90"/>
+<circle x="2.286" y="-6.223" radius="0.635" width="0" layer="41"/>
+<rectangle x1="1.778" y1="-6.35" x2="2.794" y2="-5.08" layer="41" rot="R90"/>
+<circle x="6.604" y="4.572" radius="0.635" width="0" layer="41"/>
+<rectangle x1="5.588" y1="3.937" x2="6.604" y2="5.207" layer="41" rot="R180"/>
+<circle x="2.286" y="6.604" radius="0.635" width="0" layer="41"/>
+<rectangle x1="1.778" y1="5.461" x2="2.794" y2="6.731" layer="41" rot="R270"/>
+<circle x="0" y="6.604" radius="0.635" width="0" layer="41"/>
+<rectangle x1="-0.508" y1="5.461" x2="0.508" y2="6.731" layer="41" rot="R270"/>
+<circle x="-2.286" y="6.604" radius="0.635" width="0" layer="41"/>
+<rectangle x1="-2.794" y1="5.461" x2="-1.778" y2="6.731" layer="41" rot="R270"/>
+
+<circle x="-6.223" y="4.572" radius="0.635" width="0" layer="39"/>
+<rectangle x1="-6.223" y1="3.937" x2="-5.588" y2="5.207" layer="39"/>
+<circle x="-6.223" y="0" radius="0.635" width="0" layer="39"/>
+<rectangle x1="-6.223" y1="-0.635" x2="-5.207" y2="0.635" layer="39"/>
+<circle x="-6.223" y="-2.286" radius="0.635" width="0" layer="39"/>
+<rectangle x1="-6.223" y1="-2.921" x2="-5.207" y2="-1.651" layer="39"/>
+<circle x="-6.223" y="-4.572" radius="0.635" width="0" layer="39"/>
+<rectangle x1="-6.223" y1="-5.207" x2="-5.207" y2="-3.937" layer="39"/>
+<circle x="6.223" y="0" radius="0.635" width="0" layer="39"/>
+<rectangle x1="5.207" y1="-0.635" x2="6.223" y2="0.635" layer="39" rot="R180"/>
+<circle x="6.223" y="-2.286" radius="0.635" width="0" layer="39"/>
+<rectangle x1="5.207" y1="-2.921" x2="6.223" y2="-1.651" layer="39" rot="R180"/>
+<circle x="6.223" y="-4.572" radius="0.635" width="0" layer="39"/>
+<rectangle x1="5.207" y1="-5.207" x2="6.223" y2="-3.937" layer="39" rot="R180"/>
+<circle x="-2.286" y="-6.223" radius="0.635" width="0" layer="39"/>
+<rectangle x1="-2.794" y1="-6.35" x2="-1.778" y2="-5.08" layer="39" rot="R90"/>
+<circle x="0" y="-6.223" radius="0.635" width="0" layer="39"/>
+<rectangle x1="-0.508" y1="-6.35" x2="0.508" y2="-5.08" layer="39" rot="R90"/>
+<circle x="2.286" y="-6.223" radius="0.635" width="0" layer="39"/>
+<rectangle x1="1.778" y1="-6.35" x2="2.794" y2="-5.08" layer="39" rot="R90"/>
+<circle x="6.604" y="4.572" radius="0.635" width="0" layer="39"/>
+<rectangle x1="5.588" y1="3.937" x2="6.604" y2="5.207" layer="39" rot="R180"/>
+<circle x="2.286" y="6.604" radius="0.635" width="0" layer="39"/>
+<rectangle x1="1.778" y1="5.461" x2="2.794" y2="6.731" layer="39" rot="R270"/>
+<circle x="0" y="6.604" radius="0.635" width="0" layer="39"/>
+<rectangle x1="-0.508" y1="5.461" x2="0.508" y2="6.731" layer="39" rot="R270"/>
+<circle x="-2.286" y="6.604" radius="0.635" width="0" layer="39"/>
+<rectangle x1="-2.794" y1="5.461" x2="-1.778" y2="6.731" layer="39" rot="R270"/>
 </package>
 <package name="3588_SMD">
 <description>Keystone Electronics 3588 Mini Fuse Holder SMD

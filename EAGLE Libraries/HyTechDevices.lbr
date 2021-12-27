@@ -11184,7 +11184,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <description>Miniblade Fuse Holder&lt;br&gt;
 &lt; a href="https://www.mouser.com/datasheet/2/215/3568-742601.pdf"&gt;Datasheet&lt;/A&gt;</description>
 <gates>
-<gate name="G$1" symbol="FUSE" x="0" y="5.08"/>
+<gate name="G$1" symbol="FUSE_HOLDER" x="0" y="5.08"/>
 </gates>
 <devices>
 <device name="" package="MINI-BLADE_FUSE_HOLDER">

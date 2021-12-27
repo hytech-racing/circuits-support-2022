@@ -11820,34 +11820,6 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="STWD100" prefix="U">
-<description>&lt;b&gt;STWD100 Watchdog Timer&lt;/b&gt;
-&lt;br&gt;
-
-&lt;a href="https://www.st.com/resource/en/datasheet/stwd100.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="STWD100" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-23-5">
-<connects>
-<connect gate="G$1" pin="!EN" pad="3"/>
-<connect gate="G$1" pin="!WDO" pad="1"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VDD" pad="5"/>
-<connect gate="G$1" pin="WDI" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="497-13372-1-ND"/>
-<attribute name="MANUFACTURER" value="STMicroelectronics"/>
-<attribute name="MOPN" value="511-STWD100PYW83F "/>
-<attribute name="MPN" value="STWD100PYW83F"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="RELAY_DPDT" prefix="K">
 <description>&lt;b&gt;DPDT Relay&lt;/b&gt;
 

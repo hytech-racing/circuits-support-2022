@@ -4056,7 +4056,7 @@ Pad height = 2x height of mounting point centered at edge
 <circle x="-6.223" y="0" radius="0.635" width="0" layer="43"/>
 <rectangle x1="-6.223" y1="-0.635" x2="-5.207" y2="0.635" layer="43"/>
 </package>
-<package name="3588_SMD">
+<package name="3588">
 <description>Keystone Electronics 3588 Mini Fuse Holder SMD
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/215/588-744913.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -11516,7 +11516,7 @@ All PNs for the holder; if fuse needed, order separately
 <gate name="G$1" symbol="FUSE_HOLDER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="3588_SMD">
+<device name="" package="3588">
 <connects>
 <connect gate="G$1" pin="1" pad="1 4"/>
 <connect gate="G$1" pin="2" pad="2 3"/>

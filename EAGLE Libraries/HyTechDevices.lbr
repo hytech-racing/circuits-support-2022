@@ -1816,7 +1816,7 @@ Adapted from &lt;a href="https://www.analog.com/media/en/package-pcb-resources/p
 <rectangle x1="-15.24" y1="-7.62" x2="-12.7" y2="-5.08" layer="40"/>
 </package>
 <package name="SSOP-48">
-<description>SSOP-48 Package
+<description>SSOP-48
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-ssop/05081887_A_G48.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="8" x="-2.25" y="-3.37" dx="0.25" dy="1.25" layer="1" rot="R180"/>

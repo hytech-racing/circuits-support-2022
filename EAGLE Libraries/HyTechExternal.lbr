@@ -294,13 +294,33 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="HEADER_FEMALE">
+<deviceset name="HEADER_FEMALE_PINS*PITCH" prefix="O">
 <gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
 <technologies>
-<technology name=""/>
+<technology name="13_0.1">
+<attribute name="DKPN" value="S7046-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC131LFBN-RC"/>
+</technology>
+<technology name="14_0.1">
+<attribute name="DKPN" value="S7047-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC141LFBN-RC"/>
+</technology>
+<technology name="24_0.1">
+<attribute name="DKPN" value="S7057-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC241LFBN-RC"/>
+</technology>
+<technology name="2_0.1">
+<attribute name="DKPN" value="S7035-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC021LFBN-RC"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -323,6 +343,70 @@
 <device name="">
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ULTIMATE_GPS" prefix="O">
+<description>Adafruit Ultimate GPS
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/737/adafruit_ultimate_gps-779243.pdf"&gt;Datashhet&lt;/a&gt;
+&lt;br&gt;
+This actually orders the GPS.</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="1528-1153-ND"/>
+<attribute name="MANUFACTURER" value="Adafruit Industries LLC"/>
+<attribute name="MOPN" value="485-746"/>
+<attribute name="MPN" value="746"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STANDOFF" prefix="O">
+<description>Bivar Standoffs
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/50/MSB3_0_XXSP-2301677.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="MSB3.0-05SP-ND"/>
+<attribute name="HEIGHT" value="5mm"/>
+<attribute name="MANUFACTURER" value="Bivar Inc."/>
+<attribute name="MOPN" value="749-MSB3.0-05SP"/>
+<attribute name="MPN" value="MSB3.0-05SP"/>
+<attribute name="SCREW" value="3mm"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ANTENNA" prefix="O">
+<description>Antenna for GPS/Xbee
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/336/W3906B0100-1510198.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="1837-1002-ND"/>
+<attribute name="MANUFACTURER" value="PulseLarsen Antennas"/>
+<attribute name="MOPN" value="673-W3906B0100"/>
+<attribute name="MPN" value="W3906B0100"/>
+</technology>
 </technologies>
 </device>
 </devices>

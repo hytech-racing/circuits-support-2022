@@ -10951,7 +10951,9 @@ Leakage Inductance: 0.50 uH max
 </connects>
 <technologies>
 <technology name="BLACK">
+<attribute name="DKPN" value="1054051306-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105405-1306"/>
 <attribute name="MPN" value="105405-1306"/>
 </technology>
 </technologies>

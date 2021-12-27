@@ -426,6 +426,38 @@
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="LED_RGBW_?_*">
+<description>Inolux IN-505FCHWV RGBW LED
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/180/IN-505FCHWV-1488542.pdf"&gt; Datasheet&lt; /a&gt;</description>
+<gates>
+<gate name="G$1" symbol="DIODE_LED_RGBW" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="IN-505FCHWV">
+<connects>
+<connect gate="G$1" pin="BLUE+" pad="C+"/>
+<connect gate="G$1" pin="BLUE-" pad="C-"/>
+<connect gate="G$1" pin="GREEN+" pad="B+"/>
+<connect gate="G$1" pin="GREEN-" pad="B-"/>
+<connect gate="G$1" pin="RED+" pad="A+"/>
+<connect gate="G$1" pin="RED-" pad="A-"/>
+<connect gate="G$1" pin="THERMAL" pad="THERMAL"/>
+<connect gate="G$1" pin="WHITE+" pad="D+"/>
+<connect gate="G$1" pin="WHITE-" pad="D-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COLOR" value="RGBW"/>
+<attribute name="DKPN" value="1830-1097-2-ND"/>
+<attribute name="MANUFACTURER" value="INOLUX"/>
+<attribute name="MOPN" value="743-IN-505FCHWV"/>
+<attribute name="MPN" value="IN-505FCHWV"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="RESISTOR_?_*" prefix="R">
 <description>Resistor
 &lt;ul&gt;
@@ -493,14 +525,14 @@
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="10">
-<attribute name="DKPN" value="311-10.0HRCT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-RC0603FR-0710RL"/>
-<attribute name="MPN" value="RC0603FR-0710RL"/>
-<attribute name="POWER" value="0.1W"/>
+<attribute name="DKPN" value="764-1082-2-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Dale Thin Film"/>
+<attribute name="MOPN" value="71-PHP00603E10R0BST1"/>
+<attribute name="MPN" value="PHP00603E10R0BST1"/>
+<attribute name="POWER" value="0.375W"/>
 <attribute name="RESISTANCE" value="10"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="1V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="1.94V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="10.2K">
@@ -969,9 +1001,9 @@
 <attribute name="MPN" value="PHP00805E30R1BST1"/>
 <attribute name="POWER" value="0.625W"/>
 <attribute name="RESISTANCE" value="30.1"/>
-<attribute name="TOLERANCE" value="0.1"/>
+<attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="100V"/>
-<attribute name="VOLTAGE_MAX" value="" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="100V"/>
 </technology>
 <technology name="365K">
 <attribute name="DKPN" value="P20885CT-ND"/>
@@ -994,38 +1026,6 @@
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="400V"/>
 <attribute name="VOLTAGE_MAX" value="600V"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LED_RGBW_?_*">
-<description>Inolux IN-505FCHWV RGBW LED
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/180/IN-505FCHWV-1488542.pdf"&gt; Datasheet&lt; /a&gt;</description>
-<gates>
-<gate name="G$1" symbol="DIODE_LED_RGBW" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="IN-505FCHWV">
-<connects>
-<connect gate="G$1" pin="BLUE+" pad="C+"/>
-<connect gate="G$1" pin="BLUE-" pad="C-"/>
-<connect gate="G$1" pin="GREEN+" pad="B+"/>
-<connect gate="G$1" pin="GREEN-" pad="B-"/>
-<connect gate="G$1" pin="RED+" pad="A+"/>
-<connect gate="G$1" pin="RED-" pad="A-"/>
-<connect gate="G$1" pin="THERMAL" pad="THERMAL"/>
-<connect gate="G$1" pin="WHITE+" pad="D+"/>
-<connect gate="G$1" pin="WHITE-" pad="D-"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="COLOR" value="RGBW"/>
-<attribute name="DKPN" value="1830-1097-2-ND"/>
-<attribute name="MANUFACTURER" value="INOLUX"/>
-<attribute name="MOPN" value="743-IN-505FCHWV"/>
-<attribute name="MPN" value="IN-505FCHWV"/>
 </technology>
 </technologies>
 </device>

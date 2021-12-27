@@ -4163,8 +4163,18 @@ Header: 0.1" Pitch Pin Header
 <wire x1="11.43" y1="-1.27" x2="-11.43" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-11.43" y1="-1.27" x2="-11.43" y2="1.27" width="0.127" layer="21"/>
 <rectangle x1="-13.208" y1="-2.54" x2="13.208" y2="32.512" layer="39"/>
-<hole x="-10.16" y="29.464" drill="2.286"/>
-<hole x="10.16" y="29.464" drill="2.286"/>
+<hole x="-10.16" y="29.464" drill="3.4"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="39"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="40"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="41"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="42"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="43"/>
+<hole x="10.16" y="29.464" drill="3.4"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="39"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="40"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="41"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="42"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="43"/>
 </package>
 <package name="SOD-323">
 <description>SOD-323 Diode Package
@@ -9902,7 +9912,13 @@ Leakage Inductance: 0.50 uH max
 <deviceset name="TEENSY_3.5" prefix="A">
 <description>Teensy 3.5
 &lt;br&gt;
-&lt;a href="https://www.pjrc.com/store/teensy35.html"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.pjrc.com/store/teensy35.html"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Requires ordering of:
+&lt;ul&gt;
+&lt;li&gt;2: 24 pin, 2.54mm pitch female headers&lt;/li&gt;
+&lt;li&gt;1:  2 pin, 2.54mm pitch female headers&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TEENSY_3.5_EXT" x="0" y="0"/>
 </gates>
@@ -10028,7 +10044,14 @@ Note: OPA991 is also a comparator</description>
 <deviceset name="TEENSY_4.0_VBAT" prefix="A">
 <description>Teensy 4.0 with VBAT Pin
 &lt;br&gt;
-&lt;a href="https://www.pjrc.com/store/teensy40.html"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.pjrc.com/store/teensy40.html"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Requires ordering of:
+&lt;ul&gt;
+&lt;li&gt;1: 14 pin, 2.54mm pitch female headers&lt;/li&gt;
+&lt;li&gt;1: 13 pin, 2.54mm pitch female headers&lt;/li&gt;
+&lt;li&gt;1:   2 pin, 2.54mm pitch female headers&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TEENSY_4.0_VBAT" x="0" y="0"/>
 </gates>
@@ -10075,7 +10098,13 @@ Note: OPA991 is also a comparator</description>
 <deviceset name="TEENSY_4.1" prefix="A">
 <description>Teensy 4.1 with VBAT
 &lt;br&gt;
-&lt;a href="https://www.pjrc.com/store/teensy41.html#pins"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.pjrc.com/store/teensy41.html#pins"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Requires ordering of:
+&lt;ul&gt;
+&lt;li&gt;2: 24 pin, 2.54mm pitch female headers&lt;/li&gt;
+&lt;li&gt;1:  2 pin, 2.54mm pitch female headers&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TEENSY_4.1_EXT" x="0" y="0"/>
 </gates>
@@ -10408,7 +10437,13 @@ with up to 100mA of output current
 <deviceset name="TEENSY_4.0" prefix="A">
 <description>Teensy 4.0
 &lt;br&gt;
-&lt;a href="https://www.pjrc.com/store/teensy40.html"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.pjrc.com/store/teensy40.html"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Requires ordering of:
+&lt;ul&gt;
+&lt;li&gt;2: 14 pin, 2.54mm pitch female headers
+&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TEENSY_4.0" x="0" y="0"/>
 </gates>
@@ -11404,7 +11439,13 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <deviceset name="TEENSY_3.2" prefix="A">
 <description>Teensy 3.2
 &lt;br&gt;
-&lt;a href="https://www.pjrc.com/store/teensy32.html"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.pjrc.com/store/teensy32.html"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Requires ordering of:
+&lt;ul&gt;
+&lt;li&gt;2: 14 pin, 2.54mm pitch female headers
+&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TEENSY_3.2" x="0" y="0"/>
 </gates>
@@ -11694,7 +11735,11 @@ All PNs for the holder; if fuse needed, order separately.
 <description>Adafruit Ultimate GPS Breakout - 66 channel w/10 Hz updates - Version 3
 &lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/737/adafruit_ultimate_gps-779243.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
-The GPS part needs to also be added from external library.</description>
+Requires ordering of:
+&lt;ul&gt;
+&lt;li&gt;2: 5mm height, 3mm screw standoffs&lt;/li&gt;
+&lt;li&gt;1: Ultimate GPS&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ULTIMATE_GPS" x="0" y="0"/>
 </gates>

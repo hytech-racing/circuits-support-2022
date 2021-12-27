@@ -294,13 +294,33 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="HEADER_FEMALE">
+<deviceset name="HEADER_FEMALE_PINS*PITCH" prefix="O">
 <gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
 <technologies>
-<technology name=""/>
+<technology name="13_2.54MM">
+<attribute name="DKPN" value="S7046-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC131LFBN-RC"/>
+</technology>
+<technology name="14_2.54MM">
+<attribute name="DKPN" value="S7047-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC141LFBN-RC"/>
+</technology>
+<technology name="24_2.54MM">
+<attribute name="DKPN" value="S7057-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC241LFBN-RC"/>
+</technology>
+<technology name="2_2.54MM">
+<attribute name="DKPN" value="S7035-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC021LFBN-RC"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -344,6 +364,28 @@ This actually orders the GPS.</description>
 <attribute name="MANUFACTURER" value="Adafruit Industries LLC"/>
 <attribute name="MOPN" value="485-746"/>
 <attribute name="MPN" value="746"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STANDOFF" prefix="O">
+<description>Bivar Standoffs
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/50/MSB3_0_XXSP-2301677.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="MSB3.0-05SP-ND"/>
+<attribute name="HEIGHT" value="5mm"/>
+<attribute name="MANUFACTURER" value="Bivar Inc."/>
+<attribute name="MOPN" value="749-MSB3.0-05SP"/>
+<attribute name="MPN" value="MSB3.0-05SP"/>
+<attribute name="SCREW" value="3mm"/>
 </technology>
 </technologies>
 </device>

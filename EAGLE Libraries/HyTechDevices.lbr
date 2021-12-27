@@ -9345,6 +9345,10 @@ Leakage Inductance: 0.50 uH max
 </connects>
 <technologies>
 <technology name=""/>
+<attribute name="DKPN" value="13-RC0603FR-130RLTR-ND"/>
+<attribute name="MANUFACTURER" value="YAGEO"/>
+<attribute name="MOPN" value="603-RC0603FR-130RL"/>
+<attribute name="MPN" value="RC0603FR-130RL"/>
 </technologies>
 </device>
 </devices>

@@ -10199,7 +10199,7 @@ Leakage Inductance: 0.50 uH max
 <technology name="30V">
 <attribute name="CURRENT" value="0.8A"/>
 <attribute name="DKPN" value="CUS08F30H3FTR-ND"/>
-<attribute name="MANUFACTURER" value="Toshiba"/>
+<attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage"/>
 <attribute name="MOPN" value="757-CUS08F30H3F"/>
 <attribute name="MPN" value="CUS08F30"/>
 <attribute name="VOLTAGE" value="30V"/>

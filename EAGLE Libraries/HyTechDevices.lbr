@@ -8739,8 +8739,11 @@ with up to 100mA of output current</description>
 <attribute name="MPN" value="1054291304"/>
 </technology>
 <technology name="NATURAL">
+<attribute name="DKPN" value="900-1054312302TR-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105431-2302"/>
 <attribute name="MPN" value="1054312302"/>
+
 </technology>
 </technologies>
 </device>
@@ -10244,7 +10247,9 @@ Leakage Inductance: 0.50 uH max
 </connects>
 <technologies>
 <technology name="BLACK">
+<attribute name="DKPN" value="1054051304-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105405-1304"/>
 <attribute name="MPN" value="105405-1304"/>
 </technology>
 </technologies>
@@ -10258,7 +10263,9 @@ Leakage Inductance: 0.50 uH max
 </connects>
 <technologies>
 <technology name="BLACK">
+<attribute name="DKPN" value="900-1054291304TR-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105429-1304"/>
 <attribute name="MPN" value="105429-1304"/>
 </technology>
 </technologies>
@@ -10408,12 +10415,17 @@ Leakage Inductance: 0.50 uH max
 </connects>
 <technologies>
 <technology name="BLACK">
+<attribute name="DKPN" value="900-1054291304TR-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105429-1304"/>
 <attribute name="MPN" value="1054291304"/>
 </technology>
 <technology name="NATURAL">
+<attribute name="DKPN" value="900-1054312302TR-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105431-2302"/>
 <attribute name="MPN" value="1054312302"/>
+
 </technology>
 </technologies>
 </device>
@@ -10905,11 +10917,15 @@ Leakage Inductance: 0.50 uH max
 </connects>
 <technologies>
 <technology name="BLACK">
+<attribute name="DKPN" value="WM15063-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105310-1308"/>
 <attribute name="MPN" value="105310-1308"/>
 </technology>
 <technology name="NATURAL">
+<attribute name="DKPN" value="WM15077-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105310-2308"/>
 <attribute name="MPN" value="105310-2308"/>
 </technology>
 </technologies>

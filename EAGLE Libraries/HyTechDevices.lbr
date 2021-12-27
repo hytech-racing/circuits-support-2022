@@ -11610,6 +11610,11 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="MANUFACTURER" value="Microchip Technology"/>
 <attribute name="MOPN" value="579-MCP2562FD-E/SN"/>
 <attribute name="MPN" value="MCP2562FD-E/SN"/>
+
+<attribute name="ALT_DKPN" value="MCP2562-E/SN-ND"/>
+<attribute name="ALT_MANUFACTURER" value="Microchip Technology"/>
+<attribute name="ALT_MOPN" value="579-MCP2562-E/SN"/>
+<attribute name="ALT_MPN" value="MCP2562-E/SN"/>
 </technology>
 </technologies>
 </device>

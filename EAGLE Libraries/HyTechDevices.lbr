@@ -9916,8 +9916,8 @@ Leakage Inductance: 0.50 uH max
 &lt;br&gt;
 Requires ordering of:
 &lt;ul&gt;
-&lt;li&gt;2: 24 pin, 2.54mm pitch female headers&lt;/li&gt;
-&lt;li&gt;1:  2 pin, 2.54mm pitch female headers&lt;/li&gt;
+&lt;li&gt;2: 24 pin, 0.1" pitch female headers&lt;/li&gt;
+&lt;li&gt;1:  2 pin, 0.1" pitch female headers&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TEENSY_3.5_EXT" x="0" y="0"/>
@@ -10048,9 +10048,9 @@ Note: OPA991 is also a comparator</description>
 &lt;br&gt;
 Requires ordering of:
 &lt;ul&gt;
-&lt;li&gt;1: 14 pin, 2.54mm pitch female headers&lt;/li&gt;
-&lt;li&gt;1: 13 pin, 2.54mm pitch female headers&lt;/li&gt;
-&lt;li&gt;1:   2 pin, 2.54mm pitch female headers&lt;/li&gt;
+&lt;li&gt;1: 14 pin, 0.1" pitch female headers&lt;/li&gt;
+&lt;li&gt;1: 13 pin, 0.1" pitch female headers&lt;/li&gt;
+&lt;li&gt;1:   2 pin, 0.1" pitch female headers&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TEENSY_4.0_VBAT" x="0" y="0"/>
@@ -10102,8 +10102,8 @@ Requires ordering of:
 &lt;br&gt;
 Requires ordering of:
 &lt;ul&gt;
-&lt;li&gt;2: 24 pin, 2.54mm pitch female headers&lt;/li&gt;
-&lt;li&gt;1:  2 pin, 2.54mm pitch female headers&lt;/li&gt;
+&lt;li&gt;2: 24 pin, 0.1" pitch female headers&lt;/li&gt;
+&lt;li&gt;1:  2 pin, 0.1" pitch female headers&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TEENSY_4.1_EXT" x="0" y="0"/>
@@ -10441,7 +10441,7 @@ with up to 100mA of output current
 &lt;br&gt;
 Requires ordering of:
 &lt;ul&gt;
-&lt;li&gt;2: 14 pin, 2.54mm pitch female headers
+&lt;li&gt;2: 14 pin, 0.1" pitch female headers
 &lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
@@ -11443,7 +11443,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 &lt;br&gt;
 Requires ordering of:
 &lt;ul&gt;
-&lt;li&gt;2: 14 pin, 2.54mm pitch female headers
+&lt;li&gt;2: 14 pin, 0.1" pitch female headers
 &lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
@@ -11602,7 +11602,7 @@ Requires ordering of:
 </devices>
 </deviceset>
 <deviceset name="OKL-*" prefix="A">
-<description>Point of Load Voltage Regulator Modules 
+<description>Point of Load Voltage Regulator Modules
 &lt;br&gt;
 &lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
 <gates>

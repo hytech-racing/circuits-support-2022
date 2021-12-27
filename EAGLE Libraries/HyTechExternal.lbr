@@ -301,22 +301,22 @@
 <devices>
 <device name="">
 <technologies>
-<technology name="13_2.54MM">
+<technology name="13_0.1">
 <attribute name="DKPN" value="S7046-ND"/>
 <attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
 <attribute name="MPN" value="PPPC131LFBN-RC"/>
 </technology>
-<technology name="14_2.54MM">
+<technology name="14_0.1">
 <attribute name="DKPN" value="S7047-ND"/>
 <attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
 <attribute name="MPN" value="PPPC141LFBN-RC"/>
 </technology>
-<technology name="24_2.54MM">
+<technology name="24_0.1">
 <attribute name="DKPN" value="S7057-ND"/>
 <attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
 <attribute name="MPN" value="PPPC241LFBN-RC"/>
 </technology>
-<technology name="2_2.54MM">
+<technology name="2_0.1">
 <attribute name="DKPN" value="S7035-ND"/>
 <attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
 <attribute name="MPN" value="PPPC021LFBN-RC"/>

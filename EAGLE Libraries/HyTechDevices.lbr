@@ -6770,25 +6770,6 @@ I2C Mode
 <pin name="VIN" x="22.86" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="VBAT" x="22.86" y="-10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
 </symbol>
-<symbol name="CAN_TRANSCIEVER_MCP2562FD">
-<description>MCP2562FD Can Tranciever
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/268/20005284A-708901.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="0" y1="-17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-17.78" x2="17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
-<pin name="TXD" x="-2.54" y="-7.62" length="short" direction="in"/>
-<pin name="GND" x="-2.54" y="-15.24" length="short" direction="pwr"/>
-<pin name="VDD" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="RXD" x="-2.54" y="-10.16" length="short" direction="out"/>
-<pin name="VLOGIC" x="20.32" y="-5.08" length="short" direction="pwr" rot="R180"/>
-<pin name="CANL" x="20.32" y="-10.16" length="short" rot="R180"/>
-<pin name="CANH" x="20.32" y="-7.62" length="short" rot="R180"/>
-<pin name="STBY" x="-2.54" y="-12.7" length="short" direction="pas"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-18.542" size="1.27" layer="95" align="top-left">&gt;MPN</text>
-</symbol>
 <symbol name="CAN_TRANSCIEVER_TCAN1051*V">
 <description>TCAN1051*V Can Tranciever
 &lt;br&gt;
@@ -7767,7 +7748,7 @@ with up to 100mA of output current</description>
 <pin name="OUT" x="20.32" y="-2.54" length="short" direction="sup" rot="R180"/>
 <pin name="TRIM" x="20.32" y="-5.08" length="short" rot="R180"/>
 </symbol>
-<symbol name="CAN_TRANSCIEVER_MCP2562FD-1">
+<symbol name="CAN_TRANSCIEVER_MCP2562FD">
 <description>MCP2562FD Can Tranciever
 &lt;br&gt;
 &lt;a href="https://ww1.microchip.com/downloads/en/DeviceDoc/20005284A.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -7775,14 +7756,14 @@ with up to 100mA of output current</description>
 <wire x1="0" y1="-17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="17.78" y1="-17.78" x2="17.78" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
-<pin name="TXD" x="-2.54" y="-10.16" length="short" direction="in"/>
+<pin name="TXD" x="-2.54" y="-7.62" length="short" direction="in"/>
 <pin name="GND" x="-2.54" y="-15.24" length="short" direction="pwr"/>
 <pin name="VDD" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="RXD" x="-2.54" y="-12.7" length="short" direction="out"/>
+<pin name="RXD" x="-2.54" y="-10.16" length="short" direction="out"/>
 <pin name="VIO" x="20.32" y="-5.08" length="short" direction="pwr" rot="R180"/>
-<pin name="CANL" x="20.32" y="-12.7" length="short" rot="R180"/>
-<pin name="CANH" x="20.32" y="-10.16" length="short" direction="out" rot="R180"/>
-<pin name="S" x="20.32" y="-7.62" length="short" direction="in" rot="R180"/>
+<pin name="CANL" x="20.32" y="-10.16" length="short" rot="R180"/>
+<pin name="CANH" x="20.32" y="-7.62" length="short" rot="R180"/>
+<pin name="STBY" x="-2.54" y="-12.7" length="short" direction="pas"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-18.542" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
@@ -11720,12 +11701,12 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP2562FD-E/SN" prefix="U">
+<deviceset name="MCP2562FD" prefix="U">
 <description>MCP2562FD Can Tranciever
 &lt;br&gt;
 &lt;a href="https://ww1.microchip.com/downloads/en/DeviceDoc/20005284A.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="CAN_TRANSCIEVER_MCP2562FD-1" x="0" y="0"/>
+<gate name="G$1" symbol="CAN_TRANSCIEVER_MCP2562FD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOIC-08(NARROW,0.15&quot;)">
@@ -11734,7 +11715,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <connect gate="G$1" pin="CANL" pad="6"/>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="RXD" pad="4"/>
-<connect gate="G$1" pin="S" pad="8"/>
+<connect gate="G$1" pin="STBY" pad="8"/>
 <connect gate="G$1" pin="TXD" pad="1"/>
 <connect gate="G$1" pin="VDD" pad="3"/>
 <connect gate="G$1" pin="VIO" pad="5"/>

@@ -262,7 +262,12 @@
 <devices>
 <device name="">
 <technologies>
-<technology name=""/>
+<technology name="MICROFIT_HORIZONTAL">
+<attribute name="DKPN" value="WM1845-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="Molex"/>
+<attribute name="MPN" value="436450200"/>
+</technology>
 </technologies>
 </device>
 </devices>

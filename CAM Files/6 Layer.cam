@@ -4,7 +4,7 @@
         "name": "Nathan Cheek"
     },
     "description": {
-        "EN": "6 Layer CAM with tPlace/bPlace, tName/bName, tValue/bValue, and tDocu/bDocu"
+        "EN": "6 Layer CAM with tPlace/bPlace, tName/bName, and tDocu/bDocu"
     },
     "output_type": "zip",
     "outputs": [
@@ -292,9 +292,7 @@
                     "filename_format": "%PREFIX/silkscreen_top.gbr",
                     "layers": [
                         21,
-                        25,
-                        27,
-                        51
+                        25
                     ],
                     "milling": false,
                     "name": "Silkscreen Top",
@@ -318,8 +316,7 @@
                     "filename_format": "%PREFIX/silkscreen_bottom.gbr",
                     "layers": [
                         22,
-                        26,
-                        52
+                        26
                     ],
                     "milling": false,
                     "name": "Silkscreen Bottom",

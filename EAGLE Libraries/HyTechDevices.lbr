@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4000,28 +4000,6 @@ A variation of MSOP16 with 4 pins removed.
 <circle x="-14.162" y="8.051" radius="2.2" width="0" layer="40"/>
 <circle x="14.162" y="8.051" radius="2.2" width="0" layer="40"/>
 <circle x="0" y="-16.29" radius="2.2" width="0" layer="40"/>
-</package>
-<package name="ACSA56-51">
-<description>ACSA56-51 LED 7 Segment Display
-&lt;br&gt;
-&lt;a href="https://mouser.com/datasheet/2/216/ACSA56-51SYKWA-245353.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<wire x1="-6.25" y1="10" x2="-6.25" y2="-10" width="0.127" layer="21"/>
-<wire x1="6.25" y1="10" x2="6.25" y2="-10" width="0.127" layer="21"/>
-<wire x1="-6.25" y1="-10" x2="6.25" y2="-10" width="0.127" layer="21"/>
-<smd name="1" x="-5.08" y="-10" dx="1.9" dy="3" layer="1"/>
-<smd name="2" x="-2.54" y="-10" dx="1.9" dy="3" layer="1"/>
-<smd name="3" x="0" y="-10" dx="1.9" dy="3" layer="1"/>
-<smd name="4" x="2.54" y="-10" dx="1.9" dy="3" layer="1"/>
-<smd name="5" x="5.08" y="-10" dx="1.9" dy="3" layer="1"/>
-<smd name="6" x="5.08" y="10" dx="1.9" dy="3" layer="1"/>
-<smd name="7" x="2.54" y="10" dx="1.9" dy="3" layer="1"/>
-<smd name="8" x="0" y="10" dx="1.9" dy="3" layer="1"/>
-<smd name="9" x="-2.54" y="10" dx="1.9" dy="3" layer="1"/>
-<smd name="10" x="-5.08" y="10" dx="1.9" dy="3" layer="1"/>
-<text x="-6.858" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
-<circle x="-7.62" y="-10.16" radius="0.635" width="0" layer="21"/>
-<rectangle x1="-6.858" y1="-12.192" x2="6.858" y2="12.192" layer="39"/>
-<wire x1="-6.25" y1="10" x2="6.25" y2="10" width="0.127" layer="21"/>
 </package>
 <package name="DSM7T">
 <description>DSM7T LED 7 Segment Display
@@ -11676,11 +11654,6 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 &lt;br&gt;
 
 &lt;ul&gt;
-
-&lt;li&gt;&lt;a href="https://www.kingbrightusa.com/images/catalog/SPEC/ACSA56-51CGKWA.pdf"&gt;ACSA56-51 Green&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=https://www.kingbrightusa.com/images/catalog/SPEC/ACSA56-51SYKWA.pdf"&gt;ACSA56-51 Yellow&lt;/a&gt;&lt;/li&gt;
-
 &lt;li&gt;&lt;a href="https://vcclite.com/wp-content/uploads/wpallimport/files/files/DSM7TA56106T.pdf"&gt;DSM7T  Blue&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href="https://vcclite.com/wp-content/uploads/wpallimport/files/files/DSM7TA56105T.pdf"&gt;DSM7T  Green&lt;/a&gt;&lt;/li&gt;
@@ -11690,34 +11663,6 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <gate name="G$1" symbol="DIODE_LED_7_SEGMENT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="ACSA56-51" package="ACSA56-51">
-<connects>
-<connect gate="G$1" pin="A" pad="7"/>
-<connect gate="G$1" pin="B" pad="6"/>
-<connect gate="G$1" pin="C" pad="4"/>
-<connect gate="G$1" pin="D" pad="2"/>
-<connect gate="G$1" pin="E" pad="1"/>
-<connect gate="G$1" pin="F" pad="9"/>
-<connect gate="G$1" pin="G" pad="5 10"/>
-<connect gate="G$1" pin="VDD" pad="3 8"/>
-</connects>
-<technologies>
-<technology name="GREEN_">
-<attribute name="COLOR" value="Green"/>
-<attribute name="DKPN" value="754-1621-2-ND"/>
-<attribute name="MANUFACTURER" value="Kingbright"/>
-<attribute name="MOPN" value="604-ACSA56-51CGKWA "/>
-<attribute name="MPN" value="ACSA56-51CGKWA"/>
-</technology>
-<technology name="YELLOW_">
-<attribute name="COLOR" value="Yellow"/>
-<attribute name="DKPN" value="754-1624-2-ND"/>
-<attribute name="MANUFACTURER" value="Kingbright"/>
-<attribute name="MOPN" value="604-ACSA56-51SYKWA "/>
-<attribute name="MPN" value="ACSA56-51SYKWA"/>
-</technology>
-</technologies>
-</device>
 <device name="DSM7TA" package="DSM7T">
 <connects>
 <connect gate="G$1" pin="A" pad="7"/>

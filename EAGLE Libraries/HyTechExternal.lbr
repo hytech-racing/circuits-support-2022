@@ -262,23 +262,29 @@
 <devices>
 <device name="">
 <technologies>
-<technology name="MICROFIT_HORIZONTAL">
-<attribute name="DKPN" value="WM1845-ND"/>
-<attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MOPN" value="Molex"/>
-<attribute name="MPN" value="436450200"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FUSE">
+<deviceset name="FUSE_*" prefix="O">
+<description>Fuse
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.littelfuse.com/~/media/automotive/datasheets/fuses/passenger-car-and-commercial-vehicle/blade-fuses/littelfuse_mini_datasheet.pdf"&gt;MINI Blade&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
 <technologies>
-<technology name=""/>
+<technology name="MINI_BLADE_2">
+<attribute name="DKPN" value="F986-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-0297002.WXNV"/>
+<attribute name="MPN" value="0297002.WXNV"/>
+</technology>
 </technologies>
 </device>
 </devices>

@@ -11853,32 +11853,6 @@ MAX current: 8.0A</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CPC1002N" prefix="U">
-<description>&lt;b&gt;CPC1002N Solid State Relay&lt;/b&gt;&lt;br&gt;
-
-&lt;a href="https://www.ixysic.com/home/pdfs.nsf/www/CPC1002N.pdf/$file/CPC1002N.pdf"&gt;Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="RELAY_SOLIDSTATE_NO" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOP-04">
-<connects>
-<connect gate="G$1" pin="CONTACT1" pad="3"/>
-<connect gate="G$1" pin="CONTACT2" pad="4"/>
-<connect gate="G$1" pin="CONTROL+" pad="1"/>
-<connect gate="G$1" pin="CONTROL-" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="CLA221-ND"/>
-<attribute name="MANUFACTURER" value="IXYS"/>
-<attribute name="MOPN" value="849-CPC1002N "/>
-<attribute name="MPN" value="CPC1002N"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MOMENTARY_BTN" prefix="S">
 <description>&lt;b&gt;Momentary Button&lt;/b&gt;
 &lt;br&gt;

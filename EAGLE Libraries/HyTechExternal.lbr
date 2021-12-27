@@ -327,6 +327,28 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="ULTIMATE_GPS" prefix="O">
+<description>Adafruit Ultimate GPS
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/737/adafruit_ultimate_gps-779243.pdf"&gt;Datashhet&lt;/a&gt;
+&lt;br&gt;
+This actually orders the GPS.</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="1528-1153-ND"/>
+<attribute name="MANUFACTURER" value="Adafruit Industries LLC"/>
+<attribute name="MOPN" value="485-746"/>
+<attribute name="MPN" value="746"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

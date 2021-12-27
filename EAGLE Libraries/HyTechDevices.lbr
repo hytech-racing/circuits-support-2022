@@ -11590,7 +11590,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <connect gate="G$1" pin="VDD" pad="20"/>
 </connects>
 <technologies>
-<technology name="T/1-W12N-C">
+<technology name="">
 <attribute name="DKPN" value="MCP23S08-E/SS-ND"/>
 <attribute name="MANUFACTURER" value="Microchip Technology"/>
 <attribute name="MOPN" value="579-MCP23S08-E/SS"/>

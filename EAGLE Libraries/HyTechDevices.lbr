@@ -715,10 +715,10 @@
 <rectangle x1="-1.27" y1="-1.524" x2="1.27" y2="34.544" layer="40"/>
 <rectangle x1="13.97" y1="-1.524" x2="16.51" y2="34.544" layer="40"/>
 </package>
-<package name="SOT223">
-<description>SOT223
+<package name="SOT-223">
+<description>SOT-223
 &lt;br&gt;
-&lt;a href="https://www.diodes.com/assets/Package-Files/SOT223.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.diodes.com/assets/Package-Files/SOT-223.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-2.3" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
 <smd name="2" x="0" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
 <smd name="3" x="2.3" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
@@ -731,7 +731,7 @@
 <rectangle x1="-3.81" y1="-4.445" x2="3.81" y2="4.445" layer="39"/>
 </package>
 <package name="SOIC-16">
-<description>SOIC 16
+<description>SOIC-16
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-soic/S16%2005-08-1610%20Rev%20G.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-4.445" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
@@ -759,7 +759,7 @@
 <rectangle x1="-5.334" y1="-3.556" x2="5.334" y2="3.556" layer="39"/>
 </package>
 <package name="MSOP-16">
-<description>MSOP 16
+<description>MSOP-16
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081669_A_MS16.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-1.75" y="-2.1055" dx="0.305" dy="0.889" layer="1"/>
@@ -856,7 +856,7 @@
 <rectangle x1="-1.778" y1="-1.778" x2="1.778" y2="1.778" layer="39"/>
 </package>
 <package name="SOIC-18W">
-<description>SOIC 18W
+<description>SOIC-18W
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-soic/SO_18_05-08-1620.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-5.08" y="-4.699" dx="0.762" dy="1.143" layer="1"/>
@@ -886,7 +886,7 @@
 <rectangle x1="-6.35" y1="-5.588" x2="6.35" y2="5.588" layer="39"/>
 </package>
 <package name="SOP-04">
-<description>SOP 4
+<description>SOP-4
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/240/CPC1002N-1546124.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
@@ -971,7 +971,7 @@ MOPN: 534-3568</description>
 <rectangle x1="3.556" y1="-3.3655" x2="6.35" y2="3.3655" layer="40"/>
 </package>
 <package name="SOT-23-5">
-<description>SOT 23-5
+<description>SOT-23-5
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-sot-23/SOT_5_05-08-1635.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <wire x1="-1.45" y1="0.875" x2="1.45" y2="0.875" width="0.127" layer="21"/>
@@ -1305,7 +1305,7 @@ visible on the PCB.</text>
 <text x="0" y="-5.08" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="SOIC-28W">
-<description>SOIC 28W
+<description>SOIC-28W
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-soic/SO_28_05-08-1620.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-8.255" y="-4.699" dx="0.762" dy="1.143" layer="1"/>
@@ -1405,7 +1405,7 @@ visible on the PCB.</text>
 <rectangle x1="-3.81" y1="-1.27" x2="3.81" y2="1.27" layer="40"/>
 </package>
 <package name="TSSOP-20">
-<description>TSSOP 20
+<description>TSSOP-20
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-tssop/TSSOP_20_05-08-1650.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-2.925" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
@@ -1743,7 +1743,7 @@ visible on the PCB.</text>
 <text x="0" y="-5.08" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="TSSOP-16">
-<description>TSSOP 16
+<description>TSSOP-16
 &lt;br&gt;
 Adapted from &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-tssop/TSSOP_14_05-08-1650.pdf"&gt;TSSOP-14 Datasheet&lt;/a&gt; and &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-tssop/TSSOP_20_05-08-1650.pdf"&gt;TSSOP-20 Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-2.275" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
@@ -1771,7 +1771,7 @@ Adapted from &lt;a href="https://www.analog.com/media/en/package-pcb-resources/p
 <rectangle x1="-3.048" y1="-3.556" x2="3.048" y2="3.556" layer="39"/>
 </package>
 <package name="TSSOP-14">
-<description>TSSOP 14
+<description>TSSOP-14
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-tssop/TSSOP_14_05-08-1650.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-1.95" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
@@ -1816,7 +1816,7 @@ Adapted from &lt;a href="https://www.analog.com/media/en/package-pcb-resources/p
 <rectangle x1="-15.24" y1="-7.62" x2="-12.7" y2="-5.08" layer="40"/>
 </package>
 <package name="SSOP-48">
-<description>SSOP 48 Package
+<description>SSOP-48 Package
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-ssop/05081887_A_G48.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="8" x="-2.25" y="-3.37" dx="0.25" dy="1.25" layer="1" rot="R180"/>
@@ -2048,8 +2048,8 @@ Adapted from &lt;a href="https://www.analog.com/media/en/package-pcb-resources/p
 <smd name="32" x="-2.8" y="4.2" dx="0.55" dy="1.55" layer="1"/>
 <rectangle x1="-5.5" y1="-5.5" x2="5.5" y2="5.5" layer="39"/>
 </package>
-<package name="SOT363">
-<description>SOT363
+<package name="SOT-363">
+<description>SOT-363
 &lt;br&gt;
 &lt;a href="https://www.diodes.com/assets/Package-Files/SOT363.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-0.6731" y="-0.95" dx="0.42" dy="0.6" layer="1"/>
@@ -2269,7 +2269,7 @@ Note: Based on page 48 and 49.</description>
 <circle x="0" y="0" radius="3.75" width="0" layer="42"/>
 </package>
 <package name="TSSOP-24">
-<description>TSSOP 24
+<description>TSSOP-24
 &lt;br&gt;
 Adapted from &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-tssop/TSSOP_20_05-08-1650.pdf"&gt;TSSOP-20 Datasheet&lt;/a&gt; and &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-tssop/TSSOP_24_05-08-1771.pdf"&gt;TSSOP-24 Exposed Pad&lt;/a&gt;</description>
 <smd name="1" x="-3.575" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
@@ -2365,8 +2365,8 @@ Note: Based off of Page 112.</description>
 <circle x="-3" y="2" radius="0.1" width="0.127" layer="21"/>
 <rectangle x1="-2.794" y1="-2.032" x2="2.794" y2="2.032" layer="39"/>
 </package>
-<package name="SOT89">
-<description>SOT89
+<package name="SOT-89">
+<description>SOT-89
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/308/1/NCP785A_D-2317346.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
@@ -3039,24 +3039,6 @@ visible on the PCB.</text>
 <rectangle x1="-1.025" y1="0.5" x2="-0.625" y2="0.75" layer="21"/>
 <rectangle x1="-1.025" y1="-0.75" x2="-0.625" y2="-0.5" layer="21"/>
 </package>
-<package name="CLP1608-2L">
-<description>CLP1608-2L Yageo 0603 VSKY Diode Package
-&lt;br&gt;
-&lt;a href="https://www.vishay.com/docs/85917/soldrecclp.pdf"&gt;Landing Pattern&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.vishay.com/docs/85892/vsky20401608.pdf"&gt;Size&lt;/a&gt;</description>
-<smd name="1" x="-0.295" y="0" dx="0.88" dy="0.62" layer="1"/>
-<smd name="2" x="0.595" y="0" dx="0.28" dy="0.62" layer="1"/>
-<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
-<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
-<wire x1="-0.9" y1="0.5" x2="0.9" y2="0.5" width="0.0508" layer="39"/>
-<wire x1="0.9" y1="0.5" x2="0.9" y2="-0.5" width="0.0508" layer="39"/>
-<wire x1="0.9" y1="-0.5" x2="-0.9" y2="-0.5" width="0.0508" layer="39"/>
-<wire x1="-0.9" y1="-0.5" x2="-0.9" y2="0.5" width="0.0508" layer="39"/>
-<text x="0" y="0.508" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-</package>
 <package name="SOURIAU_04-35">
 <description>SOURIAU 3 Pin Connector
 &lt;br&gt;
@@ -3356,7 +3338,7 @@ visible on the PCB.</text>
 <rectangle x1="-11.43" y1="-1.27" x2="8.89" y2="1.27" layer="40"/>
 </package>
 <package name="SSOP-36">
-<description>SSOP 36
+<description>SSOP-36
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-ssop/SSOP_36_05-08-1640.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-5.525" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
@@ -3782,7 +3764,7 @@ Note: Based on Page 88.</description>
 <circle x="36.5506" y="-14.8717" radius="14" width="0.127" layer="51"/>
 </package>
 <package name="SSOP-28">
-<description>SSOP 28
+<description>SSOP-28
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-ssop/SSOP_28_05-08-1640.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-4.225" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
@@ -3840,7 +3822,7 @@ Note: Based on Page 88.</description>
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
-Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
+Keepout is 0.8 mm around fuse to get 1.6 mm between fuses.</description>
 <smd name="1" x="-5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
 <smd name="2" x="5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
 <wire x1="-5.43" y1="2.39" x2="-5.43" y2="-2.39" width="0.127" layer="21"/>
@@ -3966,7 +3948,7 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <rectangle x1="11.176" y1="31.496" x2="16.764" y2="34.544" layer="40"/>
 </package>
 <package name="MSOP-10">
-<description>MSOP 10
+<description>MSOP-10
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081661_F_MS.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-1" y="-2.1055" dx="0.305" dy="0.889" layer="1"/>
@@ -4752,7 +4734,7 @@ Dashed line is edge of mated connector.</description>
 <text x="0" y="1.524" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="MSOP-16(MSE)">
-<description>MSOP 16
+<description>MSOP-16
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081669_A_MS16.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
@@ -4817,7 +4799,7 @@ Dashed line is edge of mated connector.</description>
 </package>
 <package name="MSE16(12)">
 <description>MSE16 (12)&lt;br&gt;
-A variation of MSOP16 with 4 pins removed. 
+A variation of MSOP16 with 4 pins removed.
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081871_D_MSE16(12).pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-1.75" y="-2.10185" dx="0.308609375" dy="0.9017" layer="1"/>
@@ -4839,7 +4821,7 @@ A variation of MSOP16 with 4 pins removed.
 <rectangle x1="-2.286" y1="-2.794" x2="2.286" y2="2.794" layer="39"/>
 <text x="-2.286" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="SOD323">
+<package name="SOD-323">
 <description>SOD323 Diode Package
 &lt;br&gt;
 &lt;a href="https://www.diodes.com/assets/Package-Files/SOD323.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -8684,7 +8666,7 @@ MAX voltage: 100V</description>
 <gate name="G$1" symbol="BJT_NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT223">
+<device name="" package="SOT-223">
 <connects>
 <connect gate="G$1" pin="BASE" pad="1"/>
 <connect gate="G$1" pin="COLLECTOR" pad="2 4"/>
@@ -9759,7 +9741,7 @@ Leakage Inductance: 0.50 uH max
 <gate name="G$1" symbol="MOSFET_P-CHANNEL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SOT23" package="SOT-23">
+<device name="SOT-23" package="SOT-23">
 <connects>
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="1"/>
@@ -10051,7 +10033,7 @@ Leakage Inductance: 0.50 uH max
 <gate name="E" symbol="DIODE_TVS_UNIDIRECTIONAL_SINGLE_ENDED" x="0" y="-40.64" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="SOT363">
+<device name="" package="SOT-363">
 <connects>
 <connect gate="A" pin="A" pad="2"/>
 <connect gate="A" pin="C" pad="1"/>
@@ -10201,38 +10183,20 @@ Leakage Inductance: 0.50 uH max
 </devices>
 </deviceset>
 <deviceset name="SCHOTTKY_?_*" prefix="D">
-<description>VSKY20401608 Schottky Rectifier Diode
-&lt;br&gt;
-&lt;a href="https://www.vishay.com/docs/85892/vsky20401608.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;&lt;br&gt;
-CUS08F30 Shottky Diode
+<description>CUS08F30 Shottky Diode
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/408/CUS08F30_datasheet_en_20140414-1916097.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE_SCHOTTKY" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="CLP1608-2L">
-<connects>
-<connect gate="G$1" pin="A" pad="2"/>
-<connect gate="G$1" pin="C" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="112-VSKY20401608-G4-08CT-ND"/>
-<attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division"/>
-<attribute name="MOPN" value="78-VSKY20401608G408"/>
-<attribute name="MPN" value="VSKY20401608-G4-08"/>
-</technology>
-</technologies>
-</device>
-<device name="SOD323" package="SOD323">
+<device name="SOD323" package="SOD-323">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name="">
+<technology name="30V">
 <attribute name="CURRENT" value="0.8A"/>
 <attribute name="DKPN" value="CUS08F30H3FTR-ND"/>
 <attribute name="MANUFACTURER" value="Toshiba"/>
@@ -11256,7 +11220,7 @@ ISO224B: High-Grade
 <gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SOT223" package="SOT223">
+<device name="SOT-223" package="SOT-223">
 <connects>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="IN" pad="3"/>
@@ -11271,7 +11235,7 @@ ISO224B: High-Grade
 </technology>
 </technologies>
 </device>
-<device name="SOT89" package="SOT89">
+<device name="SOT-89" package="SOT-89">
 <connects>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="1"/>
@@ -11732,7 +11696,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </technology>
 </technologies>
 </device>
-<device name="SOT89" package="SOT89">
+<device name="SOT-89" package="SOT-89">
 <connects>
 <connect gate="G$1" pin="ADJ" pad="3"/>
 <connect gate="G$1" pin="IN" pad="1"/>
@@ -11858,7 +11822,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </deviceset>
 <deviceset name="STWD100" prefix="U">
 <description>&lt;b&gt;STWD100 Watchdog Timer&lt;/b&gt;
-&lt;br&gt; 
+&lt;br&gt;
 
 &lt;a href="https://www.st.com/resource/en/datasheet/stwd100.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>

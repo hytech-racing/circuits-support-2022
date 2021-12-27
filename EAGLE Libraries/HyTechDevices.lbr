@@ -3938,19 +3938,6 @@ A variation of MSOP16 with 4 pins removed.
 <circle x="-7.366" y="-3.175" radius="0.635" width="0" layer="21"/>
 <text x="-6.604" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="0603-FUSE">
-<description>0603 Fuse
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/40/AccuGuardLC_0402-932635.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="1" x="-0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
-<smd name="2" x="0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
-<text x="0" y="0.75" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
-<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
-<rectangle x1="-1.35" y1="-0.75" x2="1.35" y2="0.75" layer="39"/>
-</package>
 <package name="0603-IND">
 <description>0603 Inductor
 &lt;br&gt;
@@ -7863,7 +7850,6 @@ with up to 100mA of output current</description>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105431-2302"/>
 <attribute name="MPN" value="1054312302"/>
-
 </technology>
 </technologies>
 </device>
@@ -8433,7 +8419,6 @@ Leakage Inductance: 0.50 uH max
 <deviceset name="FUSE_?_*" prefix="F">
 <description>Fuse
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/40/AccuGuardLC_0402-932635.pdf"&gt;F0603E Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;0885 Series&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
@@ -8469,22 +8454,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MOPN" value="576-088501.6DR"/>
 <attribute name="MPN" value="088501.6DR"/>
 <attribute name="VOLTAGE" value="500V"/>
-</technology>
-</technologies>
-</device>
-<device name="F0603E" package="0603-FUSE">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="1.5">
-<attribute name="CURRENT" value="1.5A"/>
-<attribute name="DKPN" value="478-2864-2-ND"/>
-<attribute name="MANUFACTURER" value="KYOCERA AVX"/>
-<attribute name="MOPN" value="581-F0603E1R50FSTR "/>
-<attribute name="MPN" value="F0603E1R50FSTR"/>
-<attribute name="VOLTAGE" value="32V"/>
 </technology>
 </technologies>
 </device>
@@ -9527,7 +9496,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105431-2302"/>
 <attribute name="MPN" value="1054312302"/>
-
 </technology>
 </technologies>
 </device>

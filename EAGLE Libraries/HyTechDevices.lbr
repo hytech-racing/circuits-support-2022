@@ -12725,32 +12725,6 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="FUSE_BLADE_*" prefix="F">
-<description>Blade Fuse
-&lt;br&gt;
-&lt;a href="https://www.littelfuse.com/media?resourcetype=datasheets&amp;itemid=0f5f58cb-559e-494b-8d53-723f30445ae5&amp;filename=littelfuse-mini-datasheet"&gt;Littelfuse Datasheet&lt;/a&gt;&lt;/li&gt;</description>
-<gates>
-<gate name="G$1" symbol="FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="3588_SMD">
-<connects>
-<connect gate="G$1" pin="1" pad="1 4"/>
-<connect gate="G$1" pin="2" pad="2 3"/>
-</connects>
-<technologies>
-<technology name="2">
-<attribute name="CURRENT" value="2A"/>
-<attribute name="DKPN" value="F986-ND"/>
-<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
-<attribute name="MOPN" value="576-0297002.WXNV"/>
-<attribute name="MPN" value="0297002.WXNV"/>
-<attribute name="VOLTAGE" value="32V"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="RE46C100" prefix="U">
 <description>RE46C100 Piezoelectric Horn Driver IC
 &lt;br&gt;
@@ -12774,6 +12748,33 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="MANUFACTURER" value="Microchip Technology"/>
 <attribute name="MOPN" value="579-RE46C100S8TF "/>
 <attribute name="MPN" value=" RE46C100S8TF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FUSE_BLADE_*" prefix="F">
+<description>Blade Fuse
+&lt;br&gt;
+All PNs for the holder; if fuse needed, order separately
+&lt;a href="https://www.littelfuse.com/media?resourcetype=datasheets&amp;itemid=0f5f58cb-559e-494b-8d53-723f30445ae5&amp;filename=littelfuse-mini-datasheet"&gt;Littelfuse Datasheet&lt;/a&gt;&lt;/li&gt;</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3588_SMD">
+<connects>
+<connect gate="G$1" pin="1" pad="1 4"/>
+<connect gate="G$1" pin="2" pad="2 3"/>
+</connects>
+<technologies>
+<technology name="2">
+<attribute name="CURRENT" value="2A"/>
+<attribute name="DKPN" value="36-3588-ND"/>
+<attribute name="MANUFACTURER" value="Keystone Electronics"/>
+<attribute name="MOPN" value="534-3588"/>
+<attribute name="MPN" value="3588"/>
+<attribute name="VOLTAGE" value="32V"/>
 </technology>
 </technologies>
 </device>

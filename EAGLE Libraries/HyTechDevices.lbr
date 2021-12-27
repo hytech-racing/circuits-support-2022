@@ -11739,6 +11739,7 @@ Requires ordering of:
 &lt;ul&gt;
 &lt;li&gt;2: 5mm height, 3mm screw standoffs&lt;/li&gt;
 &lt;li&gt;1: Ultimate GPS&lt;/li&gt;
+&lt;li&gt;1: Antenna&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ULTIMATE_GPS" x="0" y="0"/>

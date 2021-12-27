@@ -391,6 +391,26 @@ This actually orders the GPS.</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="ANTENNA" prefix="O">
+<description>Antenna for GPS/Xbee
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/336/W3906B0100-1510198.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="1837-1002-ND"/>
+<attribute name="MANUFACTURER" value="PulseLarsen Antennas"/>
+<attribute name="MOPN" value="673-W3906B0100"/>
+<attribute name="MPN" value="W3906B0100"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

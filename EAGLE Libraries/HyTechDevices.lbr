@@ -4822,7 +4822,7 @@ A variation of MSOP16 with 4 pins removed.
 <text x="-2.286" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="SOD-323">
-<description>SOD323 Diode Package
+<description>SOD-323 Diode Package
 &lt;br&gt;
 &lt;a href="https://www.diodes.com/assets/Package-Files/SOD323.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="A" x="-1.15" y="0" dx="0.8" dy="0.9" layer="1"/>

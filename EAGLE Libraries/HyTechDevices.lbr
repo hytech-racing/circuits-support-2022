@@ -7743,12 +7743,12 @@ with up to 100mA of output current</description>
 &lt;br&gt;
 &lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="0" y1="-10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-10.16" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-12.7" x2="17.78" y2="0" width="0.254" layer="94"/>
 <wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<text x="0" y="-10.922" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-<pin name="GND" x="20.32" y="-7.62" length="short" direction="pwr" rot="R180"/>
+<text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<pin name="GND" x="20.32" y="-10.16" length="short" direction="pwr" rot="R180"/>
 <pin name="IN" x="-2.54" y="-2.54" length="short" direction="in"/>
 <pin name="EN" x="-2.54" y="-5.08" length="short"/>
 <pin name="OUT" x="20.32" y="-2.54" length="short" direction="sup" rot="R180"/>
@@ -7782,7 +7782,7 @@ with up to 100mA of output current</description>
 <wire x1="20.32" y1="-10.16" x2="20.32" y2="0" width="0.254" layer="94"/>
 <wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <pin name="VDD" x="22.86" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="F" x="-2.54" y="-5.08" length="short" direction="in"/>
+<pin name="FEED" x="-2.54" y="-5.08" length="short" direction="in"/>
 <pin name="EN" x="-2.54" y="-2.54" length="short" direction="in"/>
 <pin name="GND" x="-2.54" y="-7.62" length="short" direction="pwr"/>
 <pin name="HORNB" x="22.86" y="-7.62" length="short" direction="out" rot="R180"/>
@@ -11596,7 +11596,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <connect gate="G$1" pin="VDD" pad="20"/>
 </connects>
 <technologies>
-<technology name="T/1-W12N-C">
+<technology name="">
 <attribute name="DKPN" value="MCP23S08-E/SS-ND"/>
 <attribute name="MANUFACTURER" value="Microchip Technology"/>
 <attribute name="MOPN" value="579-MCP23S08-E/SS"/>
@@ -11748,7 +11748,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <device name="" package="SOIC-08(NARROW,0.15&quot;)">
 <connects>
 <connect gate="G$1" pin="EN" pad="8"/>
-<connect gate="G$1" pin="F" pad="4"/>
+<connect gate="G$1" pin="FEED" pad="4"/>
 <connect gate="G$1" pin="GND" pad="5"/>
 <connect gate="G$1" pin="HORNB" pad="6"/>
 <connect gate="G$1" pin="HORNS" pad="7"/>

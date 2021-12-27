@@ -3987,7 +3987,7 @@ A variation of MSOP16 with 4 pins removed.
 <package name="CPT-3011C-120">
 <description>CPT-3011C-120 3 Pin Buzzer
 &lt;br&gt;
-&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt; CPT-3011C-120 Datasheet &lt;/a&gt;</description>
+&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <circle x="0" y="0" radius="18.3" width="0" layer="39"/>
 <circle x="0" y="0" radius="16.27" width="0.127" layer="51"/>
 <wire x1="-12.82" y1="10" x2="13.1" y2="9.7" width="0.127" layer="21" curve="-106"/>
@@ -7353,19 +7353,27 @@ with up to 100mA of output current</description>
 <text x="0" y="-43.942" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="BUZZER_3_PIN">
-<description>3 Pin Buzzer&lt;br&gt;</description>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-10.922" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-<pin name="F" x="-3.81" y="-1.27" length="short"/>
-<pin name="M" x="-3.81" y="-7.62" length="short" direction="pwr"/>
-<pin name="G" x="8.89" y="-5.08" length="short" direction="pwr" rot="R180"/>
-<wire x1="6.35" y1="0" x2="6.35" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-10.16" x2="0" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="0" y1="-10.16" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="-5.08" x2="-1.27" y2="-10.16" width="0.1524" layer="94"/>
+<description>3 Pin Buzzer
+&lt;br&gt;
+&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<text x="-0.254" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="-0.254" y="-10.922" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<pin name="FEEDBACK" x="-2.54" y="-2.54" length="point"/>
+<pin name="MAIN" x="-2.54" y="-7.62" length="point" direction="pwr"/>
+<pin name="GND" x="15.24" y="-5.08" length="point" direction="pwr" rot="R180"/>
+<wire x1="13.716" y1="0" x2="13.716" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="13.716" y1="-5.08" x2="13.716" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="13.208" y1="0" x2="13.208" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="13.208" y1="-10.16" x2="-0.508" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-0.508" y1="-10.16" x2="-0.508" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.508" y1="0" x2="13.208" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="-1.27" x2="-1.016" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="-2.54" x2="-1.016" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="-5.08" x2="-1.016" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="-7.62" x2="-1.016" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-1.016" y2="-2.54" width="0.127" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-1.016" y2="-7.62" width="0.127" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="13.716" y2="-5.08" width="0.127" layer="94"/>
 </symbol>
 <symbol name="DIODE_LED_7_SEGMENT">
 <description>LED 7 Segment Display
@@ -11320,9 +11328,9 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <devices>
 <device name="" package="CPT-3011C-120">
 <connects>
-<connect gate="G$1" pin="F" pad="F"/>
-<connect gate="G$1" pin="G" pad="G"/>
-<connect gate="G$1" pin="M" pad="M"/>
+<connect gate="G$1" pin="FEEDBACK" pad="F"/>
+<connect gate="G$1" pin="GND" pad="G"/>
+<connect gate="G$1" pin="MAIN" pad="M"/>
 </connects>
 <technologies>
 <technology name="CPT-3011C-120">

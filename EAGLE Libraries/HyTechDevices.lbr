@@ -11821,12 +11821,10 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </devices>
 </deviceset>
 <deviceset name="RELAY_DPDT" prefix="K">
-<description>&lt;b&gt;DPDT Relay&lt;/b&gt;
-
-&lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=RT2&amp;DocType=DS&amp;DocLang=English"&gt;Datasheet &lt;/a&gt;
+<description>Dual Pole, Dual Throw Relay
 &lt;br&gt;
-&lt;br&gt;
-MAX current: 8.0A</description>
+&lt;a href="https://www.mouser.com/datasheet/2/418/5/NG_DS_RT2_1014-572844.pdf"&gt;Datasheet &lt;/a&gt;
+&lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="RELAY_DPDT" x="0" y="0"/>
 </gates>
@@ -11853,10 +11851,10 @@ MAX current: 8.0A</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOMENTARY_BTN" prefix="S">
+<deviceset name="MOMENTARY_BUTTON" prefix="S">
 <description>&lt;b&gt;Momentary Button&lt;/b&gt;
 &lt;br&gt;
-&lt;a href="https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3s.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/307/en_b3s-1221332.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="BUTTON" x="0" y="0"/>
 </gates>
@@ -11891,7 +11889,6 @@ MAX current: 8.0A</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="CURRENT" value="1A" constant="no"/>
 <attribute name="DKPN" value="36-3568-ND"/>
 <attribute name="MANUFACTURER" value="Keystone"/>
 <attribute name="MOPN" value="534-3568"/>

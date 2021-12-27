@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -527,8 +527,8 @@
 <rectangle x1="13.716" y1="-1.778" x2="16.764" y2="34.798" layer="39"/>
 <rectangle x1="-1.524" y1="-1.778" x2="1.524" y2="34.798" layer="40"/>
 </package>
-<package name="SOT223">
-<description>SOT223
+<package name="SOT-223">
+<description>SOT-223
 &lt;br&gt;
 &lt;a href="https://www.diodes.com/assets/Package-Files/SOT223.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-2.3" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
@@ -544,7 +544,7 @@
 <circle x="-3.556" y="-3.2" radius="0.15875" width="0" layer="21"/>
 </package>
 <package name="SOIC-16">
-<description>SOIC 16
+<description>SOIC-16
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-soic/S16%2005-08-1610%20Rev%20G.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-4.445" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
@@ -572,7 +572,7 @@
 <rectangle x1="-5.334" y1="-3.556" x2="5.334" y2="3.556" layer="39"/>
 </package>
 <package name="MSOP-16">
-<description>MSOP 16
+<description>MSOP-16
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081669_A_MS16.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-1.75" y="-2.1055" dx="0.305" dy="0.889" layer="1"/>
@@ -670,7 +670,7 @@
 <circle x="-1.778" y="-1.0033" radius="0.15875" width="0" layer="21"/>
 </package>
 <package name="SOIC-18W">
-<description>SOIC 18W
+<description>SOIC-18W
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-soic/SO_18_05-08-1620.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-5.08" y="-4.699" dx="0.762" dy="1.143" layer="1"/>
@@ -700,7 +700,7 @@
 <rectangle x1="-6.35" y1="-5.588" x2="6.35" y2="5.588" layer="39"/>
 </package>
 <package name="SOP-04">
-<description>SOP 4
+<description>SOP-4
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/240/CPC1002N-1546124.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
@@ -765,27 +765,26 @@ Note: Based on Page 6.</description>
 <circle x="5.04" y="3.75" radius="1.5" width="0.127" layer="40"/>
 <circle x="5.04" y="-3.75" radius="1.5" width="0.127" layer="40"/>
 </package>
-<package name="MINI-BLADE_FUSE_HOLDER">
+<package name="3568">
 <description>Mini-Blade Fuse Holder
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/215/3568-742601.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-MOPN: 534-3568</description>
+&lt;br&gt;</description>
 <wire x1="-8.001" y1="-3.3655" x2="-8.001" y2="3.3655" width="0.127" layer="21"/>
 <wire x1="-8.001" y1="3.3655" x2="8.001" y2="3.3655" width="0.127" layer="21"/>
 <wire x1="8.001" y1="-3.3655" x2="8.001" y2="3.3655" width="0.127" layer="21"/>
 <wire x1="-8.001" y1="-3.3655" x2="8.001" y2="-3.3655" width="0.127" layer="21"/>
-<pad name="L1" x="-4.953" y="1.7018" drill="1.6002"/>
-<pad name="L2" x="-4.953" y="-1.7018" drill="1.6002"/>
-<pad name="R1" x="4.953" y="1.7018" drill="1.6002"/>
-<pad name="R2" x="4.953" y="-1.7018" drill="1.6002"/>
+<pad name="1" x="-4.953" y="1.7018" drill="1.6002"/>
+<pad name="2" x="-4.953" y="-1.7018" drill="1.6002"/>
+<pad name="4" x="4.953" y="1.7018" drill="1.6002"/>
+<pad name="3" x="4.953" y="-1.7018" drill="1.6002"/>
 <rectangle x1="-8.382" y1="-3.81" x2="8.382" y2="3.81" layer="39"/>
 <text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-6.35" y1="-3.3655" x2="-3.556" y2="3.3655" layer="40"/>
 <rectangle x1="3.556" y1="-3.3655" x2="6.35" y2="3.3655" layer="40"/>
 </package>
 <package name="SOT-23-5">
-<description>SOT 23-5
+<description>SOT-23-5
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-sot-23/SOT_5_05-08-1635.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <wire x1="-1.45" y1="0.875" x2="1.45" y2="0.875" width="0.127" layer="21"/>
@@ -1120,7 +1119,7 @@ visible on the PCB.</text>
 <text x="0" y="-5.08" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="SOIC-28W">
-<description>SOIC 28W
+<description>SOIC-28W
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-soic/SO_28_05-08-1620.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-8.255" y="-4.699" dx="0.762" dy="1.143" layer="1"/>
@@ -1220,7 +1219,7 @@ visible on the PCB.</text>
 <rectangle x1="-3.81" y1="-1.27" x2="3.81" y2="1.27" layer="40"/>
 </package>
 <package name="TSSOP-20">
-<description>TSSOP 20
+<description>TSSOP-20
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-tssop/TSSOP_20_05-08-1650.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-2.925" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
@@ -1478,7 +1477,7 @@ visible on the PCB.</text>
 <text x="0" y="-5.08" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="TSSOP-16">
-<description>TSSOP 16
+<description>TSSOP-16
 &lt;br&gt;
 Adapted from &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-tssop/TSSOP_14_05-08-1650.pdf"&gt;TSSOP-14 Datasheet&lt;/a&gt; and &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-tssop/TSSOP_20_05-08-1650.pdf"&gt;TSSOP-20 Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-2.275" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
@@ -1506,7 +1505,7 @@ Adapted from &lt;a href="https://www.analog.com/media/en/package-pcb-resources/p
 <rectangle x1="-3.048" y1="-3.556" x2="3.048" y2="3.556" layer="39"/>
 </package>
 <package name="TSSOP-14">
-<description>TSSOP 14
+<description>TSSOP-14
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-tssop/TSSOP_14_05-08-1650.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-1.95" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
@@ -1551,7 +1550,7 @@ Adapted from &lt;a href="https://www.analog.com/media/en/package-pcb-resources/p
 <rectangle x1="-15.24" y1="-7.62" x2="-12.7" y2="-5.08" layer="40"/>
 </package>
 <package name="SSOP-48">
-<description>SSOP 48 Package
+<description>SSOP-48
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-ssop/05081887_A_G48.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="8" x="-2.25" y="-3.37" dx="0.25" dy="1.25" layer="1" rot="R180"/>
@@ -1783,8 +1782,8 @@ Adapted from &lt;a href="https://www.analog.com/media/en/package-pcb-resources/p
 <smd name="32" x="-2.8" y="4.2" dx="0.55" dy="1.55" layer="1"/>
 <rectangle x1="-5.5" y1="-5.5" x2="5.5" y2="5.5" layer="39"/>
 </package>
-<package name="SOT363">
-<description>SOT363
+<package name="SOT-363">
+<description>SOT-363
 &lt;br&gt;
 &lt;a href="https://www.diodes.com/assets/Package-Files/SOT363.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-0.6731" y="-0.95" dx="0.42" dy="0.6" layer="1"/>
@@ -1915,7 +1914,7 @@ Note: Based on page 48 and 49.</description>
 <text x="0" y="1.905" size="1.524" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
 </package>
 <package name="TSSOP-24">
-<description>TSSOP 24
+<description>TSSOP-24
 &lt;br&gt;
 Adapted from &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-tssop/TSSOP_20_05-08-1650.pdf"&gt;TSSOP-20 Datasheet&lt;/a&gt; and &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-tssop/TSSOP_24_05-08-1771.pdf"&gt;TSSOP-24 Exposed Pad&lt;/a&gt;</description>
 <smd name="1" x="-3.575" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
@@ -2011,8 +2010,8 @@ Note: Based off of Page 112.</description>
 <circle x="-3" y="2" radius="0.1" width="0.127" layer="21"/>
 <rectangle x1="-2.794" y1="-2.032" x2="2.794" y2="2.032" layer="39"/>
 </package>
-<package name="SOT89">
-<description>SOT89
+<package name="SOT-89">
+<description>SOT-89
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/308/1/NCP785A_D-2317346.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
@@ -2320,24 +2319,6 @@ visible on the PCB.</text>
 <rectangle x1="-1.025" y1="0.5" x2="-0.625" y2="0.75" layer="21"/>
 <rectangle x1="-1.025" y1="-0.75" x2="-0.625" y2="-0.5" layer="21"/>
 </package>
-<package name="CLP1608-2L">
-<description>CLP1608-2L Yageo 0603 VSKY Diode Package
-&lt;br&gt;
-&lt;a href="https://www.vishay.com/docs/85917/soldrecclp.pdf"&gt;Landing Pattern&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.vishay.com/docs/85892/vsky20401608.pdf"&gt;Size&lt;/a&gt;</description>
-<smd name="1" x="-0.295" y="0" dx="0.88" dy="0.62" layer="1"/>
-<smd name="2" x="0.595" y="0" dx="0.28" dy="0.62" layer="1"/>
-<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
-<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
-<wire x1="-0.9" y1="0.5" x2="0.9" y2="0.5" width="0.0508" layer="39"/>
-<wire x1="0.9" y1="0.5" x2="0.9" y2="-0.5" width="0.0508" layer="39"/>
-<wire x1="0.9" y1="-0.5" x2="-0.9" y2="-0.5" width="0.0508" layer="39"/>
-<wire x1="-0.9" y1="-0.5" x2="-0.9" y2="0.5" width="0.0508" layer="39"/>
-<text x="0" y="0.508" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-</package>
 <package name="SOURIAU_04-35">
 <description>SOURIAU 3 Pin Connector
 &lt;br&gt;
@@ -2415,7 +2396,7 @@ visible on the PCB.</text>
 <circle x="5.04" y="-3.75" radius="1.5" width="0.127" layer="40"/>
 </package>
 <package name="SSOP-36">
-<description>SSOP 36
+<description>SSOP-36
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-ssop/SSOP_36_05-08-1640.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-5.525" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
@@ -2841,7 +2822,7 @@ Note: Based on Page 88.</description>
 <circle x="36.5506" y="-14.8717" radius="14" width="0.127" layer="51"/>
 </package>
 <package name="SSOP-28">
-<description>SSOP 28
+<description>SSOP-28
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-ssop/SSOP_28_05-08-1640.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-4.225" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
@@ -2899,7 +2880,7 @@ Note: Based on Page 88.</description>
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
-Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
+Keepout is 0.8 mm around fuse to get 1.6 mm between fuses.</description>
 <smd name="1" x="-5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
 <smd name="2" x="5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
 <wire x1="-5.43" y1="2.39" x2="-5.43" y2="-2.39" width="0.127" layer="21"/>
@@ -3039,7 +3020,7 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <wire x1="16.51" y1="31.496" x2="16.51" y2="-1.27" width="0.127" layer="21"/>
 </package>
 <package name="MSOP-10">
-<description>MSOP 10
+<description>MSOP-10
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081661_F_MS.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-1" y="-2.1055" dx="0.305" dy="0.889" layer="1"/>
@@ -3826,7 +3807,7 @@ Dashed line is edge of mated connector.</description>
 <text x="0" y="1.524" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="MSOP-16(MSE)">
-<description>MSOP 16
+<description>MSOP-16
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081669_A_MS16.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
@@ -4079,7 +4060,6 @@ Pad height = 2x height of mounting point centered at edge
 <rectangle x1="-0.508" y1="5.461" x2="0.508" y2="6.731" layer="43" rot="R270"/>
 <circle x="-2.286" y="6.604" radius="0.635" width="0" layer="43"/>
 <rectangle x1="-2.794" y1="5.461" x2="-1.778" y2="6.731" layer="43" rot="R270"/>
-
 <circle x="-6.223" y="4.572" radius="0.635" width="0" layer="41"/>
 <rectangle x1="-6.223" y1="3.937" x2="-5.588" y2="5.207" layer="41"/>
 <circle x="-6.223" y="0" radius="0.635" width="0" layer="41"/>
@@ -4108,7 +4088,6 @@ Pad height = 2x height of mounting point centered at edge
 <rectangle x1="-0.508" y1="5.461" x2="0.508" y2="6.731" layer="41" rot="R270"/>
 <circle x="-2.286" y="6.604" radius="0.635" width="0" layer="41"/>
 <rectangle x1="-2.794" y1="5.461" x2="-1.778" y2="6.731" layer="41" rot="R270"/>
-
 <circle x="-6.223" y="4.572" radius="0.635" width="0" layer="39"/>
 <rectangle x1="-6.223" y1="3.937" x2="-5.588" y2="5.207" layer="39"/>
 <circle x="-6.223" y="0" radius="0.635" width="0" layer="39"/>
@@ -4142,16 +4121,16 @@ Pad height = 2x height of mounting point centered at edge
 <description>Keystone Electronics 3588 Mini Fuse Holder SMD
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/215/588-744913.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="4" x="-4.953" y="3.0353" dx="1.5748" dy="2.8194" layer="1" rot="R180"/>
-<smd name="3" x="4.953" y="3.0353" dx="1.5748" dy="2.8194" layer="1" rot="R180"/>
-<smd name="1" x="-4.953" y="-3.0353" dx="1.5748" dy="2.8194" layer="1" rot="R180"/>
-<smd name="2" x="4.953" y="-3.0353" dx="1.5748" dy="2.8194" layer="1" rot="R180"/>
+<smd name="1" x="-4.953" y="3.0353" dx="1.5748" dy="2.8194" layer="1" rot="R180"/>
+<smd name="4" x="4.953" y="3.0353" dx="1.5748" dy="2.8194" layer="1" rot="R180"/>
+<smd name="2" x="-4.953" y="-3.0353" dx="1.5748" dy="2.8194" layer="1" rot="R180"/>
+<smd name="3" x="4.953" y="-3.0353" dx="1.5748" dy="2.8194" layer="1" rot="R180"/>
 <wire x1="-8.001" y1="3.3655" x2="8.001" y2="3.3655" width="0.127" layer="21"/>
 <wire x1="-8.001" y1="-3.3655" x2="8.001" y2="-3.3655" width="0.127" layer="21"/>
 <wire x1="-8.001" y1="3.3655" x2="-8.001" y2="-3.3655" width="0.127" layer="21"/>
 <wire x1="8.001" y1="3.3655" x2="8.001" y2="-3.3655" width="0.127" layer="21"/>
 <rectangle x1="-8.636" y1="-4.826" x2="8.636" y2="4.826" layer="39"/>
-<text x="-8.636" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="0" y="4.826" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="ULTIMATE_GPS">
 <description>Adafruit Ultimate GPS Breakout - 66 channel w/10 Hz updates - Version 3
@@ -4182,6 +4161,21 @@ Header: 0.1" Pitch Pin Header
 <wire x1="11.684" y1="-1.27" x2="-11.684" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-11.684" y1="-1.27" x2="-11.684" y2="1.27" width="0.127" layer="21"/>
 <rectangle x1="-11.938" y1="-1.524" x2="11.938" y2="1.524" layer="39"/>
+</package>
+<package name="SOD-323">
+<description>SOD-323 Diode Package
+&lt;br&gt;
+&lt;a href="https://www.diodes.com/assets/Package-Files/SOD323.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="A" x="-1.15" y="0" dx="0.8" dy="0.9" layer="1"/>
+<smd name="C" x="1.15" y="0" dx="0.8" dy="0.9" layer="1"/>
+<text x="0" y="1" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-0.85" y1="0.625" x2="-0.85" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-0.625" x2="0.85" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="0.85" y1="-0.625" x2="0.85" y2="0.625" width="0.127" layer="21"/>
+<wire x1="0.85" y1="0.625" x2="-0.85" y2="0.625" width="0.127" layer="21"/>
+<rectangle x1="-1.778" y1="-0.762" x2="1.778" y2="0.762" layer="39"/>
+<rectangle x1="1.261" y1="0.5" x2="1.661" y2="0.75" layer="21"/>
+<rectangle x1="1.261" y1="-0.75" x2="1.661" y2="-0.5" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -7567,16 +7561,16 @@ with up to 100mA of output current</description>
 &lt;br&gt;
 &lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-12.7" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="17.78" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-15.24" x2="17.78" y2="0" width="0.254" layer="94"/>
 <wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-<pin name="GND" x="20.32" y="-10.16" length="short" direction="pwr" rot="R180"/>
+<text x="0" y="-16.002" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<pin name="GND" x="20.32" y="-12.7" length="short" direction="pwr" rot="R180"/>
 <pin name="IN" x="-2.54" y="-2.54" length="short" direction="in"/>
-<pin name="EN" x="-2.54" y="-5.08" length="short"/>
-<pin name="OUT" x="20.32" y="-2.54" length="short" direction="sup" rot="R180"/>
-<pin name="TRIM" x="20.32" y="-5.08" length="short" rot="R180"/>
+<pin name="EN" x="-2.54" y="-5.08" length="short" direction="in"/>
+<pin name="OUT" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="TRIM" x="20.32" y="-5.08" length="short" direction="pas" rot="R180"/>
 </symbol>
 <symbol name="CAN_TRANSCIEVER_MCP2562FD">
 <description>MCP2562FD Can Tranciever
@@ -7663,6 +7657,20 @@ with up to 100mA of output current</description>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-43650-0214"/>
 <attribute name="MPN" value="0436500214"/>
+</technology>
+</technologies>
+</device>
+<device name="MOLEX_NANOFIT_PTH_VERTICAL_02" package="MOLEX_NANOFIT_PTH_02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="BLACK">
+<attribute name="DKPN" value="WM15036-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105309-1302 "/>
+<attribute name="MPN" value="105309-1302"/>
 </technology>
 </technologies>
 </device>
@@ -8098,7 +8106,7 @@ MAX voltage: 100V</description>
 <gate name="G$1" symbol="BJT_NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT223">
+<device name="" package="SOT-223">
 <connects>
 <connect gate="G$1" pin="BASE" pad="1"/>
 <connect gate="G$1" pin="COLLECTOR" pad="2 4"/>
@@ -8432,6 +8440,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="3.16V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="100K">
+<attribute name="DKPN" value="311-100KHRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-07100KL "/>
+<attribute name="MPN" value="RC0603FR-07100KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="100k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="10K">
 <attribute name="DKPN" value="311-10.0KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -8619,6 +8638,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="23.41V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="20K">
+<attribute name="DKPN" value="311-20.0KHRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-0720KL "/>
+<attribute name="MPN" value="RC0603FR-0720KL"/>
+<attribute name="POWER" value="0.1 W"/>
+<attribute name="RESISTANCE" value="20k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="44.72V"/>
+<attribute name="VOLTAGE_MAX" value="75V" constant="no"/>
+</technology>
 <technology name="210">
 <attribute name="DKPN" value="P19892CT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -8762,6 +8792,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="60.42V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="360">
+<attribute name="DKPN" value="311-360HRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-07360RL"/>
+<attribute name="MPN" value="RC0603FR-07360RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="360"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="6V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="374K">
 <attribute name="DKPN" value="311-374KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -8827,6 +8868,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="10.84V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="5.1K">
+<attribute name="DKPN" value="311-5.10KHRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-075K1L "/>
+<attribute name="MPN" value="RC0603FR-075K1L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="5.1k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="22.58V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="5.9K">
 <attribute name="DKPN" value="P5.9KDBCT-ND"/>
@@ -9243,7 +9295,7 @@ Leakage Inductance: 0.50 uH max
 <gate name="G$1" symbol="MOSFET_P-CHANNEL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SOT23" package="SOT-23">
+<device name="SOT-23" package="SOT-23">
 <connects>
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="1"/>
@@ -9530,7 +9582,7 @@ Leakage Inductance: 0.50 uH max
 <gate name="E" symbol="DIODE_TVS_UNIDIRECTIONAL_SINGLE_ENDED" x="0" y="-40.64" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="SOT363">
+<device name="" package="SOT-363">
 <connects>
 <connect gate="A" pin="A" pad="2"/>
 <connect gate="A" pin="C" pad="1"/>
@@ -9679,25 +9731,27 @@ Leakage Inductance: 0.50 uH max
 </device>
 </devices>
 </deviceset>
-<deviceset name="SCHOTTKY" prefix="D">
-<description>Schottky Rectifier Diode
+<deviceset name="SCHOTTKY_?_*" prefix="D">
+<description>CUS08F30 Shottky Diode
 &lt;br&gt;
-&lt;a href="https://www.vishay.com/docs/85892/vsky20401608.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/408/CUS08F30_datasheet_en_20140414-1916097.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE_SCHOTTKY" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="CLP1608-2L">
+<device name="SOD323" package="SOD-323">
 <connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="DKPN" value="112-VSKY20401608-G4-08CT-ND"/>
-<attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division"/>
-<attribute name="MOPN" value="78-VSKY20401608G408"/>
-<attribute name="MPN" value="VSKY20401608-G4-08"/>
+<technology name="30V">
+<attribute name="CURRENT" value="0.8A"/>
+<attribute name="DKPN" value="CUS08F30H3FTR-ND"/>
+<attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage"/>
+<attribute name="MOPN" value="757-CUS08F30H3F"/>
+<attribute name="MPN" value="CUS08F30"/>
+<attribute name="VOLTAGE" value="30V"/>
 </technology>
 </technologies>
 </device>
@@ -10684,7 +10738,7 @@ ISO224B: High-Grade
 <gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SOT223" package="SOT223">
+<device name="SOT-223" package="SOT-223">
 <connects>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="IN" pad="3"/>
@@ -10705,7 +10759,7 @@ ISO224B: High-Grade
 </technology>
 </technologies>
 </device>
-<device name="SOT89" package="SOT89">
+<device name="SOT-89" package="SOT-89">
 <connects>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="1"/>
@@ -11166,7 +11220,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </technology>
 </technologies>
 </device>
-<device name="SOT89" package="SOT89">
+<device name="SOT-89" package="SOT-89">
 <connects>
 <connect gate="G$1" pin="ADJ" pad="3"/>
 <connect gate="G$1" pin="IN" pad="1"/>
@@ -11589,28 +11643,44 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="FUSE_HOLDER_*" prefix="F">
-<description>Blade Fuse
+<deviceset name="FUSE_HOLDER_*" prefix="XF">
+<description>Fuse Holder
 &lt;br&gt;
-All PNs for the holder; if fuse needed, order separately
-&lt;a href="https://www.littelfuse.com/media?resourcetype=datasheets&amp;itemid=0f5f58cb-559e-494b-8d53-723f30445ae5&amp;filename=littelfuse-mini-datasheet"&gt;Littelfuse Datasheet&lt;/a&gt;&lt;/li&gt;</description>
+All PNs for the holder; if fuse needed, order separately.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/215/3568-742601.pdf"&gt;Mini-Blade PTH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/215/588-744913.pdf"&gt;Mini-Blade SMD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a href="https://www.littelfuse.com/media?resourcetype=datasheets&amp;itemid=0f5f58cb-559e-494b-8d53-723f30445ae5&amp;filename=littelfuse-mini-datasheet"&gt;Miniblade Fuses&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="FUSE_HOLDER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="3588">
+<device name="SMD" package="3588">
 <connects>
-<connect gate="G$1" pin="1" pad="1 4"/>
-<connect gate="G$1" pin="2" pad="2 3"/>
+<connect gate="G$1" pin="1" pad="1 2"/>
+<connect gate="G$1" pin="2" pad="3 4"/>
 </connects>
 <technologies>
-<technology name="2">
-<attribute name="CURRENT" value="2A"/>
+<technology name="MINIBLADE">
 <attribute name="DKPN" value="36-3588-ND"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics"/>
 <attribute name="MOPN" value="534-3588"/>
 <attribute name="MPN" value="3588"/>
-<attribute name="VOLTAGE" value="32V"/>
+</technology>
+</technologies>
+</device>
+<device name="PTH" package="3568">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+<connect gate="G$1" pin="2" pad="3 4"/>
+</connects>
+<technologies>
+<technology name="MINIBLADE">
+<attribute name="DKPN" value="36-3568-ND"/>
+<attribute name="MANUFACTURER" value="Keystone"/>
+<attribute name="MOPN" value="534-3568"/>
+<attribute name="MPN" value="3568"/>
 </technology>
 </technologies>
 </device>
@@ -11641,6 +11711,61 @@ All PNs for the holder; if fuse needed, order separately
 <attribute name="MANUFACTURER" value="Adafruit"/>
 <attribute name="MOPN" value="485-746" constant="no"/>
 <attribute name="MPN" value="746"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RELAY_DPDT" prefix="K">
+<description>Dual Pole, Dual Throw Relay
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/418/5/NG_DS_RT2_1014-572844.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="RELAY_DPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RT*2*">
+<connects>
+<connect gate="G$1" pin="2" pad="12"/>
+<connect gate="G$1" pin="3" pad="11"/>
+<connect gate="G$1" pin="4" pad="14"/>
+<connect gate="G$1" pin="5" pad="24"/>
+<connect gate="G$1" pin="6" pad="21"/>
+<connect gate="G$1" pin="7" pad="22"/>
+<connect gate="G$1" pin="COIL+" pad="A1"/>
+<connect gate="G$1" pin="COIL-" pad="A2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="PB2021-ND"/>
+<attribute name="MANUFACTURER" value="TE Connectivity"/>
+<attribute name="MOPN" value="655-6-1393243-2"/>
+<attribute name="MPN" value="RT424009"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOMENTARY_BUTTON" prefix="S">
+<description>&lt;b&gt;Momentary Button&lt;/b&gt;
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/307/en_b3s-1221332.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BUTTON" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="B3S-100X">
+<connects>
+<connect gate="G$1" pin="P" pad="1 2"/>
+<connect gate="G$1" pin="S" pad="3 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="SW415-ND "/>
+<attribute name="MANUFACTURER" value="Omron"/>
+<attribute name="MOPN" value="653-B3S-1000"/>
+<attribute name="MPN" value="B3S-1000"/>
 </technology>
 </technologies>
 </device>

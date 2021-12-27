@@ -7109,10 +7109,10 @@ I2C Mode
 <pin name="UVR2" x="-2.54" y="-35.56" length="short" direction="in"/>
 <pin name="OV2" x="-2.54" y="-43.18" length="short" direction="in"/>
 <pin name="V1" x="10.16" y="2.54" length="short" direction="in" rot="R270"/>
-<pin name="GATE1" x="17.78" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="GATE1" x="17.78" y="2.54" length="short" direction="out" rot="R270"/>
 <pin name="SOURCE1" x="25.4" y="2.54" length="short" direction="in" rot="R270"/>
 <pin name="V2" x="63.5" y="2.54" length="short" direction="in" rot="R270"/>
-<pin name="GATE2" x="71.12" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="GATE2" x="71.12" y="2.54" length="short" direction="out" rot="R270"/>
 <pin name="SOURCE2" x="78.74" y="2.54" length="short" direction="in" rot="R270"/>
 <pin name="SENSE1" x="38.1" y="2.54" length="short" direction="in" rot="R270"/>
 <pin name="SENSE2" x="91.44" y="2.54" length="short" direction="in" rot="R270"/>
@@ -10891,7 +10891,6 @@ with up to 100mA of output current
 <attribute name="MANUFACTURER" value="Keystone Electronics"/>
 <attribute name="MOPN" value="534-5015"/>
 <attribute name="MPN" value="5015"/>
-<attribute name="SIGNAL" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -11532,7 +11531,7 @@ SHT31: High Grade
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONNECTOR-1_?_*" prefix="J">
+<deviceset name="CONNECTOR-1_?" prefix="J">
 <description>1 Pin Connector
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/273/Mill-Max_03212019_807-22-001-10-020101-1545127.pdf"&gt;Pogo pin datasheet&lt;/a&gt;

@@ -731,6 +731,7 @@
 <wire x1="3.275" y1="-1.775" x2="-3.275" y2="-1.775" width="0.127" layer="21"/>
 <wire x1="-3.275" y1="-1.775" x2="-3.275" y2="1.775" width="0.127" layer="21"/>
 <rectangle x1="-3.81" y1="-4.445" x2="3.81" y2="4.445" layer="39"/>
+<circle x="-3.556" y="-3.2" radius="0.15875" width="0" layer="21"/>
 </package>
 <package name="SOIC-16">
 <description>SOIC 16
@@ -784,7 +785,7 @@
 <wire x1="-2.0195" y1="1.5" x2="-2.0195" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-2.0195" y1="-1.5" x2="2.0195" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="2.0195" y1="-1.5" x2="2.0195" y2="1.5" width="0.127" layer="21"/>
-<circle x="-2.286" y="-2.1082" radius="0.127" width="0.127" layer="21"/>
+<circle x="-2.286" y="-2.1082" radius="0.127" width="0" layer="21"/>
 <rectangle x1="-2.286" y1="-2.794" x2="2.286" y2="2.794" layer="39"/>
 <text x="-2.54" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
@@ -856,6 +857,7 @@
 <smd name="3" x="0" y="1.0033" dx="0.7112" dy="0.889" layer="1"/>
 <text x="0" y="1.778" size="0.635" layer="25" font="vector" rot="R180" align="top-center">&gt;NAME</text>
 <rectangle x1="-1.778" y1="-1.778" x2="1.778" y2="1.778" layer="39"/>
+<circle x="-1.778" y="-1.0033" radius="0.15875" width="0" layer="21"/>
 </package>
 <package name="SOIC-18W">
 <description>SOIC 18W
@@ -987,6 +989,7 @@ MOPN: 534-3568</description>
 <smd name="5" x="-0.95" y="1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
 <text x="-1.905" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-1.778" y1="-2.286" x2="1.778" y2="2.286" layer="39"/>
+<circle x="-1.8" y="-1.31" radius="0.15875" width="0" layer="21"/>
 </package>
 <package name="MOLEX_NANOFIT_SMD_RIGHTANGLE_08">
 <description>8 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
@@ -2104,6 +2107,7 @@ Notes: See page 47</description>
 <wire x1="1.075" y1="0.7" x2="1.075" y2="-0.7" width="0.127" layer="21"/>
 <text x="0" y="1.905" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-1.27" y1="-1.778" x2="1.27" y2="1.778" layer="39"/>
+<circle x="-1.1176" y="-1.1" radius="0.127" width="0" layer="21"/>
 </package>
 <package name="HTSSOP-16">
 <description>HTSSOP-16
@@ -2128,13 +2132,13 @@ Note: Based on page 51 and 52.</description>
 <smd name="14" x="2.9" y="0.975" dx="1.5" dy="0.45" layer="1"/>
 <smd name="13" x="2.9" y="0.325" dx="1.5" dy="0.45" layer="1"/>
 <smd name="PAD" x="0" y="0" dx="2.66" dy="2.46" layer="1"/>
-<circle x="-3" y="3" radius="0.127" width="0.127" layer="21"/>
-<text x="0" y="3.175" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="2.794" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <wire x1="-2.25" y1="2.55" x2="2.25" y2="2.55" width="0.127" layer="21"/>
 <wire x1="2.25" y1="2.55" x2="2.25" y2="-2.55" width="0.127" layer="21"/>
 <wire x1="2.25" y1="-2.55" x2="-2.25" y2="-2.55" width="0.127" layer="21"/>
 <wire x1="-2.25" y1="-2.55" x2="-2.25" y2="2.55" width="0.127" layer="21"/>
 <rectangle x1="-4.064" y1="-2.794" x2="4.064" y2="2.794" layer="39"/>
+<circle x="-2.9" y="2.667" radius="0.127" width="0" layer="21"/>
 </package>
 <package name="HTSSOP-20">
 <description>HTSSOP-20
@@ -2168,16 +2172,17 @@ Note: Based on page 48 and 49.</description>
 <wire x1="2.25" y1="-3.3" x2="-2.25" y2="-3.3" width="0.127" layer="21"/>
 <wire x1="-2.25" y1="-3.3" x2="-2.25" y2="3.3" width="0.127" layer="21"/>
 <text x="0" y="3.556" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<circle x="-3" y="3.75" radius="0.127" width="0.127" layer="21"/>
+<circle x="-2.9" y="3.429" radius="0.127" width="0" layer="21"/>
 <rectangle x1="-4.064" y1="-3.556" x2="4.064" y2="3.556" layer="39"/>
 </package>
-<package name="MICRO_MINIATURE">
+<package name="5015">
 <description>Keystone Micro-Miniature SMD Test Point
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/215/015-744075.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
-<text x="0" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="-2.032" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
+<text x="0" y="1.905" size="1.524" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
 </package>
 <package name="TSSOP-24">
 <description>TSSOP 24
@@ -2321,6 +2326,7 @@ Based on page 10.</description>
 <vertex x="1.1" y="0.714"/>
 <vertex x="1.1" y="3.765"/>
 </polygon>
+<circle x="-2.3" y="-0.508" radius="0.15875" width="0" layer="21"/>
 </package>
 <package name="2X03">
 <description>0.1" Pitch Pin Header</description>
@@ -3930,8 +3936,9 @@ Note: Based on page 14 and 15.</description>
 <wire x1="-0.7" y1="-1.075" x2="0.7" y2="-1.075" width="0.127" layer="21"/>
 <wire x1="0.7" y1="-1.075" x2="0.7" y2="1.075" width="0.127" layer="21"/>
 <wire x1="0.7" y1="1.075" x2="-0.7" y2="1.075" width="0.127" layer="21"/>
-<text x="0" y="1.2" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-1.778" y1="-1.27" x2="1.778" y2="1.27" layer="39"/>
+<circle x="-1.1" y="1.1176" radius="0.127" width="0" layer="21"/>
 </package>
 <package name="SOT-23-6">
 <description>6-Lead Plastic ThinSOT-23
@@ -4714,7 +4721,7 @@ Dashed line is edge of mated connector.</description>
 <wire x1="-2.0195" y1="1.5" x2="-2.0195" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-2.0195" y1="-1.5" x2="2.0195" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="2.0195" y1="-1.5" x2="2.0195" y2="1.5" width="0.127" layer="21"/>
-<circle x="-2.286" y="-2.1082" radius="0.127" width="0.127" layer="21"/>
+<circle x="-2.286" y="-2.1082" radius="0.127" width="0" layer="21"/>
 <rectangle x1="-2.286" y1="-2.794" x2="2.286" y2="2.794" layer="39"/>
 <text x="-2.54" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <smd name="17" x="0" y="0" dx="2.845" dy="1.651" layer="1"/>
@@ -4775,6 +4782,7 @@ A variation of MSOP16 with 4 pins removed.
 <wire x1="2.0195" y1="-1.5" x2="2.0195" y2="1.5" width="0.127" layer="21"/>
 <rectangle x1="-2.286" y1="-2.794" x2="2.286" y2="2.794" layer="39"/>
 <text x="-2.286" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<circle x="-2.286" y="-2.1082" radius="0.127" width="0" layer="21"/>
 </package>
 <package name="2X05_SMD">
 <description>10-pin Header SMD Header
@@ -5042,44 +5050,6 @@ A variation of MSOP16 with 4 pins removed.
 <text x="2.54" y="-1.27" size="1.27" layer="96" align="top-center">&gt;MPN</text>
 <pin name="P" x="-2.54" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
 <pin name="S" x="7.62" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-<symbol name="TEENSY_3.2">
-<description>Teensy 3.2 Simple
-&lt;br&gt;
-&lt;a href="https://www.pjrc.com/teensy/pinout.html"&gt;Datasheet&lt;/a&gt;</description>
-<pin name="D0" x="22.86" y="-43.18" visible="pin" length="short" rot="R180"/>
-<pin name="D1" x="22.86" y="-40.64" visible="pin" length="short" rot="R180"/>
-<pin name="GND" x="-2.54" y="-43.18" visible="pin" length="short" direction="pwr"/>
-<wire x1="0" y1="0" x2="0" y2="-45.72" width="0.254" layer="94"/>
-<wire x1="0" y1="-45.72" x2="20.32" y2="-45.72" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-45.72" x2="20.32" y2="0" width="0.254" layer="94"/>
-<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="D2" x="22.86" y="-38.1" visible="pin" length="short" rot="R180"/>
-<pin name="(CTX)D3" x="22.86" y="-35.56" visible="pin" length="short" rot="R180"/>
-<pin name="(CRX)D4" x="22.86" y="-33.02" visible="pin" length="short" rot="R180"/>
-<pin name="D5" x="22.86" y="-30.48" visible="pin" length="short" rot="R180"/>
-<pin name="D6" x="22.86" y="-27.94" visible="pin" length="short" rot="R180"/>
-<pin name="D7" x="22.86" y="-25.4" visible="pin" length="short" rot="R180"/>
-<pin name="D8" x="22.86" y="-22.86" visible="pin" length="short" rot="R180"/>
-<pin name="D9" x="22.86" y="-20.32" visible="pin" length="short" rot="R180"/>
-<pin name="(CS)D10" x="22.86" y="-17.78" visible="pin" length="short" rot="R180"/>
-<pin name="(SDO)D11" x="22.86" y="-15.24" visible="pin" length="short" rot="R180"/>
-<pin name="(SDI)D12" x="22.86" y="-12.7" visible="pin" length="short" rot="R180"/>
-<pin name="(CLK)D13" x="22.86" y="-10.16" visible="pin" length="short" rot="R180"/>
-<pin name="A0" x="-2.54" y="-12.7" visible="pin" length="short"/>
-<pin name="A1" x="-2.54" y="-15.24" visible="pin" length="short"/>
-<pin name="A2" x="-2.54" y="-17.78" visible="pin" length="short"/>
-<pin name="A3" x="-2.54" y="-20.32" visible="pin" length="short"/>
-<pin name="A4" x="-2.54" y="-22.86" visible="pin" length="short"/>
-<pin name="A6" x="-2.54" y="-27.94" visible="pin" length="short"/>
-<pin name="A5" x="-2.54" y="-25.4" visible="pin" length="short"/>
-<pin name="A7" x="-2.54" y="-30.48" visible="pin" length="short"/>
-<pin name="A9" x="-2.54" y="-35.56" visible="pin" length="short"/>
-<pin name="A8" x="-2.54" y="-33.02" visible="pin" length="short"/>
-<pin name="3.3V" x="22.86" y="-7.62" visible="pin" length="short" direction="pwr" rot="R180"/>
-<pin name="VIN" x="22.86" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
-<pin name="AGND" x="-2.54" y="-40.64" visible="pin" length="short" direction="pwr"/>
-<text x="10.00125" y="-1.27" size="1.778" layer="95" rot="R180" align="bottom-center">Teensy 3.2</text>
 </symbol>
 <symbol name="TRANSFORMER">
 <description>Transformer</description>
@@ -5492,7 +5462,7 @@ Pins tied to GND: SLOW
 <description>TXB0104 4-Channel Level Shifter
 &lt;br&gt;
 &lt;a href="https://www.ti.com/lit/ds/symlink/txb0104.pdf?ts=1610816415077&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DTXB0104YZTR%2526utm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-null-null-OPN_EN-cpc-store-google-wwe%2526utm_content%253DDevice%2526ds_k%253DTXB0104YZTR%2526DCM%253Dyes%2526gclid%253DCjwKCAiAuoqABhAsEiwAdSkVVPY0LoAhy8jkbUFuLVyJmkljYnXqCJk8c9uud7tYIHGTS-c7c-KydhoCRBQQAvD_BwE%2526gclsrc%253Daw.ds"&gt;Datasheet&lt;/a&gt;</description>
-<pin name="VCCA" x="-2.54" y="-2.54" length="short" direction="pwr"/>
+<pin name="VDDA" x="-2.54" y="-2.54" length="short" direction="pwr"/>
 <pin name="A1" x="-2.54" y="-5.08" length="short"/>
 <pin name="A2" x="-2.54" y="-7.62" length="short"/>
 <pin name="A3" x="-2.54" y="-10.16" length="short"/>
@@ -5504,7 +5474,7 @@ Pins tied to GND: SLOW
 <pin name="B3" x="20.32" y="-10.16" length="short" rot="R180"/>
 <pin name="B2" x="20.32" y="-7.62" length="short" rot="R180"/>
 <pin name="B1" x="20.32" y="-5.08" length="short" rot="R180"/>
-<pin name="VCCB" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="VDDB" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-18.542" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 <wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
@@ -5741,7 +5711,7 @@ Pins tied to GND: SLOW
 <description>TXB0106 6 Channel Level Shifter
 &lt;br&gt;
 &lt;a href="ti.com/lit/ds/symlink/txb0106.pdf?ts=1610822922005&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTXB0106"&gt;Datasheet&lt;/a&gt;</description>
-<pin name="VCCA" x="-2.54" y="-2.54" length="short" direction="pwr"/>
+<pin name="VDDA" x="-2.54" y="-2.54" length="short" direction="pwr"/>
 <pin name="A1" x="-2.54" y="-5.08" length="short"/>
 <pin name="A2" x="-2.54" y="-7.62" length="short"/>
 <pin name="A3" x="-2.54" y="-10.16" length="short"/>
@@ -5753,7 +5723,7 @@ Pins tied to GND: SLOW
 <pin name="B3" x="20.32" y="-10.16" length="short" rot="R180"/>
 <pin name="B2" x="20.32" y="-7.62" length="short" rot="R180"/>
 <pin name="B1" x="20.32" y="-5.08" length="short" rot="R180"/>
-<pin name="VCCB" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="VDDB" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-23.622" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 <wire x1="0" y1="0" x2="0" y2="-22.86" width="0.254" layer="94"/>
@@ -6570,12 +6540,12 @@ I2C Mode
 <wire x1="-2.54" y1="0" x2="-2.032" y2="0" width="0.1524" layer="94"/>
 <text x="-1.27" y="2.54" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-3.81" y1="-0.254" x2="0.254" y2="0.254" layer="94" rot="R270"/>
-<rectangle x1="-2.794" y1="-0.254" x2="1.27" y2="0.254" layer="94" rot="R270"/>
 <pin name="MINUS" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <pin name="PLUS" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <text x="-3.175" y="1.27" size="1.778" layer="94" rot="R90" align="center">+</text>
 <text x="-1.27" y="-2.54" size="1.27" layer="96" align="top-center">&gt;VOLTAGE</text>
 <text x="-1.27" y="-4.318" size="1.27" layer="96" align="top-center">&gt;CAPACITANCE</text>
+<wire x1="1.0414" y1="1.778" x2="1.016" y2="-1.778" width="0.508" layer="94" curve="180" cap="flat"/>
 </symbol>
 <symbol name="DIODE_SCHOTTKY">
 <wire x1="0" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
@@ -7139,10 +7109,10 @@ I2C Mode
 <pin name="UVR2" x="-2.54" y="-35.56" length="short" direction="in"/>
 <pin name="OV2" x="-2.54" y="-43.18" length="short" direction="in"/>
 <pin name="V1" x="10.16" y="2.54" length="short" direction="in" rot="R270"/>
-<pin name="GATE1" x="17.78" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="GATE1" x="17.78" y="2.54" length="short" direction="out" rot="R270"/>
 <pin name="SOURCE1" x="25.4" y="2.54" length="short" direction="in" rot="R270"/>
 <pin name="V2" x="63.5" y="2.54" length="short" direction="in" rot="R270"/>
-<pin name="GATE2" x="71.12" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="GATE2" x="71.12" y="2.54" length="short" direction="out" rot="R270"/>
 <pin name="SOURCE2" x="78.74" y="2.54" length="short" direction="in" rot="R270"/>
 <pin name="SENSE1" x="38.1" y="2.54" length="short" direction="in" rot="R270"/>
 <pin name="SENSE2" x="91.44" y="2.54" length="short" direction="in" rot="R270"/>
@@ -7447,18 +7417,6 @@ Note: See page 32 for application schematic.</description>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-36.322" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
-<symbol name="SENSOR_2CHANNEL">
-<wire x1="0" y1="-2.54" x2="0" y2="10.16" width="0.254" layer="94"/>
-<wire x1="0" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="10.16" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<pin name="CH1" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="GND" x="10.16" y="0" visible="pin" length="short" direction="pwr" rot="R180"/>
-<pin name="VDD" x="10.16" y="7.62" visible="pin" length="short" direction="pwr" rot="R180"/>
-<text x="0" y="10.668" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-3.048" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-<pin name="CH2" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
-</symbol>
 <symbol name="CONNECTOR_07">
 <wire x1="7.62" y1="-20.32" x2="0" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-10.16" x2="5.08" y2="-10.16" width="0.6096" layer="94"/>
@@ -7656,15 +7614,6 @@ Pins tied to VREG: ISOMD, DTEN
 <wire x1="10.16" y1="0" x2="10.16" y2="-20.32" width="0.254" layer="94" style="shortdash"/>
 <text x="0" y="0.762" size="1.27" layer="95" font="vector">&gt;NAME</text>
 <text x="0" y="-21.082" size="1.27" layer="96" font="vector" align="top-left">&gt;MPN</text>
-</symbol>
-<symbol name="ANTENNA">
-<description>Antenna symbol for BOM tracking</description>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="0" y2="-7.62" width="0.1524" layer="94"/>
-<text x="0" y="-8.382" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="CONNECTOR_01">
 <wire x1="7.62" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
@@ -8135,12 +8084,12 @@ with up to 100mA of output current</description>
 </symbol>
 <symbol name="TMCS1100A*">
 <description>TMCS1100A* Hall-Effect Current Sensor &lt;br&gt;
-&lt;a href="https://www.ti.com/lit/ds/symlink/tmcs1100.pdf?ts=1634308468687&amp;ref_url=https%253A%252F%252Fwww.google.com%252F"&gt;Datasheet&lt;/a&gt;</description>
-<pin name="IN+" x="-2.54" y="-5.08" length="short"/>
-<pin name="IN-" x="-2.54" y="-15.24" length="short"/>
-<pin name="GND" x="17.78" y="-17.78" length="short" direction="pwr" rot="R180"/>
-<pin name="VREF" x="17.78" y="-12.7" length="short" direction="in" rot="R180"/>
-<pin name="VOUT" x="17.78" y="-7.62" length="short" direction="out" rot="R180"/>
+&lt;a href="https://www.ti.com/lit/ds/symlink/tmcs1100.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pin name="IN+" x="-2.54" y="-5.08" length="short" direction="in"/>
+<pin name="IN-" x="17.78" y="-5.08" length="short" direction="out" rot="R180"/>
+<pin name="GND" x="-2.54" y="-17.78" length="short" direction="pwr"/>
+<pin name="VREF" x="-2.54" y="-10.16" length="short" direction="in"/>
+<pin name="VOUT" x="17.78" y="-12.7" length="short" direction="out" rot="R180"/>
 <pin name="VDD" x="17.78" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <wire x1="0" y1="0" x2="0" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="0" y1="-20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
@@ -8149,7 +8098,7 @@ with up to 100mA of output current</description>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-21.082" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
-<symbol name="TEENSY_3.2-1">
+<symbol name="TEENSY_3.2">
 <description>Teensy 3.2 Simple
 &lt;br&gt;
 &lt;a href="https://www.pjrc.com/teensy/pinout.html"&gt;Datasheet&lt;/a&gt;</description>
@@ -8185,6 +8134,26 @@ with up to 100mA of output current</description>
 <pin name="A8" x="-2.54" y="-33.02" visible="pin" length="short"/>
 <pin name="3.3V" x="22.86" y="-7.62" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="VIN" x="22.86" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="AGND" x="-2.54" y="-40.64" visible="pin" length="short" direction="pwr"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="FUSE_HOLDER">
+<wire x1="0" y1="-2.54" x2="-1.905" y2="-2.54" width="0.1524" layer="94" curve="-180"/>
+<wire x1="0" y1="-2.54" x2="1.905" y2="-2.54" width="0.1524" layer="94" curve="-180"/>
+<pin name="1" x="-7.62" y="-2.54" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="2" x="7.62" y="-2.54" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<text x="0" y="0.762" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.842" size="1.27" layer="96" align="top-center">&gt;MPN</text>
+<wire x1="3.81" y1="-2.54" x2="1.905" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="-2.54" x2="-1.905" y2="-2.54" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-7.62" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -8824,12 +8793,7 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="RESET" pad="5"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="DKPN" value="S2011EC-03-ND"/>
-<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
-<attribute name="MOPN" value=""/>
-<attribute name="MPN" value="GBC05DABN-M30"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="2X05_SMD" package="2X05_SMD">
@@ -8842,7 +8806,12 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="RESET" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DKPN" value="S2011EC-03-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MOPN" value=""/>
+<attribute name="MPN" value="GBC05DABN-M30"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -10906,13 +10875,13 @@ with up to 100mA of output current
 </devices>
 </deviceset>
 <deviceset name="TEST_POINT" prefix="TP">
-<description>Test Point
+<description>Test Point for Probing
 &lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="TEST_POINT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MICRO_MINIATURE">
+<device name="" package="5015">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 </connects>
@@ -11562,7 +11531,7 @@ SHT31: High Grade
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONNECTOR-1_?_*" prefix="J">
+<deviceset name="CONNECTOR-1_?" prefix="J">
 <description>1 Pin Connector
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/273/Mill-Max_03212019_807-22-001-10-020101-1545127.pdf"&gt;Pogo pin datasheet&lt;/a&gt;
@@ -11885,7 +11854,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 &lt;br&gt;
 &lt;a href="https://www.pjrc.com/store/teensy32.html"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="TEENSY_3.2-1" x="0" y="0"/>
+<gate name="G$1" symbol="TEENSY_3.2" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="TEENSY_SHORT">
@@ -11907,6 +11876,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <connect gate="G$1" pin="A7" pad="D21"/>
 <connect gate="G$1" pin="A8" pad="D22"/>
 <connect gate="G$1" pin="A9" pad="D23"/>
+<connect gate="G$1" pin="AGND" pad="AGND/GND"/>
 <connect gate="G$1" pin="D0" pad="D0"/>
 <connect gate="G$1" pin="D1" pad="D1"/>
 <connect gate="G$1" pin="D2" pad="D2"/>
@@ -11915,7 +11885,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <connect gate="G$1" pin="D7" pad="D7"/>
 <connect gate="G$1" pin="D8" pad="D8"/>
 <connect gate="G$1" pin="D9" pad="D9"/>
-<connect gate="G$1" pin="GND" pad="AGND/GND GND"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
 </connects>
 <technologies>

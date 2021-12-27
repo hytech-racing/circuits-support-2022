@@ -718,7 +718,7 @@
 <package name="SOT-223">
 <description>SOT-223
 &lt;br&gt;
-&lt;a href="https://www.diodes.com/assets/Package-Files/SOT-223.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.diodes.com/assets/Package-Files/SOT223.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-2.3" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
 <smd name="2" x="0" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
 <smd name="3" x="2.3" y="-3.2" dx="1.2" dy="1.6" layer="1"/>

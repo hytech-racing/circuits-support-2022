@@ -7655,8 +7655,8 @@ with up to 100mA of output current</description>
 <pin name="GPA6" x="22.86" y="-20.32" length="short" rot="R180"/>
 <pin name="GPA7" x="22.86" y="-22.86" length="short" rot="R180"/>
 <pin name="SDI" x="-2.54" y="-35.56" length="short" direction="in"/>
-<pin name="A1" x="22.86" y="-33.02" length="short" direction="in" rot="R180"/>
-<pin name="A0" x="22.86" y="-35.56" length="short" direction="in" rot="R180"/>
+<pin name="1" x="22.86" y="-33.02" length="short" direction="in" rot="R180"/>
+<pin name="2" x="22.86" y="-35.56" length="short" direction="in" rot="R180"/>
 <pin name="SDO" x="-2.54" y="-33.02" length="short" direction="out"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-43.942" size="1.27" layer="95" align="top-left">&gt;MPN</text>
@@ -11593,8 +11593,8 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <connects>
 <connect gate="G$1" pin="!CS" pad="7"/>
 <connect gate="G$1" pin="!RESET" pad="6"/>
-<connect gate="G$1" pin="A0" pad="5"/>
-<connect gate="G$1" pin="A1" pad="4"/>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
 <connect gate="G$1" pin="CLK" pad="1"/>
 <connect gate="G$1" pin="GND" pad="9"/>
 <connect gate="G$1" pin="GPA0" pad="12"/>

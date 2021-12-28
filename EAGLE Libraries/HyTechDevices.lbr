@@ -1693,19 +1693,6 @@ Adapted from &lt;a href="https://www.analog.com/media/en/package-pcb-resources/p
 <circle x="13.462" y="7.874" radius="1.778" width="0.127" layer="40"/>
 <circle x="13.462" y="-7.874" radius="1.778" width="0.127" layer="40"/>
 </package>
-<package name="5X20MM">
-<description>5x20mm Fuse
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/358/typ_SMD_SPT-1276028.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="1" x="-7.50061875" y="0" dx="5.001259375" dy="5.5118" layer="1" rot="R90"/>
-<smd name="2" x="7.50061875" y="0" dx="5.001259375" dy="5.5118" layer="1" rot="R90"/>
-<wire x1="-10" y1="2.6" x2="10" y2="2.6" width="0.127" layer="21"/>
-<wire x1="10" y1="2.6" x2="10" y2="-2.6" width="0.127" layer="21"/>
-<wire x1="10" y1="-2.6" x2="-10" y2="-2.6" width="0.127" layer="21"/>
-<wire x1="-10" y1="-2.6" x2="-10" y2="2.6" width="0.127" layer="21"/>
-<text x="0" y="3.175" size="0.8128" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-10.668" y1="-3.048" x2="10.668" y2="3.048" layer="39"/>
-</package>
 <package name="PWR163">
 <description>PWR163 Resistor
 &lt;br&gt;
@@ -4332,15 +4319,17 @@ Dashed line is edge of mated connector.</description>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
-<wire x1="0" y1="-10.16" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-10.16" x2="15.24" y2="0" width="0.254" layer="94"/>
+<description>This symbol is not fully style guide compliant, but it was intentionally done to be 0.3" spacing between the pins and easier reading of the small symbol.</description>
+<wire x1="0" y1="-7.62" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="15.24" y2="0" width="0.254" layer="94"/>
 <wire x1="15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<pin name="GND" x="7.62" y="-12.7" length="short" direction="pwr" rot="R90"/>
+<wire x1="0" y1="0" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<pin name="GND" x="7.62" y="-10.16" visible="pad" length="short" direction="pwr" rot="R90"/>
 <pin name="IN" x="-2.54" y="-2.54" length="short" direction="pwr"/>
 <pin name="OUT" x="17.78" y="-2.54" length="short" direction="sup" rot="R180"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="8.89" y="-10.922" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<text x="8.89" y="-8.382" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<text x="7.62" y="-6.35" size="1.524" layer="95" align="bottom-center">GND</text>
 </symbol>
 <symbol name="RESISTOR_THERMISTOR">
 <pin name="1" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
@@ -4526,7 +4515,7 @@ Dashed line is edge of mated connector.</description>
 <wire x1="0" y1="0" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="XBEE">
-<description>Xbee
+<description>XBee
 &lt;br&gt;
 &lt;a href="https://cdn.sparkfun.com/assets/4/8/a/0/0/528e6c16757b7f7a5a8b4568.png"&gt;Pinout&lt;/a&gt;</description>
 <wire x1="0" y1="0" x2="0" y2="-33.02" width="0.254" layer="94"/>
@@ -8256,8 +8245,8 @@ Turns ratio: 1CT: 1CT&lt;br/&gt;
 Isolation Voltage: 4300 VDC&lt;br/&gt;
 Inductance: 150 uH&lt;br/&gt;
 Leakage Inductance: 0.50 uH max
-&lt;p&gt;HM2102NLT: &lt;a href="https://www.mouser.com/datasheet/2/336/HM2102NL-1218600.pdf"&gt;DataSheet&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;HM2112ZNLT: &lt;a href="https://www.mouser.com/datasheet/2/336/HM2112ZNL-1224892.pdf"&gt;DataSheet&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;HM2102NLT: &lt;a href="https://www.mouser.com/datasheet/2/336/HM2102NL-1218600.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;HM2112ZNLT: &lt;a href="https://www.mouser.com/datasheet/2/336/HM2112ZNL-1224892.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="A" symbol="TRANSFORMER" x="5.08" y="17.78" swaplevel="1"/>
 <gate name="B" symbol="TRANSFORMER" x="5.08" y="-17.78" swaplevel="1"/>
@@ -9344,86 +9333,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MOPN" value="658-BR1632A/HAN"/>
 <attribute name="MPN" value="BR-1632A/HAN"/>
 <attribute name="VOLTAGE" value=" 3V"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LTC6813" prefix="U">
-<description>LTC6813 18-Cell Battery Monitor
-&lt;br&gt;
-&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6813-1.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="LTC6813" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LQFP-64">
-<connects>
-<connect gate="G$1" pin="C0" pad="38"/>
-<connect gate="G$1" pin="C1" pad="36"/>
-<connect gate="G$1" pin="C10" pad="18"/>
-<connect gate="G$1" pin="C11" pad="16"/>
-<connect gate="G$1" pin="C12" pad="14"/>
-<connect gate="G$1" pin="C13" pad="12"/>
-<connect gate="G$1" pin="C14" pad="10"/>
-<connect gate="G$1" pin="C15" pad="8"/>
-<connect gate="G$1" pin="C16" pad="6"/>
-<connect gate="G$1" pin="C17" pad="4"/>
-<connect gate="G$1" pin="C18" pad="2"/>
-<connect gate="G$1" pin="C2" pad="34"/>
-<connect gate="G$1" pin="C3" pad="32"/>
-<connect gate="G$1" pin="C4" pad="30"/>
-<connect gate="G$1" pin="C5" pad="28"/>
-<connect gate="G$1" pin="C6" pad="26"/>
-<connect gate="G$1" pin="C7" pad="24"/>
-<connect gate="G$1" pin="C8" pad="22"/>
-<connect gate="G$1" pin="C9" pad="20"/>
-<connect gate="G$1" pin="DRIVE" pad="49"/>
-<connect gate="G$1" pin="GPI01" pad="39"/>
-<connect gate="G$1" pin="GPI02" pad="40"/>
-<connect gate="G$1" pin="GPI03" pad="41"/>
-<connect gate="G$1" pin="GPI04" pad="42"/>
-<connect gate="G$1" pin="GPI05" pad="43"/>
-<connect gate="G$1" pin="GPI06" pad="44"/>
-<connect gate="G$1" pin="GPI07" pad="45"/>
-<connect gate="G$1" pin="GPI08" pad="46"/>
-<connect gate="G$1" pin="GPI09" pad="47"/>
-<connect gate="G$1" pin="IBIAS" pad="57"/>
-<connect gate="G$1" pin="ICMP" pad="58"/>
-<connect gate="G$1" pin="IMA" pad="61"/>
-<connect gate="G$1" pin="IMB" pad="63"/>
-<connect gate="G$1" pin="IPA" pad="62"/>
-<connect gate="G$1" pin="IPB" pad="64"/>
-<connect gate="G$1" pin="S1" pad="37"/>
-<connect gate="G$1" pin="S10" pad="19"/>
-<connect gate="G$1" pin="S11" pad="17"/>
-<connect gate="G$1" pin="S12" pad="15"/>
-<connect gate="G$1" pin="S13" pad="13"/>
-<connect gate="G$1" pin="S14" pad="11"/>
-<connect gate="G$1" pin="S15" pad="9"/>
-<connect gate="G$1" pin="S16" pad="7"/>
-<connect gate="G$1" pin="S17" pad="5"/>
-<connect gate="G$1" pin="S18" pad="3"/>
-<connect gate="G$1" pin="S2" pad="35"/>
-<connect gate="G$1" pin="S3" pad="33"/>
-<connect gate="G$1" pin="S4" pad="31"/>
-<connect gate="G$1" pin="S5" pad="29"/>
-<connect gate="G$1" pin="S6" pad="27"/>
-<connect gate="G$1" pin="S7" pad="25"/>
-<connect gate="G$1" pin="S8" pad="23"/>
-<connect gate="G$1" pin="S9" pad="21"/>
-<connect gate="G$1" pin="V+" pad="1"/>
-<connect gate="G$1" pin="V-" pad="59 60 65"/>
-<connect gate="G$1" pin="VREF1" pad="51"/>
-<connect gate="G$1" pin="VREF2" pad="50"/>
-<connect gate="G$1" pin="VREG" pad="48 52 55"/>
-<connect gate="G$1" pin="WDT" pad="56"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="LTC6813ILWE-1#3ZZPBF-ND"/>
-<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
-<attribute name="MPN" value="LTC6813ILWE-1#3ZZPBF"/>
 </technology>
 </technologies>
 </device>
@@ -10570,7 +10479,7 @@ Recommended clock capacitor for the MAX7400/MAX7404:
 </devices>
 </deviceset>
 <deviceset name="LTC3200-5" prefix="U">
-<description>LTC3200-5
+<description>LTC3200-5 Charge Pump DC-DC Converter
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/32005f.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
@@ -11569,7 +11478,8 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR:
 </devices>
 </deviceset>
 <deviceset name="LTC3639" prefix="U">
-<description>LTC3639&lt;br&gt;
+<description>LTC3639 DC-DC Converter
+&lt;br&gt;
 &lt;a href = "https://www.mouser.com/datasheet/2/609/3639fd-1271210.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="LTC3639" x="0" y="0"/>

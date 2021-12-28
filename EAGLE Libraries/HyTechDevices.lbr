@@ -7775,14 +7775,16 @@ with up to 100mA of output current</description>
 </connects>
 <technologies>
 <technology name="BLACK">
+<attribute name="DKPN" value="900-1054291304TR-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MPN" value="1054291304"/>
+<attribute name="MOPN" value="538-105429-1304"/>
+<attribute name="MPN" value="105429-1304"/>
 </technology>
 <technology name="NATURAL">
 <attribute name="DKPN" value="900-1054312302TR-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105431-2302"/>
-<attribute name="MPN" value="1054312302"/>
+<attribute name="MPN" value="105431-2302"/>
 </technology>
 </technologies>
 </device>
@@ -7793,7 +7795,9 @@ with up to 100mA of output current</description>
 </connects>
 <technologies>
 <technology name="BLACK">
+<attribute name="DKPN" value="23-0430450211CT-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43045-0211"/>
 <attribute name="MPN" value="0430450211"/>
 </technology>
 </technologies>
@@ -9282,7 +9286,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="DKPN" value="1054051304-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105405-1304"/>
-<attribute name="MPN" value="1054051304"/>
+<attribute name="MPN" value="105405-1304"/>
 </technology>
 </technologies>
 </device>
@@ -9298,7 +9302,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="DKPN" value="900-1054291304TR-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105429-1304"/>
-<attribute name="MPN" value="1054291304"/>
+<attribute name="MPN" value="105429-1304"/>
 </technology>
 </technologies>
 </device>
@@ -9314,7 +9318,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="DKPN" value="WM1832CT-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-43045-0411"/>
-<attribute name="MPN" value="430450411"/>
+<attribute name="MPN" value="0430450411"/>
 </technology>
 </technologies>
 </device>
@@ -9466,13 +9470,13 @@ Leakage Inductance: 0.50 uH max
 <attribute name="DKPN" value="900-1054291304TR-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105429-1304"/>
-<attribute name="MPN" value="1054291304"/>
+<attribute name="MPN" value="105429-1304"/>
 </technology>
 <technology name="NATURAL">
 <attribute name="DKPN" value="900-1054312302TR-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105431-2302"/>
-<attribute name="MPN" value="1054312302"/>
+<attribute name="MPN" value="105431-2302"/>
 </technology>
 </technologies>
 </device>
@@ -10034,7 +10038,9 @@ Leakage Inductance: 0.50 uH max
 </connects>
 <technologies>
 <technology name="BLACK">
+<attribute name="DKPN" value="WM15062-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105310-1306"/>
 <attribute name="MPN" value="105310-1306"/>
 </technology>
 </technologies>
@@ -10416,7 +10422,7 @@ Note: See page 32 for application schematic.</description>
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/256/MAX7404-1514314.pdf"&gt;MAX7400 Datsheet&lt;/a&gt;
 &lt;br&gt;
-Recommended clock capacitor for the MAX7400/MAX7404: 
+Recommended clock capacitor for the MAX7400/MAX7404:
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/445/885012006013-1726946.pdf"&gt;885012006013&lt;/a&gt;</description>
 <gates>
@@ -10695,7 +10701,7 @@ Requires ordering of:
 <attribute name="DKPN" value="1054051304-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105405-1304"/>
-<attribute name="MPN" value="1054051304"/>
+<attribute name="MPN" value="105405-1304"/>
 </technology>
 </technologies>
 </device>
@@ -10711,7 +10717,7 @@ Requires ordering of:
 <attribute name="DKPN" value="900-1054291304TR-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105429-1304"/>
-<attribute name="MPN" value="1054291304"/>
+<attribute name="MPN" value="105429-1304"/>
 </technology>
 </technologies>
 </device>
@@ -10727,7 +10733,7 @@ Requires ordering of:
 <attribute name="DKPN" value="WM1832CT-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-43045-0411"/>
-<attribute name="MPN" value="430450411"/>
+<attribute name="MPN" value="0430450411"/>
 </technology>
 </technologies>
 </device>

@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4139,7 +4139,7 @@ Header: 0.1" Pitch Pin Header
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/737/adafruit_ultimate_gps-779243.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
-&lt;a href="https://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/Female_Headers.100_DS.pdf"&gt;Header&lt;/a&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/527/dw-2507303.pdf"&gt;Header&lt;/a&gt;</description>
 <pad name="3.3V" x="-10.16" y="0" drill="1.016" first="yes"/>
 <pad name="EN" x="-7.62" y="0" drill="1.016"/>
 <pad name="VBAT" x="-5.08" y="0" drill="1.016"/>
@@ -4150,17 +4150,31 @@ Header: 0.1" Pitch Pin Header
 <pad name="VIN" x="7.62" y="0" drill="1.016"/>
 <pad name="PPS" x="10.16" y="0" drill="1.016"/>
 <circle x="-10.16" y="1.905" radius="0.254" width="0" layer="21"/>
-<rectangle x1="-11.938" y1="-1.524" x2="11.938" y2="1.524" layer="40"/>
+<rectangle x1="-11.684" y1="-1.524" x2="11.684" y2="1.524" layer="40"/>
 <wire x1="-12.7" y1="-2.032" x2="12.7" y2="-2.032" width="0.127" layer="21"/>
-<wire x1="12.7" y1="-2.032" x2="12.7" y2="32.004" width="0.127" layer="21"/>
-<wire x1="12.7" y1="32.004" x2="-12.7" y2="32.004" width="0.127" layer="21"/>
-<wire x1="-12.7" y1="32.004" x2="-12.7" y2="-2.032" width="0.127" layer="21"/>
-<text x="0" y="1.397" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<wire x1="-11.684" y1="1.27" x2="11.684" y2="1.27" width="0.127" layer="21"/>
-<wire x1="11.684" y1="1.27" x2="11.684" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="11.684" y1="-1.27" x2="-11.684" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-11.684" y1="-1.27" x2="-11.684" y2="1.27" width="0.127" layer="21"/>
-<rectangle x1="-11.938" y1="-1.524" x2="11.938" y2="1.524" layer="39"/>
+<wire x1="12.7" y1="-2.032" x2="12.7" y2="29.464" width="0.127" layer="21"/>
+<wire x1="12.7" y1="29.464" x2="10.16" y2="32.004" width="0.127" layer="21" curve="90"/>
+<wire x1="10.16" y1="32.004" x2="-10.16" y2="32.004" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="32.004" x2="-12.7" y2="29.464" width="0.127" layer="21" curve="90"/>
+<wire x1="-12.7" y1="29.464" x2="-12.7" y2="-2.032" width="0.127" layer="21"/>
+<text x="0" y="-2.54" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
+<wire x1="-11.43" y1="1.27" x2="11.43" y2="1.27" width="0.127" layer="21"/>
+<wire x1="11.43" y1="1.27" x2="11.43" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="11.43" y1="-1.27" x2="-11.43" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="-1.27" x2="-11.43" y2="1.27" width="0.127" layer="21"/>
+<rectangle x1="-13.208" y1="-2.54" x2="13.208" y2="32.512" layer="39"/>
+<hole x="-10.16" y="29.464" drill="3.4"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="39"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="40"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="41"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="42"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="43"/>
+<hole x="10.16" y="29.464" drill="3.4"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="39"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="40"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="41"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="42"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="43"/>
 </package>
 <package name="SOD-323">
 <description>SOD-323 Diode Package
@@ -9903,7 +9917,13 @@ Leakage Inductance: 0.50 uH max
 <deviceset name="TEENSY_3.5" prefix="A">
 <description>Teensy 3.5
 &lt;br&gt;
-&lt;a href="https://www.pjrc.com/store/teensy35.html"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.pjrc.com/store/teensy35.html"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Requires ordering of:
+&lt;ul&gt;
+&lt;li&gt;2: 24 pin, 0.1" pitch female headers&lt;/li&gt;
+&lt;li&gt;1:  2 pin, 0.1" pitch female headers&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TEENSY_3.5_EXT" x="0" y="0"/>
 </gates>
@@ -10029,7 +10049,14 @@ Note: OPA991 is also a comparator</description>
 <deviceset name="TEENSY_4.0_VBAT" prefix="A">
 <description>Teensy 4.0 with VBAT Pin
 &lt;br&gt;
-&lt;a href="https://www.pjrc.com/store/teensy40.html"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.pjrc.com/store/teensy40.html"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Requires ordering of:
+&lt;ul&gt;
+&lt;li&gt;1: 14 pin, 0.1" pitch female headers&lt;/li&gt;
+&lt;li&gt;1: 13 pin, 0.1" pitch female headers&lt;/li&gt;
+&lt;li&gt;1:   2 pin, 0.1" pitch female headers&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TEENSY_4.0_VBAT" x="0" y="0"/>
 </gates>
@@ -10076,7 +10103,13 @@ Note: OPA991 is also a comparator</description>
 <deviceset name="TEENSY_4.1" prefix="A">
 <description>Teensy 4.1 with VBAT
 &lt;br&gt;
-&lt;a href="https://www.pjrc.com/store/teensy41.html#pins"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.pjrc.com/store/teensy41.html#pins"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Requires ordering of:
+&lt;ul&gt;
+&lt;li&gt;2: 24 pin, 0.1" pitch female headers&lt;/li&gt;
+&lt;li&gt;1:  2 pin, 0.1" pitch female headers&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TEENSY_4.1_EXT" x="0" y="0"/>
 </gates>
@@ -10409,7 +10442,13 @@ with up to 100mA of output current
 <deviceset name="TEENSY_4.0" prefix="A">
 <description>Teensy 4.0
 &lt;br&gt;
-&lt;a href="https://www.pjrc.com/store/teensy40.html"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.pjrc.com/store/teensy40.html"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Requires ordering of:
+&lt;ul&gt;
+&lt;li&gt;2: 14 pin, 0.1" pitch female headers
+&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TEENSY_4.0" x="0" y="0"/>
 </gates>
@@ -11405,7 +11444,13 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <deviceset name="TEENSY_3.2" prefix="A">
 <description>Teensy 3.2
 &lt;br&gt;
-&lt;a href="https://www.pjrc.com/store/teensy32.html"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.pjrc.com/store/teensy32.html"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Requires ordering of:
+&lt;ul&gt;
+&lt;li&gt;2: 14 pin, 0.1" pitch female headers
+&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TEENSY_3.2" x="0" y="0"/>
 </gates>
@@ -11562,7 +11607,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </devices>
 </deviceset>
 <deviceset name="OKL-*" prefix="A">
-<description>Point of Load Voltage Regulator Modules 
+<description>Point of Load Voltage Regulator Modules
 &lt;br&gt;
 &lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
 <gates>
@@ -11696,9 +11741,16 @@ All PNs for the holder; if fuse needed, order separately.
 </device>
 </devices>
 </deviceset>
-<deviceset name="ULTIMATE_GPS" prefix="A">
+<deviceset name="ULTIMATE_GPS" prefix="XA">
 <description>Adafruit Ultimate GPS Breakout - 66 channel w/10 Hz updates - Version 3
-&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/737/adafruit_ultimate_gps-779243.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/737/adafruit_ultimate_gps-779243.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Requires ordering of:
+&lt;ul&gt;
+&lt;li&gt;2: 5mm height, 3mm screw standoffs&lt;/li&gt;
+&lt;li&gt;1: Ultimate GPS&lt;/li&gt;
+&lt;li&gt;1: Antenna&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ULTIMATE_GPS" x="0" y="0"/>
 </gates>
@@ -11717,10 +11769,10 @@ All PNs for the holder; if fuse needed, order separately.
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="1528-1153-ND"/>
-<attribute name="MANUFACTURER" value="Adafruit"/>
-<attribute name="MOPN" value="485-746" constant="no"/>
-<attribute name="MPN" value="746"/>
+<attribute name="DKPN" value="DW-09-07-G-S-200-ND"/>
+<attribute name="MANUFACTURER" value="Samtec Inc."/>
+<attribute name="MOPN" value="200-DW0907GS200"/>
+<attribute name="MPN" value="DW-09-07-G-S-200"/>
 </technology>
 </technologies>
 </device>

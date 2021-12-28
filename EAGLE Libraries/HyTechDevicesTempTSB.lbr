@@ -592,7 +592,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="LTC6994-*" prefix="U">
+<deviceset name="LTC6994_*" prefix="U">
 <description>Analog Electronics Delay IC
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/609/LTC6994_1_6994_2-1270043.pdf"&gt;Datasheet&lt;/a&gt;</description>

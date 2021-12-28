@@ -8205,7 +8205,7 @@ with up to 100mA of output current</description>
 &lt;br&gt;
 &lt;a href="https://www.murata.com/-/media/webrenewal/products/power/datasheet/uwe-100-120.ashx?la=en&amp;cvid=20200224054012000000"&gt;Datasheet&lt;a/&gt;</description>
 <pin name="+VIN" x="-2.54" y="-7.62" length="short" direction="in"/>
-<pin name="!ON/OFF" x="-2.54" y="-22.86" length="short" direction="in"/>
+<pin name="ON/OFF" x="-2.54" y="-22.86" length="short" direction="in"/>
 <pin name="-VIN" x="-2.54" y="-15.24" length="short" direction="in"/>
 <pin name="-VOUT" x="25.4" y="-27.94" length="short" direction="out" rot="R180"/>
 <pin name="-SENSE" x="25.4" y="-22.86" length="short" direction="in" rot="R180"/>
@@ -12068,13 +12068,13 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <devices>
 <device name="" package="1/8_BRICK">
 <connects>
-<connect gate="G$1" pin="!ON/OFF" pad="2"/>
 <connect gate="G$1" pin="+SENSE" pad="7"/>
 <connect gate="G$1" pin="+VIN" pad="1"/>
 <connect gate="G$1" pin="+VOUT" pad="8"/>
 <connect gate="G$1" pin="-SENSE" pad="5"/>
 <connect gate="G$1" pin="-VIN" pad="3"/>
 <connect gate="G$1" pin="-VOUT" pad="4"/>
+<connect gate="G$1" pin="ON/OFF" pad="2"/>
 <connect gate="G$1" pin="TRIM" pad="6"/>
 </connects>
 <technologies>
@@ -12083,12 +12083,6 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
 <attribute name="MOPN" value="580-UWE-12/10Q12PBC"/>
 <attribute name="MPN" value="UWE-12/10-Q12PB-C"/>
-</technology>
-<technology name="12/10-Q48NB-C">
-<attribute name="DKPN" value="811-2616-ND"/>
-<attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
-<attribute name="MOPN" value="580-UWE-12/10-Q48NBC"/>
-<attribute name="MPN" value="UWE-12/10-Q48NB-C"/>
 </technology>
 </technologies>
 </device>

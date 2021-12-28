@@ -237,9 +237,10 @@ Precharger</text>
 <wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
 <pin name="XLA-(HV-)" x="30.48" y="-5.08" length="short" rot="R180"/>
 <pin name="XLA+(HV+)" x="30.48" y="-2.54" length="short" rot="R180"/>
-<text x="0" y="0.762" size="1.27" layer="95">BENDER IR155-3204</text>
+<text x="0" y="0.762" size="1.27" layer="95">BENDER</text>
 <wire x1="10.16" y1="0" x2="10.16" y2="-12.7" width="0.254" layer="94" style="shortdash"/>
 <wire x1="12.7" y1="-12.7" x2="12.7" y2="0" width="0.254" layer="94" style="shortdash"/>
+<text x="0" y="-13.462" size="1.27" layer="96" align="top-left">IR155-3204</text>
 </symbol>
 <symbol name="SWITCH_DPST">
 <description>&lt;a href="http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da-01-de-Subminiaturschalter_TL_36YO.pdf"&gt;Source&lt;/a&gt;</description>
@@ -430,6 +431,8 @@ Converter</text>
 <wire x1="7.62" y1="0" x2="7.62" y2="-12.7" width="0.254" layer="94" style="shortdash"/>
 <wire x1="7.62" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94" style="shortdash"/>
 <wire x1="10.16" y1="-12.7" x2="10.16" y2="0" width="0.254" layer="94" style="shortdash"/>
+<text x="0" y="0.762" size="1.27" layer="96">&gt;MANUFACTURER</text>
+<text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="POWER_SWITCHING_BOARD">
 <wire x1="-25.4" y1="-17.78" x2="-25.4" y2="0" width="0.254" layer="94"/>
@@ -552,10 +555,9 @@ Circuit</text>
 <deviceset name="SWITCH_SPST_*" prefix="S">
 <description>Single Pull Single Throw Switch
 &lt;ul&gt;
-&lt;li&gt;&lt;a href  = "https://www.mouser.com/datasheet/2/603/P9_Sealed_Dome_Pushbuttons_Catalog_Pages-2576938.pdf"&gt;OTTO P9 Series Pushbutton Switches&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href  = "https://www.otto-controls.com/-/media/products/electromechanical-switches/pushbuttonswitches/lp9illuminatedsealedmomentaryactionpushbuttonswitch/LP9-Pushbuttons-Catalog-Pages.ashx"&gt;OTTO LP9 Series Illuminated Pushbutton Switches&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href  = "https://hmi.eao.com/p/965f6719"&gt;EAO Series 45 40mm Illuminated Emergency Stop Swtich&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href  = "https://hmi.eao.com/p/5909b34f"&gt;EAO Series 45 34mm Illuminated Emergency Stop Switch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href  = "https://www.mouser.com/datasheet/2/418/8/ENG_CD_35_210_100_R_900_5-2533843.pdf"&gt;TE Battery Disconnector Switch&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="SPST" symbol="SWITCH_SPST" x="0" y="0"/>
@@ -570,22 +572,22 @@ Circuit</text>
 </technology>
 <technology name="34MM_STOP">
 <attribute name="MANUFACTURER" value="EAO"/>
-<attribute name="MPN" value="Series 45"/>
+<attribute name="MPN" value="Series 45 E-Stop"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="35-210-100-R-900">
+<attribute name="MANUFACTURER" value="TE-Kissling"/>
+<attribute name="MPN" value="35-210-100-R-900"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="40MM_STOP">
 <attribute name="MANUFACTURER" value="EAO"/>
-<attribute name="MPN" value="Series 45"/>
+<attribute name="MPN" value="Series 45 E-Stop"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
-<technology name="LP9">
-<attribute name="MANUFACTURER" value="OTTO"/>
-<attribute name="MPN" value="LP9"/>
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-<technology name="P9">
-<attribute name="MANUFACTURER" value="OTTO"/>
-<attribute name="MPN" value="P9"/>
+<technology name="INERTIA_SWITCH">
+<attribute name="MANUFACTURER" value="Sensata"/>
+<attribute name="MPN" value="Crash Sensor"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>
@@ -676,7 +678,11 @@ Source: Schukat</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DC-DC_CONVERTER">
+<deviceset name="DC-DC_CONVERTER_*">
+<description>DC_DC Converter
+&lt;ul&gt;
+&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/685/DCM4623xD2J13D0y7z_ds-1144763.pdf"&gt;Vicor DCM Series&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="DC-DC_CONVERTER" x="0" y="0"/>
 </gates>
@@ -684,6 +690,13 @@ Source: Schukat</description>
 <device name="">
 <technologies>
 <technology name="">
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="DCM4623TD2J13D0T70">
+<attribute name="MANUFACTURER" value="Vicor Corporation"/>
+<attribute name="MPN" value="DCM4623TD2J13D0T70"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>

@@ -302,7 +302,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="HEADER_MALE">
+<deviceset name="HEADER_MALE_PINS_*_PITCH">
 <gates>
 </gates>
 <devices>
@@ -370,8 +370,7 @@
 <description>Adafruit Ultimate GPS
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/737/adafruit_ultimate_gps-779243.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-This actually orders the GPS.</description>
+&lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="ORDERING" x="0" y="0"/>
 </gates>
@@ -389,9 +388,10 @@ This actually orders the GPS.</description>
 </devices>
 </deviceset>
 <deviceset name="STANDOFF_*" prefix="O">
-<description>Bivar Standoffs
+<description>Standoffs
 &lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/50/MSB3_0_XXSP-2301677.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/50/MSB3_0_XXSP-2301677.pdf"&gt;Bivar M3&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="ORDERING" x="0" y="0"/>
 </gates>

@@ -232,7 +232,7 @@
 &lt;br&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/0430300003_CRIMP_TERMINALS-2845469.pdf"&gt;Microfit, 20-24&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF"&gt;Nanofit, 20-22&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/2/1053002300_CRIMP_TERMINALS-2829694.pdf"&gt;Nanofit, 20-22&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ORDERING" x="0" y="0"/>
@@ -284,7 +284,7 @@
 <description>Fuse
 &lt;br&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.littelfuse.com/~/media/automotive/datasheets/fuses/passenger-car-and-commercial-vehicle/blade-fuses/littelfuse_mini_datasheet.pdf"&gt;MINI Blade&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_MINI_Datasheet-1077557.pdf"&gt;MINI Blade&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ORDERING" x="0" y="0"/>
@@ -434,7 +434,7 @@ This actually orders the GPS.</description>
 <description>Plug, 4 Pin
 &lt;br&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/1053081204_CRIMP_HOUSINGS-2868911.pdf"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ORDERING" x="0" y="0"/>
@@ -447,11 +447,6 @@ This actually orders the GPS.</description>
 <attribute name="MANUFACTURER" value="Molex" />
 <attribute name="MOPN" value="538-105308-1204" />
 <attribute name="MPN" value="1053081204" />
-
-<attribute name="ALT_DKPN" value="1054052204-ND" />
-<attribute name="ALT_MANUFACTURER" value="Molex" />
-<attribute name="ALT_MOPN" value="538-105405-2204" />
-<attribute name="ALT_MPN" value="105405-2204" />
 </technology>
 </technologies>
 </device>
@@ -461,7 +456,7 @@ This actually orders the GPS.</description>
 <description>Plug, 6 Pin
 &lt;br&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/4/1053081206_CRIMP_HOUSINGS-2883231.pdf"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ORDERING" x="0" y="0"/>
@@ -474,11 +469,6 @@ This actually orders the GPS.</description>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105308-1206"/>
 <attribute name="MPN" value="1053081206"/>
-
-<attribute name="ALT_DKPN" value="1054052206-ND" />
-<attribute name="ALT_MANUFACTURER" value="Molex" />
-<attribute name="ALT_MOPN" value="538-105405-2206" />
-<attribute name="ALT_MPN" value="105405-2206" />
 </technology>
 </technologies>
 </device>
@@ -488,7 +478,7 @@ This actually orders the GPS.</description>
 <description>Plug, 8 Pin
 &lt;br&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/4/1053081208_CRIMP_HOUSINGS-2883437.pdf"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ORDERING" x="0" y="0"/>
@@ -501,11 +491,6 @@ This actually orders the GPS.</description>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105308-1208"/>
 <attribute name="MPN" value="105308-1208"/>
-
-<attribute name="ALT_DKPN" value="1054052208-ND" />
-<attribute name="ALT_MANUFACTURER" value="Molex" />
-<attribute name="ALT_MOPN" value="538-105405-2208" />
-<attribute name="ALT_MPN" value="105405-2208" />
 </technology>
 </technologies>
 </device>

@@ -2248,26 +2248,6 @@ Note: Based on page 48 and 49.</description>
 <text x="0" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
 </package>
-<package name="MOUNTING_M3">
-<description>M3 Mounting Hole
-&lt;br&gt;
-&lt;a href="https://www.engineersedge.com/iso_socket_head_screw.htm"&gt;Datasheet&lt;/a&gt;</description>
-<hole x="0" y="0" drill="3.4"/>
-<circle x="0" y="0" radius="3" width="0" layer="39"/>
-<circle x="0" y="0" radius="3" width="0" layer="40"/>
-<circle x="0" y="0" radius="3" width="0" layer="41"/>
-<circle x="0" y="0" radius="3" width="0" layer="42"/>
-</package>
-<package name="MOUNTING_M4">
-<description>M4 Mounting Hole
-&lt;br&gt;
-&lt;a href="https://www.engineersedge.com/iso_socket_head_screw.htm"&gt;Datasheet&lt;/a&gt;</description>
-<hole x="0" y="0" drill="4.5"/>
-<circle x="0" y="0" radius="3.75" width="0" layer="39"/>
-<circle x="0" y="0" radius="3.75" width="0" layer="40"/>
-<circle x="0" y="0" radius="3.75" width="0" layer="41"/>
-<circle x="0" y="0" radius="3.75" width="0" layer="42"/>
-</package>
 <package name="TSSOP-24">
 <description>TSSOP 24
 &lt;br&gt;
@@ -4839,23 +4819,6 @@ A variation of MSOP16 with 4 pins removed.
 <rectangle x1="-2.286" y1="-2.794" x2="2.286" y2="2.794" layer="39"/>
 <text x="-2.286" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="DCM4623">
-<pad name="6" x="23.19" y="8.25" drill="2.03" diameter="2.79"/>
-<pad name="7" x="23.19" y="2.75" drill="2.03" diameter="2.79"/>
-<pad name="8" x="23.19" y="-2.75" drill="2.03" diameter="2.79"/>
-<pad name="9" x="23.19" y="-8.25" drill="2.03" diameter="2.79"/>
-<pad name="1" x="-23.19" y="8" drill="2.03" diameter="2.79"/>
-<pad name="2" x="-23.19" y="1.38" drill="1.52" diameter="2.02"/>
-<pad name="3" x="-23.19" y="-1.38" drill="1.52" diameter="2.02"/>
-<pad name="4" x="-23.19" y="-4.13" drill="1.52" diameter="2.02"/>
-<pad name="5" x="-23.19" y="-8" drill="2.03" diameter="2.79"/>
-<wire x1="-23.955" y1="11.4" x2="-23.955" y2="-11.4" width="0.127" layer="21"/>
-<wire x1="-23.955" y1="-11.4" x2="23.955" y2="-11.4" width="0.127" layer="21"/>
-<wire x1="23.955" y1="-11.4" x2="23.955" y2="11.4" width="0.127" layer="21"/>
-<wire x1="23.955" y1="11.4" x2="-23.955" y2="11.4" width="0.127" layer="21"/>
-<text x="-24.13" y="11.684" size="1.27" layer="21">&gt;NAME</text>
-<rectangle x1="-25.4" y1="-12.7" x2="25.4" y2="12.7" layer="39"/>
-</package>
 <package name="WE-LMHI">
 <smd name="1" x="-2.725" y="0" dx="3.5" dy="2.95" layer="1" rot="R90"/>
 <smd name="2" x="2.725" y="0" dx="3.5" dy="2.95" layer="1" rot="R90"/>
@@ -4881,20 +4844,10 @@ A variation of MSOP16 with 4 pins removed.
 <rectangle x1="-1.27" y1="-2.54" x2="1.27" y2="2.54" layer="41"/>
 <rectangle x1="-1.27" y1="-2.54" x2="1.27" y2="2.54" layer="43"/>
 </package>
-<package name="B20">
-<pad name="P$1" x="35.4" y="0" drill="1.35"/>
-<pad name="P$2" x="-35.4" y="0" drill="1.35"/>
-<wire x1="-25.4" y1="5.555" x2="-25.4" y2="-5.555" width="0.127" layer="21"/>
-<wire x1="-25.4" y1="-5.555" x2="25.4" y2="-5.555" width="0.127" layer="21"/>
-<wire x1="25.4" y1="-5.555" x2="25.4" y2="5.555" width="0.127" layer="21"/>
-<wire x1="25.4" y1="5.555" x2="-25.4" y2="5.555" width="0.127" layer="21"/>
-<rectangle x1="-38.1" y1="-6.35" x2="36.83" y2="6.35" layer="39"/>
-<text x="-25.527" y="5.715" size="1.27" layer="21">&gt;NAME</text>
-</package>
-<package name="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL">
-<description>10 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_05_SINGLE">
+<description>5 Pin Micro-Fit Vertical Header, Through-Hole, Single Row
 &lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451014"&gt;Part&lt;/a&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0436500517"&gt;Part&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.molex.com/pdm_docs/sd/430451014_sd.pdf"&gt;Footprint&lt;/a&gt;
 &lt;br&gt;
@@ -4923,10 +4876,10 @@ A variation of MSOP16 with 4 pins removed.
 <pad name="2" x="-2.9972" y="0" drill="1.0668"/>
 <pad name="1" x="-5.9944" y="0" drill="1.0668"/>
 </package>
-<package name="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL">
-<description>14 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_07_SINGLE">
+<description>7 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
 &lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451414"&gt;Part&lt;/a&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0436500717"&gt;Part&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.molex.com/pdm_docs/sd/430451414_sd.pdf"&gt;Footprint&lt;/a&gt;
 &lt;br&gt;
@@ -4957,10 +4910,10 @@ A variation of MSOP16 with 4 pins removed.
 <pad name="2" x="-5.9944" y="0" drill="1.0668"/>
 <pad name="1" x="-8.9916" y="0" drill="1.0668"/>
 </package>
-<package name="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED">
-<description>10 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_05_SINGLE_SPACED">
+<description>5 Pin Micro-Fit Vertical Header, Through-Hole, Single Row
 &lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451014"&gt;Part&lt;/a&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0436500517"&gt;Part&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.molex.com/pdm_docs/sd/430451014_sd.pdf"&gt;Footprint&lt;/a&gt;
 &lt;br&gt;
@@ -4987,54 +4940,10 @@ A variation of MSOP16 with 4 pins removed.
 <pad name="2" x="0" y="0" drill="1.0668"/>
 <pad name="1" x="-5.9944" y="0" drill="1.0668"/>
 </package>
-<package name="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED">
-<description>14 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_07_SINGLE_SPACED">
+<description>7 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
 &lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451414"&gt;Part&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/430451414_sd.pdf"&gt;Footprint&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/430251400_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
-<hole x="11.9888" y="0.9398" drill="1.0668"/>
-<hole x="-11.9888" y="0.9398" drill="1.0668"/>
-<wire x1="-12.319" y1="-1.905" x2="12.319" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="12.319" y1="-1.905" x2="12.319" y2="1.905" width="0.127" layer="21"/>
-<wire x1="12.319" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
-<wire x1="1.9304" y1="1.905" x2="-1.9304" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-1.9304" y1="1.905" x2="-12.319" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-12.319" y1="1.905" x2="-12.319" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="-1.9304" y1="1.905" x2="-1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="3.302" x2="1.9304" y2="3.302" width="0.127" layer="21"/>
-<wire x1="1.9304" y1="3.302" x2="1.9304" y2="1.905" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="3.302" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="5.969" x2="1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
-<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
-<rectangle x1="-13.0556" y1="-2.286" x2="13.0556" y2="2.286" layer="39"/>
-<rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
-<rectangle x1="-13.0556" y1="-2.286" x2="13.0556" y2="2.286" layer="40"/>
-<text x="0" y="-2.54" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
-<pad name="4" x="8.9916" y="0" drill="1.0668"/>
-<pad name="3" x="2.9972" y="0" drill="1.0668"/>
-<pad name="2" x="-2.9972" y="0" drill="1.0668"/>
-<pad name="1" x="-8.9916" y="0" drill="1.0668"/>
-</package>
-<package name="DIP-4">
-<smd name="3" x="-1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
-<smd name="4" x="1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
-<smd name="1" x="-1.27" y="-4.15" dx="1.5" dy="1.9" layer="1"/>
-<smd name="2" x="1.27" y="-4.15" dx="1.5" dy="1.9" layer="1"/>
-<wire x1="-2.39" y1="3.2" x2="-2.39" y2="-3.2" width="0.1524" layer="21"/>
-<wire x1="-2.39" y1="-3.2" x2="2.39" y2="-3.2" width="0.1524" layer="21"/>
-<wire x1="2.39" y1="-3.2" x2="2.39" y2="3.2" width="0.1524" layer="21"/>
-<wire x1="2.39" y1="3.2" x2="-2.39" y2="3.2" width="0.1524" layer="21"/>
-<text x="-2.54" y="-3.175" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<circle x="-3.175" y="-3.81" radius="0.381" width="0" layer="21"/>
-<rectangle x1="-3.556" y1="-6.096" x2="3.556" y2="6.096" layer="39"/>
-</package>
-<package name="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED2">
-<description>14 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
-&lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451414"&gt;Part&lt;/a&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0436500717"&gt;Part&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.molex.com/pdm_docs/sd/430451414_sd.pdf"&gt;Footprint&lt;/a&gt;
 &lt;br&gt;
@@ -5057,9 +4966,76 @@ A variation of MSOP16 with 4 pins removed.
 <rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
 <rectangle x1="-13.0556" y1="-2.286" x2="13.0556" y2="2.286" layer="40"/>
 <text x="0" y="-2.54" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
-<pad name="3" x="2.9972" y="0" drill="1.0668"/>
-<pad name="2" x="-2.9972" y="0" drill="1.0668"/>
+<pad name="5" x="8.9916" y="0" drill="1.0668"/>
+<pad name="4" x="2.9972" y="0" drill="1.0668"/>
+<pad name="3" x="-2.9972" y="0" drill="1.0668"/>
 <pad name="1" x="-8.9916" y="0" drill="1.0668"/>
+<pad name="2" x="-5.9944" y="0" drill="1.0668"/>
+</package>
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_06_SINGLE">
+<description>6 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0436500617"&gt;Part&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430451214_sd.pdf"&gt;Footprint&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430251200_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
+<hole x="10.4902" y="0.9398" drill="1.0668"/>
+<hole x="-10.4902" y="0.9398" drill="1.0668"/>
+<wire x1="-10.8204" y1="-1.905" x2="10.8204" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="10.8204" y1="-1.905" x2="10.8204" y2="1.905" width="0.127" layer="21"/>
+<wire x1="10.8204" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="1.905" x2="-1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-10.8204" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-10.8204" y1="1.905" x2="-10.8204" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="1.9304" y2="3.302" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="3.302" x2="1.9304" y2="1.905" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="5.969" x2="1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<rectangle x1="-11.557" y1="-2.286" x2="11.557" y2="2.286" layer="39"/>
+<rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
+<rectangle x1="-11.557" y1="-2.286" x2="11.557" y2="2.286" layer="40"/>
+<text x="0" y="-2.286" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
+<pad name="6" x="7.493" y="0" drill="1.0668"/>
+<pad name="5" x="4.4958" y="0" drill="1.0668"/>
+<pad name="4" x="1.4986" y="0" drill="1.0668"/>
+<pad name="3" x="-1.4986" y="0" drill="1.0668"/>
+<pad name="2" x="-4.4958" y="0" drill="1.0668"/>
+<pad name="1" x="-7.493" y="0" drill="1.0668"/>
+</package>
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_06_SINGLE_SPACED">
+<description>6 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0436500617"&gt;Part&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430451214_sd.pdf"&gt;Footprint&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430251200_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
+<hole x="10.4902" y="0.9398" drill="1.0668"/>
+<hole x="-10.4902" y="0.9398" drill="1.0668"/>
+<wire x1="-10.8204" y1="-1.905" x2="10.8204" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="10.8204" y1="-1.905" x2="10.8204" y2="1.905" width="0.127" layer="21"/>
+<wire x1="10.8204" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="1.905" x2="-1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-10.8204" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-10.8204" y1="1.905" x2="-10.8204" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="1.9304" y2="3.302" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="3.302" x2="1.9304" y2="1.905" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="5.969" x2="1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<rectangle x1="-11.557" y1="-2.286" x2="11.557" y2="2.286" layer="39"/>
+<rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
+<rectangle x1="-11.557" y1="-2.286" x2="11.557" y2="2.286" layer="40"/>
+<text x="0" y="-2.286" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
+<pad name="5" x="7.493" y="0" drill="1.0668"/>
+<pad name="4" x="4.4958" y="0" drill="1.0668"/>
+<pad name="3" x="-1.4986" y="0" drill="1.0668"/>
+<pad name="2" x="-4.4958" y="0" drill="1.0668"/>
+<pad name="1" x="-7.493" y="0" drill="1.0668"/>
 </package>
 </packages>
 <symbols>
@@ -7126,22 +7102,6 @@ I2C Mode
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-28.702" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
-<symbol name="ADM823">
-<description>ADM823 Watchdog
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/609/ADM823_824_825-1503117.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<pin name="!RESET!" x="20.32" y="-10.16" length="short" direction="out" function="dot" rot="R180"/>
-<pin name="!MR!" x="-2.54" y="-5.08" length="short" direction="in" function="dot"/>
-<pin name="GND" x="-2.54" y="-12.7" length="short" direction="pwr"/>
-<pin name="VDD" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="WDI" x="-2.54" y="-2.54" length="short" direction="in"/>
-<wire x1="0" y1="-15.24" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="17.78" y1="0" x2="17.78" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-16.002" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
 <symbol name="CONNECTOR_37">
 <wire x1="7.62" y1="-96.52" x2="0" y2="-96.52" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-50.8" x2="5.08" y2="-50.8" width="0.6096" layer="94"/>
@@ -8464,87 +8424,22 @@ with up to 100mA of output current</description>
 <wire x1="8.89" y1="-25.4" x2="9.144" y2="-25.4" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="11.684" y1="-25.4" x2="11.684" y2="0" width="0.1524" layer="94" style="shortdash"/>
 </symbol>
-<symbol name="MIC806">
-<wire x1="0" y1="-12.7" x2="20.32" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-12.7" x2="20.32" y2="0" width="0.254" layer="94"/>
-<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
-<pin name="GND" x="10.16" y="-15.24" length="short" direction="pwr" rot="R90"/>
-<pin name="VCC" x="-2.54" y="-2.54" length="short" direction="pwr"/>
-<pin name="!RESET" x="22.86" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-13.208" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
-<symbol name="CONNECTOR_05_SPACED">
-<wire x1="7.62" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-7.62" x2="5.08" y2="-7.62" width="0.6096" layer="94"/>
-<wire x1="3.81" y1="-12.7" x2="5.08" y2="-12.7" width="0.6096" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-15.24" x2="7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<pin name="1" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3" x="10.16" y="-12.7" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<text x="0" y="-15.875" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
-<symbol name="CONNECTOR_06_SPACED">
-<wire x1="7.62" y1="-17.78" x2="0" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-12.7" x2="5.08" y2="-12.7" width="0.6096" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-17.78" x2="7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-7.62" x2="5.08" y2="-7.62" width="0.6096" layer="94"/>
-<wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<pin name="1" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3" x="10.16" y="-12.7" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<text x="0" y="-18.415" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
-<symbol name="CONNECTOR_07_SPACED">
-<wire x1="7.62" y1="-20.32" x2="0" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-12.7" x2="5.08" y2="-12.7" width="0.6096" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-20.32" x2="7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-7.62" x2="5.08" y2="-7.62" width="0.6096" layer="94"/>
-<wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<pin name="1" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3" x="10.16" y="-12.7" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="4" x="10.16" y="-17.78" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<wire x1="3.81" y1="-17.78" x2="5.08" y2="-17.78" width="0.6096" layer="94"/>
-<text x="0" y="-20.955" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
-<symbol name="ADM825">
-<pin name="VDD" x="-2.54" y="-2.54" length="short" direction="pwr"/>
-<pin name="RESET" x="22.86" y="-5.08" length="short" rot="R180"/>
-<pin name="!RESET" x="22.86" y="-2.54" length="short" function="dot" rot="R180"/>
-<pin name="!MR" x="-2.54" y="-5.08" length="short" function="dot"/>
-<pin name="GND" x="22.86" y="-10.16" length="short" direction="pwr" rot="R180"/>
-<wire x1="0" y1="0" x2="20.32" y2="0" width="0.1524" layer="94"/>
-<wire x1="20.32" y1="0" x2="20.32" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="20.32" y1="-12.7" x2="0" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="0" y1="-12.7" x2="0" y2="0" width="0.1524" layer="94"/>
-<text x="0" y="0" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-12.7" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
-<symbol name="LTC6994">
-<pin name="IN" x="-2.54" y="-2.54" length="short"/>
-<pin name="SET" x="-2.54" y="-5.08" length="short"/>
-<pin name="GND" x="-2.54" y="-12.7" length="short" direction="pwr"/>
-<pin name="OUT" x="17.78" y="-2.54" length="short" rot="R180"/>
-<pin name="V+" x="17.78" y="-5.08" length="short" direction="pwr" rot="R180"/>
-<pin name="DIV" x="17.78" y="-12.7" length="short" rot="R180"/>
-<wire x1="0" y1="0" x2="15.24" y2="0" width="0.1524" layer="94"/>
-<wire x1="15.24" y1="0" x2="15.24" y2="-15.24" width="0.1524" layer="94"/>
-<wire x1="15.24" y1="-15.24" x2="0" y2="-15.24" width="0.1524" layer="94"/>
-<wire x1="0" y1="-15.24" x2="0" y2="0" width="0.1524" layer="94"/>
-<text x="0" y="0" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-15.24" size="1.27" layer="95" align="top-left">&gt;MPN</text>
+<symbol name="RESISTOR_GND">
+<description>Resistor with sense connections</description>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="2" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<text x="1.27" y="2.794" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="1.27" y="1.27" size="1.27" layer="96" align="bottom-center">&gt;RESISTANCE</text>
+<wire x1="3.175" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.9525" y1="1.016" x2="1.5875" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.3175" y1="1.016" x2="0.3175" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.2225" y1="1.016" x2="2.8575" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="0.9525" y1="1.016" x2="0.3175" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.2225" y1="1.016" x2="1.5875" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.3175" y1="1.016" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="0" x2="2.8575" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<pin name="3" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -8831,13 +8726,13 @@ with up to 100mA of output current</description>
 <attribute name="VOLTAGE" value="250V"/>
 </technology>
 <technology name="630V_0.1UF">
-<attribute name="CAPACITANCE" value="0.1uF" constant="no"/>
-<attribute name="DKPN" value="445-11980-2-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="TDK Coporation" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="C5750CH2J104K280KC" constant="no"/>
-<attribute name="TOLERANCE" value="10%" constant="no"/>
-<attribute name="VOLTAGE" value="630V" constant="no"/>
+<attribute name="CAPACITANCE" value="0.1uF"/>
+<attribute name="DKPN" value="445-11980-2-ND"/>
+<attribute name="MANUFACTURER" value="TDK Coporation"/>
+<attribute name="MOPN" value="810-C5750CH2J104K2KC"/>
+<attribute name="MPN" value="C5750CH2J104K280KC"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="630V"/>
 </technology>
 <technology name="630V_1UF">
 <attribute name="CAPACITANCE" value="1µF"/>
@@ -8892,13 +8787,13 @@ with up to 100mA of output current</description>
 <attribute name="VOLTAGE" value="100V"/>
 </technology>
 <technology name="250V_0.1UF">
-<attribute name="CAPACITANCE" value="0.1uF" constant="no"/>
-<attribute name="DKPN" value="445-6079-2-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="TDK Corporation" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="C3216X7R2E104K160AM" constant="no"/>
-<attribute name="TOLERANCE" value="10%" constant="no"/>
-<attribute name="VOLTAGE" value="250V" constant="no"/>
+<attribute name="CAPACITANCE" value="0.1uF"/>
+<attribute name="DKPN" value="445-6079-2-ND"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="MOPN" value="810-C3216X7R2E104KT5"/>
+<attribute name="MPN" value="C3216X7R2E104K160AM"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="250V"/>
 </technology>
 <technology name="35V_22UF">
 <attribute name="CAPACITANCE" value="22µF"/>
@@ -9164,13 +9059,13 @@ Leakage Inductance: 0.50 uH max
 </technology>
 </technologies>
 </device>
-<device name="" package="MINI-BLADE_FUSE_HOLDER">
+<device name="MB" package="MINI-BLADE_FUSE_HOLDER">
 <connects>
 <connect gate="G$1" pin="1" pad="L1 L2"/>
 <connect gate="G$1" pin="2" pad="R1 R2"/>
 </connects>
 <technologies>
-<technology name="">
+<technology name="10">
 <attribute name="CURRENT" value="10A" constant="no"/>
 <attribute name="DKPN" value="F991-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Littelfuse Inc." constant="no"/>
@@ -9221,28 +9116,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MOPN" value="584-AD5721RBRUZ"/>
 <attribute name="RESOLUTION" value="12-Bit"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="M3_MOUNTING" prefix="H">
-<gates>
-</gates>
-<devices>
-<device name="" package="MOUNTING_M3">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="M4_MOUNTING" prefix="H">
-<gates>
-</gates>
-<devices>
-<device name="" package="MOUNTING_M4">
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -9322,15 +9195,15 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="1.62">
-<attribute name="DKPN" value="1712-CPF0603B1R62E1TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="TE Conductivity Passive Product" constant="no"/>
-<attribute name="MOPN" value="279-CPF0603B1R62E1" constant="no"/>
-<attribute name="MPN" value="CPF0603B1R62E1" constant="no"/>
-<attribute name="POWER" value="0.1W" constant="no"/>
-<attribute name="RESISTANCE" value="1.62" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="0.51V" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="50V" constant="no"/>
+<attribute name="DKPN" value="1712-CPF0603B1R62E1TR-ND"/>
+<attribute name="MANUFACTURER" value="TE Conductivity Passive Product"/>
+<attribute name="MOPN" value="279-CPF0603B1R62E1"/>
+<attribute name="MPN" value="CPF0603B1R62E1"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="1.62"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="0.51V"/>
+<attribute name="VOLTAGE_MAX" value="50V"/>
 </technology>
 <technology name="1.65K">
 <attribute name="DKPN" value="311-1.65KHRCT-ND"/>
@@ -9443,15 +9316,15 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="13K">
-<attribute name="DKPN" value="P20098TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-PB3B1302V" constant="no"/>
-<attribute name="MPN" value=" ERJ-PB3B1302V" constant="no"/>
-<attribute name="POWER" value="0.1W" constant="no"/>
-<attribute name="RESISTANCE" value="13k" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="75V" constant="no"/>
+<attribute name="DKPN" value="P20098TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B1302V"/>
+<attribute name="MPN" value=" ERJ-PB3B1302V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="13k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="36V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="154K">
 <attribute name="DKPN" value="P154KDBCT-ND"/>
@@ -9652,15 +9525,15 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="33.2K">
-<attribute name="DKPN" value="P20144TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-PB3B3322V" constant="no"/>
-<attribute name="MPN" value="ERJ-PB3B3322V" constant="no"/>
-<attribute name="POWER" value="0.1W" constant="no"/>
-<attribute name="RESISTANCE" value="33.2k" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="75V" constant="no"/>
+<attribute name="DKPN" value="P20144TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B3322V"/>
+<attribute name="MPN" value="ERJ-PB3B3322V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="33.2k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="57.6V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="330K">
 <attribute name="DKPN" value="P330KDBCT-ND"/>
@@ -9866,15 +9739,26 @@ Leakage Inductance: 0.50 uH max
 </connects>
 <technologies>
 <technology name="1">
-<attribute name="DKPN" value="P1.0DTR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-6RQF1R0V" constant="no"/>
-<attribute name="MPN" value="ERJ-6RQF1R0V" constant="no"/>
-<attribute name="POWER" value="0.125W" constant="no"/>
-<attribute name="RESISTANCE" value="1" constant="no"/>
-<attribute name="TOLERANCE" value="1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
+<attribute name="DKPN" value="P1.0DTR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-6RQF1R0V"/>
+<attribute name="MPN" value="ERJ-6RQF1R0V"/>
+<attribute name="POWER" value="0.125W"/>
+<attribute name="RESISTANCE" value="1"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="0.35V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="12.4">
+<attribute name="DKPN" value="P12.4CTR-ND"/>
+<attribute name="MANUFACTURER" value="  Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-6ENF12R4V"/>
+<attribute name="MPN" value="ERJ-6ENF12R4V"/>
+<attribute name="POWER" value=".125W"/>
+<attribute name="RESISTANCE" value="12.4"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="1.24V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="12.4K">
 <attribute name="DKPN" value="P20718CT-ND"/>
@@ -9888,15 +9772,15 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="1M">
-<attribute name="DKPN" value="P20936TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-PB6B1004V" constant="no"/>
-<attribute name="MPN" value="ERJ-PB6B1004V" constant="no"/>
-<attribute name="POWER" value="0.25W" constant="no"/>
-<attribute name="RESISTANCE" value="1M" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="150V" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
+<attribute name="DKPN" value="P20936TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB6B1004V"/>
+<attribute name="MPN" value="ERJ-PB6B1004V"/>
+<attribute name="POWER" value="0.25W"/>
+<attribute name="RESISTANCE" value="1M"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="200">
 <attribute name="DKPN" value="311-200CRCT-ND"/>
@@ -9921,37 +9805,37 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="5.9K">
-<attribute name="DKPN" value="P20174TR-ND " constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-PB3B5902V" constant="no"/>
-<attribute name="MPN" value="ERJ-PB3B5902V" constant="no"/>
-<attribute name="POWER" value="0.2W" constant="no"/>
-<attribute name="RESISTANCE" value="5.9k" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
+<attribute name="DKPN" value="P20174TR-ND "/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B5902V"/>
+<attribute name="MPN" value="ERJ-PB3B5902V"/>
+<attribute name="POWER" value="0.2W"/>
+<attribute name="RESISTANCE" value="5.9k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="34.3V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="523K">
-<attribute name="DKPN" value="P20904TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-PB6B5233V" constant="no"/>
-<attribute name="MPN" value="ERJ-PB6B5233V" constant="no"/>
-<attribute name="POWER" value="0.25W" constant="no"/>
-<attribute name="RESISTANCE" value="523k" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="150V" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
+<attribute name="DKPN" value="P20904TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB6B5233V"/>
+<attribute name="MPN" value="ERJ-PB6B5233V"/>
+<attribute name="POWER" value="0.25W"/>
+<attribute name="RESISTANCE" value="523k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="976K">
-<attribute name="DKPN" value="P20935TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-PB6B9763V" constant="no"/>
-<attribute name="MPN" value="  ERJ-PB6B9763V" constant="no"/>
-<attribute name="POWER" value="0.25W" constant="no"/>
-<attribute name="RESISTANCE" value="976k" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="150V" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
+<attribute name="DKPN" value="P20935TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB6B9763V"/>
+<attribute name="MPN" value="  ERJ-PB6B9763V"/>
+<attribute name="POWER" value="0.25W"/>
+<attribute name="RESISTANCE" value="976k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 </technologies>
 </device>
@@ -9982,20 +9866,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="5.123V"/>
 <attribute name="VOLTAGE_MAX" value="5.123V"/>
-</technology>
-</technologies>
-</device>
-<device name="B20" package="B20">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="1.25K">
-<attribute name="RESISTANCE" value="1.25k" constant="no"/>
-</technology>
-<technology name="10K">
-<attribute name="RESISTANCE" value="10k" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -10684,8 +10554,8 @@ Leakage Inductance: 0.50 uH max
 <devices>
 <device name="" package="CLP1608-2L">
 <connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -10781,7 +10651,10 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="8" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MPN" value="2068320823"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -11139,34 +11012,6 @@ Note: See page 32 for application schematic.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADM823" prefix="U">
-<description>ADM823 Watchdog
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/609/ADM823_824_825-1503117.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="ADM823" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SC-70-5">
-<connects>
-<connect gate="G$1" pin="!MR!" pad="3"/>
-<connect gate="G$1" pin="!RESET!" pad="1"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VDD" pad="5"/>
-<connect gate="G$1" pin="WDI" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="505-ADM823TYKSZ-R7CT-ND"/>
-<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
-<attribute name="MOPN" value="584-ADM823TYKSZ-R7"/>
-<attribute name="MPN" value="ADM823TYKSZ-R7"/>
-<attribute name="RESET_VOLTAGE" value="3.08"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MAX74*" prefix="U">
 <description>8th-Order Maxim Filter
 &lt;br&gt;
@@ -11234,23 +11079,15 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED" package="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MPN" value="2068320423"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONNECTOR-3_?" prefix="J">
+<deviceset name="CONNECTOR-3_?_*" prefix="J">
 <gates>
 <gate name="G$1" symbol="CONNECTOR_03" x="0" y="0"/>
 </gates>
@@ -11265,24 +11102,17 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED" package="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED">
+<device name="MICRO_V5S" package="MOLEX_MICROFIT_PTH_VERTICAL_05_SINGLE_SPACED">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="MOLEX_MICROFIT_PTH_VERTICAL_7_DUAL_SPACED2" package="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -12278,6 +12108,8 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.we-online.com/catalog/datasheet/74451133.pdf"&gt; 74451133 Inductor&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/54/SRU1048-1391431.pdf"&gt;SRU1408 Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/336/plei_s_a0002827602_1-2281222.pdf"&gt;PA4334 Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/445/74437349560-1721693.pdf"&gt;WE-LMHI Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
@@ -12349,16 +12181,16 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="CURRENT_RATED" value="" constant="no"/>
-<attribute name="CURRENT_SATURATION" value="" constant="no"/>
-<attribute name="DCR" value="" constant="no"/>
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="INDUCTANCE" value="56uH" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
+<technology name="56UH">
+<attribute name="CURRENT_RATED" value="1.4A"/>
+<attribute name="CURRENT_SATURATION" value="2A"/>
+<attribute name="DCR" value="342mΩ"/>
+<attribute name="DKPN" value="732-11454-2-ND"/>
+<attribute name="INDUCTANCE" value="56µH"/>
+<attribute name="MANUFACTURER" value="Wurth Elektronik"/>
+<attribute name="MOPN" value="710-74437349560"/>
+<attribute name="MPN" value="74437349560"/>
+<attribute name="TOLERANCE" value="20%"/>
 </technology>
 </technologies>
 </device>
@@ -12368,16 +12200,16 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="CURRENT_RATED" value="1.6A" constant="no"/>
-<attribute name="CURRENT_SATURATION" value="1A" constant="no"/>
-<attribute name="DCR" value="0.13" constant="no"/>
-<attribute name="DKPN" value="553-3508-2-ND" constant="no"/>
-<attribute name="INDUCTANCE" value="3.6uH" constant="no"/>
-<attribute name="MANUFACTURER" value="Pulse Electonics Company" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
+<technology name="3.6UH">
+<attribute name="CURRENT_RATED" value="1.6A"/>
+<attribute name="CURRENT_SATURATION" value="1A"/>
+<attribute name="DCR" value="0.13Ω"/>
+<attribute name="DKPN" value="553-3508-2-ND"/>
+<attribute name="INDUCTANCE" value="3.6µH"/>
+<attribute name="MANUFACTURER" value="Pulse Electonics Company"/>
+<attribute name="MOPN" value="673-PA4334362NLT"/>
+<attribute name="MPN" value="PA4334.362NLT"/>
+<attribute name="TOLERANCE" value="20%"/>
 </technology>
 </technologies>
 </device>
@@ -12440,30 +12272,6 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="DCM4623TD2J13D0T70" prefix="U">
-<description>400W 300V to 12V step-down DC-DC converter
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/685/DCM4623xD2J13D0y7z_ds-1144763.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="DCM4623" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DCM4623">
-<connects>
-<connect gate="G$1" pin="+IN" pad="1"/>
-<connect gate="G$1" pin="+OUT" pad="6 8"/>
-<connect gate="G$1" pin="-IN" pad="5"/>
-<connect gate="G$1" pin="-OUT" pad="7 9"/>
-<connect gate="G$1" pin="EN" pad="3"/>
-<connect gate="G$1" pin="FLT" pad="4"/>
-<connect gate="G$1" pin="TR" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CAPACITOR_POLAR_?_*" prefix="C">
 <gates>
 <gate name="G$1" symbol="CAPACITOR_POLARIZED" x="0" y="0"/>
@@ -12475,66 +12283,24 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <connect gate="G$1" pin="PLUS" pad="+"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="CAPACITANCE" value="3600uF" constant="no"/>
-<attribute name="DKPN" value="  565-EKYC250ELL362ML20S-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="United Chemi-con" constant="no"/>
-<attribute name="MOPN" value="661-YC250ELL362ML20S" constant="no"/>
-<attribute name="MPN" value="EKYC250ELL362ML20S" constant="no"/>
-<attribute name="VOLTAGE" value="25V" constant="no"/>
+<technology name="3600UF">
+<attribute name="CAPACITANCE" value="3600uF"/>
+<attribute name="DKPN" value="  565-EKYC250ELL362ML20S-ND"/>
+<attribute name="MANUFACTURER" value="United Chemi-con"/>
+<attribute name="MOPN" value="661-YC250ELL362ML20S"/>
+<attribute name="MPN" value="EKYC250ELL362ML20S"/>
+<attribute name="VOLTAGE" value="25V"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MIC806" prefix="U">
-<gates>
-<gate name="G$1" symbol="MIC806" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-23">
-<connects>
-<connect gate="G$1" pin="!RESET" pad="2"/>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="VCC" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="576-3823-2-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Microchip Technology" constant="no"/>
-<attribute name="MOPN" value="998-MIC803-40D4VM3TR" constant="no"/>
-<attribute name="MPN" value=" MIC803-40D4VM3-TR" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RELAY_SOLIDSTATE_NC" prefix="U">
-<gates>
-<gate name="G$1" symbol="RELAY_SOLIDSTATE_NC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DIP-4">
-<connects>
-<connect gate="G$1" pin="CONTACT1" pad="3"/>
-<connect gate="G$1" pin="CONTACT2" pad="4"/>
-<connect gate="G$1" pin="CONTROL+" pad="1"/>
-<connect gate="G$1" pin="CONTROL-" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="AQY414EHA" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CONNECTOR-5_?_*">
+<deviceset name="CONNECTOR-5_?_*" prefix="J">
 <gates>
 <gate name="G$1" symbol="CONNECTOR_05" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL">
+<device name="MICRO_VS" package="MOLEX_MICROFIT_PTH_VERTICAL_05_SINGLE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -12544,6 +12310,36 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="MICRO_V6S" package="MOLEX_MICROFIT_PTH_VERTICAL_06_SINGLE_SPACED">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MPN" value="2165713006"/>
+</technology>
+</technologies>
+</device>
+<device name="MICRO_V7S" package="MOLEX_MICROFIT_PTH_VERTICAL_07_SINGLE_SPACED">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MPN" value="2165713007"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -12553,7 +12349,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <gate name="G$1" symbol="CONNECTOR_07" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL">
+<device name="" package="MOLEX_MICROFIT_PTH_VERTICAL_07_SINGLE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -12562,119 +12358,6 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
 <connect gate="G$1" pin="7" pad="7"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RELAY_SOLIDSTATE_NO">
-<description>AQY210EH Normally Open Solid State Relay&lt;br&gt;
-&lt;a href=https://www.datasheetq.com/datasheet-download/287654/1/Panasonic/AQY210EH&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="RELAY_SOLIDSTATE_NO" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DIP-4">
-<connects>
-<connect gate="G$1" pin="CONTACT1" pad="3"/>
-<connect gate="G$1" pin="CONTACT2" pad="4"/>
-<connect gate="G$1" pin="CONTROL+" pad="1"/>
-<connect gate="G$1" pin="CONTROL-" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="AQY210EHA" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ADM825" prefix="U">
-<gates>
-<gate name="G$1" symbol="ADM825" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-23-5">
-<connects>
-<connect gate="G$1" pin="!MR" pad="4"/>
-<connect gate="G$1" pin="!RESET" pad="1"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="RESET" pad="3"/>
-<connect gate="G$1" pin="VDD" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="ADM825" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LTC6994_*" prefix="U">
-<gates>
-<gate name="G$1" symbol="LTC6994" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-23-6">
-<connects>
-<connect gate="G$1" pin="DIV" pad="6"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="4"/>
-<connect gate="G$1" pin="SET" pad="3"/>
-<connect gate="G$1" pin="V+" pad="5"/>
-</connects>
-<technologies>
-<technology name="1"/>
-<technology name="2"/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CONNECTOR-14_?_*" prefix="J">
-<gates>
-<gate name="G$1" symbol="CONNECTOR_14" x="0" y="0"/>
-</gates>
-<devices>
-<device name="MINIFIT" package="MOLEX_MINIFIT_PTH_14">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="11" pad="11"/>
-<connect gate="G$1" pin="12" pad="12"/>
-<connect gate="G$1" pin="13" pad="13"/>
-<connect gate="G$1" pin="14" pad="14"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NANOFIT" package="MOLEX_NANOFIT_PTH_14">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="11" pad="11"/>
-<connect gate="G$1" pin="12" pad="12"/>
-<connect gate="G$1" pin="13" pad="13"/>
-<connect gate="G$1" pin="14" pad="14"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>

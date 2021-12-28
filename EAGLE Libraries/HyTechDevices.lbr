@@ -8204,20 +8204,20 @@ with up to 100mA of output current</description>
 <description>UWE-100-120W Wide Input, Isolated Eighth-Brick DC/DC Converters
 &lt;br&gt;
 &lt;a href="https://www.murata.com/-/media/webrenewal/products/power/datasheet/uwe-100-120.ashx?la=en&amp;cvid=20200224054012000000"&gt;Datasheet&lt;a/&gt;</description>
-<pin name="+VIN" x="-2.54" y="-2.54" length="short" direction="in"/>
-<pin name="!ON/OFF" x="-2.54" y="-17.78" length="short" direction="in"/>
-<pin name="-VIN" x="-2.54" y="-10.16" length="short" direction="in"/>
-<pin name="-VOUT" x="25.4" y="-22.86" length="short" direction="out" rot="R180"/>
-<pin name="-SENSE" x="25.4" y="-17.78" length="short" direction="in" rot="R180"/>
-<pin name="TRIM" x="25.4" y="-10.16" length="short" direction="in" rot="R180"/>
-<pin name="+SENSE" x="25.4" y="-2.54" length="short" direction="in" rot="R180"/>
-<pin name="+VOUT" x="25.4" y="2.54" length="short" direction="out" rot="R180"/>
-<wire x1="0" y1="5.08" x2="0" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="0" y1="-25.4" x2="22.86" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-25.4" x2="22.86" y2="5.08" width="0.254" layer="94"/>
-<wire x1="22.86" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<text x="0" y="5.842" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-26.162" size="1.27" layer="95" align="top-left">&gt;MPN</text>
+<pin name="+VIN" x="-2.54" y="-7.62" length="short" direction="in"/>
+<pin name="!ON/OFF" x="-2.54" y="-22.86" length="short" direction="in"/>
+<pin name="-VIN" x="-2.54" y="-15.24" length="short" direction="in"/>
+<pin name="-VOUT" x="25.4" y="-27.94" length="short" direction="out" rot="R180"/>
+<pin name="-SENSE" x="25.4" y="-22.86" length="short" direction="in" rot="R180"/>
+<pin name="TRIM" x="25.4" y="-15.24" length="short" direction="in" rot="R180"/>
+<pin name="+SENSE" x="25.4" y="-7.62" length="short" direction="in" rot="R180"/>
+<pin name="+VOUT" x="25.4" y="-2.54" length="short" direction="out" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="0" y1="-30.48" x2="22.86" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-30.48" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-31.242" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>

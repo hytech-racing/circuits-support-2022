@@ -248,11 +248,11 @@
 <attribute name="MPN" value="0430300003"/>
 </technology>
 <technology name="NANOFIT_20-22">
-<attribute name="DKPN" value="WM15011TR-ND" constant="no"/>
-<attribute name="GAUGE" value="20-22" constant="no"/>
-<attribute name="MANUFACTURER" value="Molex" constant="no"/>
-<attribute name="MOPN" value="538-105300-2300" constant="no"/>
-<attribute name="MPN" value="105300-2300" constant="no"/>
+<attribute name="DKPN" value="WM15011TR-ND" />
+<attribute name="GAUGE" value="20-22" />
+<attribute name="MANUFACTURER" value="Molex" />
+<attribute name="MOPN" value="538-105300-2300" />
+<attribute name="MPN" value="105300-2300" />
 </technology>
 </technologies>
 </device>
@@ -443,10 +443,15 @@ This actually orders the GPS.</description>
 <device name="">
 <technologies>
 <technology name="NANOFIT_HORIZONTAL">
-<attribute name="DKPN" value="WM14962-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Molex" constant="no"/>
-<attribute name="MOPN" value="538-105308-1204" constant="no"/>
-<attribute name="MPN" value="1053081204" constant="no"/>
+<attribute name="DKPN" value="WM14962-ND" />
+<attribute name="MANUFACTURER" value="Molex" />
+<attribute name="MOPN" value="538-105308-1204" />
+<attribute name="MPN" value="1053081204" />
+
+<attribute name="ALT_DKPN" value="1054052204-ND" />
+<attribute name="ALT_MANUFACTURER" value="Molex" />
+<attribute name="ALT_MOPN" value="538-105405-2204" />
+<attribute name="ALT_MPN" value="105405-2204" />
 </technology>
 </technologies>
 </device>
@@ -469,6 +474,11 @@ This actually orders the GPS.</description>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105308-1206"/>
 <attribute name="MPN" value="1053081206"/>
+
+<attribute name="ALT_DKPN" value="1054052206-ND" />
+<attribute name="ALT_MANUFACTURER" value="Molex" />
+<attribute name="ALT_MOPN" value="538-105405-2206" />
+<attribute name="ALT_MPN" value="105405-2206" />
 </technology>
 </technologies>
 </device>
@@ -491,6 +501,11 @@ This actually orders the GPS.</description>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105308-1208"/>
 <attribute name="MPN" value="105308-1208"/>
+
+<attribute name="ALT_DKPN" value="1054052208-ND" />
+<attribute name="ALT_MANUFACTURER" value="Molex" />
+<attribute name="ALT_MOPN" value="538-105405-2208" />
+<attribute name="ALT_MPN" value="105405-2208" />
 </technology>
 </technologies>
 </device>

@@ -273,8 +273,8 @@
 <technology name="MICROFIT">
 <attribute name="DKPN" value="WM1845-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MOPN" value="Molex"/>
-<attribute name="MPN" value="436450200"/>
+<attribute name="MOPN" value="538-43645-0200"/>
+<attribute name="MPN" value="0436450200"/>
 </technology>
 </technologies>
 </device>
@@ -447,13 +447,13 @@
 <attribute name="DKPN" value="WM11225-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-43025-0408"/>
-<attribute name="MPN" value="430250408"/>
+<attribute name="MPN" value="0430250408"/>
 </technology>
 <technology name="NANOFIT">
 <attribute name="DKPN" value="WM14962-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105308-1204"/>
-<attribute name="MPN" value="1053081204"/>
+<attribute name="MPN" value="105308-1204"/>
 </technology>
 </technologies>
 </device>
@@ -476,13 +476,13 @@
 <attribute name="DKPN" value="WM13209-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-43025-0608"/>
-<attribute name="MPN" value="430250608"/>
+<attribute name="MPN" value="0430250608"/>
 </technology>
 <technology name="NANOFIT">
 <attribute name="DKPN" value="WM14963-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105308-1206"/>
-<attribute name="MPN" value="1053081206"/>
+<attribute name="MPN" value="105308-1206"/>
 </technology>
 </technologies>
 </device>
@@ -505,13 +505,13 @@
 <attribute name="DKPN" value="WM13210-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-43025-0808" constant="no"/>
-<attribute name="MPN" value="430250808" constant="no"/>
+<attribute name="MPN" value="0430250808" constant="no"/>
 </technology>
 <technology name="NANOFIT">
 <attribute name="DKPN" value="WM14964-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105308-1208"/>
-<attribute name="MPN" value="1053081208"/>
+<attribute name="MPN" value="105308-1208"/>
 </technology>
 </technologies>
 </device>

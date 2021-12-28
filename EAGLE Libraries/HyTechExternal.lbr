@@ -232,6 +232,7 @@
 &lt;br&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/0430300003_CRIMP_TERMINALS-2845469.pdf"&gt;Microfit, 20-24&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF"&gt;Nanofit, 20-22&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ORDERING" x="0" y="0"/>
@@ -245,6 +246,13 @@
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-43030-0003"/>
 <attribute name="MPN" value="0430300003"/>
+</technology>
+<technology name="NANOFIT_20-22">
+<attribute name="DKPN" value="WM15011TR-ND" constant="no"/>
+<attribute name="GAUGE" value="20-22" constant="no"/>
+<attribute name="MANUFACTURER" value="Molex" constant="no"/>
+<attribute name="MOPN" value="538-105300-2300" constant="no"/>
+<attribute name="MPN" value="105300-2300" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -334,6 +342,72 @@
 <device name="">
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PLUG-4_*" prefix="O">
+<description>Plug, 4 Pin
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="NANOFIT_HORIZONTAL">
+<attribute name="DKPN" value="WM14962-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Molex" constant="no"/>
+<attribute name="MOPN" value="538-105308-1204" constant="no"/>
+<attribute name="MPN" value="1053081204" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PLUG-6_*" prefix="O">
+<description>Plug, 6 Pin
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="NANOFIT_HORIZONTAL">
+<attribute name="DKPN" value="WM14963-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105308-1206"/>
+<attribute name="MPN" value="1053081206"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PLUG-8_*" prefix="O">
+<description>Plug, 8 Pin
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="NANOFIT_HORIZONTAL">
+<attribute name="DKPN" value="WM14964-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105308-1208"/>
+<attribute name="MPN" value="105308-1208"/>
+</technology>
 </technologies>
 </device>
 </devices>

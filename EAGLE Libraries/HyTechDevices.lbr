@@ -8913,22 +8913,6 @@ Leakage Inductance: 0.50 uH max
 </technology>
 </technologies>
 </device>
-<device name="MB" package="MINI-BLADE_FUSE_HOLDER">
-<connects>
-<connect gate="G$1" pin="1" pad="L1 L2"/>
-<connect gate="G$1" pin="2" pad="R1 R2"/>
-</connects>
-<technologies>
-<technology name="10">
-<attribute name="CURRENT" value="10A"/>
-<attribute name="DKPN" value="F991-ND"/>
-<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
-<attribute name="MOPN" value="576-0297010.WXNV"/>
-<attribute name="MPN" value="0297010.WXNV"/>
-<attribute name="VOLTAGE" value="32V"/>
-</technology>
-</technologies>
-</device>
 </devices>
 </deviceset>
 <deviceset name="CONNECTOR-AVR-ISP_?_*" prefix="J">

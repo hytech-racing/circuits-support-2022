@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4792,8 +4792,8 @@ A variation of MSOP16 with 4 pins removed.
 <rectangle x1="-13.97" y1="-2.54" x2="19.05" y2="2.54" layer="39"/>
 <text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="1/8_BRICK">
-<description>1/8 Brick footprint as used by UWE-12/10-Q48NB-C DC/DC converter
+<package name="UWE-12/10-Q12PB-C">
+<description>1/8 Brick footprint as used by UWE-12/10-Q12PB-C converter
 &lt;br&gt;
 &lt;a href="https://www.murata.com/-/media/webrenewal/products/power/datasheet/uwe-100-120.ashx?la=en&amp;cvid=20200224054012000000"&gt;Datasheet&lt;a/&gt;</description>
 <pad name="1" x="-25.4" y="7.62" drill="1.2192" first="yes"/>
@@ -8216,8 +8216,8 @@ with up to 100mA of output current</description>
 <pin name="3.3V" x="22.86" y="-7.62" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="VIN" x="22.86" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
 </symbol>
-<symbol name="UWE-100-120W">
-<description>UWE-100-120W Wide Input, Isolated Eighth-Brick DC/DC Converters
+<symbol name="UWE-*">
+<description>UWE-* Wide Input, Isolated Eighth-Brick DC/DC Converters
 &lt;br&gt;
 &lt;a href="https://www.murata.com/-/media/webrenewal/products/power/datasheet/uwe-100-120.ashx?la=en&amp;cvid=20200224054012000000"&gt;Datasheet&lt;a/&gt;</description>
 <pin name="+VIN" x="-2.54" y="-7.62" length="short" direction="in"/>
@@ -8935,7 +8935,7 @@ Leakage Inductance: 0.50 uH max
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/315/AOA0000C328-1530132.pdf"&gt;ERJ PB3, PB6 Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/315/AOA0000C331-1141874.pdf"&gt;ERJ  PA2, P03, PA3, P06, P08, P14 Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/315/AOA0000C304-1149620.pdf"&gt;ERJ XG, 1G, 1R, 2R, 3R, 6R, 3E, 6E Series&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RL_Group_521_RoHS_L_2.pdf"&gt;RL Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/447/yago_s_a0003209907_1-2286654.pdf"&gt;RL Series&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -12114,7 +12114,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="RELAY_SOLIDSTATE_NO_?*">
+<deviceset name="RELAY_SOLIDSTATE_NO_?*" prefix="K">
 <description>Solid State Normally Open Relay
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/657/cmx_series_dc_pcb_mount-1370813.pdf"&gt;Crydom CMX Series&lt;a/&gt;</description>
@@ -12140,15 +12140,15 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="UWE-*">
-<description>UWE-100-120W Series Wide Input, Isolated Eighth-Brick DCDC Converters
+<deviceset name="UWE-*" prefix="A">
+<description>UWE-Q12 Series Wide Input, Isolated Eighth-Brick DCDC Converters
 &lt;br&gt;
-&lt;a href="https://www.murata.com/-/media/webrenewal/products/power/datasheet/uwe-100-120.ashx?la=en&amp;cvid=20200224054012000000"&gt;Datasheet&lt;a/&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/281/uwe_q12-1919447.pdf"&gt;Datasheet&lt;a/&gt;</description>
 <gates>
-<gate name="G$1" symbol="UWE-100-120W" x="0" y="0"/>
+<gate name="G$1" symbol="UWE-*" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1/8_BRICK">
+<device name="" package="UWE-12/10-Q12PB-C">
 <connects>
 <connect gate="G$1" pin="+SENSE" pad="7"/>
 <connect gate="G$1" pin="+VIN" pad="1"/>

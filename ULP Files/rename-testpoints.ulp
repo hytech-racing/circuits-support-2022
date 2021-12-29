@@ -1,6 +1,6 @@
 #usage "<b>Set all SIGNAL attributes to netname</b>\n"
        "<p>This script loops through all nets in a schematic to find all TP* parts "
-       "and then edits their SIGNAL attribute."
+       "and then edits their SIGNAL attribute to be the net name."
        "<author>Author: Arvind Srinivasan</author>"
 
 if (schematic) {
@@ -10,9 +10,9 @@ if (schematic) {
             SH.nets(N) { // loop through nets
                 N.segments(SEG) { // loop through segments
                     SEG.pinrefs(P) { // loop through pins
-                        if (strsub(P.instance.name,0,2) == "TP") { // if the part name starts with "TP"
-                            cmd += "ATTRIBUTE " + P.instance.name + " SIGNAL '" + N.name + "'; "; // set new attribute
-                            cmd += "CHANGE DISPLAY OFF; \n"; // set value not visible
+                        if (strsub(P.instance.name,0,2) == "TP") { // if the pin has a part whose name starts with "TP"
+                            cmd += "ATTRIBUTE " + P.instance.name + " SIGNAL '" + N.name + "'; "; // set SIGNAL attribute
+                            cmd += "CHANGE DISPLAY OFF; \n"; // set attribute not visible in schematic
                         }
                     }
                 }
@@ -24,5 +24,5 @@ if (schematic) {
 }
 else { // we're not in a schematic
    dlgMessageBox("\n    Start this ULP in a Schematic    \n");
-   exit (0);
+   exit (0); // exit
 }

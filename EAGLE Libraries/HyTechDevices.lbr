@@ -7781,6 +7781,9 @@ with up to 100mA of output current</description>
 <text x="0" y="-10.922" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="DIODE_LED_RGBW">
+<description>Inolux IN-505FCHWV RGBW LED
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/180/IN-505FCHWV-1488542.pdf"&gt; Datasheet&lt; /a&gt;</description>
 <pin name="RED+" x="-2.54" y="-7.62" visible="off" length="short" direction="pas"/>
 <pin name="GREEN+" x="-2.54" y="-17.78" visible="off" length="short" direction="pas"/>
 <pin name="BLUE+" x="-2.54" y="-27.94" visible="off" length="short" direction="pas"/>

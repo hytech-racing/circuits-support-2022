@@ -1,6 +1,6 @@
 #usage "<b>Set all SIGNAL attributes to netname</b>\n"
-       "<p>This script loops through all elements in a schematic editing an SIGNAL attribute "
-       "for all TP* parts."
+       "<p>This script loops through all nets in a schematic to find all TP* parts
+       " and then edits their SIGNAL attribute."
        "<author>Author: Arvind Srinivasan</author>"
 
 if (schematic) {
@@ -19,11 +19,10 @@ if (schematic) {
             }
         }
     }
-
-   dlgMessageBox(cmd);  // display what's going to be done
-   exit (cmd);          // exit and run the command
+   dlgMessageBox(cmd); // display what's going to be done
+   exit (cmd); // exit and run the command
 }
-else {  // oops, we're not in a schematic
+else { // we're not in a schematic
    dlgMessageBox("\n    Start this ULP in a Schematic    \n");
    exit (0);
 }

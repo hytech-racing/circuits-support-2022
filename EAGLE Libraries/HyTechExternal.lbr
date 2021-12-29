@@ -272,13 +272,25 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="FUSE">
+<deviceset name="FUSE_*">
+<description>Fuse
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_MINI_Datasheet-1077557.pdf"&gt;MINI Blade&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 </gates>
 <devices>
 <device name="">
 <technologies>
-<technology name=""/>
+<technology name="MINIBLADE_10">
+<attribute name="CURRENT" value="10A"/>
+<attribute name="DKPN" value="F991-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-0297010.WXNV"/>
+<attribute name="MPN" value="0297010.WXNV"/>
+<attribute name="VOLTAGE" value="32V"/>
+</technology>
 </technologies>
 </device>
 </devices>

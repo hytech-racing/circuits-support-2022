@@ -4316,6 +4316,27 @@ Dashed line is edge of mated connector.</description>
 <smd name="7" x="-1.5" y="10.0965" dx="1.27" dy="2.921" layer="1"/>
 <smd name="8" x="-4.5" y="10.0965" dx="1.27" dy="2.921" layer="1"/>
 </package>
+<package name="IN-505FCHWV">
+<description>Inolux IN-505FCHWV RGBW LED
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/180/IN-505FCHWV-1488542.pdf"&gt; Datasheet&lt; /a&gt;</description>
+<smd name="THERMAL" x="0" y="0" dx="5" dy="2.9" layer="1"/>
+<smd name="A+" x="-2.0125" y="2.175" dx="0.975" dy="0.65" layer="1"/>
+<smd name="D+" x="2.0125" y="2.175" dx="0.975" dy="0.65" layer="1"/>
+<smd name="D-" x="2.0125" y="-2.175" dx="0.975" dy="0.65" layer="1"/>
+<smd name="A-" x="-2.0125" y="-2.175" dx="0.975" dy="0.65" layer="1"/>
+<smd name="B+" x="-0.6625" y="2.175" dx="0.925" dy="0.65" layer="1"/>
+<smd name="C+" x="0.6625" y="2.175" dx="0.925" dy="0.65" layer="1"/>
+<smd name="B-" x="-0.6625" y="-2.175" dx="0.925" dy="0.65" layer="1"/>
+<smd name="C-" x="0.6625" y="-2.175" dx="0.925" dy="0.65" layer="1"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
+<rectangle x1="-2.794" y1="-2.794" x2="2.794" y2="2.794" layer="39"/>
+<text x="-3.048" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<circle x="3.81" y="-2.175" radius="0.635" width="0" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -7749,6 +7770,178 @@ with up to 100mA of output current</description>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-10.922" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
+<symbol name="DIODE_LED_RGBW">
+<description>Inolux IN-505FCHWV RGBW LED
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/180/IN-505FCHWV-1488542.pdf"&gt; Datasheet&lt; /a&gt;</description>
+<pin name="RED+" x="-2.54" y="-7.62" visible="off" length="short" direction="pas"/>
+<pin name="GREEN+" x="-2.54" y="-17.78" visible="off" length="short" direction="pas"/>
+<pin name="BLUE+" x="-2.54" y="-27.94" visible="off" length="short" direction="pas"/>
+<pin name="WHITE+" x="-2.54" y="-38.1" visible="off" length="short" direction="pas"/>
+<pin name="RED-" x="15.24" y="-7.62" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="GREEN-" x="15.24" y="-17.78" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="BLUE-" x="15.24" y="-27.94" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="WHITE-" x="15.24" y="-38.1" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<wire x1="7.62" y1="-6.35" x2="7.62" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="-8.89" width="0.1524" layer="94"/>
+<wire x1="6.096" y1="-5.842" x2="7.493" y2="-4.445" width="0.1524" layer="94"/>
+<wire x1="7.239" y1="-5.969" x2="8.636" y2="-4.572" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="7.493" y="-4.445"/>
+<vertex x="6.604" y="-4.826"/>
+<vertex x="7.112" y="-5.334"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="8.636" y="-4.572"/>
+<vertex x="7.747" y="-4.953"/>
+<vertex x="8.255" y="-5.461"/>
+</polygon>
+<wire x1="5.08" y1="-8.89" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="-6.35" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-6.35" x2="7.62" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="5.08" y2="-8.89" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="10.16" y2="-7.62" width="0.1524" layer="94"/>
+<pin name="THERMAL" x="2.54" y="-43.18" visible="off" length="short" direction="pas" rot="R90"/>
+<text x="3.302" y="-41.148" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<wire x1="5.08" y1="-3.302" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="7.62" y="-3.81"/>
+<vertex x="7.62" y="-1.27"/>
+<vertex x="5.08" y="-2.54"/>
+</polygon>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="5.588" y1="-3.81" x2="5.08" y2="-3.302" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-1.778" x2="4.572" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-16.51" x2="7.62" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-17.78" x2="7.62" y2="-19.05" width="0.1524" layer="94"/>
+<wire x1="6.096" y1="-16.002" x2="7.493" y2="-14.605" width="0.1524" layer="94"/>
+<wire x1="7.239" y1="-16.129" x2="8.636" y2="-14.732" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="7.493" y="-14.605"/>
+<vertex x="6.604" y="-14.986"/>
+<vertex x="7.112" y="-15.494"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="8.636" y="-14.732"/>
+<vertex x="7.747" y="-15.113"/>
+<vertex x="8.255" y="-15.621"/>
+</polygon>
+<wire x1="5.08" y1="-19.05" x2="5.08" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-17.78" x2="5.08" y2="-16.51" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-16.51" x2="7.62" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-17.78" x2="5.08" y2="-19.05" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-17.78" x2="2.54" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-17.78" x2="10.16" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-13.462" x2="5.08" y2="-12.7" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="7.62" y="-13.97"/>
+<vertex x="7.62" y="-11.43"/>
+<vertex x="5.08" y="-12.7"/>
+</polygon>
+<wire x1="5.08" y1="-12.7" x2="5.08" y2="-11.938" width="0.1524" layer="94"/>
+<wire x1="5.588" y1="-13.97" x2="5.08" y2="-13.462" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-11.938" x2="4.572" y2="-11.43" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="2.54" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-12.7" x2="2.54" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="10.16" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="7.62" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-26.67" x2="7.62" y2="-27.94" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-27.94" x2="7.62" y2="-29.21" width="0.1524" layer="94"/>
+<wire x1="6.096" y1="-26.162" x2="7.493" y2="-24.765" width="0.1524" layer="94"/>
+<wire x1="7.239" y1="-26.289" x2="8.636" y2="-24.892" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="7.493" y="-24.765"/>
+<vertex x="6.604" y="-25.146"/>
+<vertex x="7.112" y="-25.654"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="8.636" y="-24.892"/>
+<vertex x="7.747" y="-25.273"/>
+<vertex x="8.255" y="-25.781"/>
+</polygon>
+<wire x1="5.08" y1="-29.21" x2="5.08" y2="-27.94" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-27.94" x2="5.08" y2="-26.67" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-26.67" x2="7.62" y2="-27.94" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-27.94" x2="5.08" y2="-29.21" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-27.94" x2="2.54" y2="-27.94" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-27.94" x2="10.16" y2="-27.94" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-23.622" x2="5.08" y2="-22.86" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="7.62" y="-24.13"/>
+<vertex x="7.62" y="-21.59"/>
+<vertex x="5.08" y="-22.86"/>
+</polygon>
+<wire x1="5.08" y1="-22.86" x2="5.08" y2="-22.098" width="0.1524" layer="94"/>
+<wire x1="5.588" y1="-24.13" x2="5.08" y2="-23.622" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-22.098" x2="4.572" y2="-21.59" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-22.86" x2="2.54" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-22.86" x2="2.54" y2="-27.94" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-27.94" x2="10.16" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-22.86" x2="7.62" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-36.83" x2="7.62" y2="-38.1" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-38.1" x2="7.62" y2="-39.37" width="0.1524" layer="94"/>
+<wire x1="6.096" y1="-36.322" x2="7.493" y2="-34.925" width="0.1524" layer="94"/>
+<wire x1="7.239" y1="-36.449" x2="8.636" y2="-35.052" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="7.493" y="-34.925"/>
+<vertex x="6.604" y="-35.306"/>
+<vertex x="7.112" y="-35.814"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="8.636" y="-35.052"/>
+<vertex x="7.747" y="-35.433"/>
+<vertex x="8.255" y="-35.941"/>
+</polygon>
+<wire x1="5.08" y1="-39.37" x2="5.08" y2="-38.1" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-38.1" x2="5.08" y2="-36.83" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-36.83" x2="7.62" y2="-38.1" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-38.1" x2="5.08" y2="-39.37" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-38.1" x2="2.54" y2="-38.1" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-38.1" x2="10.16" y2="-38.1" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-33.782" x2="5.08" y2="-33.02" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="7.62" y="-34.29"/>
+<vertex x="7.62" y="-31.75"/>
+<vertex x="5.08" y="-33.02"/>
+</polygon>
+<wire x1="5.08" y1="-33.02" x2="5.08" y2="-32.258" width="0.1524" layer="94"/>
+<wire x1="5.588" y1="-34.29" x2="5.08" y2="-33.782" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-32.258" x2="4.572" y2="-31.75" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-33.02" x2="2.54" y2="-33.02" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-33.02" x2="2.54" y2="-38.1" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-38.1" x2="10.16" y2="-33.02" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-33.02" x2="7.62" y2="-33.02" width="0.1524" layer="94"/>
+<text x="5.08" y="-10.16" size="1.27" layer="95">RED</text>
+<text x="5.08" y="-20.32" size="1.27" layer="95">GREEN</text>
+<text x="5.08" y="-30.48" size="1.27" layer="95">BLUE</text>
+<text x="5.08" y="-40.386" size="1.27" layer="95">WHITE</text>
+<wire x1="0" y1="0" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="-7.62" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="-17.78" x2="0" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="0" y1="-27.94" x2="0" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="0" y1="-38.1" x2="0" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="0" y1="-40.64" x2="12.7" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-40.64" x2="12.7" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-38.1" x2="12.7" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-27.94" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="0" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="12.7" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="10.16" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-17.78" x2="0" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-27.94" x2="0" y2="-27.94" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-27.94" x2="10.16" y2="-27.94" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-38.1" x2="10.16" y2="-38.1" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-38.1" x2="0" y2="-38.1" width="0.1524" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-2_?_*" prefix="J">
@@ -8984,6 +9177,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="10.84V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="5.1">
+<attribute name="DKPN" value="P16039TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-P03J5R1V"/>
+<attribute name="MPN" value="ERJ-P03J5R1V"/>
+<attribute name="POWER" value="0.25W"/>
+<attribute name="RESISTANCE" value="5.1"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="1.13V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
 <technology name="5.1K">
 <attribute name="DKPN" value="311-5.10KHRTR-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -9153,6 +9357,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="56">
+<attribute name="DKPN" value="P16053TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-P06D56R0V"/>
+<attribute name="MPN" value="ERJ-P06D56R0V"/>
+<attribute name="POWER" value="0.5W"/>
+<attribute name="RESISTANCE" value="56"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="5.29V"/>
+<attribute name="VOLTAGE_MAX" value="400V"/>
 </technology>
 </technologies>
 </device>
@@ -10382,6 +10597,22 @@ Recommended clock capacitor for the MAX7400/MAX7404:
 <technology name="">
 <attribute name="MANUFACTURER" value="Souriau"/>
 <attribute name="MPN" value="8STA21204PN"/>
+</technology>
+</technologies>
+</device>
+<device name="μF_S_RA" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_04_DUAL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="WM1832CT-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-0430450411"/>
+<attribute name="MPN" value="0430450411"/>
 </technology>
 </technologies>
 </device>
@@ -11928,6 +12159,38 @@ Requires ordering of:
 <attribute name="MANUFACTURER" value="Omron"/>
 <attribute name="MOPN" value="653-B3S-1000"/>
 <attribute name="MPN" value="B3S-1000"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED_RGBW_*">
+<description>Inolux IN-505FCHWV RGBW LED
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/180/IN-505FCHWV-1488542.pdf"&gt; Datasheet&lt; /a&gt;</description>
+<gates>
+<gate name="G$1" symbol="DIODE_LED_RGBW" x="0" y="0"/>
+</gates>
+<devices>
+<device name="IN-505FCHWV" package="IN-505FCHWV">
+<connects>
+<connect gate="G$1" pin="BLUE+" pad="C+"/>
+<connect gate="G$1" pin="BLUE-" pad="C-"/>
+<connect gate="G$1" pin="GREEN+" pad="B+"/>
+<connect gate="G$1" pin="GREEN-" pad="B-"/>
+<connect gate="G$1" pin="RED+" pad="A+"/>
+<connect gate="G$1" pin="RED-" pad="A-"/>
+<connect gate="G$1" pin="THERMAL" pad="THERMAL"/>
+<connect gate="G$1" pin="WHITE+" pad="D+"/>
+<connect gate="G$1" pin="WHITE-" pad="D-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COLOR" value="RGBW"/>
+<attribute name="DKPN" value="1830-1097-2-ND"/>
+<attribute name="MANUFACTURER" value="INOLUX"/>
+<attribute name="MOPN" value="743-IN-505FCHWV"/>
+<attribute name="MPN" value="IN-505FCHWV"/>
 </technology>
 </technologies>
 </device>

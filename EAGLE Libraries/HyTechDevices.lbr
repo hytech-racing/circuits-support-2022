@@ -10407,7 +10407,7 @@ Recommended clock capacitor for the MAX7400/MAX7404:
 </technology>
 </technologies>
 </device>
-<device name="" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_04_DUAL">
+<device name="μF_S_RA" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_04_DUAL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -10415,7 +10415,12 @@ Recommended clock capacitor for the MAX7400/MAX7404:
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DKPN" value="WM1832CT-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-0430450411"/>
+<attribute name="MPN" value="0430450411"/>
+</technology>
 </technologies>
 </device>
 </devices>

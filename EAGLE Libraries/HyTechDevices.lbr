@@ -8294,7 +8294,7 @@ Note: Mode connected to GND per page 70 of &lt;a href="https://www.analog.com/me
 <attribute name="VOLTAGE" value="25V"/>
 </technology>
 <technology name="25V_1.2NF">
-<attribute name="CAPACITANCE" value="1.2NF"/>
+<attribute name="CAPACITANCE" value="1.2nF"/>
 <attribute name="DKPN" value="311-4079-2-ND"/>
 <attribute name="MANUFACTURER" value="YAGEO"/>
 <attribute name="MOPN" value="603-CC603KRX7R8BB122 "/>

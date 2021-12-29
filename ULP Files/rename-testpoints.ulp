@@ -5,14 +5,8 @@
 
 // THIS PROGRAM IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED
 
-
-int ofsX = 1;       // X offset of the attribute text
-int ofsY = 1;       // Y offset of the attribute text
-
-
 if (board) {
 string cmd;
-string temp;
 string net;
 
     board(B) {                                          // loop through board
@@ -23,7 +17,6 @@ string net;
                 }
 
             cmd += "ATTRIBUTE " + E.name + " SIGNAL '" + net + "'; ";       // set new attribute
-            cmd += "CHANGE DISPLAY VALUE;";                                 // set value visible
 
             cmd += "\n";                                                    // this terminates the command
             }

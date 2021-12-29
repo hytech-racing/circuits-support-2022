@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 =======
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 >>>>>>> main
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
@@ -8236,6 +8237,7 @@ with up to 100mA of output current</description>
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </technology>
+<<<<<<< HEAD
 <technology name="10V_68NF">
 <attribute name="CAPACITANCE" value="68nF"/>
 <attribute name="DKPN" value="399-C0603C683K8RAC7867CT-ND"/>
@@ -8243,6 +8245,7 @@ with up to 100mA of output current</description>
 <attribute name="MOPN" value="80-C0603C683K8R"/>
 <attribute name="MPN" value="C0603C683K8RACTU"/>
 <attribute name="TOLERANCE" value="10%"/>
+=======
 <technology name="10V_82PF">
 <attribute name="CAPACITANCE" value="82pF"/>
 <attribute name="DKPN" value="478-1025-1-ND"/>
@@ -8250,6 +8253,7 @@ with up to 100mA of output current</description>
 <attribute name="MOPN" value="581-0201ZA820JAT2A"/>
 <attribute name="MPN" value="0201ZA820JAT2A"/>
 <attribute name="TOLERANCE" value="5%"/>
+>>>>>>> main
 <attribute name="VOLTAGE" value="10V"/>
 </technology>
 <technology name="25V_0.1UF">
@@ -8968,6 +8972,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="34.64V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<<<<<<< HEAD
 <technology name="14.3K">
 <attribute name="DKPN" value="P20413CT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -8978,6 +8983,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="0.5%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
 <attribute name="VOLTAGE_MAX" value="200V"/>
+=======
 <technology name="150K">
 <attribute name="DKPN" value="P150KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -8988,6 +8994,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
+>>>>>>> main
 </technology>
 <technology name="154K">
 <attribute name="DKPN" value="P154KDBCT-ND"/>
@@ -9220,6 +9227,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="18.17V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<<<<<<< HEAD
 <technology name="30.9K">
 <attribute name="DKPN" value="P30.9KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -9230,6 +9238,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
+=======
 <technology name="3.9K">
 <attribute name="DKPN" value="311-3.90KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -9240,6 +9249,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="19.75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
+>>>>>>> main
 </technology>
 <technology name="30K">
 <attribute name="DKPN" value="P30KBDCT-ND"/>
@@ -9373,6 +9383,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="10.84V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<<<<<<< HEAD
 <technology name="5.6">
 <attribute name="DKPN" value="10-ERJ-U03F5R60VCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -9384,6 +9395,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+=======
 <technology name="5.1">
 <attribute name="DKPN" value="P16039TR-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -9406,6 +9418,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="22.58V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+>>>>>>> main
 <technology name="5.9K">
 <attribute name="DKPN" value="P5.9KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -12104,6 +12117,7 @@ Requires ordering of:
 </device>
 </devices>
 </deviceset>
+<<<<<<< HEAD
 <deviceset name="RELAY_SOLIDSTATE_NO_?*">
 <description>Solid State Normally Open Relay
 &lt;br&gt;
@@ -12125,6 +12139,7 @@ Requires ordering of:
 <attribute name="MANUFACTURER" value="Crydom"/>
 <attribute name="MOPN" value="558-CMX60D20"/>
 <attribute name="MPN" value="CMX60D20"/>
+=======
 <deviceset name="MCP23S08" prefix="U">
 <description>IO Expander 8 Channel
 &lt;br&gt;
@@ -12160,11 +12175,13 @@ Requires ordering of:
 <attribute name="MANUFACTURER" value="Microchip Technology"/>
 <attribute name="MOPN" value="579-MCP23S08-E/SS"/>
 <attribute name="MPN" value="MCP23S08-E/SS"/>
+>>>>>>> main
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
+<<<<<<< HEAD
 <deviceset name="UWE-*">
 <description>UWE-100-120W Series Wide Input, Isolated Eighth-Brick DCDC Converters
 &lt;br&gt;
@@ -12190,6 +12207,7 @@ Requires ordering of:
 <attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
 <attribute name="MOPN" value="580-UWE-12/10Q12PBC"/>
 <attribute name="MPN" value="UWE-12/10-Q12PB-C"/>
+=======
 <deviceset name="BUZZER_3_PIN_" prefix="LS">
 <description>3 Pin Buzzer
 &lt;BR&gt;
@@ -12514,6 +12532,7 @@ Requires ordering of:
 <attribute name="MANUFACTURER" value="INOLUX"/>
 <attribute name="MOPN" value="743-IN-505FCHWV"/>
 <attribute name="MPN" value="IN-505FCHWV"/>
+>>>>>>> main
 </technology>
 </technologies>
 </device>

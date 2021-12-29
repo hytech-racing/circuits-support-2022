@@ -9174,7 +9174,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="RESISTANCE" value="56"/>
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="5.29V"/>
-<attribute name="VOLTAGE_MAX" value="400"/>
+<attribute name="VOLTAGE_MAX" value="400V"/>
 </technology>
 </technologies>
 </device>

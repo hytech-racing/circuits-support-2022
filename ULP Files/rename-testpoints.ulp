@@ -1,6 +1,6 @@
 #usage "<b>Set all SIGNAL attributes to netname</b>\n"
-       "<p>This script loops through all nets in a schematic to find all TP* parts
-       " and then edits their SIGNAL attribute."
+       "<p>This script loops through all nets in a schematic to find all TP* parts "
+       "and then edits their SIGNAL attribute."
        "<author>Author: Arvind Srinivasan</author>"
 
 if (schematic) {

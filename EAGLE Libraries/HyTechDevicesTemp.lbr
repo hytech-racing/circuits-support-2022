@@ -192,12 +192,10 @@
 &lt;br&gt;
 &lt;a href="https://www.engineersedge.com/iso_socket_head_screw.htm"&gt;Datasheet&lt;/a&gt;&lt;br&gt;
 &lt;a href = "https://pcbartists.com/uncategorized/pcb-drill-size-for-standard-screws-fasteners/"&gt;Drill Sizes&lt;/a&gt;</description>
-<hole x="0" y="0" drill="3.4"/>
 <circle x="0" y="0" radius="3" width="0" layer="39"/>
 <circle x="0" y="0" radius="3" width="0" layer="40"/>
 <circle x="0" y="0" radius="3" width="0" layer="43"/>
-<circle x="0" y="0" radius="2.35" width="0.9" layer="1"/>
-<circle x="0" y="0" radius="2.35" width="0.9" layer="16"/>
+<pad name="P$1" x="0" y="0" drill="3.4" diameter="5.7"/>
 </package>
 </packages>
 <symbols>

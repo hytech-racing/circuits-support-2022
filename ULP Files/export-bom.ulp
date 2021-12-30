@@ -44,11 +44,13 @@
 // - 2015-12-10 fixed handling descriptions containing TAB characters
 //
 // 1.12
-// - 2020-12-29 customized for HyTech Racing specific needs
+// - 2021-12-29 customized for HyTech Racing specific needs
+//
+// 1.13
+// - 2021-12-30 optimized attrition to ensure correct number of spares
 // Revision: 1.12
 //
 
-string Version = "1.12";
 char   Separator = ',';
 
 #usage "en: <b>Bill Of Material</b>\n"
@@ -304,7 +306,7 @@ void GenerateList (void)
     {
       int i2 = Index [n2]; // 2012-11-08
       strsplit (attr, PartAttributes[i2], Separator);
-      if (PartValue[i1] == PartValue[i2] && PartAttributes[i1] == PartAttributes[i2]) // 2012-11-08 check diffent values of attributes
+      if (PartValue[i1] == PartValue[i2] && PartAttributes[i1] == PartAttributes[i2]) // 2012-11-08 check different values of attributes
         continue;
     }
     string Quantity;
@@ -331,8 +333,8 @@ void GenerateList (void)
   {
     string a [];
     int n = strsplit (a, Lines[l], '\t');
-    if (strsub(a[attritionIndex + 3],0,1) == "2") { // Do 10 extra for class 2 parts
-      sprintf(Out, "%.0f", 100.0 * ((strtod(a[0]) + 10.0) / strtod(a[0]) - 1.0));
+    if (strsub(a[attritionIndex + 3],0,1) == "2") { // Do 9 extra for class 2 parts
+      sprintf(Out, "%.0f", 100.0 * ((strtod(a[0]) + 9.0) / strtod(a[0]) - 1.0));
       a[attritionIndex + 3] = Out;
     }
     else {
@@ -407,7 +409,6 @@ GenerateList();
 dlgDialog (tr ("Bill Of Material"))
 {
   dlgListView ("", Lines, Selected);
-  dlgSpacing(10);
   dlgHBoxLayout  {
     dlgPushButton (tr ("+&Save")) SaveList ();
     dlgPushButton (tr ("-&Close"))   dlgAccept ();

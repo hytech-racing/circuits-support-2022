@@ -8789,6 +8789,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="1.13K">
+<attribute name="DKPN" value="P1.13KHCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-3EKF1131V"/>
+<attribute name="MPN" value="ERJ-3EKF1131V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="1.13k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
 <technology name="1.24K">
 <attribute name="DKPN" value="311-1.24KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -9498,6 +9509,17 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="0.62">
+<attribute name="DKPN" value="311-.62SCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RL0805FR-070R62L"/>
+<attribute name="MPN" value="RL0805FR-070R62L"/>
+<attribute name="POWER" value="0.125W"/>
+<attribute name="RESISTANCE" value="0.62"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="0.28V"/>
+<attribute name="VOLTAGE_MAX" value="0.70V"/>
+</technology>
 <technology name="12.4K">
 <attribute name="DKPN" value="P20718CT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>

@@ -2178,6 +2178,7 @@ Note: Based on page 48 and 49.</description>
 <smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
 <text x="0" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
+<text x="0" y="1.27" size="1.524" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
 </package>
 <package name="TSSOP-24">
 <description>TSSOP 24
@@ -4688,8 +4689,8 @@ Dashed line is edge of mated connector.</description>
 <rectangle x1="-2.54" y1="-1.524" x2="2.54" y2="1.524" layer="43"/>
 <text x="0" y="1.524" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="MSOP-16(MSE)">
-<description>MSOP 16
+<package name="MSE16">
+<description>MSOP-16
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081669_A_MS16.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
@@ -10941,7 +10942,7 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 </devices>
 </deviceset>
 <deviceset name="LTC3200-5" prefix="U">
-<description>LTC3200-5
+<description>LTC3200-5 Low Noise, Charge Pump DC-DC Regulator
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/32005f.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
@@ -11951,7 +11952,8 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </devices>
 </deviceset>
 <deviceset name="LTC3639" prefix="U">
-<description>LTC3639&lt;br&gt;
+<description>LTC3639 DC-DC Regulator
+&lt;br&gt;
 &lt;a href = "https://www.mouser.com/datasheet/2/609/3639fd-1271210.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="LTC3639" x="0" y="0"/>
@@ -12056,6 +12058,439 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <technologies>
 <technology name="">
 <attribute name="TEENSY" value="3.2"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP23S08" prefix="U">
+<description>IO Expander 8 Channel
+&lt;br&gt;
+&lt;a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCP23S08" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSOP-20">
+<connects>
+<connect gate="G$1" pin="!CS" pad="7"/>
+<connect gate="G$1" pin="!RESET" pad="6"/>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$1" pin="CLK" pad="1"/>
+<connect gate="G$1" pin="GND" pad="9"/>
+<connect gate="G$1" pin="GPA0" pad="12"/>
+<connect gate="G$1" pin="GPA1" pad="13"/>
+<connect gate="G$1" pin="GPA2" pad="14"/>
+<connect gate="G$1" pin="GPA3" pad="15"/>
+<connect gate="G$1" pin="GPA4" pad="16"/>
+<connect gate="G$1" pin="GPA5" pad="17"/>
+<connect gate="G$1" pin="GPA6" pad="18"/>
+<connect gate="G$1" pin="GPA7" pad="19"/>
+<connect gate="G$1" pin="INT" pad="8"/>
+<connect gate="G$1" pin="SDI" pad="2"/>
+<connect gate="G$1" pin="SDO" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="MCP23S08-E/SS-ND"/>
+<attribute name="MANUFACTURER" value="Microchip Technology"/>
+<attribute name="MOPN" value="579-MCP23S08-E/SS"/>
+<attribute name="MPN" value="MCP23S08-E/SS"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BUZZER_3_PIN_" prefix="LS">
+<description>3 Pin Buzzer
+&lt;BR&gt;
+&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt; CPT-3011C-120 Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BUZZER_3_PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CPT-3011C-120">
+<connects>
+<connect gate="G$1" pin="FEEDBACK" pad="F"/>
+<connect gate="G$1" pin="GND" pad="G"/>
+<connect gate="G$1" pin="MAIN" pad="M"/>
+</connects>
+<technologies>
+<technology name="CPT-3011C-120">
+<attribute name="DKPN" value="102-3762-ND"/>
+<attribute name="FREQUENCY" value="3kHz"/>
+<attribute name="MANUFACTURER" value="CUI Devices"/>
+<attribute name="MOPN" value="490-CPT-3011C-120 "/>
+<attribute name="MPN" value="CPT-3011C-120"/>
+<attribute name="VOLTAGE" value="12V"/>
+<attribute name="VOLUME" value="85dB"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED_7_SEGMENT_" prefix="D">
+<description>Low-Profile 7-Segment Display
+&lt;br&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://vcclite.com/wp-content/uploads/wpallimport/files/files/DSM7TA56106T.pdf"&gt;DSM7T  Blue&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href="https://vcclite.com/wp-content/uploads/wpallimport/files/files/DSM7TA56105T.pdf"&gt;DSM7T  Green&lt;/a&gt;&lt;/li&gt;
+
+&lt;\ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="DIODE_LED_7_SEGMENT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DSM7TA" package="DSM7T">
+<connects>
+<connect gate="G$1" pin="A" pad="7"/>
+<connect gate="G$1" pin="B" pad="6"/>
+<connect gate="G$1" pin="C" pad="4"/>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
+<connect gate="G$1" pin="F" pad="9"/>
+<connect gate="G$1" pin="G" pad="10"/>
+<connect gate="G$1" pin="VDD" pad="3 8"/>
+</connects>
+<technologies>
+<technology name="BLUE_">
+<attribute name="COLOR" value="Blue"/>
+<attribute name="DKPN" value="DSM7TA56106TTR-ND"/>
+<attribute name="MANUFACTURER" value="Visual Communications Company"/>
+<attribute name="MOPN" value="593-DSM7TA56106T "/>
+<attribute name="MPN" value="DSM7TA56106T"/>
+</technology>
+<technology name="GREEN_">
+<attribute name="COLOR" value="Green"/>
+<attribute name="DKPN" value="DSM7TA56105TTR-ND"/>
+<attribute name="MANUFACTURER" value="Visual Communications Company"/>
+<attribute name="MOPN" value="593-DSM7TA56105T "/>
+<attribute name="MPN" value="DSM7TA56105T"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OKL-*" prefix="A">
+<description>Point of Load Voltage Regulator Modules
+&lt;br&gt;
+&lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="VOLTAGE_REGULATOR_TRIM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="OKL" package="OKL-T/1-W12">
+<connects>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3 7 11"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="TRIM" pad="6"/>
+</connects>
+<technologies>
+<technology name="T/1-W12N-C">
+<attribute name="DKPN" value="811-2260-2-ND"/>
+<attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
+<attribute name="MOPN" value="580-OKL-T/1-W12N-C "/>
+<attribute name="MPN" value="OKL-T/1-W12N-C"/>
+<attribute name="VIN" value="12V"/>
+<attribute name="VOUT" value="5V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP2562FD" prefix="U">
+<description>MCP2562FD Can Tranciever
+&lt;br&gt;
+&lt;a href="https://ww1.microchip.com/downloads/en/DeviceDoc/20005284A.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAN_TRANSCIEVER_MCP2562FD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-08(NARROW,0.15&quot;)">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="STBY" pad="8"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VIO" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ALT_DKPN" value="MCP2562-E/SN-ND"/>
+<attribute name="ALT_MANUFACTURER" value="Microchip Technology"/>
+<attribute name="ALT_MOPN" value="579-MCP2562-E/SN"/>
+<attribute name="ALT_MPN" value="MCP2562-E/SN"/>
+<attribute name="DKPN" value="MCP2562FD-E/SN-ND"/>
+<attribute name="MANUFACTURER" value="Microchip Technology"/>
+<attribute name="MOPN" value="579-MCP2562FD-E/SN"/>
+<attribute name="MPN" value="MCP2562FD-E/SN"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RE46C100" prefix="U">
+<description>RE46C100 Piezoelectric Horn Driver IC
+&lt;br&gt;
+&lt;a href="https://ww1.microchip.com/downloads/en/DeviceDoc/20002166B.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RE46C100" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-08(NARROW,0.15&quot;)">
+<connects>
+<connect gate="G$1" pin="EN" pad="8"/>
+<connect gate="G$1" pin="FEED" pad="4"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="HORNB" pad="6"/>
+<connect gate="G$1" pin="HORNS" pad="7"/>
+<connect gate="G$1" pin="VDD" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="RE46C100S8TFTR-ND"/>
+<attribute name="MANUFACTURER" value="Microchip Technology"/>
+<attribute name="MOPN" value="579-RE46C100S8TF "/>
+<attribute name="MPN" value=" RE46C100S8TF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FUSE_HOLDER_*" prefix="XF">
+<description>Fuse Holder
+&lt;br&gt;
+All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resourcetype=datasheets&amp;itemid=0f5f58cb-559e-494b-8d53-723f30445ae5&amp;filename=littelfuse-mini-datasheet"&gt;Miniblade Fuses&lt;/a&gt; needed, order separately.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/215/3568-742601.pdf"&gt;Mini-Blade PTH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/215/588-744913.pdf"&gt;Mini-Blade SMD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="FUSE_HOLDER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD" package="3588">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+<connect gate="G$1" pin="2" pad="3 4"/>
+</connects>
+<technologies>
+<technology name="MINIBLADE">
+<attribute name="DKPN" value="36-3588-ND"/>
+<attribute name="MANUFACTURER" value="Keystone Electronics"/>
+<attribute name="MOPN" value="534-3588"/>
+<attribute name="MPN" value="3588"/>
+</technology>
+</technologies>
+</device>
+<device name="PTH" package="3568">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+<connect gate="G$1" pin="2" pad="3 4"/>
+</connects>
+<technologies>
+<technology name="MINIBLADE">
+<attribute name="DKPN" value="36-3568-ND"/>
+<attribute name="MANUFACTURER" value="Keystone"/>
+<attribute name="MOPN" value="534-3568"/>
+<attribute name="MPN" value="3568"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ULTIMATE_GPS" prefix="XA">
+<description>Adafruit Ultimate GPS Breakout - 66 channel w/10 Hz updates - Version 3
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/737/adafruit_ultimate_gps-779243.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Requires ordering of:
+&lt;ul&gt;
+&lt;li&gt;2: 5mm height, 3mm screw standoffs&lt;/li&gt;
+&lt;li&gt;1: Ultimate GPS&lt;/li&gt;
+&lt;li&gt;1: Antenna&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ULTIMATE_GPS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ULTIMATE_GPS">
+<connects>
+<connect gate="G$1" pin="3V3" pad="3.3V"/>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="FIX" pad="FIX"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="PPS" pad="PPS"/>
+<connect gate="G$1" pin="RXD" pad="RX"/>
+<connect gate="G$1" pin="TXD" pad="TX"/>
+<connect gate="G$1" pin="VBAT" pad="VBAT"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="DW-09-07-G-S-200-ND"/>
+<attribute name="MANUFACTURER" value="Samtec Inc."/>
+<attribute name="MOPN" value="200-DW0907GS200"/>
+<attribute name="MPN" value="DW-09-07-G-S-200"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RELAY_DPDT" prefix="K">
+<description>Dual Pole, Dual Throw Relay
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/418/5/NG_DS_RT2_1014-572844.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="RELAY_DPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RT*2*">
+<connects>
+<connect gate="G$1" pin="2" pad="12"/>
+<connect gate="G$1" pin="3" pad="11"/>
+<connect gate="G$1" pin="4" pad="14"/>
+<connect gate="G$1" pin="5" pad="24"/>
+<connect gate="G$1" pin="6" pad="21"/>
+<connect gate="G$1" pin="7" pad="22"/>
+<connect gate="G$1" pin="COIL+" pad="A1"/>
+<connect gate="G$1" pin="COIL-" pad="A2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="PB2021-ND"/>
+<attribute name="MANUFACTURER" value="TE Connectivity"/>
+<attribute name="MOPN" value="655-6-1393243-2"/>
+<attribute name="MPN" value="RT424009"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BUTTON" prefix="S">
+<description>&lt;b&gt;Button&lt;/b&gt;
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/307/en_b3s-1221332.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BUTTON" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="B3S-100X">
+<connects>
+<connect gate="G$1" pin="P" pad="1 2"/>
+<connect gate="G$1" pin="S" pad="3 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="SW415-ND "/>
+<attribute name="MANUFACTURER" value="Omron"/>
+<attribute name="MOPN" value="653-B3S-1000"/>
+<attribute name="MPN" value="B3S-1000"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED_RGBW_*" prefix="D">
+<description>Inolux IN-505FCHWV RGBW LED
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/180/IN-505FCHWV-1488542.pdf"&gt; Datasheet&lt; /a&gt;</description>
+<gates>
+<gate name="G$1" symbol="DIODE_LED_RGBW" x="0" y="0"/>
+</gates>
+<devices>
+<device name="IN-505FCHWV" package="IN-505FCHWV">
+<connects>
+<connect gate="G$1" pin="BLUE+" pad="C+"/>
+<connect gate="G$1" pin="BLUE-" pad="C-"/>
+<connect gate="G$1" pin="GREEN+" pad="B+"/>
+<connect gate="G$1" pin="GREEN-" pad="B-"/>
+<connect gate="G$1" pin="RED+" pad="A+"/>
+<connect gate="G$1" pin="RED-" pad="A-"/>
+<connect gate="G$1" pin="THERMAL" pad="THERMAL"/>
+<connect gate="G$1" pin="WHITE+" pad="D+"/>
+<connect gate="G$1" pin="WHITE-" pad="D-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COLOR" value="RGBW"/>
+<attribute name="DKPN" value="1830-1097-2-ND"/>
+<attribute name="MANUFACTURER" value="INOLUX"/>
+<attribute name="MOPN" value="743-IN-505FCHWV"/>
+<attribute name="MPN" value="IN-505FCHWV"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LT8631" prefix="U">
+<description>LT8631 100V, 1A DC-DC Regulator
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/609/8631fb-1271396.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LT8631" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FE20(16)">
+<connects>
+<connect gate="G$1" pin="BST" pad="18"/>
+<connect gate="G$1" pin="EN/UV" pad="3"/>
+<connect gate="G$1" pin="FB" pad="11"/>
+<connect gate="G$1" pin="GND" pad="7 PAD"/>
+<connect gate="G$1" pin="IND" pad="14"/>
+<connect gate="G$1" pin="INTVDD" pad="16"/>
+<connect gate="G$1" pin="RT" pad="8"/>
+<connect gate="G$1" pin="SW" pad="20"/>
+<connect gate="G$1" pin="TR/SS" pad="10"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="12"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="LT8631EFE#TRPBFCT-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
+<attribute name="MOPN" value="584-LT8631EFE#PBF"/>
+<attribute name="MPN" value="LT8631EFE#TRPBF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LT3045-1" prefix="U">
+<description>LT3045-1 Linear Regulator with VIOC Control
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/609/30451fa-1513158.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LT3045-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MSE12">
+<connects>
+<connect gate="G$1" pin="EN/UV" pad="4"/>
+<connect gate="G$1" pin="GND" pad="9 13"/>
+<connect gate="G$1" pin="ILIM" pad="6"/>
+<connect gate="G$1" pin="IN" pad="1 2"/>
+<connect gate="G$1" pin="OUT" pad="10 11 12"/>
+<connect gate="G$1" pin="PG" pad="5"/>
+<connect gate="G$1" pin="PGFB" pad="7"/>
+<connect gate="G$1" pin="SET" pad="8"/>
+<connect gate="G$1" pin="VIOC" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="LT3045EMSE-1#PBF-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
+<attribute name="MOPN" value="584-LT3045EMSE-1#PBF"/>
+<attribute name="MPN" value="LT3045EMSE-1#PBF"/>
 </technology>
 </technologies>
 </device>

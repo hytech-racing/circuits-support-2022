@@ -1,4 +1,4 @@
-#require 6.5100
+#require 9.06020
 
 // Revision history:
 //
@@ -44,11 +44,12 @@
 // - 2015-12-10 fixed handling descriptions containing TAB characters
 //
 // 1.12
-// - 2020-12-29 customized for HyTech Racing specific needs
-// Revision: 1.12
+// - 2021-12-29 customized for HyTech Racing specific needs
 //
-
-string Version = "1.12";
+// 1.13
+// - 2021-12-30 optimized attrition to ensure correct number of spares
+// Revision: 1.13
+//
 
 char   Separator = ',';
 
@@ -69,7 +70,7 @@ string I18N[] = {
   "Part\tValue\v"
   "Bauteil\tWert\v"
   ,
-  "Qty\tValue\tParts\v"      // 2011-04-08
+  "Quantity\tValue\tParts\v"      // 2011-04-08
   "Menge\tWert\tBauteile\v"  // 2011-04-08
   ,
   "Partlist exported from %s at %s\v"
@@ -157,31 +158,13 @@ string Variants[] = { "" };  // 2012-04-16
 int    cntVD = 0;
 int    VDsel = 0;
 
+
 // cwi: Added arrays for an arbitraty number of attributes.
 int UseAttributes = 1;
 int FoundAttributes = 0;            // # of different attribute names found in schematic.
 numeric string AttributesList[];    // Sorted list of all attributes found in the schematic.
 numeric string PartAttributes[];    // Adjusted list of attributes per part.
-
-int ListType = 0;
-int OutputFormat = 0;
-
-string StripWhiteSpace (string s)
-{
-  while (s && isspace (s[0]))
-    s = strsub (s, 1);
-  while (s && isspace (s[strlen (s) - 1]))
-    s = strsub (s, 0, strlen (s) - 1);
-  return s;
-}
-
-string ReplaceTabs(string s)
-{
-  int i;
-  while ((i = strchr(s, '\t')) >= 0)
-        s = strsub(s, 0, i) + "\\t" + strsub(s, i + 1);
-  return s;
-}
+int attritionIndex = 0;
 
 // Collect part data from the schematic.
 //
@@ -277,13 +260,14 @@ void CollectPartData (string var)
               }
               if ("ATTRITION" == AttributesList[i])
               {
+                attritionIndex = i;
                 if (strsub(P.name,0,1) == "O" || strsub(P.name,0,1) == "F")
-                  attr[i] = "100";
+                  attr[i] = "100"; // Always do 100% attrition for fuses and external parts
                 else {
-                  if (strsub(P.name,0,1) == "R" || strsub(P.name,0,1) == "C" || strsub(P.name,0,1) == "D" || strsub(P.name,0,1) == "L" || strsub(P.name,0,1) == "J")
-                    attr[i] = "33";
+                  if (strsub(P.name,0,1) == "R" || strsub(P.name,0,1) == "C" || strsub(P.name,0,1) == "D" || (strsub(P.name,0,1) == "L" && strsub(P.name,0,2) != "LS") || strsub(P.name,0,2) == "JP")
+                    attr[i] = "2"; // Indicates separate formula later on
                   else
-                    attr[i] = "10";
+                    attr[i] = "3"; // Indicates separate formula later on
                 }
               }
             }
@@ -310,7 +294,7 @@ void GenerateList (void)
 
   s = strjoin(AttributesList, '\t');
 
-  Lines[NumLines ++] = tr ("Qty\tValue\tParts\t") + s;                 // 2011-04-08
+  Lines[NumLines ++] = tr ("Quantity\tValue\tParts\t") + s;                 // 2011-04-08
   sort (NumParts, Index, PartValue, PartAttributes, PartName);
   for (int n1 = 0, n2 = 0; ++ n2 <= NumParts; )
   {
@@ -322,7 +306,7 @@ void GenerateList (void)
     {
       int i2 = Index [n2]; // 2012-11-08
       strsplit (attr, PartAttributes[i2], Separator);
-      if (PartValue[i1] == PartValue[i2] && PartAttributes[i1] == PartAttributes[i2]) // 2012-11-08 check diffent values of attributes
+      if (PartValue[i1] == PartValue[i2] && PartAttributes[i1] == PartAttributes[i2]) // 2012-11-08 check different values of attributes
         continue;
     }
     string Quantity;
@@ -344,14 +328,23 @@ void GenerateList (void)
     NumLines ++;
   }
   Lines[NumLines] = "";
-}
-
-string MakeListHeader (void)
-{
-  string s;
-  schematic(SCH)
-    sprintf (s, tr ("Partlist exported from %s at %s"), SCH.name, t2string (time ()));
-  return s;
+  string Out;
+  for (int l = 1; Lines[l]; l ++)
+  {
+    string a [];
+    int n = strsplit (a, Lines[l], '\t');
+    if (strsub(a[attritionIndex + 3],0,1) == "2") { // Do 9 extra for class 2 parts
+      sprintf(Out, "%.0f", 100.0 * ((strtod(a[0]) + 9.0) / strtod(a[0]) - 1.0));
+      a[attritionIndex + 3] = Out;
+    }
+    else {
+      if (strsub(a[attritionIndex + 3],0,1) == "3") { // Do 2 extra for class 3 parts
+        sprintf(Out, "%.0f", 100.0 * ((strtod(a[0]) + 2.0) / strtod(a[0]) - 1.0));
+        a[attritionIndex + 3] = Out;
+      }
+    }
+    Lines[l] = strjoin(a, '\t');
+  }
 }
 
 // 2008-11-24 Christian Schlittler:
@@ -420,6 +413,5 @@ dlgDialog (tr ("Bill Of Material"))
     dlgPushButton (tr ("+&Save")) SaveList ();
     dlgPushButton (tr ("-&Close"))   dlgAccept ();
     dlgStretch(1);
-    dlgLabel("Version " + Version);
   }
 };

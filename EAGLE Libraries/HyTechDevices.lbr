@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4403,14 +4403,16 @@ MSOP 12 with exposed pad.
 <package name="2835-LED">
 <description>LUXEON 2835 LED&lt;br&gt;
 &lt;a href = "https://www.mouser.com/datasheet/2/602/DS236_luxeon_2835_color_line_datasheet-1596094.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="P$1" x="-0.735" y="0" dx="1.93" dy="1.8" layer="1" roundness="11"/>
-<smd name="P$2" x="1.265" y="0" dx="0.87" dy="1.8" layer="1" roundness="22"/>
-<wire x1="-1.775" y1="1.425" x2="1.775" y2="1.425" width="0.127" layer="21"/>
-<wire x1="1.775" y1="1.425" x2="1.775" y2="-1.425" width="0.127" layer="21"/>
-<wire x1="1.775" y1="-1.425" x2="-1.775" y2="-1.425" width="0.127" layer="21"/>
-<wire x1="-1.775" y1="-1.425" x2="-1.775" y2="1.425" width="0.127" layer="21"/>
-<text x="0" y="1.778" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<smd name="A" x="-0.735" y="0" dx="1.93" dy="1.8" layer="1" roundness="11"/>
+<smd name="C" x="1.265" y="0" dx="0.87" dy="1.8" layer="1" roundness="22"/>
+<wire x1="-1.75" y1="1.4" x2="1.75" y2="1.4" width="0.127" layer="21"/>
+<wire x1="1.75" y1="1.4" x2="1.75" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="1.75" y1="-1.4" x2="-1.75" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-1.4" x2="-1.75" y2="1.4" width="0.127" layer="21"/>
+<text x="0" y="2.286" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.778" x2="2.032" y2="1.778" layer="39"/>
+<text x="0" y="1.524" size="0.8128" layer="21" font="vector" align="bottom-center">+ -</text>
+<circle x="-2.032" y="1.778" radius="0.127" width="0" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -8469,7 +8471,7 @@ Note: Mode connected to GND per page 70 of &lt;a href="https://www.analog.com/me
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/50/SM0603UWC-880813.pdf"&gt;White&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SYCK-J3-PRV-1173311.pdf"&gt;Yellow&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;ul&gt;2835
+&lt;ul&gt;2835 (Series not on Digikey)
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/602/DS236_luxeon_2835_color_line_datasheet-1596094.pdf"&gt;Lumiled LUXEON 2835 Color Line&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
@@ -8528,41 +8530,34 @@ Note: Mode connected to GND per page 70 of &lt;a href="https://www.analog.com/me
 </device>
 <device name="2835" package="2835-LED">
 <connects>
-<connect gate="LED" pin="A" pad="P$1"/>
-<connect gate="LED" pin="C" pad="P$2"/>
+<connect gate="LED" pin="A" pad="A"/>
+<connect gate="LED" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="COLOR" value="" constant="no"/>
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-</technology>
 <technology name="AMBER">
 <attribute name="COLOR" value="Amber"/>
-<attribute name="DKPN" value="" constant="no"/>
+<attribute name="DKPN" value=""/>
 <attribute name="MANUFACTURER" value="Lumileds"/>
 <attribute name="MOPN" value="997-L128PCA10350"/>
 <attribute name="MPN" value="L128-PCA1003500000"/>
 </technology>
 <technology name="BLUE">
 <attribute name="COLOR" value="Blue"/>
-<attribute name="DKPN" value="" constant="no"/>
+<attribute name="DKPN" value=""/>
 <attribute name="MANUFACTURER" value="Lumileds"/>
 <attribute name="MOPN" value="997-L128BLU10350"/>
 <attribute name="MPN" value="L128-BLU1003500000"/>
 </technology>
 <technology name="GREEN">
 <attribute name="COLOR" value="Green"/>
-<attribute name="DKPN" value="" constant="no"/>
+<attribute name="DKPN" value=""/>
 <attribute name="MANUFACTURER" value="Lumileds"/>
 <attribute name="MOPN" value="997-L128GRN10350"/>
 <attribute name="MPN" value="L128-GRN1003500000"/>
 </technology>
 <technology name="RED">
 <attribute name="COLOR" value="Red"/>
-<attribute name="DKPN" value="" constant="no"/>
+<attribute name="DKPN" value=""/>
 <attribute name="MANUFACTURER" value="Lumileds"/>
 <attribute name="MOPN" value="997-L128RED10350"/>
 <attribute name="MPN" value="L128-RED1003500000"/>

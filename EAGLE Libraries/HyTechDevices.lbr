@@ -8064,6 +8064,16 @@ Note: Mode connected to GND per page 70 of &lt;a href="https://www.analog.com/me
 <text x="0" y="-23.622" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 <pin name="EN/UV" x="-2.54" y="-5.08" length="short" direction="in"/>
 </symbol>
+<symbol name="LOGICGATE_BUFFER">
+<description>Inverter</description>
+<text x="2.413" y="3.048" size="1.27" layer="95">&gt;NAME</text>
+<text x="2.413" y="-3.048" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<pin name="IN" x="-2.54" y="0" visible="pad" length="short" direction="in"/>
+<wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.81" x2="6.35" y2="0" width="0.254" layer="94"/>
+<wire x1="6.35" y1="0" x2="0" y2="3.81" width="0.254" layer="94"/>
+<pin name="OUT" x="8.89" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-2_?_*" prefix="J">
@@ -12437,6 +12447,33 @@ Requires ordering of:
 <attribute name="MANUFACTURER" value="Analog Devices Inc."/>
 <attribute name="MOPN" value="584-LT3045EMSE-1#PBF"/>
 <attribute name="MPN" value="LT3045EMSE-1#PBF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LOGICGATE_BUFFER" prefix="U">
+<description>Buffer
+&lt;br&gt;
+&lt;a href = "https://www.ti.com/lit/ds/symlink/sn74lvc1g34.pdf"&gt;SN74LVC Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="LOGICGATE_BUFFER" x="25.4" y="-5.08"/>
+<gate name="P" symbol="PWR_GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC-70-5">
+<connects>
+<connect gate="A" pin="IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="4"/>
+<connect gate="P" pin="GND" pad="3"/>
+<connect gate="P" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="296-26604-2-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-SN74LVC1G34DCKT "/>
+<attribute name="MPN" value="SN74LVC1G34DCKT"/>
 </technology>
 </technologies>
 </device>

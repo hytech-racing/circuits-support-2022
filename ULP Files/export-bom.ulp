@@ -48,7 +48,7 @@
 //
 // 1.13
 // - 2021-12-30 optimized attrition to ensure correct number of spares
-// Revision: 1.12
+// Revision: 1.13
 //
 
 char   Separator = ',';
@@ -70,7 +70,7 @@ string I18N[] = {
   "Part\tValue\v"
   "Bauteil\tWert\v"
   ,
-  "Qty\tValue\tParts\v"      // 2011-04-08
+  "Quantity\tValue\tParts\v"      // 2011-04-08
   "Menge\tWert\tBauteile\v"  // 2011-04-08
   ,
   "Partlist exported from %s at %s\v"
@@ -262,7 +262,7 @@ void CollectPartData (string var)
               {
                 attritionIndex = i;
                 if (strsub(P.name,0,1) == "O" || strsub(P.name,0,1) == "F")
-                  attr[i] = "100"; // Always do 100% redundancy for fuses and external parts
+                  attr[i] = "100"; // Always do 100% attrition for fuses and external parts
                 else {
                   if (strsub(P.name,0,1) == "R" || strsub(P.name,0,1) == "C" || strsub(P.name,0,1) == "D" || (strsub(P.name,0,1) == "L" && strsub(P.name,0,2) != "LS") || strsub(P.name,0,2) == "JP")
                     attr[i] = "2"; // Indicates separate formula later on
@@ -294,7 +294,7 @@ void GenerateList (void)
 
   s = strjoin(AttributesList, '\t');
 
-  Lines[NumLines ++] = tr ("Qty\tValue\tParts\t") + s;                 // 2011-04-08
+  Lines[NumLines ++] = tr ("Quantity\tValue\tParts\t") + s;                 // 2011-04-08
   sort (NumParts, Index, PartValue, PartAttributes, PartName);
   for (int n1 = 0, n2 = 0; ++ n2 <= NumParts; )
   {

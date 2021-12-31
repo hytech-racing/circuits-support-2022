@@ -197,7 +197,7 @@ void CollectPartData (string var)
                   }
                   else
                   {
-                    if (strstr(P.value, "SC-70") != -1 || strstr(P.value, "SOT-2") != -1 || strstr(P.value, "SOD-3") != -1 || strstr(P.value, "SOD-5") != -1)
+                    if (strstr(P.value, "SC-70") != -1 || strstr(P.value, "SOT-23") != -1 || strstr(P.value, "SOD-3") != -1 || strstr(P.value, "SOD-5") != -1)
                       attr[i] = "3"; // Class 3
                     else
                       attr[i] = "4"; // Class 4

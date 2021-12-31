@@ -188,7 +188,7 @@ void CollectPartData (string var)
               {
                 attritionIndex = i;
                 if (strsub(P.name,0,1) == "O" || strsub(P.name,0,1) == "F" || (strsub(P.name,0,1) == "J" && strsub(P.name,0,2) != "JP"))
-                  attr[i] = "1"; // Class 4
+                  attr[i] = "1"; // Class 1
                 else
                 {
                   if (strstr(P.value, "_0603") != -1 || strstr(P.value, "_0805") != -1 || strstr(P.value, "_1206") != -1 || strstr(P.value, "SOT-3") != -1 || strstr(P.value, "SOT-5") != -1)

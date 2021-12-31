@@ -8065,7 +8065,7 @@ Note: Mode connected to GND per page 70 of &lt;a href="https://www.analog.com/me
 <pin name="EN/UV" x="-2.54" y="-5.08" length="short" direction="in"/>
 </symbol>
 <symbol name="LOGICGATE_BUFFER">
-<description>Inverter</description>
+<description>Buffer</description>
 <text x="2.413" y="3.048" size="1.27" layer="95">&gt;NAME</text>
 <text x="2.413" y="-3.048" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 <pin name="IN" x="-2.54" y="0" visible="pad" length="short" direction="in"/>

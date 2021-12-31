@@ -1,17 +1,17 @@
 {
     "author": {
-        "email": "ncheek@gatech.edu",
-        "name": "Nathan Cheek"
+        "email": "arvindsrinivasan@gatech.edu",
+        "name": "Arvind Srinivasan"
     },
     "description": {
-        "EN": "4 Layer CAM with tPlace/bPlace, tName/bName, and tDocu/bDocu"
+        "EN": "4 Layer HyTech Racing CAM"
     },
     "output_type": "zip",
     "outputs": [
         {
             "filename_prefix": "CAMOutputs/GerberFiles",
             "format_specifier": {
-                "decimal": 4,
+                "decimal": 3,
                 "integer": 3
             },
             "generate_job_file": true,
@@ -274,7 +274,7 @@
                     "type": "gerber_layer"
                 }
             ],
-            "version": "RS274X"
+            "version": "RS274X_X2COMMENTS"
         },
         {
             "filename_prefix": "CAMOutputs/DrillFiles",

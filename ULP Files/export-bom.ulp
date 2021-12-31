@@ -56,8 +56,8 @@
 
 // Attrition Setup
 // Class 1 = O/F/J Prefixes and 2x Quantity = 2x
-// Class 2 = 0603/0805/1206/SOT-3/SOT-5     = +9
-// Class 3 = SC-70/SOT-2/SOD-1/SOD-3/SOD-5  = +5
+// Class 2 = 0603/0805/1206/SOT-3/SOT-5     = +10
+// Class 3 = SC-70/SOT-2/SOD-3/SOD-5        = +5
 // Class 4 = Remaining Parts                = +2
 
 char   Separator = ',';
@@ -197,7 +197,7 @@ void CollectPartData (string var)
                   }
                   else
                   {
-                    if (strstr(P.value, "SC-70") != -1 || strstr(P.value, "SOT-2") != -1 || strstr(P.value, "SOD-1") != -1 || strstr(P.value, "SOD-3") != -1 || strstr(P.value, "SOD-5") != -1)
+                    if (strstr(P.value, "SC-70") != -1 || strstr(P.value, "SOT-2") != -1 || strstr(P.value, "SOD-3") != -1 || strstr(P.value, "SOD-5") != -1)
                       attr[i] = "3"; // Class 3
                     else
                       attr[i] = "4"; // Class 4
@@ -276,9 +276,9 @@ void GenerateList (void)
     }
     else
     {
-      if (strsub(a[attritionIndex + 4],0,1) == "2") { // Do 9 extra for class 2 parts
-        sprintf(Out1, "%.0f", 100.0 * ((strtod(a[0]) + 9.0) / strtod(a[0]) - 1.0));
-        sprintf(Out2, "%.0f", strtod(a[0]) * (1 + ((strtod(a[0]) + 9.0) / strtod(a[0]) - 1.0)));
+      if (strsub(a[attritionIndex + 4],0,1) == "2") { // Do 10 extra for class 2 parts
+        sprintf(Out1, "%.0f", 100.0 * ((strtod(a[0]) + 10.0) / strtod(a[0]) - 1.0));
+        sprintf(Out2, "%.0f", strtod(a[0]) * (1 + ((strtod(a[0]) + 10.0) / strtod(a[0]) - 1.0)));
         a[attritionIndex + 4] = Out1;
         a[1] = Out2;
       }

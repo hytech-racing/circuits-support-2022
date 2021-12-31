@@ -55,9 +55,9 @@
 // Revision: 1.14
 
 // Attrition Setup
-// Class 1 = O/F/J Prefixes and 2x Quantity = 2x
+// Class 1 = O/F Prefixes                   = 2x
 // Class 2 = 0603/0805/1206/SOT-3/SOT-5     = +10
-// Class 3 = SC-70/SOT-2/SOD-3/SOD-5        = +5
+// Class 3 = SC-70/SOT-23/SOD-3/SOD-5       = +5
 // Class 4 = Remaining Parts                = +2
 
 char   Separator = ',';
@@ -187,7 +187,7 @@ void CollectPartData (string var)
               if ("ATTRITION" == AttributesList[i])
               {
                 attritionIndex = i;
-                if (strsub(P.name,0,1) == "O" || strsub(P.name,0,1) == "F" || (strsub(P.name,0,1) == "J" && strsub(P.name,0,2) != "JP"))
+                if (strsub(P.name,0,1) == "O" || strsub(P.name,0,1) == "F")
                   attr[i] = "1"; // Class 1
                 else
                 {
@@ -257,7 +257,6 @@ void GenerateList (void)
       else
         break;
     }
-    // cwi: add extra information from attributes
     Lines[NumLines] += "\t" + s;
     NumLines ++;
   }

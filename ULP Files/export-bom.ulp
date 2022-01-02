@@ -1,0 +1,374 @@
+#require 9.06020
+
+// Revision history:
+//
+// 1.00
+// - Initial release
+//
+// 1.01
+// - Dialog mask for text or html output selection corrected
+//
+// 1.02
+// - CSV export added after a suggestion of Christian Schlittler
+// - File extension for text file output changed from .bom to .txt
+//
+// 1.03
+// - Added missing description column in value mode.
+//
+// 1.04
+// - List also Packages bei Value
+//
+// 1.05
+// - 2012-03-01 change PartValue[], PartDevice[], PartPackage[], PartHeadline[], PartDescription[] to normal string. alf@cadsoft.de
+//   numeric strings with only numericasl characters, sorts up to 8 characters!
+//
+// 1.06
+// - 2012-05-25 support now populated variants
+//              switch on/off attributes
+//              is now the standard bom.ulp  alf@cadsoft.de
+//
+// 1.07
+// - 2012-06-22 set correct variant
+//
+// 1.08
+// - 2012-11-08 list different values of attributes
+//
+// 1.09
+// - 2012-12-04 now can change the separator character for CSV files.
+//              change the character in line Separator = ',';
+//
+// 1.10
+// - 2014-08-07 extended to V7 hierarchical schematic
+//
+// 1.11
+// - 2015-12-10 fixed handling descriptions containing TAB characters
+//
+// 1.12
+// - 2021-12-29 customized for HyTech Racing specific needs
+//
+// 1.13
+// - 2021-12-30 optimized attrition to ensure correct number of spares
+//
+// 1.14
+// - 2021-12-30 optimized attrition based on size and removed German language
+//
+// Revision: 1.14
+
+// Attrition Setup
+// Class 1 = O/F Prefixes                   = 2x
+// Class 2 = 0603/0805/1206/SOT-3/SOT-5     = +10
+// Class 3 = SC-70/SOT-23/SOD-3/SOD-5       = +5
+// Class 4 = Remaining Parts                = +2
+
+char   Separator = ',';
+
+#usage "en: <b>Bill Of Material</b>\n"
+           "<p>"
+           "Generates a schematic's Bill Of Material"
+           "<p>"
+           "<author>Author: Arvind Srinivasan</author><br>"
+
+if (!schematic)
+{
+  dlgMessageBox (usage + "<hr><b>ERROR: No Schematic!</b><p>\nThis program can only work in the Schematic editor.");
+  exit (1);
+}
+
+string SeparatorString;
+int     NumParts;
+numeric string Lines[];
+numeric string PartName[];
+string  PartValue[];
+int     PartValueOn[];
+int     Selected;
+
+string CurrentVariant = "";
+string Variants[] = { "" };  // 2012-04-16
+int    cntVD = 0;
+int    VDsel = 0;
+
+int FoundAttributes = 0;            // # of different attribute names found in schematic.
+numeric string AttributesList[];    // Sorted list of all attributes found in the schematic.
+numeric string PartAttributes[];    // Adjusted list of attributes per part.
+int attritionIndex = 0;
+
+// Collect part data from the schematic.
+//
+// Arguments: -
+//
+// Returns:   NumParts            - # of found parts
+//            ParteName[]
+//            PartValue[]
+//            PartValueOn[]      - 0=part value off, 1= part value on, 2=override with attr. VAL
+//            FoundAttributes     - # of different attribute names found in schematic.
+//            AttributesList[]   - Sorted list of all attributes found in the schematic.
+//            PartAttributes[]   - Adjusted list of attributes per part.
+
+void CollectPartData (string var)
+{
+  int Found = 0;
+  int i;
+  string attr[];
+
+  NumParts = 0;
+
+  // First, collect the names of all available attributes.
+  FoundAttributes = 0;
+  schematic (SCH)
+  {
+    SCH.allparts (P) // 2014-08-07
+    {
+      if (P.device.package || strsub(P.name,0,1) == "O")
+      {
+        if (P.populate)
+        {
+          P.attributes (A)
+          {
+            if (0 == FoundAttributes)
+            {
+              // First one
+              AttributesList[0] = A.name;
+              FoundAttributes = 1;
+            }
+            else
+            {
+              Found = 0;
+              for (i = 0; i < FoundAttributes; i ++)
+              {
+                if (A.name == AttributesList[i])
+                {
+                  // Found an already listed attribute
+                  Found = 1;
+                  break;
+                }
+              }
+              if (0 == Found)
+              {
+                if(strsub(A.name,0,6) != "SIGNAL") {
+                  // Attribute not listed, add at the end and not SIGNAL.
+                  AttributesList[FoundAttributes] = A.name;
+                  FoundAttributes ++;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  AttributesList[FoundAttributes] = "ATTRITION";
+  FoundAttributes ++;
+  sort (FoundAttributes, AttributesList);
+
+  // Second, collect all data
+  schematic (SCH)
+  {
+    SCH.allparts (P)
+    {
+      if (P.device.package || strsub(P.name,0,1) == "O")
+      {
+        if (P.populate)
+        {
+          PartName[NumParts] = P.name;
+          PartValue[NumParts] = P.value;
+          PartValueOn[NumParts] = P.device.value == "On";
+          // Zero all strings
+          for (i = 0; i < FoundAttributes; i ++)
+            attr[i] = "";
+          P.attributes(A)
+          {
+            for (i = 0; i < FoundAttributes; i ++)
+            {
+              if (A.name == AttributesList[i])
+              {
+                attr[i] = A.value;
+              }
+              if ("ATTRITION" == AttributesList[i])
+              {
+                attritionIndex = i;
+                if (strsub(P.name,0,1) == "O" || strsub(P.name,0,1) == "F")
+                  attr[i] = "1"; // Class 1
+                else
+                {
+                  if (strstr(P.value, "_0603") != -1 || strstr(P.value, "_0805") != -1 || strstr(P.value, "_1206") != -1 || strstr(P.value, "SOT-3") != -1 || strstr(P.value, "SOT-5") != -1)
+                  {
+                    attr[i] = "2"; // Class 2
+                  }
+                  else
+                  {
+                    if (strstr(P.value, "SC-70") != -1 || strstr(P.value, "SOT-23") != -1 || strstr(P.value, "SOD-3") != -1 || strstr(P.value, "SOD-5") != -1)
+                      attr[i] = "3"; // Class 3
+                    else
+                      attr[i] = "4"; // Class 4
+                  }
+                }
+              }
+            }
+            if ("VALUE" == A.name && 0 < strlen (A.value))
+             // Override old fashioned value information!
+            PartValueOn[NumParts] = 2;
+          }
+          PartAttributes[NumParts] = strjoin(attr, Separator);
+          NumParts ++;
+        }
+      }
+    }
+  }
+}
+
+// Generate list with one entry per value.
+// 'VALUE' is replaced by the value of attribute 'VAL', if existing.
+
+void GenerateList (void)
+{
+  int NumLines = 0;
+  int Index [];
+  string attr[], s, s_val;
+
+  s = strjoin(AttributesList, '\t');
+
+  Lines[NumLines ++] = "Board Quantity\tOrdering Quantity\tValue\tReference\t" + s;                 // 2011-04-08
+  sort (NumParts, Index, PartValue, PartAttributes, PartName);
+  for (int n1 = 0, n2 = 0; ++ n2 <= NumParts; )
+  {
+    int i1 = Index [n1];
+    strsplit (attr, PartAttributes[i1], Separator);
+    s = strjoin(attr, '\t');
+    s_val = attr[i1];
+    if (n2 < NumParts)
+    {
+      int i2 = Index [n2]; // 2012-11-08
+      strsplit (attr, PartAttributes[i2], Separator);
+      if (PartValue[i1] == PartValue[i2] && PartAttributes[i1] == PartAttributes[i2]) // 2012-11-08 check different values of attributes
+        continue;
+    }
+    string Quantity;
+    sprintf (Quantity, "%d", n2 - n1);
+    Lines[NumLines] = Quantity + "\t\t" + PartValue[i1] + "\t";
+    for (;;)
+    {
+      Lines[NumLines] += PartName[i1];
+      if (++n1 < n2)
+      {
+        i1 = Index [n1];
+        Lines[NumLines] += ", ";
+      }
+      else
+        break;
+    }
+    Lines[NumLines] += "\t" + s;
+    NumLines ++;
+  }
+  Lines[NumLines] = "";
+  string Out1;
+  string Out2;
+  for (int l = 1; Lines[l]; l ++)
+  {
+    string a [];
+    int n = strsplit (a, Lines[l], '\t');
+    if (strsub(a[attritionIndex + 4],0,1) == "1") // Double class 1 parts
+    {
+      sprintf(Out2, "%.0f", strtod(a[0]) * 2);
+      a[attritionIndex + 4] = "100";
+      a[1] = Out2;
+    }
+    else
+    {
+      if (strsub(a[attritionIndex + 4],0,1) == "2") { // Do 10 extra for class 2 parts
+        sprintf(Out1, "%.0f", 100.0 * ((strtod(a[0]) + 10.0) / strtod(a[0]) - 1.0));
+        sprintf(Out2, "%.0f", strtod(a[0]) * (1 + ((strtod(a[0]) + 10.0) / strtod(a[0]) - 1.0)));
+        a[attritionIndex + 4] = Out1;
+        a[1] = Out2;
+      }
+      else
+      {
+        if (strsub(a[attritionIndex + 4],0,1) == "3") { // Do 5 extra for class 3 parts
+          sprintf(Out1, "%.0f", 100.0 * ((strtod(a[0]) + 5.0) / strtod(a[0]) - 1.0));
+          sprintf(Out2, "%.0f", strtod(a[0]) * (1 + ((strtod(a[0]) + 5.0) / strtod(a[0]) - 1.0)));
+          a[attritionIndex + 4] = Out1;
+          a[1] = Out2;
+        }
+        else
+        {
+          if (strsub(a[attritionIndex + 4],0,1) == "4") { // Do 2 extra for class 4 parts
+            sprintf(Out1, "%.0f", 100.0 * ((strtod(a[0]) + 2.0) / strtod(a[0]) - 1.0));
+            sprintf(Out2, "%.0f", strtod(a[0]) * (1 + ((strtod(a[0]) + 2.0) / strtod(a[0]) - 1.0)));
+            a[attritionIndex + 4] = Out1;
+            a[1] = Out2;
+          }
+        }
+      }
+    }
+    Lines[l] = strjoin(a, '\t');
+  }
+}
+
+// 2008-11-24 Christian Schlittler:
+// Make comma-serparated list, with all values double-quoted.
+
+string MakeList (void)
+{
+  string List;
+  int numHeaders;
+
+  for (int l = 0; Lines[l]; l ++)
+  {
+    string a [];
+    int n = strsplit (a, Lines[l], '\t');
+    if (l == 0)
+      numHeaders = n;
+    else
+      n = numHeaders; // for the hidden key!
+    for (int i = 0; i < n; i ++)
+      List += "\"" + a[i] + "\"" + SeparatorString;
+    List += "\n";
+  }
+  return List;
+}
+
+void SaveList (void)
+{
+  string FileName;
+  string FileExt;
+
+  FileExt = ".csv";
+  schematic(SCH) FileName = filesetext (SCH.name, FileExt);
+  FileName = dlgFileSave ("Save Bill Of Material", FileName);
+  if (FileName)
+  {
+    string a [];
+    if (!fileglob (a, FileName) || dlgMessageBox ("File '" + FileName +
+        "' exists\n\nOverwrite?", "+&Yes", "-&No") == 0)
+    {
+      output (FileName, "wt")
+      {
+        printf ("%s", MakeList ()); // using "%s" to avoid problems if list contains any '%'
+      }
+    }
+  }
+}
+
+schematic(SCH) {
+  sprintf(SeparatorString, "%c", Separator);
+  CurrentVariant = variant();
+  SCH.variantdefs(VD) {
+    if (CurrentVariant == VD.name) VDsel = cntVD;
+    sprintf(Variants[cntVD], "%s", VD.name);
+    cntVD++;
+  }
+}
+
+setvariant(CurrentVariant);
+CollectPartData(CurrentVariant);
+GenerateList();
+
+dlgDialog ("Bill Of Material")
+{
+  dlgListView ("", Lines, Selected);
+  dlgHBoxLayout  {
+    dlgPushButton ("+&Save") SaveList ();
+    dlgPushButton ("-&Close")   dlgAccept ();
+    dlgStretch(1);
+  }
+};

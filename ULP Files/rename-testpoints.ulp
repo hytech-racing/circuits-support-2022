@@ -1,40 +1,28 @@
 #usage "<b>Set all SIGNAL attributes to netname</b>\n"
-       "<p>This script loops through all elements in a board, adding an attribute in the tTest layer "
-       "for all TESTPAD* parts."
-       "<author>Author: jesper@magicmicros.com</author>"
+       "<p>This script loops through all nets in a schematic to find all TP* parts "
+       "and then edits their SIGNAL attribute to be the net name."
+       "<author>Author: Arvind Srinivasan</author>"
 
-// THIS PROGRAM IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED
-
-
-int ofsX = 1;       // X offset of the attribute text
-int ofsY = 1;       // Y offset of the attribute text
-
-
-if (board) {
-string cmd;
-string temp;
-string net;
-
-    board(B) {                                          // loop through board
-        B.elements(E) {                                 // loop through elements
-            if (strsub(E.name,0,2) == "TP") {           // if the element name starts with "TP"
-                E.footprint.contacts(C) {               // do a nasty assumption and pick
-                    net = C.signal;                     // the first member of contacts to get signal name
+if (schematic) {
+    string cmd;
+    schematic(S) {  // loop through schematic
+        S.sheets(SH) { // loop through sheets
+            SH.nets(N) { // loop through nets
+                N.segments(SEG) { // loop through segments
+                    SEG.pinrefs(P) { // loop through pins
+                        if (strsub(P.instance.name,0,2) == "TP") { // if the pin has a part whose name starts with "TP"
+                            cmd += "ATTRIBUTE " + P.instance.name + " SIGNAL '" + N.name + "'; "; // set SIGNAL attribute
+                            cmd += "CHANGE DISPLAY OFF; \n"; // set attribute not visible in schematic
+                        }
+                    }
                 }
-
-            cmd += "ATTRIBUTE " + E.name + " SIGNAL '" + net + "'; ";       // set new attribute
-            cmd += "CHANGE DISPLAY VALUE;";                                 // set value visible
-
-            cmd += "\n";                                                    // this terminates the command
             }
         }
-   }
-
-//   dlgMessageBox(cmd);  // display what's going to be done
-   exit (cmd);          // exit and run the command
-
+    }
+   dlgMessageBox(cmd); // display what's going to be done
+   exit (cmd); // exit and run the command
 }
-else {  // oops, we're not in a board
-   dlgMessageBox("\n    Start this ULP in a Board    \n");
-   exit (0);
+else { // we're not in a schematic
+   dlgMessageBox("\n    Start this ULP in a Schematic    \n");
+   exit (0); // exit
 }

@@ -12408,7 +12408,6 @@ Requires ordering of:
 </device>
 </devices>
 </deviceset>
-<<<<<<< HEAD
 <deviceset name="MOUNTING_HEATSINK_*" prefix="H">
 <description>M3 Mounting Hole
 &lt;ul&gt;
@@ -12424,12 +12423,10 @@ Requires ordering of:
 </connects>
 <technologies>
 <technology name=""/>
-</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-=======
 <deviceset name="LT8631" prefix="U">
 <description>LT8631 100V, 1A DC-DC Regulator
 &lt;br&gt;

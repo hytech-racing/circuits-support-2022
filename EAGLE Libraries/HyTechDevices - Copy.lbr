@@ -10260,10 +10260,10 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE" value="4V"/>
 </technology>
 <technology name="8V">
-<attribute name="DKPN" value="GSOT08C-E3-08CT-ND"/>
+<attribute name="DKPN" value="GSOT08-E3-08-ND"/>
 <attribute name="MANUFACTURER" value="  Vishay General Semiconductor - Diodes Division"/>
-<attribute name="MOPN" value="78-GSOT08C-E3-08"/>
-<attribute name="MPN" value="GSOT08C-E3-08"/>
+<attribute name="MOPN" value="78-GSOT08-E3-08"/>
+<attribute name="MPN" value="GSOT08-E3-08"/>
 <attribute name="VOLTAGE" value="8V"/>
 </technology>
 </technologies>

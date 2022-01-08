@@ -8373,6 +8373,16 @@ with up to 100mA of output current</description>
 <attribute name="TOLERANCE" value="20%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </technology>
+<technology name="10V_27PF">
+<attribute name="CAPACITANCE" value="27pF"/>
+<attribute name="DKPN" value="	
+VJ0603A270FXQCW1BC-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Vitramon" constant="no"/>
+<attribute name="MOPN" value="VJ0603A270FXQCW1BC"/>
+<attribute name="MPN" value="77-VJ0603A270FXQCBC"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
 <technology name="10V_3.3NF">
 <attribute name="CAPACITANCE" value="3.3nF"/>
 <attribute name="DKPN" value="732-7759-1-ND"/>
@@ -12069,14 +12079,14 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <connects>
 <connect gate="G$1" pin="!CS" pad="5"/>
 <connect gate="G$1" pin="CLK" pad="4"/>
-<connect gate="G$1" pin="GND" pad="7 8 13 14"/>
+<connect gate="G$1" pin="GND" pad="13 14"/>
 <connect gate="G$1" pin="IBIAS" pad="16"/>
 <connect gate="G$1" pin="ICMP" pad="15"/>
 <connect gate="G$1" pin="IM" pad="10"/>
 <connect gate="G$1" pin="IP" pad="11"/>
 <connect gate="G$1" pin="SDI" pad="2"/>
 <connect gate="G$1" pin="SDO" pad="3"/>
-<connect gate="G$1" pin="VDD" pad="1 9 12"/>
+<connect gate="G$1" pin="VDD" pad="1 7 8 9 12"/>
 <connect gate="G$1" pin="VLOGIC" pad="6"/>
 </connects>
 <technologies>

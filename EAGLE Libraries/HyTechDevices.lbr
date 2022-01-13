@@ -765,7 +765,7 @@ Note: Based on Page 6.</description>
 <circle x="5.04" y="3.75" radius="1.5" width="0.127" layer="40"/>
 <circle x="5.04" y="-3.75" radius="1.5" width="0.127" layer="40"/>
 </package>
-<package name="Mini_Blade_Fuse_Holder">
+<package name="3568">
 <description>Mini-Blade Fuse Holder
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/215/3568-742601.pdf"&gt;Datasheet&lt;/a&gt;
@@ -9007,22 +9007,6 @@ Leakage Inductance: 0.50 uH max
 </technology>
 </technologies>
 </device>
-<device name="MB" package="MINI-BLADE_FUSE_HOLDER">
-<connects>
-<connect gate="G$1" pin="1" pad="L1 L2"/>
-<connect gate="G$1" pin="2" pad="R1 R2"/>
-</connects>
-<technologies>
-<technology name="10">
-<attribute name="CURRENT" value="10A" constant="no"/>
-<attribute name="DKPN" value="F991-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Littelfuse Inc." constant="no"/>
-<attribute name="MOPN" value="576-0297010.WXNV" constant="no"/>
-<attribute name="MPN" value="0297010.WXNV" constant="no"/>
-<attribute name="VOLTAGE" value="32V" constant="no"/>
-</technology>
-</technologies>
-</device>
 </devices>
 </deviceset>
 <deviceset name="CONNECTOR-AVR-ISP_?" prefix="J">
@@ -9155,6 +9139,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="0.51V"/>
 <attribute name="VOLTAGE_MAX" value="50V"/>
+</technology>
 <technology name="1.5M">
 <attribute name="DKPN" value="311-1.50MHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -9307,6 +9292,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="RESISTANCE" value="13k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="36V"/>
+</technology>
 <technology name="15">
 <attribute name="DKPN" value="541-15.0STR-ND"/>
 <attribute name="MANUFACTURER" value="Vishay Dale"/>
@@ -9938,6 +9924,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
 <technology name="56">
 <attribute name="DKPN" value="P16053TR-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -12299,6 +12286,7 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR:
 <attribute name="MANUFACTURER" value="Pulse Electonics Company"/>
 <attribute name="MOPN" value="673-PA4334362NLT"/>
 <attribute name="MPN" value="PA4334.362NLT"/>
+</technology>
 <technology name="10UH">
 <attribute name="CURRENT_RATED" value="300mA"/>
 <attribute name="CURRENT_SATURATION" value="100mA "/>
@@ -12813,6 +12801,11 @@ Requires ordering of:
 <attribute name="MOPN" value="661-YC250ELL362ML20S"/>
 <attribute name="MPN" value="EKYC250ELL362ML20S"/>
 <attribute name="VOLTAGE" value="25V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="LED_RGBW_*" prefix="D">
 <description>Inolux IN-505FCHWV RGBW LED
 &lt;br&gt;
@@ -12857,6 +12850,9 @@ Requires ordering of:
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
+</connects>
+</device>
+</devices>
 <deviceset name="MOUNTING_HEATSINK_*" prefix="H">
 <description>M3 Mounting Hole
 &lt;ul&gt;

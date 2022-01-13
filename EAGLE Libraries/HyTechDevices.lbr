@@ -12852,24 +12852,6 @@ Requires ordering of:
 <connect gate="G$1" pin="5" pad="5"/>
 </connects>
 </device>
-</devices>
-<deviceset name="MOUNTING_HEATSINK_*" prefix="H">
-<description>M3 Mounting Hole
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.engineersedge.com/iso_socket_head_screw.htm"&gt;Datasheet&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="MOUNTING_HEATSINK" x="0" y="0"/>
-</gates>
-<devices>
-<device name="M3" package="MOUNTING_M3">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="MICRO_V6S" package="MOLEX_MICROFIT_PTH_VERTICAL_06_SINGLE_SPACED">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -12897,6 +12879,28 @@ Requires ordering of:
 <technology name="">
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MPN" value="2165713007"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOUNTING_HEATSINK_*" prefix="H">
+<description>M3 Mounting Hole
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.engineersedge.com/iso_socket_head_screw.htm"&gt;Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="MOUNTING_HEATSINK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="M3" package="MOUNTING_M3">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="LT8631" prefix="U">
@@ -12980,6 +12984,10 @@ Requires ordering of:
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="LOGICGATE_BUFFER" prefix="U">
 <description>Buffer
 &lt;br&gt;

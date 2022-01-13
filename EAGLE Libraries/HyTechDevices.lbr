@@ -4396,6 +4396,7 @@ Header: 0.1" Pitch Pin Header
 <pad name="3" x="-1.4986" y="0" drill="1.0668"/>
 <pad name="2" x="-4.4958" y="0" drill="1.0668"/>
 <pad name="1" x="-7.493" y="0" drill="1.0668"/>
+</package>
 <package name="MOLEX_MICROFIT_SMD_RIGHTANGLE_06_DUAL">
 <description>6 Pin Micro-Fit Right Angle Header, SMD, Dual Row
 &lt;br&gt;

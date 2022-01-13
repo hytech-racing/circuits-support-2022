@@ -765,7 +765,7 @@ Note: Based on Page 6.</description>
 <circle x="5.04" y="3.75" radius="1.5" width="0.127" layer="40"/>
 <circle x="5.04" y="-3.75" radius="1.5" width="0.127" layer="40"/>
 </package>
-<package name="3568">
+<package name="Mini_Blade_Fuse_Holder">
 <description>Mini-Blade Fuse Holder
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/215/3568-742601.pdf"&gt;Datasheet&lt;/a&gt;

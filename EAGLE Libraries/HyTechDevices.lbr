@@ -9554,6 +9554,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="14.14V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="3.3">
+<attribute name="DKPN" value="P3.3AJTR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-3RQF3R3V"/>
+<attribute name="MPN" value="ERJ-3RQF3R3V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="3.3"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="0.57V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="3.32K">
 <attribute name="DKPN" value="YAG1651TR-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>

@@ -292,6 +292,12 @@
 <devices>
 <device name="">
 <technologies>
+<technology name="MINI_BLADE_10">
+<attribute name="DKPN" value="F991-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse"/>
+<attribute name="MOPN" value="576-0297010.WXNV"/>
+<attribute name="MPN" value="0297010.WXNV"/>
+</technology>
 <technology name="MINI_BLADE_2">
 <attribute name="DKPN" value="F986-ND"/>
 <attribute name="MANUFACTURER" value="Littelfuse Inc."/>
@@ -512,6 +518,40 @@
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105308-1208"/>
 <attribute name="MPN" value="105308-1208"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECEPTACLE-7_*">
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="WM2405-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43645-0700"/>
+<attribute name="MPN" value="0436450700"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECEPTACLE-6_SINGLE_*">
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="WM13217-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43645-0608"/>
+<attribute name="MPN" value="0436450608"/>
 </technology>
 </technologies>
 </device>

@@ -507,11 +507,17 @@
 <devices>
 <device name="">
 <technologies>
+<technology name="FLEXSTACK">
+<attribute name="DKPN" value="DW-04-10-G-D-540-ND"/>
+<attribute name="MANUFACTURER" value="Samtec Inc"/>
+<attribute name="MOPN" value="200-DW0410GD540"/>
+<attribute name="MPN" value="DW-04-10-G-D-540"/>
+</technology>
 <technology name="MICROFIT">
 <attribute name="DKPN" value="WM13210-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MOPN" value="538-43025-0808" constant="no"/>
-<attribute name="MPN" value="0430250808" constant="no"/>
+<attribute name="MOPN" value="538-43025-0808"/>
+<attribute name="MPN" value="0430250808"/>
 </technology>
 <technology name="NANOFIT">
 <attribute name="DKPN" value="WM14964-ND"/>

@@ -4189,8 +4189,6 @@ Header: 0.1" Pitch Pin Header
 <wire x1="-3.3" y1="-3.3" x2="-3.3" y2="0" width="0.127" layer="21"/>
 <text x="-3.429" y="3.429" size="1.27" layer="21" font="vector">&gt;NAME</text>
 <rectangle x1="-5.08" y1="-3.81" x2="5.08" y2="3.81" layer="39"/>
-<rectangle x1="-1.27" y1="-3.81" x2="1.27" y2="3.81" layer="41"/>
-<rectangle x1="-1.27" y1="-3.81" x2="1.27" y2="3.81" layer="43"/>
 </package>
 <package name="PA4334">
 <smd name="1" x="-1.15" y="0" dx="2.7" dy="0.8" layer="1" rot="R90"/>
@@ -4201,8 +4199,6 @@ Header: 0.1" Pitch Pin Header
 <wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <text x="-3.175" y="1.651" size="1.27" layer="21">&gt;NAME</text>
 <rectangle x1="-2.54" y1="-2.54" x2="2.54" y2="2.54" layer="39"/>
-<rectangle x1="-1.27" y1="-2.54" x2="1.27" y2="2.54" layer="41"/>
-<rectangle x1="-1.27" y1="-2.54" x2="1.27" y2="2.54" layer="43"/>
 </package>
 <package name="MOLEX_MICROFIT_PTH_VERTICAL_05_SINGLE">
 <description>5 Pin Micro-Fit Vertical Header, Through-Hole, Single Row
@@ -10843,7 +10839,7 @@ Leakage Inductance: 0.50 uH max
 </technology>
 </technologies>
 </device>
-<device name="" package="FLEX_STACK_PTH_08_DUAL">
+<device name="FS" package="FLEX_STACK_PTH_08_DUAL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -10855,7 +10851,13 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="8" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="S">
+<attribute name="DKPN" value="A32935-ND"/>
+<attribute name="MANUFACTURER" value="TE Connectivity"/>
+<attribute name="MOPN" value="571-5-534206-4
+"/>
+<attribute name="MPN" value="5-534206-4"/>
+</technology>
 </technologies>
 </device>
 </devices>

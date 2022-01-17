@@ -10839,7 +10839,7 @@ Leakage Inductance: 0.50 uH max
 </technology>
 </technologies>
 </device>
-<device name="FS" package="FLEX_STACK_PTH_08_DUAL">
+<device name="S" package="FLEX_STACK_PTH_08_DUAL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -10852,11 +10852,10 @@ Leakage Inductance: 0.50 uH max
 </connects>
 <technologies>
 <technology name="S">
-<attribute name="DKPN" value="A32935-ND"/>
-<attribute name="MANUFACTURER" value="TE Connectivity"/>
-<attribute name="MOPN" value="571-5-534206-4
-"/>
-<attribute name="MPN" value="5-534206-4"/>
+<attribute name="DKPN" value="S7107-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MOPN" value=""/>
+<attribute name="MPN" value="PPPC042LFBN-RC"/>
 </technology>
 </technologies>
 </device>

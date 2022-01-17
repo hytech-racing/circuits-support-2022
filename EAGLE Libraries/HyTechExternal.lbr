@@ -508,10 +508,10 @@
 <device name="">
 <technologies>
 <technology name="FLEXSTACK">
-<attribute name="DKPN" value="DW-04-10-G-D-540-ND"/>
+<attribute name="DKPN" value="ZW-04-11-G-D-522-158-ND"/>
 <attribute name="MANUFACTURER" value="Samtec Inc"/>
-<attribute name="MOPN" value="200-DW0410GD540"/>
-<attribute name="MPN" value="DW-04-10-G-D-540"/>
+<attribute name="MOPN" value="200-ZW0411GD522158"/>
+<attribute name="MPN" value="ZW-04-11-G-D-522-158"/>
 </technology>
 <technology name="MICROFIT">
 <attribute name="DKPN" value="WM13210-ND"/>
@@ -529,7 +529,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="RECEPTACLE-7_*">
+<deviceset name="RECEPTACLE-7_*" prefix="O">
 <gates>
 <gate name="G$1" symbol="ORDERING" x="0" y="0"/>
 </gates>
@@ -546,7 +546,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="RECEPTACLE-6_SINGLE_*">
+<deviceset name="RECEPTACLE-6_SINGLE_*" prefix="O">
 <gates>
 <gate name="G$1" symbol="ORDERING" x="0" y="0"/>
 </gates>

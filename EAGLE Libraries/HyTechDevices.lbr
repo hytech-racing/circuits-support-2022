@@ -9313,6 +9313,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="33K">
+<attribute name="DKPN" value="311-33.0KHRTR-ND"/>
+<attribute name="MANUFACTURER" value="YAGEO"/>
+<attribute name="MOPN" value="603-RC0603FR-0733KL"/>
+<attribute name="MPN" value="RC0603FR-0733KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="33k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="57.44V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="36.5K">
 <attribute name="DKPN" value="311-36.5KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>

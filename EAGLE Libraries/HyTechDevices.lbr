@@ -9291,6 +9291,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="54.77V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="31.6K">
+<attribute name="DKPN" value="311-31.6KHRTR-ND"/>
+<attribute name="MANUFACTURER" value="YAGEO"/>
+<attribute name="MOPN" value="603-RC0603FR-0731K6L"/>
+<attribute name="MPN" value="RC0603FR-0731K6L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="31.6k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="56.21V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="330K">
 <attribute name="DKPN" value="P330KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>

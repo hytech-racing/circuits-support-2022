@@ -276,6 +276,12 @@
 <attribute name="MOPN" value="538-43645-0200"/>
 <attribute name="MPN" value="0436450200"/>
 </technology>
+<technology name="NANOFIT">
+<attribute name="DKPN" value="WM14958-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105307-1202"/>
+<attribute name="MPN" value="105307-1202"/>
+</technology>
 </technologies>
 </device>
 </devices>

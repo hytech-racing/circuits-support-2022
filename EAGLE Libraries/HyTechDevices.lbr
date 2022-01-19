@@ -10022,6 +10022,12 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
+<technology name="TK100S04N1LLQ">
+<attribute name="DKPN" value="TK100S04N1LLQCT-ND"/>
+<attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage"/>
+<attribute name="MOPN" value="757-TK100S04N1LLQ"/>
+<attribute name="MPN" value="TK100S04N1L,LQ"/>
+</technology>
 <technology name="TK6P65W">
 <attribute name="DKPN" value="TK6P65WRQCT-ND"/>
 <attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage"/>

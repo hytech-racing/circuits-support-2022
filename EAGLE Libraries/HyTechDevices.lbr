@@ -8781,7 +8781,7 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
+<technology name=".8">
 <attribute name="CURRENT" value="800mA" constant="no"/>
 <attribute name="DKPN" value="486-1470-ND" constant="no"/>
 <attribute name="FUSE_TYPE" value="THT" constant="no"/>

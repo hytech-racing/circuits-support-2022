@@ -517,6 +517,27 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name=".1&quot;_JUMPER" prefix="O">
+<description>2 Position Jumper Shunt Connector - .1" Pitch
+&lt;br&gt;
+&lt;a href="https://drawings-pdf.s3.amazonaws.com/11513.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="S9344-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MOPN" value=""/>
+<attribute name="MPN" value="SPC02SVJN-RC"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

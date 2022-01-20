@@ -4427,7 +4427,9 @@ MSOP 12 with exposed pad.
 <package name="1X02">
 <description>2 pin .1" header
 &lt;br&gt;
-&lt;a href="https://s3.amazonaws.com/catalogspreads-pdf/PAGE112-113%20.100%20MALE%20HDR.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://s3.amazonaws.com/catalogspreads-pdf/PAGE112-113%20.100%20MALE%20HDR.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Note: jumper (SPC02SVJN-RC or similar) needs to be ordered separately</description>
 <wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.127" layer="21"/>
 <wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.127" layer="21"/>
 <wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.127" layer="21"/>
@@ -9863,10 +9865,10 @@ Leakage Inductance: 0.50 uH max
 </connects>
 <technologies>
 <technology name="1X02">
-<attribute name="DKPN" value="S1011E-02-ND"/>
+<attribute name="DKPN" value="S1011EC-02-ND"/>
 <attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
 <attribute name="MOPN" value=""/>
-<attribute name="MPN" value="PBC02SAAN"/>
+<attribute name="MPN" value="PRPC002SAAN-RC"/>
 </technology>
 </technologies>
 </device>

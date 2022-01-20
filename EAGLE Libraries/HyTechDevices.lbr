@@ -2330,21 +2330,6 @@ visible on the PCB.</text>
 <circle x="8.1" y="8.1" radius="3" width="0" layer="40"/>
 <circle x="8.1" y="8.1" radius="3" width="0" layer="39"/>
 </package>
-<package name="BR-1632A/HAN">
-<description>BR-1632A/HAN RTC Battery
-&lt;br&gt;
-&lt;a href="https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Batteries%20PDFS/BR-1632A_HAN_Dwg.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<pad name="-" x="-7.6" y="0" drill="0.8"/>
-<pad name="+" x="7.6" y="0" drill="0.8"/>
-<circle x="-1.3" y="0" radius="8.75" width="0.127" layer="21"/>
-<text x="9.525" y="0" size="1.27" layer="21" font="vector" rot="R180" align="center">+</text>
-<text x="-10.795" y="0" size="1.27" layer="21" font="vector" rot="R180" align="center">-</text>
-<text x="-1.27" y="8.89" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<circle x="-7.6" y="0" radius="0.889" width="0.127" layer="39"/>
-<circle x="-7.6" y="0" radius="0.889" width="0.127" layer="40"/>
-<circle x="7.6" y="0" radius="0.889" width="0.127" layer="39"/>
-<circle x="7.6" y="0" radius="0.889" width="0.127" layer="40"/>
-</package>
 <package name="L*A">
 <description>L*A Capacitor
 &lt;br&gt;
@@ -3767,7 +3752,7 @@ Dashed line is edge of mated connector.</description>
 <rectangle x1="-5.08" y1="-26.162" x2="5.08" y2="-9.525" layer="40"/>
 </package>
 <package name="5222">
-<description>5222 Spring
+<description>Keystone Battery Contact Spring
 
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/215/5222-743174.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -4423,6 +4408,21 @@ MSOP 12 with exposed pad.
 <pad name="1" x="0" y="0" drill="3.4" diameter="6"/>
 <text x="0" y="3.5" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-3.5" size="0.8128" layer="27" font="vector" align="top-center">M3</text>
+</package>
+<package name="498">
+<description>Keystone 498 SMT 1/3N Battery Holder &lt;br&gt;
+&lt;a href = "https://www.mouser.com/datasheet/2/215/98-745913.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-7.5184" y="0" dx="3.9624" dy="3.175" layer="1"/>
+<smd name="2" x="7.5184" y="0" dx="3.9624" dy="3.175" layer="1"/>
+<hole x="-6.4262" y="6.096" drill="1.3462"/>
+<wire x1="-7.239" y1="6.858" x2="-7.239" y2="-6.858" width="0.127" layer="21"/>
+<wire x1="-7.239" y1="-6.858" x2="7.239" y2="-6.858" width="0.127" layer="21"/>
+<wire x1="7.239" y1="-6.858" x2="7.239" y2="6.858" width="0.127" layer="21"/>
+<wire x1="7.239" y1="6.858" x2="-7.239" y2="6.858" width="0.127" layer="21"/>
+<text x="-11.43" y="0" size="0.8128" layer="21" align="center">+</text>
+<text x="11.43" y="0" size="0.8128" layer="21" align="center">–</text>
+<text x="0" y="7.62" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-10.16" y1="-7.366" x2="10.16" y2="7.366" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -8092,6 +8092,21 @@ Note: Mode connected to GND per page 70 of &lt;a href="https://www.analog.com/me
 <wire x1="6.35" y1="0" x2="0" y2="3.81" width="0.254" layer="94"/>
 <pin name="OUT" x="8.89" y="0" visible="pad" length="short" direction="out" rot="R180"/>
 </symbol>
+<symbol name="BATTERY_HOLDER">
+<wire x1="-0.635" y1="-0.635" x2="-0.635" y2="0.635" width="0.4064" layer="94"/>
+<wire x1="-1.905" y1="-2.54" x2="-1.905" y2="2.54" width="0.4064" layer="94"/>
+<pin name="PLUS" x="-10.16" y="0" visible="off" length="short" direction="pwr"/>
+<pin name="MINUS" x="7.62" y="0" visible="off" length="short" direction="pwr" rot="R180"/>
+<text x="-7.62" y="5.842" size="1.27" layer="95">&gt;NAME</text>
+<wire x1="2.54" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-2.032" y2="0" width="0.1524" layer="94"/>
+<text x="-7.62" y="-5.842" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<text x="-3.175" y="1.27" size="1.778" layer="94" rot="R270" align="center">+</text>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-7.62" y2="5.08" width="0.1524" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-2_?_*" prefix="J">
@@ -8725,6 +8740,7 @@ Leakage Inductance: 0.50 uH max
 <technology name="1">
 <attribute name="CURRENT" value="1A"/>
 <attribute name="DKPN" value="F10985CT-ND"/>
+<attribute name="FUSE_TYPE" value="SMD"/>
 <attribute name="MANUFACTURER" value="Littelfuse Inc."/>
 <attribute name="MOPN" value="576-0885001.DR"/>
 <attribute name="MPN" value="0885001.DR"/>
@@ -8733,6 +8749,7 @@ Leakage Inductance: 0.50 uH max
 <technology name="1.25">
 <attribute name="CURRENT" value="1.25A"/>
 <attribute name="DKPN" value="F10986CT-ND"/>
+<attribute name="FUSE_TYPE" value="SMD"/>
 <attribute name="MANUFACTURER" value="Littelfuse Inc."/>
 <attribute name="MOPN" value="576-08851.25DR"/>
 <attribute name="MPN" value="08851.25DR"/>
@@ -8741,6 +8758,7 @@ Leakage Inductance: 0.50 uH max
 <technology name="1.6">
 <attribute name="CURRENT" value="1.6A"/>
 <attribute name="DKPN" value="F10987CT-ND"/>
+<attribute name="FUSE_TYPE" value="SMD"/>
 <attribute name="MANUFACTURER" value="Littelfuse Inc."/>
 <attribute name="MOPN" value="576-088501.6DR"/>
 <attribute name="MPN" value="088501.6DR"/>
@@ -9733,31 +9751,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-43045-0411"/>
 <attribute name="MPN" value="0430450411"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="BATTERY" prefix="BT">
-<description>Battery
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/315/panasonic-lithium-coin-hightemp-br1632a-datasheet-876746.pdf"&gt;BR1632A/HAN&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="BATTERY" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="BR-1632A/HAN">
-<connects>
-<connect gate="G$1" pin="MINUS" pad="-"/>
-<connect gate="G$1" pin="PLUS" pad="+"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="P023-ND"/>
-<attribute name="MANUFACTURER" value="Panasonic - BSG"/>
-<attribute name="MOPN" value="658-BR1632A/HAN"/>
-<attribute name="MPN" value="BR-1632A/HAN"/>
-<attribute name="VOLTAGE" value=" 3V"/>
 </technology>
 </technologies>
 </device>
@@ -12260,6 +12253,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <technologies>
 <technology name="MINIBLADE">
 <attribute name="DKPN" value="36-3588-ND"/>
+<attribute name="FUSE_TYPE" value="MINI 297"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics"/>
 <attribute name="MOPN" value="534-3588"/>
 <attribute name="MPN" value="3588"/>
@@ -12274,6 +12268,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <technologies>
 <technology name="MINIBLADE">
 <attribute name="DKPN" value="36-3568-ND"/>
+<attribute name="FUSE_TYPE" value="MINI 297"/>
 <attribute name="MANUFACTURER" value="Keystone"/>
 <attribute name="MOPN" value="534-3568"/>
 <attribute name="MPN" value="3568"/>
@@ -12511,6 +12506,34 @@ Requires ordering of:
 <attribute name="MANUFACTURER" value="Texas Instruments"/>
 <attribute name="MOPN" value="595-SN74LVC1G34DCKT "/>
 <attribute name="MPN" value="SN74LVC1G34DCKT"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BATTERY_HOLDER_*" prefix="XB">
+<description>Keystone 498 1/3N Cell Holder
+&lt;p&gt;
+PN for the holder; if 1/3N batteries needed, order separately.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/215/98-745913.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="BATTERY_HOLDER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="KEYSTONE_498" package="498">
+<connects>
+<connect gate="G$1" pin="MINUS" pad="2"/>
+<connect gate="G$1" pin="PLUS" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BATTERY_TYPE" value="1/3N"/>
+<attribute name="DKPN" value="36-498-ND"/>
+<attribute name="MANUFACTURER" value="Keystone Electronics"/>
+<attribute name="MOPN" value="534-498"/>
+<attribute name="MPN" value="498"/>
 </technology>
 </technologies>
 </device>

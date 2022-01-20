@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1898,7 +1898,7 @@ Note: Based on page 48 and 49.</description>
 <smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
 <text x="-2.032" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
-<text x="0" y="1.27" size="1.524" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
+<text x="0" y="1.27" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
 </package>
 <package name="TSSOP-24">
 <description>TSSOP-24
@@ -4405,7 +4405,7 @@ MSOP 12 with exposed pad.
 <circle x="0" y="0" radius="3.2" width="0" layer="39"/>
 <circle x="0" y="0" radius="3.2" width="0" layer="40"/>
 <circle x="0" y="0" radius="3.2" width="0" layer="43"/>
-<pad name="P$1" x="0" y="0" drill="3.4" diameter="6"/>
+<pad name="1" x="0" y="0" drill="3.4" diameter="6"/>
 <text x="0" y="3.5" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-3.5" size="0.8128" layer="27" font="vector" align="top-center">M3</text>
 </package>
@@ -5048,7 +5048,7 @@ Pins tied to GND: SLOW
 </symbol>
 <symbol name="TEST_POINT">
 <circle x="-1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<pin name="P$1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <text x="-2.54" y="1.778" size="1.27" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-1.778" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
@@ -5070,8 +5070,8 @@ Pins tied to GND: SLOW
 </symbol>
 <symbol name="JUMPER">
 <wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<pin name="P$1" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<pin name="P$2" x="5.08" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="1" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="2" x="5.08" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 <text x="0" y="0.508" size="1.27" layer="94">JUMP</text>
 <text x="0" y="2.54" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-3.302" size="1.27" layer="96" align="top-left">&gt;MPN</text>
@@ -6255,7 +6255,7 @@ I2C Mode
 <wire x1="-1.016" y1="-2.8575" x2="0" y2="-3.175" width="0.1524" layer="94"/>
 <wire x1="0" y1="0.635" x2="1.016" y2="0.3175" width="0.1524" layer="94"/>
 <wire x1="0" y1="-5.08" x2="0" y2="-3.175" width="0.1524" layer="94"/>
-<pin name="P$1" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
 <wire x1="-1.524" y1="-3.556" x2="-1.524" y2="-1.524" width="0.1524" layer="94"/>
 <wire x1="-1.524" y1="-1.524" x2="-2.032" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="-1.524" y1="-1.524" x2="-1.016" y2="-2.54" width="0.1524" layer="94"/>
@@ -8032,7 +8032,7 @@ with up to 100mA of output current</description>
 <symbol name="MOUNTING_HEATSINK">
 <description>&lt;a href = "https://my.altium.com/altium-designer/getting-started/creating-pcb-mounting-holes"&gt;Mounting hole&lt;/a&gt; with exposed copper for heatsinking.</description>
 <circle x="0" y="0" radius="1.905" width="0.1524" layer="94"/>
-<pin name="P$1" x="-3.81" y="0" visible="off" length="point" direction="pas"/>
+<pin name="1" x="-3.81" y="0" visible="off" length="point" direction="pas"/>
 <circle x="0" y="0" radius="1.27" width="0.1524" layer="94"/>
 <wire x1="-1.905" y1="0" x2="-3.81" y2="0" width="0.1524" layer="94"/>
 <text x="0" y="2.54" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
@@ -9789,8 +9789,8 @@ Leakage Inductance: 0.50 uH max
 <devices>
 <device name="NANOFIT_SMD_VERTICAL" package="MOLEX_NANOFIT_SMD_VERTICAL_02">
 <connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="BLACK">
@@ -9809,8 +9809,8 @@ Leakage Inductance: 0.50 uH max
 </device>
 <device name="0603" package="0603-RES">
 <connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -11013,7 +11013,7 @@ Requires ordering of:
 <devices>
 <device name="" package="5015">
 <connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="1" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -12412,7 +12412,7 @@ Requires ordering of:
 <devices>
 <device name="M3" package="MOUNTING_M3">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="1" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12514,7 +12514,7 @@ Requires ordering of:
 <deviceset name="BATTERY_HOLDER_*" prefix="XB">
 <description>Keystone 498 1/3N Cell Holder
 &lt;p&gt;
-PN for the holder; if 1/3N batteries needed, order separately. 
+PN for the holder; if 1/3N batteries needed, order separately.
 &lt;ul&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/215/98-745913.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;/ul&gt;</description>

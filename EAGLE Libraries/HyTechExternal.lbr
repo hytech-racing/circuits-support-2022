@@ -299,7 +299,9 @@
 <device name="">
 <technologies>
 <technology name="MINI_BLADE_2">
+<attribute name="CURRENT" value="2A"/>
 <attribute name="DKPN" value="F986-ND"/>
+<attribute name="FUSE_TYPE" value="MINI 297"/>
 <attribute name="MANUFACTURER" value="Littelfuse Inc."/>
 <attribute name="MOPN" value="576-0297002.WXNV"/>
 <attribute name="MPN" value="0297002.WXNV"/>
@@ -518,6 +520,30 @@
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105308-1208"/>
 <attribute name="MPN" value="105308-1208"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BATTERY_*" prefix="O">
+<description>Battery
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.fdk.com/battery/lithium_e/data_sheet/CR1_3N_spec-sheet.pdf"&gt;CR-1/3N&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="CR-1/3N">
+<attribute name="BATTERY_TYPE" value="1/3N"/>
+<attribute name="DKPN" value="SY100-ND"/>
+<attribute name="MANUFACTURER" value="FDK America, Inc., a member of Fujitsu Group"/>
+<attribute name="MOPN" value="639-CR1/3N"/>
+<attribute name="MPN" value="CR-1-3N"/>
+<attribute name="VOLTAGE" value="3V"/>
 </technology>
 </technologies>
 </device>

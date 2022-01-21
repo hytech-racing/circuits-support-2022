@@ -21,10 +21,14 @@ if (board) {
                     cmd += "ATTRIBUTE " + C.element.name + " SIGNAL '" + S.name + "'; "; // set SIGNAL attribute
                     C.element.texts(T) { // loop through texts
                         if(S.name == T.value) { // if text is signal attribute text
-                            cmd += "CHANGE DISPLAY VALUE (" + ftoa(u2mil(T.x)) + " " + ftoa(u2mil(T.y)) + "); ";
+                            cmd += "DISPLAY none 27 28; ";
                             cmd += "CHANGE FONT VECTOR ("+ ftoa(u2mil(T.x)) + " " + ftoa(u2mil(T.y)) + "); ";
                             cmd += "CHANGE SIZE 32 ("+ ftoa(u2mil(T.x)) + " " + ftoa(u2mil(T.y)) + "); ";
-                            cmd += "CHANGE RATIO 8 ("+ ftoa(u2mil(T.x)) + " " + ftoa(u2mil(T.y)) + "); \n";
+                            cmd += "CHANGE RATIO 8 ("+ ftoa(u2mil(T.x)) + " " + ftoa(u2mil(T.y)) + "); ";
+                            cmd += "CHANGE ALIGN BOTTOM-CENTER ("+ ftoa(u2mil(T.x)) + " " + ftoa(u2mil(T.y)) + "); ";
+                            cmd += "MOVE ("+ ftoa(u2mil(T.x)) + " " + ftoa(u2mil(T.y)) + ") ("+ ftoa(u2mil(T.x)) + " " + ftoa(u2mil(T.y) + 50) + "); ";
+                            cmd += "CHANGE LAYER 21 ("+ ftoa(u2mil(T.x)) + " " + ftoa(u2mil(T.y) + 50) + "); ";
+                            cmd += "DISPLAY LAST; \n";
                         }
                     }
                 }

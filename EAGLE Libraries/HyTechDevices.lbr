@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -8786,10 +8786,10 @@ Leakage Inductance: 0.50 uH max
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="S2011EC-03-ND"/>
+<attribute name="DKPN" value="S2351E-05-ND"/>
 <attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
 <attribute name="MOPN" value=""/>
-<attribute name="MPN" value="PRPC003DAAN-RC"/>
+<attribute name="MPN" value="GBC05DABN-M30"/>
 </technology>
 </technologies>
 </device>

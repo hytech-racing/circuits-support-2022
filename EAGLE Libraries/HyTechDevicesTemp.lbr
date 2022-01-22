@@ -71,7 +71,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -312,11 +312,11 @@
 <pin name="+VIN" x="-2.54" y="-7.62" length="short" direction="in"/>
 <pin name="ON/OFF" x="-2.54" y="-22.86" length="short" direction="in"/>
 <pin name="-VIN" x="-2.54" y="-15.24" length="short" direction="in"/>
-<pin name="-VOUT" x="25.4" y="-27.94" length="short" direction="out" rot="R180"/>
+<pin name="-VOUT" x="25.4" y="-27.94" length="short" direction="sup" rot="R180"/>
 <pin name="-SENSE" x="25.4" y="-22.86" length="short" direction="in" rot="R180"/>
 <pin name="TRIM" x="25.4" y="-15.24" length="short" direction="in" rot="R180"/>
 <pin name="+SENSE" x="25.4" y="-7.62" length="short" direction="in" rot="R180"/>
-<pin name="+VOUT" x="25.4" y="-2.54" length="short" direction="out" rot="R180"/>
+<pin name="+VOUT" x="25.4" y="-2.54" length="short" direction="sup" rot="R180"/>
 <wire x1="0" y1="0" x2="0" y2="-30.48" width="0.254" layer="94"/>
 <wire x1="0" y1="-30.48" x2="22.86" y2="-30.48" width="0.254" layer="94"/>
 <wire x1="22.86" y1="-30.48" x2="22.86" y2="0" width="0.254" layer="94"/>

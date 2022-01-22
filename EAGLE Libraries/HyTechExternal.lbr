@@ -201,7 +201,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="THERMISTOR" prefix="O">
+<deviceset name="THERMISTOR_*" prefix="O">
 <description>Thermistor
 &lt;br&gt;
 &lt;ul&gt;
@@ -213,7 +213,7 @@
 <devices>
 <device name="">
 <technologies>
-<technology name="">
+<technology name="NTC_LUG">
 <attribute name="B" value="3984K"/>
 <attribute name="B_RANGE" value="25/85"/>
 <attribute name="DKPN" value="56-NTCALUG02A103F161A-ND"/>
@@ -232,6 +232,7 @@
 &lt;br&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/0430300003_CRIMP_TERMINALS-2845469.pdf"&gt;Microfit, 20-24&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/2/1053002300_CRIMP_TERMINALS-2829694.pdf"&gt;Nanofit, 20-22&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ORDERING" x="0" y="0"/>
@@ -246,12 +247,19 @@
 <attribute name="MOPN" value="538-43030-0003"/>
 <attribute name="MPN" value="0430300003"/>
 </technology>
+<technology name="NANOFIT_20-22">
+<attribute name="DKPN" value="WM15011TR-ND"/>
+<attribute name="GAUGE" value="20-22"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105300-2300"/>
+<attribute name="MPN" value="105300-2300"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PLUG-2_*" prefix="O">
-<description>Plug, 2 Pin
+<deviceset name="RECEPTACLE-2_*" prefix="O">
+<description>Receptacle, 2 Pin
 &lt;br&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/0436450200_CRIMP_HOUSINGS-2866614.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
@@ -263,11 +271,11 @@
 <devices>
 <device name="">
 <technologies>
-<technology name="MICROFIT_HORIZONTAL">
+<technology name="MICROFIT">
 <attribute name="DKPN" value="WM1845-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MOPN" value="Molex"/>
-<attribute name="MPN" value="436450200"/>
+<attribute name="MOPN" value="538-43645-0200"/>
+<attribute name="MPN" value="0436450200"/>
 </technology>
 <technology name="NANOFIT">
 <attribute name="DKPN" value="WM14958-ND"/>
@@ -314,13 +322,33 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="HEADER_FEMALE">
+<deviceset name="HEADER_FEMALE_PINS_*_PITCH" prefix="O">
 <gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
 <technologies>
-<technology name=""/>
+<technology name="13_0.1&quot;">
+<attribute name="DKPN" value="S7046-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC131LFBN-RC"/>
+</technology>
+<technology name="14_0.1&quot;">
+<attribute name="DKPN" value="S7047-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC141LFBN-RC"/>
+</technology>
+<technology name="24_0.1&quot;">
+<attribute name="DKPN" value="S7057-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC241LFBN-RC"/>
+</technology>
+<technology name="2_0.1&quot;">
+<attribute name="DKPN" value="S7035-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC021LFBN-RC"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -347,11 +375,76 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="FUSE_*" prefix="O">
-<description>Fuse
+<deviceset name="ULTIMATE_GPS" prefix="O">
+<description>Adafruit Ultimate GPS
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/737/adafruit_ultimate_gps-779243.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="1528-1153-ND"/>
+<attribute name="MANUFACTURER" value="Adafruit Industries LLC"/>
+<attribute name="MOPN" value="485-746"/>
+<attribute name="MPN" value="746"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STANDOFF_*" prefix="O">
+<description>Standoffs
 &lt;br&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_MINI_Datasheet-1077557.pdf"&gt;MINI Blade&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/50/MSB3_0_XXSP-2301677.pdf"&gt;Bivar M3&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="M3_5MM">
+<attribute name="DKPN" value="MSB3.0-05SP-ND"/>
+<attribute name="HEIGHT" value="5mm"/>
+<attribute name="MANUFACTURER" value="Bivar Inc."/>
+<attribute name="MOPN" value="749-MSB3.0-05SP"/>
+<attribute name="MPN" value="MSB3.0-05SP"/>
+<attribute name="SCREW" value="3mm"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ANTENNA" prefix="O">
+<description>Antenna for GPS/Xbee
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/336/W3906B0100-1510198.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="1837-1002-ND"/>
+<attribute name="MANUFACTURER" value="PulseLarsen Antennas"/>
+<attribute name="MOPN" value="673-W3906B0100"/>
+<attribute name="MPN" value="W3906B0100"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECEPTACLE-4_*" prefix="O">
+<description>Receptacle, 4 Pin
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/0430250408_CRIMP_HOUSINGS-2845587.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/1053081204_CRIMP_HOUSINGS-2868911.pdf"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ORDERING" x="0" y="0"/>
@@ -359,17 +452,75 @@
 <devices>
 <device name="">
 <technologies>
-<technology name="MINI_BLADE_10">
-<attribute name="DKPN" value="F991-ND"/>
-<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
-<attribute name="MOPN" value="576-0297010.WXNV"/>
-<attribute name="MPN" value="0297010.WXNV"/>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="WM11225-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43025-0408"/>
+<attribute name="MPN" value="0430250408"/>
 </technology>
-<technology name="MINI_BLADE_2">
-<attribute name="DKPN" value="F986-ND"/>
-<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
-<attribute name="MOPN" value="576-0297002.WXNV"/>
-<attribute name="MPN" value="0297002.WXNV"/>
+<technology name="NANOFIT">
+<attribute name="DKPN" value="WM14962-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105308-1204"/>
+<attribute name="MPN" value="105308-1204"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECEPTACLE-6_*" prefix="O">
+<description>Receptacle, 6 Pin
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/0430250608_CRIMP_HOUSINGS-2876899.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/4/1053081206_CRIMP_HOUSINGS-2883231.pdf"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="WM13209-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43025-0608"/>
+<attribute name="MPN" value="0430250608"/>
+</technology>
+<technology name="NANOFIT">
+<attribute name="DKPN" value="WM14963-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105308-1206"/>
+<attribute name="MPN" value="105308-1206"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECEPTACLE-8_*" prefix="O">
+<description>Receptacle, 8 Pin
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/0430250808_CRIMP_HOUSINGS-2845567.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/4/1053081208_CRIMP_HOUSINGS-2883437.pdf"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="WM13210-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43025-0808" constant="no"/>
+<attribute name="MPN" value="0430250808" constant="no"/>
+</technology>
+<technology name="NANOFIT">
+<attribute name="DKPN" value="WM14964-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105308-1208"/>
+<attribute name="MPN" value="105308-1208"/>
 </technology>
 </technologies>
 </device>

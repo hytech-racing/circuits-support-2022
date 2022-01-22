@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1246,16 +1246,18 @@ visible on the PCB.</text>
 <circle x="10.2884" y="10.2884" radius="3" width="0" layer="39"/>
 <circle x="10.2884" y="10.2884" radius="3" width="0" layer="40"/>
 <circle x="10.2884" y="10.2884" radius="3" width="0" layer="41"/>
-<circle x="10.2884" y="10.2884" radius="3" width="0" layer="42"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0" layer="43"/>
 <hole x="-10.2884" y="-10.2884" drill="3.4"/>
 <circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="39"/>
 <circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="40"/>
 <circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="41"/>
-<circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="42"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="43"/>
 <circle x="0" y="0" radius="13" width="0" layer="39"/>
 <circle x="0" y="0" radius="8.72" width="0" layer="40"/>
 <text x="0" y="8.89" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center">&gt;NAME</text>
 <text x="0" y="13.97" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="42"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0" layer="42"/>
 </package>
 <package name="SOURIAU_14-35">
 <description>SOURIAU 37 PIN
@@ -9383,8 +9385,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="DKPN" value="P20155CT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
 <attribute name="MOPN" value="667-ERJ-PB3B4122V"/>
-<attribute name="MPN" value="
-ERJ-PB3B4122V"/>
+<attribute name="MPN" value=" ERJ-PB3B4122V"/>
 <attribute name="POWER" value="0.2W"/>
 <attribute name="RESISTANCE" value="41.2k"/>
 <attribute name="TOLERANCE" value="0.1%"/>

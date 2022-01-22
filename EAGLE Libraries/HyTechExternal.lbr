@@ -299,6 +299,14 @@
 <devices>
 <device name="">
 <technologies>
+<technology name="MINI_BLADE_10A">
+<attribute name="CURRENT" value="10A"/>
+<attribute name="DKPN" value="F991-ND"/>
+<attribute name="FUSE_TYPE" value="MINI 297"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-0297010.WXNV"/>
+<attribute name="MPN" value="0297010.WXNV"/>
+</technology>
 <technology name="MINI_BLADE_2A">
 <attribute name="CURRENT" value="2A"/>
 <attribute name="DKPN" value="F986-ND"/>
@@ -306,12 +314,6 @@
 <attribute name="MANUFACTURER" value="Littelfuse Inc."/>
 <attribute name="MOPN" value="576-0297002.WXNV"/>
 <attribute name="MPN" value="0297002.WXNV"/>
-</technology>
-<technology name="MINI_BLADE_10A">
-<attribute name="DKPN" value="F991-ND"/>
-<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
-<attribute name="MOPN" value="576-0297010.WXNV"/>
-<attribute name="MPN" value="0297010.WXNV"/>
 </technology>
 </technologies>
 </device>

@@ -5224,7 +5224,7 @@ Layer: 94 Symbol</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FRAME_SCHEMATIC_ONLY">
+<deviceset name="FRAME_SCHEMATIC_ONLY" prefix="FRAME">
 <description>HyTech Racing Frame (ANSI Size A), For Schematics unrelated to physcial circuitry.
 &lt;br&gt;
 Prints on US Letter Landscape 8.5" by 11"

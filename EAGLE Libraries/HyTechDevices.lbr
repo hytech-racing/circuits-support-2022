@@ -2847,8 +2847,8 @@ Note: Based on Page 88.</description>
 <circle x="3.75" y="0" radius="1" width="0" layer="40"/>
 <circle x="0" y="0" radius="9.5" width="0" layer="39"/>
 </package>
-<package name="0885">
-<description>0885 Fuse
+<package name="885">
+<description>885 Fuse
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
@@ -4435,14 +4435,18 @@ MSOP 12 with exposed pad.
 <circle x="0" y="0" radius="4.2418" width="0" layer="40"/>
 </package>
 <package name="OMF_125">
-<description>Footprint for Schurter MST 250 Series fuse.&lt;br&gt;
-&lt;a href = "https://www.mouser.com/datasheet/2/358/typ_MST_250-1772502.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<pad name="1" x="-2.54" y="0" drill="1"/>
-<pad name="2" x="2.54" y="0" drill="1"/>
-<text x="0" y="4.445" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<circle x="0" y="0" radius="4.2418" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="4.2418" width="0" layer="39"/>
-<circle x="0" y="0" radius="4.2418" width="0" layer="40"/>
+<description>Footprint for Schurter OMF 125 Series Fuse.&lt;br&gt;
+&lt;a href = "https://www.mouser.com/datasheet/2/358/typ_OMF_125-1275954.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-3.25" y="0" dx="3" dy="2.8" layer="1"/>
+<smd name="2" x="3.25" y="0" dx="3" dy="2.8" layer="1"/>
+<wire x1="-3.7" y1="1.6" x2="-3.7" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-3.7" y1="-1.6" x2="3.7" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="3.7" y1="-1.6" x2="3.7" y2="1.6" width="0.127" layer="21"/>
+<wire x1="3.7" y1="1.6" x2="-3.7" y2="1.6" width="0.127" layer="21"/>
+<text x="0" y="1.905" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-5.08" y1="-1.905" x2="5.08" y2="1.905" layer="39"/>
+<rectangle x1="-1.75" y1="-1.905" x2="1.75" y2="1.905" layer="43"/>
+<rectangle x1="-1.75" y1="-1.905" x2="1.75" y2="1.905" layer="41"/>
 </package>
 </packages>
 <symbols>
@@ -8745,7 +8749,7 @@ Leakage Inductance: 0.50 uH max
 <deviceset name="FUSE_?_*" prefix="F">
 <description>Fuse
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;0885 Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;885 Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/358/typ_MST_250-1772502.pdf"&gt;MST 250 Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/358/typ_OMF_125-1275954.pdf"&gt;OMF 125 Series&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
@@ -8753,22 +8757,12 @@ Leakage Inductance: 0.50 uH max
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="0885" package="0885">
+<device name="885" package="885">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="1A">
-<attribute name="CURRENT" value="1A"/>
-<attribute name="DKPN" value="F10985CT-ND"/>
-<attribute name="FUSE_TYPE" value="SMD"/>
-<attribute name="I2T" value="0.80"/>
-<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
-<attribute name="MOPN" value="576-0885001.DR"/>
-<attribute name="MPN" value="0885001.DR"/>
-<attribute name="VOLTAGE" value="500V"/>
-</technology>
 <technology name="1.25A">
 <attribute name="CURRENT" value="1.25A"/>
 <attribute name="DKPN" value="F10986CT-ND"/>
@@ -8787,6 +8781,16 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MANUFACTURER" value="Littelfuse Inc."/>
 <attribute name="MOPN" value="576-088501.6DR"/>
 <attribute name="MPN" value="088501.6DR"/>
+<attribute name="VOLTAGE" value="500V"/>
+</technology>
+<technology name="1A">
+<attribute name="CURRENT" value="1A"/>
+<attribute name="DKPN" value="F10985CT-ND"/>
+<attribute name="FUSE_TYPE" value="SMD"/>
+<attribute name="I2T" value="0.80"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-0885001.DR"/>
+<attribute name="MPN" value="0885001.DR"/>
 <attribute name="VOLTAGE" value="500V"/>
 </technology>
 </technologies>

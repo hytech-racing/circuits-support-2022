@@ -10971,7 +10971,10 @@ Recommended clock capacitor for the MAX7400/MAX7404:
 <connect gate="G$1" pin="3" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="8STA20435PN">
+<attribute name="MANUFACTURER" value="Souriau"/>
+<attribute name="MPN" value="8STA20435PN"/>
+</technology>
 </technologies>
 </device>
 </devices>

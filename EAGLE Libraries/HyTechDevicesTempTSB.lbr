@@ -427,6 +427,11 @@
 <wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="LTC6994">
+<description>Analog Devices Inc Delay IC
+&lt;br&gt;
+1us to 33.6s
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/609/LTC6994_1_6994_2-1270043.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <pin name="IN" x="-2.54" y="-2.54" length="short"/>
 <pin name="SET" x="-2.54" y="-5.08" length="short"/>
 <pin name="GND" x="-2.54" y="-12.7" length="short" direction="pwr"/>
@@ -618,8 +623,10 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="LTC6994_*" prefix="U">
-<description>Analog Electronics Delay IC
+<deviceset name="LTC6994-*" prefix="U">
+<description>Analog Devices Inc Delay IC
+&lt;br&gt;
+1us to 33.6s
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/609/LTC6994_1_6994_2-1270043.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
@@ -638,9 +645,9 @@
 <technologies>
 <technology name="1">
 <attribute name="DKPN" value="505-LTC6994CS6-1#TRMPBFTR-ND"/>
-<attribute name="MANUFACTURER" value="Analog Electronics"/>
+<attribute name="MANUFACTURER" value="Analog Devices Incorporated"/>
 <attribute name="MOPN" value="584-C6994CS6-1TRMPBF"/>
-<attribute name="MPN" value="LTC6994CS6-1#TRMPBF" constant="no"/>
+<attribute name="MPN" value="LTC6994CS6-1#TRMPBF"/>
 </technology>
 </technologies>
 </device>

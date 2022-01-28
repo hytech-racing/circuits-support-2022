@@ -1,28 +1,39 @@
-#usage "<b>Set all SIGNAL attributes to netname</b>\n"
-       "<p>This script loops through all nets in a schematic to find all TP* parts "
-       "and then edits their SIGNAL attribute to be the net name."
+#require 9.06020
+
+#usage "<b>Set all SIGNAL attributes to signal name</b>\n"
+       "<p>This script loops through all signals in a board to find all TP* parts "
+       "and then edits their SIGNAL attribute to be the signal name and adjusts the"
+       "text to be the right formatting."
        "<author>Author: Arvind Srinivasan</author>"
 
-if (schematic) {
+string ftoa (real f) {
+  string str = "";
+  sprintf(str, "%f", f);
+  return str;
+}
+
+if (board) {
     string cmd;
-    schematic(S) {  // loop through schematic
-        S.sheets(SH) { // loop through sheets
-            SH.nets(N) { // loop through nets
-                N.segments(SEG) { // loop through segments
-                    SEG.pinrefs(P) { // loop through pins
-                        if (strsub(P.instance.name,0,2) == "TP") { // if the pin has a part whose name starts with "TP"
-                            cmd += "ATTRIBUTE " + P.instance.name + " SIGNAL '" + N.name + "'; "; // set SIGNAL attribute
-                            cmd += "CHANGE DISPLAY OFF; \n"; // set attribute not visible in schematic
+    board(B) {  // loop through board
+        B.signals(S) { // loop through signals
+            S.contactrefs(C) { // loop through contacts
+                if (strsub(C.element.name,0,2) == "TP") { // if the contact has a element whose name starts with "TP"
+                    cmd += "ATTRIBUTE " + C.element.name + " SIGNAL '" + S.name + "'; "; // set SIGNAL attribute
+                    C.element.texts(T) { // loop through texts
+                        if(S.name == T.value) { // if text is signal attribute text
+                            cmd += "CHANGE DISPLAY VALUE (" + ftoa(u2mil(T.x)) + " " + ftoa(u2mil(T.y)) + "); ";
+                            cmd += "CHANGE FONT VECTOR ("+ ftoa(u2mil(T.x)) + " " + ftoa(u2mil(T.y)) + "); ";
+                            cmd += "CHANGE SIZE 32 ("+ ftoa(u2mil(T.x)) + " " + ftoa(u2mil(T.y)) + "); ";
+                            cmd += "CHANGE RATIO 8 ("+ ftoa(u2mil(T.x)) + " " + ftoa(u2mil(T.y)) + "); \n";
                         }
                     }
                 }
             }
         }
     }
-   dlgMessageBox(cmd); // display what's going to be done
    exit (cmd); // exit and run the command
 }
-else { // we're not in a schematic
-   dlgMessageBox("\n    Start this ULP in a Schematic    \n");
+else { // we're not in a board
+   dlgMessageBox("\n    Start this ULP in a Board    \n");
    exit (0); // exit
 }

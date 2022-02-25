@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4448,6 +4448,17 @@ MSOP 12 with exposed pad.
 <rectangle x1="-1.75" y1="-1.905" x2="1.75" y2="1.905" layer="43"/>
 <rectangle x1="-1.75" y1="-1.905" x2="1.75" y2="1.905" layer="41"/>
 </package>
+<package name="0603-FUSE">
+<description>&lt;li&gt;&lt;a href = "https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-c2f-series.pdf"&gt;Datasheet&lt;/a&gt;&lt;/li&gt;</description>
+<smd name="1" x="-0.8382" y="0" dx="1.27" dy="0.9144" layer="1" rot="R90"/>
+<smd name="2" x="0.8382" y="0" dx="1.27" dy="0.9144" layer="1" rot="R90"/>
+<rectangle x1="-1.524" y1="-1.016" x2="1.524" y2="1.016" layer="39"/>
+<wire x1="-0.8128" y1="0.4064" x2="0.8128" y2="0.4064" width="0.127" layer="21"/>
+<wire x1="0.8128" y1="0.4064" x2="0.8128" y2="-0.4064" width="0.127" layer="21"/>
+<wire x1="0.8128" y1="-0.4064" x2="-0.8128" y2="-0.4064" width="0.127" layer="21"/>
+<wire x1="-0.8128" y1="-0.4064" x2="-0.8128" y2="0.4064" width="0.127" layer="21"/>
+<text x="0" y="1.016" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -8752,6 +8763,7 @@ Leakage Inductance: 0.50 uH max
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;885 Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/358/typ_MST_250-1772502.pdf"&gt;MST 250 Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/358/typ_OMF_125-1275954.pdf"&gt;OMF 125 Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/643/ds-CP-c2f-series-1291054.pdf"&gt;0686F0750-01&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
@@ -8828,6 +8840,22 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MOPN" value="693-3404.0008.11"/>
 <attribute name="MPN" value="3404.0008.11"/>
 <attribute name="VOLTAGE" value="125V"/>
+</technology>
+</technologies>
+</device>
+<device name="0603" package="0603-FUSE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=".75A">
+<attribute name="CURRENT" value="0.75A"/>
+<attribute name="DKPN" value="507-2159-2-ND"/>
+<attribute name="MANUFACTURER" value="Bel Fuse"/>
+<attribute name="MOPN" value="530-0686F0750-01"/>
+<attribute name="MPN" value="0686F0750-01"/>
+<attribute name="VOLTAGE" value="63V"/>
 </technology>
 </technologies>
 </device>

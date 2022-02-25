@@ -8606,13 +8606,11 @@ Note: Mode connected to GND per page 70 of &lt;a href="https://www.analog.com/me
 <attribute name="MPN" value="L128-RED1003500000"/>
 </technology>
 <technology name="RED-ORANGE">
-<attribute name="COLOR" value="RED_ORANGE"/>
+<attribute name="COLOR" value="Red-Orange"/>
 <attribute name="DKPN" value=""/>
 <attribute name="MANUFACTURER" value="Lumileds"/>
-<attribute name="MOPN" value="997-L128RNG10350
-"/>
-<attribute name="MPN" value="L128-RNG1003500000
-"/>
+<attribute name="MOPN" value="997-L128RNG10350 "/>
+<attribute name="MPN" value="L128-RNG1003500000 "/>
 </technology>
 </technologies>
 </device>

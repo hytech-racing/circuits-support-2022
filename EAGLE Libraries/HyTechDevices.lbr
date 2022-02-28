@@ -4662,13 +4662,13 @@ MSOP 12 with exposed pad.
 <pad name="7" x="1.27" y="-1.27" drill="1.016"/>
 <pad name="6" x="-1.27" y="-1.27" drill="1.016"/>
 <pad name="5" x="-3.81" y="-1.27" drill="1.016"/>
-<wire x1="-5.08" y1="0" x2="-5.08" y2="2.54" width="0.1524" layer="21"/>
 <wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="21"/>
 <wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.1524" layer="21"/>
 <wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="0" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.1524" layer="21"/>
 <rectangle x1="-5.715" y1="-3.302" x2="5.715" y2="3.175" layer="39"/>
 <text x="-5.08" y="2.794" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<circle x="-5.588" y="3.048" radius="0.254" width="0" layer="21"/>
 </package>
 <package name="498">
 <description>Keystone 498 SMT 1/3N Battery Holder &lt;br&gt;
@@ -9181,6 +9181,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="0.5">
+<attribute name="DKPN" value="311-.5QTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RL0603FR070R5L "/>
+<attribute name="MPN" value="RL0603FR-070R5L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="0.5"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value=""/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="1.24K">
 <attribute name="DKPN" value="311-1.24KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -9356,6 +9367,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="34.64V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="13.3K">
+<attribute name="DKPN" value="P20099TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B1332V"/>
+<attribute name="MPN" value="ERJ-PB3B1332V"/>
+<attribute name="POWER" value="0.2W"/>
+<attribute name="RESISTANCE" value="13.3k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="75k"/>
 </technology>
 <technology name="13K">
 <attribute name="DKPN" value="P20098TR-ND"/>
@@ -9720,6 +9742,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="39">
+<attribute name="DKPN" value="13-RT0603BRD0739RLTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RT0603BRD0739RL"/>
+<attribute name="MPN" value="RT0603BRD0739RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="39"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="4.12K">
 <attribute name="DKPN" value="P4.12KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -9919,26 +9952,26 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_MAX" value="350V"/>
 </technology>
 <technology name="HV750K">
-<attribute name="DKPN" value="" constant="no"/>
+<attribute name="DKPN" value="RHM75KAYTR-ND"/>
 <attribute name="MANUFACTURER" value="Rohm"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="POWER" value="0.1W" constant="no"/>
-<attribute name="RESISTANCE" value="750k" constant="no"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="MOPN" value="755-KTR03EZPF7502"/>
+<attribute name="MPN" value="KTR03EZPF7502"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="750k"/>
+<attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="350V"/>
 </technology>
 <technology name="HV75K">
-<attribute name="DKPN" value="" constant="no"/>
+<attribute name="DKPN" value="RHM750KAYTR-ND"/>
 <attribute name="MANUFACTURER" value="Rohm"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="POWER" value="0.1W" constant="no"/>
-<attribute name="RESISTANCE" value="75k" constant="no"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="MOPN" value="755-KTR03EZPF7503"/>
+<attribute name="MPN" value="KTR03EZPF7503"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="75k"/>
+<attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="350V"/>
 </technology>
 </technologies>
 </device>

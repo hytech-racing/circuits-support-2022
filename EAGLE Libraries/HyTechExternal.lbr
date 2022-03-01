@@ -299,6 +299,12 @@
 <devices>
 <device name="">
 <technologies>
+<technology name="MINI_BLADE_10">
+<attribute name="DKPN" value="F991-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse"/>
+<attribute name="MOPN" value="576-0297010.WXNV"/>
+<attribute name="MPN" value="0297010.WXNV"/>
+</technology>
 <technology name="MINI_BLADE_2">
 <attribute name="CURRENT" value="2A"/>
 <attribute name="DKPN" value="F986-ND"/>
@@ -510,17 +516,57 @@
 <devices>
 <device name="">
 <technologies>
+<technology name="FLEXSTACK">
+<attribute name="DKPN" value="ZW-04-11-G-D-522-158-ND"/>
+<attribute name="MANUFACTURER" value="Samtec Inc"/>
+<attribute name="MOPN" value="200-ZW0411GD522158"/>
+<attribute name="MPN" value="ZW-04-11-G-D-522-158"/>
+</technology>
 <technology name="MICROFIT">
 <attribute name="DKPN" value="WM13210-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MOPN" value="538-43025-0808" constant="no"/>
-<attribute name="MPN" value="0430250808" constant="no"/>
+<attribute name="MOPN" value="538-43025-0808"/>
+<attribute name="MPN" value="0430250808"/>
 </technology>
 <technology name="NANOFIT">
 <attribute name="DKPN" value="WM14964-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105308-1208"/>
 <attribute name="MPN" value="105308-1208"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECEPTACLE-7_*" prefix="O">
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="WM2405-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43645-0700"/>
+<attribute name="MPN" value="0436450700"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECEPTACLE-6_SINGLE_*" prefix="O">
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="WM13217-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43645-0608"/>
+<attribute name="MPN" value="0436450608"/>
 </technology>
 </technologies>
 </device>

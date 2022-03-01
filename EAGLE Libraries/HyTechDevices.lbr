@@ -9189,7 +9189,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="0.5"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value=""/>
+<attribute name="VOLTAGE_CONTINUOUS" value="0.22V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="1.24K">
@@ -9376,7 +9376,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="POWER" value="0.2W"/>
 <attribute name="RESISTANCE" value="13.3k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="51.58V"/>
 <attribute name="VOLTAGE_MAX" value="75k"/>
 </technology>
 <technology name="13K">
@@ -9750,7 +9750,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="39"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="1.97V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="4.12K">
@@ -9959,7 +9959,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="750k"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="273.86V"/>
 <attribute name="VOLTAGE_MAX" value="350V"/>
 </technology>
 <technology name="HV75K">
@@ -9970,7 +9970,7 @@ Leakage Inductance: 0.50 uH max
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="75k"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="86.60V"/>
 <attribute name="VOLTAGE_MAX" value="350V"/>
 </technology>
 </technologies>
@@ -11387,6 +11387,22 @@ Recommended clock capacitor for the MAX7400/MAX7404:
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-0430450411"/>
 <attribute name="MPN" value="0430450411"/>
+</technology>
+</technologies>
+</device>
+<device name="UF_T_V" package="MOLEX_MICROFIT_PTH_VERTICAL_04_DUAL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="900-2068320423-ND"/>
+<attribute name="MANUFACTURER" value="MOLEX"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="2068320423"/>
 </technology>
 </technologies>
 </device>

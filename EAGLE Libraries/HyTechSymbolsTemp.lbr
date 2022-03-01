@@ -1404,6 +1404,11 @@ Sensor</text>
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="AQY214EHA">
+<attribute name="MANUFACTURER" value="Panasonic Industrial Devices"/>
+<attribute name="MPN" value="AQY214EHA"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="CMX60D20">
 <attribute name="MANUFACTURER" value="Crydom"/>
 <attribute name="MPN" value="CMX60D20"/>

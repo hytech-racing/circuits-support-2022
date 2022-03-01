@@ -555,6 +555,7 @@ Circuit</text>
 <deviceset name="SWITCH_SPST_*" prefix="S">
 <description>Single Pull Single Throw Switch
 &lt;ul&gt;
+&lt;li&gt;&lt;a href  = "https://eao.com/fileadmin/documents/PDFs/en/03_brochures/EAO_PB_61_E-Stop_Compact_EN.pdf"&gt;EAO Series 61 27mm Illuminated Emergency Stop Swtich&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href  = "https://hmi.eao.com/p/965f6719"&gt;EAO Series 45 40mm Illuminated Emergency Stop Swtich&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href  = "https://hmi.eao.com/p/5909b34f"&gt;EAO Series 45 34mm Illuminated Emergency Stop Switch&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href  = "https://www.mouser.com/datasheet/2/418/8/ENG_CD_35_210_100_R_900_5-2533843.pdf"&gt;TE Battery Disconnector Switch&lt;/a&gt;&lt;/li&gt;
@@ -568,6 +569,11 @@ Circuit</text>
 <technology name="">
 <attribute name="MANUFACTURER" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="27MM_STOP">
+<attribute name="MANUFACTURER" value="EAO"/>
+<attribute name="MPN" value="Series 61 E-Stop"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="34MM_STOP">

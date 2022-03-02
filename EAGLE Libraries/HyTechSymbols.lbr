@@ -700,6 +700,11 @@ Source: Schukat</description>
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="CAD662DF400-14152">
+<attribute name="MANUFACTURER" value="OVAR" constant="no"/>
+<attribute name="MPN" value="CAD662DF400-14152"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="DCM4623TD2J13D0T70">
 <attribute name="MANUFACTURER" value="Vicor Corporation"/>
 <attribute name="MPN" value="DCM4623TD2J13D0T70"/>

@@ -1345,6 +1345,16 @@ Sensor</text>
 <attribute name="MPN" value="LCAX2-14F-E"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="X01-S01-T06S1-NM6">
+<attribute name="MANUFACTURER" value="Xinxi"/>
+<attribute name="MPN" value="X01-S01-T06S1-NM6"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="XX104-02-00-00B">
+<attribute name="MANUFACTURER" value="Xinxi"/>
+<attribute name="MPN" value="XX104-02-00-00B"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1430,6 +1440,11 @@ Sensor</text>
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="CAD662DF400-14152">
+<attribute name="MANUFACTURER" value="OVAR"/>
+<attribute name="MPN" value="CAD662DF400-14152"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="G4-0017-01">
 <attribute name="MANUFACTURER" value="Cascadia Motion"/>
 <attribute name="MPN" value="G4-0017-01"/>
@@ -1442,6 +1457,7 @@ Sensor</text>
 <deviceset name="CONNECTOR-3_*" prefix="J">
 <description>Three pin connector
 &lt;ul&gt;
+&lt;li&gt;&lt;a href = "https://drive.google.com/file/d/1qR1Rhcju7C1tSf9gvk0xHmD0lfie2p2O/view?usp=sharing"&gt;XXC106-EV-P3Z&lt;/a&gt;&lt;li&gt;
 &lt;li&gt;&lt;a href = "https://drive.google.com/file/d/14-0BdluqhzWVuxobIuHQclYd8S9S8AFy/view"&gt;HV02-M3S(40A)-M00A-1&lt;/a&gt;&lt;li&gt;
 &lt;li&gt;&lt;a href = "https://drive.google.com/file/d/1QyRJhkZq4Jge6F64jD-5aG-LjfEdAoZD/view"&gt;NEMA-5-20&lt;/a&gt;&lt;li&gt;
 &lt;/ul&gt;</description>
@@ -1464,6 +1480,11 @@ Sensor</text>
 <technology name="NEMA-5-20">
 <attribute name="MANUFACTURER" value="NEMA"/>
 <attribute name="MPN" value="NEMA 5-20"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="XXC106-EV-P3Z">
+<attribute name="MANUFACTURER" value="Xinxi"/>
+<attribute name="MPN" value="XXC106-EV-P3Z"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>
@@ -1640,6 +1661,16 @@ Sensor</text>
 <technology name="">
 <attribute name="MANUFACTURER" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="EVH2-N4TK-TDA">
+<attribute name="MANUFACTURER" value="Jonhon"/>
+<attribute name="MPN" value="EVH2-N4TK-TDA"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="F02-629110-RA2">
+<attribute name="MANUFACTURER" value="BADA"/>
+<attribute name="MPN" value="F02-629110-RA2"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="MICROFIT">

@@ -11394,6 +11394,12 @@ ISO224B: High-Grade
 <attribute name="MOPN" value="595-SN74LVC1G04DCKR"/>
 <attribute name="MPN" value="SN74LVC1G04DCKR"/>
 </technology>
+<technology name="SN74AHC1GU04DCK3">
+<attribute name="DKPN" value="296-SN74AHC1GU04DCK3-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-SN74AHC1GU04DCK3"/>
+<attribute name="MPN" value="SN74AHC1GU04DCK3"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -11401,7 +11407,8 @@ ISO224B: High-Grade
 <deviceset name="LOGICGATE_AND_" prefix="U">
 <description>AND Gate
 &lt;br&gt;
-&lt;a href = "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf"&gt;SN74LVC Datasheet&lt;/a&gt;</description>
+&lt;a href = "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf"&gt;SN74LVC Datasheet&lt;/a&gt;&lt;br&gt;
+&lt;a href = "https://www.ti.com/lit/ds/symlink/sn74ahct1g08.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1646402654063&amp;ref_url=https%253A%252F%252Fwww.mouser.com%252F"&gt;SN74AHCT1G08&lt;/a&gt;</description>
 <gates>
 <gate name="A" symbol="LOGICGATE_AND" x="20.32" y="-5.08"/>
 <gate name="P" symbol="PWR_GND" x="0" y="0" addlevel="must"/>
@@ -11427,6 +11434,12 @@ ISO224B: High-Grade
 <attribute name="MANUFACTURER" value="  Texas Instruments"/>
 <attribute name="MOPN" value="595-SN74LVC1G08DCKR"/>
 <attribute name="MPN" value="SN74LVC1G08DCKR"/>
+</technology>
+<technology name="SN74AHCT1G08DBVR">
+<attribute name="DKPN" value="296-32242-1-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="296-32242-1-ND"/>
+<attribute name="MPN" value="SN74AHCT1G08DCKT"/>
 </technology>
 </technologies>
 </device>

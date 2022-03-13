@@ -38,7 +38,7 @@
                         17,
                         18
                     ],
-                    "name": "Top",
+                    "name": "Top Copper",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
@@ -84,7 +84,7 @@
                     },
                     "filename_format": "%PREFIX/%N.G3",
                     "layers": [
-                        2,
+                        3,
                         17,
                         18
                     ],
@@ -163,7 +163,7 @@
                         17,
                         18
                     ],
-                    "name": "Bottom",
+                    "name": "Bottom Copper",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },

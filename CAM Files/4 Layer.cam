@@ -38,7 +38,7 @@
                         17,
                         18
                     ],
-                    "name": "Top",
+                    "name": "Top Copper",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
@@ -113,7 +113,7 @@
                         17,
                         18
                     ],
-                    "name": "Bottom",
+                    "name": "Bottom Copper",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },

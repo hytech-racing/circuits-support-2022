@@ -9,12 +9,12 @@
     "output_type": "zip",
     "outputs": [
         {
-            "filename_prefix": "CAMOutputs/GerberFiles",
+            "filename_prefix": "CAMOutputs/Gerber",
             "format_specifier": {
-                "decimal": 4,
-                "integer": 3
+                "decimal": 6,
+                "integer": 2
             },
-            "generate_job_file": true,
+            "generate_job_file": false,
             "output_type": "gerber",
             "outputs": [
                 {
@@ -32,7 +32,7 @@
                         "layer_details": "mixed",
                         "layer_type": "top"
                     },
-                    "filename_format": "%PREFIX/copper_top_l1.gtl",
+                    "filename_format": "%PREFIX/%N.GTL",
                     "layers": [
                         1,
                         17,
@@ -57,13 +57,13 @@
                         "layer_details": "mixed",
                         "layer_type": "Inner"
                     },
-                    "filename_format": "%PREFIX/copper_inner_l2.g2l",
+                    "filename_format": "%PREFIX/%N.G2",
                     "layers": [
                         2,
                         17,
                         18
                     ],
-                    "name": "Copper Layer 2",
+                    "name": "Layer 2",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
@@ -82,13 +82,13 @@
                         "layer_details": "mixed",
                         "layer_type": "Inner"
                     },
-                    "filename_format": "%PREFIX/copper_inner_l3.g2l",
+                    "filename_format": "%PREFIX/%N.G3",
                     "layers": [
                         3,
                         17,
                         18
                     ],
-                    "name": "Copper Layer 3",
+                    "name": "Layer 3",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
@@ -107,13 +107,13 @@
                         "layer_details": "mixed",
                         "layer_type": "Inner"
                     },
-                    "filename_format": "%PREFIX/copper_inner_l4.g2l",
+                    "filename_format": "%PREFIX/%N.G4",
                     "layers": [
                         14,
                         17,
                         18
                     ],
-                    "name": "Copper Layer 14",
+                    "name": "Layer 4",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
@@ -132,13 +132,13 @@
                         "layer_details": "mixed",
                         "layer_type": "Inner"
                     },
-                    "filename_format": "%PREFIX/copper_inner_l5.g3l",
+                    "filename_format": "%PREFIX/%N.G5",
                     "layers": [
                         15,
                         17,
                         18
                     ],
-                    "name": "Copper Layer 15",
+                    "name": "Layer 5",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
@@ -157,7 +157,7 @@
                         "layer_details": "mixed",
                         "layer_type": "bottom"
                     },
-                    "filename_format": "%PREFIX/copper_bottom_l6.gbl",
+                    "filename_format": "%PREFIX/%N.GBL",
                     "layers": [
                         16,
                         17,
@@ -180,10 +180,11 @@
                         "file_function": "Profile",
                         "plating": "non-plated"
                     },
-                    "filename_format": "%PREFIX/profile.gbr",
+                    "filename_format": "%PREFIX/%N.GM1",
                     "layers": [
                     ],
-                    "milling": true,
+                    "milling": false,
+                    "name": "Outline",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
@@ -201,11 +202,11 @@
                         "index": 1,
                         "layer_type": "top"
                     },
-                    "filename_format": "%PREFIX/soldermask_top.gbr",
+                    "filename_format": "%PREFIX/%N.GTS",
                     "layers": [
                         29
                     ],
-                    "name": "Soldermask Top",
+                    "name": "Top Soldermask",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
@@ -223,11 +224,11 @@
                         "index": 1,
                         "layer_type": "bottom"
                     },
-                    "filename_format": "%PREFIX/soldermask_bottom.gbr",
+                    "filename_format": "%PREFIX/%N.GBS",
                     "layers": [
                         30
                     ],
-                    "name": "Soldermask Bottom",
+                    "name": "Bottom Soldermask",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
@@ -244,12 +245,12 @@
                         "file_function": "Paste",
                         "layer_type": "top"
                     },
-                    "filename_format": "%PREFIX/solderpaste_top.gbr",
+                    "filename_format": "%PREFIX/%N.GTP",
                     "layers": [
                         31
                     ],
                     "milling": false,
-                    "name": "Solderpaste Top",
+                    "name": "Top Solderpaste",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
@@ -266,12 +267,12 @@
                         "file_function": "Paste",
                         "layer_type": "bottom"
                     },
-                    "filename_format": "%PREFIX/solderpaste_bottom.gbr",
+                    "filename_format": "%PREFIX/%N.GPB",
                     "layers": [
                         32
                     ],
                     "milling": false,
-                    "name": "Solderpaste Bottom",
+                    "name": "Bottom Solderpaste",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
@@ -289,13 +290,12 @@
                         "index": 1,
                         "layer_type": "top"
                     },
-                    "filename_format": "%PREFIX/silkscreen_top.gbr",
+                    "filename_format": "%PREFIX/%N.GTO",
                     "layers": [
-                        21,
-                        25
+                        21
                     ],
                     "milling": false,
-                    "name": "Silkscreen Top",
+                    "name": "Top Silkscreen",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
@@ -313,38 +313,39 @@
                         "index": 1,
                         "layer_type": "bottom"
                     },
-                    "filename_format": "%PREFIX/silkscreen_bottom.gbr",
+                    "filename_format": "%PREFIX/%N.GBO",
                     "layers": [
-                        22,
-                        26
+                        22
                     ],
                     "milling": false,
-                    "name": "Silkscreen Bottom",
+                    "name": "Bottom Silkscreen",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 }
             ],
-            "version": "RS274X_X2COMMENTS"
+            "version": "X2"
         },
         {
-            "filename_prefix": "CAMOutputs/DrillFiles",
+            "filename_prefix": "CAMOutputs/Drill",
             "format_specifier": {
-                "decimal": 3,
-                "integer": 3
+                "decimal": 5,
+                "integer": 2
             },
             "output_type": "drill",
             "outputs": [
                 {
-                    "advanced_options": {
-                        "mirror": false,
-                        "offset_x": 0,
-                        "offset_y": 0,
-                        "rotate": false,
-                        "upside_down": false
+                    "drills": {
+                        "NPTH": true,
+                        "PTH": true,
+                        "VIA": true
                     },
-                    "filename_format": "%DRILLPREFIX/drill_%FROM_%TO.xln",
-                    "name": "Auto Drill",
-                    "type": "autodrills"
+                    "filename_format": "%DRILLPREFIX/drill_%N.TXT",
+                    "layers": {
+                        "from": 1,
+                        "to": 16
+                    },
+                    "name": "NC Drill",
+                    "type": "excellon"
                 }
             ]
         },
@@ -353,30 +354,24 @@
             "output_type": "assembly",
             "outputs": [
                 {
-                    "filename_format": "%ASSEMBLYPREFIX/BOM_%N",
+                    "filename_format": "%ASSEMBLYPREFIX/bom_%N",
                     "list_attribute": true,
                     "list_type": "values",
                     "name": "Bill of Materials",
-                    "output_format": "csv",
+                    "output_format": "CSV",
                     "type": "bom"
                 },
                 {
-                    "filename_format": "%ASSEMBLYPREFIX/PnP_%N_%BOARDSIDE",
-                    "name": "Pick and Place",
-                    "output_format": "txt",
+                    "filename_format": "%ASSEMBLYPREFIX/cpl_%N_%BOARDSIDE",
+                    "name": "Component Placement List",
+                    "output_format": "CSV",
                     "type": "pick_and_place"
                 }
             ]
-        },
-        {
-            "filename_prefix": "CAMOutputs/DrawingFiles",
-            "output_type": "drawing",
-            "outputs": [
-            ]
         }
     ],
-    "timestamp": "2020-06-15T17:34:47",
+    "timestamp": "2022-02-22T22:22:22",
     "type": "EAGLE CAM job",
-    "units": "metric",
+    "units": "imperial",
     "version": "9.6.2"
 }

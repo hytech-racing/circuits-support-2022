@@ -331,6 +331,7 @@ Requires ordering of:
 <connect gate="G$1" pin="D23" pad="SCL"/>
 <connect gate="G$1" pin="EN" pad="EN"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
 <connect gate="G$1" pin="SCK" pad="SCK"/>
 <connect gate="G$1" pin="SDI" pad="CIPO"/>
 <connect gate="G$1" pin="SDO" pad="COPI"/>

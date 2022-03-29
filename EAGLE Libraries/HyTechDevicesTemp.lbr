@@ -187,6 +187,25 @@
 </layers>
 <library>
 <packages>
+<package name="CRYDOM_CMX">
+<description>Crydom CMX series solid state relays SIP-4
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/657/cmx_series_dc_pcb_mount-1370813.pdf"&gt;Datasheet&lt;a/&gt;</description>
+<pad name="1" x="15.748" y="0" drill="2.1082" first="yes"/>
+<pad name="2" x="5.588" y="0" drill="2.1082"/>
+<pad name="3" x="-5.08" y="0" drill="2.1082"/>
+<pad name="4" x="-10.16" y="0" drill="2.1082"/>
+<wire x1="-17.78" y1="3.81" x2="-17.78" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-17.78" y1="-3.81" x2="22.86" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="22.86" y1="-3.81" x2="22.86" y2="3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="22.86" y1="3.81" x2="-17.78" y2="3.81" width="0.127" layer="21" style="shortdash"/>
+<text x="0" y="5.08" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="-10.16" y="0" radius="1.79605" width="0" layer="40"/>
+<circle x="-5.08" y="0" radius="1.79605" width="0" layer="40"/>
+<circle x="5.588" y="0" radius="1.79605" width="0" layer="40"/>
+<circle x="15.748" y="0" radius="1.79605" width="0" layer="40"/>
+<rectangle x1="-19.05" y1="-5.08" x2="24.13" y2="5.08" layer="39"/>
+</package>
 <package name="UWE-*">
 <description>1/8 Brick footprint as used by UWE-12/10-Q12PB-C converter
 &lt;br&gt;
@@ -355,6 +374,32 @@
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="RELAY_SOLIDSTATE_NO_?*" prefix="K">
+<description>Solid State Normally Open Relay
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/657/cmx_series_dc_pcb_mount-1370813.pdf"&gt;Crydom CMX Series&lt;a/&gt;</description>
+<gates>
+<gate name="G$1" symbol="RELAY_SOLIDSTATE_NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CRYDOM_CMX">
+<connects>
+<connect gate="G$1" pin="CONTACT1" pad="2"/>
+<connect gate="G$1" pin="CONTACT2" pad="1"/>
+<connect gate="G$1" pin="CONTROL+" pad="3"/>
+<connect gate="G$1" pin="CONTROL-" pad="4"/>
+</connects>
+<technologies>
+<technology name="CMX60D20">
+<attribute name="DKPN" value="CC1666-ND"/>
+<attribute name="MANUFACTURER" value="Crydom"/>
+<attribute name="MOPN" value="558-CMX60D20"/>
+<attribute name="MPN" value="CMX60D20"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="UWE-*" prefix="A">
 <description>UWE-Q12 Series Wide Input, Isolated Eighth-Brick DCDC Converters
 &lt;br&gt;

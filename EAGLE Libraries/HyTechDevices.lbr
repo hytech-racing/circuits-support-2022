@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9361,6 +9361,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="19.75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="30.9K">
+<attribute name="DKPN" value="P20140CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B3092V"/>
+<attribute name="MPN" value="ERJ-PB3B3092V"/>
+<attribute name="POWER" value="0.25W"/>
+<attribute name="RESISTANCE" value="30.9k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="200V"/>
+</technology>
 <technology name="30K">
 <attribute name="DKPN" value="P30KBDCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -9685,6 +9696,28 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="55.68V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="14.3K">
+<attribute name="DKPN" value="P14.3KCCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-6ENF1432V"/>
+<attribute name="MPN" value="ERJ-6ENF1432V"/>
+<attribute name="POWER" value="0.125W"/>
+<attribute name="RESISTANCE" value="14.3k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="200V"/>
+</technology>
+<technology name="19.1K">
+<attribute name="DKPN" value="P19.1KCCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-6ENF1912V"/>
+<attribute name="MPN" value="ERJ-6ENF1912V"/>
+<attribute name="POWER" value="0.125W"/>
+<attribute name="RESISTANCE" value="19.1k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="200V"/>
+</technology>
 <technology name="200">
 <attribute name="DKPN" value="311-200CRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -9707,6 +9740,17 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE_CONTINUOUS" value="3.32V"/>
 <attribute name="VOLTAGE_MAX" value="400V"/>
 </technology>
+<technology name="31.6K">
+<attribute name="DKPN" value="541-31.6KSCT-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Dale"/>
+<attribute name="MOPN" value="71-CRCW060331K6FKEAH"/>
+<attribute name="MPN" value="CRCW060331K6FKEAHP"/>
+<attribute name="POWER" value="0.33W"/>
+<attribute name="RESISTANCE" value="31.6k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="200V"/>
+</technology>
 <technology name="365K">
 <attribute name="DKPN" value="P20885CT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -9728,6 +9772,28 @@ Leakage Inductance: 0.50 uH max
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="5.29V"/>
 <attribute name="VOLTAGE_MAX" value="400V"/>
+</technology>
+<technology name="931K">
+<attribute name="DKPN" value="P20933CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB6B9313V"/>
+<attribute name="MPN" value="ERJ-PB6B9313V"/>
+<attribute name="POWER" value="0.25W"/>
+<attribute name="RESISTANCE" value="931k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="200V"/>
+</technology>
+<technology name="953K">
+<attribute name="DKPN" value="P953KCCT-ND "/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-6ENF9533V"/>
+<attribute name="MPN" value="ERJ-6ENF9533V"/>
+<attribute name="POWER" value="0.125W"/>
+<attribute name="RESISTANCE" value="953k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="200V"/>
 </technology>
 </technologies>
 </device>

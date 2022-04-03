@@ -299,6 +299,12 @@
 <devices>
 <device name="">
 <technologies>
+<technology name="MINI_BLADE_1">
+<attribute name="DKPN" value="2298-ANM58-1A-ND"/>
+<attribute name="MANUFACTURER" value="OptiFuse"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="ANM58-1A"/>
+</technology>
 <technology name="MINI_BLADE_2">
 <attribute name="CURRENT" value="2A"/>
 <attribute name="DKPN" value="F986-ND"/>
@@ -521,6 +527,62 @@
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105308-1208"/>
 <attribute name="MPN" value="105308-1208"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECEPTACLE-12_*" prefix="O">
+<description>Receptacle, 12 Pin
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/0430251200_CRIMP_HOUSINGS-145768.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
+</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="WM1788-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43025-1200"/>
+<attribute name="MPN" value="430251200"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECEPTACLE-14_*" prefix="O">
+<description>Receptacle, 14 Pin
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/0430251400_CRIMP_HOUSINGS-228590.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="0430251400"/>
+<attribute name="MANUFACTURER" value="Molex" constant="no"/>
+<attribute name="MOPN" value="538-43025-1400"/>
+<attribute name="MPN" value=" 430251400"/>
 </technology>
 </technologies>
 </device>

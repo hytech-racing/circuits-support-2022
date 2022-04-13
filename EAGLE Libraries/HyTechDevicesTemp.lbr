@@ -281,12 +281,12 @@ See breadboard placement for pin distancing
 <pin name="A7" x="-2.54" y="-22.86" visible="pin" length="short"/>
 <pin name="A9" x="-2.54" y="-27.94" visible="pin" length="short"/>
 <pin name="A8" x="-2.54" y="-25.4" visible="pin" length="short"/>
-<pin name="3.3V" x="22.86" y="-7.62" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="3.3V" x="22.86" y="-10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="A10" x="-2.54" y="-30.48" visible="pin" length="short"/>
 <pin name="A11(PD)" x="-2.54" y="-33.02" visible="pin" length="short"/>
 <pin name="A12" x="-2.54" y="-35.56" visible="pin" length="short"/>
-<pin name="(BAT)VIN" x="22.86" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
-<pin name="USB" x="22.86" y="-10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="BAT" x="22.86" y="-7.62" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="(USB)VIN" x="22.86" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="EN" x="22.86" y="-15.24" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="RST" x="22.86" y="-12.7" visible="pin" length="short" direction="pwr" rot="R180"/>
 </symbol>
@@ -309,7 +309,7 @@ Requires ordering of:
 <devices>
 <device name="" package="ESP32">
 <connects>
-<connect gate="G$1" pin="(BAT)VIN" pad="BAT"/>
+<connect gate="G$1" pin="(USB)VIN" pad="USB"/>
 <connect gate="G$1" pin="3.3V" pad="3.3V"/>
 <connect gate="G$1" pin="A0" pad="A0"/>
 <connect gate="G$1" pin="A1" pad="A1"/>
@@ -324,6 +324,7 @@ Requires ordering of:
 <connect gate="G$1" pin="A7" pad="D32"/>
 <connect gate="G$1" pin="A8" pad="D15"/>
 <connect gate="G$1" pin="A9" pad="D33"/>
+<connect gate="G$1" pin="BAT" pad="BAT"/>
 <connect gate="G$1" pin="CRX" pad="RX"/>
 <connect gate="G$1" pin="CTX" pad="TX"/>
 <connect gate="G$1" pin="D21" pad="D21"/>
@@ -335,7 +336,6 @@ Requires ordering of:
 <connect gate="G$1" pin="SCK" pad="SCK"/>
 <connect gate="G$1" pin="SDI" pad="CIPO"/>
 <connect gate="G$1" pin="SDO" pad="COPI"/>
-<connect gate="G$1" pin="USB" pad="USB"/>
 </connects>
 <technologies>
 <technology name=""/>

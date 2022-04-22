@@ -24,7 +24,7 @@ Repository for all of the EAGLE support files for the 2022 car.
 3. Get the free [Educational License](https://www.autodesk.com/education/free-software/eagle) (a .edu email address is required)
 
 ## Github Software Guidelines and Electrical Designs Rules Review Process
-Follow HyTech's [Github Software Guidelines](https://gtvault.sharepoint.com/:w:/r/sites/HyTechRacing2/Shared%20Documents/Electrical%20-%20All/HT06/Guidelines%20Rules%20and%20Procedures/Github%20Software%20Guidelines.docx?d=w7e0d7e36afeb47b5a935bd7a4851bceb&csf=1&web=1&e=sudzjV) to understand our development flow and pull request procedure.
+Follow HyTech's [Github Software Guidelines](https://gtvault.sharepoint.com/:w:/r/sites/HyTechRacing2/Shared%20Documents/Electrical%20-%20All/HT06/Guidelines%20Rules%20and%20Procedures/Github%20Software%20Guidelines.docx?d=w7e0d7e36afeb47b5a935bd7a4851bceb&csf=1&web=1&e=sudzjV) to understand our development flow and pull request procedure.  
 Follow HyTech's [Electrical Designs Rules Review Process](https://gtvault.sharepoint.com/:w:/r/sites/HyTechRacing2/Shared%20Documents/Electrical%20-%20All/HT06/Guidelines%20Rules%20and%20Procedures/Electrical%20Designs%20Rules%20Review%20Process.docx?d=w0277498dfb4b4b9fbfad0e5db8a187c8&csf=1&web=1&e=LDFCNz) to understand circuit design flow. 
 
 ## More Information

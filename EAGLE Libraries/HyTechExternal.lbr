@@ -299,13 +299,25 @@
 <devices>
 <device name="">
 <technologies>
-<technology name="MINI_BLADE_2">
+<technology name="MINI_BLADE_10A">
+<attribute name="CURRENT" value="10A"/>
+<attribute name="DKPN" value="F991-ND"/>
+<attribute name="FUSE_TYPE" value="MINI 297"/>
+<attribute name="I2T" value="93"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-0297010.WXNV"/>
+<attribute name="MPN" value="0297010.WXNV"/>
+<attribute name="VOLTAGE" value="32V"/>
+</technology>
+<technology name="MINI_BLADE_2A">
 <attribute name="CURRENT" value="2A"/>
 <attribute name="DKPN" value="F986-ND"/>
 <attribute name="FUSE_TYPE" value="MINI 297"/>
+<attribute name="I2T" value="2.8"/>
 <attribute name="MANUFACTURER" value="Littelfuse Inc."/>
 <attribute name="MOPN" value="576-0297002.WXNV"/>
 <attribute name="MPN" value="0297002.WXNV"/>
+<attribute name="VOLTAGE" value="32V"/>
 </technology>
 </technologies>
 </device>
@@ -420,7 +432,7 @@
 </devices>
 </deviceset>
 <deviceset name="ANTENNA" prefix="O">
-<description>Antenna for GPS/Xbee
+<description>Antenna for the Ultimate GPS or Xbee
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/336/W3906B0100-1510198.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
@@ -430,10 +442,10 @@
 <device name="">
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="1837-1002-ND"/>
-<attribute name="MANUFACTURER" value="PulseLarsen Antennas"/>
-<attribute name="MOPN" value="673-W3906B0100"/>
-<attribute name="MPN" value="W3906B0100"/>
+<attribute name="DKPN" value="357-ANT-5GFPCB6958-UFL-ND"/>
+<attribute name="MANUFACTURER" value="RF Solutions"/>
+<attribute name="MOPN" value=""/>
+<attribute name="MPN" value="ANT-5GFPCB6958-UFL"/>
 </technology>
 </technologies>
 </device>

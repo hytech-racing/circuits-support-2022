@@ -329,6 +329,11 @@
 <devices>
 <device name="">
 <technologies>
+<technology name="12_0.1&quot;">
+<attribute name="DKPN" value="S7045-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC121LFBN-RC"/>
+</technology>
 <technology name="13_0.1&quot;">
 <attribute name="DKPN" value="S7046-ND"/>
 <attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
@@ -338,6 +343,11 @@
 <attribute name="DKPN" value="S7047-ND"/>
 <attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
 <attribute name="MPN" value="PPPC141LFBN-RC"/>
+</technology>
+<technology name="16_0.1&quot;">
+<attribute name="DKPN" value="S7049-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC161LFBN-RC"/>
 </technology>
 <technology name="24_0.1&quot;">
 <attribute name="DKPN" value="S7057-ND"/>
@@ -545,6 +555,25 @@
 <attribute name="MOPN" value="639-CR1/3N"/>
 <attribute name="MPN" value="CR-1-3N"/>
 <attribute name="VOLTAGE" value="3V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESP32" prefix="O">
+<description>Adafruit Huzzah32
+&lt;br&gt;
+&lt;a href="https://cdn-learn.adafruit.com/downloads/pdf/adafruit-huzzah32-esp32-feather.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="1528-2514-ND"/>
+<attribute name="MANUFACTURER" value="Adafruit Industries LLC"/>
+<attribute name="MPN" value="3591"/>
 </technology>
 </technologies>
 </device>
